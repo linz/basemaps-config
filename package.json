@@ -1,0 +1,16 @@
+{
+  "name": "basemaps-config",
+  "version": "0.1.0",
+  "private": true,
+  "description": "LINZ specific configuration and delployment of basemaps",
+  "repository": "github:linz/basemaps-config",
+  "license": "MIT",
+  "dependencies": {},
+  "scripts": {},
+  "devDependencies": {
+    "@linzjs/style": "^0.4.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
