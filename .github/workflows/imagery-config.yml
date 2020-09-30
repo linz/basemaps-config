@@ -1,0 +1,55 @@
+name: Build
+
+on:
+  pull_request:
+    paths:
+    - 'config/imagery/*.json'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: "12.x"
+          registry-url: https://registry.npmjs.org
+
+      - name: Install
+        run: yarn  --frozen-lockfile --check-files
+
+      - name: build
+        run: yarn build
+
+      - name: aws configure
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_BASEMAPS_ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.AWS_BASEMAPS_SECRET_ACCESS_KEY }}
+          aws-region: ap-southeast-2
+          mask-account-id: true
+          role-to-assume: ${{ secrets.AWS_BASEMAPS_ROLE_NON_PROD }}
+
+      - name: run test config
+        if: github.ref != 'refs/heads/master'
+        run: |
+          git diff --name-only origin/master HEAD | node ./build/configure.imagery.js import -t pr-${{ github.event.number }}
+        env:
+          NODE_ENV: "production"
+          ALB_CERTIFICATE_ARN: ${{secrets.ALB_CERTIFICATE_ARN}}
+          LOG_ACCOUNT_ID: ${{secrets.LOG_ACCOUNT_ID}}
+
+      - name: run commit config
+        if: github.ref == 'refs/heads/master'
+        run: |
+          echo prod-commit pr-${{ github.event.number }}
+          git diff --name-only HEAD HEAD^1 | node ./build/configure.imagery.js import -t pr-${{ github.event.number }}
+        env:
+          NODE_ENV: "production"
+          ALB_CERTIFICATE_ARN: ${{secrets.ALB_CERTIFICATE_ARN}}
+          LOG_ACCOUNT_ID: ${{secrets.LOG_ACCOUNT_ID}}
