@@ -39,7 +39,7 @@ jobs:
       - name: run test config
         if: github.ref != 'refs/heads/master'
         run: |
-          cat ${{github.event_path}}
+          git diff --name-only master HEAD
           echo ./node_modules/.bin/basemaps import -t pr-${{ github.event.number }}
         env:
           ALB_CERTIFICATE_ARN: ${{secrets.ALB_CERTIFICATE_ARN}}
