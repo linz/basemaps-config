@@ -1,0 +1,48 @@
+name: Build
+
+on:
+  pull_request:
+    paths:
+    - 'config/imagery/*.json'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: "12.x"
+          registry-url: https://registry.npmjs.org
+
+      - name: Install
+        run: yarn  --frozen-lockfile --check-files
+
+      - name: test PR
+        run: |
+          echo event number is: ${{ github.event.number }}
+
+      - name: test configure
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_BASEMAPS_ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.AWS_BASEMAPS_SECRET_ACCESS_KEY }}
+          aws-region: ap-southeast-2
+          mask-account-id: true
+          role-to-assume: ${{ secrets.AWS_BASEMAPS_ROLE_NON_PROD }}
+
+      - name: run test config
+        if: github.ref != 'refs/heads/master'
+        run: |
+          cat ${{github.event_path}}
+          echo ./node_modules/.bin/basemaps import -t pr-${{ github.event.number }}
+        env:
+          ALB_CERTIFICATE_ARN: ${{secrets.ALB_CERTIFICATE_ARN}}
+          NODE_ENV: "dev"
+          API_KEY: ${{secrets.API_KEY_NON_PROD}}
+          LOG_ACCOUNT_ID: ${{secrets.LOG_ACCOUNT_ID}}

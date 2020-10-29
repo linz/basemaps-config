@@ -1,0 +1,124 @@
+{
+  "name": "aerial",
+  "projection": 3857,
+  "background": "dce9edff",
+  "defaults": [
+    {
+      "nameContains": "_urban_",
+      "priority": 3000, "minZoom": 14
+    },
+    {
+      "nameContains": "_rural_",
+      "priority": 2000, "minZoom": 13
+    },
+    {
+      "priority": 1000, "minZoom": 0, "maxZoom": 32
+    }
+  ],
+  "imagery": [
+    {"id": "01ED81BNAX2ESPMV59YPC3AQ2C", "name": "auckland_rural_2010-2012_0-50m_RGBA"},
+    {"id": "01ED81CFNWK9R75S0277SW972N", "name": "auckland_urban_2015-16_0-075m"},
+    {"id": "01ED81HZRR86YBB8A0ZQRABP96", "name": "auckland_urban_2017_0-075m"},
+    {
+      "id": "01EDMTQXYCBANNYTKD4VK6C2GK", "name": "bay-of-plenty_rural_2011-2012_0-25m_RGBA"},
+    {
+      "id": "01ED81P0KGVWJP2XHDKJJRYNQM", "name": "bay-of-plenty_rural_2015-17_0-25m",
+      "priority": 2001
+    },
+    {"id": "01ED81Q2AS5K0RPNRCRQ33YAYW", "name": "bay-of-plenty_rural_2016-17_0-3m"},
+    {"id": "01ED81R5BX4EB3W7TB3Z8ZE89S", "name": "bay-of-plenty_rural_2019_0-3m"},
+    {"id": "01ED81RPD7YEYNTPM2WZZK3X1A", "name": "bay-of-plenty_urban_2014-15_0-125m"},
+    {"id": "01ED81TJP9G5Q6VJKG921RT0QS", "name": "bay-of-plenty_urban_2015-16_0-125m"},
+    {"id": "01ED81VN7AJ586W5HK2BSPHAPH", "name": "bay-of-plenty_urban_2015-16_0-1m"},
+    {"id": "01ED81W4KDQQRW9PEQ9KS7T8DV", "name": "bay-of-plenty_urban_2018-19_0-1m"},
+    {
+      "id": "01ED81W4KDQQRW9PEQ9KS7T8DV", "name": "bay-of-plenty_urban_2018-19_0-1m",
+      "priority": 2000, "minZoom": 13, "maxZoom": 13
+    },
+    {"id": "01ED81XK539QM497AYHM1X70JQ", "name": "canterbury_rural_2012-2013_0-40m_RGBA"},
+    {"id": "01ED81YFYF0D76RZRH9FHF7JDN", "name": "canterbury_rural_2013-2014_0-40m_RGBA"},
+    {"id": "01ED81ZMNH3PM5Q3E2MWRFD22B", "name": "canterbury_rural_2014-2015_0-30m_RGBA"},
+    {"id": "01ED82104D376HEF1ZMW8PRX5N", "name": "canterbury_rural_2015-2016_0-30m_RGBA"},
+    {"id": "01ED8225A94WY3GQ4CNZ9E1PZN", "name": "canterbury_rural_2016-18_0-3m"},
+    {"id": "01ED823PTAVX9DQ7GE9WBACX8C", "name": "central-hawkes-bay_urban_2017-18_0-1m"},
+    {
+      "id": "01ED84CATGQ1THNG7QEEEZBEBT", "name": "chatham-islands_digital-globe_2014-2019_0-5m",
+      "minZoom": 13
+    },
+    {
+      "id": "01ED849PJ44FA7S612QAXN9P11", "name": "chatham-islands_digital-globe_2014-2019_0-5m",
+      "maxZoom": 12
+    },
+    {"id": "01ED8247MCZAFRW0KGWYKNWDQ6", "name": "christchurch_urban_2015-2016_0-075m_RGBA"},
+    {"id": "01ED825VGXM6K9YX52DP7SMXQE", "name": "christchurch_urban_2018_0-075m"},
+    {"id": "01ED8265AEHZM2DHB43GBFE5BG", "name": "dunedin_rural_2013_0-40m_RGBA"},
+    {"id": "01ED826QV4Q60TNS6VM8HE36BV", "name": "dunedin_urban_2018-19_0-1m"},
+    {
+      "id": "01EDMTM3P563P06TWYQAZRA9F6", "name": "gebco_2020_305-75m",
+      "priority": 0, "maxZoom": 15
+    },
+    {"id": "01EDMTSQF19FQB09MS46ZFWWRM", "name": "gisborne_rural_2012-2013_0-40m_RGBA"},
+    {"id": "01ECTS06BSSHA626JHSDTNSC97", "name": "gisborne_rural_2017-18_0-3m"},
+    {"id": "01ECTS33A3VYA5A8ZBHCDFYFR8", "name": "gisborne_urban_2017-18_0-1m"},
+    {"id": "01EDAN1CYCXAEMG21PB6VCD0KX", "name": "hamilton_urban_2016-17_0-1m"},
+    {"id": "01ED8284FFT9RYZ0F7XTKD64D4", "name": "hamilton_urban_2019_0-1m"},
+    {"id": "01ED828XHKJMQNW313CV3MBP2T", "name": "hastings_urban_2014-15_0-1m"},
+    {"id": "01EDN0YH2TM1B5NWHR4RHGBMPF", "name": "hastings-district_urban_2014-2015_0-10m_RGB"},
+    {"id": "01ED82B3R581HMXNDS7HP3ATQ2", "name": "hawkes-bay_rural_2014-2015_0-30m_RGBA"},
+    {"id": "01ED82CK977V2ZJ095QZDGSME6", "name": "hurunui_urban_2013_0-125m_RGBA"},
+    {"id": "01ED82D0F9NBGVM9WRRT46AV1V", "name": "hutt-city_urban_2017_0-10m"},
+    {"id": "01ED82DPKVVWA818DY9QQ9GS0J", "name": "invercargill_urban_2016_0-05m"},
+    {"id": "01ED82E60KN099T9A8V11KCSK0", "name": "invercargill_urban_2016_0-1m"},
+    {"id": "01ED82F0376F6FJFMTV4JAVJ53", "name": "kaikoura-post-earthquake_rural_2016-17_0-3m"},
+    {"id": "01ED82FXR5R33KER1D48S11RHC", "name": "kapity-coast_urban_2017_0-10m"},
+    {"id": "01ED82GV8E3DRWQ86D80SN1FPW", "name": "manawatu_urban_2019_0-125m"},
+    {"id": "01ED82HKA5T8V6S1KZ4WN9EFNN", "name": "manawatu-whanganui_rural_2015-16_0-3m"},
+    {"id": "01ED82JQASJDFZ6XEM018RJQN0", "name": "manawatu-whanganui_rural_2016-17_0-3m"},
+    {"id": "01ED82KF10YWWCA59936P87R9B", "name": "marlborough_rural_2011-2012_0-40m_RGBA"},
+    {"id": "01ED82MG0Q6A8VFAJSY7Q543N5", "name": "marlborough_rural_2015-2016_0-20m_RGBA"},
+    {"id": "01EDAMZ587FYSZ9NY8TP40VASS", "name": "marlborough_rural_2017-18_0-3m"},
+    {"id": "01ED82QS0GBHX38Z6B1YHQNZM0", "name": "marlborough_urban_2017-18_0-1m"},
+    {"id": "01ED82S7R88B0CGQWZKH4V7R2H", "name": "napier-city_urban_2017-18_0-05m"},
+    {"id": "01ED82SKPVV12M4RYHRK08DWG4", "name": "napier-city_urban_2017-18_0-1m"},
+    {"id": "01ED82T5HM0H275QJPMDQN0JFJ", "name": "nelson_rural_2018-19_0-3m"},
+    {"id": "01ED82TFB1ZE9C75CH5VY3Z92B", "name": "new_zealand_sentinel_2019-2020_10m"},
+    {"id": "01ED82VQR8M1STH3EPMF3E8KFQ", "name": "new-plymouth_urban_2017_0-10m"},
+    {"id": "01ED82WK4A955T96RV5NWEN3R6", "name": "northland_rural_2014-16_0-4m"},
+    {"id": "01ED82YEHRRNR3YQC55TJY37E6", "name": "northland_urban_2014-2015_0-10m_RGBA"},
+    {"id": "01ED8312YJGXG5195GMTGY9MNK", "name": "otago_rural_2013-2014_0-40m_RGBA"},
+    {"id": "01ED831MKK85M1QNCNZV0AYPYC", "name": "otago_rural_2017-2019_0-30m_RGB"},
+    {"id": "01ED832ZRP7TDQEX5WMVHCP3VM", "name": "otago_urban_2018_0-1m"},
+    {"id": "01ED833N7FD05YRW6ZR5799SAZ", "name": "palmerston-north_urban_2016-17_1-125m"},
+    {"id": "01ED8346J2H15Z24G6P9SZ7S0P", "name": "palmerston-north-city_urban_2014-15_0-125m"},
+    {"id": "01ED834RYVP97AYQVDDQ6MJECY", "name": "porirua_urban_2016_0-075m"},
+    {"id": "01ED8355C00DRTSNAQ04AHJDDZ", "name": "selwyn_urban_2012-2013_0-125m_RGBA"},
+    {"id": "01ED835ZSP0MQ3W55QEMVZKNR1", "name": "southland_rural_2005-2011_0-75m_RGBA"},
+    {"id": "01ED83886J46GSSZP6GKCCYGH1", "name": "southland-central-otago_rural_2013-2014_0-40m_RGBA"},
+    {"id": "01ED83A271YNKAW0KRH17RPMMV", "name": "southland-central-otago_rural_2015-2017_0-40m_RGB"},
+    {"id": "01ED83B7TAK5SBKVYFJZMTE9AV", "name": "taranaki_rural_2016-17_0-3m"},
+    {"id": "01EE9646WHWA7X46KDRATVWY9Z", "name": "tasman_rural_2001-2002_1m_RGB"},
+    {"id": "01EE962ZB3Z6Y7GVZ28XCWJ9JB", "name": "tasman_rural_2004-2005_1m_RGB"},
+    {"id": "01ED83CJ5ZT8SAGQKFT9MM59XR", "name": "tasman_rural_2009-2010_0-50m_RGBA"},
+    {"id": "01ED83CXGMGPXTF67SETE7YBWP", "name": "tasman_rural_2015-16_0-3m"},
+    {"id": "01ED83DC7MCMBCRNN45E07HCHH", "name": "tasman_rural_2016-17_0-3m"},
+    {"id": "01ED83DSMR8N1FQFVXM8JASBV2", "name": "tasman_rural_2018-19_0-3m"},
+    {"id": "01ED83ENCYFX7KFVKH0S7SK92W", "name": "tasman_urban_2017_0-075m"},
+    {"id": "01ED83F2SBS02QP80KSQ3GRR92", "name": "tasman_urban_2017_0-1m"},
+    {"id": "01ED83FS8PC1YC7Y7WKJ90P5TN", "name": "tauranga_urban_2017_0-1m"},
+    {"id": "01ED83GB3JEMR4D72PFD8JVCV6", "name": "thames-coromandel_urban_2015_0-05m"},
+    {"id": "01ED83HWB82K047N1KYK9A5SKD", "name": "timaru_urban_2012-2013_0-075m_RGBA"},
+    {"id": "01ED83JPKMXF5TVKFD4RP91ZRB", "name": "upper-hutt_urban_2017_0-10m"},
+    {"id": "01ED83K3YEJ0FSG0DHCFTVBEF7", "name": "waikato_rural_2012-2013_0-50m_RGBA"},
+    {"id": "01EDAN2JJVFCS9WZWMB9105XFH", "name": "waikato_rural_2017-19_0-3m"},
+    {"id": "01ED83NZS98MYTMWM4D1EVZ07T", "name": "waikato_urban_2014_0-10m_RGBA"},
+    {"id": "01ED83PPQFH8Z8HNY1WV7W4SS5", "name": "waimakariri_urban_2013-2014_0-075m_RGBA"},
+    {"id": "01ED83QD75BDF3D46932B3ZKZD", "name": "waimakariri_urban_2015-2016_0-075m_RGBA"},
+    {"id": "01ED83R64ZX665P14R805CJVE2", "name": "wairoa_urban_2014-2015_0-10m_RGBA"},
+    {"id": "01ED83RWC1W924PXSGA9179Q96", "name": "wellington_rural_2016-17_0-3m"},
+    {"id": "01ED83SQ85A7B1MJ42BK13EGCQ", "name": "wellington_urban_2017_0-10m"},
+    {"id": "01ED83TT0ZHKXTPFXEGFJHP2M5", "name": "west-coast_rural_2015-16_0-3m"},
+    {"id": "01ED83VT2T06B1FVXF9P6CCV8C", "name": "west-coast_rural_2016-17_0-3m"},
+    {"id": "01ED83WV5VV20JWAP0MT3D7W4W", "name": "whanganui_urban_2015-16_0-1m"},
+    {"id": "01ED83XAAFYRNDQFZJRBSH21TF", "name": "whanganui_urban_2017-18_0-075m"}
+  ]
+}

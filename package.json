@@ -6,11 +6,19 @@
   "repository": "github:linz/basemaps-config",
   "license": "MIT",
   "dependencies": {},
-  "scripts": {},
-  "devDependencies": {
-    "@linzjs/style": "^0.4.0"
+  "scripts": {
+    "lint": "eslint 'src/**/*.ts' --quiet --fix --report-unused-disable-directives",
+    "clean": "tsc -b --clean && rimraf 'build'",
+    "build": "tsc -b"
   },
-  "workspaces": [
-    "packages/*"
-  ]
+  "devDependencies": {
+    "@linzjs/style": "^0.4.0",
+    "@types/node": "^14.11.2",
+    "@types/ospec": "^4.0.2",
+    "esbuild": "^0.7.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "ospec": "^4.1.1",
+    "prettier": "^2.0.2",
+    "rimraf": "^3.0.0"
+  }
 }
