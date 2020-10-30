@@ -39,8 +39,7 @@ jobs:
       - name: run test config
         if: github.ref != 'refs/heads/master'
         run: |
-          git diff --name-only origin/master HEAD
-          echo ./node_modules/.bin/basemaps import -t pr-${{ github.event.number }}
+          git diff --name-only origin/master HEAD | node ./build/configure-imagery.js import -t pr-${{ github.event.number }}
         env:
           ALB_CERTIFICATE_ARN: ${{secrets.ALB_CERTIFICATE_ARN}}
           NODE_ENV: "dev"
