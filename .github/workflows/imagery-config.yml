@@ -26,11 +26,7 @@ jobs:
       - name: build
         run: yarn build
 
-      - name: test PR
-        run: |
-          echo event number is: ${{ github.event.number }}
-
-      - name: test configure
+      - name: aws configure
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_BASEMAPS_ACCESS_KEY }}
@@ -42,10 +38,18 @@ jobs:
       - name: run test config
         if: github.ref != 'refs/heads/master'
         run: |
-          ls ./build
           git diff --name-only origin/master HEAD | node ./build/configure.imagery.js import -t pr-${{ github.event.number }}
         env:
+          NODE_ENV: "production"
           ALB_CERTIFICATE_ARN: ${{secrets.ALB_CERTIFICATE_ARN}}
-          NODE_ENV: "dev"
-          API_KEY: ${{secrets.API_KEY_NON_PROD}}
+          LOG_ACCOUNT_ID: ${{secrets.LOG_ACCOUNT_ID}}
+
+      - name: run commit config
+        if: github.ref == 'refs/heads/master'
+        run: |
+          echo prod-commit pr-${{ github.event.number }}
+          git diff --name-only HEAD HEAD^1 | node ./build/configure.imagery.js import -t pr-${{ github.event.number }}
+        env:
+          NODE_ENV: "production"
+          ALB_CERTIFICATE_ARN: ${{secrets.ALB_CERTIFICATE_ARN}}
           LOG_ACCOUNT_ID: ${{secrets.LOG_ACCOUNT_ID}}
