@@ -4,6 +4,9 @@ on:
   pull_request:
     paths:
     - 'config/imagery/*.json'
+  push:
+    paths:
+    - '**'
 
 jobs:
   build:
@@ -35,20 +38,19 @@ jobs:
           mask-account-id: true
           role-to-assume: ${{ secrets.AWS_BASEMAPS_ROLE_NON_PROD }}
 
-      - name: run test config
-        if: github.ref != 'refs/heads/master'
+      - name: run prepare config
+        if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
         run: |
-          git diff --name-only origin/master HEAD | node ./build/configure.imagery.js import -t pr-${{ github.event.number }}
+          git diff --name-only origin/master HEAD | node ./build/configure.imagery.js import -t pr-${{ github.event.number }} --commit
         env:
           NODE_ENV: "production"
           ALB_CERTIFICATE_ARN: ${{secrets.ALB_CERTIFICATE_ARN}}
           LOG_ACCOUNT_ID: ${{secrets.LOG_ACCOUNT_ID}}
 
       - name: run commit config
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
-          echo prod-commit pr-${{ github.event.number }}
-          git diff --name-only HEAD HEAD^1 | node ./build/configure.imagery.js import -t pr-${{ github.event.number }}
+          git diff --name-only HEAD^1 HEAD | node ./build/configure.imagery.js import -t production --commit
         env:
           NODE_ENV: "production"
           ALB_CERTIFICATE_ARN: ${{secrets.ALB_CERTIFICATE_ARN}}

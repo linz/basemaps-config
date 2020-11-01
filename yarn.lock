@@ -23,38 +23,39 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@basemaps/cli@^4.16.0":
-  version "4.16.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/cli/-/cli-4.16.0.tgz#b2cf796cab07951113589587c990d275842288d4"
-  integrity sha512-XS8haOBE5m273hAc4ztNMLVuQyxrMUAXSVsfjek80EmJUjJ0nPe9+4byXi4mMphtWoS0LlTFILvgYH1x7VmvUA==
+"@basemaps/cli@^4.17.0":
+  version "4.17.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/cli/-/cli-4.17.0.tgz#0e9ceb91c0a539f23f0b8c87a03f369da5eedf45"
+  integrity sha512-xWAOwypByHd09x6a7JvvXRucBsCE99GxFtvcQ62Pnhwz3MXBr8Yr4Gf2Ek47a732t4QLCMC7pBm2VaOvBB7Tzg==
   dependencies:
-    "@basemaps/geo" "^4.16.0"
-    "@basemaps/shared" "^4.16.0"
+    "@basemaps/geo" "^4.17.0"
+    "@basemaps/shared" "^4.17.0"
     "@cogeotiff/core" "^2.2.0"
     "@cogeotiff/source-aws" "^2.2.0"
     "@cogeotiff/source-file" "^2.2.0"
     "@cogeotiff/source-url" "^2.2.0"
-    "@linzjs/geojson" "^4.16.0"
+    "@linzjs/geojson" "^4.17.0"
     "@rushstack/ts-command-line" "^4.3.13"
     ansi-colors "^4.1.1"
     p-limit "^3.0.1"
     pretty-json-log "^0.3.1"
+    zod "^1.10.1"
 
-"@basemaps/geo@^4.16.0":
-  version "4.16.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/geo/-/geo-4.16.0.tgz#2c04c9cabbc145bce5f77c37fa941e3eee852752"
-  integrity sha512-LkTFvpRhH5IiPp/5bQVgh8s00KfJZD4i5lCvXhkZ3DcPAnOxYw+pAgd5B0AD3SQw5oUcR8qgl3E6hehmnZ9aQw==
+"@basemaps/geo@^4.17.0":
+  version "4.17.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/geo/-/geo-4.17.0.tgz#6d796b395d3cfcb736fb8d41cad581360c689720"
+  integrity sha512-b9yTirhrFf2yl4+0Mz30yIJeQcFRe5H44l9PwJkdQg5uPUvYaljwhoD5ok8TjPuWNcbDtCHtUloxxi3uK1CH1g==
 
-"@basemaps/shared@^4.16.0":
-  version "4.16.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/shared/-/shared-4.16.0.tgz#8a27d5bce9fe8296cbc3641e151e2a4e7c61426b"
-  integrity sha512-lt6jPom9bWj1vRANj8Q1Ev0T6yUSHauy06g3PNtMuMP1cAvYcuRVkUT4dcJbusFIY4WEp/Ckb0lwNTjurkplBw==
+"@basemaps/shared@^4.17.0":
+  version "4.17.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/shared/-/shared-4.17.0.tgz#775109b1fdd57ef3d1724b033fb64b6ee6af422e"
+  integrity sha512-MIev5KCInJsE22IKvr8AbbliGuJj7PUKPTBLhPB7kLOf1Hke+eBpyAEbzz4AhC9kyggMse2eqn1tVq7id+8EsA==
   dependencies:
-    "@basemaps/geo" "^4.16.0"
-    "@basemaps/tiler" "^4.16.0"
-    "@linzjs/geojson" "^4.16.0"
+    "@basemaps/geo" "^4.17.0"
+    "@basemaps/tiler" "^4.17.0"
+    "@linzjs/geojson" "^4.17.0"
     "@linzjs/metrics" "^4.12.0"
-    "@linzjs/s3fs" "^4.16.0"
+    "@linzjs/s3fs" "^4.17.0"
     aws-sdk "^2.508.0"
     base-x "^3.0.7"
     pino "^6.2.1"
@@ -63,12 +64,12 @@
     source-map-support "^0.5.19"
     ulid "^2.3.0"
 
-"@basemaps/tiler@^4.16.0":
-  version "4.16.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/tiler/-/tiler-4.16.0.tgz#4cd3cc2f68ebd869aff325df1c18bb520da7eff4"
-  integrity sha512-esX8N6pop5Okykm2LPnIlJd7rAxIpGAmz5+3SX7HoTYhOpGxdrs2ypKEE0uu0Ntpz5BHLfUuZexspTuivUbNPg==
+"@basemaps/tiler@^4.17.0":
+  version "4.17.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/tiler/-/tiler-4.17.0.tgz#a0e79f914a2acd37a4fd72f181e918feca529ce9"
+  integrity sha512-fATkhYac2mBE1xbrbSZrllhTbX/ve3LIg75bvD7OUjQgvZncas3nwwj02POq2+33cY136SPPjabdnEc2/RLFgg==
   dependencies:
-    "@basemaps/geo" "^4.16.0"
+    "@basemaps/geo" "^4.17.0"
     "@cogeotiff/core" "^2.2.0"
     "@linzjs/metrics" "^4.12.0"
 
@@ -118,10 +119,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@linzjs/geojson@^4.16.0":
-  version "4.16.0"
-  resolved "https://registry.yarnpkg.com/@linzjs/geojson/-/geojson-4.16.0.tgz#73165ed264a4ff294c435ee7738bd57915ae1950"
-  integrity sha512-vYuUh7muLlsR2PIlF//n7QvHhBeQs4naFlyYyzT2VnrxtlKFmc+/4wEbWUqrooViopdtZmEIQE8L2HbGLpYpow==
+"@linzjs/geojson@^4.17.0":
+  version "4.17.0"
+  resolved "https://registry.yarnpkg.com/@linzjs/geojson/-/geojson-4.17.0.tgz#29040e5d5da725e15773c0c1307c3e3fac3e99dd"
+  integrity sha512-unv08I1IuDtSaEHVmtq4EYpRmx6Duqoyrqp7WO3W5V+tMY6JnwrC3kVibpTVM7gEl3Y6mQxGc05trhIkmHEJew==
   dependencies:
     "@types/geojson" "^7946.0.7"
     lineclip "^1.1.5"
@@ -132,10 +133,10 @@
   resolved "https://registry.yarnpkg.com/@linzjs/metrics/-/metrics-4.12.0.tgz#75677df2d86af72b63bc1284393cce1f87f97204"
   integrity sha512-4EWdcXG15YAjf2mwUuFxdPNMA/wjf3MUAfH/FPQPtwYKIkKhT4qanVm68CgBHthn5qWT/GZOct1DR350+/tmEg==
 
-"@linzjs/s3fs@^4.16.0":
-  version "4.16.0"
-  resolved "https://registry.yarnpkg.com/@linzjs/s3fs/-/s3fs-4.16.0.tgz#720dde23f8d73a62e4a6f396ce6dca2bb70f64e6"
-  integrity sha512-A/4edy1p1an1eUVJkLq0++z7A4ftOSwGFOOr6DTzhW/MHMEH8ahjYJnBMW9+VotmHlYXOS9luilbCTqb3G5eWg==
+"@linzjs/s3fs@^4.17.0":
+  version "4.17.0"
+  resolved "https://registry.yarnpkg.com/@linzjs/s3fs/-/s3fs-4.17.0.tgz#1631318a2cb14a78fd3d1354b4ab90c6cb9a7d63"
+  integrity sha512-wh2UIdCCRf6872+kbU2uT1AIO7L4sQ82LuCGxW6NXHNsMORWwE4HRVY6a0nB1HS0sWASS71EdZdZesY0y2IXdw==
 
 "@linzjs/style@^0.4.0":
   version "0.4.1"
@@ -171,10 +172,20 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
-"@rushstack/ts-command-line@4.7.5", "@rushstack/ts-command-line@^4.3.13":
+"@rushstack/ts-command-line@4.7.5":
   version "4.7.5"
   resolved "https://registry.yarnpkg.com/@rushstack/ts-command-line/-/ts-command-line-4.7.5.tgz#d07f90d8338fa23042d71fdae986c0afa552b9f4"
   integrity sha512-6i8EZ/1DWAfSLo2T4AwjwYH7qci958IQ36Yh65GbHyZn8H/IxooWFZNhL0mCa92kZVW5eDugdpUr3CPqG/py6A==
+  dependencies:
+    "@types/argparse" "1.0.38"
+    argparse "~1.0.9"
+    colors "~1.2.1"
+    string-argv "~0.3.1"
+
+"@rushstack/ts-command-line@^4.3.13":
+  version "4.7.6"
+  resolved "https://registry.yarnpkg.com/@rushstack/ts-command-line/-/ts-command-line-4.7.6.tgz#ce509855b507863ed5e2a9ced8451774b6bfd359"
+  integrity sha512-falJVNfpJtsL3gJaY77JXXycfzhzB9VkKhqEfjRWD69/f6ezMUorPR6Nc90MnIaWgePTcdTJPZibxOQrNpu1Uw==
   dependencies:
     "@types/argparse" "1.0.38"
     argparse "~1.0.9"
@@ -378,9 +389,9 @@ atomic-sleep@^1.0.0:
   integrity sha512-kNOjDqAh7px0XWNI+4QbzoiR/nTkHAWNud2uvnJquD1/x5a7EQZMJT0AczqK0Qn67oY/TTQ1LbUKajZpp3I9tQ==
 
 aws-sdk@^2.508.0, aws-sdk@^2.524.0:
-  version "2.782.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.782.0.tgz#84e22bf1bf370f702cb741b95a25356745b0a632"
-  integrity sha512-8aCZBQQoJ5dUWb0Ij8x7MwrKKuoHGF3g3EoDiRDJws/VdYSs995S0OTNX5/TwaR/ltdtBU0t+GGGTPPQFYZ1nA==
+  version "2.783.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.783.0.tgz#f6a2fb2d1af2e7c5a6ec2959436499ff5b6c705b"
+  integrity sha512-u3/ZvY/ag1hEkPpgBJxypWRGf8930prIDOWk221pgH0WhlRA9qp3IE8D0j/BKFei0giqlxbN/AB05RITp/XlwQ==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -842,9 +853,9 @@ ignore@^5.1.4:
   integrity sha512-BMpfD7PpiETpBl/A6S498BaIJ6Y/ABT93ETbby2fP00v4EbvPBXWEoaR1UBPKs3iR53pJY7EtZk5KACI57i1Uw==
 
 import-fresh@^3.0.0, import-fresh@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/import-fresh/-/import-fresh-3.2.1.tgz#633ff618506e793af5ac91bf48b72677e15cbe66"
-  integrity sha512-6e1q1cnWP2RXD9/keSkxHScg508CdXqXWgWBaETNhyuBFz+kUZlKboh+ISK+bU++DmbHimVBrOz/zzPe0sZ3sQ==
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/import-fresh/-/import-fresh-3.2.2.tgz#fc129c160c5d68235507f4331a6baad186bdbc3e"
+  integrity sha512-cTPNrlvJT6twpYy+YmKUKrTSjWFs3bjYjAhCwm+z4EOCubZxAuO+hHpRN64TqjEaYSHs7tJAE0w1CKMGmsG/lw==
   dependencies:
     parent-module "^1.0.0"
     resolve-from "^4.0.0"
@@ -1452,3 +1463,8 @@ xmlbuilder@~9.0.1:
   version "9.0.7"
   resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-9.0.7.tgz#132ee63d2ec5565c557e20f4c22df9aca686b10d"
   integrity sha1-Ey7mPS7FVlxVfiD0wi35rKaGsQ0=
+
+zod@^1.10.1:
+  version "1.11.10"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-1.11.10.tgz#dbc4e70e2d0622ce58f8162d76ea2606d821cf4a"
+  integrity sha512-wtoLthqFeFawiQWMVtjpL9DwggpXHNlygYlSitjTtZeagb04ODIECj5iYGu28+K3ht4lVmrBTfX6M7G9d1Eo6Q==

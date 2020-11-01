@@ -1,7 +1,7 @@
 {
   "name": "aerial",
   "projection": 3857,
-  "background": "dce9edff",
+  "background": "dce9edfe",
   "defaults": [
     {
       "nameContains": "_urban_",
@@ -12,7 +12,7 @@
       "priority": 2000, "minZoom": 13
     },
     {
-      "priority": 1000, "minZoom": 0, "maxZoom": 32
+      "priority": 1000, "minZoom": 0, "maxZoom": 31
     }
   ],
   "imagery": [
