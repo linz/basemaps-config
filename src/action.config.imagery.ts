@@ -1,28 +1,13 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import { LogConfig, TileMetadataTag } from '@basemaps/shared';
-import { CommandLineAction, CommandLineStringParameter } from '@rushstack/ts-command-line';
-// FIXME GJ import { defineTagParameter } from '@basemaps/cli/build/cli/basemaps/tileset.util';
-
-/**
- * FIXME import from tile.metadata.base.ts
- */
-export function parseMetadataTag(tagInput: string | null | undefined): any | null {
-    if (tagInput == null) return null;
-    switch (tagInput) {
-        case TileMetadataTag.Head:
-        case TileMetadataTag.Production:
-        case TileMetadataTag.Beta:
-            return tagInput;
-        default:
-            if (/^pr-[0-9]+$/.test(tagInput)) return tagInput;
-            return null;
-    }
-}
+import { LogConfig, parseMetadataTag } from '@basemaps/shared';
+import { updateConfig } from '@basemaps/cli';
+import { CommandLineAction, CommandLineFlagParameter, CommandLineStringParameter } from '@rushstack/ts-command-line';
 
 const imageryConfigFileRe = /^config\/imagery\/[^./]+.json$/;
 
 export class ConfigImageryImportAction extends CommandLineAction {
     private tag: CommandLineStringParameter;
+    private commit: CommandLineFlagParameter;
 
     public constructor() {
         super({
@@ -40,10 +25,16 @@ export class ConfigImageryImportAction extends CommandLineAction {
             description: `tag name  (options: ${['FIXME'].join(', ')} or pr-<pr_number>)`,
             required: true,
         });
+        this.commit = this.defineFlagParameter({
+            parameterLongName: '--commit',
+            description: 'Commit to database',
+            required: false,
+        });
     }
 
     protected async onExecute(): Promise<void> {
         const tagInput = this.tag.value!;
+        const isCommit = !!this.commit.value;
 
         const tag = parseMetadataTag(tagInput);
         if (tag == null) {
@@ -76,8 +67,8 @@ export class ConfigImageryImportAction extends CommandLineAction {
             .split(/\s+/)
             .filter((f) => imageryConfigFileRe.test(f));
 
-        for (const file of files) {
-            console.log(`DEBUG file`, file);
+        for (const filename of files) {
+            updateConfig(filename, tag, isCommit);
         }
     }
 }

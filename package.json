@@ -1,19 +1,20 @@
 {
   "name": "basemaps-config",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "description": "LINZ specific configuration and delployment of basemaps",
   "repository": "github:linz/basemaps-config",
   "license": "MIT",
   "dependencies": {
-    "@basemaps/cli": "^4.16.0",
-    "@basemaps/shared": "^4.16.0",
+    "@basemaps/cli": "^4.17.0",
+    "@basemaps/shared": "^4.17.0",
     "@rushstack/ts-command-line": "4.7.5",
     "pretty-json-log": "^0.3.1"
   },
   "scripts": {
     "lint": "eslint 'src/**/*.ts' --quiet --fix --report-unused-disable-directives",
     "clean": "tsc -b --clean && rimraf 'build'",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "build": "tsc --build tsconfig.json"
   },
   "devDependencies": {
@@ -22,6 +23,7 @@
     "@types/ospec": "^4.0.2",
     "@types/pino": "^6.3.3",
     "@types/sax": "^1.2.1",
+    "conventional-changelog-cli": "^2.1.0",
     "eslint": "^7.12.1",
     "eslint-plugin-prettier": "^3.1.4",
     "ospec": "^4.1.1",
