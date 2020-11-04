@@ -1,7 +1,7 @@
 {
   "name": "aerial",
   "projection": 3857,
-  "background": "dce9edfe",
+  "background": "dce9edff",
   "defaults": [
     {
       "nameContains": "_urban_",
