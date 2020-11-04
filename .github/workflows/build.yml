@@ -69,10 +69,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: (Release) tag version
+      - name: (Release) version
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-        run: |
-          yarn version --patch
-          CURRENT_VERSION=$(node -p "require('./package.json').version")
-          git tag v${CURRENT_VERSION}
-          git push --tags
+        run: yarn version --patch
