@@ -62,10 +62,3 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-      - name: (Release) version
-        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-        run: |
-          yarn version --patch
-          git push
-          git push --tags
