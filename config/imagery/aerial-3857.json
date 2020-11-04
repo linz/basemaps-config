@@ -23,7 +23,7 @@
       "id": "01EDMTQXYCBANNYTKD4VK6C2GK", "name": "bay-of-plenty_rural_2011-2012_0-25m_RGBA"},
     {
       "id": "01ED81P0KGVWJP2XHDKJJRYNQM", "name": "bay-of-plenty_rural_2015-17_0-25m",
-      "priority": 2001
+      "priority": 2000
     },
     {"id": "01ED81Q2AS5K0RPNRCRQ33YAYW", "name": "bay-of-plenty_rural_2016-17_0-3m"},
     {"id": "01ED81R5BX4EB3W7TB3Z8ZE89S", "name": "bay-of-plenty_rural_2019_0-3m"},
@@ -51,6 +51,7 @@
     },
     {"id": "01ED8247MCZAFRW0KGWYKNWDQ6", "name": "christchurch_urban_2015-2016_0-075m_RGBA"},
     {"id": "01ED825VGXM6K9YX52DP7SMXQE", "name": "christchurch_urban_2018_0-075m"},
+    {"id": "01EMFHZ28DMWDCJ7VEE15HTYPZ", "name": "christchurch_urban_2018-2019_0-075m_RGB"},
     {"id": "01ED8265AEHZM2DHB43GBFE5BG", "name": "dunedin_rural_2013_0-40m_RGBA"},
     {"id": "01ED826QV4Q60TNS6VM8HE36BV", "name": "dunedin_urban_2018-19_0-1m"},
     {
