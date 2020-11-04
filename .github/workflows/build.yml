@@ -42,8 +42,6 @@ jobs:
           ls config/imagery/*.json | node ./build/configure.imagery.js import -t production
         env:
           NODE_ENV: "production"
-          ALB_CERTIFICATE_ARN: ${{secrets.ALB_CERTIFICATE_ARN}}
-          LOG_ACCOUNT_ID: ${{secrets.LOG_ACCOUNT_ID}}
 
       - name: (Imagery Config) creat PR tag
         if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
@@ -51,8 +49,6 @@ jobs:
           git diff --name-only $(git merge-base origin/master HEAD) HEAD | node ./build/configure.imagery.js import -t pr-${{ github.event.number }} --commit
         env:
           NODE_ENV: "production"
-          ALB_CERTIFICATE_ARN: ${{secrets.ALB_CERTIFICATE_ARN}}
-          LOG_ACCOUNT_ID: ${{secrets.LOG_ACCOUNT_ID}}
 
       - name: (Imagery Config) creat Production tag
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
@@ -60,8 +56,6 @@ jobs:
           ls config/imagery/*.json  | node ./build/configure.imagery.js import -t production --commit
         env:
           NODE_ENV: "production"
-          ALB_CERTIFICATE_ARN: ${{secrets.ALB_CERTIFICATE_ARN}}
-          LOG_ACCOUNT_ID: ${{secrets.LOG_ACCOUNT_ID}}
 
       - name: (Release) Setup git config
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
