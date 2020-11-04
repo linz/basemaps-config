@@ -172,17 +172,7 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
-"@rushstack/ts-command-line@4.7.5":
-  version "4.7.5"
-  resolved "https://registry.yarnpkg.com/@rushstack/ts-command-line/-/ts-command-line-4.7.5.tgz#d07f90d8338fa23042d71fdae986c0afa552b9f4"
-  integrity sha512-6i8EZ/1DWAfSLo2T4AwjwYH7qci958IQ36Yh65GbHyZn8H/IxooWFZNhL0mCa92kZVW5eDugdpUr3CPqG/py6A==
-  dependencies:
-    "@types/argparse" "1.0.38"
-    argparse "~1.0.9"
-    colors "~1.2.1"
-    string-argv "~0.3.1"
-
-"@rushstack/ts-command-line@^4.3.13":
+"@rushstack/ts-command-line@4.7.6", "@rushstack/ts-command-line@^4.3.13":
   version "4.7.6"
   resolved "https://registry.yarnpkg.com/@rushstack/ts-command-line/-/ts-command-line-4.7.6.tgz#ce509855b507863ed5e2a9ced8451774b6bfd359"
   integrity sha512-falJVNfpJtsL3gJaY77JXXycfzhzB9VkKhqEfjRWD69/f6ezMUorPR6Nc90MnIaWgePTcdTJPZibxOQrNpu1Uw==

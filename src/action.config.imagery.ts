@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import { LogConfig, parseMetadataTag } from '@basemaps/shared';
 import { updateConfig } from '@basemaps/cli';
+import { defineTagParameter } from '@basemaps/cli/build/cli/basemaps/tileset.util';
+import { LogConfig, parseMetadataTag } from '@basemaps/shared';
 import { CommandLineAction, CommandLineFlagParameter, CommandLineStringParameter } from '@rushstack/ts-command-line';
 
 const imageryConfigFileRe = /^config\/imagery\/[^./]+.json$/;
@@ -18,13 +19,7 @@ export class ConfigImageryImportAction extends CommandLineAction {
     }
 
     protected onDefineParameters(): void {
-        this.tag = this.defineStringParameter({
-            argumentName: 'TAG',
-            parameterLongName: '--tag',
-            parameterShortName: '-t',
-            description: `tag name  (options: ${['FIXME'].join(', ')} or pr-<pr_number>)`,
-            required: true,
-        });
+        defineTagParameter(this);
         this.commit = this.defineFlagParameter({
             parameterLongName: '--commit',
             description: 'Commit to database',
@@ -67,8 +62,11 @@ export class ConfigImageryImportAction extends CommandLineAction {
             .split(/\s+/)
             .filter((f) => imageryConfigFileRe.test(f));
 
-        for (const filename of files) {
-            updateConfig(filename, tag, isCommit);
+        const logger = LogConfig.get();
+
+        for (const configFile of files) {
+            LogConfig.set(logger.child({ configFile }));
+            await updateConfig(configFile, tag, isCommit);
         }
     }
 }

@@ -1,10 +1,8 @@
-import { BaseCommandLine } from '@basemaps/cli/build/cli/base.cli';
 import { LogConfig, LoggerFatalError } from '@basemaps/shared';
 import { CommandLineParser } from '@rushstack/ts-command-line';
 import { PrettyTransform } from 'pretty-json-log';
 import { ConfigImageryImportAction } from './action.config.imagery';
 
-// FIXME GJ Replace CommandLineParser with BaseCommandLine
 export class ConfigureImageryCommandLine extends CommandLineParser {
     constructor() {
         super({
@@ -23,9 +21,6 @@ export class ConfigureImageryCommandLine extends CommandLineParser {
         if (process.stdout.isTTY) {
             LogConfig.setOutputStream(PrettyTransform.stream());
         }
-
-        const logger = LogConfig.get();
-        LogConfig.set(logger);
 
         return super.onExecute();
     }
