@@ -3,7 +3,7 @@
   "projection": 2193,
   "title": "NZ Topo Map",
   "description": "The Topo map provides topographic mapping for the New Zealand mainland and offshore islands at 1:50,000 scale.",
-  "background": "dce9edff",
+  "background": "cee5f2ff",
   "defaults": [
     {"priority": 1000, "minZoom": 0, "maxZoom": 17}
    ],
