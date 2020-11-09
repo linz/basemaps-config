@@ -11,12 +11,12 @@
     {
       "id": "01ENS2R7PB3K2HPW1032ZXJKXD",
       "name": "topo250_2020_21.17m",
-      "maxZoom": 9
+      "maxZoom": 8
     },
     {
       "id": "01EFJ7EHQRJJ70XWBEJXGEAW6W",
       "name": "topo50-gridless_2020_4.23m",
-      "minZoom": 10
+      "minZoom": 9
     }
   ]
 }
