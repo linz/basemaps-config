@@ -1,0 +1,22 @@
+{
+  "name": "health",
+  "projection": 3857,
+  "background": "dce9edff",
+  "defaults": [],
+  "imagery": [
+    {
+      "id": "01EDMTM3P563P06TWYQAZRA9F6",
+      "name": "gebco_2020_305-75m",
+      "priority": 0,
+      "minZoom": 0,
+      "maxZoom": 15
+    },
+    {
+      "id": "01ED82TFB1ZE9C75CH5VY3Z92B",
+      "name": "new_zealand_sentinel_2019-2020_10m",
+      "priority": 1000,
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
