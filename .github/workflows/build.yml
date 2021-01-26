@@ -27,6 +27,9 @@ jobs:
       - name: Build
         run: yarn build
 
+      - name: Build
+        run: yarn lint:ci
+
       - name: AWS Configure
         uses: aws-actions/configure-aws-credentials@v1
         with:
