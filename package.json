@@ -13,6 +13,7 @@
   },
   "scripts": {
     "lint": "eslint 'src/**/*.ts' --quiet --fix --report-unused-disable-directives",
+    "lint:ci": "eslint 'src/**/*.ts'",
     "clean": "tsc -b --clean && rimraf 'build'",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "build": "tsc --build tsconfig.json"
