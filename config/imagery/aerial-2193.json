@@ -51,7 +51,7 @@
     {"id": "01EDA3HDWP06KMW74MRTZGA8FW", "name": "dunedin_rural_2013_0-40m_RGBA"},
     {"id": "01EDA3J3JQGR5DX5XY8T7PANHV", "name": "dunedin_urban_2018-19_0-1m"},
     {
-      "id": "01EDD8XJZ5TPY1SKPC26B1CQNW", "name": "gebco_2020_305-75m",
+      "id": "01F1BFJN8R8P7BXN3XTHC5MT5G", "name": "gebco_2020_305-75m",
       "priority": 0, "maxZoom": 10
     },
     {"id": "01EDMTX2V21CHFNB517ZC9KC6E", "name": "gisborne_rural_2012-2013_0-40m_RGBA"},
