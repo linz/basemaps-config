@@ -1034,7 +1034,9 @@
     "openmaptiles:mapbox:source:url": "mapbox://openmaptiles.4qljc88t",
     "mapbox:type": "template",
     "openmaptiles:mapbox:owner": "openmaptiles",
-    "mapbox:autocomposite": false
+    "mapbox:autocomposite": false,
+    "source": "https://github.com/openmaptiles/maptiler-basic-gl-style",
+    "license": "https://github.com/openmaptiles/maptiler-basic-gl-style/blob/master/LICENSE.md"
   },
   "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key={key}",
   "sprite": ""
