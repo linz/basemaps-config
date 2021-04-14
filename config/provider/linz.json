@@ -1,0 +1,25 @@
+{
+  "name": "linz",
+  "serviceIdentification": {
+    "accessConstraints": "By using LINZ Basemaps, users are agreeing to comply with the service Terms of Use. Data used in the basemap is subject to the terms of Creative Commons International 4.0 licence.",
+    "description": "National map tile service provided by Land Information New Zealand",
+    "fees": "There are no fees associated with access via the web interface or API.",
+    "title": "LINZ Basemaps Service"
+  },
+  "serviceProvider": {
+    "contact": {
+      "address": {
+        "city": "Wellington",
+        "country": "New Zealand",
+        "deliveryPoint": "Land Information New Zealand",
+        "email": "basemaps@linz.govt.nz",
+        "postalCode": "6145"
+      },
+      "individualName": "LINZ Customer Support",
+      "phone": "+64 4 4600110",
+      "position": "Customer Support"
+    },
+    "name": "Land Information New Zealand",
+    "site": "http://www.linz.govt.nz"
+  }
+}
