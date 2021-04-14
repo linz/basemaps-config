@@ -1,0 +1,9 @@
+{
+  "type": "raster",
+  "name": "health",
+  "background": "dce9edff",
+  "imagery": [
+    { "2193": "01EDD8XJZ5TPY1SKPC26B1CQNW", "3857": "01EDMTM3P563P06TWYQAZRA9F6", "name": "gebco_2020_305-75m", "maxZoom": 15 },
+    { "2193": "01EDA44EHMPHG9411631RQWMEE", "3857": "01ED82TFB1ZE9C75CH5VY3Z92B", "name": "new_zealand_sentinel_2019-2020_10m" }
+  ]
+}
