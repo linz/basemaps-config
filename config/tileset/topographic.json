@@ -1,0 +1,7 @@
+{
+  "type": "vector",
+  "name": "topographic",
+  "layers": [
+      {"3857": "s3://basemaps-cog-test/2021-04-08-covt/2021-04-08.tar", "name": "topographic"}
+  ]
+}
