@@ -2,7 +2,7 @@
   "type": "raster",
   "name": "aerial",
   "background": "dce9edff",
-  "imagery": [
+  "layers": [
     { "2193": "01F1BFJN8R8P7BXN3XTHC5MT5G", "3857": "01EDMTM3P563P06TWYQAZRA9F6", "name": "gebco_2020_305-75m", "maxZoom": 15 },
     { "2193": "01ED88T9RVGXKGCK18MYDD2KTE", "3857": "01ED849PJ44FA7S612QAXN9P11", "name": "chatham-islands_digital-globe_2014-2019_0-5m", "maxZoom": 12 },
     { "2193": "01EDA44EHMPHG9411631RQWMEE", "3857": "01ED82TFB1ZE9C75CH5VY3Z92B", "name": "new_zealand_sentinel_2019-2020_10m" },
