@@ -37,12 +37,9 @@ const zProviderConfig = z.object({
   serviceProvider: zServiceProvider,
 });
 
-/**
- *  The Configuration for all the imagery in a TileSet
- */
 export type ProviderConfig = z.infer<typeof zProviderConfig>;
 
-export function assertTileSetConfig(json: unknown): asserts json is ProviderConfig {
+export function assertProviderConfig(json: unknown): asserts json is ProviderConfig {
   zProviderConfig.parse(json);
 }
 
@@ -52,12 +49,12 @@ export class ProviderUpdater {
   isCommit = false;
   logger: LogType;
   /**
-   * Class to apply an TileSetConfig source to the tile metadata db
-   * @param config a string or TileSetConfig to use
+   * Class to apply an Provider source to the tile metadata db
+   * @param config a string or Provider to use
    */
   constructor(config: unknown, tag: string, isCommit: boolean, logger: LogType) {
     if (typeof config === 'string') config = JSON.parse(config);
-    assertTileSetConfig(config);
+    assertProviderConfig(config);
     this.config = config;
     this.isCommit = isCommit;
     this.logger = logger;
@@ -72,21 +69,21 @@ export class ProviderUpdater {
    * Reconcile the differences between the config and the tile metadata DB and update if changed.
    */
   async reconcile(): Promise<void> {
-    const tileSetId = Config.Provider.id(this.config.name);
-    const tsData = await Config.Provider.get(tileSetId);
+    const providerId = Config.Provider.id(this.config.name);
+    const pvData = await Config.Provider.get(providerId);
 
     // initialize if not exist
-    if (tsData == null) this.import(tsData);
+    if (pvData == null) this.import(pvData);
 
     // Update if different
-    if (JSON.stringify(tsData) !== JSON.stringify(this.config)) this.import(tsData);
+    if (JSON.stringify(pvData) !== JSON.stringify(this.config)) this.import(pvData);
   }
 
   /**
-   * Prepare ConfigTileSet and import
+   * Prepare ConfigProvider and import
    * @param isCommit if true apply the differences to bring the DB in to line with the config file
    */
-  async import(tsData: ConfigProvider | null): Promise<void> {
+  async import(pvData: ConfigProvider | null): Promise<void> {
     const now = Date.now();
 
     const provider: ConfigProvider = {
@@ -94,16 +91,16 @@ export class ProviderUpdater {
       name: this.config.name,
       serviceIdentification: this.config.serviceIdentification,
       serviceProvider: this.config.serviceProvider,
-      createdAt: tsData ? tsData.createdAt : now,
+      createdAt: pvData ? pvData.createdAt : now,
       updatedAt: now,
       version: 1,
     };
-    this.logger.info({ id: this.id }, 'ImportTileSet');
+    this.logger.info({ id: this.id }, 'ImportProvider');
     if (this.isCommit) Config.Provider.put(provider);
   }
 }
 
-export async function importTileSet(tag: string, commit: boolean, logger: LogType): Promise<void> {
+export async function importProvider(tag: string, commit: boolean, logger: LogType): Promise<void> {
   const path = `config/provider`;
   const filenames = await fs.readdir(path);
   for (const filename of filenames) {

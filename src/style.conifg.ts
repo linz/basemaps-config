@@ -14,12 +14,9 @@ const zStyleJson = z.object({
   layers: z.array(z.unknown()),
 });
 
-/**
- *  The Configuration for all the imagery in a TileSet
- */
 export type StyleJsonConfig = z.infer<typeof zStyleJson>;
 
-export function assertTileSetConfig(json: unknown): asserts json is StyleJsonConfig {
+export function assertStyleConfig(json: unknown): asserts json is StyleJsonConfig {
   zStyleJson.parse(json);
 }
 
@@ -29,11 +26,11 @@ export class StyleUpdater {
   isCommit = false;
   logger: LogType;
   /**
-   * Class to apply an TileSetConfig source to the tile metadata db
-   * @param config a string or TileSetConfig to use
+   * Class to apply an StyleJsonConfig source to the tile metadata db
+   * @param config a string or StyleJsonConfig to use
    */
   constructor(config: unknown, tag: string, isCommit: boolean, logger: LogType) {
-    assertTileSetConfig(config);
+    assertStyleConfig(config);
     this.config = config;
     this.isCommit = isCommit;
     this.logger = logger;
@@ -59,7 +56,7 @@ export class StyleUpdater {
   }
 
   /**
-   * Prepare ConfigTileSet and import
+   * Prepare ConfigVectorStyle and import
    * @param isCommit if true apply the differences to bring the DB in to line with the config file
    */
   async import(stData: ConfigVectorStyle | null): Promise<void> {
@@ -72,7 +69,7 @@ export class StyleUpdater {
       createdAt: stData ? stData.createdAt : now,
       updatedAt: now,
     };
-    this.logger.info({ id: this.id }, 'ImportTileSet');
+    this.logger.info({ id: this.id }, 'ImportStyle');
     if (this.isCommit) Config.Style.put(style);
   }
 }

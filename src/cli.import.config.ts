@@ -1,5 +1,8 @@
 import { LogConfig } from '@basemaps/shared';
 import { Command, flags } from '@oclif/command';
+import { importImagery } from './imagery.config';
+import { importProvider } from './provider.config';
+import { importStyle } from './style.conifg';
 import { importTileSet } from './tileset.config';
 
 export class CommandImport extends Command {
@@ -19,6 +22,12 @@ export class CommandImport extends Command {
     const { flags } = this.parse(CommandImport);
 
     await importTileSet(flags.tag, flags.commit, logger);
+
+    await importStyle(flags.tag, flags.commit, logger);
+
+    await importProvider(flags.tag, flags.commit, logger);
+
+    await importImagery(flags.tag, flags.commit, logger);
 
     logger.info({ isDryRun: flags.commit !== true }, 'Done');
   }
