@@ -190,12 +190,7 @@
       "type": "line"
     },
     {
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["!in", "brunnel", "tunnel", "bridge"],
-        ["!=", "intermittent", 1]
-      ],
+      "filter": ["all", ["==", "$type", "LineString"], ["!in", "brunnel", "tunnel", "bridge"], ["!=", "intermittent", 1]],
       "layout": {
         "visibility": "visible"
       },
@@ -216,12 +211,7 @@
       "type": "line"
     },
     {
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["!in", "brunnel", "tunnel", "bridge"],
-        ["==", "intermittent", 1]
-      ],
+      "filter": ["all", ["==", "$type", "LineString"], ["!in", "brunnel", "tunnel", "bridge"], ["==", "intermittent", 1]],
       "layout": {
         "visibility": "visible"
       },
@@ -420,12 +410,7 @@
       "type": "line"
     },
     {
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["==", "brunnel", "tunnel"],
-        ["in", "class", "primary", "secondary", "tertiary", "trunk"]
-      ],
+      "filter": ["all", ["==", "$type", "LineString"], ["==", "brunnel", "tunnel"], ["in", "class", "primary", "secondary", "tertiary", "trunk"]],
       "layout": {
         "line-cap": "butt",
         "line-join": "miter"
@@ -706,12 +691,7 @@
       "type": "line"
     },
     {
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["==", "brunnel", "bridge"],
-        ["in", "class", "primary", "secondary", "tertiary", "trunk"]
-      ],
+      "filter": ["all", ["==", "$type", "LineString"], ["==", "brunnel", "bridge"], ["in", "class", "primary", "secondary", "tertiary", "trunk"]],
       "layout": {
         "line-cap": "butt",
         "line-join": "miter"
@@ -760,12 +740,7 @@
       "type": "line"
     },
     {
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["==", "brunnel", "bridge"],
-        ["in", "class", "primary", "secondary", "tertiary", "trunk"]
-      ],
+      "filter": ["all", ["==", "$type", "LineString"], ["==", "brunnel", "bridge"], ["in", "class", "primary", "secondary", "tertiary", "trunk"]],
       "layout": {
         "line-cap": "round",
         "line-join": "round"
