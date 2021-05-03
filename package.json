@@ -20,7 +20,7 @@
     "build": "tsc --build tsconfig.json"
   },
   "devDependencies": {
-    "@linzjs/style": "^2.0.0",
+    "@linzjs/style": "^2.1.0",
     "@types/node": "^14.11.2",
     "@types/ospec": "^4.0.2",
     "@types/pino": "^6.3.3",
