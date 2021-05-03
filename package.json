@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@linzjs/style": "^2.1.0",
-    "@types/node": "^14.11.2",
+    "@types/node": "^15.0.1",
     "@types/ospec": "^4.0.2",
     "@types/pino": "^6.3.3",
     "@types/sax": "^1.2.1",
