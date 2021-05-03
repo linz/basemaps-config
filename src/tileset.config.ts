@@ -1,6 +1,7 @@
 import * as z from 'zod';
 import { Config, LogType } from '@basemaps/shared';
 import { promises as fs } from 'fs';
+import { ConfigTileSet, TileSetType } from '@basemaps/config';
 
 /**
  * Parse a string as hex, return 0 on failure
@@ -67,8 +68,8 @@ const zImageryLayer = z
 
 const zLayerConfig = zImageryLayer.extend({
   name: z.string(),
-  [2193]: z.string().optional(),
-  [3857]: z.string().optional(),
+  2193: z.string().optional(),
+  3857: z.string().optional(),
 });
 
 const zTileSetConfig = z.object({
@@ -92,15 +93,18 @@ export function assertTileSetConfig(json: unknown): asserts json is TileSetConfi
 export class TileSetUpdater {
   config: TileSetConfig;
   id: string;
+  isCommit = false;
   logger: LogType;
   /**
    * Class to apply an TileSetConfig source to the tile metadata db
    * @param config a string or TileSetConfig to use
    */
-  constructor(config: unknown, tag: string, logger: LogType) {
+  constructor(config: unknown, tag: string, isCommit: boolean, logger: LogType) {
     if (typeof config === 'string') config = JSON.parse(config);
     assertTileSetConfig(config);
     this.config = config;
+    this.isCommit = isCommit;
+    this.logger = logger;
     if (tag === 'master') {
       this.id = Config.TileSet.id(this.config.name);
     } else {
@@ -110,26 +114,45 @@ export class TileSetUpdater {
 
   /**
    * Reconcile the differences between the config and the tile metadata DB and update if changed.
-   * @param isCommit if true apply the differences to bring the DB in to line with the config file
    */
-  async reconcile(): Promise<boolean> {
+  async reconcile(): Promise<void> {
     const tileSetId = Config.TileSet.id(this.config.name);
     const tsData = await Config.TileSet.get(tileSetId);
+
     // initialize if not exist
-    if (tsData == null) {
-      return true;
-    } else {
-    }
-    return false;
+    if (tsData == null) this.import(tsData);
+
+    // Update if different
+    if (JSON.stringify(tsData) !== JSON.stringify(this.config)) this.import(tsData);
+  }
+
+  /**
+   * Prepare ConfigTileSet and import
+   * @param isCommit if true apply the differences to bring the DB in to line with the config file
+   */
+  async import(tsData: ConfigTileSet | null): Promise<void> {
+    const now = Date.now();
+    let type = TileSetType.Raster;
+    if (this.config.type === TileSetType.Vector) type = TileSetType.Vector;
+    const tileset: ConfigTileSet = {
+      type,
+      id: this.id,
+      name: this.config.name,
+      background: parseRgba(this.config.background),
+      layers: this.config.layers,
+      createdAt: tsData ? tsData.createdAt : now,
+      updatedAt: now,
+    };
+    this.logger.info({ id: this.id }, 'ImportTileSet');
+    if (this.isCommit) Config.TileSet.put(tileset);
   }
 }
 
 export async function importTileSet(tag: string, commit: boolean, logger: LogType): Promise<void> {
-  const path = `config/tileset`;
+  const path = `./config/tileset`;
   const filenames = await fs.readdir(path);
   for (const filename of filenames) {
-    const updater = new TileSetUpdater((await fs.readFile(filename)).toString(), tag, logger);
-    const change = updater.reconcile();
-    if (change) logger.info({ file: filename }, 'ImportTileSet');
+    const updater = new TileSetUpdater((await fs.readFile(filename)).toString(), tag, commit, logger);
+    updater.reconcile();
   }
 }
