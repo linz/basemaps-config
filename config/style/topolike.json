@@ -567,12 +567,7 @@
       "minzoom": 12
     },
     {
-      "filter": [
-        "all",
-        ["==", "surface", "sealed"],
-        ["in", "lane_count", 2, 3, 4, 5, 6, 7],
-        ["!=", "class", "motorway"]
-      ],
+      "filter": ["all", ["==", "surface", "sealed"], ["in", "lane_count", 2, 3, 4, 5, 6, 7], ["!=", "class", "motorway"]],
       "layout": {
         "visibility": "visible",
         "line-cap": "butt",
