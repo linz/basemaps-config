@@ -27,8 +27,11 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Build
+      - name: Lint
         run: yarn lint:ci
+
+      - name: Format
+        run: yarn lint:config && git diff --exit-code
 
       # - name: AWS Configure
       #   uses: aws-actions/configure-aws-credentials@v1
