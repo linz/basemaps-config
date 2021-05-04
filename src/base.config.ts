@@ -1,6 +1,8 @@
 import { LogType } from '@basemaps/shared';
 import { diff } from 'deep-diff';
 
+export const ignoredProperties = ['id', 'createdAt', 'updatedAt'];
+
 export abstract class Updater<S, T> {
   config: S;
   tag: string;
@@ -44,8 +46,7 @@ export abstract class Updater<S, T> {
   }
 
   showDiff(oldData: T, newData: T): boolean {
-    const ignoredProperties = ['id', 'createdAt', 'updatedAt'];
-    const changes = diff(oldData, newData, function (_path: string[], key: string) {
+    const changes = diff(oldData, newData, (_path: string[], key: string) => {
       return ignoredProperties.indexOf(key) >= 0;
     });
     if (changes) return true;
