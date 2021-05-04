@@ -88,10 +88,6 @@ const zTileSetConfig = z.object({
 export type TileSetConfigSchema = z.infer<typeof zTileSetConfig>;
 
 export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> {
-  config: TileSetConfigSchema;
-  isCommit = false;
-  logger: LogType;
-
   /**
    * Class to apply an TileSetConfig source to the tile metadata db
    * @param config a string or TileSetConfig to use
@@ -105,15 +101,12 @@ export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> 
   }
 
   async loadOldData(): Promise<ConfigTileSet | null> {
-    const imageId = Config.TileSet.id(this.config.name);
-    const oldData = await Config.TileSet.get(imageId);
+    const id = Config.TileSet.id(this.config.name);
+    const oldData = await Config.TileSet.get(id);
     return oldData;
   }
 
-  /**
-   * Prepare ConfigTileSet and import
-   */
-  prepareNewData(tsData: ConfigTileSet | null): ConfigTileSet {
+  prepareNewData(oldData: ConfigTileSet | null): ConfigTileSet {
     const now = Date.now();
 
     // Get the type of tileset, Default Raster
@@ -132,7 +125,7 @@ export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> 
       name: this.config.name,
       background: parseRgba(this.config.background),
       layers: this.config.layers,
-      createdAt: tsData ? tsData.createdAt : now,
+      createdAt: oldData ? oldData.createdAt : now,
       updatedAt: now,
     };
     return tileset;

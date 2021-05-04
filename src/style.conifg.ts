@@ -2,6 +2,7 @@ import * as z from 'zod';
 import { Config, LogType } from '@basemaps/shared';
 import { promises as fs } from 'fs';
 import { ConfigVectorStyle, StyleJson } from '@basemaps/config';
+import { Updater } from './base.config';
 
 const zStyleJson = z.object({
   id: z.string(),
@@ -14,63 +15,54 @@ const zStyleJson = z.object({
   layers: z.array(z.unknown()),
 });
 
-export type StyleJsonConfig = z.infer<typeof zStyleJson>;
+export type StyleJsonConfigSchema = z.infer<typeof zStyleJson>;
 
-export function assertStyleConfig(json: unknown): asserts json is StyleJsonConfig {
-  zStyleJson.parse(json);
-}
-
-export class StyleUpdater {
-  config: StyleJsonConfig;
-  id: string;
-  isCommit = false;
-  logger: LogType;
+export class StyleUpdater extends Updater<StyleJsonConfigSchema, ConfigVectorStyle> {
   /**
    * Class to apply an StyleJsonConfig source to the tile metadata db
    * @param config a string or StyleJsonConfig to use
    */
   constructor(config: unknown, tag: string, isCommit: boolean, logger: LogType) {
-    assertStyleConfig(config);
-    this.config = config;
-    this.isCommit = isCommit;
-    this.logger = logger;
-    if (tag === 'master') {
-      this.id = Config.TileSet.id(this.config.name);
-    } else {
-      this.id = Config.TileSet.id(`${this.config.name}@${tag}`);
-    }
+    super(config, tag, isCommit, logger);
   }
 
-  /**
-   * Reconcile the differences between the config and the tile metadata DB and update if changed.
-   */
-  async reconcile(): Promise<void> {
-    const styleId = Config.Style.id(this.config.name);
-    const stData = await Config.Style.get(styleId);
+  assertConfig(json: unknown): asserts json is StyleJsonConfigSchema {
+    zStyleJson.parse(json);
+  }
 
-    // initialize if not exist
-    if (stData == null) this.import(stData);
+  async loadOldData(): Promise<ConfigVectorStyle | null> {
+    const id = Config.Style.id(this.config.name);
+    const oldData = await Config.Style.get(id);
+    return oldData;
+  }
 
-    // Update if different
-    if (JSON.stringify(stData) !== JSON.stringify(this.config)) this.import(stData);
+  prepareNewData(oldData: ConfigVectorStyle | null): ConfigVectorStyle {
+    const now = Date.now();
+
+    // Tagging the id.
+    let id = Config.Style.id(`${this.config.name}@${this.tag}`);
+    if (this.tag === 'master') {
+      id = Config.Style.id(this.config.name);
+    }
+
+    const style: ConfigVectorStyle = {
+      id,
+      name: this.config.name,
+      style: this.config as StyleJson,
+      createdAt: oldData ? oldData.createdAt : now,
+      updatedAt: now,
+    };
+
+    return style;
   }
 
   /**
    * Prepare ConfigVectorStyle and import
    * @param isCommit if true apply the differences to bring the DB in to line with the config file
    */
-  async import(stData: ConfigVectorStyle | null): Promise<void> {
-    const now = Date.now();
-
-    const style: ConfigVectorStyle = {
-      id: this.id,
-      name: this.config.name,
-      style: this.config as StyleJson,
-      createdAt: stData ? stData.createdAt : now,
-      updatedAt: now,
-    };
-    this.logger.info({ id: this.id }, 'ImportStyle');
-    if (this.isCommit) Config.Style.put(style);
+  async import(data: ConfigVectorStyle): Promise<void> {
+    this.logger.info({ id: data.id }, 'ImportStyle');
+    if (this.isCommit) Config.Style.put(data);
   }
 }
 
