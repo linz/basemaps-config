@@ -1,6 +1,7 @@
 import * as z from 'zod';
 import { Config, LogType } from '@basemaps/shared';
 import { promises as fs } from 'fs';
+import { diff } from 'deep-diff';
 import { ConfigTileSet, TileSetType } from '@basemaps/config';
 
 /**
@@ -84,14 +85,14 @@ const zTileSetConfig = z.object({
 /**
  *  The Configuration for all the imagery in a TileSet
  */
-export type TileSetConfig = z.infer<typeof zTileSetConfig>;
+export type TileSetConfigSchema = z.infer<typeof zTileSetConfig>;
 
-export function assertTileSetConfig(json: unknown): asserts json is TileSetConfig {
+export function assertTileSetConfig(json: unknown): asserts json is TileSetConfigSchema {
   zTileSetConfig.parse(json);
 }
 
 export class TileSetUpdater {
-  config: TileSetConfig;
+  config: TileSetConfigSchema;
   id: string;
   isCommit = false;
   logger: LogType;
@@ -117,20 +118,24 @@ export class TileSetUpdater {
    */
   async reconcile(): Promise<void> {
     const tileSetId = Config.TileSet.id(this.config.name);
-    const tsData = await Config.TileSet.get(tileSetId);
+    const oldData = await Config.TileSet.get(tileSetId);
 
-    // initialize if not exist
-    if (tsData == null) this.import(tsData);
+    // Prepare record from config file
+    const newData = this.prepare(oldData);
 
-    // Update if different
-    if (JSON.stringify(tsData) !== JSON.stringify(this.config)) this.import(tsData);
+    if (oldData == null) {
+      // initialize if not exist
+      this.import(newData);
+    } else if (!this.showDiff(newData, oldData)) {
+      // Update if different
+      this.import(newData);
+    }
   }
 
   /**
    * Prepare ConfigTileSet and import
-   * @param isCommit if true apply the differences to bring the DB in to line with the config file
    */
-  async import(tsData: ConfigTileSet | null): Promise<void> {
+  prepare(tsData: ConfigTileSet | null): ConfigTileSet {
     const now = Date.now();
     let type = TileSetType.Raster;
     if (this.config.type === TileSetType.Vector) type = TileSetType.Vector;
@@ -143,8 +148,24 @@ export class TileSetUpdater {
       createdAt: tsData ? tsData.createdAt : now,
       updatedAt: now,
     };
+    return tileset;
+  }
+
+  showDiff(oldData: ConfigTileSet, newData: ConfigTileSet): boolean {
+    const ignoredProperties = ['createdAt', 'updatedAt'];
+    const changes = diff(oldData, newData, function (_path: string[], key: string) {
+      return ignoredProperties.indexOf(key) >= 0;
+    });
+    if (changes) return true;
+    return false;
+  }
+
+  /**
+   * Prepare ConfigTileSet and import
+   */
+  async import(data: ConfigTileSet): Promise<void> {
     this.logger.info({ id: this.id }, 'ImportTileSet');
-    if (this.isCommit) Config.TileSet.put(tileset);
+    if (this.isCommit) Config.TileSet.put(data);
   }
 }
 
