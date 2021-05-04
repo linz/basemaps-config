@@ -1,8 +1,8 @@
 import * as z from 'zod';
 import { Config, LogType } from '@basemaps/shared';
 import { promises as fs } from 'fs';
-import { diff } from 'deep-diff';
 import { ConfigTileSet, TileSetType } from '@basemaps/config';
+import { Updater } from './base.config';
 
 /**
  * Parse a string as hex, return 0 on failure
@@ -87,61 +87,48 @@ const zTileSetConfig = z.object({
  */
 export type TileSetConfigSchema = z.infer<typeof zTileSetConfig>;
 
-export function assertTileSetConfig(json: unknown): asserts json is TileSetConfigSchema {
-  zTileSetConfig.parse(json);
-}
-
-export class TileSetUpdater {
+export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> {
   config: TileSetConfigSchema;
-  id: string;
   isCommit = false;
   logger: LogType;
+
   /**
    * Class to apply an TileSetConfig source to the tile metadata db
    * @param config a string or TileSetConfig to use
    */
   constructor(config: unknown, tag: string, isCommit: boolean, logger: LogType) {
-    if (typeof config === 'string') config = JSON.parse(config);
-    assertTileSetConfig(config);
-    this.config = config;
-    this.isCommit = isCommit;
-    this.logger = logger;
-    if (tag === 'master') {
-      this.id = Config.TileSet.id(this.config.name);
-    } else {
-      this.id = Config.TileSet.id(`${this.config.name}@${tag}`);
-    }
+    super(config, tag, isCommit, logger);
   }
 
-  /**
-   * Reconcile the differences between the config and the tile metadata DB and update if changed.
-   */
-  async reconcile(): Promise<void> {
-    const tileSetId = Config.TileSet.id(this.config.name);
-    const oldData = await Config.TileSet.get(tileSetId);
+  assertConfig(json: unknown): asserts json is TileSetConfigSchema {
+    zTileSetConfig.parse(json);
+  }
 
-    // Prepare record from config file
-    const newData = this.prepare(oldData);
-
-    if (oldData == null) {
-      // initialize if not exist
-      this.import(newData);
-    } else if (!this.showDiff(newData, oldData)) {
-      // Update if different
-      this.import(newData);
-    }
+  async loadOldData(): Promise<ConfigTileSet | null> {
+    const imageId = Config.TileSet.id(this.config.name);
+    const oldData = await Config.TileSet.get(imageId);
+    return oldData;
   }
 
   /**
    * Prepare ConfigTileSet and import
    */
-  prepare(tsData: ConfigTileSet | null): ConfigTileSet {
+  prepareNewData(tsData: ConfigTileSet | null): ConfigTileSet {
     const now = Date.now();
+
+    // Get the type of tileset, Default Raster
     let type = TileSetType.Raster;
     if (this.config.type === TileSetType.Vector) type = TileSetType.Vector;
+
+    // Tagging the id.
+    let id = Config.TileSet.id(`${this.config.name}@${this.tag}`);
+    if (this.tag === 'master') {
+      id = Config.TileSet.id(this.config.name);
+    }
+
     const tileset: ConfigTileSet = {
       type,
-      id: this.id,
+      id,
       name: this.config.name,
       background: parseRgba(this.config.background),
       layers: this.config.layers,
@@ -151,20 +138,11 @@ export class TileSetUpdater {
     return tileset;
   }
 
-  showDiff(oldData: ConfigTileSet, newData: ConfigTileSet): boolean {
-    const ignoredProperties = ['createdAt', 'updatedAt'];
-    const changes = diff(oldData, newData, function (_path: string[], key: string) {
-      return ignoredProperties.indexOf(key) >= 0;
-    });
-    if (changes) return true;
-    return false;
-  }
-
   /**
    * Prepare ConfigTileSet and import
    */
   async import(data: ConfigTileSet): Promise<void> {
-    this.logger.info({ id: this.id }, 'ImportTileSet');
+    this.logger.info({ id: data.id }, 'ImportTileSet');
     if (this.isCommit) Config.TileSet.put(data);
   }
 }
