@@ -31,5 +31,9 @@
     "conventional-changelog-cli": "^2.1.0",
     "ospec": "^4.1.1",
     "rimraf": "^3.0.0"
-  }
+  },
+  "files": [
+    "build",
+    "bin"
+  ]
 }

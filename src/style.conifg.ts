@@ -22,8 +22,8 @@ export class StyleUpdater extends Updater<StyleJsonConfigSchema, ConfigVectorSty
    * Class to apply an StyleJsonConfig source to the tile metadata db
    * @param config a string or StyleJsonConfig to use
    */
-  constructor(config: unknown, tag: string, isCommit: boolean, logger: LogType) {
-    super(config, tag, isCommit, logger);
+  constructor(filename: string, config: unknown, tag: string, isCommit: boolean, logger: LogType) {
+    super(filename, config, tag, isCommit, logger);
   }
 
   assertConfig(json: unknown): asserts json is StyleJsonConfigSchema {
@@ -70,7 +70,8 @@ export async function importStyle(tag: string, commit: boolean, logger: LogType)
   const path = `./config/style`;
   const filenames = await fs.readdir(path);
   for (const filename of filenames) {
-    const updater = new StyleUpdater((await fs.readFile(filename)).toString(), tag, commit, logger);
+    const file = `${path}/${filename}`;
+    const updater = new StyleUpdater(filename, (await fs.readFile(file)).toString(), tag, commit, logger);
     updater.reconcile();
   }
 }

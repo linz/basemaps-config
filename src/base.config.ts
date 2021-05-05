@@ -1,23 +1,26 @@
 import { LogType } from '@basemaps/shared';
-import { diff } from 'deep-diff';
+import { diff, Diff } from 'deep-diff';
+import * as c from 'ansi-colors';
 
 export const ignoredProperties = ['id', 'createdAt', 'updatedAt'];
 
 export abstract class Updater<S, T> {
   config: S;
+  filename: string;
   tag: string;
-  isCommit = false;
+  isCommit: boolean;
   logger: LogType;
   /**
    * Class to apply an TileSetConfig source to the tile metadata db
    * @param config a string or TileSetConfig to use
    */
-  constructor(config: unknown, tag: string, isCommit: boolean, logger: LogType) {
+  constructor(filename: string, config: unknown, tag: string, isCommit: boolean, logger: LogType) {
+    this.filename = filename;
     if (typeof config === 'string') config = JSON.parse(config);
     this.assertConfig(config);
     this.config = config;
     this.tag = tag;
-    this.isCommit = isCommit;
+    this.isCommit = isCommit ? isCommit : false;
     this.logger = logger;
   }
 
@@ -39,17 +42,42 @@ export abstract class Updater<S, T> {
     if (oldData == null) {
       // initialize if not exist
       this.import(newData);
-    } else if (!this.showDiff(newData, oldData)) {
+    } else if (this.showDiff(oldData, newData)) {
       // Update if different
       this.import(newData);
     }
+  }
+
+  printDiff(changes: Diff<T, T>[]): string {
+    let output = '';
+    for (const change of changes.reverse()) {
+      if (change.kind === 'E') {
+        if (change.path) output += change.path.join();
+        output += c.green('\t+' + change.rhs);
+        output += c.red('\t-' + change.lhs) + '\n';
+      } else if (change.kind === 'N') {
+        if (change.path) output += change.path.join();
+        output += c.green('\t+' + change.rhs) + '\n';
+      } else if (change.kind === 'D') {
+        if (change.path) output += change.path.join();
+        output += c.red('\t-' + change.lhs) + '\n';
+      } else if (change.kind === 'A') {
+        this.printDiff([change.item]);
+      }
+    }
+    return output;
   }
 
   showDiff(oldData: T, newData: T): boolean {
     const changes = diff(oldData, newData, (_path: string[], key: string) => {
       return ignoredProperties.indexOf(key) >= 0;
     });
-    if (changes) return true;
+    if (changes) {
+      this.logger.info({ filename: this.filename }, 'Changes');
+      const output = this.printDiff(changes);
+      console.log(output);
+      return true;
+    }
     return false;
   }
 }

@@ -34,8 +34,8 @@ export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> 
    * Class to apply an ImageryConfig source to the tile metadata db
    * @param config a string or ImageryConfig to use
    */
-  constructor(config: unknown, tag: string, isCommit: boolean, logger: LogType) {
-    super(config, tag, isCommit, logger);
+  constructor(filename: string, config: unknown, tag: string, isCommit: boolean, logger: LogType) {
+    super(filename, config, tag, isCommit, logger);
   }
 
   assertConfig(json: unknown): asserts json is ConfigImagerySchema {
@@ -43,8 +43,7 @@ export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> 
   }
 
   async loadOldData(): Promise<ConfigImagery | null> {
-    const id = Config.Imagery.id(this.config.name);
-    const oldData = await Config.Imagery.get(id);
+    const oldData = await Config.Imagery.get(this.config.id);
     return oldData;
   }
 
@@ -52,9 +51,9 @@ export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> 
     const now = Date.now();
 
     // Tagging the id.
-    let id = Config.Imagery.id(`${this.config.name}@${this.tag}`);
+    let id = `${this.config.id}@${this.tag}`;
     if (this.tag === 'master') {
-      id = Config.Imagery.id(this.config.name);
+      id = this.config.id;
     }
 
     const projection = Epsg.parse(this.config.projection.toString());
@@ -71,7 +70,6 @@ export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> 
       files: this.config.files,
       createdAt: oldData ? oldData.createdAt : now,
       updatedAt: now,
-      v: 1,
     };
     return imagery;
   }
@@ -86,7 +84,8 @@ export async function importImagery(tag: string, commit: boolean, logger: LogTyp
   const path = `config/imagery`;
   const filenames = await fs.readdir(path);
   for (const filename of filenames) {
-    const updater = new ImageryUpdater((await fs.readFile(filename)).toString(), tag, commit, logger);
+    const file = `${path}/${filename}`;
+    const updater = new ImageryUpdater(filename, (await fs.readFile(file)).toString(), tag, commit, logger);
     updater.reconcile();
   }
 }

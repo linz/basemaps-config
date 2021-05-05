@@ -45,8 +45,8 @@ export class ProviderUpdater extends Updater<ProviderConfigSchema, ConfigProvide
    * Class to apply an Provider source to the tile metadata db
    * @param config a string or Provider to use
    */
-  constructor(config: unknown, tag: string, isCommit: boolean, logger: LogType) {
-    super(config, tag, isCommit, logger);
+  constructor(filename: string, config: unknown, tag: string, isCommit: boolean, logger: LogType) {
+    super(filename, config, tag, isCommit, logger);
   }
 
   assertConfig(json: unknown): asserts json is ProviderConfigSchema {
@@ -91,7 +91,8 @@ export async function importProvider(tag: string, commit: boolean, logger: LogTy
   const path = `config/provider`;
   const filenames = await fs.readdir(path);
   for (const filename of filenames) {
-    const updater = new ProviderUpdater((await fs.readFile(filename)).toString(), tag, commit, logger);
+    const file = `${path}/${filename}`;
+    const updater = new ProviderUpdater(filename, (await fs.readFile(file)).toString(), tag, commit, logger);
     updater.reconcile();
   }
 }

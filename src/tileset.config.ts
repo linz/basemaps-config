@@ -3,6 +3,8 @@ import { Config, LogType } from '@basemaps/shared';
 import { promises as fs } from 'fs';
 import { ConfigTileSet, TileSetType } from '@basemaps/config';
 import { Updater } from './base.config';
+import { DiffEdit } from 'deep-diff';
+import * as c from 'ansi-colors';
 
 /**
  * Parse a string as hex, return 0 on failure
@@ -78,7 +80,7 @@ const zTileSetConfig = z.object({
   name: z.string(),
   title: z.string().optional(),
   description: z.string().optional(),
-  background: zBackground,
+  background: zBackground.optional(),
   layers: z.array(zLayerConfig),
 });
 
@@ -92,12 +94,13 @@ export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> 
    * Class to apply an TileSetConfig source to the tile metadata db
    * @param config a string or TileSetConfig to use
    */
-  constructor(config: unknown, tag: string, isCommit: boolean, logger: LogType) {
-    super(config, tag, isCommit, logger);
+  constructor(filename: string, config: unknown, tag: string, isCommit: boolean, logger: LogType) {
+    super(filename, config, tag, isCommit, logger);
   }
 
   assertConfig(json: unknown): asserts json is TileSetConfigSchema {
-    zTileSetConfig.parse(json);
+    const validate = zTileSetConfig.parse(json);
+    if (!validate) throw Error('Invalidate Type');
   }
 
   async loadOldData(): Promise<ConfigTileSet | null> {
@@ -113,22 +116,29 @@ export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> 
     let type = TileSetType.Raster;
     if (this.config.type === TileSetType.Vector) type = TileSetType.Vector;
 
+    // Prepare background if exists
+    const background = this.config.background ? parseRgba(this.config.background) : null;
+
     // Tagging the id.
     let id = Config.TileSet.id(`${this.config.name}@${this.tag}`);
     if (this.tag === 'master') {
       id = Config.TileSet.id(this.config.name);
     }
 
-    const tileset: ConfigTileSet = {
+    const tileSet: ConfigTileSet = {
       type,
       id,
       name: this.config.name,
-      background: parseRgba(this.config.background),
       layers: this.config.layers,
       createdAt: oldData ? oldData.createdAt : now,
       updatedAt: now,
     };
-    return tileset;
+
+    if (this.config.title) tileSet.title = this.config.title;
+    if (this.config.description) tileSet.description = this.config.description;
+    if (background) tileSet.background = background;
+
+    return tileSet;
   }
 
   /**
@@ -144,7 +154,8 @@ export async function importTileSet(tag: string, commit: boolean, logger: LogTyp
   const path = `./config/tileset`;
   const filenames = await fs.readdir(path);
   for (const filename of filenames) {
-    const updater = new TileSetUpdater((await fs.readFile(filename)).toString(), tag, commit, logger);
+    const file = `${path}/${filename}`;
+    const updater = new TileSetUpdater(filename, (await fs.readFile(file)).toString(), tag, commit, logger);
     updater.reconcile();
   }
 }
