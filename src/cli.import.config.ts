@@ -23,7 +23,7 @@ export class CommandImport extends Command {
 
     Promise.all;
     await importTileSet(flags.tag, flags.commit, logger);
-    // await importStyle(flags.tag, flags.commit, logger);
+    await importStyle(flags.tag, flags.commit, logger);
     await importProvider(flags.tag, flags.commit, logger);
     await importImagery(flags.tag, flags.commit, logger);
 

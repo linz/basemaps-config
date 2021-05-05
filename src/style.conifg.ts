@@ -5,7 +5,6 @@ import { ConfigVectorStyle, StyleJson } from '@basemaps/config';
 import { Updater } from './base.config';
 
 const zStyleJson = z.object({
-  id: z.string(),
   version: z.number(),
   name: z.string(),
   metadata: z.unknown().optional(),

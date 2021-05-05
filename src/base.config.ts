@@ -50,19 +50,25 @@ export abstract class Updater<S, T> {
 
   printDiff(changes: Diff<T, T>[]): string {
     let output = '';
-    for (const change of changes.reverse()) {
-      if (change.kind === 'E') {
+    let isArray = false;
+    for (const change of changes) {
+      if (change.kind === 'A') {
         if (change.path) output += change.path.join();
-        output += c.green('\t+' + change.rhs);
-        output += c.red('\t-' + change.lhs) + '\n';
-      } else if (change.kind === 'N') {
-        if (change.path) output += change.path.join();
-        output += c.green('\t+' + change.rhs) + '\n';
-      } else if (change.kind === 'D') {
-        if (change.path) output += change.path.join();
-        output += c.red('\t-' + change.lhs) + '\n';
-      } else if (change.kind === 'A') {
-        this.printDiff([change.item]);
+        output += this.printDiff([change.item]);
+        isArray = true; // Stop displaying the array changes for each line.
+      } else {
+        if (isArray) continue;
+        if (change.kind === 'E') {
+          if (change.path) output += change.path.join();
+          output += c.green('\t+' + JSON.stringify(change.rhs));
+          output += c.red('\t-' + JSON.stringify(change.lhs)) + '\n';
+        } else if (change.kind === 'N') {
+          if (change.path) output += change.path.join();
+          output += c.green('\t+' + JSON.stringify(change.rhs)) + '\n';
+        } else if (change.kind === 'D') {
+          if (change.path) output += change.path.join();
+          output += c.red('\t-' + JSON.stringify(change.lhs)) + '\n';
+        }
       }
     }
     return output;
