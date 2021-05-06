@@ -2,7 +2,7 @@ import * as z from 'zod';
 import { Config, LogType } from '@basemaps/shared';
 import { promises as fs } from 'fs';
 import { ConfigProvider } from '@basemaps/config';
-import { Updater } from './base.config';
+import { production, Updater } from './base.config';
 
 const zServiceIdentification = z.object({
   title: z.string(),
@@ -64,7 +64,7 @@ export class ProviderUpdater extends Updater<ProviderConfigSchema, ConfigProvide
 
     // Tagging the id.
     let id = Config.Provider.id(`${this.config.name}@${this.tag}`);
-    if (this.tag === 'master') {
+    if (this.tag === production) {
       id = Config.Provider.id(this.config.name);
     }
 

@@ -2,7 +2,7 @@ import * as z from 'zod';
 import { Config, LogType } from '@basemaps/shared';
 import { promises as fs } from 'fs';
 import { ConfigTileSet, TileSetType } from '@basemaps/config';
-import { Updater } from './base.config';
+import { production, Updater } from './base.config';
 import { DiffEdit } from 'deep-diff';
 import * as c from 'ansi-colors';
 
@@ -121,7 +121,7 @@ export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> 
 
     // Tagging the id.
     let id = Config.TileSet.id(`${this.config.name}@${this.tag}`);
-    if (this.tag === 'master') {
+    if (this.tag === production) {
       id = Config.TileSet.id(this.config.name);
     }
 

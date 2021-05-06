@@ -4,6 +4,8 @@ import * as c from 'ansi-colors';
 
 export const ignoredProperties = ['id', 'createdAt', 'updatedAt'];
 
+export const production = 'production';
+
 export abstract class Updater<S, T> {
   config: S;
   filename: string;

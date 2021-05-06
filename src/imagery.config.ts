@@ -3,7 +3,7 @@ import { Config, LogType } from '@basemaps/shared';
 import { promises as fs } from 'fs';
 import { ConfigImagery } from '@basemaps/config';
 import { Epsg } from '@basemaps/geo';
-import { Updater } from './base.config';
+import { production, Updater } from './base.config';
 
 const zBound = z.object({
   x: z.number(),
@@ -52,7 +52,7 @@ export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> 
 
     // Tagging the id.
     let id = `${this.config.id}@${this.tag}`;
-    if (this.tag === 'master') {
+    if (this.tag === production) {
       id = this.config.id;
     }
 

@@ -2,7 +2,7 @@ import * as z from 'zod';
 import { Config, LogType } from '@basemaps/shared';
 import { promises as fs } from 'fs';
 import { ConfigVectorStyle, StyleJson } from '@basemaps/config';
-import { Updater } from './base.config';
+import { production, Updater } from './base.config';
 
 const zStyleJson = z.object({
   version: z.number(),
@@ -40,7 +40,7 @@ export class StyleUpdater extends Updater<StyleJsonConfigSchema, ConfigVectorSty
 
     // Tagging the id.
     let id = Config.Style.id(`${this.config.name}@${this.tag}`);
-    if (this.tag === 'master') {
+    if (this.tag === production) {
       id = Config.Style.id(this.config.name);
     }
 
