@@ -2,9 +2,7 @@ import * as z from 'zod';
 import { Config, LogType } from '@basemaps/shared';
 import { promises as fs } from 'fs';
 import { ConfigTileSet, TileSetType } from '@basemaps/config';
-import { production, Updater } from './base.config';
-import { DiffEdit } from 'deep-diff';
-import * as c from 'ansi-colors';
+import { Production, Updater } from './base.config';
 
 /**
  * Parse a string as hex, return 0 on failure
@@ -39,14 +37,14 @@ export function parseRgba(str: string): { r: number; g: number; b: number; alpha
   };
 }
 
-const validateColor = (val: string): boolean => {
+function validateColor(str: string): boolean {
   try {
-    parseRgba(val);
+    parseRgba(str);
     return true;
   } catch (err) {
     return false;
   }
-};
+}
 
 const zBackground = z.string().refine(validateColor, { message: 'Invalid hex color' });
 
@@ -94,9 +92,6 @@ export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> 
    * Class to apply an TileSetConfig source to the tile metadata db
    * @param config a string or TileSetConfig to use
    */
-  constructor(filename: string, config: unknown, tag: string, isCommit: boolean, logger: LogType) {
-    super(filename, config, tag, isCommit, logger);
-  }
 
   assertConfig(json: unknown): asserts json is TileSetConfigSchema {
     const validate = zTileSetConfig.parse(json);
@@ -121,7 +116,7 @@ export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> 
 
     // Tagging the id.
     let id = Config.TileSet.id(`${this.config.name}@${this.tag}`);
-    if (this.tag === production) {
+    if (this.tag === Production) {
       id = Config.TileSet.id(this.config.name);
     }
 
@@ -156,6 +151,6 @@ export async function importTileSet(tag: string, commit: boolean, logger: LogTyp
   for (const filename of filenames) {
     const file = `${path}/${filename}`;
     const updater = new TileSetUpdater(filename, (await fs.readFile(file)).toString(), tag, commit, logger);
-    updater.reconcile();
+    await updater.reconcile();
   }
 }

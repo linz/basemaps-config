@@ -2,9 +2,10 @@ import * as z from 'zod';
 import { Config, LogType } from '@basemaps/shared';
 import { promises as fs } from 'fs';
 import { ConfigVectorStyle, StyleJson } from '@basemaps/config';
-import { production, Updater } from './base.config';
+import { Production, Updater } from './base.config';
 
 const zStyleJson = z.object({
+  id: z.string(),
   version: z.number(),
   name: z.string(),
   metadata: z.unknown().optional(),
@@ -21,9 +22,6 @@ export class StyleUpdater extends Updater<StyleJsonConfigSchema, ConfigVectorSty
    * Class to apply an StyleJsonConfig source to the tile metadata db
    * @param config a string or StyleJsonConfig to use
    */
-  constructor(filename: string, config: unknown, tag: string, isCommit: boolean, logger: LogType) {
-    super(filename, config, tag, isCommit, logger);
-  }
 
   assertConfig(json: unknown): asserts json is StyleJsonConfigSchema {
     zStyleJson.parse(json);
@@ -40,7 +38,7 @@ export class StyleUpdater extends Updater<StyleJsonConfigSchema, ConfigVectorSty
 
     // Tagging the id.
     let id = Config.Style.id(`${this.config.name}@${this.tag}`);
-    if (this.tag === production) {
+    if (this.tag === Production) {
       id = Config.Style.id(this.config.name);
     }
 
@@ -71,6 +69,6 @@ export async function importStyle(tag: string, commit: boolean, logger: LogType)
   for (const filename of filenames) {
     const file = `${path}/${filename}`;
     const updater = new StyleUpdater(filename, (await fs.readFile(file)).toString(), tag, commit, logger);
-    updater.reconcile();
+    await updater.reconcile();
   }
 }

@@ -3,7 +3,7 @@ import { Config, LogType } from '@basemaps/shared';
 import { promises as fs } from 'fs';
 import { ConfigImagery } from '@basemaps/config';
 import { Epsg } from '@basemaps/geo';
-import { production, Updater } from './base.config';
+import { Production, Updater } from './base.config';
 
 const zBound = z.object({
   x: z.number(),
@@ -34,9 +34,6 @@ export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> 
    * Class to apply an ImageryConfig source to the tile metadata db
    * @param config a string or ImageryConfig to use
    */
-  constructor(filename: string, config: unknown, tag: string, isCommit: boolean, logger: LogType) {
-    super(filename, config, tag, isCommit, logger);
-  }
 
   assertConfig(json: unknown): asserts json is ConfigImagerySchema {
     zImageConfig.parse(json);
@@ -52,7 +49,7 @@ export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> 
 
     // Tagging the id.
     let id = `${this.config.id}@${this.tag}`;
-    if (this.tag === production) {
+    if (this.tag === Production) {
       id = this.config.id;
     }
 
@@ -83,9 +80,12 @@ export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> 
 export async function importImagery(tag: string, commit: boolean, logger: LogType): Promise<void> {
   const path = `config/imagery`;
   const filenames = await fs.readdir(path);
+  const promises = [];
   for (const filename of filenames) {
     const file = `${path}/${filename}`;
     const updater = new ImageryUpdater(filename, (await fs.readFile(file)).toString(), tag, commit, logger);
-    updater.reconcile();
+    const promise = updater.reconcile();
+    promises.push(promise);
   }
+  await Promise.all(promises);
 }

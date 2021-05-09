@@ -9,11 +9,7 @@ export class CommandImport extends Command {
   static description = 'Import Basemaps configs';
 
   static flags = {
-    // add --version flag to show CLI version
-    version: flags.version({ char: 'v' }),
-    help: flags.help({ char: 'h' }),
-
-    tag: flags.string({ char: 't', description: 'PR tag(PR-number)', required: true }),
+    tag: flags.string({ char: 't', description: 'PR tag(PR-number) or production', required: true }),
     commit: flags.boolean({ description: 'Actually run job' }),
   };
 
@@ -21,11 +17,10 @@ export class CommandImport extends Command {
     const logger = LogConfig.get();
     const { flags } = this.parse(CommandImport);
 
-    Promise.all;
-    await importTileSet(flags.tag, flags.commit, logger);
+    await importImagery(flags.tag, flags.commit, logger);
     await importStyle(flags.tag, flags.commit, logger);
     await importProvider(flags.tag, flags.commit, logger);
-    await importImagery(flags.tag, flags.commit, logger);
+    await importTileSet(flags.tag, flags.commit, logger);
 
     if (flags.commit !== true) logger.info('DryRun');
   }

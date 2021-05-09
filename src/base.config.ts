@@ -2,9 +2,9 @@ import { LogType } from '@basemaps/shared';
 import { diff, Diff } from 'deep-diff';
 import * as c from 'ansi-colors';
 
-export const ignoredProperties = ['id', 'createdAt', 'updatedAt'];
+export const IgnoredProperties = ['id', 'createdAt', 'updatedAt'];
 
-export const production = 'production';
+export const Production = 'production';
 
 export abstract class Updater<S, T> {
   config: S;
@@ -78,7 +78,7 @@ export abstract class Updater<S, T> {
 
   showDiff(oldData: T, newData: T): boolean {
     const changes = diff(oldData, newData, (_path: string[], key: string) => {
-      return ignoredProperties.indexOf(key) >= 0;
+      return IgnoredProperties.indexOf(key) >= 0;
     });
     if (changes) {
       this.logger.info({ filename: this.filename }, 'Changes');

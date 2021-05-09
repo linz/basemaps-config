@@ -2,7 +2,7 @@ import * as z from 'zod';
 import { Config, LogType } from '@basemaps/shared';
 import { promises as fs } from 'fs';
 import { ConfigProvider } from '@basemaps/config';
-import { production, Updater } from './base.config';
+import { Production, Updater } from './base.config';
 
 const zServiceIdentification = z.object({
   title: z.string(),
@@ -45,9 +45,6 @@ export class ProviderUpdater extends Updater<ProviderConfigSchema, ConfigProvide
    * Class to apply an Provider source to the tile metadata db
    * @param config a string or Provider to use
    */
-  constructor(filename: string, config: unknown, tag: string, isCommit: boolean, logger: LogType) {
-    super(filename, config, tag, isCommit, logger);
-  }
 
   assertConfig(json: unknown): asserts json is ProviderConfigSchema {
     zProviderConfig.parse(json);
@@ -64,7 +61,7 @@ export class ProviderUpdater extends Updater<ProviderConfigSchema, ConfigProvide
 
     // Tagging the id.
     let id = Config.Provider.id(`${this.config.name}@${this.tag}`);
-    if (this.tag === production) {
+    if (this.tag === Production) {
       id = Config.Provider.id(this.config.name);
     }
 
@@ -93,6 +90,6 @@ export async function importProvider(tag: string, commit: boolean, logger: LogTy
   for (const filename of filenames) {
     const file = `${path}/${filename}`;
     const updater = new ProviderUpdater(filename, (await fs.readFile(file)).toString(), tag, commit, logger);
-    updater.reconcile();
+    await updater.reconcile();
   }
 }
