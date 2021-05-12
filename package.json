@@ -23,9 +23,9 @@
     "@linzjs/style": "^2.1.0",
     "@types/node": "^14.11.2",
     "@types/ospec": "^4.0.2",
-    "@types/pino": "^6.3.3",
+    "@types/pino": "^6.3.8",
     "@types/sax": "^1.2.1",
-    "conventional-changelog-cli": "^2.1.0",
+    "conventional-changelog-cli": "^2.1.1",
     "ospec": "^4.1.1",
     "rimraf": "^3.0.0"
   }
