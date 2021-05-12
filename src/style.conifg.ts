@@ -18,6 +18,7 @@ const zStyleJson = z.object({
 export type StyleJsonConfigSchema = z.infer<typeof zStyleJson>;
 
 export class StyleUpdater extends Updater<StyleJsonConfigSchema, ConfigVectorStyle> {
+  db = Config.Style;
   async validation(): Promise<boolean> {
     return true;
   }
@@ -30,23 +31,11 @@ export class StyleUpdater extends Updater<StyleJsonConfigSchema, ConfigVectorSty
     zStyleJson.parse(json);
   }
 
-  async loadOldData(): Promise<ConfigVectorStyle | null> {
-    const id = Config.Style.id(this.config.name);
-    const oldData = await Config.Style.get(id);
-    return oldData;
-  }
-
   prepareNewData(oldData: ConfigVectorStyle | null): ConfigVectorStyle {
     const now = Date.now();
 
-    // Tagging the id.
-    let id = Config.Style.id(`${this.config.name}@${this.tag}`);
-    if (this.tag === Production) {
-      id = Config.Style.id(this.config.name);
-    }
-
     const style: ConfigVectorStyle = {
-      id,
+      id: this.getId(this.tag),
       name: this.config.name,
       style: this.config as StyleJson,
       createdAt: oldData ? oldData.createdAt : now,
@@ -56,14 +45,6 @@ export class StyleUpdater extends Updater<StyleJsonConfigSchema, ConfigVectorSty
     return style;
   }
 
-  /**
-   * Prepare ConfigVectorStyle and import
-   * @param isCommit if true apply the differences to bring the DB in to line with the config file
-   */
-  async import(data: ConfigVectorStyle): Promise<void> {
-    this.logger.info({ id: data.id }, 'ImportStyle');
-    if (this.isCommit) Config.Style.put(data);
-  }
 }
 
 export async function importStyle(tag: string, commit: boolean, logger: LogType): Promise<void> {

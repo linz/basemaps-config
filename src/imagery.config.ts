@@ -30,6 +30,7 @@ const zImageConfig = z.object({
 export type ConfigImagerySchema = z.infer<typeof zImageConfig>;
 
 export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> {
+  db = Config.Imagery;
   imagery: Set<string> = new Set<string>();
 
   async validation(): Promise<boolean> {
@@ -50,25 +51,14 @@ export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> 
     zImageConfig.parse(json);
   }
 
-  async loadOldData(): Promise<ConfigImagery | null> {
-    const oldData = await Config.Imagery.get(this.config.id);
-    return oldData;
-  }
-
   prepareNewData(oldData: ConfigImagery | null): ConfigImagery {
     const now = Date.now();
-
-    // Tagging the id.
-    let id = `${this.config.id}@${this.tag}`;
-    if (this.tag === Production) {
-      id = this.config.id;
-    }
 
     const projection = Epsg.parse(this.config.projection.toString());
     if (projection == null) throw Error(`Wrong Imagery projection for ${this.config.name}.`);
 
     const imagery: ConfigImagery = {
-      id,
+      id: this.getId(this.tag),
       name: this.config.name,
       projection: projection.code,
       uri: this.config.uri,
@@ -82,10 +72,6 @@ export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> 
     return imagery;
   }
 
-  async import(data: ConfigImagery): Promise<void> {
-    this.logger.info({ id: data.id }, 'ImportImagery');
-    if (this.isCommit) await Config.Imagery.put(data);
-  }
 }
 
 export async function importImagery(tag: string, commit: boolean, logger: LogType): Promise<Set<string>> {

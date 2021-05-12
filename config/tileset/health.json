@@ -1,5 +1,6 @@
 {
   "type": "raster",
+  "id": "health",
   "name": "health",
   "background": "dce9edff",
   "layers": [

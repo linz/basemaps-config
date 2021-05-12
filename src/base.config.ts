@@ -1,6 +1,8 @@
 import { LogType, S3Fs } from '@basemaps/shared';
+import { ConfigDynamoBase } from '@basemaps/config/build/dynamo/dynamo.config.base';
 import { diff, Diff } from 'deep-diff';
 import * as c from 'ansi-colors';
+import { BaseConfig } from '@basemaps/config/build/config/base';
 
 export const IgnoredProperties = ['id', 'createdAt', 'updatedAt'];
 
@@ -8,12 +10,13 @@ export const Production = 'production';
 
 export const S3fs = new S3Fs();
 
-export abstract class Updater<S, T> {
+export abstract class Updater<S extends {id: string}, T extends BaseConfig> {
   config: S;
   filename: string;
   tag: string;
   isCommit: boolean;
   logger: LogType;
+  abstract db: ConfigDynamoBase<T>;
 
   /**
    * Class to apply an TileSetConfig source to the tile metadata db
@@ -32,12 +35,13 @@ export abstract class Updater<S, T> {
   abstract assertConfig(config: unknown): asserts config is S;
 
   abstract validation(): Promise<boolean>;
-
-  abstract loadOldData(): Promise<T | null>;
-
   abstract prepareNewData(oldData: T | null): T;
 
-  abstract import(newData: T): void;
+  getId(tag:string) {
+    if (tag === Production) return this.db.id(this.config.id);
+    return this.db.id(`${this.config.id}@${tag}`);
+  }
+
 
   /**
    * Reconcile the differences between the config and the tile metadata DB and update if changed.
@@ -45,16 +49,12 @@ export abstract class Updater<S, T> {
   async reconcile(): Promise<void> {
     if (!(await this.validation())) return;
 
-    const oldData = await this.loadOldData();
+    const oldData = await this.db.get(this.getId(Production));
     const newData = this.prepareNewData(oldData);
 
-    if (oldData == null) {
-      // initialize if not exist
-      this.import(newData);
-    } else if (this.showDiff(oldData, newData)) {
-      // Update if different
-      this.import(newData);
-    }
+    if (oldData == null || this.showDiff(oldData, newData))  {
+      if (this.isCommit) await this.db.put(newData)
+    } 
   }
 
   printDiff(changes: Diff<T, T>[]): string {

@@ -75,7 +75,7 @@ const zLayerConfig = zImageryLayer.extend({
 
 const zTileSetConfig = z.object({
   type: z.string(),
-  name: z.string(),
+  id: z.string(),
   title: z.string().optional(),
   description: z.string().optional(),
   background: zBackground.optional(),
@@ -88,6 +88,7 @@ const zTileSetConfig = z.object({
 export type TileSetConfigSchema = z.infer<typeof zTileSetConfig>;
 
 export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> {
+  db = Config.TileSet;
   imagery: Set<string>;
 
   constructor(filename: string, config: unknown, tag: string, isCommit: boolean, logger: LogType, imagery: Set<string>) {
@@ -122,12 +123,6 @@ export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> 
     if (!validate) throw Error('Invalidate Type');
   }
 
-  async loadOldData(): Promise<ConfigTileSet | null> {
-    const id = Config.TileSet.id(this.config.name);
-    const oldData = await Config.TileSet.get(id);
-    return oldData;
-  }
-
   prepareNewData(oldData: ConfigTileSet | null): ConfigTileSet {
     const now = Date.now();
 
@@ -138,16 +133,10 @@ export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> 
     // Prepare background if exists
     const background = this.config.background ? parseRgba(this.config.background) : null;
 
-    // Tagging the id.
-    let id = Config.TileSet.id(`${this.config.name}@${this.tag}`);
-    if (this.tag === Production) {
-      id = Config.TileSet.id(this.config.name);
-    }
-
     const tileSet: ConfigTileSet = {
       type,
-      id,
-      name: this.config.name,
+      id: this.getId(this.tag),
+      name: this.config.id,
       layers: this.config.layers,
       createdAt: oldData ? oldData.createdAt : now,
       updatedAt: now,
@@ -160,13 +149,6 @@ export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> 
     return tileSet;
   }
 
-  /**
-   * Prepare ConfigTileSet and import
-   */
-  async import(data: ConfigTileSet): Promise<void> {
-    this.logger.info({ id: data.id }, 'ImportTileSet');
-    if (this.isCommit) Config.TileSet.put(data);
-  }
 }
 
 export async function importTileSet(tag: string, commit: boolean, logger: LogType, imagery: Set<string>): Promise<void> {
