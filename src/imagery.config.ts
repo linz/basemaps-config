@@ -35,8 +35,14 @@ export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> 
 
   async validation(): Promise<boolean> {
     // Validate existence of imagery in s3.
-    const exist = await S3fs.list(this.config.uri);
-    if (!(await (await exist.next()).value)) throw Error(`Imagery not exist in s3 ${this.config.uri}.`);
+    const currentImagery = new Set(this.config.files.map(c => S3fs.join(this.config.uri, c.name)));
+    const imagery = await S3fs.list(this.config.uri);
+    for await (const img of imagery) currentImagery.delete(img);
+
+    if (currentImagery.size > 0)  {
+      for (const uri of currentImagery) this.logger.fatal({uri}, 'MissingImages');
+      throw Error(`Imagery not exist in s3 ${this.config.uri}.`);
+    }
 
     // Cache all the valid imagery id for tile set validation.
     this.imagery.add(this.config.id);
