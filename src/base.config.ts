@@ -1,8 +1,7 @@
+import { BaseConfig, ConfigDynamoBase } from '@basemaps/config';
 import { LogType, S3Fs } from '@basemaps/shared';
-import { ConfigDynamoBase } from '@basemaps/config/build/dynamo/dynamo.config.base';
-import { diff, Diff } from 'deep-diff';
 import * as c from 'ansi-colors';
-import { BaseConfig } from '@basemaps/config/build/config/base';
+import { diff, Diff } from 'deep-diff';
 
 export const IgnoredProperties = ['id', 'createdAt', 'updatedAt'];
 

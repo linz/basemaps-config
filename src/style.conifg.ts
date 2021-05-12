@@ -1,8 +1,8 @@
-import * as z from 'zod';
+import { ConfigVectorStyle, StyleJson } from '@basemaps/config';
 import { Config, LogType } from '@basemaps/shared';
 import { promises as fs } from 'fs';
-import { ConfigVectorStyle, StyleJson } from '@basemaps/config';
-import { Production, Updater } from './base.config';
+import * as z from 'zod';
+import { Updater } from './base.config';
 
 const zStyleJson = z.object({
   id: z.string(),

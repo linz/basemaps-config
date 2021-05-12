@@ -1,8 +1,8 @@
-import * as z from 'zod';
+import { ConfigProvider } from '@basemaps/config';
 import { Config, LogType } from '@basemaps/shared';
 import { promises as fs } from 'fs';
-import { ConfigProvider } from '@basemaps/config';
-import { Production, Updater } from './base.config';
+import * as z from 'zod';
+import { Updater } from './base.config';
 
 const zServiceIdentification = z.object({
   title: z.string(),

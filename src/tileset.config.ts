@@ -1,8 +1,8 @@
-import * as z from 'zod';
+import { ConfigTileSet, TileSetType } from '@basemaps/config';
 import { Config, LogType } from '@basemaps/shared';
 import { promises as fs } from 'fs';
-import { ConfigTileSet, TileSetType } from '@basemaps/config';
-import { Production, S3fs, Updater } from './base.config';
+import * as z from 'zod';
+import { S3fs, Updater } from './base.config';
 
 /**
  * Parse a string as hex, return 0 on failure

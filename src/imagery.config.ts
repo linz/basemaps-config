@@ -1,9 +1,9 @@
-import * as z from 'zod';
-import { Config, LogType } from '@basemaps/shared';
-import { promises as fs } from 'fs';
 import { ConfigImagery } from '@basemaps/config';
 import { Epsg } from '@basemaps/geo';
-import { Production, S3fs, Updater } from './base.config';
+import { Config, LogType } from '@basemaps/shared';
+import { promises as fs } from 'fs';
+import * as z from 'zod';
+import { S3fs, Updater } from './base.config';
 
 const zBound = z.object({
   x: z.number(),
