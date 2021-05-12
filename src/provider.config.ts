@@ -41,6 +41,9 @@ const zProviderConfig = z.object({
 export type ProviderConfigSchema = z.infer<typeof zProviderConfig>;
 
 export class ProviderUpdater extends Updater<ProviderConfigSchema, ConfigProvider> {
+  async validation(): Promise<boolean> {
+    return true;
+  }
   /**
    * Class to apply an Provider source to the tile metadata db
    * @param config a string or Provider to use

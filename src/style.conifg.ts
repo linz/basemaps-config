@@ -18,6 +18,9 @@ const zStyleJson = z.object({
 export type StyleJsonConfigSchema = z.infer<typeof zStyleJson>;
 
 export class StyleUpdater extends Updater<StyleJsonConfigSchema, ConfigVectorStyle> {
+  async validation(): Promise<boolean> {
+    return true;
+  }
   /**
    * Class to apply an StyleJsonConfig source to the tile metadata db
    * @param config a string or StyleJsonConfig to use

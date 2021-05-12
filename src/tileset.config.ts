@@ -2,7 +2,7 @@ import * as z from 'zod';
 import { Config, LogType } from '@basemaps/shared';
 import { promises as fs } from 'fs';
 import { ConfigTileSet, TileSetType } from '@basemaps/config';
-import { Production, Updater } from './base.config';
+import { Production, S3fs, Updater } from './base.config';
 
 /**
  * Parse a string as hex, return 0 on failure
@@ -88,6 +88,30 @@ const zTileSetConfig = z.object({
 export type TileSetConfigSchema = z.infer<typeof zTileSetConfig>;
 
 export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> {
+  imagery: Set<string>;
+
+  constructor(filename: string, config: unknown, tag: string, isCommit: boolean, logger: LogType, imagery: Set<string>) {
+    super(filename, config, tag, isCommit, logger);
+    this.imagery = imagery;
+  }
+
+  invalidateError(id: string): void {
+    throw Error(`Imagery: ${id} from TileSet does not exist.`);
+  }
+
+  async validation(): Promise<boolean> {
+    // Validate the existence of imageries
+    for (const layer of this.config.layers) {
+      if (this.config.type === TileSetType.Raster) {
+        if (layer[2193] && !this.imagery.has(Config.Imagery.id(layer[2193]))) this.invalidateError(layer[2193]);
+        if (layer[3857] && !this.imagery.has(Config.Imagery.id(layer[3857]))) this.invalidateError(layer[3857]);
+      } else {
+        if (layer[2193] && !(await S3fs.exists(layer[2193]))) this.invalidateError(layer[2193]);
+        if (layer[3857] && !(await S3fs.exists(layer[3857]))) this.invalidateError(layer[3857]);
+      }
+    }
+    return true;
+  }
   /**
    * Class to apply an TileSetConfig source to the tile metadata db
    * @param config a string or TileSetConfig to use
@@ -145,12 +169,12 @@ export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> 
   }
 }
 
-export async function importTileSet(tag: string, commit: boolean, logger: LogType): Promise<void> {
+export async function importTileSet(tag: string, commit: boolean, logger: LogType, imagery: Set<string>): Promise<void> {
   const path = `./config/tileset`;
   const filenames = await fs.readdir(path);
   for (const filename of filenames) {
     const file = `${path}/${filename}`;
-    const updater = new TileSetUpdater(filename, (await fs.readFile(file)).toString(), tag, commit, logger);
+    const updater = new TileSetUpdater(filename, (await fs.readFile(file)).toString(), tag, commit, logger, imagery);
     await updater.reconcile();
   }
 }

@@ -3,7 +3,7 @@ import { Config, LogType } from '@basemaps/shared';
 import { promises as fs } from 'fs';
 import { ConfigImagery } from '@basemaps/config';
 import { Epsg } from '@basemaps/geo';
-import { Production, Updater } from './base.config';
+import { Production, S3fs, Updater } from './base.config';
 
 const zBound = z.object({
   x: z.number(),
@@ -30,6 +30,17 @@ const zImageConfig = z.object({
 export type ConfigImagerySchema = z.infer<typeof zImageConfig>;
 
 export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> {
+  imagery: Set<string> = new Set<string>();
+
+  async validation(): Promise<boolean> {
+    // Validate existence of imagery in s3.
+    const exist = await S3fs.list(this.config.uri);
+    if (!(await (await exist.next()).value)) throw Error(`Imagery not exist in s3 ${this.config.uri}.`);
+
+    // Cache all the valid imagery id for tile set validation.
+    this.imagery.add(this.config.id);
+    return true;
+  }
   /**
    * Class to apply an ImageryConfig source to the tile metadata db
    * @param config a string or ImageryConfig to use
@@ -73,11 +84,12 @@ export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> 
 
   async import(data: ConfigImagery): Promise<void> {
     this.logger.info({ id: data.id }, 'ImportImagery');
-    if (this.isCommit) Config.Imagery.put(data);
+    if (this.isCommit) await Config.Imagery.put(data);
   }
 }
 
-export async function importImagery(tag: string, commit: boolean, logger: LogType): Promise<void> {
+export async function importImagery(tag: string, commit: boolean, logger: LogType): Promise<Set<string>> {
+  const imagery: Set<string> = new Set<string>();
   const path = `config/imagery`;
   const filenames = await fs.readdir(path);
   const promises = [];
@@ -85,7 +97,9 @@ export async function importImagery(tag: string, commit: boolean, logger: LogTyp
     const file = `${path}/${filename}`;
     const updater = new ImageryUpdater(filename, (await fs.readFile(file)).toString(), tag, commit, logger);
     const promise = updater.reconcile();
+    imagery.add(updater.config.id);
     promises.push(promise);
   }
   await Promise.all(promises);
+  return imagery;
 }

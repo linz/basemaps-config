@@ -17,10 +17,10 @@ export class CommandImport extends Command {
     const logger = LogConfig.get();
     const { flags } = this.parse(CommandImport);
 
-    await importImagery(flags.tag, flags.commit, logger);
+    const imagery = await importImagery(flags.tag, flags.commit, logger);
     await importStyle(flags.tag, flags.commit, logger);
     await importProvider(flags.tag, flags.commit, logger);
-    await importTileSet(flags.tag, flags.commit, logger);
+    await importTileSet(flags.tag, flags.commit, logger, imagery);
 
     if (flags.commit !== true) logger.info('DryRun');
   }

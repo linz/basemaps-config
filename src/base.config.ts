@@ -1,4 +1,4 @@
-import { LogType } from '@basemaps/shared';
+import { LogType, S3Fs } from '@basemaps/shared';
 import { diff, Diff } from 'deep-diff';
 import * as c from 'ansi-colors';
 
@@ -6,12 +6,15 @@ export const IgnoredProperties = ['id', 'createdAt', 'updatedAt'];
 
 export const Production = 'production';
 
+export const S3fs = new S3Fs();
+
 export abstract class Updater<S, T> {
   config: S;
   filename: string;
   tag: string;
   isCommit: boolean;
   logger: LogType;
+
   /**
    * Class to apply an TileSetConfig source to the tile metadata db
    * @param config a string or TileSetConfig to use
@@ -28,6 +31,8 @@ export abstract class Updater<S, T> {
 
   abstract assertConfig(config: unknown): asserts config is S;
 
+  abstract validation(): Promise<boolean>;
+
   abstract loadOldData(): Promise<T | null>;
 
   abstract prepareNewData(oldData: T | null): T;
@@ -38,6 +43,8 @@ export abstract class Updater<S, T> {
    * Reconcile the differences between the config and the tile metadata DB and update if changed.
    */
   async reconcile(): Promise<void> {
+    if (!(await this.validation())) return;
+
     const oldData = await this.loadOldData();
     const newData = this.prepareNewData(oldData);
 
