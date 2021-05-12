@@ -1,5 +1,5 @@
 {
-  "id": "im_01EDA44EHMPHG9411631RQWMEE",
+  "id": "01EDA44EHMPHG9411631RQWMEE",
   "name": "new_zealand_sentinel_2019-2020_10m",
   "uri": "s3://linz-basemaps/2193/new_zealand_sentinel_2019-2020_10m/01EDA44EHMPHG9411631RQWMEE",
   "projection": 2193,
