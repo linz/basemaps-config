@@ -1,5 +1,5 @@
 {
-  "name": "linz",
+  "id": "linz",
   "serviceIdentification": {
     "accessConstraints": "By using LINZ Basemaps, users are agreeing to comply with the service Terms of Use. Data used in the basemap is subject to the terms of Creative Commons International 4.0 licence.",
     "description": "National map tile service provided by Land Information New Zealand",
