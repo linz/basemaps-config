@@ -37,11 +37,10 @@ export abstract class Updater<S extends { id: string }, T extends BaseConfig> {
   abstract validation(): Promise<boolean>;
   abstract prepareNewData(oldData: T | null): T;
 
-  getId(tag: string) {
+  getId(tag: string):string {
     if (tag === Production) return this.db.id(this.config.id);
     return this.db.id(`${this.config.id}@${tag}`);
   }
-
 
   /**
    * Reconcile the differences between the config and the tile metadata DB and update if changed.
@@ -53,8 +52,8 @@ export abstract class Updater<S extends { id: string }, T extends BaseConfig> {
     const newData = this.prepareNewData(oldData);
 
     if (oldData == null || this.showDiff(oldData, newData)) {
-      this.logger.info({ type: this.db.prefix, record: newData.id }, 'Update')
-      if (this.isCommit) await this.db.put(newData)
+      this.logger.info({ type: this.db.prefix, record: newData.id }, 'Update');
+      if (this.isCommit) await this.db.put(newData);
     }
   }
 

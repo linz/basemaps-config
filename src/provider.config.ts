@@ -38,7 +38,6 @@ const zProviderConfig = z.object({
   serviceProvider: zServiceProvider,
 });
 
-
 export type ProviderConfigSchema = z.infer<typeof zProviderConfig>;
 
 export class ProviderUpdater extends Updater<ProviderConfigSchema, ConfigProvider> {
@@ -71,7 +70,6 @@ export class ProviderUpdater extends Updater<ProviderConfigSchema, ConfigProvide
 
     return provider;
   }
-
 }
 
 export async function importProvider(tag: string, commit: boolean, logger: LogType): Promise<void> {

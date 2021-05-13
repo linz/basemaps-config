@@ -33,13 +33,13 @@ export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> 
 
   async validation(): Promise<boolean> {
     // Validate existence of imagery in s3.
-    const currentImagery = new Set(this.config.files.map(c => fs.join(this.config.uri, c.name) + '.tiff'));
+    const currentImagery = new Set(this.config.files.map((c) => fs.join(this.config.uri, c.name) + '.tiff'));
     const imagery = await fs.list(this.config.uri);
     for await (const img of imagery) currentImagery.delete(img);
 
     if (currentImagery.size > 0) {
       for (const uri of currentImagery) this.logger.fatal({ uri }, 'MissingImages');
-      return false
+      return false;
     }
 
     return true;
@@ -73,7 +73,6 @@ export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> 
     };
     return imagery;
   }
-
 }
 
 export async function importImagery(tag: string, commit: boolean, logger: LogType): Promise<Set<string>> {

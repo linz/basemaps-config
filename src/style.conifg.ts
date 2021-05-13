@@ -44,7 +44,6 @@ export class StyleUpdater extends Updater<StyleJsonConfigSchema, ConfigVectorSty
 
     return style;
   }
-
 }
 
 export async function importStyle(tag: string, commit: boolean, logger: LogType): Promise<void> {

@@ -102,7 +102,7 @@ export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> 
   async validation(): Promise<boolean> {
     // Validate the existence of imageries
     for (const layer of this.config.layers) {
-      const name = layer.name
+      const name = layer.name;
       if (this.config.type === TileSetType.Raster) {
         if (layer[2193] && !this.imagery.has(layer[2193])) this.invalidateError(layer[2193], name);
         if (layer[3857] && !this.imagery.has(layer[3857])) this.invalidateError(layer[3857], name);
@@ -148,7 +148,6 @@ export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> 
 
     return tileSet;
   }
-
 }
 
 export async function importTileSet(tag: string, commit: boolean, logger: LogType, imagery: Set<string>): Promise<void> {
