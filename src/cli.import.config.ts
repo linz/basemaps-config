@@ -1,5 +1,6 @@
 import { LogConfig } from '@basemaps/shared';
 import { Command, flags } from '@oclif/command';
+import { PrettyTransform } from 'pretty-json-log';
 import { importImagery } from './imagery.config';
 import { importProvider } from './provider.config';
 import { importStyle } from './style.conifg';
@@ -14,6 +15,7 @@ export class CommandImport extends Command {
   };
 
   async run(): Promise<void> {
+    if (process.stdout.isTTY) LogConfig.setOutputStream(PrettyTransform.stream());
     const logger = LogConfig.get();
     const { flags } = this.parse(CommandImport);
 
@@ -25,5 +27,3 @@ export class CommandImport extends Command {
     if (flags.commit !== true) logger.info('DryRun');
   }
 }
-
-CommandImport.run();
