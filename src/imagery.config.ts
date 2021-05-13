@@ -31,7 +31,6 @@ export type ConfigImagerySchema = z.infer<typeof zImageConfig>;
 
 export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> {
   db = Config.Imagery;
-  imagery: Set<string> = new Set<string>();
 
   async validation(): Promise<boolean> {
     // Validate existence of imagery in s3.
@@ -44,8 +43,6 @@ export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> 
       return false
     }
 
-    // Cache all the valid imagery id for tile set validation.
-    this.imagery.add(this.config.id);
     return true;
   }
   /**
