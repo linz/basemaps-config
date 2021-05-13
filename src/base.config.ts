@@ -9,7 +9,7 @@ export const Production = 'production';
 
 export const S3fs = new S3Fs();
 
-export abstract class Updater<S extends {id: string}, T extends BaseConfig> {
+export abstract class Updater<S extends { id: string }, T extends BaseConfig> {
   config: S;
   filename: string;
   tag: string;
@@ -36,7 +36,7 @@ export abstract class Updater<S extends {id: string}, T extends BaseConfig> {
   abstract validation(): Promise<boolean>;
   abstract prepareNewData(oldData: T | null): T;
 
-  getId(tag:string) {
+  getId(tag: string) {
     if (tag === Production) return this.db.id(this.config.id);
     return this.db.id(`${this.config.id}@${tag}`);
   }
@@ -51,9 +51,9 @@ export abstract class Updater<S extends {id: string}, T extends BaseConfig> {
     const oldData = await this.db.get(this.getId(Production));
     const newData = this.prepareNewData(oldData);
 
-    if (oldData == null || this.showDiff(oldData, newData))  {
+    if (oldData == null || this.showDiff(oldData, newData)) {
       if (this.isCommit) await this.db.put(newData)
-    } 
+    }
   }
 
   printDiff(changes: Diff<T, T>[]): string {
