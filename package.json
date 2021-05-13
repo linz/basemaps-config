@@ -7,7 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "@basemaps/cli": "^4.17.0",
-    "@basemaps/shared": "^4.17.0",
+    "@basemaps/shared": "^4.24.0",
     "@rushstack/ts-command-line": "4.7.10",
     "pretty-json-log": "^0.3.2"
   },
