@@ -49,12 +49,14 @@ jobs:
         env:
           NODE_ENV: "production"
 
-      - name: (Imagery Config) Create pull request tag
-        if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
-        run: |
-          ./bin/basemaps-config -t pr-${{ github.event.number }} --commit
-        env:
-          NODE_ENV: "production"
+      # TODO: This is currently broken, the tileset is the only thing that works with tags
+      # we need the imagery to work with @tags
+      # - name: (Imagery Config) Create pull request tag
+      #   if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
+      #   run: |
+      #     ./bin/basemaps-config -t pr-${{ github.event.number }} --commit
+      #   env:
+      #     NODE_ENV: "production"
 
       - name: (Imagery Config) Create production tag
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
