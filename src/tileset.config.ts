@@ -1,8 +1,7 @@
 import { ConfigTileSet, TileSetType } from '@basemaps/config';
 import { Config, LogType } from '@basemaps/shared';
-import { promises as fs } from 'fs';
 import * as z from 'zod';
-import { S3fs, Updater } from './base.config';
+import { fs, Updater } from './base.config';
 
 /**
  * Parse a string as hex, return 0 on failure
@@ -108,8 +107,8 @@ export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> 
         if (layer[2193] && !this.imagery.has(layer[2193])) this.invalidateError(layer[2193], name);
         if (layer[3857] && !this.imagery.has(layer[3857])) this.invalidateError(layer[3857], name);
       } else {
-        if (layer[2193] && !(await S3fs.exists(layer[2193]))) this.invalidateError(layer[2193], name);
-        if (layer[3857] && !(await S3fs.exists(layer[3857]))) this.invalidateError(layer[3857], name);
+        if (layer[2193] && !(await fs.exists(layer[2193]))) this.invalidateError(layer[2193], name);
+        if (layer[3857] && !(await fs.exists(layer[3857]))) this.invalidateError(layer[3857], name);
       }
     }
     return true;
@@ -154,10 +153,9 @@ export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> 
 
 export async function importTileSet(tag: string, commit: boolean, logger: LogType, imagery: Set<string>): Promise<void> {
   const path = `./config/tileset`;
-  const filenames = await fs.readdir(path);
-  for (const filename of filenames) {
-    const file = `${path}/${filename}`;
-    const updater = new TileSetUpdater(filename, (await fs.readFile(file)).toString(), tag, commit, logger, imagery);
+  const filenames = await fs.list(path);
+  for await (const filename of filenames) {
+    const updater = new TileSetUpdater(filename, await fs.readJson(filename), tag, commit, logger, imagery);
     await updater.reconcile();
   }
 }

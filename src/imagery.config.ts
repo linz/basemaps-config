@@ -1,9 +1,8 @@
 import { ConfigImagery } from '@basemaps/config';
 import { Epsg } from '@basemaps/geo';
 import { Config, LogType } from '@basemaps/shared';
-import { promises as fs } from 'fs';
 import * as z from 'zod';
-import { S3fs, Updater } from './base.config';
+import { fs, Updater } from './base.config';
 
 const zBound = z.object({
   x: z.number(),
@@ -34,8 +33,8 @@ export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> 
 
   async validation(): Promise<boolean> {
     // Validate existence of imagery in s3.
-    const currentImagery = new Set(this.config.files.map(c => S3fs.join(this.config.uri, c.name) + '.tiff'));
-    const imagery = await S3fs.list(this.config.uri);
+    const currentImagery = new Set(this.config.files.map(c => fs.join(this.config.uri, c.name) + '.tiff'));
+    const imagery = await fs.list(this.config.uri);
     for await (const img of imagery) currentImagery.delete(img);
 
     if (currentImagery.size > 0) {
@@ -80,11 +79,10 @@ export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> 
 export async function importImagery(tag: string, commit: boolean, logger: LogType): Promise<Set<string>> {
   const imagery: Set<string> = new Set<string>();
   const path = `config/imagery`;
-  const filenames = await fs.readdir(path);
+  const filenames = await fs.list(path);
   const promises = [];
-  for (const filename of filenames) {
-    const file = `${path}/${filename}`;
-    const updater = new ImageryUpdater(filename, (await fs.readFile(file)).toString(), tag, commit, logger);
+  for await (const filename of filenames) {
+    const updater = new ImageryUpdater(filename, await fs.readJson(filename), tag, commit, logger);
     const promise = updater.reconcile();
     imagery.add(updater.config.id);
     promises.push(promise);

@@ -1,5 +1,5 @@
 import { BaseConfig, ConfigDynamoBase } from '@basemaps/config';
-import { LogType, S3Fs } from '@basemaps/shared';
+import { LogType, S3FsJson } from '@basemaps/shared';
 import * as c from 'ansi-colors';
 import { diff, Diff } from 'deep-diff';
 
@@ -7,7 +7,7 @@ export const IgnoredProperties = ['id', 'createdAt', 'updatedAt'];
 
 export const Production = 'production';
 
-export const S3fs = new S3Fs();
+export const fs = new S3FsJson();
 
 export abstract class Updater<S extends { id: string }, T extends BaseConfig> {
   config: S;
@@ -23,6 +23,7 @@ export abstract class Updater<S extends { id: string }, T extends BaseConfig> {
    */
   constructor(filename: string, config: unknown, tag: string, isCommit: boolean, logger: LogType) {
     this.filename = filename;
+
     if (typeof config === 'string') config = JSON.parse(config);
     this.assertConfig(config);
     this.config = config;
