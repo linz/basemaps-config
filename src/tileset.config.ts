@@ -105,8 +105,8 @@ export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> 
     for (const layer of this.config.layers) {
       const name = layer.name
       if (this.config.type === TileSetType.Raster) {
-        if (layer[2193] && !this.imagery.has(Config.Imagery.id(layer[2193]))) this.invalidateError(layer[2193], name);
-        if (layer[3857] && !this.imagery.has(Config.Imagery.id(layer[3857]))) this.invalidateError(layer[3857], name);
+        if (layer[2193] && !this.imagery.has(layer[2193])) this.invalidateError(layer[2193], name);
+        if (layer[3857] && !this.imagery.has(layer[3857])) this.invalidateError(layer[3857], name);
       } else {
         if (layer[2193] && !(await S3fs.exists(layer[2193]))) this.invalidateError(layer[2193], name);
         if (layer[3857] && !(await S3fs.exists(layer[3857]))) this.invalidateError(layer[3857], name);
