@@ -3,7 +3,7 @@ name: Build
 on:
   pull_request:
     paths:
-      - 'config/imagery/*.json'
+      - "config/imagery/*.json"
   push:
 
 jobs:
@@ -45,20 +45,20 @@ jobs:
       - name: (Imagery Config) Compare to production
         if: github.ref != 'refs/heads/master' && github.event_name == 'push'
         run: |
-          ls config/imagery/*.json | node ./build/cli.import.config.js -t production
+          node ./build/cli.import.config.js -t production
         env:
           NODE_ENV: "production"
 
       - name: (Imagery Config) Create pull request tag
         if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
         run: |
-          git diff --name-only $(git merge-base origin/master HEAD) HEAD | node ./build/cli.import.config.js -t pr-${{ github.event.number }} --commit
+          node ./build/cli.import.config.js -t pr-${{ github.event.number }} --commit
         env:
           NODE_ENV: "production"
 
       - name: (Imagery Config) Create production tag
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
-          ls config/imagery/*.json  | node ./build/cli.import.config.js -t production --commit
+          node ./build/cli.import.config.js -t production --commit
         env:
           NODE_ENV: "production"
