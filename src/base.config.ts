@@ -28,7 +28,7 @@ export abstract class Updater<S extends { id: string }, T extends BaseConfig> {
     this.config = config;
     this.tag = tag;
     this.isCommit = isCommit ? isCommit : false;
-    this.logger = logger;
+    this.logger = logger.child({ file: filename });
   }
 
   abstract assertConfig(config: unknown): asserts config is S;
@@ -52,6 +52,7 @@ export abstract class Updater<S extends { id: string }, T extends BaseConfig> {
     const newData = this.prepareNewData(oldData);
 
     if (oldData == null || this.showDiff(oldData, newData)) {
+      this.logger.info({ type: this.db.prefix, record: newData.id }, 'Update')
       if (this.isCommit) await this.db.put(newData)
     }
   }
@@ -83,11 +84,9 @@ export abstract class Updater<S extends { id: string }, T extends BaseConfig> {
   }
 
   showDiff(oldData: T, newData: T): boolean {
-    const changes = diff(oldData, newData, (_path: string[], key: string) => {
-      return IgnoredProperties.indexOf(key) >= 0;
-    });
+    const changes = diff(oldData, newData, (_path: string[], key: string) => IgnoredProperties.indexOf(key) >= 0);
     if (changes) {
-      this.logger.info({ filename: this.filename }, 'Changes');
+      this.logger.info({ type: this.db.prefix, record: newData.id }, 'Changes');
       const output = this.printDiff(changes);
       console.log(output);
       return true;
