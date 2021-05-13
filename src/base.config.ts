@@ -50,7 +50,8 @@ export abstract class Updater<S extends { id: string } = { id: string }, T exten
     const newData = this.prepareNewData(oldData);
 
     if (oldData == null || this.showDiff(oldData, newData)) {
-      this.logger.info({ type: this.db.prefix, record: newData.id }, 'Update');
+      const operation = oldData == null ? 'Insert' : 'Update'
+      this.logger.info({ type: this.db.prefix, record: newData.id }, `Change:${operation}`);
       if (this.isCommit) await this.db.put(newData);
       return true;
     }
