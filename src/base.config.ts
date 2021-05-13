@@ -26,6 +26,7 @@ export abstract class Updater<S extends { id: string } = { id: string }, T exten
 
     if (typeof config === 'string') config = JSON.parse(config);
     this.assertConfig(config);
+
     this.config = config;
     this.tag = tag;
     this.isCommit = isCommit ? isCommit : false;
@@ -46,6 +47,8 @@ export abstract class Updater<S extends { id: string } = { id: string }, T exten
    * Reconcile the differences between the config and the tile metadata DB and update if changed.
    */
   async reconcile(): Promise<boolean> {
+    if (!this.config.id.startsWith(this.db.prefix)) throw new Error(`Invalid id:${this.config.id}, missing prefix:${this.db.prefix}`)
+
     const oldData = await this.db.get(this.getId(Production));
     const newData = this.prepareNewData(oldData);
 

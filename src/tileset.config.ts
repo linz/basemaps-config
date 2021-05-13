@@ -136,7 +136,7 @@ export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> 
     const tileSet: ConfigTileSet = {
       type,
       id: this.getId(this.tag),
-      name: this.config.id,
+      name: Config.unprefix(this.db.prefix, this.config.id),
       layers: this.config.layers,
       createdAt: oldData ? oldData.createdAt : now,
       updatedAt: now,
