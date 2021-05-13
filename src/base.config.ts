@@ -1,5 +1,5 @@
 import { BaseConfig, ConfigDynamoBase } from '@basemaps/config';
-import { LogType, S3FsJson } from '@basemaps/shared';
+import { LogConfig, LogType, S3FsJson } from '@basemaps/shared';
 import * as c from 'ansi-colors';
 import { diff, Diff } from 'deep-diff';
 
@@ -9,7 +9,7 @@ export const Production = 'production';
 
 export const fs = new S3FsJson();
 
-export abstract class Updater<S extends { id: string }, T extends BaseConfig> {
+export abstract class Updater<S extends { id: string } = { id: string }, T extends BaseConfig = BaseConfig> {
   config: S;
   filename: string;
   tag: string;
@@ -21,7 +21,7 @@ export abstract class Updater<S extends { id: string }, T extends BaseConfig> {
    * Class to apply an TileSetConfig source to the tile metadata db
    * @param config a string or TileSetConfig to use
    */
-  constructor(filename: string, config: unknown, tag: string, isCommit: boolean, logger: LogType) {
+  constructor(filename: string, config: unknown, tag: string, isCommit: boolean) {
     this.filename = filename;
 
     if (typeof config === 'string') config = JSON.parse(config);
@@ -29,15 +29,15 @@ export abstract class Updater<S extends { id: string }, T extends BaseConfig> {
     this.config = config;
     this.tag = tag;
     this.isCommit = isCommit ? isCommit : false;
-    this.logger = logger.child({ file: filename });
+    this.logger = LogConfig.get().child({ file: filename });
   }
 
   abstract assertConfig(config: unknown): asserts config is S;
-
-  abstract validation(): Promise<boolean>;
   abstract prepareNewData(oldData: T | null): T;
 
-  getId(tag: string):string {
+  isValid?(): Promise<boolean>;
+
+  getId(tag: string): string {
     if (tag === Production) return this.db.id(this.config.id);
     return this.db.id(`${this.config.id}@${tag}`);
   }
@@ -45,16 +45,16 @@ export abstract class Updater<S extends { id: string }, T extends BaseConfig> {
   /**
    * Reconcile the differences between the config and the tile metadata DB and update if changed.
    */
-  async reconcile(): Promise<void> {
-    if (!(await this.validation())) return;
-
+  async reconcile(): Promise<boolean> {
     const oldData = await this.db.get(this.getId(Production));
     const newData = this.prepareNewData(oldData);
 
     if (oldData == null || this.showDiff(oldData, newData)) {
       this.logger.info({ type: this.db.prefix, record: newData.id }, 'Update');
       if (this.isCommit) await this.db.put(newData);
+      return true;
     }
+    return false
   }
 
   printDiff(changes: Diff<T, T>[]): string {

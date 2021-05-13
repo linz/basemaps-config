@@ -1,6 +1,5 @@
 import { ConfigVectorStyle, StyleJson } from '@basemaps/config';
-import { Config, LogType } from '@basemaps/shared';
-import { promises as fs } from 'fs';
+import { Config } from '@basemaps/shared';
 import * as z from 'zod';
 import { Updater } from './base.config';
 
@@ -19,9 +18,7 @@ export type StyleJsonConfigSchema = z.infer<typeof zStyleJson>;
 
 export class StyleUpdater extends Updater<StyleJsonConfigSchema, ConfigVectorStyle> {
   db = Config.Style;
-  async validation(): Promise<boolean> {
-    return true;
-  }
+
   /**
    * Class to apply an StyleJsonConfig source to the tile metadata db
    * @param config a string or StyleJsonConfig to use
@@ -43,15 +40,5 @@ export class StyleUpdater extends Updater<StyleJsonConfigSchema, ConfigVectorSty
     };
 
     return style;
-  }
-}
-
-export async function importStyle(tag: string, commit: boolean, logger: LogType): Promise<void> {
-  const path = `./config/style`;
-  const filenames = await fs.readdir(path);
-  for (const filename of filenames) {
-    const file = `${path}/${filename}`;
-    const updater = new StyleUpdater(filename, (await fs.readFile(file)).toString(), tag, commit, logger);
-    await updater.reconcile();
   }
 }

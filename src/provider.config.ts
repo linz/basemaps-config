@@ -43,9 +43,6 @@ export type ProviderConfigSchema = z.infer<typeof zProviderConfig>;
 export class ProviderUpdater extends Updater<ProviderConfigSchema, ConfigProvider> {
   db = Config.Provider;
 
-  async validation(): Promise<boolean> {
-    return true;
-  }
   /**
    * Class to apply an Provider source to the tile metadata db
    * @param config a string or Provider to use
@@ -69,15 +66,5 @@ export class ProviderUpdater extends Updater<ProviderConfigSchema, ConfigProvide
     };
 
     return provider;
-  }
-}
-
-export async function importProvider(tag: string, commit: boolean, logger: LogType): Promise<void> {
-  const path = `config/provider`;
-  const filenames = await fs.readdir(path);
-  for (const filename of filenames) {
-    const file = `${path}/${filename}`;
-    const updater = new ProviderUpdater(filename, (await fs.readFile(file)).toString(), tag, commit, logger);
-    await updater.reconcile();
   }
 }

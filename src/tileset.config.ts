@@ -90,8 +90,8 @@ export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> 
   db = Config.TileSet;
   imagery: Set<string>;
 
-  constructor(filename: string, config: unknown, tag: string, isCommit: boolean, logger: LogType, imagery: Set<string>) {
-    super(filename, config, tag, isCommit, logger);
+  constructor(filename: string, config: unknown, tag: string, isCommit: boolean, imagery: Set<string>) {
+    super(filename, config, tag, isCommit);
     this.imagery = imagery;
   }
 
@@ -99,7 +99,7 @@ export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> 
     throw Error(`Imagery:${id}-${name} from TileSet:${this.config.id} does not exist.`);
   }
 
-  async validation(): Promise<boolean> {
+  async isValid(): Promise<boolean> {
     // Validate the existence of imageries
     for (const layer of this.config.layers) {
       const name = layer.name;
@@ -147,14 +147,5 @@ export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> 
     if (background) tileSet.background = background;
 
     return tileSet;
-  }
-}
-
-export async function importTileSet(tag: string, commit: boolean, logger: LogType, imagery: Set<string>): Promise<void> {
-  const path = `./config/tileset`;
-  const filenames = await fs.list(path);
-  for await (const filename of filenames) {
-    const updater = new TileSetUpdater(filename, await fs.readJson(filename), tag, commit, logger, imagery);
-    await updater.reconcile();
   }
 }

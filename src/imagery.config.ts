@@ -31,7 +31,7 @@ export type ConfigImagerySchema = z.infer<typeof zImageConfig>;
 export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> {
   db = Config.Imagery;
 
-  async validation(): Promise<boolean> {
+  async isValid(): Promise<boolean> {
     // Validate existence of imagery in s3.
     const currentImagery = new Set(this.config.files.map((c) => fs.join(this.config.uri, c.name) + '.tiff'));
     const imagery = await fs.list(this.config.uri);
@@ -73,19 +73,4 @@ export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> 
     };
     return imagery;
   }
-}
-
-export async function importImagery(tag: string, commit: boolean, logger: LogType): Promise<Set<string>> {
-  const imagery: Set<string> = new Set<string>();
-  const path = `config/imagery`;
-  const filenames = await fs.list(path);
-  const promises = [];
-  for await (const filename of filenames) {
-    const updater = new ImageryUpdater(filename, await fs.readJson(filename), tag, commit, logger);
-    const promise = updater.reconcile();
-    imagery.add(updater.config.id);
-    promises.push(promise);
-  }
-  await Promise.all(promises);
-  return imagery;
 }
