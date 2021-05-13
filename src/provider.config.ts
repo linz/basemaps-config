@@ -1,6 +1,5 @@
 import { ConfigProvider } from '@basemaps/config';
-import { Config, LogType } from '@basemaps/shared';
-import { promises as fs } from 'fs';
+import { Config } from '@basemaps/shared';
 import * as z from 'zod';
 import { Updater } from './base.config';
 

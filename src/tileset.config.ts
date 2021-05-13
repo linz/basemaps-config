@@ -1,5 +1,5 @@
 import { ConfigTileSet, TileSetType } from '@basemaps/config';
-import { Config, LogType } from '@basemaps/shared';
+import { Config } from '@basemaps/shared';
 import * as z from 'zod';
 import { fs, Updater } from './base.config';
 

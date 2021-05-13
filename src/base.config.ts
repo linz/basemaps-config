@@ -54,7 +54,8 @@ export abstract class Updater<S extends { id: string } = { id: string }, T exten
       if (this.isCommit) await this.db.put(newData);
       return true;
     }
-    return false
+    this.logger.debug({ type: this.db.prefix, record: newData.id }, 'NoChanges');
+    return false;
   }
 
   printDiff(changes: Diff<T, T>[]): string {
