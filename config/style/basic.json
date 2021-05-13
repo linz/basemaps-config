@@ -1015,5 +1015,5 @@
   },
   "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key={key}",
   "sprite": "",
-  "id": "basic"
+  "id": "st_basic"
 }
