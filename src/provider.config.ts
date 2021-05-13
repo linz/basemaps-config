@@ -56,7 +56,7 @@ export class ProviderUpdater extends Updater<ProviderConfigSchema, ConfigProvide
 
     const provider: ConfigProvider = {
       id: this.getId(this.tag),
-      name: this.config.id,
+      name: Config.unprefix(this.db.prefix, this.config.id),
       serviceIdentification: this.config.serviceIdentification,
       serviceProvider: this.config.serviceProvider,
       createdAt: oldData ? oldData.createdAt : now,
