@@ -48,7 +48,7 @@
     { "2193": "im_01EYH1E63CY2QJSVBM9GMT2E7H", "3857": "im_01EYH18XFNJM0E7WNYDVK9KGGD", "name": "hawkes-bay_rural_2018-2019_0-3m_RGB", "minZoom": 13 },
     { "2193": "im_01EDA4454KYY9R0A1MJ3R1AMXD", "3857": "im_01ED82T5HM0H275QJPMDQN0JFJ", "name": "nelson_rural_2018-19_0-3m", "minZoom": 13 },
     { "2193": "im_01EDA4MQPTX3K90SBVCA97JJEX", "3857": "im_01ED83DSMR8N1FQFVXM8JASBV2", "name": "tasman_rural_2018-19_0-3m", "minZoom": 13 },
-    {"2193":"im_01EDA390CG5W8HZ2476X89K5Q6","3857":"im_01ED81W4KDQQRW9PEQ9KS7T8DV","name":"bay-of-plenty_urban_2018-19_0-1m","minZoom":13,"maxZoom":13},
+    { "2193": "im_01EDA390CG5W8HZ2476X89K5Q6", "3857": "im_01ED81W4KDQQRW9PEQ9KS7T8DV", "name": "bay-of-plenty_urban_2018-19_0-1m", "minZoom": 13, "maxZoom": 13 },
     { "2193": "im_01EDA363G5J2GWVEK5PAANGRM3", "3857": "im_01ED81R5BX4EB3W7TB3Z8ZE89S", "name": "bay-of-plenty_rural_2019_0-3m", "minZoom": 13 },
     { "2193": "im_01EXJVE1W1D93VA0PVD3T5TXB6", "3857": "im_01EXJV4VZ22G163H5565R2D04R", "name": "tasman_rural_2020_0-3m_RGB", "minZoom": 13 },
     { "2193": "im_01EDA4D8YAHVHQ99GRCEXKD64M", "3857": "im_01ED8355C00DRTSNAQ04AHJDDZ", "name": "selwyn_urban_2012-2013_0-125m_RGBA", "minZoom": 14 },
