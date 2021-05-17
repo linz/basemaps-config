@@ -34,7 +34,7 @@ export class CommandImport extends Command {
     const res = await Promise.all(this.promises);
     this.promises = [];
     if (res.find((f) => f === false)) {
-      logger.fatal('Failed to validate configuration')
+      logger.fatal('Failed to validate configuration');
       process.exit(1);
     }
 

@@ -47,13 +47,13 @@ export abstract class Updater<S extends { id: string } = { id: string }, T exten
    * Reconcile the differences between the config and the tile metadata DB and update if changed.
    */
   async reconcile(): Promise<boolean> {
-    if (!this.config.id.startsWith(this.db.prefix)) throw new Error(`Invalid id:${this.config.id}, missing prefix:${this.db.prefix}`)
+    if (!this.config.id.startsWith(this.db.prefix)) throw new Error(`Invalid id:${this.config.id}, missing prefix:${this.db.prefix}`);
 
     const oldData = await this.db.get(this.getId(Production));
     const newData = this.prepareNewData(oldData);
 
     if (oldData == null || this.showDiff(oldData, newData)) {
-      const operation = oldData == null ? 'Insert' : 'Update'
+      const operation = oldData == null ? 'Insert' : 'Update';
       this.logger.info({ type: this.db.prefix, record: newData.id }, `Change:${operation}`);
       if (this.isCommit) await this.db.put(newData);
       return true;
