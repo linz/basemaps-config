@@ -61,7 +61,7 @@ const zImageryLayer = z
     minZoom: zZoom.optional(),
     maxZoom: zZoom.optional(),
   })
-  .refine(({ minZoom, maxZoom }) => (minZoom ?? ImageryConfigDefaults.minZoom) <= (maxZoom ?? ImageryConfigDefaults.maxZoom), {
+  .refine(({ minZoom, maxZoom }) => (minZoom ? minZoom : ImageryConfigDefaults.minZoom) <= (maxZoom ? maxZoom : ImageryConfigDefaults.maxZoom), {
     message: 'minZoom may no be greater than maxZoom',
     path: ['minZoom'],
   });
