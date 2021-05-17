@@ -6,10 +6,10 @@
       "ES2020",
       "DOM"
     ],
-    "rootDir": "./src",
-    "outDir": "./build"
+    "rootDir": "src",
+    "outDir": "build"
   },
   "include": [
-    "src/**/*"
+    "src/*"
   ]
 }

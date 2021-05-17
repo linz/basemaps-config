@@ -1014,5 +1014,6 @@
     "license": "https://github.com/openmaptiles/maptiler-basic-gl-style/blob/master/LICENSE.md"
   },
   "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key={key}",
-  "sprite": ""
+  "sprite": "",
+  "id": "st_basic"
 }
