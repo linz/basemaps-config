@@ -6,10 +6,11 @@
   "repository": "github:linz/basemaps-config",
   "license": "MIT",
   "dependencies": {
-    "@basemaps/geo": "^4.24.0",
-    "@basemaps/shared": "^4.24.0",
+    "@basemaps/config": "^5.0.0",
+    "@basemaps/geo": "^5.0.0",
+    "@basemaps/shared": "^5.0.0",
+    "@cogeotiff/chunk": "^4.2.0",
     "@oclif/command": "^1.8.0",
-    "@rushstack/ts-command-line": "4.7.6",
     "deep-diff": "^1.0.2",
     "p-limit": "^3.1.0",
     "pretty-json-log": "^0.3.2",
@@ -27,12 +28,8 @@
     "@linzjs/style": "^2.1.0",
     "@types/deep-diff": "^1.0.0",
     "@types/node": "^14.11.2",
-    "@types/ospec": "^4.0.2",
     "@types/p-limit": "^2.2.0",
-    "@types/pino": "^6.3.3",
-    "@types/sax": "^1.2.1",
     "conventional-changelog-cli": "^2.1.0",
-    "ospec": "^4.1.1",
     "rimraf": "^3.0.0"
   },
   "files": [
