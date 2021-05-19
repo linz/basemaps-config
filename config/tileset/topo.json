@@ -5,7 +5,7 @@
   "description": "The Topo map provides topographic mapping for the New Zealand mainland and offshore islands at 1:50,000 scale.",
   "background": "cee5f2ff",
   "layers": [
-    { "2193": "im_01ENS2R7PB3K2HPW1032ZXJKXD", "name": "topo250_2020_21-17m", "maxZoom": 8 },
-    { "2193": "im_01EFJ7EHQRJJ70XWBEJXGEAW6W", "name": "topo50-gridless_2020_4-23m", "minZoom": 9 }
+    { "2193": "im_01ENS2R7PB3K2HPW1032ZXJKXD", "name": "topo250_2020_21-17m", "maxZoom": 10 },
+    { "2193": "im_01EFJ7EHQRJJ70XWBEJXGEAW6W", "name": "topo50-gridless_2020_4-23m", "minZoom": 11 }
   ]
 }
