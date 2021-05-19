@@ -44,10 +44,10 @@
   dependencies:
     "@linzjs/tile-matrix-set" "^0.0.1"
 
-"@basemaps/shared@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/shared/-/shared-5.0.0.tgz#bfe7b89e4817230b72a7a57bf4dece5e85eea3ab"
-  integrity sha512-en6etr9ikbFJ5z9t1ZBm/SlrHRVnRXc/zpBmBDEpVVss0CpYUd2YzplbpN4nIDqj7lwmYhb6WuTeI1ujJ0k5Yw==
+"@basemaps/shared@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@basemaps/shared/-/shared-5.0.2.tgz#8193653b4bf5288377003b4aeee0b9472384ffe4"
+  integrity sha512-4UhZaQ8ZScrClIjSQN6VjBVP5tWGWj0hu2J5lMy1wGSGJ38unFB6Mqs6sXldMLm7/uesRED4lDxBSmvepwBUoQ==
   dependencies:
     "@basemaps/config" "^5.0.0"
     "@basemaps/geo" "^5.0.0"
