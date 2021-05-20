@@ -149,7 +149,7 @@ export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> 
     return tileSet;
   }
 
-  invalidatePath(): string | undefined {
+  invalidatePath(): string {
     const name = Config.unprefix(this.db.prefix, this.config.id);
     if (this.config.type === TileSetType.Raster) return `/v1/tiles/${name}/*`;
     return `/v1/tiles/${name}/*.pbf`;

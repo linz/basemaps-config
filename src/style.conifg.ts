@@ -42,7 +42,7 @@ export class StyleUpdater extends Updater<StyleJsonConfigSchema, ConfigVectorSty
     return style;
   }
 
-  invalidatePath(): string | undefined {
+  invalidatePath(): string {
     return `v1/*/style/${this.config.name}.json`;
   }
 }

@@ -43,8 +43,7 @@ export class CommandImport extends Command {
       const updater = new TileSetUpdater(filename, await fs.readJson(filename), flags.tag, flags.commit, this.imagery);
       const hasChanges = await updater.reconcile();
       if (hasChanges) {
-        const path = updater.invalidatePath();
-        if (path) this.invalidates.push(path);
+        if (updater.invalidatePath) this.invalidates.push(updater.invalidatePath());
       }
     }
 
@@ -81,8 +80,7 @@ export class CommandImport extends Command {
 
         const hasChanges = await updater.reconcile();
         if (hasChanges) {
-          const path = updater.invalidatePath();
-          if (path) this.invalidates.push(path);
+          if (updater.invalidatePath) this.invalidates.push(updater.invalidatePath());
         }
 
         if (fileName.includes('/imagery/')) this.imagery.add(updater.config.id);

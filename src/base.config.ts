@@ -35,8 +35,8 @@ export abstract class Updater<S extends { id: string } = { id: string }, T exten
 
   abstract assertConfig(config: unknown): asserts config is S;
   abstract prepareNewData(oldData: T | null): T;
-  abstract invalidatePath(): string | undefined;
 
+  invalidatePath?(): string;
   isValid?(): Promise<boolean>;
 
   getId(tag: string): string {
