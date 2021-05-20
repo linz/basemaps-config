@@ -41,4 +41,8 @@ export class StyleUpdater extends Updater<StyleJsonConfigSchema, ConfigVectorSty
 
     return style;
   }
+
+  invalidatePath(): string | undefined {
+    return `v1/*/style/${this.config.name}.json`;
+  }
 }

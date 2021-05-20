@@ -1,4 +1,5 @@
 import { LogConfig } from '@basemaps/shared';
+import { invalidateCache } from '@basemaps/cli';
 import { Command, flags } from '@oclif/command';
 import PLimit from 'p-limit';
 import { PrettyTransform } from 'pretty-json-log';
@@ -20,7 +21,7 @@ export class CommandImport extends Command {
 
   promises: Promise<boolean>[] = [];
   imagery = new Set<string>();
-  hasChanges = false;
+  invalidates: string[] = [];
 
   async run(): Promise<void> {
     if (process.stdout.isTTY) LogConfig.setOutputStream(PrettyTransform.stream());
@@ -40,12 +41,17 @@ export class CommandImport extends Command {
 
     for await (const filename of fs.list(`./config/tileset`)) {
       const updater = new TileSetUpdater(filename, await fs.readJson(filename), flags.tag, flags.commit, this.imagery);
-      await updater.reconcile();
+      const hasChanges = await updater.reconcile();
+      if (hasChanges) {
+        const path = updater.invalidatePath();
+        if (path) this.invalidates.push(path);
+      }
     }
-    if (this.hasChanges) {
-      logger.warn('FlushCache');
-      if (flags.commit) {
-        // invalidate /v1/*
+
+    if (flags.commit) {
+      for (const invalidate of this.invalidates) {
+        logger.warn(`FlushCache: ${invalidate}`);
+        invalidateCache(invalidate, flags.commit);
       }
     }
 
@@ -74,7 +80,11 @@ export class CommandImport extends Command {
         }
 
         const hasChanges = await updater.reconcile();
-        this.hasChanges = this.hasChanges || hasChanges;
+        if (hasChanges) {
+          const path = updater.invalidatePath();
+          if (path) this.invalidates.push(path);
+        }
+
         if (fileName.includes('/imagery/')) this.imagery.add(updater.config.id);
         return true;
       },

@@ -73,4 +73,8 @@ export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> 
     };
     return imagery;
   }
+
+  invalidatePath(): string | undefined {
+    return undefined;
+  }
 }
