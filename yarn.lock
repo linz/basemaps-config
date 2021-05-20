@@ -30,6 +30,25 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
+"@basemaps/cli@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@basemaps/cli/-/cli-5.0.2.tgz#a97134d23fe744f212601d02f3c674f0f96aa947"
+  integrity sha512-dB5NBRE49K765gyyeuPnUaWSZv1SfWwZ0ucNwrgRQ+4sKAqjyzsAMs+RdWtRRs52DVK7dGfXdNUU/PE2TVDyrQ==
+  dependencies:
+    "@basemaps/config" "^5.0.0"
+    "@basemaps/geo" "^5.0.0"
+    "@basemaps/shared" "^5.0.2"
+    "@cogeotiff/core" "^4.2.0"
+    "@cogeotiff/source-aws" "^4.2.0"
+    "@cogeotiff/source-file" "^4.2.0"
+    "@cogeotiff/source-url" "^4.2.0"
+    "@linzjs/geojson" "^5.0.0"
+    "@rushstack/ts-command-line" "^4.3.13"
+    ansi-colors "^4.1.1"
+    p-limit "^3.0.1"
+    pretty-json-log "^0.3.1"
+    zod "^1.10.1"
+
 "@basemaps/config@^5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@basemaps/config/-/config-5.0.0.tgz#ffd42bfea94900b42006061fca8db348bc7acb1a"
@@ -44,10 +63,10 @@
   dependencies:
     "@linzjs/tile-matrix-set" "^0.0.1"
 
-"@basemaps/shared@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/shared/-/shared-5.0.0.tgz#bfe7b89e4817230b72a7a57bf4dece5e85eea3ab"
-  integrity sha512-en6etr9ikbFJ5z9t1ZBm/SlrHRVnRXc/zpBmBDEpVVss0CpYUd2YzplbpN4nIDqj7lwmYhb6WuTeI1ujJ0k5Yw==
+"@basemaps/shared@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@basemaps/shared/-/shared-5.0.2.tgz#8193653b4bf5288377003b4aeee0b9472384ffe4"
+  integrity sha512-4UhZaQ8ZScrClIjSQN6VjBVP5tWGWj0hu2J5lMy1wGSGJ38unFB6Mqs6sXldMLm7/uesRED4lDxBSmvepwBUoQ==
   dependencies:
     "@basemaps/config" "^5.0.0"
     "@basemaps/geo" "^5.0.0"
@@ -83,6 +102,28 @@
   integrity sha512-v7vJQzWxJURBdwuQeHA0mFK9lOiBTBmAHM/8GzeMlyQc4dJ3UYavUQ0JMiuMOomVLI5L4rP6pUDenLwhxEZUgQ==
   dependencies:
     ieee754 "^1.1.13"
+
+"@cogeotiff/source-aws@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@cogeotiff/source-aws/-/source-aws-4.2.0.tgz#40c57665806264e227d968b3ee9579db3692c72f"
+  integrity sha512-u5XJInmvyF64LNa63nP+fz43Yn3K0sqa+DqyDBsAZR9k2JGgW+ITSjHoHYWMsVxyPU0ZVTBaGEFvrIBGDVIBsQ==
+  dependencies:
+    "@cogeotiff/chunk" "^4.2.0"
+
+"@cogeotiff/source-file@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@cogeotiff/source-file/-/source-file-4.2.0.tgz#0906a9ee09857e1ea0323aedef05001ec24add06"
+  integrity sha512-D4UrvpwtFbDWUA8rMXbrif+g1GVZgc61v6mxnKpACtcR3yI1zd0GkrBddvwbqYwC2pqKZtuYJ+djE6VdiicKnQ==
+  dependencies:
+    "@cogeotiff/chunk" "^4.2.0"
+
+"@cogeotiff/source-url@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@cogeotiff/source-url/-/source-url-4.2.0.tgz#74c40c6cbd60af5034a18a3682bc71641afec8a4"
+  integrity sha512-ppkHDN/9BWBgk9KhqySotvhfL8kBjj2zmVNV1XK2KY2ChGbyHadDmtuc1Yy3g4CHWox8XLjPQ+NJuUnepwHpUg==
+  dependencies:
+    "@cogeotiff/chunk" "^4.2.0"
+    node-fetch "^2.6.0"
 
 "@eslint/eslintrc@^0.4.1":
   version "0.4.1"
@@ -222,6 +263,21 @@
     strip-ansi "^6.0.0"
     widest-line "^3.1.0"
     wrap-ansi "^4.0.0"
+
+"@rushstack/ts-command-line@^4.3.13":
+  version "4.7.10"
+  resolved "https://registry.yarnpkg.com/@rushstack/ts-command-line/-/ts-command-line-4.7.10.tgz#a2ec6efb1945b79b496671ce90eb1be4f1397d31"
+  integrity sha512-8t042g8eerypNOEcdpxwRA3uCmz0duMo21rG4Z2mdz7JxJeylDmzjlU3wDdef2t3P1Z61JCdZB6fbm1Mh0zi7w==
+  dependencies:
+    "@types/argparse" "1.0.38"
+    argparse "~1.0.9"
+    colors "~1.2.1"
+    string-argv "~0.3.1"
+
+"@types/argparse@1.0.38":
+  version "1.0.38"
+  resolved "https://registry.yarnpkg.com/@types/argparse/-/argparse-1.0.38.tgz#a81fd8606d481f873a3800c6ebae4f1d768a56a9"
+  integrity sha512-ebDJ9b0e702Yr7pWgB0jzm+CX4Srzz8RcXtLJDJB+BSccqMa36uyH/zUsSYao5+BD1ytv3k3rPYCq4mAE1hsXA==
 
 "@types/deep-diff@^1.0.0":
   version "1.0.0"
@@ -402,7 +458,7 @@ ansi-styles@^4.0.0, ansi-styles@^4.1.0:
   dependencies:
     color-convert "^2.0.1"
 
-argparse@^1.0.7:
+argparse@^1.0.7, argparse@~1.0.9:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.10.tgz#bcd6791ea5ae09725e17e5ad988134cd40b3d911"
   integrity sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==
@@ -595,6 +651,11 @@ color-name@~1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
+
+colors@~1.2.1:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/colors/-/colors-1.2.5.tgz#89c7ad9a374bc030df8013241f68136ed8835afc"
+  integrity sha512-erNRLao/Y3Fv54qUa0LBB+//Uf3YwMUmdJinN20yMXm9zdKKqH9wt7R9IIVZ+K7ShzfpLV/Zg8+VyrBJYB4lpg==
 
 compare-func@^2.0.0:
   version "2.0.0"
@@ -1774,6 +1835,11 @@ neo-async@^2.6.0:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
+node-fetch@^2.6.0:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
+  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
+
 normalize-package-data@^2.3.0, normalize-package-data@^2.3.2, normalize-package-data@^2.3.4, normalize-package-data@^2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/normalize-package-data/-/normalize-package-data-2.5.0.tgz#e66db1838b200c1dfc233225d12cb36520e234a8"
@@ -1818,7 +1884,7 @@ optionator@^0.9.1:
     type-check "^0.4.0"
     word-wrap "^1.2.3"
 
-p-limit@*, p-limit@^3.1.0:
+p-limit@*, p-limit@^3.0.1, p-limit@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/p-limit/-/p-limit-3.1.0.tgz#e1daccbe78d0d1388ca18c64fea38e3e57e3706b"
   integrity sha512-TYOanM3wGwNGsZN2cVTYPArw454xnXj5qmWF1bEoAc4+cU/ol7GVh7odevjp1FNHduHc3KZMcFduxU5Xc6uJRQ==
@@ -2021,7 +2087,7 @@ prettier@^2.2.1:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.2.1.tgz#795a1a78dd52f073da0cd42b21f9c91381923ff5"
   integrity sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==
 
-pretty-json-log@^0.3.2:
+pretty-json-log@^0.3.1, pretty-json-log@^0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/pretty-json-log/-/pretty-json-log-0.3.2.tgz#9bd22d452ea005a3c293f5a641a6ec3d17cc83f5"
   integrity sha512-dPjFb2RNFPUdGKIGCyfqeslmkqZZxPxq4UbLMJJZDs0y+GMYZfWo3FmT1VYAgcehbXTXRhNPcAlgbTWgUAQEHw==
@@ -2382,6 +2448,11 @@ sprintf-js@~1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
+
+string-argv@~0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/string-argv/-/string-argv-0.3.1.tgz#95e2fbec0427ae19184935f816d74aaa4c5c19da"
+  integrity sha512-a1uQGz7IyVy9YwhqjZIZu1c8JO8dNIe20xBmSS6qu9kv++k3JGzCVmprbNN5Kn+BgzD5E7YYwg1CcjuJMRNsvg==
 
 string-width@^2.1.1:
   version "2.1.1"
@@ -2745,7 +2816,7 @@ yocto-queue@^0.1.0:
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 
-zod@^1.11.17:
+zod@^1.10.1, zod@^1.11.17:
   version "1.11.17"
   resolved "https://registry.yarnpkg.com/zod/-/zod-1.11.17.tgz#2aae9e91fc66128116ae9844e8f416a95f453f8e"
   integrity sha512-UzIwO92D0dSFwIRyyqAfRXICITLjF0IP8tRbEK/un7adirMssWZx8xF/1hZNE7t61knWZ+lhEuUvxlu2MO8qqA==

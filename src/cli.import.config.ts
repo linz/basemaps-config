@@ -1,5 +1,5 @@
 import { LogConfig } from '@basemaps/shared';
-import { invalidateCache } from '@basemaps/cli';
+import { invalidateCache } from '@basemaps/cli/build/cli/util';
 import { Command, flags } from '@oclif/command';
 import PLimit from 'p-limit';
 import { PrettyTransform } from 'pretty-json-log';
