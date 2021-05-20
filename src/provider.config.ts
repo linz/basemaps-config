@@ -66,4 +66,8 @@ export class ProviderUpdater extends Updater<ProviderConfigSchema, ConfigProvide
 
     return provider;
   }
+
+  invalidatePath(): string {
+    return '/v1/*/WMTSCapabilities.xml';
+  }
 }
