@@ -56,8 +56,11 @@ const zZoom = z.number().refine((val) => val >= ImageryConfigDefaults.minZoom &&
   message: `must be between ${ImageryConfigDefaults.minZoom} and ${ImageryConfigDefaults.maxZoom}`,
 });
 
-const zImageryLayer = z
+const zLayerConfig = z
   .object({
+    name: z.string(),
+    2193: z.string().optional(),
+    3857: z.string().optional(),
     minZoom: zZoom.optional(),
     maxZoom: zZoom.optional(),
   })
@@ -65,12 +68,6 @@ const zImageryLayer = z
     message: 'minZoom may no be greater than maxZoom',
     path: ['minZoom'],
   });
-
-const zLayerConfig = zImageryLayer.extend({
-  name: z.string(),
-  2193: z.string().optional(),
-  3857: z.string().optional(),
-});
 
 const zTileSetConfig = z.object({
   type: z.string(),

@@ -4,26 +4,20 @@ import { Config } from '@basemaps/shared';
 import * as z from 'zod';
 import { fs, Updater } from './base.config';
 
-const zBound = z.object({
-  x: z.number(),
-  y: z.number(),
-  width: z.number(),
-  height: z.number(),
-});
+export const zBound = z.object({ x: z.number(), y: z.number(), width: z.number(), height: z.number() });
 
-const zFile = zBound.extend({
-  name: z.string(),
-});
+export const zNamedBounds = zBound.extend({ name: z.string() });
 
-const zImageConfig = z.object({
+export const zImageConfig = z.object({
   id: z.string(),
+  tileMatrix: z.string().optional(),
   name: z.string(),
   uri: z.string(),
   projection: z.number(),
   year: z.number(),
   resolution: z.number(),
   bounds: zBound,
-  files: z.array(zFile),
+  files: z.array(zNamedBounds),
 });
 
 export type ConfigImagerySchema = z.infer<typeof zImageConfig>;
