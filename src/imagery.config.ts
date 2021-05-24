@@ -15,7 +15,7 @@ const zFile = zBound.extend({
   name: z.string(),
 });
 
-const zImageConfig = z.object({
+export const zImageConfig = z.object({
   id: z.string(),
   name: z.string(),
   uri: z.string(),

@@ -8,6 +8,7 @@ import { ImageryUpdater } from './imagery.config';
 import { ProviderUpdater } from './provider.config';
 import { StyleUpdater } from './style.conifg';
 import { TileSetUpdater } from './tileset.config';
+import { ImageryTileSetUpdater } from './imagery.tileset.config';
 
 const Q = PLimit(10);
 
@@ -41,6 +42,14 @@ export class CommandImport extends Command {
 
     for await (const filename of fs.list(`./config/tileset`)) {
       const updater = new TileSetUpdater(filename, await fs.readJson(filename), flags.tag, flags.commit, this.imagery);
+      const hasChanges = await updater.reconcile();
+      if (hasChanges) {
+        if (updater.invalidatePath) this.invalidates.push(updater.invalidatePath());
+      }
+    }
+
+    for await (const filename of fs.list(`./config/imagery`)) {
+      const updater = new ImageryTileSetUpdater(filename, await fs.readJson(filename), flags.tag, flags.commit);
       const hasChanges = await updater.reconcile();
       if (hasChanges) {
         if (updater.invalidatePath) this.invalidates.push(updater.invalidatePath());
