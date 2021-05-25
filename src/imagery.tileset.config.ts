@@ -10,7 +10,7 @@ export class ImageryTileSetUpdater extends Updater<ConfigImagerySchema, ConfigTi
   constructor(filename: string, config: unknown, tag: string, isCommit: boolean) {
     super(filename, config, tag, isCommit);
     this.imgId = Config.unprefix(Config.Imagery.prefix, this.config.id);
-    this.config.id = this.getId();
+    this.id = this.getId();
   }
 
   /**
