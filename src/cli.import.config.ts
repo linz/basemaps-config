@@ -8,6 +8,7 @@ import { ImageryUpdater } from './imagery.config';
 import { ProviderUpdater } from './provider.config';
 import { StyleUpdater } from './style.conifg';
 import { TileSetUpdater } from './tileset.config';
+import { ImageryTileSetUpdater } from './imagery.tileset.config';
 
 const Q = PLimit(10);
 
@@ -57,10 +58,10 @@ export class CommandImport extends Command {
     if (flags.commit !== true) logger.info('DryRun:Done');
   }
 
-  getUpdater(fileName: string, config: unknown, tag: string, commit: boolean): Updater {
-    if (fileName.includes('/imagery/')) return new ImageryUpdater(fileName, config, tag, commit);
-    if (fileName.includes('/style/')) return new StyleUpdater(fileName, config, tag, commit);
-    if (fileName.includes('/provider/')) return new ProviderUpdater(fileName, config, tag, commit);
+  getUpdater(fileName: string, config: unknown, tag: string, commit: boolean): Updater[] {
+    if (fileName.includes('/imagery/')) return [new ImageryUpdater(fileName, config, tag, commit), new ImageryTileSetUpdater(fileName, config, tag, commit)];
+    if (fileName.includes('/style/')) return [new StyleUpdater(fileName, config, tag, commit)];
+    if (fileName.includes('/provider/')) return [new ProviderUpdater(fileName, config, tag, commit)];
     throw new Error(`Unable to find updater for path:${fileName}`);
   }
 
@@ -68,22 +69,24 @@ export class CommandImport extends Command {
     const promise = Q(
       async (): Promise<boolean> => {
         const json = await fs.readJson(fileName);
-        const updater = this.getUpdater(fileName, json, tag, commit);
+        const updaters = this.getUpdater(fileName, json, tag, commit);
 
-        if (updater.isValid) {
-          const isValid = await updater.isValid();
-          if (!isValid) {
-            updater.logger.error('InvalidConfig');
-            return false;
+        for (const updater of updaters) {
+          if (updater.isValid) {
+            const isValid = await updater.isValid();
+            if (!isValid) {
+              updater.logger.error('InvalidConfig');
+              return false;
+            }
           }
-        }
 
-        const hasChanges = await updater.reconcile();
-        if (hasChanges) {
-          if (updater.invalidatePath) this.invalidates.push(updater.invalidatePath());
-        }
+          const hasChanges = await updater.reconcile();
+          if (hasChanges) {
+            if (updater.invalidatePath) this.invalidates.push(updater.invalidatePath());
+          }
 
-        if (fileName.includes('/imagery/')) this.imagery.add(updater.config.id);
+          if (fileName.includes('/imagery/')) this.imagery.add(updater.config.id);
+        }
         return true;
       },
     );

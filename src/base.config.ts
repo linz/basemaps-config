@@ -10,6 +10,7 @@ export const Production = 'production';
 export const fs = new S3FsJson();
 
 export abstract class Updater<S extends { id: string } = { id: string }, T extends BaseConfig = BaseConfig> {
+  id: string;
   config: S;
   filename: string;
   tag: string;
@@ -31,6 +32,7 @@ export abstract class Updater<S extends { id: string } = { id: string }, T exten
     this.tag = tag;
     this.isCommit = isCommit ? isCommit : false;
     this.logger = LogConfig.get().child({ file: filename });
+    this.id = this.config.id;
   }
 
   abstract assertConfig(config: unknown): asserts config is S;
@@ -48,7 +50,7 @@ export abstract class Updater<S extends { id: string } = { id: string }, T exten
    * Reconcile the differences between the config and the tile metadata DB and update if changed.
    */
   async reconcile(): Promise<boolean> {
-    if (!this.config.id.startsWith(this.db.prefix)) throw new Error(`Invalid id:${this.config.id}, missing prefix:${this.db.prefix}`);
+    if (!this.id.startsWith(this.db.prefix)) throw new Error(`Invalid id:${this.id}, missing prefix:${this.db.prefix}`);
 
     const oldData = await this.db.get(this.getId(Production));
     const newData = this.prepareNewData(oldData);
