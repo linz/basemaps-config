@@ -30,14 +30,14 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@basemaps/cli@^5.0.2":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@basemaps/cli/-/cli-5.0.2.tgz#a97134d23fe744f212601d02f3c674f0f96aa947"
-  integrity sha512-dB5NBRE49K765gyyeuPnUaWSZv1SfWwZ0ucNwrgRQ+4sKAqjyzsAMs+RdWtRRs52DVK7dGfXdNUU/PE2TVDyrQ==
+"@basemaps/cli@^5.0.3":
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/@basemaps/cli/-/cli-5.0.3.tgz#95a08b3c6d0860ce35687ff8afe5f5fd819fd21c"
+  integrity sha512-Si0leoc4PFiI9aa5xvy+rfAE8FId0AforKJ7Cioex2A2UWsIk5kGKcuioNTc/2ttimmcU/Kc5Zvx8n5yI00Hww==
   dependencies:
     "@basemaps/config" "^5.0.0"
     "@basemaps/geo" "^5.0.0"
-    "@basemaps/shared" "^5.0.2"
+    "@basemaps/shared" "^5.0.3"
     "@cogeotiff/core" "^4.2.0"
     "@cogeotiff/source-aws" "^4.2.0"
     "@cogeotiff/source-file" "^4.2.0"
@@ -63,10 +63,10 @@
   dependencies:
     "@linzjs/tile-matrix-set" "^0.0.1"
 
-"@basemaps/shared@^5.0.2":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@basemaps/shared/-/shared-5.0.2.tgz#8193653b4bf5288377003b4aeee0b9472384ffe4"
-  integrity sha512-4UhZaQ8ZScrClIjSQN6VjBVP5tWGWj0hu2J5lMy1wGSGJ38unFB6Mqs6sXldMLm7/uesRED4lDxBSmvepwBUoQ==
+"@basemaps/shared@^5.0.2", "@basemaps/shared@^5.0.3":
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/@basemaps/shared/-/shared-5.0.3.tgz#af7eec62baed6080bf9b82f688bf8a00d6cbc427"
+  integrity sha512-DG9yWzCKuT7NvLXAhaIK8d+Lo0dDNqgkhudbP8zfvu0HhOlSTALfcLb8px5TxTcoLo9J6d+yYFc/vsdFulpJTg==
   dependencies:
     "@basemaps/config" "^5.0.0"
     "@basemaps/geo" "^5.0.0"
