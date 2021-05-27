@@ -1,5 +1,5 @@
 import { Bounds, TileMatrixSets } from '@basemaps/geo';
-import { Config, extractYearRangeFromName, LogConfig, S3FsJson } from '@basemaps/shared';
+import { Config, extractYearRangeFromName, LogConfig, Projection, S3FsJson } from '@basemaps/shared';
 import { Command, flags } from '@oclif/command';
 import { PrettyTransform } from 'pretty-json-log';
 import * as z from 'zod';
@@ -8,6 +8,7 @@ const zJob = z.object({
   id: z.string(),
   name: z.string(),
   output: z.object({
+    gsd: z.number(),
     tileMatrix: z.string(),
     files: z.array(zNamedBounds),
   }),
@@ -83,6 +84,14 @@ export class CommandImportImagery extends Command {
       files: job.output.files,
     };
 
+    const center = { x: bounds.x + bounds.width / 2, y: bounds.y + bounds.height / 2 };
+    const proj = Projection.get(tileMatrix);
+    const centerLatLon = proj.toWgs84([center.x, center.y]).map((c) => c.toFixed(6));
+    const targetZoom = Math.max(tileMatrix.findBestZoom(job.output.gsd) - 12, 0);
+
+    const url = `https://basemaps.linz.govt.nz/?p=${tileMatrix.identifier}&i=${job.id}#@${centerLatLon[1]},${centerLatLon[0]},z${targetZoom}`;
+
+    logger.info({ img: job.name, url }, 'Url');
     zImageConfig.parse(imgConfig);
     const targetFileName = `./config/imagery/${job.name}-${tileMatrix.identifier}.json`;
 
