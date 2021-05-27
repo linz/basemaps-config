@@ -1,7 +1,7 @@
 {
   "name": "canterbury_rural_2015-2016_0-30m_RGBA",
   "id": "im_01F66EBN9BYJA29NMW96ZJM7ZJ",
-  "uri": "s3://linz-basemaps/2193/canterbury_rural_2015-2016_0-30m_RGBA/01F66EBN9BYJA29NMW96ZJM7ZJ/",
+  "uri": "s3://linz-basemaps/2193/canterbury_rural_2015-2016_0-30m_RGBA/01F66EBN9BYJA29NMW96ZJM7ZJ",
   "year": 2015,
   "projection": 2193,
   "resolution": 300,
