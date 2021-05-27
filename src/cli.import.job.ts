@@ -74,7 +74,7 @@ export class CommandImportImagery extends Command {
     const imgConfig: ConfigImagerySchema = {
       name: job.name,
       id: Config.Imagery.id(job.id),
-      uri: args.file.replace('job.json', ''),
+      uri: args.file.replace('/job.json', ''),
       year: year[0],
       projection: tileMatrix.projection.code,
       resolution,
