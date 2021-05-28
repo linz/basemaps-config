@@ -4,7 +4,7 @@
   "background": "dce9edff",
   "layers": [
     { "2193": "im_01F1BFJN8R8P7BXN3XTHC5MT5G", "3857": "im_01EDMTM3P563P06TWYQAZRA9F6", "name": "gebco_2020_305-75m", "maxZoom": 15 },
-    { "2193": "im_01F66EEHWXVMK4B7E13AVZ8NE7", "3857": "im_01ED849PJ44FA7S612QAXN9P11", "name": "chatham-islands_digital-globe_2014-2019_0-5m", "maxZoom": 12 },
+    { "2193": "im_01F66EE7AETCNNKDJYCRSJ4CED", "3857": "im_01ED849PJ44FA7S612QAXN9P11", "name": "chatham-islands_digital-globe_2014-2019_0-5m", "maxZoom": 12 },
     { "2193": "im_01F66EEHWXVMK4B7E13AVZ8NE7", "3857": "im_01ED84CATGQ1THNG7QEEEZBEBT", "name": "chatham-islands_digital-globe_2014-2019_0-5m", "minZoom": 13 },
     { "2193": "im_01F6P1G0S78XYXAQB7Y375MZ2Q", "3857": "im_01ED82TFB1ZE9C75CH5VY3Z92B", "name": "new_zealand_sentinel_2019-2020_10m" },
     { "2193": "im_01F6P1TJ28B0HSRV2MNTBFSMKA", "3857": "im_01EE9646WHWA7X46KDRATVWY9Z", "name": "tasman_rural_2001-2002_1m_RGB", "minZoom": 13 },
