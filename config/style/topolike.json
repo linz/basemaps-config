@@ -23,7 +23,7 @@
       "id": "Coastline",
       "type": "fill",
       "source": "LINZ Basemaps",
-      "source-layer": "Coastline",
+      "source-layer": "coastline",
       "minzoom": 0,
       "maxzoom": 24,
       "layout": { "visibility": "none" },
