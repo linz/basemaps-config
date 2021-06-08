@@ -43,6 +43,6 @@ export class StyleUpdater extends Updater<StyleJsonConfigSchema, ConfigVectorSty
   }
 
   invalidatePath(): string {
-    return `v1/*/style/${this.config.name}.json`;
+    return `v1/tiles/togographic/style/${this.config.name}.json`;
   }
 }
