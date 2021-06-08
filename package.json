@@ -6,7 +6,7 @@
   "repository": "github:linz/basemaps-config",
   "license": "MIT",
   "dependencies": {
-    "@basemaps/cli": "^5.0.2",
+    "@basemaps/cli": "^5.1.0",
     "@basemaps/config": "^5.0.0",
     "@basemaps/geo": "^5.0.0",
     "@basemaps/shared": "^5.0.2",
