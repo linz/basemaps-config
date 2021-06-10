@@ -5,7 +5,7 @@
   "sources": {
     "LINZ Basemaps": {
       "type": "vector",
-      "url": "https://vector.tiles.linz.io/data/topo.json"
+      "url": ""
     }
   },
   "sprite": "https://nst-guide.github.io/osm-liberty-topo/sprites/osm-liberty-topo",
