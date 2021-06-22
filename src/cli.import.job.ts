@@ -1,9 +1,10 @@
 import { Bounds, TileMatrixSets } from '@basemaps/geo';
-import { Config, extractYearRangeFromName, LogConfig, Projection, S3FsJson } from '@basemaps/shared';
+import { Config, extractYearRangeFromName, LogConfig, Projection, fsa } from '@basemaps/shared';
 import { Command, flags } from '@oclif/command';
 import { PrettyTransform } from 'pretty-json-log';
 import * as z from 'zod';
 import { ConfigImagerySchema, zImageConfig, zNamedBounds } from './imagery.config';
+
 const zJob = z.object({
   id: z.string(),
   name: z.string(),
@@ -28,7 +29,6 @@ export function extractResolutionFromName(name: string): number {
   return parseFloat(matches[1].replace('-', '.')) * 1000;
 }
 
-const fs = new S3FsJson();
 export class CommandImportImagery extends Command {
   static description = 'Import imagery from job';
 
@@ -46,10 +46,10 @@ export class CommandImportImagery extends Command {
     const logger = LogConfig.get();
     const { flags, args } = this.parse(CommandImportImagery);
 
-    if (!args.file.endsWith('job.json')) args.file = fs.join(args.file, 'job.json');
+    if (!args.file.endsWith('job.json')) args.file = fsa.join(args.file, 'job.json');
 
     logger.info({ path: args.file }, 'Job:Fetch');
-    const jobJson = await fs.readJson(args.file);
+    const jobJson = await fsa.readJson(args.file);
 
     const job = zJob.passthrough().parse(jobJson);
     const year = extractYearRangeFromName(job.name);
@@ -97,6 +97,6 @@ export class CommandImportImagery extends Command {
 
     logger.info({ path: targetFileName, files: job.output.files.length }, 'Imported');
     if (flags.commit !== true) logger.info('DryRun:Done');
-    else fs.writeJson(targetFileName, imgConfig);
+    else fsa.writeJson(targetFileName, imgConfig);
   }
 }
