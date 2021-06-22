@@ -1,5 +1,5 @@
 import { BaseConfig, ConfigDynamoBase } from '@basemaps/config';
-import { LogConfig, LogType, fsa } from '@basemaps/shared';
+import { LogConfig, LogType } from '@basemaps/shared';
 import * as c from 'ansi-colors';
 import { diff, Diff } from 'deep-diff';
 
