@@ -1,7 +1,7 @@
 import { ConfigTileSet, TileSetType } from '@basemaps/config';
-import { Config } from '@basemaps/shared';
+import { Config, fsa } from '@basemaps/shared';
 import * as z from 'zod';
-import { fs, Updater } from './base.config';
+import { Updater } from './base.config';
 
 /**
  * Parse a string as hex, return 0 on failure
@@ -104,8 +104,8 @@ export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> 
         if (layer[2193] && !this.imagery.has(layer[2193])) this.invalidateError(layer[2193], name);
         if (layer[3857] && !this.imagery.has(layer[3857])) this.invalidateError(layer[3857], name);
       } else {
-        if (layer[2193] && !(await fs.exists(layer[2193]))) this.invalidateError(layer[2193], name);
-        if (layer[3857] && !(await fs.exists(layer[3857]))) this.invalidateError(layer[3857], name);
+        if (layer[2193] && !(await fsa.exists(layer[2193]))) this.invalidateError(layer[2193], name);
+        if (layer[3857] && !(await fsa.exists(layer[3857]))) this.invalidateError(layer[3857], name);
       }
     }
     return true;

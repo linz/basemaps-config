@@ -1,13 +1,11 @@
 import { BaseConfig, ConfigDynamoBase } from '@basemaps/config';
-import { LogConfig, LogType, S3FsJson } from '@basemaps/shared';
+import { LogConfig, LogType } from '@basemaps/shared';
 import * as c from 'ansi-colors';
 import { diff, Diff } from 'deep-diff';
 
 export const IgnoredProperties = ['id', 'createdAt', 'updatedAt'];
 
 export const Production = 'production';
-
-export const fs = new S3FsJson();
 
 export abstract class Updater<S extends { id: string } = { id: string }, T extends BaseConfig = BaseConfig> {
   id: string;

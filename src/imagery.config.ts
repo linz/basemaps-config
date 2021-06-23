@@ -1,8 +1,8 @@
 import { ConfigImagery } from '@basemaps/config';
 import { Epsg } from '@basemaps/geo';
-import { Config } from '@basemaps/shared';
+import { Config, fsa } from '@basemaps/shared';
 import * as z from 'zod';
-import { fs, Updater } from './base.config';
+import { Updater } from './base.config';
 
 export const zBound = z.object({ x: z.number(), y: z.number(), width: z.number(), height: z.number() });
 
@@ -27,8 +27,8 @@ export class ImageryUpdater extends Updater<ConfigImagerySchema, ConfigImagery> 
 
   async isValid(): Promise<boolean> {
     // Validate existence of imagery in s3.
-    const currentImagery = new Set(this.config.files.map((c) => fs.join(this.config.uri, c.name) + '.tiff'));
-    const imagery = await fs.list(this.config.uri);
+    const currentImagery = new Set(this.config.files.map((c) => fsa.join(this.config.uri, c.name) + '.tiff'));
+    const imagery = await fsa.list(this.config.uri);
     for await (const img of imagery) currentImagery.delete(img);
 
     if (currentImagery.size > 0) {
