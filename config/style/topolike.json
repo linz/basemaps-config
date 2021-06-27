@@ -50,28 +50,6 @@
       "paint": { "fill-color": "rgba(228, 234, 228, 1)", "fill-antialias": false }
     },
     {
-      "id": "NextZen-Light",
-      "type": "hillshade",
-      "source": "Nextzen-DEM",
-      "layout": { "visibility": "visible" },
-      "paint": {
-        "hillshade-shadow-color": "rgba(220, 220, 197, 0.5)",
-        "hillshade-exaggeration": 0.3,
-        "hillshade-illumination-direction": 315
-      }
-    },
-    {
-      "id": "NextZen",
-      "type": "hillshade",
-      "source": "Nextzen-DEM",
-      "layout": { "visibility": "none" },
-      "paint": {
-        "hillshade-shadow-color": "rgba(131, 123, 110, 0.5)",
-        "hillshade-exaggeration": 0.3,
-        "hillshade-illumination-direction": 315
-      }
-    },
-    {
       "id": "Ocean",
       "type": "fill",
       "source": "openmaptiles",
