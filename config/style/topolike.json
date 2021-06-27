@@ -50,14 +50,6 @@
       "paint": { "fill-color": "rgba(228, 234, 228, 1)", "fill-antialias": false }
     },
     {
-      "id": "Ocean",
-      "type": "fill",
-      "source": "openmaptiles",
-      "source-layer": "water",
-      "filter": ["all", ["==", "class", "ocean"]],
-      "paint": { "fill-color": "rgba(184, 220, 242, 1)" }
-    },
-    {
       "id": "Poi-Mine-Poly",
       "type": "fill",
       "source": "LINZ Basemaps",
