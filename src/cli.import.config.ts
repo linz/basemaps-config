@@ -51,7 +51,7 @@ export class CommandImport extends Command {
     if (flags.commit) {
       for (const invalidate of this.invalidates) {
         logger.warn(`FlushCache: ${invalidate}`);
-        invalidateCache(invalidate, flags.commit);
+        await invalidateCache(invalidate, flags.commit);
       }
     }
 
