@@ -15,7 +15,7 @@
     "deep-diff": "^1.0.2",
     "p-limit": "^3.1.0",
     "pretty-json-log": "^0.3.2",
-    "zod": "^3.0.2"
+    "zod": "^3.3.4"
   },
   "scripts": {
     "lint": "eslint 'src/**/*.ts' --quiet --fix --report-unused-disable-directives",
