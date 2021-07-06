@@ -91,10 +91,10 @@
     "@cogeotiff/core" "^4.2.0"
     "@linzjs/metrics" "^6.0.0"
 
-"@cogeotiff/chunk@^4.2.0":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@cogeotiff/chunk/-/chunk-4.2.0.tgz#236edd611f713e55c6b1b87c28b0aeb231fcb00a"
-  integrity sha512-QN6a9SfgEk0dMjM1ZGQLtbVHkyzYQwwi3asgnuR0d75192zxFRUj0XgXjB5GCH1GnkpTRTpVgNS8hYj1abNr3A==
+"@cogeotiff/chunk@^4.2.0", "@cogeotiff/chunk@^4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@cogeotiff/chunk/-/chunk-4.3.0.tgz#3372ccec11a7f17afafd704d6a11e1068fb1c56e"
+  integrity sha512-duVgqb/Ed6RhWISCBVBibJggWRmL/HJ9Rqq/kdcdW+aj7toGSoo8xr2NGR8N07hjILcUw/Frxf0GTK2/m+xrBg==
 
 "@cogeotiff/core@^4.2.0":
   version "4.2.0"
