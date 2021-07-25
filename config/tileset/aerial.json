@@ -37,7 +37,7 @@
     { "2193": "im_01F6P1BSQ6V27WZK0KM56M4Z1C", "3857": "im_01ED82JQASJDFZ6XEM018RJQN0", "name": "manawatu-whanganui_rural_2016-17_0-3m", "minZoom": 13 },
     { "2193": "im_01F6P1SZXEN3X5SDKT7XRQHEGY", "3857": "im_01ED83B7TAK5SBKVYFJZMTE9AV", "name": "taranaki_rural_2016-17_0-3m", "minZoom": 13 },
     { "2193": "im_01F6P1V84P2HJ1YB0D5X1CSWJH", "3857": "im_01ED83DC7MCMBCRNN45E07HCHH", "name": "tasman_rural_2016-17_0-3m", "minZoom": 13 },
-    { "2193": "im_01F6P211ZG03568N7ZKP4F0RVN", "3857": "im_01ED83RWC1W924PXSGA9179Q96", "name": "wellington_rural_2016-17_0-3m", "minZoom": 13 },
+    { "2193": "im_01FB82NZY0ASDQBKT28DSXS8XC", "3857": "im_01FB82QKPWEHV0FWN7KBXM6NDM", "name": "wellington_rural_2021_0-3m_RGB", "minZoom": 13 },
     { "2193": "im_01F6P220GYWC836YQ4RRZGSV73", "3857": "im_01ED83VT2T06B1FVXF9P6CCV8C", "name": "west-coast_rural_2016-17_0-3m", "minZoom": 13 },
     { "2193": "im_01F6P15FS34RD0KX1FQCQF1CA8", "3857": "im_01ECTS06BSSHA626JHSDTNSC97", "name": "gisborne_rural_2017-18_0-3m", "minZoom": 13 },
     { "2193": "im_01F6P15VGNRA3N06S2NEY9PFAX", "3857": "im_01EZWZGMW2Q53VNC65X2X4VFRZ", "name": "gisborne_rural_2017-2019_0-3m_RGB", "minZoom": 13 },
