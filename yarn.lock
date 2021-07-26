@@ -63,17 +63,17 @@
   dependencies:
     "@linzjs/tile-matrix-set" "^0.0.1"
 
-"@basemaps/shared@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/shared/-/shared-6.0.0.tgz#ff63872a012c7d3174e7e6e1ae0f7cbd7899edfb"
-  integrity sha512-iz1HP5sBkiSuyLbtgq4aeU3i/6Hmm+AnCZMBKNrzEqthmRWEDEAxN+8puYf69WHOTA+CYDxGF6PNtObiSg2Hug==
+"@basemaps/shared@^6.0.0", "@basemaps/shared@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/shared/-/shared-6.5.0.tgz#98a93d2819cae09f6cfb9862edb35514677346c3"
+  integrity sha512-IAUFwfzCIMxZBdh42PFQz+8BybTvaW4pdXx31+xQZlQBjL8dDdQ/s7jJIrtRGiAjVBUPCiisrAST2ugE0l/fqg==
   dependencies:
     "@basemaps/config" "^6.0.0"
     "@basemaps/geo" "^6.0.0"
-    "@basemaps/tiler" "^6.0.0"
+    "@basemaps/tiler" "^6.1.0"
     "@linzjs/geojson" "^6.0.0"
     "@linzjs/metrics" "^6.0.0"
-    "@linzjs/s3fs" "^6.0.0"
+    "@linzjs/s3fs" "^6.5.0"
     aws-sdk "^2.890.0"
     base-x "^3.0.7"
     pino "^6.2.1"
@@ -82,13 +82,13 @@
     source-map-support "^0.5.19"
     ulid "^2.3.0"
 
-"@basemaps/tiler@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/tiler/-/tiler-6.0.0.tgz#be87616d00004402d829e1c28c339391074681cd"
-  integrity sha512-yWNZE0xP0Q1iTFUIWCtnOnnEMQKdwelqhoo7/TriMK4I+2/e4q7BJRm6IxnRVXNu8s07i+FBLo82ZAXkJdWn8Q==
+"@basemaps/tiler@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/tiler/-/tiler-6.1.0.tgz#48ee1dbfcf01eb68a83879e1a52ec60503cad565"
+  integrity sha512-aFDmYF7V38Ov61LAmp6Z2PLFs7Ae5S+Hr8U+afibF3BVJ1FzDnuSPMBNlPQqx7SSCsFk+JPpqJO2wZ3OQqRJtg==
   dependencies:
     "@basemaps/geo" "^6.0.0"
-    "@cogeotiff/core" "^4.2.0"
+    "@cogeotiff/core" "^4.3.0"
     "@linzjs/metrics" "^6.0.0"
 
 "@cogeotiff/chunk@^4.2.0":
@@ -100,6 +100,13 @@
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@cogeotiff/core/-/core-4.2.0.tgz#b8fa05ebd43b95bf03d37048431c657e7701b23b"
   integrity sha512-v7vJQzWxJURBdwuQeHA0mFK9lOiBTBmAHM/8GzeMlyQc4dJ3UYavUQ0JMiuMOomVLI5L4rP6pUDenLwhxEZUgQ==
+  dependencies:
+    ieee754 "^1.1.13"
+
+"@cogeotiff/core@^4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@cogeotiff/core/-/core-4.3.0.tgz#d97910f261561474f124b3eabca2c964c6158908"
+  integrity sha512-A8SxS7hwBmubnfvQGGdb0i/9fiYUTgb0wQYNRJqzOog/a1YIo4//EitRpbt4JVdMKE/niaGp5w38qOXFMpfmeg==
   dependencies:
     ieee754 "^1.1.13"
 
@@ -154,10 +161,10 @@
   resolved "https://registry.yarnpkg.com/@linzjs/metrics/-/metrics-6.0.0.tgz#fc29e12c74bd176d4b1db1c990589afea55a8491"
   integrity sha512-3O5VzbcOaPWrBhHUAhnP9+88BjenAb3xP5mXsD/djXgFsGCFhcuTGLBY9+LirFYpy9VKbcNjMiRYsku2lwmV6g==
 
-"@linzjs/s3fs@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@linzjs/s3fs/-/s3fs-6.0.0.tgz#8e1094af66718e9ee048831e09d162527a6b6b20"
-  integrity sha512-h1LwGb9WK2gRlU9QH0E/BDRnOGE19wDvRgYd64vRnaWM+j7wy4+n2/gqhapCCpu/M3p9C71Nc1u/m+IJc8rQJA==
+"@linzjs/s3fs@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@linzjs/s3fs/-/s3fs-6.5.0.tgz#f11cb335a750cf72c643b6b03560adc3161e3b00"
+  integrity sha512-QIgko8oHXMqFZLQOzK4L59qNXUxFDNAzoP5zqSkr970W6TUgqbhHffKCyMgncBaijdgAXhfWZXqiSX/vznPBog==
 
 "@linzjs/style@^2.1.0":
   version "2.1.1"
