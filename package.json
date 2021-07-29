@@ -7,7 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "@basemaps/cli": "^6.0.0",
-    "@basemaps/config": "^6.0.0",
+    "@basemaps/config": "^6.6.0",
     "@basemaps/geo": "^6.0.0",
     "@basemaps/shared": "^6.0.0",
     "@cogeotiff/chunk": "^4.2.0",
