@@ -16,6 +16,8 @@ These imagery sets can be viewed in basemaps by using their id.
 
 [config/imagery/wellington_urban_2021_0-075m_RGB-WebMercatorQuad.json](./config/imagery/wellington_urban_2021_0-075m_RGB-WebMercatorQuad.json) - https://basemaps.linz.govt.nz/?i=01FBNERWAX2XVCKQ4AACWGP2K5#@-41.2777800,174.7949622,z10.4323
 
+[config/imagery/wellington_urban_2021_0-075m_RGB-NZTM2000Quad.json](./config/imagery/wellington_urban_2021_0-075m_RGB-NZTM2000Quad.json) - https://basemaps.linz.govt.nz/?i=01F6P21F387PCQQB757VZ4E6GS&p=nztm2000quad#@-41.2777800,174.7949622,z10.4323
+
 
 ### Tileset `/config/tileset`
 
@@ -73,5 +75,5 @@ Must be one of the following:
 
 - `aerial` Changes the aerial tile set `./config/tileset/aerial.json`
 - `imagery` Adding or removing imagery layers `./config/imagery/*`
-- `vector` Changes to the vector layers `./config/style/*` 
+- `vector` Changes to the vector layers `./config/style/*` or `./config/tileset/topographic.json`
 - `scripts` Changes to the importing scripts `./src`
