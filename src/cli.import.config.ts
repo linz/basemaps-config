@@ -49,7 +49,8 @@ export class CommandImport extends Command {
     }
 
     if (flags.commit) {
-      for (const invalidate of this.invalidates) {
+      // Limit invalidations
+      for (const invalidate of this.invalidates.slice(0, 10)) {
         logger.warn(`FlushCache: ${invalidate}`);
         await invalidateCache(invalidate, flags.commit);
       }
