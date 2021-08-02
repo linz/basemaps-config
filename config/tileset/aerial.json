@@ -88,6 +88,7 @@
     { "2193": "im_01F6P1W5KQ18HM9ZM9N35CXJ91", "3857": "im_01ED83FS8PC1YC7Y7WKJ90P5TN", "name": "tauranga_urban_2017_0-1m", "minZoom": 14 },
     { "2193": "im_01F6P1XK2AVYDJ66NY2MKSEXW1", "3857": "im_01ED83JPKMXF5TVKFD4RP91ZRB", "name": "upper-hutt_urban_2017_0-10m", "minZoom": 14 },
     { "2193": "im_01F6P21F387PCQQB757VZ4E6GS", "3857": "im_01ED83SQ85A7B1MJ42BK13EGCQ", "name": "wellington_urban_2017_0-10m", "minZoom": 14 },
+    { "2193": "im_01FBNEW6V1D5GWRG1RZMVVW6Y3", "3857": "im_01FBNERWAX2XVCKQ4AACWGP2K5", "name": "wellington-city_urban_2021_0-075m_RGB", "minZoom": 14 },
     { "2193": "im_01F6P22D2ENZ889MYXP3WN950N", "3857": "im_01ED83XAAFYRNDQFZJRBSH21TF", "name": "whanganui_urban_2017-18_0-075m", "minZoom": 14 },
     { "2193": "im_01F6P0NTCAD62YAXJ1DKKK2AY3", "3857": "im_01ED825VGXM6K9YX52DP7SMXQE", "name": "christchurch_urban_2018_0-075m", "minZoom": 14 },
     { "2193": "im_01F6P0MJKAVT7XTXXPS19FQP81", "3857": "im_01EMFHZ28DMWDCJ7VEE15HTYPZ", "name": "christchurch_urban_2018-2019_0-075m_RGB", "minZoom": 14 },
