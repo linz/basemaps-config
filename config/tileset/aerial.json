@@ -100,6 +100,7 @@
     { "2193": "im_01F6P20H4Y55WG0SW5RXNP6Y9J", "3857": "im_01ESF5HA3BXN5E50Z0608KJGTG", "name": "waimate_urban_2018_0-075m_RGB", "minZoom": 14 },
     { "2193": "im_01F6P16V72XPFJK2X5V68YYM0X", "3857": "im_01ED8284FFT9RYZ0F7XTKD64D4", "name": "hamilton_urban_2019_0-1m", "minZoom": 14 },
     { "2193": "im_01F6P1C55PMBG08K4W549J8EQ8", "3857": "im_01ED82GV8E3DRWQ86D80SN1FPW", "name": "manawatu_urban_2019_0-125m", "minZoom": 14 },
-    { "2193": "im_01F6P1PTH5SBS82G5VVKYHFR63", "3857": "im_01ESM35CSPVJD54ZMT4T5FVV29", "name": "porirua_urban_2020_0-10m_RGB", "minZoom": 14 }
+    { "2193": "im_01F6P1PTH5SBS82G5VVKYHFR63", "3857": "im_01ESM35CSPVJD54ZMT4T5FVV29", "name": "porirua_urban_2020_0-10m_RGB", "minZoom": 14 },
+    { "2193": "im_01FC534VYVGP4WMS19M8SV1E6S", "3857": "im_01FC53660FJRP02Z4GZAQPZJV6", "name": "carterton_urban_2021_0-075m_RGB", "minZoom": 14 }
   ]
 }
