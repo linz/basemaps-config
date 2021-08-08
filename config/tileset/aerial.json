@@ -80,6 +80,7 @@
     { "2193": "im_01F6P19XT96PPWHAABTAGXGV3N", "3857": "im_01ED82D0F9NBGVM9WRRT46AV1V", "name": "hutt-city_urban_2017_0-10m", "minZoom": 14 },
     { "2193": "im_01FC1XYXHBADGNDYM36SH8D1XY", "3857": "im_01FC1Y20KQZQDJESGSR97G9SSW", "name": "kapiti-coast_urban_2021_0-075m_RGB", "minZoom": 14 },
     { "2193": "im_01F6P1EM0AK6GZN9TG913VB6CH", "3857": "im_01ED82QS0GBHX38Z6B1YHQNZM0", "name": "marlborough_urban_2017-18_0-1m", "minZoom": 14 },
+    { "2193": "im_01FCKSW2KY42Z0HA11BJ4RMZ0S", "3857": "im_01FCKSYT6Y3ZJJ4SAKKB4GEK52", "name": "marlborough_urban_2020-2021_0-1m_RGB", "minZoom": 14 },
     { "2193": "im_01F6P1F7BT85M2T5S01FXWAPPD", "3857": "im_01ED82S7R88B0CGQWZKH4V7R2H", "name": "napier-city_urban_2017-18_0-05m", "minZoom": 14 },
     { "2193": "im_01F6P1FCJZWD8JY7DJEDEB45K7", "3857": "im_01ED82SKPVV12M4RYHRK08DWG4", "name": "napier-city_urban_2017-18_0-1m", "minZoom": 14 },
     { "2193": "im_01F6P1FPAFD6D8SRHZX3GFJFWY", "3857": "im_01ED82VQR8M1STH3EPMF3E8KFQ", "name": "new-plymouth_urban_2017_0-10m", "minZoom": 14 },
