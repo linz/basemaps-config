@@ -103,6 +103,7 @@
     { "2193": "im_01F6P1PTH5SBS82G5VVKYHFR63", "3857": "im_01ESM35CSPVJD54ZMT4T5FVV29", "name": "porirua_urban_2020_0-10m_RGB", "minZoom": 14 },
     { "2193": "im_01FBNEW6V1D5GWRG1RZMVVW6Y3", "3857": "im_01FBNERWAX2XVCKQ4AACWGP2K5", "name": "wellington-city_urban_2021_0-075m_RGB", "minZoom": 14 },
     { "2193": "im_01FC534VYVGP4WMS19M8SV1E6S", "3857": "im_01FC53660FJRP02Z4GZAQPZJV6", "name": "carterton_urban_2021_0-075m_RGB", "minZoom": 14 },
-    { "2193": "im_01FCVP124PSVRSW7JCEC4KS2K1", "3857": "im_01FCVP30VG02HSFH1VVRM97RXP", "name": "south-wairarapa_urban_2021_0-075m", "minZoom": 14 }
+    { "2193": "im_01FCVP124PSVRSW7JCEC4KS2K1", "3857": "im_01FCVP30VG02HSFH1VVRM97RXP", "name": "south-wairarapa_urban_2021_0-075m", "minZoom": 14 },
+    { "2193": "im_01FCYQ2P6RB18BWV5B8WTDGX4R", "3857": "im_01FCYQ5JV710MS355E84P574DV", "name": "masterton_urban_2021_0-075m_RGB", "minZoom": 14 }
   ]
 }
