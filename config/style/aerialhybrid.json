@@ -7,12 +7,6 @@
     "openmaptiles:version": "3.x"
   },
   "sources": {
-    "natural_earth_shaded_relief": {
-      "maxzoom": 2,
-      "tileSize": 256,
-      "tiles": ["https://klokantech.github.io/naturalearthtiles/tiles/natural_earth_2_shaded_relief.raster/{z}/{x}/{y}.png"],
-      "type": "raster"
-    },
     "LINZ Basemaps": {
       "type": "vector",
       "url": ""
@@ -23,12 +17,6 @@
       "tiles": [],
       "minzoom": 0,
       "maxzoom": 28
-    },
-    "Nextzen-DEM": {
-      "type": "raster-dem",
-      "tiles": ["https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"],
-      "minzoom": 0,
-      "maxzoom": 14
     }
   },
   "sprite": "https://maputnik.github.io/osm-liberty/sprites/osm-liberty",
@@ -320,17 +308,6 @@
             [19, 14.5]
           ]
         }
-      }
-    },
-    {
-      "id": "NextZen-Light",
-      "type": "hillshade",
-      "source": "Nextzen-DEM",
-      "layout": { "visibility": "none" },
-      "paint": {
-        "hillshade-shadow-color": "rgba(220, 220, 197, 0.5)",
-        "hillshade-exaggeration": 0.3,
-        "hillshade-illumination-direction": 315
       }
     },
     {
