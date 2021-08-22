@@ -86,6 +86,7 @@
     { "2193": "im_01F6P1FPAFD6D8SRHZX3GFJFWY", "3857": "im_01ED82VQR8M1STH3EPMF3E8KFQ", "name": "new-plymouth_urban_2017_0-10m", "minZoom": 14 },
     { "2193": "im_01F6P1VT8BV5T0DPVSG1VEJX0Y", "3857": "im_01ED83ENCYFX7KFVKH0S7SK92W", "name": "tasman_urban_2017_0-075m", "minZoom": 14 },
     { "2193": "im_01F6P1VW99KC0PEBYPDAZ3RNKK", "3857": "im_01ED83F2SBS02QP80KSQ3GRR92", "name": "tasman_urban_2017_0-1m", "minZoom": 14 },
+    { "2193": "im_01FDQV9ZW9ETAQB2VJG26WGHP3", "3857": "im_01FDQVCGEJA1YQJBT14AVZ3TJC", "name": "tasman_urban_2020_0-1m_RGB", "minZoom": 14 },
     { "2193": "im_01F6P1W5KQ18HM9ZM9N35CXJ91", "3857": "im_01ED83FS8PC1YC7Y7WKJ90P5TN", "name": "tauranga_urban_2017_0-1m", "minZoom": 14 },
     { "2193": "im_01F6P1XK2AVYDJ66NY2MKSEXW1", "3857": "im_01ED83JPKMXF5TVKFD4RP91ZRB", "name": "upper-hutt_urban_2017_0-10m", "minZoom": 14 },
     { "2193": "im_01F6P21F387PCQQB757VZ4E6GS", "3857": "im_01ED83SQ85A7B1MJ42BK13EGCQ", "name": "wellington_urban_2017_0-10m", "minZoom": 14 },
