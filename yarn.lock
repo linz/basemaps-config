@@ -56,10 +56,10 @@
   dependencies:
     "@basemaps/geo" "^6.0.0"
 
-"@basemaps/geo@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/geo/-/geo-6.0.0.tgz#09024d85618690f6b2b45a3f52f38d6ebb2cd206"
-  integrity sha512-YMePPhe9r1fiMVp3L2gg0QohD7rf5zFrmjnG9U/6zfVcu4vQV44nrHlcVltf0NnfqdDemfvRiqEBSjHd3a6yPg==
+"@basemaps/geo@^6.0.0", "@basemaps/geo@^6.8.0":
+  version "6.8.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/geo/-/geo-6.8.0.tgz#2c95eb4d6b35fc3970b02f6f2455e7fc08fddd9d"
+  integrity sha512-eyrl79KFtxhv50TUNfN7JzmjnrIihQC4mBtqxfyrfek7S0ElLwWAvW005alCIaw3dYj4uJg5fr9iAWPGVzG8ZQ==
   dependencies:
     "@linzjs/tile-matrix-set" "^0.0.1"
 
