@@ -77,7 +77,6 @@
     { "2193": "im_01F6P168K626GCA0RY790XHRVY", "3857": "im_01ECTS33A3VYA5A8ZBHCDFYFR8", "name": "gisborne_urban_2017-18_0-1m", "minZoom": 14 },
     { "2193": "im_01F6P17PSJ1SWNYV2V28922WKY", "3857": "im_01ED82A7KFS8RMNPRYDQ60MCQ1", "name": "hastings-district_urban_2017-18_0-1m", "minZoom": 14 },
     { "2193": "im_01F6P19XT96PPWHAABTAGXGV3N", "3857": "im_01ED82D0F9NBGVM9WRRT46AV1V", "name": "hutt-city_urban_2017_0-10m", "minZoom": 14 },
-    { "2193": "im_01FFGK6PT74ZGK3VFX3PY50S0S", "3857": "im_01FFGK7ZHHJ4SCYWMET8J4K3J1", "name": "hutt-city_urban_2021_0-075m_RGB ", "minZoom": 14 },
     { "2193": "im_01FC1XYXHBADGNDYM36SH8D1XY", "3857": "im_01FC1Y20KQZQDJESGSR97G9SSW", "name": "kapiti-coast_urban_2021_0-075m_RGB", "minZoom": 14 },
     { "2193": "im_01F6P1EM0AK6GZN9TG913VB6CH", "3857": "im_01ED82QS0GBHX38Z6B1YHQNZM0", "name": "marlborough_urban_2017-18_0-1m", "minZoom": 14 },
     { "2193": "im_01FCKSW2KY42Z0HA11BJ4RMZ0S", "3857": "im_01FCKSYT6Y3ZJJ4SAKKB4GEK52", "name": "marlborough_urban_2020-2021_0-1m_RGB", "minZoom": 14 },
@@ -107,6 +106,7 @@
     { "2193": "im_01FBNEW6V1D5GWRG1RZMVVW6Y3", "3857": "im_01FBNERWAX2XVCKQ4AACWGP2K5", "name": "wellington-city_urban_2021_0-075m_RGB", "minZoom": 14 },
     { "2193": "im_01FC534VYVGP4WMS19M8SV1E6S", "3857": "im_01FC53660FJRP02Z4GZAQPZJV6", "name": "carterton_urban_2021_0-075m_RGB", "minZoom": 14 },
     { "2193": "im_01FCVP124PSVRSW7JCEC4KS2K1", "3857": "im_01FCVP30VG02HSFH1VVRM97RXP", "name": "south-wairarapa_urban_2021_0-075m", "minZoom": 14 },
-    { "2193": "im_01FCYQ2P6RB18BWV5B8WTDGX4R", "3857": "im_01FCYQ5JV710MS355E84P574DV", "name": "masterton_urban_2021_0-075m_RGB", "minZoom": 14 }
+    { "2193": "im_01FCYQ2P6RB18BWV5B8WTDGX4R", "3857": "im_01FCYQ5JV710MS355E84P574DV", "name": "masterton_urban_2021_0-075m_RGB", "minZoom": 14 },
+    { "2193": "im_01FFGK6PT74ZGK3VFX3PY50S0S", "3857": "im_01FFGK7ZHHJ4SCYWMET8J4K3J1", "name": "hutt-city_urban_2021_0-075m_RGB ", "minZoom": 14 }
   ]
 }
