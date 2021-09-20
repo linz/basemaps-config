@@ -43,9 +43,7 @@ export class CommandImport extends Command {
     for await (const filename of fsa.list(`./config/tileset`)) {
       const updater = new TileSetUpdater(filename, await fsa.readJson(filename), flags.tag, flags.commit, this.imagery);
       const hasChanges = await updater.reconcile();
-      if (hasChanges) {
-        if (updater.invalidatePath) this.invalidates.push(updater.invalidatePath());
-      }
+      if (hasChanges && updater.invalidatePath) this.invalidates.push(updater.invalidatePath());
     }
 
     if (flags.commit) {
@@ -67,30 +65,26 @@ export class CommandImport extends Command {
   }
 
   update(fileName: string, tag: string, commit: boolean): void {
-    const promise = Q(
-      async (): Promise<boolean> => {
-        const json = await fsa.readJson(fileName);
-        const updaters = this.getUpdater(fileName, json, tag, commit);
+    const promise = Q(async (): Promise<boolean> => {
+      const json = await fsa.readJson(fileName);
+      const updaters = this.getUpdater(fileName, json, tag, commit);
 
-        for (const updater of updaters) {
-          if (updater.isValid) {
-            const isValid = await updater.isValid();
-            if (!isValid) {
-              updater.logger.error('InvalidConfig');
-              return false;
-            }
+      for (const updater of updaters) {
+        if (updater.isValid) {
+          const isValid = await updater.isValid();
+          if (!isValid) {
+            updater.logger.error('InvalidConfig');
+            return false;
           }
-
-          const hasChanges = await updater.reconcile();
-          if (hasChanges) {
-            if (updater.invalidatePath) this.invalidates.push(updater.invalidatePath());
-          }
-
-          if (fileName.includes('/imagery/')) this.imagery.add(updater.config.id);
         }
-        return true;
-      },
-    );
+
+        const hasChanges = await updater.reconcile();
+        if (hasChanges && updater.invalidatePath) this.invalidates.push(updater.invalidatePath());
+
+        if (fileName.includes('/imagery/')) this.imagery.add(updater.config.id);
+      }
+      return true;
+    });
     this.promises.push(promise);
   }
 }
