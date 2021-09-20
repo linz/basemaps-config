@@ -1,7 +1,7 @@
 import { ConfigTileSet, TileSetType } from '@basemaps/config';
 import { Config } from '@basemaps/shared';
-import { Updater } from './base.config';
-import { ConfigImagerySchema, zImageConfig } from './imagery.config';
+import { Updater } from './base.config.js';
+import { ConfigImagerySchema, zImageConfig } from './imagery.config.js';
 
 export class ImageryTileSetUpdater extends Updater<ConfigImagerySchema, ConfigTileSet> {
   db = Config.TileSet;

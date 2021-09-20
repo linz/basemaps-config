@@ -1,14 +1,14 @@
 import { LogConfig, fsa } from '@basemaps/shared';
-import { invalidateCache } from '@basemaps/cli/build/cli/util';
+import { invalidateCache } from '@basemaps/cli/build/cli/util.js';
 import { Command, flags } from '@oclif/command';
 import PLimit from 'p-limit';
 import { PrettyTransform } from 'pretty-json-log';
-import { Updater } from './base.config';
-import { ImageryUpdater } from './imagery.config';
-import { ProviderUpdater } from './provider.config';
-import { StyleUpdater } from './style.conifg';
-import { TileSetUpdater } from './tileset.config';
-import { ImageryTileSetUpdater } from './imagery.tileset.config';
+import { Updater } from './base.config.js';
+import { ImageryUpdater } from './imagery.config.js';
+import { ProviderUpdater } from './provider.config.js';
+import { StyleUpdater } from './style.conifg.js';
+import { TileSetUpdater } from './tileset.config.js';
+import { ImageryTileSetUpdater } from './imagery.tileset.config.js';
 
 const Q = PLimit(10);
 

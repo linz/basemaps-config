@@ -4,7 +4,12 @@
   "private": true,
   "description": "LINZ specific configuration and deployment of basemaps",
   "repository": "github:linz/basemaps-config",
+  "type": "module",
   "license": "MIT",
+  "bin": {
+    "basemaps-config": "./bin/basemaps-config.js",
+    "basemaps-job": "./bin/basemaps-job.js"
+  },
   "dependencies": {
     "@basemaps/cli": "^6.0.0",
     "@basemaps/config": "^6.0.0",

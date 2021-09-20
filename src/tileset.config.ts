@@ -1,7 +1,7 @@
 import { ConfigTileSet, TileSetType } from '@basemaps/config';
 import { Config, fsa } from '@basemaps/shared';
 import * as z from 'zod';
-import { Updater } from './base.config';
+import { Updater } from './base.config.js';
 
 /**
  * Parse a string as hex, return 0 on failure
