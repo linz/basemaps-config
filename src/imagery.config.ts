@@ -2,7 +2,7 @@ import { ConfigImagery } from '@basemaps/config';
 import { Epsg } from '@basemaps/geo';
 import { Config, fsa } from '@basemaps/shared';
 import * as z from 'zod';
-import { Updater } from './base.config';
+import { Updater } from './base.config.js';
 
 export const zBound = z.object({ x: z.number(), y: z.number(), width: z.number(), height: z.number() });
 

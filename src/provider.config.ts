@@ -1,7 +1,7 @@
 import { ConfigProvider } from '@basemaps/config';
 import { Config } from '@basemaps/shared';
 import * as z from 'zod';
-import { Updater } from './base.config';
+import { Updater } from './base.config.js';
 
 const zServiceIdentification = z.object({
   title: z.string(),
