@@ -11,7 +11,7 @@
     "basemaps-job": "./bin/basemaps-job.js"
   },
   "dependencies": {
-    "@basemaps/cli": "^6.0.0",
+    "@basemaps/cli": "^6.9.1",
     "@basemaps/config": "^6.0.0",
     "@basemaps/geo": "^6.0.0",
     "@basemaps/shared": "^6.0.0",
