@@ -22,7 +22,7 @@ jobs:
       - name: (Imagery Config) Compare to production
         if: github.ref != 'refs/heads/master' && github.event_name == 'push'
         run: |
-          ./bin/basemaps-config -t production
+          ./bin/basemaps-config.js -t production
         env:
           NODE_ENV: "production"
 
@@ -31,13 +31,13 @@ jobs:
       # - name: (Imagery Config) Create pull request tag
       #   if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
       #   run: |
-      #     ./bin/basemaps-config -t pr-${{ github.event.number }} --commit
+      #     ./bin/basemaps-config.js -t pr-${{ github.event.number }} --commit
       #   env:
       #     NODE_ENV: "production"
 
       - name: (Imagery Config) Create production tag
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
-          ./bin/basemaps-config -t production --commit
+          ./bin/basemaps-config.js -t production --commit
         env:
           NODE_ENV: "production"
