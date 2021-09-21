@@ -14,7 +14,7 @@
     "@basemaps/cli": "^6.0.0",
     "@basemaps/config": "^6.0.0",
     "@basemaps/geo": "^6.0.0",
-    "@basemaps/shared": "^6.0.0",
+    "@basemaps/shared": "^6.9.1",
     "@cogeotiff/chunk": "^4.2.0",
     "@oclif/command": "^1.8.0",
     "deep-diff": "^1.0.2",
