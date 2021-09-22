@@ -1,8 +1,0 @@
-#!/usr/bin/env node
-
-require('../build/cli.import.job')
-  .CommandImportImagery.run()
-  .catch((e) => {
-    if (e.oclif) return require('@oclif/errors/handle')(e);
-    console.log(e);
-  });

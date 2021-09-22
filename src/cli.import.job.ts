@@ -3,7 +3,7 @@ import { Config, extractYearRangeFromName, LogConfig, Projection, fsa } from '@b
 import { Command, flags } from '@oclif/command';
 import { PrettyTransform } from 'pretty-json-log';
 import * as z from 'zod';
-import { ConfigImagerySchema, zImageConfig, zNamedBounds } from './imagery.config';
+import { ConfigImagerySchema, zImageConfig, zNamedBounds } from './imagery.config.js';
 
 const zJob = z.object({
   id: z.string(),

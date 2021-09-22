@@ -1,14 +1,14 @@
 import { LogConfig, fsa } from '@basemaps/shared';
-import { invalidateCache } from '@basemaps/cli/build/cli/util';
+import { invalidateCache } from '@basemaps/cli/build/cli/util.js';
 import { Command, flags } from '@oclif/command';
 import PLimit from 'p-limit';
 import { PrettyTransform } from 'pretty-json-log';
-import { Updater } from './base.config';
-import { ImageryUpdater } from './imagery.config';
-import { ProviderUpdater } from './provider.config';
-import { StyleUpdater } from './style.conifg';
-import { TileSetUpdater } from './tileset.config';
-import { ImageryTileSetUpdater } from './imagery.tileset.config';
+import { Updater } from './base.config.js';
+import { ImageryUpdater } from './imagery.config.js';
+import { ProviderUpdater } from './provider.config.js';
+import { StyleUpdater } from './style.conifg.js';
+import { TileSetUpdater } from './tileset.config.js';
+import { ImageryTileSetUpdater } from './imagery.tileset.config.js';
 
 const Q = PLimit(10);
 
@@ -43,9 +43,7 @@ export class CommandImport extends Command {
     for await (const filename of fsa.list(`./config/tileset`)) {
       const updater = new TileSetUpdater(filename, await fsa.readJson(filename), flags.tag, flags.commit, this.imagery);
       const hasChanges = await updater.reconcile();
-      if (hasChanges) {
-        if (updater.invalidatePath) this.invalidates.push(updater.invalidatePath());
-      }
+      if (hasChanges && updater.invalidatePath) this.invalidates.push(updater.invalidatePath());
     }
 
     if (flags.commit) {
@@ -67,30 +65,26 @@ export class CommandImport extends Command {
   }
 
   update(fileName: string, tag: string, commit: boolean): void {
-    const promise = Q(
-      async (): Promise<boolean> => {
-        const json = await fsa.readJson(fileName);
-        const updaters = this.getUpdater(fileName, json, tag, commit);
+    const promise = Q(async (): Promise<boolean> => {
+      const json = await fsa.readJson(fileName);
+      const updaters = this.getUpdater(fileName, json, tag, commit);
 
-        for (const updater of updaters) {
-          if (updater.isValid) {
-            const isValid = await updater.isValid();
-            if (!isValid) {
-              updater.logger.error('InvalidConfig');
-              return false;
-            }
+      for (const updater of updaters) {
+        if (updater.isValid) {
+          const isValid = await updater.isValid();
+          if (!isValid) {
+            updater.logger.error('InvalidConfig');
+            return false;
           }
-
-          const hasChanges = await updater.reconcile();
-          if (hasChanges) {
-            if (updater.invalidatePath) this.invalidates.push(updater.invalidatePath());
-          }
-
-          if (fileName.includes('/imagery/')) this.imagery.add(updater.config.id);
         }
-        return true;
-      },
-    );
+
+        const hasChanges = await updater.reconcile();
+        if (hasChanges && updater.invalidatePath) this.invalidates.push(updater.invalidatePath());
+
+        if (fileName.includes('/imagery/')) this.imagery.add(updater.config.id);
+      }
+      return true;
+    });
     this.promises.push(promise);
   }
 }

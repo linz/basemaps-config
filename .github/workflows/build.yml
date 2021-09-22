@@ -1,9 +1,6 @@
 name: Build
 
 on:
-  pull_request:
-    paths:
-      - "config/imagery/*.json"
   push:
 
 jobs:
@@ -11,27 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-
-      - name: Use Node.js 12.x
-        uses: actions/setup-node@v2.1.5
-        with:
-          node-version: "12.x"
-          registry-url: https://registry.npmjs.org
-
-      - name: Install
-        run: yarn  --frozen-lockfile --check-files
-
-      - name: Build
-        run: yarn build
-
-      - name: Lint
-        run: yarn lint:ci
-
-      - name: Format
-        run: yarn lint:config && git diff --exit-code
+      - uses: linz/action-typescript@v1
 
       - name: AWS Configure
         uses: aws-actions/configure-aws-credentials@v1
@@ -45,7 +22,7 @@ jobs:
       - name: (Imagery Config) Compare to production
         if: github.ref != 'refs/heads/master' && github.event_name == 'push'
         run: |
-          ./bin/basemaps-config -t production
+          ./bin/basemaps-config.js -t production
         env:
           NODE_ENV: "production"
 
@@ -54,13 +31,13 @@ jobs:
       # - name: (Imagery Config) Create pull request tag
       #   if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
       #   run: |
-      #     ./bin/basemaps-config -t pr-${{ github.event.number }} --commit
+      #     ./bin/basemaps-config.js -t pr-${{ github.event.number }} --commit
       #   env:
       #     NODE_ENV: "production"
 
       - name: (Imagery Config) Create production tag
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
-          ./bin/basemaps-config -t production --commit
+          ./bin/basemaps-config.js -t production --commit
         env:
           NODE_ENV: "production"
