@@ -49,31 +49,31 @@
     pretty-json-log "^0.3.1"
     zod "^1.10.1"
 
-"@basemaps/config@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/config/-/config-6.0.0.tgz#a7024d54ce9a364718ded44c2e5e17f751126b8b"
-  integrity sha512-oGmP/kEBMMUn5Kv6YPZnnGK2p8JZuMc5eNYmqK3MjEOBQmDvFvJd3cHvQUuKdYP788NzcwiIqogeZHWMkZt3HA==
+"@basemaps/config@^6.0.0", "@basemaps/config@^6.10.0":
+  version "6.10.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/config/-/config-6.10.0.tgz#42583931fcc0e3d2e7da3e16e33c00260485cfe2"
+  integrity sha512-KuD3z8wPKMnuofPy0iZyBaZk2kx32TCryEHNrf5qNp51i0a/hqTQFQ1IAo+x89y63SOvMHwMoMUKa7q6BODnNA==
   dependencies:
-    "@basemaps/geo" "^6.0.0"
+    "@basemaps/geo" "^6.10.0"
 
-"@basemaps/geo@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/geo/-/geo-6.0.0.tgz#09024d85618690f6b2b45a3f52f38d6ebb2cd206"
-  integrity sha512-YMePPhe9r1fiMVp3L2gg0QohD7rf5zFrmjnG9U/6zfVcu4vQV44nrHlcVltf0NnfqdDemfvRiqEBSjHd3a6yPg==
+"@basemaps/geo@^6.0.0", "@basemaps/geo@^6.10.0":
+  version "6.10.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/geo/-/geo-6.10.0.tgz#cd6fa7f0543e7cf2e9cb766d0cc6b813a42e55c6"
+  integrity sha512-oDM4kUzzBCNylzjmeSh0l5L4Ed+q0+V51SElOB9XL/Wr7YfCb7+ZUYXdHFPW72muD/OfKr+0B8JwaemDsyKThQ==
   dependencies:
     "@linzjs/tile-matrix-set" "^0.0.1"
 
-"@basemaps/shared@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/shared/-/shared-6.0.0.tgz#ff63872a012c7d3174e7e6e1ae0f7cbd7899edfb"
-  integrity sha512-iz1HP5sBkiSuyLbtgq4aeU3i/6Hmm+AnCZMBKNrzEqthmRWEDEAxN+8puYf69WHOTA+CYDxGF6PNtObiSg2Hug==
+"@basemaps/shared@^6.0.0", "@basemaps/shared@^6.11.0":
+  version "6.11.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/shared/-/shared-6.11.0.tgz#a300513d7d73e0b4efc6f8b125058cb193e42424"
+  integrity sha512-IfHlJyW4S3BzWXX/nBinoiFNt0DK6JCDI/GYxrzCPziL0fdh1Zr878vpg5SFNkqWNmLQ62l8JH2VM11poakx0w==
   dependencies:
-    "@basemaps/config" "^6.0.0"
-    "@basemaps/geo" "^6.0.0"
-    "@basemaps/tiler" "^6.0.0"
-    "@linzjs/geojson" "^6.0.0"
-    "@linzjs/metrics" "^6.0.0"
-    "@linzjs/s3fs" "^6.0.0"
+    "@basemaps/config" "^6.10.0"
+    "@basemaps/geo" "^6.10.0"
+    "@basemaps/tiler" "^6.11.0"
+    "@linzjs/geojson" "^6.10.0"
+    "@linzjs/metrics" "^6.11.0"
+    "@linzjs/s3fs" "^6.9.1"
     aws-sdk "^2.890.0"
     base-x "^3.0.7"
     pino "^6.2.1"
@@ -82,14 +82,19 @@
     source-map-support "^0.5.19"
     ulid "^2.3.0"
 
-"@basemaps/tiler@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/tiler/-/tiler-6.0.0.tgz#be87616d00004402d829e1c28c339391074681cd"
-  integrity sha512-yWNZE0xP0Q1iTFUIWCtnOnnEMQKdwelqhoo7/TriMK4I+2/e4q7BJRm6IxnRVXNu8s07i+FBLo82ZAXkJdWn8Q==
+"@basemaps/tiler@^6.11.0":
+  version "6.11.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/tiler/-/tiler-6.11.0.tgz#edc805d8f9beb0171b526160fcbfb9f8a4e0d58e"
+  integrity sha512-uTcZdDQtlkexrVpRGBRHN2D5lCWZewP8BWtGadVCGN6e9RqUVreFzuWhLE9PmQoMV1GFyLwqkN1Ucul7abImvg==
   dependencies:
-    "@basemaps/geo" "^6.0.0"
-    "@cogeotiff/core" "^4.2.0"
-    "@linzjs/metrics" "^6.0.0"
+    "@basemaps/geo" "^6.10.0"
+    "@cogeotiff/core" "^6.0.2"
+    "@linzjs/metrics" "^6.11.0"
+
+"@chunkd/core@^7.2.2":
+  version "7.2.4"
+  resolved "https://registry.yarnpkg.com/@chunkd/core/-/core-7.2.4.tgz#c61310feabeb6bc34bee65251591a2567e18709f"
+  integrity sha512-KB+81kOymT/uI6G3eGz+yIyE8U6qEghP3H2pedaJ6S72dLISOU3djc3vFYLqEe952HuWLL4s9kqjopeKl4p0Rg==
 
 "@cogeotiff/chunk@^4.2.0":
   version "4.2.0"
@@ -101,6 +106,14 @@
   resolved "https://registry.yarnpkg.com/@cogeotiff/core/-/core-4.2.0.tgz#b8fa05ebd43b95bf03d37048431c657e7701b23b"
   integrity sha512-v7vJQzWxJURBdwuQeHA0mFK9lOiBTBmAHM/8GzeMlyQc4dJ3UYavUQ0JMiuMOomVLI5L4rP6pUDenLwhxEZUgQ==
   dependencies:
+    ieee754 "^1.1.13"
+
+"@cogeotiff/core@^6.0.2":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@cogeotiff/core/-/core-6.1.0.tgz#5cec304703581bfdc798e641d2d19361e6c921d3"
+  integrity sha512-hza/x6hUcTxG1dCUFEH0vif5Ku4cLM0BT7/ZvBEbkfZ841jfBrLneZsL+SzTHGlD+1FovuMI3RNpnshUBUPhiQ==
+  dependencies:
+    "@chunkd/core" "^7.2.2"
     ieee754 "^1.1.13"
 
 "@cogeotiff/source-aws@^4.2.0":
@@ -154,24 +167,24 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.0.tgz#87de7af9c231826fdd68ac7258f77c429e0e5fcf"
   integrity sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==
 
-"@linzjs/geojson@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@linzjs/geojson/-/geojson-6.0.0.tgz#ee7026f73d09dad3c0784d4d82045e79df3ca606"
-  integrity sha512-vKkw11+DK9K1oOstnZnxnvEbSPeph/xCGQ/Zord9bW+qR2dcDvGts0kU2zs6rSCE9HZnXyV7kZUJQmImfVi6lQ==
+"@linzjs/geojson@^6.0.0", "@linzjs/geojson@^6.10.0":
+  version "6.10.0"
+  resolved "https://registry.yarnpkg.com/@linzjs/geojson/-/geojson-6.10.0.tgz#485920802367f4307617717f053920e0fbf9b2df"
+  integrity sha512-eb4J4J6gdJCOneWYeTim5tKi4UMVUuIzFBQfGzesZLrLwPBNqwMByBAblR058gG+NBdwHYI69MzGQbMq+MiCDA==
   dependencies:
     "@types/geojson" "^7946.0.7"
     lineclip "^1.1.5"
     polygon-clipping "^0.15.1"
 
-"@linzjs/metrics@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@linzjs/metrics/-/metrics-6.0.0.tgz#fc29e12c74bd176d4b1db1c990589afea55a8491"
-  integrity sha512-3O5VzbcOaPWrBhHUAhnP9+88BjenAb3xP5mXsD/djXgFsGCFhcuTGLBY9+LirFYpy9VKbcNjMiRYsku2lwmV6g==
+"@linzjs/metrics@^6.11.0":
+  version "6.11.0"
+  resolved "https://registry.yarnpkg.com/@linzjs/metrics/-/metrics-6.11.0.tgz#b63ff84da559888d32c1005878d61e95110c4c51"
+  integrity sha512-qfY876oUR5caON173DAneYRqL6IHr0I3MiULKWGZvm5kd40Vo9U1Zn3dEfweECoJg42qIYqwhhE2AoN0jL4f7Q==
 
-"@linzjs/s3fs@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@linzjs/s3fs/-/s3fs-6.0.0.tgz#8e1094af66718e9ee048831e09d162527a6b6b20"
-  integrity sha512-h1LwGb9WK2gRlU9QH0E/BDRnOGE19wDvRgYd64vRnaWM+j7wy4+n2/gqhapCCpu/M3p9C71Nc1u/m+IJc8rQJA==
+"@linzjs/s3fs@^6.9.1":
+  version "6.9.1"
+  resolved "https://registry.yarnpkg.com/@linzjs/s3fs/-/s3fs-6.9.1.tgz#6292999dd13b588890757ecd55e05f3cb036931f"
+  integrity sha512-jUFIJd93vLwvxdZdIbAm0iYEUmFIAXBTh4Wn8ikofYZglf8VxSDjBnPDZ6Eu7WQAh7DeVP9TfK5v3wLO0xFIlg==
 
 "@linzjs/style@^3.1.1":
   version "3.1.1"
