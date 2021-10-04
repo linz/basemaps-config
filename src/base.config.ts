@@ -59,7 +59,7 @@ export abstract class Updater<S extends { id: string } = { id: string }, T exten
       if (this.isCommit) await this.db.put(newData);
       return true;
     }
-    this.logger.debug({ type: this.db.prefix, record: newData.id }, 'NoChanges');
+    this.logger.trace({ type: this.db.prefix, record: newData.id }, 'NoChanges');
     return false;
   }
 
