@@ -1,7 +1,7 @@
 {
   "name": "geographx_nz_dem_2012_8-0m",
   "id": "im_01FGWBY0X4BCM2VDVSRC3TWJTN",
-  "uri": "/home/blacha/Pictures/hillshade/cog2",
+  "uri": "s3://linz-basemaps/3857/geographx_nz_dem_2012_8-0m/01FGWBY0X4BCM2VDVSRC3TWJTN",
   "year": 2000,
   "projection": 3857,
   "resolution": 9.5546,
