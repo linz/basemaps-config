@@ -1,5 +1,5 @@
 {
   "type": "vector",
   "id": "ts_topographic",
-  "layers": [{ "3857": "s3://linz-basemaps/vector/3857/01FJ0SMYE4BWYS6173NZTENW0S/topographic.tar.co", "name": "topographic" }]
+  "layers": [{ "3857": "s3://linz-basemaps/vector/3857/01FJ8WYZG2TB5YC0Q8JK7JN7P9/topographic.tar.co", "name": "topographic" }]
 }
