@@ -111,6 +111,7 @@
     { "2193": "im_01FFGK6PT74ZGK3VFX3PY50S0S", "3857": "im_01FFGK7ZHHJ4SCYWMET8J4K3J1", "name": "hutt-city_urban_2021_0-075m_RGB", "minZoom": 14 },
     { "2193": "im_01FFH545V69N2SC5K4PSH7VZCV", "3857": "im_01FFH51T317TVK35J75ZRZV0PN", "name": "upper-hutt_urban_2021_0-075m_RGB", "minZoom": 14 },
     { "2193": "im_01FGT7KFSVPEX2RPW5PKN3XCAE", "3857": "im_01FGT7MAMPX1EPKW678BP3YWGQ", "name": "rangitikei_urban_2021_0-125m_RGB", "minZoom": 14 },
-    { "2193": "im_01FH4G3JZ5NSF7MTXB5291SRN9", "3857": "im_01FH4G1K9A0YHZVCDE5B0J501A", "name": "northland_urban_2016_0-1m_RGB", "minZoom": 14 }
+    { "2193": "im_01FH4G3JZ5NSF7MTXB5291SRN9", "3857": "im_01FH4G1K9A0YHZVCDE5B0J501A", "name": "northland_urban_2016_0-1m_RGB", "minZoom": 14 },
+    { "2193": "im_01FJ0FVDF75ZM3KHXDYJES57AG", "3857": "im_01FJ0FX6SQBKE27MWG6K3E86CM", "name": "bay-of-plenty_urban_2020_0-1m_RGB", "minZoom": 14 }
   ]
 }
