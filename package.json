@@ -28,7 +28,8 @@
     "lint": "eslint . --quiet --fix --report-unused-disable-directives --ignore-path .gitignore",
     "clean": "tsc -b --clean && rimraf 'build'",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
-    "build": "tsc --build tsconfig.json"
+    "build": "tsc --build tsconfig.json",
+    "build-sprites": "node build/src/sprite.sheet.js"
   },
   "devDependencies": {
     "@linzjs/style": "^3.1.1",
