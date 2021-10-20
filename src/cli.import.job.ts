@@ -1,7 +1,6 @@
 import { Bounds, TileMatrixSets } from '@basemaps/geo';
-import { Config, extractYearRangeFromName, LogConfig, Projection, fsa } from '@basemaps/shared';
+import { Config, extractYearRangeFromName, fsa, LogConfig, Projection } from '@basemaps/shared';
 import { Command, flags } from '@oclif/command';
-import { PrettyTransform } from 'pretty-json-log';
 import * as z from 'zod';
 import { ConfigImagerySchema, zImageConfig, zNamedBounds } from './imagery.config.js';
 
