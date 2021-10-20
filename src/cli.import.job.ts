@@ -42,7 +42,6 @@ export class CommandImportImagery extends Command {
   invalidates: string[] = [];
 
   async run(): Promise<void> {
-    if (process.stdout.isTTY) LogConfig.setOutputStream(PrettyTransform.stream());
     const logger = LogConfig.get();
     const { flags, args } = this.parse(CommandImportImagery);
 

@@ -1,4 +1,4 @@
-import { LogConfig, fsa } from '@basemaps/shared';
+import { LogConfig } from '@basemaps/shared';
 import { invalidateCache } from '@basemaps/cli/build/cli/util.js';
 import { Command, flags } from '@oclif/command';
 import PLimit from 'p-limit';
@@ -9,6 +9,7 @@ import { ProviderUpdater } from './provider.config.js';
 import { StyleUpdater } from './style.conifg.js';
 import { TileSetUpdater } from './tileset.config.js';
 import { ImageryTileSetUpdater } from './imagery.tileset.config.js';
+import { fsa } from '@chunkd/fs';
 
 const Q = PLimit(10);
 
@@ -25,7 +26,6 @@ export class CommandImport extends Command {
   invalidates: string[] = [];
 
   async run(): Promise<void> {
-    if (process.stdout.isTTY) LogConfig.setOutputStream(PrettyTransform.stream());
     const logger = LogConfig.get();
     const { flags } = this.parse(CommandImport);
 
