@@ -29,7 +29,7 @@
     "clean": "tsc -b --clean && rimraf 'build'",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "build": "tsc --build tsconfig.json",
-    "build-sprites": "node build/src/sprite.sheet.js"
+    "build-sprites": "node build/src/sprite.sheet.js && npx eslint config/sprites/ --fix"
   },
   "devDependencies": {
     "@linzjs/style": "^3.1.1",
