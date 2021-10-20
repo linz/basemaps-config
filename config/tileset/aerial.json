@@ -7,6 +7,7 @@
     { "2193": "im_01F66EE7AETCNNKDJYCRSJ4CED", "3857": "im_01ED849PJ44FA7S612QAXN9P11", "name": "chatham-islands_digital-globe_2014-2019_0-5m", "maxZoom": 12 },
     { "2193": "im_01F66EEHWXVMK4B7E13AVZ8NE7", "3857": "im_01ED84CATGQ1THNG7QEEEZBEBT", "name": "chatham-islands_digital-globe_2014-2019_0-5m", "minZoom": 13 },
     { "2193": "im_01F6P1G0S78XYXAQB7Y375MZ2Q", "3857": "im_01ED82TFB1ZE9C75CH5VY3Z92B", "name": "new_zealand_sentinel_2019-2020_10m" },
+    { "2193": "im_01FHV9VX322F20JYYZ90ZPPM3R", "3857": "im_01FHV461P0C5H79T2VXE4T201J", "name": "nz_satellite_2020-2021_10m_RGB" },
     { "2193": "im_01F6P1TJ28B0HSRV2MNTBFSMKA", "3857": "im_01EE9646WHWA7X46KDRATVWY9Z", "name": "tasman_rural_2001-2002_1m_RGB", "minZoom": 13 },
     { "2193": "im_01F6P1TQVSC7QRF1R3JAT893ZS", "3857": "im_01EE962ZB3Z6Y7GVZ28XCWJ9JB", "name": "tasman_rural_2004-2005_1m_RGB", "minZoom": 13 },
     { "2193": "im_01F6P1S7DSP4N5DCBGCTZCMJ27", "3857": "im_01ED835ZSP0MQ3W55QEMVZKNR1", "name": "southland_rural_2005-2011_0-75m_RGBA", "minZoom": 13 },
