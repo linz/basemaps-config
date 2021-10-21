@@ -88,4 +88,5 @@ Must be one of the following:
 - `aerial` Changes the aerial tile set `./config/tileset/aerial.json`
 - `imagery` Adding or removing imagery layers `./config/imagery/*`
 - `vector` Changes to the vector layers `./config/style/*` or `./config/tileset/topographic.json`
+- `sprites` changes to the sprites `./config/sprites/**`
 - `scripts` Changes to the importing scripts `./src`

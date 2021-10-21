@@ -10,6 +10,12 @@ jobs:
     steps:
       - uses: linz/action-typescript@v1
 
+      - name: Build Sprites
+        run: yarn build-sprites
+
+      - name: Check Sprites
+        run: git diff --exit-code
+
       - name: AWS Configure
         uses: aws-actions/configure-aws-credentials@v1
         with:
