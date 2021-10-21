@@ -6,7 +6,7 @@
     { "2193": "im_01F1BFJN8R8P7BXN3XTHC5MT5G", "3857": "im_01EDMTM3P563P06TWYQAZRA9F6", "name": "gebco_2020_305-75m", "maxZoom": 15 },
     { "2193": "im_01F66EE7AETCNNKDJYCRSJ4CED", "3857": "im_01ED849PJ44FA7S612QAXN9P11", "name": "chatham-islands_digital-globe_2014-2019_0-5m", "maxZoom": 12 },
     { "2193": "im_01F66EEHWXVMK4B7E13AVZ8NE7", "3857": "im_01ED84CATGQ1THNG7QEEEZBEBT", "name": "chatham-islands_digital-globe_2014-2019_0-5m", "minZoom": 13 },
-    { "2193": "im_01F6P1G0S78XYXAQB7Y375MZ2Q", "3857": "im_01ED82TFB1ZE9C75CH5VY3Z92B", "name": "new_zealand_sentinel_2019-2020_10m" },
+    { "2193": "im_01FHV9VX322F20JYYZ90ZPPM3R", "3857": "im_01FHV461P0C5H79T2VXE4T201J", "name": "nz_satellite_2020-2021_10m_RGB" },
     { "2193": "im_01F6P1TJ28B0HSRV2MNTBFSMKA", "3857": "im_01EE9646WHWA7X46KDRATVWY9Z", "name": "tasman_rural_2001-2002_1m_RGB", "minZoom": 13 },
     { "2193": "im_01F6P1TQVSC7QRF1R3JAT893ZS", "3857": "im_01EE962ZB3Z6Y7GVZ28XCWJ9JB", "name": "tasman_rural_2004-2005_1m_RGB", "minZoom": 13 },
     { "2193": "im_01F6P1S7DSP4N5DCBGCTZCMJ27", "3857": "im_01ED835ZSP0MQ3W55QEMVZKNR1", "name": "southland_rural_2005-2011_0-75m_RGBA", "minZoom": 13 },
@@ -113,6 +113,7 @@
     { "2193": "im_01FFH545V69N2SC5K4PSH7VZCV", "3857": "im_01FFH51T317TVK35J75ZRZV0PN", "name": "upper-hutt_urban_2021_0-075m_RGB", "minZoom": 14 },
     { "2193": "im_01FGT7KFSVPEX2RPW5PKN3XCAE", "3857": "im_01FGT7MAMPX1EPKW678BP3YWGQ", "name": "rangitikei_urban_2021_0-125m_RGB", "minZoom": 14 },
     { "2193": "im_01FH4G3JZ5NSF7MTXB5291SRN9", "3857": "im_01FH4G1K9A0YHZVCDE5B0J501A", "name": "northland_urban_2016_0-1m_RGB", "minZoom": 14 },
-    { "2193": "im_01FJ0FVDF75ZM3KHXDYJES57AG", "3857": "im_01FJ0FX6SQBKE27MWG6K3E86CM", "name": "bay-of-plenty_urban_2020_0-1m_RGB", "minZoom": 14 }
+    { "2193": "im_01FJ0FVDF75ZM3KHXDYJES57AG", "3857": "im_01FJ0FX6SQBKE27MWG6K3E86CM", "name": "bay-of-plenty_urban_2020_0-1m_RGB", "minZoom": 14 },
+    { "2193": "im_01FJB8FDBCP2R3VT7TJC1NWGFD", "3857": "im_01FJB8KPXHR48ZVDHE7M9PK6RH", "name": "waimate_urban_2020_0-075m_RGB", "minZoom": 14 }
   ]
 }
