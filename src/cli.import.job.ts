@@ -95,6 +95,6 @@ export class CommandImportImagery extends Command {
 
     logger.info({ path: targetFileName, files: job.output.files.length }, 'Imported');
     if (flags.commit !== true) logger.info('DryRun:Done');
-    else fsa.writeJson(targetFileName, imgConfig);
+    else fsa.write(targetFileName, JSON.stringify(imgConfig, null, 2) + '\n');
   }
 }
