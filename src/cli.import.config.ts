@@ -1,8 +1,9 @@
-import { invalidateCache } from '@basemaps/cli/build/cli/util.js';
+import { invalidateCache, uploadStaticFile } from '@basemaps/cli/build/cli/util.js';
 import { LogConfig } from '@basemaps/shared';
 import { fsa } from '@chunkd/fs';
 import { Command, flags } from '@oclif/command';
 import PLimit from 'p-limit';
+import path from 'path';
 import { Updater } from './base.config.js';
 import { ImageryUpdater } from './imagery.config.js';
 import { ImageryTileSetUpdater } from './imagery.tileset.config.js';
@@ -45,7 +46,28 @@ export class CommandImport extends Command {
       if (hasChanges && updater.invalidatePath) this.invalidates.push(updater.invalidatePath());
     }
 
+    let isSpriteUploaded = false;
+    const absSpritePath = path.resolve(`./config/sprites`);
+    for await (const fileName of fsa.list(absSpritePath)) {
+      let contentType = null;
+      // This should avoid us uploading the .svg files in the sub directories
+      if (fileName.endsWith('.json')) contentType = 'application/json';
+      if (fileName.endsWith('.png')) contentType = 'image/png';
+
+      if (contentType == null) continue;
+      const targetKey = path.join(`/sprites`, fileName.slice(absSpritePath.length));
+      console.log(fileName, targetKey);
+      if (flags.commit) {
+        const isUploaded = await uploadStaticFile(fileName, targetKey, contentType, 'public, max-age=60, stale-while-revalidate=300');
+        if (isUploaded) {
+          logger.info({ path: targetKey }, 'Sprite:Upload');
+          isSpriteUploaded = true;
+        }
+      }
+    }
+
     if (flags.commit) {
+      if (isSpriteUploaded) await invalidateCache('/sprites');
       // Limit invalidations
       for (const invalidate of this.invalidates.slice(0, 10)) {
         logger.warn(`FlushCache: ${invalidate}`);
