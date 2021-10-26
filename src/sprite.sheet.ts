@@ -5,7 +5,7 @@ import { basename, dirname } from 'path';
 import { promisify } from 'util';
 
 /** Pixel ratios to generate 1x, 2x and 4x */
-export const PixelRation = [1, 2, 4];
+export const PixelRatio = [1, 2, 4];
 
 const generateImage = promisify(spritezero.generateImage);
 const generateLayout = promisify(spritezero.generateLayout);
@@ -30,7 +30,7 @@ async function main(): Promise<void> {
   for (const [groupId, imgs] of spriteList.entries()) {
     logger.info({ groupId, sprites: imgs.length }, 'Sprite:Create');
 
-    for (const pixelRatio of PixelRation) {
+    for (const pixelRatio of PixelRatio) {
       const scaleText = pixelRatio === 1 ? '' : `@${pixelRatio}x`;
       const outputPng = `./config/sprites/${groupId}${scaleText}.png`;
       const outputJson = `./config/sprites/${groupId}${scaleText}.json`;
