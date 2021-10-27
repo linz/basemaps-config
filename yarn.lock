@@ -30,10 +30,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@basemaps/cli@^6.13.0":
-  version "6.13.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/cli/-/cli-6.13.0.tgz#0a9cff027db34192eeedb417e845beb63a8648ec"
-  integrity sha512-W8541BMFo3PdYJYMMCcdwnD0nlz76i9T5zUmm7rFinx3/IdfryGzW6V6tI8Yz2FfitTwk3jGbr5Q3KH98kaZaQ==
+"@basemaps/cli@^6.14.0":
+  version "6.14.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/cli/-/cli-6.14.0.tgz#e070a20b08c1d5fd132d307827ba78867861376d"
+  integrity sha512-9/sEkeXJDYyFoon6aFzmjyPrzCJoQnZyK/uwWPkVFrMR60Li1IsyjmFBOXkP9olCRimw3JxoX9kCX4h0Yn03HQ==
   dependencies:
     "@basemaps/config" "^6.10.0"
     "@basemaps/geo" "^6.10.0"
@@ -47,21 +47,21 @@
     pretty-json-log "^1.0.0"
     zod "^3.2.0"
 
-"@basemaps/config@^6.10.0", "@basemaps/config@^6.13.0":
+"@basemaps/config@^6.10.0":
   version "6.10.0"
   resolved "https://registry.yarnpkg.com/@basemaps/config/-/config-6.10.0.tgz#42583931fcc0e3d2e7da3e16e33c00260485cfe2"
   integrity sha512-KuD3z8wPKMnuofPy0iZyBaZk2kx32TCryEHNrf5qNp51i0a/hqTQFQ1IAo+x89y63SOvMHwMoMUKa7q6BODnNA==
   dependencies:
     "@basemaps/geo" "^6.10.0"
 
-"@basemaps/geo@^6.10.0", "@basemaps/geo@^6.13.0":
+"@basemaps/geo@^6.10.0":
   version "6.10.0"
   resolved "https://registry.yarnpkg.com/@basemaps/geo/-/geo-6.10.0.tgz#cd6fa7f0543e7cf2e9cb766d0cc6b813a42e55c6"
   integrity sha512-oDM4kUzzBCNylzjmeSh0l5L4Ed+q0+V51SElOB9XL/Wr7YfCb7+ZUYXdHFPW72muD/OfKr+0B8JwaemDsyKThQ==
   dependencies:
     "@linzjs/tile-matrix-set" "^0.0.1"
 
-"@basemaps/shared@^6.12.0", "@basemaps/shared@^6.13.0":
+"@basemaps/shared@^6.12.0":
   version "6.12.0"
   resolved "https://registry.yarnpkg.com/@basemaps/shared/-/shared-6.12.0.tgz#44d7eec2a170d7a4b357d8bfbd7c7af4de88b5af"
   integrity sha512-LdBE9S9thVrxTtRYWPpNhZ5p09emhWK9gHC+2p5A70JOemqpLl5xa2Jn5EKLOUC4iHRljPH+aLSfwAh0HV5tNA==
