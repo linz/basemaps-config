@@ -55,7 +55,7 @@
       }
     },
     {
-      "id": "Texture",
+      "id": "Textureshade",
       "type": "raster",
       "source": "LINZ Texture",
       "maxzoom": 13,
@@ -81,7 +81,8 @@
       "paint": {
         "raster-opacity": {
           "stops": [
-            [7, 0.55],
+            [1, 0.2],
+            [7, 0.35],
             [10, 0.25],
             [17, 0.2]
           ]
@@ -193,6 +194,20 @@
       "filter": ["all", ["==", "class", "wetland"], ["==", "wetland_type", "swamp"]],
       "layout": { "visibility": "visible" },
       "paint": { "fill-color": "rgba(197, 228, 226, 0.75)" }
+    },
+    {
+      "id": "Landcover-Swamp-Ln",
+      "type": "line",
+      "source": "LINZ Basemaps",
+      "source-layer": "landcover",
+      "minzoom": 12,
+      "filter": ["all", ["==", "class", "wetland"], ["==", "wetland_type", "swamp"]],
+      "layout": { "visibility": "visible" },
+      "paint": {
+        "line-dasharray": [6, 6, 4, 4],
+        "line-color": "rgba(0, 140, 204, 0.8)",
+        "line-width": 0.5
+      }
     },
     {
       "id": "Landcover-Ice-Topo250",
@@ -445,7 +460,7 @@
       "paint": { "line-color": "rgba(36, 36, 36, 0.5)", "line-dasharray": [5, 5] }
     },
     {
-      "id": "Water-Polys-Outline",
+      "id": "Water-Polys-Outline-copy",
       "type": "line",
       "source": "LINZ Basemaps",
       "source-layer": "water",
@@ -454,16 +469,47 @@
       "layout": {
         "line-cap": "round",
         "line-join": "round",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
-        "line-color": "rgba(0, 140, 204, 1)",
+        "line-color": "rgba(0, 140, 204, 0.6)",
         "line-width": {
           "stops": [
             [9, 2],
             [15, 2.5]
           ]
-        }
+        },
+        "line-blur": 0.5,
+        "line-offset": -1
+      }
+    },
+    {
+      "id": "Water-Polys-Outline",
+      "type": "line",
+      "source": "LINZ Basemaps",
+      "source-layer": "water",
+      "minzoom": 11,
+      "filter": ["any", ["==", "class", "lake"], ["==", "feat_type", "river_poly"], ["==", "feat_type", "canal_poly"], ["==", "class", "lagoon"]],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": {
+          "stops": [
+            [6, "rgba(184, 220, 242, 1)"],
+            [13, "rgba(0, 140, 204, 0.3)"],
+            [19, "rgba(0, 140, 204, 1)"]
+          ]
+        },
+        "line-width": {
+          "stops": [
+            [9, 1],
+            [15, 2.5]
+          ]
+        },
+        "line-offset": 0
       }
     },
     {
@@ -471,13 +517,19 @@
       "type": "fill",
       "source": "LINZ Basemaps",
       "source-layer": "water",
-      "minzoom": 8,
+      "minzoom": 9,
       "maxzoom": 13,
       "filter": ["all", ["==", "feat_type", "canal_poly"], ["has", "name"]],
       "layout": { "visibility": "visible" },
       "paint": {
         "fill-color": "rgba(204, 232, 245, 1)",
-        "fill-outline-color": "rgba(0, 140, 204, 1)",
+        "fill-outline-color": {
+          "stops": [
+            [6, "rgba(184, 220, 242, 1)"],
+            [13, "rgba(0, 140, 204, 0.3)"],
+            [19, "rgba(0, 140, 204, 1)"]
+          ]
+        },
         "fill-opacity": 1,
         "fill-translate-anchor": "map",
         "fill-antialias": true
@@ -651,9 +703,16 @@
       "filter": ["all", ["==", "feat_type", "river_cl"], ["has", "name"]],
       "layout": { "visibility": "visible" },
       "paint": {
-        "line-color": "rgba(0, 140, 204, 1)",
+        "line-color": {
+          "stops": [
+            [9, "rgba(184, 220, 242, 1)"],
+            [11, "rgba(184, 220, 242, 1)"],
+            [13, "rgba(0, 140, 204, 0.3)"],
+            [20, "rgba(0, 140, 204, 1)"]
+          ]
+        },
         "line-opacity": 1,
-        "line-width": 0.75
+        "line-width": 1.5
       }
     },
     {
@@ -681,7 +740,13 @@
       "filter": ["all", ["==", "feat_type", "river_cl"]],
       "layout": { "visibility": "visible" },
       "paint": {
-        "line-color": "rgba(0, 140, 204, 1)",
+        "line-color": {
+          "stops": [
+            [9, "rgba(184, 220, 242, 1)"],
+            [13, "rgba(0, 140, 204, 0.3)"],
+            [19, "rgba(0, 140, 204, 1)"]
+          ]
+        },
         "line-opacity": 1,
         "line-width": 0.75
       }
@@ -850,7 +915,15 @@
       "source-layer": "waterway",
       "filter": ["all", ["==", "class", "channel"], ["==", "channel_type", "water_race"]],
       "layout": { "visibility": "visible" },
-      "paint": { "line-color": "rgba(0, 140, 204, 1)", "line-width": 0.5 }
+      "paint": {
+        "line-color": {
+          "stops": [
+            [13, "rgba(0, 140, 204, 0.3)"],
+            [19, "rgba(0, 140, 204, 1)"]
+          ]
+        },
+        "line-width": 0.5
+      }
     },
     {
       "id": "Waterway-Rapid-Poly",
@@ -874,7 +947,13 @@
       "filter": ["all", ["==", "class", "stream"], ["==", "stream_feature", "rapid"]],
       "layout": { "visibility": "visible" },
       "paint": {
-        "line-color": "rgba(0, 140, 204, 1)",
+        "line-color": {
+          "stops": [
+            [6, "rgba(184, 220, 242, 1)"],
+            [13, "rgba(0, 140, 204, 0.3)"],
+            [19, "rgba(0, 140, 204, 1)"]
+          ]
+        },
         "line-width": {
           "stops": [
             [13, 1],
@@ -934,7 +1013,13 @@
       "layout": { "visibility": "visible" },
       "paint": {
         "fill-color": "rgba(184, 220, 242, 1)",
-        "fill-outline-color": "rgba(0, 140, 204, 1)"
+        "fill-outline-color": {
+          "stops": [
+            [6, "rgba(184, 220, 242, 1)"],
+            [13, "rgba(0, 140, 204, 0.3)"],
+            [19, "rgba(0, 140, 204, 1)"]
+          ]
+        }
       }
     },
     {
@@ -1222,17 +1307,36 @@
       }
     },
     {
-      "id": "Coastline-Line2",
+      "id": "Coastline-Line2-copy",
       "type": "line",
       "source": "LINZ Basemaps",
       "source-layer": "coastline",
+      "maxzoom": 6,
       "layout": { "visibility": "visible" },
       "paint": {
         "line-color": "rgba(9, 132, 186, 1)",
         "line-width": {
           "stops": [
-            [2, 0.5],
-            [10, 1],
+            [0, 0.15],
+            [6, 0.5]
+          ]
+        },
+        "line-translate-anchor": "map"
+      }
+    },
+    {
+      "id": "Coastline-Line2",
+      "type": "line",
+      "source": "LINZ Basemaps",
+      "source-layer": "coastline",
+      "minzoom": 6,
+      "layout": { "visibility": "visible" },
+      "paint": {
+        "line-color": "rgba(9, 132, 186, 1)",
+        "line-width": {
+          "stops": [
+            [2, 0.25],
+            [10, 0.75],
             [15, 1.75],
             [20, 3.5]
           ]
@@ -1740,10 +1844,10 @@
         "line-dasharray": {
           "base": 1,
           "stops": [
-            [14, [3, 3]],
-            [15, [3, 4]],
-            [16, [4, 6]],
-            [17, [6, 8]]
+            [14, [5, 3]],
+            [15, [5, 4]],
+            [16, [6, 6]],
+            [17, [8, 8]]
           ]
         }
       }
@@ -1757,11 +1861,11 @@
       "filter": ["all", ["==", "class", "ferry"]],
       "paint": {
         "line-dasharray": [15, 10],
-        "line-color": "rgba(23, 114, 164, 0.86)"
+        "line-color": "rgba(0, 140, 204, 1)"
       }
     },
     {
-      "id": "Transport-1Casing",
+      "id": "Transport-1Casing-test",
       "type": "line",
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
@@ -1777,9 +1881,69 @@
         "line-color": "rgba(78, 78, 78, 1)",
         "line-width": {
           "stops": [
+            [10, 0.75],
+            [11, 1.5],
+            [13, 3],
+            [15, 4.5],
+            [18, 9]
+          ]
+        }
+      }
+    },
+    {
+      "id": "Transport-1Casing",
+      "type": "line",
+      "source": "LINZ Basemaps",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "maxzoom": 24,
+      "filter": ["all", ["==", "lane_count", 1], ["!=", "class", "motorway"]],
+      "layout": {
+        "visibility": "none",
+        "line-cap": "butt",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-color": "rgba(78, 78, 78, 1)",
+        "line-width": {
+          "stops": [
             [10, 2],
             [15, 6],
             [19, 10]
+          ]
+        }
+      }
+    },
+    {
+      "id": "Transport-2Casing-test-copy",
+      "type": "line",
+      "source": "LINZ Basemaps",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "maxzoom": 24,
+      "filter": ["all", ["in", "lane_count", 2, 3, 4, 5, 6, 7, 8], ["!=", "class", "motorway"]],
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "butt",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-color": {
+          "stops": [
+            [10, "rgba(78, 78, 78, 1)"],
+            [17, "rgba(78, 78, 78, 1)"],
+            [18, "rgba(78, 78, 78, 1)"]
+          ]
+        },
+        "line-width": {
+          "stops": [
+            [10, 3.25],
+            [12, 4.5],
+            [13, 6.5],
+            [15, 10],
+            [18, 17],
+            [19, 60],
+            [22, 400]
           ]
         }
       }
@@ -1793,7 +1957,7 @@
       "maxzoom": 24,
       "filter": ["all", ["in", "lane_count", 2, 3, 4, 5, 6, 7, 8], ["!=", "class", "motorway"]],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-cap": "butt",
         "line-join": "bevel"
       },
@@ -2051,7 +2215,7 @@
       "maxzoom": 24,
       "filter": ["all", ["==", "surface", "sealed"], ["==", "lane_count", 1], ["!=", "class", "motorway"]],
       "layout": {
-        "visibility": "visible",
+        "visibility": "none",
         "line-cap": "butt",
         "line-join": "bevel"
       },
@@ -2069,7 +2233,94 @@
       }
     },
     {
+      "id": "Transport-1Sealed-White-test",
+      "type": "line",
+      "source": "LINZ Basemaps",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "maxzoom": 24,
+      "filter": ["all", ["==", "surface", "sealed"], ["==", "lane_count", 1], ["!=", "class", "motorway"]],
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "butt",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-color": "rgba(255, 255, 255, 1)",
+        "line-width": {
+          "stops": [
+            [10, 0.5],
+            [11, 1],
+            [13, 2],
+            [15, 3],
+            [18, 8]
+          ]
+        },
+        "line-gap-width": 0,
+        "line-translate-anchor": "map"
+      }
+    },
+    {
+      "id": "Transport-1Sealed-test-copy",
+      "type": "line",
+      "source": "LINZ Basemaps",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "maxzoom": 24,
+      "filter": ["all", ["==", "surface", "sealed"], ["==", "lane_count", 1], ["!=", "class", "motorway"]],
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "butt",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-color": {
+          "stops": [
+            [10, "rgba(210, 162, 84, 1)"],
+            [18, "rgba(210, 162, 84, 0.85)"]
+          ]
+        },
+        "line-width": {
+          "stops": [
+            [10, 0.5],
+            [11, 1],
+            [13, 2],
+            [15, 3],
+            [18, 8]
+          ]
+        },
+        "line-gap-width": 0,
+        "line-translate-anchor": "map"
+      }
+    },
+    {
       "id": "Transport-2+Sealed",
+      "type": "line",
+      "source": "LINZ Basemaps",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "maxzoom": 24,
+      "filter": ["all", ["==", "surface", "sealed"], ["in", "lane_count", 2, 3, 4, 5, 6, 7], ["!=", "class", "motorway"]],
+      "layout": {
+        "visibility": "none",
+        "line-cap": "butt",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-color": "rgba(210, 162, 84, 1)",
+        "line-width": {
+          "stops": [
+            [10, 2],
+            [15, 5],
+            [19, 12]
+          ]
+        },
+        "line-gap-width": 0,
+        "line-translate-anchor": "map"
+      }
+    },
+    {
+      "id": "Transport-2+Sealed-White - test",
       "type": "line",
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
@@ -2082,12 +2333,50 @@
         "line-join": "bevel"
       },
       "paint": {
-        "line-color": "rgba(210, 162, 84, 1)",
+        "line-color": "rgba(255, 255, 255, 1)",
         "line-width": {
           "stops": [
-            [10, 2],
-            [15, 5],
-            [19, 12]
+            [10, 1.35],
+            [11, 1.75],
+            [13, 4],
+            [15, 7.5],
+            [18, 14]
+          ]
+        },
+        "line-gap-width": 0,
+        "line-translate-anchor": "map"
+      }
+    },
+    {
+      "id": "Transport-2+Sealed-test-copy",
+      "type": "line",
+      "source": "LINZ Basemaps",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "maxzoom": 24,
+      "filter": ["all", ["==", "surface", "sealed"], ["in", "lane_count", 2, 3, 4, 5, 6, 7], ["!=", "class", "motorway"]],
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "butt",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-color": {
+          "stops": [
+            [10, "rgba(210, 162, 84, 1)"],
+            [17, "rgba(210, 162, 84, 1)"],
+            [19, "rgba(217, 184, 127, 1)"]
+          ]
+        },
+        "line-width": {
+          "stops": [
+            [10, 1.35],
+            [11, 1.75],
+            [13, 4],
+            [15, 7.5],
+            [18, 14],
+            [19, 55],
+            [22, 380]
           ]
         },
         "line-gap-width": 0,
@@ -2183,7 +2472,15 @@
         "line-join": "round",
         "line-cap": "butt"
       },
-      "paint": { "line-color": "rgba(96, 90, 90, 0.95)", "line-width": 2 }
+      "paint": {
+        "line-color": {
+          "stops": [
+            [8, "rgba(158, 153, 153, 1)"],
+            [10, "rgba(96, 90, 90, 0.95)"]
+          ]
+        },
+        "line-width": 2
+      }
     },
     {
       "id": "Transport-Railway-Topo250",
@@ -2192,8 +2489,14 @@
       "source-layer": "transportation",
       "maxzoom": 8,
       "filter": ["all", ["==", "class", "railway"]],
+      "layout": { "visibility": "none" },
       "paint": {
-        "line-color": "rgba(121, 113, 113, 1)",
+        "line-color": {
+          "stops": [
+            [5, "rgba(158, 153, 153, 1)"],
+            [8, "rgba(96, 90, 90, 0.95)"]
+          ]
+        },
         "line-width": {
           "stops": [
             [5, 1],
@@ -2243,7 +2546,8 @@
         "line-color": "rgba(120, 120, 120, 1)",
         "line-width": {
           "stops": [
-            [8, 4],
+            [8, 3],
+            [10, 4],
             [15, 8.5],
             [19, 14.5]
           ]
@@ -2315,7 +2619,8 @@
         "line-color": "rgba(245, 64,41, 0.95)",
         "line-width": {
           "stops": [
-            [8, 1.5],
+            [8, 1.35],
+            [10, 1.5],
             [15, 6.5],
             [19, 12.5]
           ]
@@ -2359,8 +2664,8 @@
         "line-color": "rgba(120, 120, 120, 1)",
         "line-width": {
           "stops": [
-            [5, 1.5],
-            [8, 4]
+            [5, 1.35],
+            [8, 3]
           ]
         }
       }
@@ -2377,8 +2682,8 @@
         "line-color": "rgba(245, 64,41, 0.95)",
         "line-width": {
           "stops": [
-            [5, 0.75],
-            [8, 1.5]
+            [5, 0.6],
+            [8, 1.35]
           ]
         }
       }
@@ -2405,34 +2710,6 @@
             [19, 6]
           ]
         }
-      }
-    },
-    {
-      "id": "Transport-Tunnel-VT",
-      "type": "line",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 10,
-      "maxzoom": 24,
-      "filter": ["all", ["==", "brunnel", "tunnel"]],
-      "layout": {
-        "visibility": "visible",
-        "line-cap": "butt",
-        "line-join": "bevel"
-      },
-      "paint": {
-        "line-color": "rgba(150, 144, 144, 1)",
-        "line-width": {
-          "stops": [
-            [10, 1],
-            [15, 3],
-            [19, 5]
-          ]
-        },
-        "line-dasharray": [5, 3],
-        "line-gap-width": 2,
-        "line-blur": 0,
-        "line-opacity": 1
       }
     },
     {
@@ -3049,7 +3326,7 @@
       "layout": {
         "visibility": "visible",
         "text-field": "",
-        "icon-image": "star_11"
+        "icon-image": "circle-stroked_11"
       }
     },
     {
@@ -3104,7 +3381,10 @@
       "source-layer": "poi",
       "minzoom": 12,
       "filter": ["all", ["==", "class", "pa"]],
-      "layout": { "icon-image": "square-stroke_11" }
+      "layout": {
+        "icon-image": "square-stroke_11",
+        "text-ignore-placement": true
+      }
     },
     {
       "id": "Poi-Redoubt",
@@ -3116,7 +3396,7 @@
       "layout": { "icon-image": "square-stroke_15" }
     },
     {
-      "id": "Poi-Bouy",
+      "id": "Poi-Buoy",
       "type": "symbol",
       "source": "LINZ Basemaps",
       "source-layer": "poi",
@@ -3163,7 +3443,7 @@
       "source": "LINZ Basemaps",
       "source-layer": "landcover",
       "minzoom": 14,
-      "maxzoom": 15,
+      "maxzoom": 24,
       "filter": ["all", ["==", "landuse", "vineyard"]],
       "layout": {
         "text-font": ["Open Sans Italic"],
@@ -3179,8 +3459,11 @@
         "icon-pitch-alignment": "viewport"
       },
       "paint": {
-        "text-color": "rgba(255, 255, 255, 1)",
-        "text-translate-anchor": "viewport"
+        "text-color": "rgba(17, 63, 29, 0.85)",
+        "text-translate-anchor": "viewport",
+        "text-halo-color": "rgba(255, 255, 255, 0.59)",
+        "text-halo-width": 1,
+        "text-halo-blur": 0.5
       }
     },
     {
@@ -3204,8 +3487,11 @@
         "icon-pitch-alignment": "viewport"
       },
       "paint": {
-        "text-color": "rgba(255, 255, 255, 1)",
-        "text-translate-anchor": "viewport"
+        "text-color": "rgba(35, 96, 53, 0.85)",
+        "text-translate-anchor": "viewport",
+        "text-halo-color": "rgba(255, 255, 255, 0.59)",
+        "text-halo-width": 1,
+        "text-halo-blur": 0.5
       }
     },
     {
@@ -3229,6 +3515,34 @@
         "fill-extrusion-color": "rgba(190, 190, 190, 1)",
         "fill-extrusion-translate-anchor": "viewport",
         "fill-extrusion-vertical-gradient": false
+      }
+    },
+    {
+      "id": "Transport-Tunnel-VT",
+      "type": "line",
+      "source": "LINZ Basemaps",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "maxzoom": 24,
+      "filter": ["all", ["==", "brunnel", "tunnel"]],
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "butt",
+        "line-join": "bevel"
+      },
+      "paint": {
+        "line-color": "rgba(98, 88, 13, 1)",
+        "line-width": {
+          "stops": [
+            [10, 0.5],
+            [15, 1.5],
+            [19, 4]
+          ]
+        },
+        "line-dasharray": [4, 2.5],
+        "line-gap-width": 8,
+        "line-blur": 0,
+        "line-opacity": 1
       }
     },
     {
@@ -3318,7 +3632,7 @@
       "type": "line",
       "source": "LINZ Basemaps",
       "source-layer": "landuse",
-      "minzoom": 8,
+      "minzoom": 11,
       "maxzoom": 12,
       "filter": ["all", ["==", "class", "powerline"], ["==", "support_ty", "pylon"]],
       "layout": {
@@ -3561,7 +3875,8 @@
         "icon-allow-overlap": true,
         "icon-image": "default_2",
         "icon-rotate": 90,
-        "icon-offset": [-3, -6]
+        "icon-offset": [-3, -6],
+        "visibility": "visible"
       }
     },
     {
@@ -3711,13 +4026,20 @@
         "text-justify": "center",
         "text-rotation-alignment": "auto",
         "text-pitch-alignment": "auto",
-        "icon-rotation-alignment": "auto"
+        "icon-rotation-alignment": "map",
+        "icon-image": "sh_shield",
+        "icon-size": 1.5,
+        "icon-offset": [0, 1],
+        "icon-pitch-alignment": "map",
+        "icon-anchor": "center",
+        "icon-keep-upright": false
       },
       "paint": {
-        "text-halo-width": 8,
+        "text-translate-anchor": "map",
+        "text-color": "rgba(255, 255, 255, 1)",
+        "icon-translate-anchor": "map",
         "text-halo-color": "rgba(245, 64,41, 0.95)",
-        "text-translate-anchor": "viewport",
-        "text-color": "rgba(255, 255, 255, 1)"
+        "text-halo-width": 8
       }
     },
     {
@@ -3797,6 +4119,26 @@
       }
     },
     {
+      "id": "Transport-Tunnel-Label",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "transportation",
+      "minzoom": 15,
+      "filter": ["all", ["==", "brunnel", "tunnel"]],
+      "layout": {
+        "text-font": ["Roboto Black"],
+        "text-field": "{brunnel}",
+        "symbol-placement": "line",
+        "text-size": 10,
+        "symbol-spacing": 100
+      },
+      "paint": {
+        "text-color": "rgba(80, 75, 75, 1)",
+        "text-halo-color": "rgba(230, 230, 230, 0.5)",
+        "text-halo-width": 2
+      }
+    },
+    {
       "id": "Aeroway-Helipads",
       "type": "symbol",
       "source": "LINZ Basemaps",
@@ -3835,12 +4177,12 @@
         "text-justify": "center",
         "symbol-spacing": 250,
         "text-padding": 2,
-        "icon-image": "airport_15",
         "icon-offset": [0, 0],
         "text-allow-overlap": false,
         "icon-pitch-alignment": "viewport",
         "text-anchor": "top",
-        "icon-anchor": "bottom"
+        "icon-anchor": "bottom",
+        "icon-image": "airport_15"
       },
       "paint": {
         "text-color": "rgba(129, 123, 123, 1)",
@@ -3854,7 +4196,7 @@
       "type": "symbol",
       "source": "LINZ Basemaps",
       "source-layer": "water",
-      "minzoom": 11,
+      "minzoom": 12,
       "filter": ["all", ["==", "class", "river"], ["has", "name"]],
       "layout": {
         "text-field": "{name}",
