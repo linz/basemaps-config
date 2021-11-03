@@ -1,9 +1,9 @@
 {
   "name": "waimakariri_urban_2021_0-05m_RGB",
-  "id": "im_01FKFB972JPXCAVSQ5E8DQESNF",
+  "id": "im_01FKHMHNJ130J9DF3J9CSYZ41V",
   "year": 2021,
   "projection": 2193,
-  "uri": "s3://linz-basemaps/2193/waimakariri_urban_2021_0-05m_RGB/01FKFB972JPXCAVSQ5E8DQESNF",
+  "uri": "s3://linz-basemaps/2193/waimakariri_urban_2021_0-05m_RGB/01FKHMHNJ130J9DF3J9CSYZ41V",
   "resolution": 50,
   "bounds": {
     "x": 1529874.70828855,
