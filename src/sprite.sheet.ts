@@ -32,8 +32,8 @@ async function main(): Promise<void> {
 
     for (const pixelRatio of PixelRatio) {
       const scaleText = pixelRatio === 1 ? '' : `@${pixelRatio}x`;
-      const outputPng = `./config/sprites/${groupId}${scaleText}.png`;
-      const outputJson = `./config/sprites/${groupId}${scaleText}.json`;
+      const outputPng = `./build/sprites/${groupId}${scaleText}.png`;
+      const outputJson = `./build/sprites/${groupId}${scaleText}.json`;
 
       const layout = await generateLayout({ imgs, pixelRatio, format: true });
       await fsa.write(outputJson, JSON.stringify(layout));

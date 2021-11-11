@@ -47,7 +47,7 @@ export class CommandImport extends Command {
     }
 
     let isSpriteUploaded = false;
-    const absSpritePath = path.resolve(`./config/sprites`);
+    const absSpritePath = path.resolve(`./build/sprites`);
     for await (const fileName of fsa.list(absSpritePath)) {
       let contentType = null;
       // This should avoid us uploading the .svg files in the sub directories
