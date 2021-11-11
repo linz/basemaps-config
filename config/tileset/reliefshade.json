@@ -2,5 +2,5 @@
   "type": "raster",
   "id": "ts_reliefshade",
   "background": "00000000",
-  "layers": [{ "2193": "im_01FGQB4THG3RDNJSWRCYDR3JA2", "3857": "im_01FGWBY0X4BCM2VDVSRC3TWJTN", "name": "geographx_nz_dem_2012_8-0m" }]
+  "layers": [{ "3857": "im_01FM39JAGBSRNR4MJDVQPDNC9R", "name": "geographx_nz_dem_2012_8-0m" }]
 }
