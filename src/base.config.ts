@@ -1,7 +1,8 @@
 import { BaseConfig, ConfigDynamoBase } from '@basemaps/config';
+import { BasemapsConfigObject } from '@basemaps/config/build/base.config';
 import { LogConfig, LogType } from '@basemaps/shared';
-import * as c from 'ansi-colors';
-import { diff, Diff } from 'deep-diff';
+import c from 'ansi-colors';
+import diff from 'deep-diff';
 
 export const IgnoredProperties = ['id', 'createdAt', 'updatedAt'];
 
@@ -14,7 +15,7 @@ export abstract class Updater<S extends { id: string } = { id: string }, T exten
   tag: string;
   isCommit: boolean;
   logger: LogType;
-  abstract db: ConfigDynamoBase<T>;
+  abstract db: BasemapsConfigObject<T>;
 
   /**
    * Class to apply an TileSetConfig source to the tile metadata db
@@ -56,14 +57,17 @@ export abstract class Updater<S extends { id: string } = { id: string }, T exten
     if (oldData == null || this.showDiff(oldData, newData)) {
       const operation = oldData == null ? 'Insert' : 'Update';
       this.logger.info({ type: this.db.prefix, record: newData.id }, `Change:${operation}`);
-      if (this.isCommit) await this.db.put(newData);
+      if (this.isCommit) {
+        if (this.db instanceof ConfigDynamoBase) await this.db.put(newData);
+        else throw new Error('Unable to commit changes to: ' + this.db.prefix);
+      }
       return true;
     }
-    this.logger.debug({ type: this.db.prefix, record: newData.id }, 'NoChanges');
+    this.logger.trace({ type: this.db.prefix, record: newData.id }, 'NoChanges');
     return false;
   }
 
-  printDiff(changes: Diff<T, T>[]): string {
+  printDiff(changes: diff.Diff<T, T>[]): string {
     let output = '';
     let isArray = false;
     for (const change of changes) {
@@ -90,7 +94,7 @@ export abstract class Updater<S extends { id: string } = { id: string }, T exten
   }
 
   showDiff(oldData: T, newData: T): boolean {
-    const changes = diff(oldData, newData, (_path: string[], key: string) => IgnoredProperties.indexOf(key) >= 0);
+    const changes = diff.diff(oldData, newData, (_path: string[], key: string) => IgnoredProperties.indexOf(key) >= 0);
     if (changes) {
       this.logger.info({ type: this.db.prefix, record: newData.id }, 'Changes');
       const output = this.printDiff(changes);

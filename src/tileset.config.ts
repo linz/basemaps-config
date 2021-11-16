@@ -1,7 +1,7 @@
 import { ConfigTileSet, TileSetType } from '@basemaps/config';
 import { Config, fsa } from '@basemaps/shared';
 import * as z from 'zod';
-import { Updater } from './base.config';
+import { Updater } from './base.config.js';
 
 /**
  * Parse a string as hex, return 0 on failure
@@ -149,6 +149,6 @@ export class TileSetUpdater extends Updater<TileSetConfigSchema, ConfigTileSet> 
   invalidatePath(): string {
     const name = Config.unprefix(this.db.prefix, this.config.id);
     if (this.config.type === TileSetType.Raster) return `/v1/tiles/${name}/*`;
-    return `/v1/tiles/${name}/*.pbf`;
+    return `/v1/tiles/${name}/*`;
   }
 }

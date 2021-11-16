@@ -2,32 +2,39 @@
   "name": "basemaps-config",
   "version": "1.0.1",
   "private": true,
-  "description": "LINZ specific configuration and delployment of basemaps",
+  "description": "LINZ specific configuration and deployment of basemaps",
   "repository": "github:linz/basemaps-config",
+  "type": "module",
   "license": "MIT",
+  "bin": {
+    "basemaps-config": "./bin/basemaps-config.js",
+    "basemaps-job": "./bin/basemaps-job.js"
+  },
   "dependencies": {
-    "@basemaps/cli": "^6.0.0",
-    "@basemaps/config": "^6.0.0",
-    "@basemaps/geo": "^6.0.0",
-    "@basemaps/shared": "^6.0.0",
+    "@basemaps/cli": "^6.14.0",
+    "@basemaps/config": "^6.10.0",
+    "@basemaps/geo": "^6.10.0",
+    "@basemaps/shared": "^6.12.0",
+    "@chunkd/fs": "^7.3.1",
     "@cogeotiff/chunk": "^4.2.0",
+    "@mapbox/spritezero": "^8.0.0",
     "@oclif/command": "^1.8.0",
     "deep-diff": "^1.0.2",
     "p-limit": "^3.1.0",
     "pretty-json-log": "^0.3.2",
-    "zod": "^3.0.2"
+    "zod": "^3.8.2"
   },
   "scripts": {
-    "lint": "eslint 'src/**/*.ts' --quiet --fix --report-unused-disable-directives",
-    "lint:ci": "eslint 'src/**/*.ts'",
-    "lint:config": "prettier 'config/**/*.json' -w",
+    "lint": "eslint . --quiet --fix --report-unused-disable-directives --ignore-path .gitignore",
     "clean": "tsc -b --clean && rimraf 'build'",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
-    "build": "tsc --build tsconfig.json"
+    "build": "tsc --build tsconfig.json",
+    "build-sprites": "node build/src/sprite.sheet.js && npx eslint build/sprites/ --fix"
   },
   "devDependencies": {
-    "@linzjs/style": "^2.1.0",
+    "@linzjs/style": "^3.1.1",
     "@types/deep-diff": "^1.0.0",
+    "@types/mapbox__spritezero": "^6.3.2",
     "@types/node": "^14.11.2",
     "@types/p-limit": "^2.2.0",
     "conventional-changelog-cli": "^2.1.0",

@@ -6,6 +6,18 @@ LINZ specific configuration and delployment of [basemaps](https://github.com/lin
 
 This package initially is to control the imagery present in the LINZ basemaps product.
 
+### Server
+
+This configuration can be used with basemaps server @basemaps/server to create a working tile server
+
+```
+yarn add @basemaps/server
+
+npx basemaps-server config
+```
+
+You will need access to basemaps imagery, if you need access to basemaps imagery please contact basemaps@linz.govt.nz 
+
 ### Imagery `/config/imagery`
 
 All individual imagery layers these are stored in both WebMercator (3857) and [NZTM (2193)](https://github.com/linz/NZTM2000TileMatrixSet) in a LINZ s3 bucket as [cloud optimized geotiffs (COG)](https://www.cogeo.org/).
@@ -14,9 +26,9 @@ these config files reference the locations of all the tiffs and their bounding b
 
 These imagery sets can be viewed in basemaps by using their id.
 
-[config/imagery/wellington_urban_2021_0-075m_RGB-WebMercatorQuad.json](./config/imagery/wellington_urban_2021_0-075m_RGB-WebMercatorQuad.json) - https://basemaps.linz.govt.nz/?i=01FBNERWAX2XVCKQ4AACWGP2K5#@-41.2777800,174.7949622,z10.4323
+WebMercator: [wellington_urban_2021_0-075m_RGB](./config/imagery/wellington_urban_2021_0-075m_RGB-WebMercatorQuad.json) - https://basemaps.linz.govt.nz/?i=01FBNERWAX2XVCKQ4AACWGP2K5#@-41.2777800,174.7949622,z10.4323
 
-[config/imagery/wellington_urban_2021_0-075m_RGB-NZTM2000Quad.json](./config/imagery/wellington_urban_2021_0-075m_RGB-NZTM2000Quad.json) - https://basemaps.linz.govt.nz/?i=01F6P21F387PCQQB757VZ4E6GS&p=nztm2000quad#@-41.2777800,174.7949622,z10.4323
+NZTM - [wellington_urban_2021_0-075m_RGB](./config/imagery/wellington_urban_2021_0-075m_RGB-NZTM2000Quad.json) - https://basemaps.linz.govt.nz/?i=01F6P21F387PCQQB757VZ4E6GS&p=nztm2000quad#@-41.2777800,174.7949622,z10.4323
 
 
 ### Tileset `/config/tileset`
@@ -76,4 +88,5 @@ Must be one of the following:
 - `aerial` Changes the aerial tile set `./config/tileset/aerial.json`
 - `imagery` Adding or removing imagery layers `./config/imagery/*`
 - `vector` Changes to the vector layers `./config/style/*` or `./config/tileset/topographic.json`
+- `sprites` changes to the sprites `./config/sprites/**`
 - `scripts` Changes to the importing scripts `./src`

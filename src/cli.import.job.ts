@@ -1,9 +1,8 @@
 import { Bounds, TileMatrixSets } from '@basemaps/geo';
-import { Config, extractYearRangeFromName, LogConfig, Projection, fsa } from '@basemaps/shared';
+import { Config, extractYearRangeFromName, fsa, LogConfig, Projection } from '@basemaps/shared';
 import { Command, flags } from '@oclif/command';
-import { PrettyTransform } from 'pretty-json-log';
 import * as z from 'zod';
-import { ConfigImagerySchema, zImageConfig, zNamedBounds } from './imagery.config';
+import { ConfigImagerySchema, zImageConfig, zNamedBounds } from './imagery.config.js';
 
 const zJob = z.object({
   id: z.string(),
@@ -42,7 +41,6 @@ export class CommandImportImagery extends Command {
   invalidates: string[] = [];
 
   async run(): Promise<void> {
-    if (process.stdout.isTTY) LogConfig.setOutputStream(PrettyTransform.stream());
     const logger = LogConfig.get();
     const { flags, args } = this.parse(CommandImportImagery);
 
@@ -97,6 +95,6 @@ export class CommandImportImagery extends Command {
 
     logger.info({ path: targetFileName, files: job.output.files.length }, 'Imported');
     if (flags.commit !== true) logger.info('DryRun:Done');
-    else fsa.writeJson(targetFileName, imgConfig);
+    else fsa.write(targetFileName, JSON.stringify(imgConfig, null, 2) + '\n');
   }
 }
