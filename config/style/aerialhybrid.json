@@ -14,7 +14,7 @@
     "LINZ-Imagery": {
       "type": "raster",
       "tileSize": 256,
-      "tiles": [],
+      "tiles": ["https://basemaps.linz.govt.nz/v1/tiles/aerial/EPSG:3857/{z}/{x}/{y}.webp"],
       "minzoom": 0,
       "maxzoom": 28
     }
