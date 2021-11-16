@@ -9,7 +9,7 @@
   "sources": {
     "LINZ Basemaps": {
       "type": "vector",
-      "url": ""
+      "url": "https://basemaps.linz.govt.nz/v1/tiles/topographic/EPSG:3857/tile.json"
     },
     "LINZ-Imagery": {
       "type": "raster",
