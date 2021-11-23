@@ -4,8 +4,8 @@ import spritezero, { ImgLayout } from '@mapbox/spritezero';
 import { basename, dirname } from 'path';
 import { promisify } from 'util';
 
-/** Pixel ratios to generate 1x, 2x and 4x */
-export const PixelRatio = [1, 2, 4];
+/** Pixel ratios to generate 2x, 4x sprites use the 2x as the regular size*/
+export const PixelRatio = [2, 4];
 
 const generateImage = promisify(spritezero.generateImage);
 const generateLayout = promisify(spritezero.generateLayout);
@@ -31,7 +31,8 @@ async function main(): Promise<void> {
     logger.info({ groupId, sprites: imgs.length }, 'Sprite:Create');
 
     for (const pixelRatio of PixelRatio) {
-      const scaleText = pixelRatio === 1 ? '' : `@${pixelRatio}x`;
+      const scaleRatio = pixelRatio / 2;
+      const scaleText = scaleRatio === 1 ? '' : `@${scaleRatio}x`;
       const outputPng = `./build/sprites/${groupId}${scaleText}.png`;
       const outputJson = `./build/sprites/${groupId}${scaleText}.json`;
 
