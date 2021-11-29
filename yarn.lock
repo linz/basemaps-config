@@ -30,10 +30,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@basemaps/cli@^6.14.0":
-  version "6.14.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/cli/-/cli-6.14.0.tgz#e070a20b08c1d5fd132d307827ba78867861376d"
-  integrity sha512-9/sEkeXJDYyFoon6aFzmjyPrzCJoQnZyK/uwWPkVFrMR60Li1IsyjmFBOXkP9olCRimw3JxoX9kCX4h0Yn03HQ==
+"@basemaps/cli@^6.15.0":
+  version "6.15.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/cli/-/cli-6.15.0.tgz#5aab519555a7da5d0afe04ed706541f56ae14ca6"
+  integrity sha512-Rmo+DwQjm/y9TEAid4JDqRiAK7zKs1/xZjat5ptuxk21xGWYTdue6E5+unlRJ4Cq1KU9tvUhT0PRWxreJY1etw==
   dependencies:
     "@basemaps/config" "^6.10.0"
     "@basemaps/geo" "^6.10.0"
