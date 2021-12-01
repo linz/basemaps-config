@@ -1,7 +1,7 @@
 {
-  "id": "st_topolike",
+  "id": "st_topographic",
   "version": 8,
-  "name": "topolike",
+  "name": "topographic",
   "metadata": { "maputnik:renderer": "mbgljs" },
   "sources": {
     "LINZ Basemaps": {
