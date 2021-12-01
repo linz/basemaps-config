@@ -6,7 +6,8 @@
   "sources": {
     "LINZ Basemaps": {
       "type": "vector",
-      "url": "https://basemaps.linz.govt.nz/v1/tiles/topographic/EPSG:3857/tile.json"
+      "url": "https://basemaps.linz.govt.nz/v1/tiles/topographic/EPSG:3857/tile.json",
+      "attribution": "© 2021 Toitū Te Whenua - CC BY 4.0"
     },
     "LINZ-Hillshade": {
       "type": "raster",
