@@ -265,5 +265,10 @@
       "height": 4891.969810251264,
       "name": "11-1041-1001"
     }
-  ]
+  ],
+  "title": "Palmerston North 0.125m Urban Aerial Photos (2015)",
+  "layer": {
+    "id": 88138,
+    "url": "https://data.linz.govt.nz/layer/88138"
+  }
 }

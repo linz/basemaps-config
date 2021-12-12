@@ -887,5 +887,10 @@
       "y": 5790818.845461301,
       "height": 9783.939620502528
     }
-  ]
+  ],
+  "title": "Bay of Plenty 0.2m  Rural Aerial Photos (2021)",
+  "layer": {
+    "id": 106414,
+    "url": "https://data.linz.govt.nz/layer/106414"
+  }
 }

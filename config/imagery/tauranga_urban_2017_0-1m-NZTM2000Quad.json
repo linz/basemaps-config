@@ -209,5 +209,10 @@
       "height": 4891.969810251264,
       "name": "11-1054-944"
     }
-  ]
+  ],
+  "title": "Tauranga 0.1m Urban Aerial Photos (2017)",
+  "layer": {
+    "id": 99252,
+    "url": "https://data.linz.govt.nz/layer/99252"
+  }
 }

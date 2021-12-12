@@ -433,5 +433,10 @@
       "height": 19567.879241005056,
       "name": "9-259-240"
     }
-  ]
+  ],
+  "title": "Manawatu Whanganui 0.3m Rural Aerial Photos (2016-2017)",
+  "layer": {
+    "id": 88145,
+    "url": "https://data.linz.govt.nz/layer/88145"
+  }
 }

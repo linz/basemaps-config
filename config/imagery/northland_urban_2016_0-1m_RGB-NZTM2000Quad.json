@@ -580,5 +580,10 @@
       "height": 4891.969810251264,
       "name": "11-1016-898"
     }
-  ]
+  ],
+  "title": "Northland 0.1m Urban Aerial Photos (2016)",
+  "layer": {
+    "id": 106191,
+    "url": "https://data.linz.govt.nz/layer/106191"
+  }
 }

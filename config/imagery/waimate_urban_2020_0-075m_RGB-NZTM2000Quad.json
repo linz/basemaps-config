@@ -83,5 +83,10 @@
       "y": 5042347.4644928565,
       "height": 4891.969810251264
     }
-  ]
+  ],
+  "title": "Waimate 0.075m Urban Aerial Photos (2020)",
+  "layer": {
+    "id": 106302,
+    "url": "https://data.linz.govt.nz/layer/106302"
+  }
 }

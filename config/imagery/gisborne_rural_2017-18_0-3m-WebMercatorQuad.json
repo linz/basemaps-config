@@ -432,5 +432,10 @@
       "width": 19567.879241005096,
       "height": 19567.879241005096
     }
-  ]
+  ],
+  "title": "Gisborne 0.1m Urban Aerial Photos (2017-2018)",
+  "layer": {
+    "id": 99138,
+    "url": "https://data.linz.govt.nz/layer/99138"
+  }
 }

@@ -687,5 +687,10 @@
       "x": 2022740.666671365,
       "y": 5644059.7511537615
     }
-  ]
+  ],
+  "title": "Hawkes Bay 0.3m Rural Aerial Photos (2019-2020)",
+  "layer": {
+    "id": 105293,
+    "url": "https://data.linz.govt.nz/layer/105293"
+  }
 }

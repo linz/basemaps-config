@@ -538,5 +538,10 @@
       "height": 19567.879241005096,
       "name": "11-2026-1277"
     }
-  ]
+  ],
+  "title": "Wellington 0.3m Rural Aerial Photos (2021)",
+  "layer": {
+    "id": 105727,
+    "url": "https://data.linz.govt.nz/layer/105727"
+  }
 }

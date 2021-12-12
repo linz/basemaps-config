@@ -580,5 +580,10 @@
       "height": 4891.969810251274,
       "name": "13-8097-5081"
     }
-  ]
+  ],
+  "title": "Rangitīkei 0.125m Urban Aerial Photos (2021)",
+  "layer": {
+    "id": 106185,
+    "url": "https://data.linz.govt.nz/layer/106185"
+  }
 }

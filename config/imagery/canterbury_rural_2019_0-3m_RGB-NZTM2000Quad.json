@@ -286,5 +286,10 @@
       "height": 19567.879241005056,
       "name": "9-248-269"
     }
-  ]
+  ],
+  "title": "Canterbury 0.3m Rural Aerial Photos (2019)",
+  "layer": {
+    "id": 106341,
+    "url": "https://data.linz.govt.nz/layer/106341"
+  }
 }

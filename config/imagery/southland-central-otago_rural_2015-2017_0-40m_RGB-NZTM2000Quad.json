@@ -622,5 +622,10 @@
       "height": 19567.879241005056,
       "name": "9-237-277"
     }
-  ]
+  ],
+  "title": "Southland & Central Otago 0.4m Rural Aerial Photos (2015-2017)",
+  "layer": {
+    "id": 52601,
+    "url": "https://data.linz.govt.nz/layer/52601"
+  }
 }

@@ -650,5 +650,10 @@
       "height": 4891.969810251264,
       "name": "11-1012-1036"
     }
-  ]
+  ],
+  "title": "Marlborough 0.1m Urban Aerial Photos (2017)",
+  "layer": {
+    "id": 98969,
+    "url": "https://data.linz.govt.nz/layer/98969"
+  }
 }

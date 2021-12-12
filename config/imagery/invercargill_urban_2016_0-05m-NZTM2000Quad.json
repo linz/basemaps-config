@@ -160,5 +160,10 @@
       "height": 2445.984905125632,
       "name": "12-1842-2283"
     }
-  ]
+  ],
+  "title": "Invercargill 0.05m Urban Aerial Photos (2016)",
+  "layer": {
+    "id": 88137,
+    "url": "https://data.linz.govt.nz/layer/88137"
+  }
 }

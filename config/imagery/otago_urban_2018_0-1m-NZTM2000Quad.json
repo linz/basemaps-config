@@ -440,5 +440,10 @@
       "height": 4891.969810251264,
       "name": "11-947-1109"
     }
-  ]
+  ],
+  "title": "Otago 0.1m Urban Aerial Photos (2018)",
+  "layer": {
+    "id": 104516,
+    "url": "https://data.linz.govt.nz/layer/104516"
+  }
 }

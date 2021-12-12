@@ -104,5 +104,10 @@
       "height": 4891.969810251264,
       "name": "11-1026-1019"
     }
-  ]
+  ],
+  "title": "Porirua 0.075m Urban Aerial Photos (2016)",
+  "layer": {
+    "id": 88139,
+    "url": "https://data.linz.govt.nz/layer/88139"
+  }
 }

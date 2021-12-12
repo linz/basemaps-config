@@ -384,5 +384,10 @@
       "height": 4891.969810251264,
       "name": "11-990-1076"
     }
-  ]
+  ],
+  "title": "Christchurch 0.075m Urban Aerial Photos (2018-2019)",
+  "layer": {
+    "id": 105041,
+    "url": "https://data.linz.govt.nz/layer/105041"
+  }
 }

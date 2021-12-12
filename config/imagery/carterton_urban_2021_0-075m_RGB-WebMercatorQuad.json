@@ -127,5 +127,10 @@
       "x": 19543419.39195386,
       "y": -5009377.085697323
     }
-  ]
+  ],
+  "title": "Carterton 0.075m Urban Aerial Photos (2021)",
+  "layer": {
+    "id": 105844,
+    "url": "https://data.linz.govt.nz/layer/105844"
+  }
 }

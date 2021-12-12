@@ -313,5 +313,10 @@
       "y": 5154862.770128636,
       "height": 4891.969810251264
     }
-  ]
+  ],
+  "title": "Banks Peninsula 0.075m Urban Aerial Photos (2019-2020)",
+  "layer": {
+    "id": 106503,
+    "url": "https://data.linz.govt.nz/layer/106503"
+  }
 }

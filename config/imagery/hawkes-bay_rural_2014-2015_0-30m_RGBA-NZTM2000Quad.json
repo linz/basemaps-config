@@ -678,5 +678,10 @@
       "height": 19567.879241005056,
       "name": "9-270-244"
     }
-  ]
+  ],
+  "title": "Hawkes Bay 0.3m Rural Aerial Photos (2014-2015)",
+  "layer": {
+    "id": 53401,
+    "url": "https://data.linz.govt.nz/layer/53401"
+  }
 }

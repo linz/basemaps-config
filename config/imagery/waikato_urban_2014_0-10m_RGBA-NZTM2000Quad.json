@@ -496,5 +496,10 @@
       "height": 4891.969810251264,
       "name": "11-1036-945"
     }
-  ]
+  ],
+  "title": "Waikato District 0.1m Urban Aerial Photos (2014)",
+  "layer": {
+    "id": 52603,
+    "url": "https://data.linz.govt.nz/layer/52603"
+  }
 }

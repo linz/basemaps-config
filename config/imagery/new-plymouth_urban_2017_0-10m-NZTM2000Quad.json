@@ -286,5 +286,10 @@
       "height": 4891.969810251264,
       "name": "11-1015-972"
     }
-  ]
+  ],
+  "title": "New Plymouth 0.10m Urban Aerial Photos (2017)",
+  "layer": {
+    "id": 95525,
+    "url": "https://data.linz.govt.nz/layer/95525"
+  }
 }

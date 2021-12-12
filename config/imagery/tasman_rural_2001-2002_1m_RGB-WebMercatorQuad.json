@@ -250,5 +250,10 @@
       "width": 39135.75848201019,
       "height": 39135.75848201019
     }
-  ]
+  ],
+  "title": "Tasman 1m Rural Aerial Photos (2001-2002)",
+  "layer": {
+    "id": 51776,
+    "url": "https://data.linz.govt.nz/layer/51776"
+  }
 }

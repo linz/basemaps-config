@@ -580,5 +580,10 @@
       "height": 4891.969810251264,
       "name": "11-957-1126"
     }
-  ]
+  ],
+  "title": "Dunedin 0.1m Urban Aerial Photos (2018-2019)",
+  "layer": {
+    "id": 104163,
+    "url": "https://data.linz.govt.nz/layer/104163"
+  }
 }

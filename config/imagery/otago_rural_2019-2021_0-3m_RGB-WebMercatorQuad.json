@@ -1209,5 +1209,10 @@
       "y": -5615981.342168481,
       "height": 19567.879241005096
     }
-  ]
+  ],
+  "title": "Otago 0.3m Rural Aerial Photos (2019-2021)",
+  "layer": {
+    "id": 106403,
+    "url": "https://data.linz.govt.nz/layer/106403"
+  }
 }

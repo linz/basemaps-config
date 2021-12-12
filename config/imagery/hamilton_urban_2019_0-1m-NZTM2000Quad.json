@@ -328,5 +328,10 @@
       "height": 4891.969810251264,
       "name": "11-1036-943"
     }
-  ]
+  ],
+  "title": "Hamilton 0.1m Urban Aerial Photos (2019)",
+  "layer": {
+    "id": 104164,
+    "url": "https://data.linz.govt.nz/layer/104164"
+  }
 }

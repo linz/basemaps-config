@@ -309,5 +309,10 @@
       "x": 19499391.663661595,
       "y": -4975133.297025565
     }
-  ]
+  ],
+  "title": "Kapiti Coast 0.075m Urban Aerial Photos (2021)",
+  "layer": {
+    "id": 105783,
+    "url": "https://data.linz.govt.nz/layer/105783"
+  }
 }

@@ -1021,5 +1021,10 @@
       "height": 19567.879241005056,
       "name": "9-264-241"
     }
-  ]
+  ],
+  "title": "Waikato 0.5m Rural Aerial Photos (2012-2013)",
+  "layer": {
+    "id": 51872,
+    "url": "https://data.linz.govt.nz/layer/51872"
+  }
 }

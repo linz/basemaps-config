@@ -384,5 +384,10 @@
       "height": 4891.969810251264,
       "name": "11-994-1022"
     }
-  ]
+  ],
+  "title": "Tasman 0.1m Urban Aerial Photos (2017)",
+  "layer": {
+    "id": 104167,
+    "url": "https://data.linz.govt.nz/layer/104167"
+  }
 }

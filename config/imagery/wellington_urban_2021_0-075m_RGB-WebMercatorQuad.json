@@ -274,5 +274,10 @@
       "x": 19460255.905179586,
       "y": -5038728.90455883
     }
-  ]
+  ],
+  "title": "Wellington 0.075m Urban Aerial Photos (2021)",
+  "layer": {
+    "id": 105744,
+    "url": "https://data.linz.govt.nz/layer/105744"
+  }
 }

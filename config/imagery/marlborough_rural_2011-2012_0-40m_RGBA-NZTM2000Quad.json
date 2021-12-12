@@ -405,5 +405,10 @@
       "height": 19567.879241005056,
       "name": "9-253-254"
     }
-  ]
+  ],
+  "title": "Marlborough 0.4m Rural Aerial Photos (2011-2012)",
+  "layer": {
+    "id": 51909,
+    "url": "https://data.linz.govt.nz/layer/51909"
+  }
 }

@@ -1588,5 +1588,10 @@
       "height": 4891.969810251264,
       "name": "11-1039-910"
     }
-  ]
+  ],
+  "title": "Auckland 0.075m Urban Aerial Photos (2015-2016)",
+  "layer": {
+    "id": 88142,
+    "url": "https://data.linz.govt.nz/layer/88142"
+  }
 }

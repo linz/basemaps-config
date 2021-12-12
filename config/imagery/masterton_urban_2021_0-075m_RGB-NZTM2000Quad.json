@@ -337,5 +337,10 @@
       "x": 1856413.6931228223,
       "y": 5443488.988933461
     }
-  ]
+  ],
+  "title": "Masterton 0.075m Urban Aerial Photos (2021)",
+  "layer": {
+    "id": 105879,
+    "url": "https://data.linz.govt.nz/layer/105879"
+  }
 }

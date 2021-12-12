@@ -195,5 +195,10 @@
       "height": 4891.969810251264,
       "name": "11-1025-1021"
     }
-  ]
+  ],
+  "title": "Wellington 0.10m Urban Aerial Photos (2017)",
+  "layer": {
+    "id": 95524,
+    "url": "https://data.linz.govt.nz/layer/95524"
+  }
 }

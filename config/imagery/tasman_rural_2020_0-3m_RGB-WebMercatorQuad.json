@@ -229,5 +229,10 @@
       "width": 19567.879241005096,
       "height": 19567.879241005096
     }
-  ]
+  ],
+  "title": "Tasman 0.3m Rural Aerial Photos (2020)",
+  "layer": {
+    "id": 105277,
+    "url": "https://data.linz.govt.nz/layer/105277"
+  }
 }

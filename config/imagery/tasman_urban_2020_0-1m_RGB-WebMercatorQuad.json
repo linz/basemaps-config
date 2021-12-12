@@ -680,5 +680,10 @@
       "x": 19269469.082579788,
       "y": -5053404.813989583
     }
-  ]
+  ],
+  "title": "Tasman 0.1m Urban Aerial Photos (2020)",
+  "layer": {
+    "id": 105946,
+    "url": "https://data.linz.govt.nz/layer/105946"
+  }
 }

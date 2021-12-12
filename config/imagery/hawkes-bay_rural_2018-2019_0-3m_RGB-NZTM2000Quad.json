@@ -678,5 +678,10 @@
       "height": 19567.879241005056,
       "name": "9-270-244"
     }
-  ]
+  ],
+  "title": "Central Hawkes Bay 0.1m Urban Aerial Photos (2017-2018)",
+  "layer": {
+    "id": 95523,
+    "url": "https://data.linz.govt.nz/layer/95523"
+  }
 }

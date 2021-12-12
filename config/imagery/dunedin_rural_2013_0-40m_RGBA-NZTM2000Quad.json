@@ -209,5 +209,10 @@
       "height": 19567.879241005056,
       "name": "9-239-280"
     }
-  ]
+  ],
+  "title": "Dunedin 0.4m Rural Aerial Photos (2013)",
+  "layer": {
+    "id": 52109,
+    "url": "https://data.linz.govt.nz/layer/52109"
+  }
 }

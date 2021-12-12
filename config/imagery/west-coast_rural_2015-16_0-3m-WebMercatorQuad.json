@@ -684,5 +684,10 @@
       "width": 19567.879241005096,
       "height": 19567.879241005096
     }
-  ]
+  ],
+  "title": "West Coast 0.3m Rural Aerial Photos (2015-2016)",
+  "layer": {
+    "id": 88143,
+    "url": "https://data.linz.govt.nz/layer/88143"
+  }
 }

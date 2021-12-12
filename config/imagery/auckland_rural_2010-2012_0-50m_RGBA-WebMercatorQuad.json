@@ -621,5 +621,10 @@
       "width": 19567.879241005096,
       "height": 19567.879241005096
     }
-  ]
+  ],
+  "title": "Auckland 0.5m Rural Aerial Photos (2010-2012)",
+  "layer": {
+    "id": 51769,
+    "url": "https://data.linz.govt.nz/layer/51769"
+  }
 }

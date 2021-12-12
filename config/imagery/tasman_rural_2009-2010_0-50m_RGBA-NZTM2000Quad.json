@@ -216,5 +216,10 @@
       "height": 19567.879241005056,
       "name": "9-246-259"
     }
-  ]
+  ],
+  "title": "Tasman 0.5m Rural Aerial Photos (2009-2010)",
+  "layer": {
+    "id": 51771,
+    "url": "https://data.linz.govt.nz/layer/51771"
+  }
 }

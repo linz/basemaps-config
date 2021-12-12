@@ -306,5 +306,10 @@
       "width": 19567.879241005096,
       "height": 19567.879241005096
     }
-  ]
+  ],
+  "title": "Otago 0.4m Rural Aerial Photos (2013-2014)",
+  "layer": {
+    "id": 52110,
+    "url": "https://data.linz.govt.nz/layer/52110"
+  }
 }

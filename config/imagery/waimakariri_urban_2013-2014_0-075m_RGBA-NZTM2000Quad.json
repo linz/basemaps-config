@@ -223,5 +223,10 @@
       "height": 4891.969810251264,
       "name": "11-988-1069"
     }
-  ]
+  ],
+  "title": "Waimakariri 0.075m Urban Aerial Photos (2013-2014)",
+  "layer": {
+    "id": 52107,
+    "url": "https://data.linz.govt.nz/layer/52107"
+  }
 }

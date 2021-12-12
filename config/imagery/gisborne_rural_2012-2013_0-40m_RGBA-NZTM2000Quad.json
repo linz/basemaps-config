@@ -370,5 +370,10 @@
       "height": 19567.879241005056,
       "name": "9-273-236"
     }
-  ]
+  ],
+  "title": "Gisborne 0.4m Rural Aerial Photos (2012-2013)",
+  "layer": {
+    "id": 51722,
+    "url": "https://data.linz.govt.nz/layer/51722"
+  }
 }

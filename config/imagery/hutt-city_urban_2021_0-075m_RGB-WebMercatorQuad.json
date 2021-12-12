@@ -272,5 +272,10 @@
       "y": -5038728.90455883,
       "height": 4891.969810251274
     }
-  ]
+  ],
+  "title": "Hutt City 0.075m Urban Aerial Photos (2021)",
+  "layer": {
+    "id": "106054",
+    "url": "https://data.linz.govt.nz/browse/106054"
+  }
 }

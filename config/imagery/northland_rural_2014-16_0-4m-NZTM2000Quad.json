@@ -692,5 +692,10 @@
       "height": 19567.879241005056,
       "name": "9-256-227"
     }
-  ]
+  ],
+  "title": "Northland 0.4m Rural Aerial Photos (2014-2016)",
+  "layer": {
+    "id": 88131,
+    "url": "https://data.linz.govt.nz/layer/88131"
+  }
 }

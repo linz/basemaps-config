@@ -376,5 +376,10 @@
       "width": 19567.879241005096,
       "height": 19567.879241005096
     }
-  ]
+  ],
+  "title": "Marlborough 0.3m Rural Aerial Photos (2017-2018)",
+  "layer": {
+    "id": 98968,
+    "url": "https://data.linz.govt.nz/layer/98968"
+  }
 }

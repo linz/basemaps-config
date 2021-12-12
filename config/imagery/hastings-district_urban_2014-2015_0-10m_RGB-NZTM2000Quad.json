@@ -727,5 +727,10 @@
       "height": 4891.969810251264,
       "name": "11-1064-989"
     }
-  ]
+  ],
+  "title": "Hastings District 0.1m Urban Aerial Photos (2014-2015)",
+  "layer": {
+    "id": 88148,
+    "url": "https://data.linz.govt.nz/layer/88148"
+  }
 }

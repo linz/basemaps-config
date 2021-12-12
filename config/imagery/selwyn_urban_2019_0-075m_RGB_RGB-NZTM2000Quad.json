@@ -89,5 +89,10 @@
       "y": 5174430.649369641,
       "height": 4891.969810251264
     }
-  ]
+  ],
+  "title": "Selwyn 0.075m Urban Aerial Photos (2019)",
+  "layer": {
+    "id": 106509,
+    "url": "https://data.linz.govt.nz/layer/106509"
+  }
 }

@@ -524,5 +524,10 @@
       "height": 4891.969810251264,
       "name": "11-1063-988"
     }
-  ]
+  ],
+  "title": "Hastings 0.1m Urban Aerial Photos (2017-2018)",
+  "layer": {
+    "id": 95548,
+    "url": "https://data.linz.govt.nz/layer/95548"
+  }
 }

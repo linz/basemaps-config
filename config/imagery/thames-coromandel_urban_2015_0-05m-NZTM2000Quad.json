@@ -1518,5 +1518,10 @@
       "height": 2445.984905125632,
       "name": "12-2091-1854"
     }
-  ]
+  ],
+  "title": "Thames Coromandel 0.05m Urban Aerial Photos (2015)",
+  "layer": {
+    "id": 95551,
+    "url": "https://data.linz.govt.nz/layer/95551"
+  }
 }

@@ -90,5 +90,10 @@
       "height": 4891.969810251264,
       "name": "11-1029-1020"
     }
-  ]
+  ],
+  "title": "Upper Hutt 0.10m Urban Aerial Photos (2017)",
+  "layer": {
+    "id": 95519,
+    "url": "https://data.linz.govt.nz/layer/95519"
+  }
 }

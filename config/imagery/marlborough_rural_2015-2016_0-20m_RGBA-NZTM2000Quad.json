@@ -776,5 +776,10 @@
       "height": 9783.939620502528,
       "name": "10-507-517"
     }
-  ]
+  ],
+  "title": "Marlborough 0.2m Rural Aerial Photos (2015-2016)",
+  "layer": {
+    "id": 53520,
+    "url": "https://data.linz.govt.nz/layer/53520"
+  }
 }

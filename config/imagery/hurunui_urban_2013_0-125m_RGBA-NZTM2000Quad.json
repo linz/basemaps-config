@@ -118,5 +118,10 @@
       "height": 4891.969810251264,
       "name": "11-989-1066"
     }
-  ]
+  ],
+  "title": "Hurunui 0.125m Urban Aerial Photos (2013)",
+  "layer": {
+    "id": 52111,
+    "url": "https://data.linz.govt.nz/layer/52111"
+  }
 }

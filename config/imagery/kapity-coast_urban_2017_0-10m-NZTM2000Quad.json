@@ -209,5 +209,10 @@
       "height": 4891.969810251264,
       "name": "11-1031-1011"
     }
-  ]
+  ],
+  "title": "Kapiti Coast 0.10m Urban Aerial Photos (2017)",
+  "layer": {
+    "id": 95526,
+    "url": "https://data.linz.govt.nz/layer/95526"
+  }
 }

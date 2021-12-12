@@ -3,9 +3,7 @@
   "id": "im_01FFH545V69N2SC5K4PSH7VZCV",
   "uri": "s3://linz-basemaps/2193/upper-hutt_urban_2021_0-075m_RGB/01FFH545V69N2SC5K4PSH7VZCV",
   "year": 2021,
-
   "projection": 2193,
-
   "resolution": 75,
   "bounds": {
     "x": 1765912.2516331733,
@@ -92,5 +90,10 @@
       "y": 5443488.988933461,
       "height": 4891.969810251264
     }
-  ]
+  ],
+  "title": "Upper Hutt 0.075m Urban Aerial Photos (2021)",
+  "layer": {
+    "id": 106053,
+    "url": "https://data.linz.govt.nz/layer/106053"
+  }
 }

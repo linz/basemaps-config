@@ -475,5 +475,10 @@
       "height": 19567.879241005056,
       "name": "9-246-268"
     }
-  ]
+  ],
+  "title": "Canterbury 0.4m Rural Aerial Photos (2012-2013)",
+  "layer": {
+    "id": 51877,
+    "url": "https://data.linz.govt.nz/layer/51877"
+  }
 }

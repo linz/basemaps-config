@@ -330,5 +330,10 @@
       "x": 1802602.0252100579,
       "y": 5448380.958743712
     }
-  ]
+  ],
+  "title": "South Wairarapa 0.075 Urban Aerial Photos (2021)",
+  "layer": {
+    "id": 105865,
+    "url": "https://data.linz.govt.nz/layer/105865"
+  }
 }

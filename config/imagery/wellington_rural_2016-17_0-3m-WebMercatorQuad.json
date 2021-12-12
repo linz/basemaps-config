@@ -537,5 +537,10 @@
       "width": 19567.879241005096,
       "height": 19567.879241005096
     }
-  ]
+  ],
+  "title": "Wellington 0.3m Rural Aerial Photos (2016-2017)",
+  "layer": {
+    "id": 95496,
+    "url": "https://data.linz.govt.nz/layer/95496"
+  }
 }
