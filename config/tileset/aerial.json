@@ -39,7 +39,6 @@
     { "2193": "im_01F6P1V84P2HJ1YB0D5X1CSWJH", "3857": "im_01ED83DC7MCMBCRNN45E07HCHH", "name": "tasman_rural_2016-17_0-3m", "minZoom": 13 },
     { "2193": "im_01FB82NZY0ASDQBKT28DSXS8XC", "3857": "im_01FB82QKPWEHV0FWN7KBXM6NDM", "name": "wellington_rural_2021_0-3m_RGB", "minZoom": 13 },
     { "2193": "im_01F6P220GYWC836YQ4RRZGSV73", "3857": "im_01ED83VT2T06B1FVXF9P6CCV8C", "name": "west-coast_rural_2016-17_0-3m", "minZoom": 13 },
-    { "2193": "im_01F6P15FS34RD0KX1FQCQF1CA8", "3857": "im_01ECTS06BSSHA626JHSDTNSC97", "name": "gisborne_rural_2017-18_0-3m", "minZoom": 13 },
     { "2193": "im_01F6P15VGNRA3N06S2NEY9PFAX", "3857": "im_01EZWZGMW2Q53VNC65X2X4VFRZ", "name": "gisborne_rural_2017-2019_0-3m_RGB", "minZoom": 13 },
     { "2193": "im_01F6P1E05SRRSMA94E11F1EAFJ", "3857": "im_01EDAMZ587FYSZ9NY8TP40VASS", "name": "marlborough_rural_2017-18_0-3m", "minZoom": 13 },
     { "2193": "im_01F6P1N3TA18Y2GYJ5B4YGGZYC", "3857": "im_01ED831MKK85M1QNCNZV0AYPYC", "name": "otago_rural_2017-2019_0-30m_RGB", "minZoom": 13 },
