@@ -37,6 +37,7 @@
     "@types/mapbox__spritezero": "^6.3.2",
     "@types/node": "^14.11.2",
     "@types/p-limit": "^2.2.0",
+    "@types/prettier": "^2.4.2",
     "conventional-changelog-cli": "^2.1.0",
     "rimraf": "^3.0.0"
   },
