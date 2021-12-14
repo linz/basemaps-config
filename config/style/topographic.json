@@ -9,20 +9,6 @@
       "url": "https://basemaps.linz.govt.nz/v1/tiles/topographic/EPSG:3857/tile.json",
       "attribution": "© 2021 Toitū Te Whenua - CC BY 4.0"
     },
-    "LINZ-Hillshade": {
-      "type": "raster",
-      "tiles": ["https://basemaps.linz.govt.nz/v1/tiles/reliefshade/EPSG:3857/{z}/{x}/{y}.webp"],
-      "tileSize": 256,
-      "minzoom": 0,
-      "maxzoom": 14
-    },
-    "LINZ Texture": {
-      "type": "raster",
-      "tiles": ["https://basemaps.linz.govt.nz/v1/tiles/textureshade/EPSG:3857/{z}/{x}/{y}.webp"],
-      "tileSize": 256,
-      "minzoom": 0,
-      "maxzoom": 14
-    },
     "LINZ-Texture-Relief": {
       "type": "raster",
       "tiles": ["https://basemaps.linz.govt.nz/v1/tiles/texturereliefshade/EPSG:3857/{z}/{x}/{y}.webp"],
