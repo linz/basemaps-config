@@ -94,6 +94,11 @@
   resolved "https://registry.yarnpkg.com/@chunkd/core/-/core-7.2.4.tgz#c61310feabeb6bc34bee65251591a2567e18709f"
   integrity sha512-KB+81kOymT/uI6G3eGz+yIyE8U6qEghP3H2pedaJ6S72dLISOU3djc3vFYLqEe952HuWLL4s9kqjopeKl4p0Rg==
 
+"@chunkd/core@^8.0.1":
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/@chunkd/core/-/core-8.0.1.tgz#d274ef2800d81a202a80fd4c7770a7a52ad860ef"
+  integrity sha512-XQ6aNDSsySM1y7aUmH2X5ZZVuRuYM0qXW5JOS76Y4tQTsVmoiZ67CK3Rjp8TrTJWq4U+Edmt0TFuoqN2DaEqbg==
+
 "@chunkd/fs@^7.3.1":
   version "7.3.1"
   resolved "https://registry.yarnpkg.com/@chunkd/fs/-/fs-7.3.1.tgz#1d5e0bcc914d9ba72f2c555838fb4241c130f05e"
@@ -104,6 +109,16 @@
     "@chunkd/source-file" "^7.2.4"
     "@chunkd/source-http" "^7.2.4"
 
+"@chunkd/fs@^8.0.1":
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/@chunkd/fs/-/fs-8.0.1.tgz#3d675cca40eb013bf7aee0aee58d125086f89e71"
+  integrity sha512-sj4k4CcTeTpnN7Rm7A+CsvWaAS9TnT1VkPrt/lh+gFP341JYXeuiVF++DwblTal6TztD4PxTvhRjjLplkEwfTg==
+  dependencies:
+    "@chunkd/core" "^8.0.1"
+    "@chunkd/source-aws" "^8.0.1"
+    "@chunkd/source-file" "^8.0.1"
+    "@chunkd/source-http" "^8.0.1"
+
 "@chunkd/source-aws@^7.3.0":
   version "7.3.0"
   resolved "https://registry.yarnpkg.com/@chunkd/source-aws/-/source-aws-7.3.0.tgz#505b3090b069ea8d07a296586f4d51ad81f3cc74"
@@ -112,6 +127,13 @@
     "@chunkd/core" "^7.2.4"
     aws-sdk "*"
 
+"@chunkd/source-aws@^8.0.1":
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/@chunkd/source-aws/-/source-aws-8.0.1.tgz#5714e78bf6756c72fde7a2b283f2686dfe55b3cd"
+  integrity sha512-podmYmu/EPf+2YuIntylPXim/NUh0gmCuUyrnQod2H0IGa3Lex21Uw2zn80pQJ7MTbybXnPeoXYPHKoT7UFgsA==
+  dependencies:
+    "@chunkd/core" "^8.0.1"
+
 "@chunkd/source-file@^7.2.4":
   version "7.2.4"
   resolved "https://registry.yarnpkg.com/@chunkd/source-file/-/source-file-7.2.4.tgz#cef92281727e9bdfb5152558d1688069cbac622f"
@@ -119,12 +141,27 @@
   dependencies:
     "@chunkd/core" "^7.2.4"
 
+"@chunkd/source-file@^8.0.1":
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/@chunkd/source-file/-/source-file-8.0.1.tgz#3856990324656e2e7c62edf264ee576d4c58a4f4"
+  integrity sha512-q3vVeB7+px5Ix6H61qAeIVeV7fjspBAvzZdjovRY/4aTZDggqGAyFoU2rdRwafJtt/IWUKTAe7Kw92qxyIA3aQ==
+  dependencies:
+    "@chunkd/core" "^8.0.1"
+
 "@chunkd/source-http@^7.2.4":
   version "7.2.4"
   resolved "https://registry.yarnpkg.com/@chunkd/source-http/-/source-http-7.2.4.tgz#7877d5acfa08f42cf88c37ebed227e46ba58ac62"
   integrity sha512-PASbpmERqM2QAkki3VNH+8v8o3lsRIe6xwBAV3DDN4ABYDnruqtDzEJGmeDA5kJFPDqzMWQuaqnkq1ce9/mohg==
   dependencies:
     "@chunkd/core" "^7.2.4"
+    node-fetch "^2.6.0"
+
+"@chunkd/source-http@^8.0.1":
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/@chunkd/source-http/-/source-http-8.0.1.tgz#dda73bbf57b7be090e9534519a83be82e4e35821"
+  integrity sha512-Hl6K9UwzoxAnuZufe0vCeXnnhrDGILVzrj5/uqVaBBua1SmU2dw59HwC/KDOEk+vtBZBaZ/9x56BtD1l7gUpQA==
+  dependencies:
+    "@chunkd/core" "^8.0.1"
     node-fetch "^2.6.0"
 
 "@cogeotiff/chunk@^4.2.0":
