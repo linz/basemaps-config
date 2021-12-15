@@ -18,7 +18,7 @@
     "@chunkd/fs": "^7.3.1",
     "@cogeotiff/chunk": "^4.2.0",
     "@mapbox/spritezero": "^8.0.0",
-    "@oclif/command": "^1.8.0",
+    "@oclif/command": "^1.8.15",
     "deep-diff": "^1.0.2",
     "p-limit": "^3.1.0",
     "pretty-json-log": "^0.3.2",
