@@ -54,6 +54,7 @@
     { "2193": "im_01FHRTDFP4DDQD4X1G63SDF0AX", "3857": "im_01FHRTF5GHTZD5SEXP3MS7E911", "name": "canterbury_rural_2020_0-3m_RGB", "minZoom": 13 },
     { "2193": "im_01FHV1ZNDNT9256J13H89BRKWT", "3857": "im_01FHV1VPTBM52WH81ZT7XAX93W", "name": "canterbury_rural_2020-2021_0-2m_RGB", "minZoom": 13 },
     { "2193": "im_01FKP9RXGA4EXSFWBGKHKVTPMT", "3857": "im_01FKP9PAF9VNHC4FYGQRGHF593", "name": "otago_rural_2019-2021_0-3m_RGB", "minZoom": 13 },
+    { "2193": "im_01FQ07ZVQYC3M57D8N84WFM4F5", "3857": "im_01FQ07XS8GHPFS913PGY5P9010", "name": "canterbury-waitaki_rural_2021_0.3m_RGB", "minZoom": 13 },
     { "2193": "im_01F6P1Q0MQC2FXNDVZJGT88CC2", "3857": "im_01ED8355C00DRTSNAQ04AHJDDZ", "name": "selwyn_urban_2012-2013_0-125m_RGBA", "minZoom": 14 },
     { "2193": "im_01F6P1XAGNDZVM0DH9JCFSE7QB", "3857": "im_01ED83HWB82K047N1KYK9A5SKD", "name": "timaru_urban_2012-2013_0-075m_RGBA", "minZoom": 14 },
     { "2193": "im_01F6P1965MX7W515NM9VR90V67", "3857": "im_01ED82CK977V2ZJ095QZDGSME6", "name": "hurunui_urban_2013_0-125m_RGBA", "minZoom": 14 },
