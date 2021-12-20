@@ -111,6 +111,7 @@
     { "2193": "im_01F66E7K4ESMSWZ1CNMCQ8B700", "3857": "im_01ED81W4KDQQRW9PEQ9KS7T8DV", "name": "bay-of-plenty_urban_2018-19_0-1m", "minZoom": 14 },
     { "2193": "im_01FMK2R7RYJHP0DVXJMZ3M0QDY", "3857": "im_01FMK2SN9GVFBEW48N4V5E41ZQ", "name": "banks-peninsula_urban_2019-2020_0-075m_RGB", "minZoom": 14 },
     { "2193": "im_01F6P1PTH5SBS82G5VVKYHFR63", "3857": "im_01ESM35CSPVJD54ZMT4T5FVV29", "name": "porirua_urban_2020_0-10m_RGB", "minZoom": 14 },
+    { "2193": "im_01FPV7HMJN6RQNSANMZ2SRY0BK", "3857": "im_01FPV7ABAWS4ZCWN91VR7SDK0A", "name": "ashburton_urban_2020_0.075m_RGB", "minZoom": 14 },
     { "2193": "im_01FBNEW6V1D5GWRG1RZMVVW6Y3", "3857": "im_01FBNERWAX2XVCKQ4AACWGP2K5", "name": "wellington-city_urban_2021_0-075m_RGB", "minZoom": 14 },
     { "2193": "im_01FC534VYVGP4WMS19M8SV1E6S", "3857": "im_01FC53660FJRP02Z4GZAQPZJV6", "name": "carterton_urban_2021_0-075m_RGB", "minZoom": 14 },
     { "2193": "im_01FCVP124PSVRSW7JCEC4KS2K1", "3857": "im_01FCVP30VG02HSFH1VVRM97RXP", "name": "south-wairarapa_urban_2021_0-075m", "minZoom": 14 },
