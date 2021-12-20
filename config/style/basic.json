@@ -4,7 +4,7 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "https://basemaps.linz.govt.nz/v1/tiles/topographic/EPSG:3857/tile.json"
+      "url": "/v1/tiles/topographic/EPSG:3857/tile.json"
     }
   },
   "layers": [

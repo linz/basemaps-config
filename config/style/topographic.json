@@ -4,8 +4,8 @@
   "name": "topographic",
   "metadata": { "maputnik:renderer": "mbgljs" },
   "sources": {
-    "LINZ Basemaps": { "type": "vector", "url": "https://basemaps.linz.govt.nz/v1/tiles/topographic/EPSG:3857/tile.json", "attribution": "© 2021 Toitū Te Whenua - CC BY 4.0" },
-    "LINZ-Texture-Relief": { "type": "raster", "tiles": ["https://basemaps.linz.govt.nz/v1/tiles/texturereliefshade/EPSG:3857/{z}/{x}/{y}.webp"], "tileSize": 256, "minzoom": 0, "maxzoom": 20 }
+    "LINZ Basemaps": { "type": "vector", "url": "/v1/tiles/topographic/EPSG:3857/tile.json", "attribution": "© 2021 Toitū Te Whenua - CC BY 4.0" },
+    "LINZ-Texture-Relief": { "type": "raster", "tiles": ["/v1/tiles/texturereliefshade/EPSG:3857/{z}/{x}/{y}.webp"], "tileSize": 256, "minzoom": 0, "maxzoom": 20 }
   },
   "sprite": "https://basemaps.linz.govt.nz/sprites/topographic",
   "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
