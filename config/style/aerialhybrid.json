@@ -9,12 +9,12 @@
   "sources": {
     "LINZ Basemaps": {
       "type": "vector",
-      "url": "https://basemaps.linz.govt.nz/v1/tiles/topographic/EPSG:3857/tile.json"
+      "url": "/v1/tiles/topographic/EPSG:3857/tile.json"
     },
     "LINZ-Imagery": {
       "type": "raster",
       "tileSize": 256,
-      "tiles": ["https://basemaps.linz.govt.nz/v1/tiles/aerial/EPSG:3857/{z}/{x}/{y}.webp"],
+      "tiles": ["/v1/tiles/aerial/EPSG:3857/{z}/{x}/{y}.webp"],
       "minzoom": 0,
       "maxzoom": 28
     }
