@@ -122,6 +122,7 @@
     { "2193": "im_01FH4G3JZ5NSF7MTXB5291SRN9", "3857": "im_01FH4G1K9A0YHZVCDE5B0J501A", "name": "northland_urban_2016_0-1m_RGB", "minZoom": 14 },
     { "2193": "im_01FJ0FVDF75ZM3KHXDYJES57AG", "3857": "im_01FJ0FX6SQBKE27MWG6K3E86CM", "name": "bay-of-plenty_urban_2020_0-1m_RGB", "minZoom": 14 },
     { "2193": "im_01FPV7GGNZ008JBH25F35KXC71", "3857": "im_01FPV7C0KD6R4FD8TTE3S43ETF", "name": "mackenzie_urban_2020_0.075m_RGB", "minZoom": 14 },
+    { "2193": "im_01FPV7FD7SX1JKW7TK25ESMYN1", "3857": "im_01FPV7DVA9TW7XQCR64SSB12DA", "name": "timaru_urban_2020_0.075m_RGB", "minZoom": 14 },
     { "2193": "im_01FJB8FDBCP2R3VT7TJC1NWGFD", "3857": "im_01FJB8KPXHR48ZVDHE7M9PK6RH", "name": "waimate_urban_2020_0-075m_RGB", "minZoom": 14 },
     { "2193": "im_01FKHMHNJ130J9DF3J9CSYZ41V", "3857": "im_01FKHMK3VK9GRFB762B8JW33HW", "name": "waimakariri_urban_2021_0-05m_RGB", "minZoom": 14 },
     { "2193": "im_01FPXAY15VB9MES5WQ0N2SPEG6", "3857": "im_01FPXB6TVAQZV4W9KXWQ7H5ZQA", "name": "christchurch_urban_2021_0-05m_RGB", "minZoom": 14 },
