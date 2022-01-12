@@ -9,11 +9,33 @@
   },
   "layers": [
     {
+      "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "hsl(47, 26%, 88%)"
+        "background-color": "rgba(184, 220, 242, 1)"
+      }
+    },
+    {
+      "id": "coastline",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "coastline",
+      "minzoom": 0,
+      "maxzoom": 24,
+      "filter": ["all"],
+      "layout": {
+        "visibility": "visible"
       },
-      "id": "background"
+      "paint": {
+        "fill-color": {
+          "stops": [
+            [1, "rgba(228, 234, 228, 1)"],
+            [10, "rgba(232, 232, 232, 1)"],
+            [20, "rgba(232, 232, 232, 1)"]
+          ]
+        },
+        "fill-antialias": true
+      }
     },
     {
       "filter": ["all", ["==", "$type", "Polygon"], ["in", "class", "residential", "suburb", "neighbourhood"]],
