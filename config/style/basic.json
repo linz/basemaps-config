@@ -22,27 +22,16 @@
       "source-layer": "coastline",
       "minzoom": 0,
       "maxzoom": 24,
-      "filter": [
-        "all"
-      ],
+      "filter": ["all"],
       "layout": {
         "visibility": "visible"
       },
       "paint": {
         "fill-color": {
           "stops": [
-            [
-              1,
-              "rgba(228, 234, 228, 1)"
-            ],
-            [
-              10,
-              "rgba(232, 232, 232, 1)"
-            ],
-            [
-              20,
-              "rgba(232, 232, 232, 1)"
-            ]
+            [1, "rgba(228, 234, 228, 1)"],
+            [10, "rgba(232, 232, 232, 1)"],
+            [20, "rgba(232, 232, 232, 1)"]
           ]
         },
         "fill-antialias": true
