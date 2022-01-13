@@ -12,7 +12,7 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "rgba(184, 220, 242, 1)"
+        "background-color": "hsl(205, 56%, 73%)"
       }
     },
     {
@@ -1035,7 +1035,7 @@
     "source": "https://github.com/openmaptiles/maptiler-basic-gl-style",
     "license": "https://github.com/openmaptiles/maptiler-basic-gl-style/blob/master/LICENSE.md"
   },
-  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key={key}",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
   "sprite": "",
   "id": "st_basic"
 }
