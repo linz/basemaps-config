@@ -848,7 +848,7 @@
       "layout": {
         "text-max-width": 8,
         "visibility": "visible",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": ["get", "name"],
         "text-offset": [0, 0.5],
         "text-anchor": "top",
         "text-size": 11,
@@ -872,7 +872,7 @@
       "layout": {
         "text-max-width": 8,
         "visibility": "visible",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": ["get", "name"],
         "text-offset": [0, 0.5],
         "text-anchor": "top",
         "text-size": 11,
@@ -897,7 +897,7 @@
         "text-transform": "uppercase",
         "text-letter-spacing": 0.1,
         "visibility": "visible",
-        "text-field": "{name:latin} {name:nonlatin}",
+        "text-field": ["get", "name"],
         "text-rotation-alignment": "map",
         "text-size": {
           "stops": [
@@ -925,7 +925,7 @@
       "layout": {
         "text-max-width": 6,
         "visibility": "visible",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": ["get", "name"],
         "text-font": ["Noto Sans Regular"],
         "text-anchor": "center",
         "text-size": {
@@ -951,7 +951,7 @@
       "filter": ["all", ["==", "$type", "Point"], ["==", "class", "city"]],
       "layout": {
         "text-max-width": 10,
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": ["get", "name"],
         "text-font": ["Noto Sans Regular"],
         "text-size": {
           "stops": [
@@ -977,7 +977,7 @@
       "layout": {
         "text-max-width": 10,
         "visibility": "visible",
-        "text-field": "{name:latin}",
+        "text-field": ["get", "name"],
         "text-font": ["Noto Sans Regular"],
         "text-size": {
           "stops": [
@@ -1003,7 +1003,7 @@
       "layout": {
         "text-max-width": 10,
         "visibility": "visible",
-        "text-field": "{name:latin}",
+        "text-field": ["get", "name"],
         "text-font": ["Noto Sans Bold"],
         "text-size": {
           "stops": [
