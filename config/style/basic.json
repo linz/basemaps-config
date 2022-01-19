@@ -868,7 +868,6 @@
       "minzoom": 14
     },
     {
-      "filter": ["all", ["has", "iata"]],
       "layout": {
         "text-max-width": 8,
         "visibility": "visible",
