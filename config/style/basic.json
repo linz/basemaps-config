@@ -916,7 +916,7 @@
       },
       "id": "road_major_label",
       "source": "openmaptiles",
-      "source-layer": "transportation_name",
+      "source-layer": "transportation",
       "type": "symbol",
       "minzoom": 13
     },
