@@ -127,6 +127,7 @@
     { "2193": "im_01FKHMHNJ130J9DF3J9CSYZ41V", "3857": "im_01FKHMK3VK9GRFB762B8JW33HW", "name": "waimakariri_urban_2021_0-05m_RGB", "minZoom": 14 },
     { "2193": "im_01FPXB0T4ZCASWGX1X1GVEHDQZ", "3857": "im_01FPXB36CCAK3FC6FWCMK1D156", "name": "christchurch_urban_2020-2021_0.075m_RGB", "minZoom": 14 },
     { "2193": "im_01FPXAY15VB9MES5WQ0N2SPEG6", "3857": "im_01FPXB6TVAQZV4W9KXWQ7H5ZQA", "name": "christchurch_urban_2021_0-05m_RGB", "minZoom": 14 },
+    { "2193": "im_01FSWMVSKCNWK9H4J3JP6RAQ0S", "3857": "im_01FSWMXCT9AF67HW8BQKV9WM0K", "name": "waitaki_urban_2020-2021_0-075m_RGB", "minZoom": 14 },
     { "3857": "im_01FM8DEN1XG1QGNT229A4T3KZ6", "name": "geographx_nz_dem_2012_8-0m", "maxZoom": 14 },
     { "3857": "im_01FMK5CJHR30YG9A0JDNVXYCKN", "name": "geographx_nz_texture_2012_8-0m", "maxZoom": 14 }
   ]
