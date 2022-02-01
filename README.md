@@ -39,6 +39,10 @@ Specifies how the imagery is combined into a single layer
 [config/tileset/topo.json](./config/tileset/topo.json) - https://basemaps.linz.govt.nz/?i=topo&p=nztm2000quad 
 
 
+### Fonts `./config/fonts`
+
+Fonts are manually built and deployed with `awscli` and `build_pbf_glyphs` see [README.md](./config/fonts/README.md) for more information
+
 
 ## Building
 
@@ -88,5 +92,6 @@ Must be one of the following:
 - `aerial` Changes the aerial tile set `./config/tileset/aerial.json`
 - `imagery` Adding or removing imagery layers `./config/imagery/*`
 - `vector` Changes to the vector layers `./config/style/*` or `./config/tileset/topographic.json`
-- `sprites` changes to the sprites `./config/sprites/**`
+- `sprites` Changes to the sprites `./config/sprites/**`
+- `fonts` Changes to fonts  `./config/fonts/**`
 - `scripts` Changes to the importing scripts `./src`
