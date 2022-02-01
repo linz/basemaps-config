@@ -15,7 +15,7 @@
     "@basemaps/config": "^6.10.0",
     "@basemaps/geo": "^6.10.0",
     "@basemaps/shared": "^6.12.0",
-    "@chunkd/fs": "^7.3.1",
+    "@chunkd/fs": "^8.0.3",
     "@cogeotiff/chunk": "^4.2.0",
     "@linzjs/docker-command": "^6.10.0",
     "@mapbox/spritezero": "^8.0.0",
