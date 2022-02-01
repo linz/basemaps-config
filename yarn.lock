@@ -169,6 +169,11 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.0.tgz#87de7af9c231826fdd68ac7258f77c429e0e5fcf"
   integrity sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==
 
+"@linzjs/docker-command@^6.10.0":
+  version "6.10.0"
+  resolved "https://registry.yarnpkg.com/@linzjs/docker-command/-/docker-command-6.10.0.tgz#db66feb5fd591349a81c9256dc24fbdeda116d37"
+  integrity sha512-z+bINBDru5d0mKx/K40LWO/yci/gvLDAZTRMSP7FIhWV4i5SeBgFxnkpDe/F+RC8/KkY38G2yEXVVdunbenw/A==
+
 "@linzjs/geojson@^6.10.0":
   version "6.10.0"
   resolved "https://registry.yarnpkg.com/@linzjs/geojson/-/geojson-6.10.0.tgz#485920802367f4307617717f053920e0fbf9b2df"
@@ -365,10 +370,10 @@
   resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.0.tgz#69a23a3ad29caf0097f06eda59b361ee2f0639f6"
   integrity sha1-aaI6OtKcrwCX8G7aWbNh7i8GOfY=
 
-"@types/node@^14.11.2":
-  version "14.17.32"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.17.32.tgz#2ca61c9ef8c77f6fa1733be9e623ceb0d372ad96"
-  integrity sha512-JcII3D5/OapPGx+eJ+Ik1SQGyt6WvuqdRfh9jUwL6/iHGjmyOriBDciBUu7lEIBTL2ijxwrR70WUnw5AEDmFvQ==
+"@types/node@^17.0.14":
+  version "17.0.14"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.14.tgz#33b9b94f789a8fedd30a68efdbca4dbb06b61f20"
+  integrity sha512-SbjLmERksKOGzWzPNuW7fJM7fk3YXVTFiZWB/Hs99gwhk+/dnrQRPBQjPW9aO+fi1tAffi9PrwFvsmOKmDTyng==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
