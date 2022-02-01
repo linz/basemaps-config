@@ -33,7 +33,7 @@
     "build-sprites": "node build/src/sprite.sheet.js && npx eslint build/sprites/ --fix"
   },
   "devDependencies": {
-    "@linzjs/style": "^3.1.1",
+    "@linzjs/style": "^3.6.0",
     "@types/deep-diff": "^1.0.0",
     "@types/mapbox__spritezero": "^6.3.2",
     "@types/node": "^14.11.2",
