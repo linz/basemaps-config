@@ -80,12 +80,11 @@
       "paint": { "fill-opacity": 0.5, "fill-color": "rgba(205, 205, 205, 1)" }
     },
     {
-      "id": "Vegetation-Scattscrub",
+      "id": "Vegetation-Scatteredscrub",
       "type": "fill",
       "source": "LINZ Basemaps",
       "source-layer": "landcover",
-      "minzoom": 0,
-      "filter": ["all", ["==", "distribution", "scattered"]],
+      "filter": ["all", ["==", "class", "grass"], ["==", "natural", "scrub"], ["==", "distribution", "scattered"]],
       "layout": { "visibility": "visible" },
       "paint": { "fill-color": "rgba(204, 222, 195, 1)", "fill-antialias": false, "fill-outline-color": "rgba(210, 210, 210, 0.27)" }
     },
@@ -94,8 +93,7 @@
       "type": "fill",
       "source": "LINZ Basemaps",
       "source-layer": "landcover",
-      "minzoom": 0,
-      "filter": ["all", ["==", "natural", "scrub"]],
+      "filter": ["all", ["==", "class", "grass"], ["==", "natural", "scrub"]],
       "layout": { "visibility": "visible" },
       "paint": {
         "fill-color": "rgba(199, 228, 183, 1)",
@@ -721,13 +719,13 @@
       }
     },
     {
-      "id": "Water-Canal-Ln",
+      "id": "Waterway-Canal-Ln",
       "type": "line",
       "source": "LINZ Basemaps",
-      "source-layer": "water",
+      "source-layer": "waterway",
       "minzoom": 13,
       "maxzoom": 21,
-      "filter": ["all", ["==", "feat_type", "canal_cl"]],
+      "filter": ["all", ["==", "class", "river"], ["==", "feat_type", "canal_cl"]],
       "layout": { "visibility": "visible" },
       "paint": {
         "line-color": {
@@ -748,13 +746,13 @@
       }
     },
     {
-      "id": "Water-Drain-Ln",
+      "id": "Waterway-Drain-Ln",
       "type": "line",
       "source": "LINZ Basemaps",
-      "source-layer": "water",
+      "source-layer": "waterway",
       "minzoom": 13,
       "maxzoom": 21,
-      "filter": ["all", ["==", "feat_type", "drain_cl"]],
+      "filter": ["all", ["==", "class", "river"], ["==", "feat_type", "drain_cl"]],
       "layout": { "visibility": "visible" },
       "paint": {
         "line-color": {
@@ -797,7 +795,7 @@
       "id": "Water-River-Ln",
       "type": "line",
       "source": "LINZ Basemaps",
-      "source-layer": "water",
+      "source-layer": "waterway",
       "minzoom": 13,
       "maxzoom": 21,
       "filter": ["all", ["==", "feat_type", "river_cl"]],
@@ -843,7 +841,7 @@
       "id": "Water-River-Ln-Named",
       "type": "line",
       "source": "LINZ Basemaps",
-      "source-layer": "water",
+      "source-layer": "waterway",
       "minzoom": 8,
       "maxzoom": 13,
       "filter": ["all", ["==", "feat_type", "river_cl"], ["has", "name"]],
@@ -1333,7 +1331,7 @@
       "source": "LINZ Basemaps",
       "source-layer": "landcover",
       "minzoom": 14,
-      "filter": ["all", ["==", "class", "wood"], ["==", "natural", "tree_row"]],
+      "filter": ["all", ["==", "natural", "tree_row"]],
       "layout": { "visibility": "visible" },
       "paint": { "line-color": "rgba(148, 199, 111, 0.75)", "line-width": 4, "line-translate-anchor": "map" }
     },
@@ -2443,7 +2441,7 @@
       "source-layer": "transportation",
       "minzoom": 11,
       "maxzoom": 24,
-      "filter": ["all", ["==", "class", "railway"], ["has", "rway_use"]],
+      "filter": ["all", ["==", "class", "rail"], ["has", "rway_use"]],
       "layout": { "visibility": "visible", "line-join": "round", "line-cap": "round" },
       "paint": { "line-color": "rgba(67, 61, 61, 0.95)", "line-width": 1 }
     },
@@ -2454,7 +2452,7 @@
       "source-layer": "transportation",
       "minzoom": 11,
       "maxzoom": 24,
-      "filter": ["all", ["==", "class", "railway"], ["==", "track_type", "single"], ["!has", "rway_use"]],
+      "filter": ["all", ["==", "class", "rail"], ["==", "track_type", "single"], ["!has", "rway_use"]],
       "layout": { "visibility": "visible", "line-join": "round", "line-cap": "round" },
       "paint": { "line-color": "rgba(67, 61, 61, 0.95)", "line-width": 2 }
     },
@@ -2465,7 +2463,7 @@
       "source-layer": "transportation",
       "minzoom": 11,
       "maxzoom": 24,
-      "filter": ["all", ["==", "class", "railway"], ["==", "track_type", "multiple"]],
+      "filter": ["all", ["==", "class", "rail"], ["==", "track_type", "multiple"]],
       "layout": { "visibility": "visible", "line-join": "round", "line-cap": "round" },
       "paint": {
         "line-color": "rgba(67, 61, 61, 0.95)",
@@ -2485,7 +2483,7 @@
       "source-layer": "transportation",
       "minzoom": 8,
       "maxzoom": 11,
-      "filter": ["all", ["==", "class", "railway"]],
+      "filter": ["all", ["==", "class", "rail"]],
       "layout": { "visibility": "visible", "line-join": "round", "line-cap": "butt" },
       "paint": {
         "line-color": {
@@ -2579,7 +2577,7 @@
       "source-layer": "transportation",
       "minzoom": 0,
       "maxzoom": 9,
-      "filter": ["all", ["in", "hway_num", "1", "1B", "2", "3", "3A", "4", "5", "6", "6A", "7", "8", "8A", "18", "20", "51", "76", "73", "1,3", "6,94", "6,96"]],
+      "filter": ["all", ["==", "class", "motorway"]],
       "layout": { "visibility": "visible" },
       "paint": {
         "line-color": "rgba(120, 120, 120, 1)",
@@ -2676,8 +2674,8 @@
       "source-layer": "transportation",
       "minzoom": 0,
       "maxzoom": 9,
-      "filter": ["all", ["in", "hway_num", "1", "1B", "2", "3", "3A", "4", "5", "6", "6A", "7", "8", "8A", "18", "20", "51", "76", "73", "1,3", "6,94", "6,96"]],
-      "layout": { "visibility": "visible" },
+      "filter": ["all", ["==", "class", "motorway"]],
+      "layout": { "visibility": "visible", "line-cap": "round", "line-join": "round" },
       "paint": {
         "line-color": "rgba(210, 162, 84, 1)",
         "line-width": {
@@ -3107,24 +3105,6 @@
       "paint": { "icon-opacity": 0.9 }
     },
     {
-      "id": "Poi-Historic-Site",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "poi",
-      "minzoom": 12,
-      "filter": ["all", ["==", "class", "historic_site"]],
-      "layout": { "text-field": "", "icon-image": "historic_site_pnt" },
-      "paint": {
-        "text-color": "rgba(209, 37, 37, 1)",
-        "icon-opacity": {
-          "stops": [
-            [12, 0.1],
-            [14, 1]
-          ]
-        }
-      }
-    },
-    {
       "id": "Poi-Hut-Label",
       "type": "symbol",
       "source": "LINZ Basemaps",
@@ -3148,6 +3128,24 @@
         "icon-image": "building_pnt_hut"
       },
       "paint": { "text-halo-color": "rgba(255, 255, 255, 1)", "text-halo-width": 1.5, "text-color": "rgba(73, 68, 68, 1)", "text-opacity": 1 }
+    },
+    {
+      "id": "Poi-Historic-Site",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "poi",
+      "minzoom": 12,
+      "filter": ["all", ["==", "class", "historic_site"]],
+      "layout": { "text-field": "", "icon-image": "historic_site_pnt" },
+      "paint": {
+        "text-color": "rgba(209, 37, 37, 1)",
+        "icon-opacity": {
+          "stops": [
+            [12, 0.1],
+            [14, 1]
+          ]
+        }
+      }
     },
     {
       "id": "Poi-Ladder",
@@ -3364,6 +3362,52 @@
       "minzoom": 12,
       "filter": ["all", ["==", "class", "radar_dome"]],
       "layout": { "icon-image": "circle_pnt_fill", "icon-size": 0.5 }
+    },
+    {
+      "id": "Poi-Railway-Symbol",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "poi",
+      "minzoom": 12,
+      "filter": ["all", ["==", "class", "railway"]],
+      "layout": {
+        "text-font": ["Open Sans Bold Italic"],
+        "text-field": {
+          "stops": [
+            [12, "{name}"],
+            [13, "{name}"]
+          ]
+        },
+        "text-justify": "left",
+        "text-anchor": "left",
+        "icon-anchor": "center",
+        "text-size": {
+          "stops": [
+            [13, 10],
+            [16, 10],
+            [17, 16],
+            [18, 19]
+          ]
+        },
+        "icon-allow-overlap": true,
+        "icon-size": {
+          "stops": [
+            [12, 0.4],
+            [13, 1],
+            [20, 2]
+          ]
+        },
+        "text-max-width": 5,
+        "icon-image": {
+          "stops": [
+            [12, "rail_station_pnt_red"],
+            [13, "rail_station_train_diesel_pnt_red"]
+          ]
+        },
+        "text-offset": [1.25, 1.5],
+        "icon-optional": true
+      },
+      "paint": { "text-color": "rgba(94, 94, 94, 1)", "text-halo-color": "rgba(255, 255, 255, 1)", "text-halo-width": 1.5, "text-halo-blur": 0.5, "text-translate": [0, -15] }
     },
     {
       "id": "Poi-Redoubt",
@@ -4581,52 +4625,6 @@
       }
     },
     {
-      "id": "Transport-Railway-Symbol",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 12,
-      "filter": ["all", ["==", "class", "railway_pt"]],
-      "layout": {
-        "text-font": ["Open Sans Bold Italic"],
-        "text-field": {
-          "stops": [
-            [12, "{name}"],
-            [13, "{name}"]
-          ]
-        },
-        "text-justify": "left",
-        "text-anchor": "left",
-        "icon-anchor": "center",
-        "text-size": {
-          "stops": [
-            [13, 10],
-            [16, 10],
-            [17, 16],
-            [18, 19]
-          ]
-        },
-        "icon-allow-overlap": true,
-        "icon-size": {
-          "stops": [
-            [12, 0.4],
-            [13, 1],
-            [20, 2]
-          ]
-        },
-        "text-max-width": 5,
-        "icon-image": {
-          "stops": [
-            [12, "rail_station_pnt_red"],
-            [13, "rail_station_train_diesel_pnt_red"]
-          ]
-        },
-        "text-offset": [1.25, 1.5],
-        "icon-optional": true
-      },
-      "paint": { "text-color": "rgba(94, 94, 94, 1)", "text-halo-color": "rgba(255, 255, 255, 1)", "text-halo-width": 1.5, "text-halo-blur": 0.5, "text-translate": [0, -15] }
-    },
-    {
       "id": "Transport-Tunnel-Label",
       "type": "symbol",
       "source": "LINZ Basemaps",
@@ -4647,9 +4645,40 @@
             [20, [0, -9]],
             [22, [0, -16]]
           ]
-        }
+        },
+        "visibility": "visible"
       },
       "paint": { "text-color": "rgba(80, 75, 75, 1)", "text-halo-color": "rgba(230, 230, 230, 0.5)", "text-halo-width": 2 }
+    },
+    {
+      "id": "Airport-Label",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "aerodrome_label",
+      "minzoom": 12,
+      "layout": {
+        "text-field": "{name}",
+        "visibility": "visible",
+        "text-size": 10,
+        "text-pitch-alignment": "auto",
+        "text-rotation-alignment": "auto",
+        "text-font": ["Open Sans Bold Italic"],
+        "icon-rotation-alignment": "viewport",
+        "icon-ignore-placement": false,
+        "icon-text-fit": "none",
+        "text-justify": "center",
+        "symbol-spacing": 250,
+        "text-padding": 2,
+        "icon-offset": [0, 0],
+        "text-allow-overlap": false,
+        "icon-pitch-alignment": "viewport",
+        "text-anchor": "top",
+        "icon-anchor": "bottom",
+        "icon-size": 1.2,
+        "icon-image": "airport_airport_pnt_fill",
+        "text-max-width": 5
+      },
+      "paint": { "text-color": "rgba(129, 123, 123, 1)", "text-halo-width": 1, "text-halo-blur": 0.5, "text-halo-color": "rgba(255, 255, 255, 1)", "icon-opacity": 0.8 }
     },
     {
       "id": "Aeroway-Airstrip-Label",
@@ -4675,12 +4704,12 @@
       "id": "Aeroway-Aerodrome",
       "type": "symbol",
       "source": "LINZ Basemaps",
-      "source-layer": "aeroway",
+      "source-layer": "aerodrome_name",
       "minzoom": 12,
-      "filter": ["all", ["==", "class", "aerodrome"]],
+      "filter": ["all"],
       "layout": {
         "text-field": "{name}",
-        "visibility": "visible",
+        "visibility": "none",
         "text-size": 10,
         "text-pitch-alignment": "auto",
         "text-rotation-alignment": "auto",
