@@ -1330,6 +1330,7 @@
       "type": "line",
       "source": "LINZ Basemaps",
       "source-layer": "landcover",
+      "minzoom": 14,
       "filter": ["all", ["==", "natural", "tree_row"]],
       "layout": { "visibility": "visible" },
       "paint": { "line-color": "rgba(148, 199, 111, 0.75)", "line-width": 4, "line-translate-anchor": "map" }
