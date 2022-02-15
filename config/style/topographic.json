@@ -817,27 +817,6 @@
       }
     },
     {
-      "id": "Water-River-Ln-Previous",
-      "type": "line",
-      "source": "LINZ Basemaps",
-      "source-layer": "water",
-      "minzoom": 13,
-      "maxzoom": 21,
-      "filter": ["all", ["==", "feat_type", "river_cl"]],
-      "layout": { "visibility": "none" },
-      "paint": {
-        "line-color": {
-          "stops": [
-            [9, "rgba(184, 220, 242, 1)"],
-            [13, "rgba(0, 140, 204, 0.3)"],
-            [19, "rgba(0, 140, 204, 1)"]
-          ]
-        },
-        "line-opacity": 1,
-        "line-width": 0.75
-      }
-    },
-    {
       "id": "Water-River-Ln-Named",
       "type": "line",
       "source": "LINZ Basemaps",
@@ -863,28 +842,6 @@
             [13, 1]
           ]
         }
-      }
-    },
-    {
-      "id": "Water-River-Ln-Named-Previous",
-      "type": "line",
-      "source": "LINZ Basemaps",
-      "source-layer": "water",
-      "minzoom": 8,
-      "maxzoom": 13,
-      "filter": ["all", ["==", "feat_type", "river_cl"], ["has", "name"]],
-      "layout": { "visibility": "none" },
-      "paint": {
-        "line-color": {
-          "stops": [
-            [9, "rgba(184, 220, 242, 0.5)"],
-            [11, "rgba(184, 220, 242, 1)"],
-            [13, "rgba(0, 140, 204, 0.3)"],
-            [20, "rgba(0, 140, 204, 1)"]
-          ]
-        },
-        "line-opacity": 1,
-        "line-width": 1.5
       }
     },
     {
@@ -1016,7 +973,7 @@
       }
     },
     {
-      "id": "texture-relief-combined-test",
+      "id": "texture-relief-combined",
       "type": "raster",
       "source": "LINZ-Texture-Relief",
       "layout": { "visibility": "visible" },
@@ -4462,6 +4419,32 @@
       }
     },
     {
+      "id": "Transport-Tunnel-Label",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "transportation",
+      "minzoom": 15,
+      "filter": ["all", ["==", "brunnel", "tunnel"]],
+      "layout": {
+        "text-font": ["Roboto Black"],
+        "text-field": "{brunnel}",
+        "symbol-placement": "line",
+        "text-size": 10,
+        "symbol-spacing": 100,
+        "text-offset": {
+          "stops": [
+            [15, [0, -1.25]],
+            [17, [0, -1.75]],
+            [19, [0, -6]],
+            [20, [0, -9]],
+            [22, [0, -16]]
+          ]
+        },
+        "visibility": "visible"
+      },
+      "paint": { "text-color": "rgba(80, 75, 75, 1)", "text-halo-color": "rgba(230, 230, 230, 0.5)", "text-halo-width": 2 }
+    },
+    {
       "id": "All-Road-Labels",
       "type": "symbol",
       "source": "LINZ Basemaps",
@@ -4532,123 +4515,6 @@
         "text-max-width": 4
       },
       "paint": { "text-halo-width": 2.5, "text-halo-color": "rgba(243, 243, 242, 0.9)", "text-opacity": 0.9 }
-    },
-    {
-      "id": "Place-Names-13",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "place",
-      "minzoom": 13,
-      "filter": ["all"],
-      "layout": {
-        "symbol-avoid-edges": false,
-        "symbol-placement": "point",
-        "text-field": "{name}",
-        "text-allow-overlap": true,
-        "symbol-z-order": "auto",
-        "text-ignore-placement": false,
-        "visibility": "visible",
-        "text-font": ["Roboto Bold"],
-        "icon-allow-overlap": false,
-        "icon-optional": false,
-        "text-optional": true,
-        "icon-ignore-placement": false,
-        "text-pitch-alignment": "viewport",
-        "text-rotation-alignment": "viewport",
-        "text-writing-mode": [],
-        "icon-anchor": "center",
-        "icon-text-fit": "both",
-        "symbol-spacing": 1,
-        "icon-pitch-alignment": "auto",
-        "text-size": {
-          "stops": [
-            [2, 10],
-            [5, 16],
-            [8, 16],
-            [10, 17],
-            [12, 16],
-            [14, 16]
-          ]
-        },
-        "text-letter-spacing": {
-          "stops": [
-            [10, 0.08],
-            [13, 0.04],
-            [14, 0]
-          ]
-        },
-        "text-offset": {
-          "stops": [
-            [4, [0, 1.75]],
-            [6, [0, 1.25]]
-          ]
-        },
-        "text-max-width": 7,
-        "text-variable-anchor": ["top", "bottom-left"]
-      },
-      "paint": {
-        "icon-color": {
-          "stops": [
-            [6, "rgba(53, 53, 53, 1)"],
-            [10, "rgba(53, 53, 53, 1)"]
-          ]
-        },
-        "icon-halo-color": "rgba(255, 255, 255, 1)",
-        "icon-opacity": 1,
-        "icon-halo-blur": {
-          "stops": [
-            [13, 1],
-            [14, 0.5]
-          ]
-        },
-        "text-translate-anchor": "viewport",
-        "icon-halo-width": {
-          "stops": [
-            [13, 1],
-            [14, 2]
-          ]
-        },
-        "text-halo-color": "rgba(255, 252, 252, 1)",
-        "text-color": {
-          "stops": [
-            [6, "rgba(35, 34, 34, 1)"],
-            [19, "rgba(111, 111, 111, 1)"]
-          ]
-        },
-        "text-halo-blur": 1,
-        "text-halo-width": {
-          "stops": [
-            [4, 1.5],
-            [9, 2]
-          ]
-        }
-      }
-    },
-    {
-      "id": "Transport-Tunnel-Label",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 15,
-      "filter": ["all", ["==", "brunnel", "tunnel"]],
-      "layout": {
-        "text-font": ["Roboto Black"],
-        "text-field": "{brunnel}",
-        "symbol-placement": "line",
-        "text-size": 10,
-        "symbol-spacing": 100,
-        "text-offset": {
-          "stops": [
-            [15, [0, -1.25]],
-            [17, [0, -1.75]],
-            [19, [0, -6]],
-            [20, [0, -9]],
-            [22, [0, -16]]
-          ]
-        },
-        "visibility": "visible"
-      },
-      "paint": { "text-color": "rgba(80, 75, 75, 1)", "text-halo-color": "rgba(230, 230, 230, 0.5)", "text-halo-width": 2 }
     },
     {
       "id": "Airport-Label",
@@ -4823,33 +4689,146 @@
       "paint": { "text-color": "rgba(0, 140, 204, 1)" }
     },
     {
+      "id": "Poi-Hospital-Label-sprite-test",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "poi",
+      "filter": ["any", ["==", "class", "hospital"]],
+      "layout": {
+        "text-field": {
+          "stops": [
+            [16, ""],
+            [17, "{name}"]
+          ]
+        },
+        "text-font": ["Roboto Bold"],
+        "text-size": 12,
+        "icon-size": 1,
+        "text-justify": "left",
+        "text-anchor": "left",
+        "icon-allow-overlap": false,
+        "text-offset": [1, 0],
+        "text-max-width": 5,
+        "icon-image": "building_pnt_hospital"
+      },
+      "paint": { "text-halo-color": "rgba(255, 255, 255, 1)", "text-halo-width": 1.5, "text-color": "rgba(82, 0, 0, 1)", "icon-opacity": 0.9, "text-opacity": 1 }
+    },
+    {
+      "id": "Poi-Hut-Label-sprite-test",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "poi",
+      "filter": ["any", ["==", "class", "hut"]],
+      "layout": {
+        "text-field": {
+          "stops": [
+            [6, ""],
+            [15, "{name}"]
+          ]
+        },
+        "text-font": ["Roboto Bold"],
+        "text-size": 12,
+        "icon-size": 1,
+        "text-justify": "left",
+        "text-anchor": "left",
+        "icon-allow-overlap": true,
+        "text-offset": [1, 0],
+        "text-max-width": 5,
+        "icon-image": "building_pnt_hut"
+      },
+      "paint": { "text-halo-color": "rgba(255, 255, 255, 1)", "text-halo-width": 1.5, "text-color": "rgba(73, 68, 68, 1)", "icon-opacity": 0.9 }
+    },
+    {
+      "id": "Place-Names-13",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "place",
+      "minzoom": 13,
+      "layout": {
+        "text-field": "{name}",
+        "text-font": ["Roboto Regular"],
+        "text-max-width": 7,
+        "text-variable-anchor": ["top", "bottom-left"],
+        "text-offset": {
+          "stops": [
+            [4, [0, 1.75]],
+            [6, [0, 1.25]]
+          ]
+        },
+        "text-letter-spacing": {
+          "stops": [
+            [10, 0.08],
+            [13, 0.04],
+            [14, 0]
+          ]
+        },
+        "text-size": {
+          "stops": [
+            [2, 10],
+            [5, 16],
+            [8, 16],
+            [10, 17],
+            [12, 16],
+            [14, 16]
+          ]
+        },
+        "icon-text-fit": "both",
+        "icon-rotation-alignment": "auto",
+        "text-rotation-alignment": "viewport",
+        "text-pitch-alignment": "viewport",
+        "text-optional": true,
+        "text-ignore-placement": false,
+        "text-allow-overlap": true,
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-halo-blur": 1,
+        "text-halo-width": {
+          "stops": [
+            [4, 1.5],
+            [9, 2]
+          ]
+        },
+        "text-halo-color": "rgba(255, 252, 252, 1)",
+        "text-color": {
+          "stops": [
+            [6, "rgba(35, 34, 34, 1)"],
+            [19, "rgba(111, 111, 111, 1)"]
+          ]
+        },
+        "text-translate-anchor": "viewport",
+        "icon-halo-width": {
+          "stops": [
+            [13, 1],
+            [14, 2]
+          ]
+        },
+        "icon-halo-blur": {
+          "stops": [
+            [13, 1],
+            [14, 0.5]
+          ]
+        },
+        "icon-opacity": 1,
+        "icon-halo-color": "rgba(255, 255, 255, 1)",
+        "icon-color": {
+          "stops": [
+            [6, "rgba(53, 53, 53, 1)"],
+            [10, "rgba(53, 53, 53, 1)"]
+          ]
+        }
+      }
+    },
+    {
       "id": "Place-Names-3-12",
       "type": "symbol",
       "source": "LINZ Basemaps",
       "source-layer": "place",
       "minzoom": 3,
       "maxzoom": 13,
-      "filter": ["all"],
       "layout": {
-        "symbol-avoid-edges": false,
-        "symbol-placement": "point",
-        "text-field": "{name}",
-        "text-allow-overlap": true,
-        "symbol-z-order": "auto",
-        "text-ignore-placement": false,
-        "visibility": "visible",
         "text-font": ["Roboto Regular"],
-        "icon-allow-overlap": false,
-        "icon-optional": false,
-        "text-optional": true,
-        "icon-ignore-placement": false,
-        "text-pitch-alignment": "viewport",
-        "text-rotation-alignment": "viewport",
-        "text-writing-mode": [],
-        "icon-anchor": "center",
-        "icon-text-fit": "both",
-        "symbol-spacing": 1,
-        "icon-pitch-alignment": "auto",
+        "text-field": "{name}",
         "text-size": {
           "stops": [
             [2, 10],
@@ -4874,7 +4853,13 @@
           ]
         },
         "text-max-width": 6,
-        "text-variable-anchor": ["top", "bottom-left"]
+        "text-variable-anchor": ["top", "bottom-left"],
+        "icon-pitch-alignment": "auto",
+        "text-rotation-alignment": "viewport",
+        "text-pitch-alignment": "viewport",
+        "text-ignore-placement": false,
+        "text-optional": true,
+        "visibility": "visible"
       },
       "paint": {
         "icon-color": {
@@ -4891,18 +4876,11 @@
             [14, 0.5]
           ]
         },
-        "text-translate-anchor": "viewport",
+        "icon-translate-anchor": "viewport",
         "icon-halo-width": {
           "stops": [
             [13, 1],
             [14, 2]
-          ]
-        },
-        "text-halo-color": "rgba(255, 252, 252, 1)",
-        "text-color": {
-          "stops": [
-            [6, "rgba(35, 34, 34, 1)"],
-            [19, "rgba(111, 111, 111, 1)"]
           ]
         },
         "text-halo-blur": 1,
@@ -4910,6 +4888,13 @@
           "stops": [
             [4, 1.5],
             [9, 2]
+          ]
+        },
+        "text-halo-color": "rgba(255, 252, 252, 1)",
+        "text-color": {
+          "stops": [
+            [6, "rgba(35, 34, 34, 1)"],
+            [19, "rgba(111, 111, 111, 1)"]
           ]
         }
       }
