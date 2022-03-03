@@ -482,20 +482,23 @@
       "layout": { "visibility": "visible" },
       "paint": { "fill-opacity": 0.25, "fill-pattern": "gravel_poly" }
     },
+
     {
-      "id": "Landcover-Shingle-poly",
-      "type": "fill",
-      "source": "LINZ Basemaps",
-      "source-layer": "landcover",
-      "minzoom": 15,
-      "filter": ["all", ["==", "class", "shingle"]],
-      "layout": { "visibility": "visible" },
+      "filter": [
+        "all",
+        ["==", "class", "shingle"]
+      ],
+      "layout": {"visibility": "visible"},
       "paint": {
-        "fill-pattern": "sand_land_poly_half",
-        "fill-color": "rgba(211, 207, 207, 0.75)",
+        "fill-color": "rgba(225, 218, 204, 0.5)",
         "fill-opacity": 0.85,
         "fill-antialias": false
-      }
+      },
+      "id": "Landcover-Shingle-poly",
+      "source": "LINZ Basemaps",
+      "source-layer": "landcover",
+      "type": "fill",
+      "minzoom": 15
     },
     {
       "id": "Landcover-Moraine-poly-half",
