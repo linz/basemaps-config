@@ -1,8 +1,8 @@
 {
-  "id": "im_01EE962ZB3Z6Y7GVZ28XCWJ9JB",
+  "id": "im_01FXRNR0DDWRGXPGBE6W615STF",
   "name": "tasman_rural_2004-2005_1m_RGB",
-  "uri": "s3://linz-basemaps/3857/tasman_rural_2004-2005_1m_RGB/01EE962ZB3Z6Y7GVZ28XCWJ9JB",
   "projection": 3857,
+  "uri": "s3://linz-basemaps/3857/tasman_rural_2004-2005_1m_RGB/01FXRNR0DDWRGXPGBE6W615STF",
   "year": 2004,
   "resolution": 1000,
   "bounds": {
@@ -110,5 +110,7 @@
       "width": 39135.75848201019,
       "height": 39135.75848201019
     }
-  ]
+  ],
+  "createdAt": 1646874335867,
+  "updatedAt": 1646874335867
 }
