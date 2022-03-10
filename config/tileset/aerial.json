@@ -49,7 +49,7 @@
     { "2193": "im_01F66E7K4ESMSWZ1CNMCQ8B700", "3857": "im_01ED81W4KDQQRW9PEQ9KS7T8DV", "name": "bay-of-plenty_urban_2018-19_0-1m", "minZoom": 13, "maxZoom": 13 },
     { "2193": "im_01F66E4BR5XTJENFTSACWB55DM", "3857": "im_01ED81R5BX4EB3W7TB3Z8ZE89S", "name": "bay-of-plenty_rural_2019_0-3m", "minZoom": 13 },
     { "2193": "im_01FKYB9A75DN79CED9P1YM38K0", "3857": "im_01FKYB6ADZ4YHY340CDV5QAGTX", "name": "bay-of-plenty_rural_2021_0-2m_RGB", "minZoom": 13 },
-    { "2193": "im_01FBGB1QN859XRGNNWT6ZBHEN8", "3857": "im_01FBGB0T73562VAZBEBHZ7E84T", "name": "tasman_rural_2020_0-3m_RGB", "minZoom": 13 },
+    { "2193": "im_01FBGB1QN859XRGNNWT6ZBHEN8", "3857": "im_01EXJV4VZ22G163H5565R2D04R", "name": "tasman_rural_2020_0-3m_RGB", "minZoom": 13 },
     { "2193": "im_01FJJFP25MYHH34JEV0XM9Z8Q8", "3857": "im_01FJJFN1H62SA0836CKX2BYE5F", "name": "canterbury_rural_2019_0-3m_RGB", "minZoom": 13 },
     { "2193": "im_01FHRTDFP4DDQD4X1G63SDF0AX", "3857": "im_01FHRTF5GHTZD5SEXP3MS7E911", "name": "canterbury_rural_2020_0-3m_RGB", "minZoom": 13 },
     { "2193": "im_01FHV1ZNDNT9256J13H89BRKWT", "3857": "im_01FHV1VPTBM52WH81ZT7XAX93W", "name": "canterbury_rural_2020-2021_0-2m_RGB", "minZoom": 13 },
