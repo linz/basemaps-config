@@ -1,8 +1,8 @@
 {
-  "id": "im_01ED83JPKMXF5TVKFD4RP91ZRB",
+  "id": "im_01FY2RSQ3WWP92366H92BBVJ44",
   "name": "upper-hutt_urban_2017_0-10m",
-  "uri": "s3://linz-basemaps/3857/upper-hutt_urban_2017_0-10m/01ED83JPKMXF5TVKFD4RP91ZRB",
   "projection": 3857,
+  "uri": "s3://linz-basemaps/3857/upper-hutt_urban_2017_0-10m/01FY2RSQ3WWP92366H92BBVJ44",
   "year": 2017,
   "resolution": 100,
   "bounds": {
@@ -96,5 +96,7 @@
       "width": 4891.969810251274,
       "height": 4891.969810251274
     }
-  ]
+  ],
+  "createdAt": 1647213081159,
+  "updatedAt": 1647213081159
 }
