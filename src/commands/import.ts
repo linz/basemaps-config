@@ -1,15 +1,15 @@
 import { invalidateCache, uploadStaticFile } from '@basemaps/cli/build/cli/util.js';
 import { LogConfig } from '@basemaps/shared';
 import { fsa } from '@chunkd/fs';
-import { Command, flags } from '@oclif/command';
+import { Command, Flags } from '@oclif/core';
 import PLimit from 'p-limit';
 import path from 'path';
-import { Updater } from './base.config.js';
-import { ImageryUpdater } from './imagery.config.js';
-import { ImageryTileSetUpdater } from './imagery.tileset.config.js';
-import { ProviderUpdater } from './provider.config.js';
-import { StyleUpdater } from './style.conifg.js';
-import { TileSetUpdater } from './tileset.config.js';
+import { Updater } from '../base.config.js';
+import { ImageryUpdater } from '../imagery.config.js';
+import { ImageryTileSetUpdater } from '../imagery.tileset.config.js';
+import { ProviderUpdater } from '../provider.config.js';
+import { StyleUpdater } from '../style.conifg.js';
+import { TileSetUpdater } from '../tileset.config.js';
 
 const Q = PLimit(10);
 
@@ -17,8 +17,8 @@ export class CommandImport extends Command {
   static description = 'Import Basemaps configs';
 
   static flags = {
-    tag: flags.string({ char: 't', description: 'PR tag(PR-number) or production', required: true }),
-    commit: flags.boolean({ description: 'Actually run job' }),
+    tag: Flags.string({ char: 't', description: 'PR tag(PR-number) or production', required: true }),
+    commit: Flags.boolean({ description: 'Actually run job' }),
   };
 
   promises: Promise<boolean>[] = [];
@@ -27,7 +27,7 @@ export class CommandImport extends Command {
 
   async run(): Promise<void> {
     const logger = LogConfig.get();
-    const { flags } = this.parse(CommandImport);
+    const { flags } = await this.parse(CommandImport);
 
     for await (const fileName of fsa.list(`./config/imagery`)) this.update(fileName, flags.tag, flags.commit);
     for await (const fileName of fsa.list(`./config/style`)) this.update(fileName, flags.tag, flags.commit);

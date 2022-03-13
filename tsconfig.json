@@ -10,5 +10,5 @@
     "inlineSourceMap": false,
     "inlineSources": false
   },
-  "include": ["src/*"]
+  "include": ["src"]
 }
