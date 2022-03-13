@@ -130,6 +130,7 @@
     { "2193": "im_01FSWMVSKCNWK9H4J3JP6RAQ0S", "3857": "im_01FSWMXCT9AF67HW8BQKV9WM0K", "name": "waitaki_urban_2020-2021_0-075m_RGB", "minZoom": 14 },
     { "2193": "im_01FXP9YHEQM6XA6DDEGNKMEE7H", "3857": "im_01FXPA0F9WZS0MMABYHRCFYMV0", "name": "auckland_rural_2020_0-075m_RGB", "minZoom": 13 },
     { "3857": "im_01FM8DEN1XG1QGNT229A4T3KZ6", "name": "geographx_nz_dem_2012_8-0m", "maxZoom": 14 },
-    { "3857": "im_01FMK5CJHR30YG9A0JDNVXYCKN", "name": "geographx_nz_texture_2012_8-0m", "maxZoom": 14 }
+    { "3857": "im_01FMK5CJHR30YG9A0JDNVXYCKN", "name": "geographx_nz_texture_2012_8-0m", "maxZoom": 14 },
+    { "2193": "im_01FY2RSHDVK4QX691GPY2PXZWG", "3857": "im_01FY2RSQ3WWP92366H92BBVJ44", "name": "upper-hutt_urban_2017_0-10m", "minZoom": 14 }
   ]
 }
