@@ -1,4 +1,4 @@
-import { Command, flags } from '@oclif/command';
+import { Command, Flags } from '@oclif/core';
 import { fsa } from '@chunkd/fs';
 import { LogConfig } from '@basemaps/shared';
 import { StyleJson } from '@basemaps/config';
@@ -8,14 +8,14 @@ export class CommandImportStyle extends Command {
   static description = 'Import style json';
 
   static flags = {
-    commit: flags.boolean({ description: 'Actually run job' }),
-    style: flags.string({ description: 'Style to import into', default: 'topographic' }),
+    commit: Flags.boolean({ description: 'Actually run job' }),
+    style: Flags.string({ description: 'Style to import into', default: 'topographic' }),
   };
   static args = [{ name: 'url', description: 'Style location', required: true }];
 
   async run(): Promise<void> {
     const logger = LogConfig.get();
-    const { flags, args } = this.parse(CommandImportStyle);
+    const { flags, args } = await this.parse(CommandImportStyle);
 
     const json = await fsa.readJson<StyleJson>(args.url);
     if (json.version !== 8) return logger.error('Style:Invalid - Invalid version');
