@@ -1,4 +1,4 @@
-import { Command, flags } from '@oclif/command';
+import { Command, Flags } from '@oclif/core';
 import { fsa } from '@chunkd/fs';
 import { LogConfig } from '@basemaps/shared';
 import { basename, dirname } from 'path';
@@ -18,14 +18,16 @@ export class CommandImportFonts extends Command {
   static description = 'Import fonts';
 
   static flags = {
-    commit: flags.boolean({ description: 'Actually import fonts' }),
-    verbose: flags.boolean({ description: 'Verbose logging', default: false }),
+    version: Flags.version(),
+    help: Flags.help(),
+    commit: Flags.boolean({ description: 'Actually import fonts' }),
+    verbose: Flags.boolean({ description: 'Verbose logging', default: false }),
   };
 
   async run(): Promise<void> {
     const logger = LogConfig.get();
 
-    const { flags } = this.parse(CommandImportFonts);
+    const { flags } = await this.parse(CommandImportFonts);
     if (flags.verbose) logger.level = 'trace';
     const fonts = await fsa.toArray(fsa.list('./config/fonts'));
 

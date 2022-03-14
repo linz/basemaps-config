@@ -1,8 +1,8 @@
 import { Bounds, TileMatrixSets } from '@basemaps/geo';
 import { Config, extractYearRangeFromName, fsa, LogConfig, Projection } from '@basemaps/shared';
-import { Command, flags } from '@oclif/command';
+import { Command, Flags } from '@oclif/core';
 import * as z from 'zod';
-import { ConfigImagerySchema, zImageConfig, zNamedBounds } from './imagery.config.js';
+import { ConfigImagerySchema, zImageConfig, zNamedBounds } from '../imagery.config.js';
 
 const zJob = z.object({
   id: z.string(),
@@ -32,7 +32,8 @@ export class CommandImportImagery extends Command {
   static description = 'Import imagery from job';
 
   static flags = {
-    commit: flags.boolean({ description: 'Actually run job' }),
+    help: Flags.help(),
+    commit: Flags.boolean({ description: 'Actually run job' }),
   };
   static args = [{ name: 'file', description: 'Job location', required: true }];
 
@@ -42,7 +43,7 @@ export class CommandImportImagery extends Command {
 
   async run(): Promise<void> {
     const logger = LogConfig.get();
-    const { flags, args } = this.parse(CommandImportImagery);
+    const { flags, args } = await this.parse(CommandImportImagery);
 
     if (!args.file.endsWith('job.json')) args.file = fsa.join(args.file, 'job.json');
 
