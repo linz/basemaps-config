@@ -4,7 +4,7 @@
   "uri": "s3://linz-basemaps/3857/gebco_2020_305-75m/01EDMTM3P563P06TWYQAZRA9F6",
   "projection": 3857,
   "year": 2020,
-  "resolution": 5750,
+  "resolution": 305750,
   "bounds": {
     "x": -20037508.3427892,
     "y": -20037508.342789154,
