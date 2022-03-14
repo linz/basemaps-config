@@ -40,10 +40,10 @@
     pretty-json-log "^1.0.0"
     zod "^3.2.0"
 
-"@basemaps/config@^6.10.0":
-  version "6.10.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/config/-/config-6.10.0.tgz#42583931fcc0e3d2e7da3e16e33c00260485cfe2"
-  integrity sha512-KuD3z8wPKMnuofPy0iZyBaZk2kx32TCryEHNrf5qNp51i0a/hqTQFQ1IAo+x89y63SOvMHwMoMUKa7q6BODnNA==
+"@basemaps/config@^6.10.0", "@basemaps/config@^6.18.0":
+  version "6.18.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/config/-/config-6.18.0.tgz#4b322b5d0dedff6a832c0aed97eca816ac615984"
+  integrity sha512-INUCfC+x0wXNbJCpIhhI4mp48tYLvtExKgmC+i5NRRM/zxWo90dd1b9ZJp7FHa8gyT9i71qUiC2Uc7QAeRw64Q==
   dependencies:
     "@basemaps/geo" "^6.10.0"
 
