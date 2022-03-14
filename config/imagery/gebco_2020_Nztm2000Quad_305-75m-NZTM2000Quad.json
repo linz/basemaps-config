@@ -4,7 +4,7 @@
   "uri": "s3://linz-basemaps/2193/gebco_2020_Nztm2000Quad_305-75m/01F1BFJN8R8P7BXN3XTHC5MT5G",
   "year": 2000,
   "projection": 2193,
-  "resolution": 5750,
+  "resolution": 305750,
   "bounds": {
     "x": -3260586.7284,
     "y": 419435.9938,
