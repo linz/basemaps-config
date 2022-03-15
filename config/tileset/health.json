@@ -3,7 +3,16 @@
   "id": "ts_health",
   "background": "dce9edff",
   "layers": [
-    { "2193": "im_01F1BFJN8R8P7BXN3XTHC5MT5G", "3857": "im_01EDMTM3P563P06TWYQAZRA9F6", "name": "gebco_2020_305-75m", "maxZoom": 15 },
-    { "2193": "im_01F6P1G0S78XYXAQB7Y375MZ2Q", "3857": "im_01ED82TFB1ZE9C75CH5VY3Z92B", "name": "new_zealand_sentinel_2019-2020_10m" }
+    {
+      "2193": "s3://linz-basemaps/2193/gebco_2020_Nztm2000Quad_305-75m/01F1BFJN8R8P7BXN3XTHC5MT5G",
+      "3857": "s3://linz-basemaps/3857/gebco_2020_305-75m/01EDMTM3P563P06TWYQAZRA9F6",
+      "name": "gebco_2020_305-75m",
+      "maxZoom": 15
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/new_zealand_sentinel_2019-2020_10m/01F6P1G0S78XYXAQB7Y375MZ2Q",
+      "3857": "s3://linz-basemaps/3857/new_zealand_sentinel_2019-2020_10m/01ED82TFB1ZE9C75CH5VY3Z92B",
+      "name": "new_zealand_sentinel_2019-2020_10m"
+    }
   ]
 }

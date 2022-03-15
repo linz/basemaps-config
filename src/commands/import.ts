@@ -2,16 +2,11 @@ import { invalidateCache, uploadStaticFile } from '@basemaps/cli/build/cli/util.
 import { LogConfig } from '@basemaps/shared';
 import { fsa } from '@chunkd/fs';
 import { Command, Flags } from '@oclif/core';
-import PLimit from 'p-limit';
 import path from 'path';
-import { Updater } from '../base.config.js';
-import { ImageryUpdater } from '../imagery.config.js';
-import { ImageryTileSetUpdater } from '../imagery.tileset.config.js';
+import { Q, Updater } from '../base.config.js';
+import { TileSetUpdater } from '../config/tileset.updater.js';
 import { ProviderUpdater } from '../provider.config.js';
 import { StyleUpdater } from '../style.conifg.js';
-import { TileSetUpdater } from '../tileset.config.js';
-
-const Q = PLimit(10);
 
 export class CommandImport extends Command {
   static description = 'Import Basemaps configs';
@@ -29,7 +24,7 @@ export class CommandImport extends Command {
     const logger = LogConfig.get();
     const { flags } = await this.parse(CommandImport);
 
-    for await (const fileName of fsa.list(`./config/imagery`)) this.update(fileName, flags.tag, flags.commit);
+    // for await (const fileName of fsa.list(`./config/imagery`)) this.update(fileName, flags.tag, flags.commit);
     for await (const fileName of fsa.list(`./config/style`)) this.update(fileName, flags.tag, flags.commit);
     for await (const fileName of fsa.list(`./config/provider`)) this.update(fileName, flags.tag, flags.commit);
 
@@ -41,9 +36,9 @@ export class CommandImport extends Command {
     }
 
     for await (const filename of fsa.list(`./config/tileset`)) {
-      const updater = new TileSetUpdater(filename, await fsa.readJson(filename), flags.tag, flags.commit, this.imagery);
-      const hasChanges = await updater.reconcile();
-      if (hasChanges && updater.invalidatePath) this.invalidates.push(updater.invalidatePath());
+      const updater = new TileSetUpdater(filename, await fsa.readJson(filename), flags.tag, flags.commit);
+      await updater.reconcile();
+      if (updater.invalidationPaths.length > 0) this.invalidates.push(...updater.invalidationPaths);
     }
 
     let isSpriteUploaded = false;
@@ -79,7 +74,6 @@ export class CommandImport extends Command {
   }
 
   getUpdater(fileName: string, config: unknown, tag: string, commit: boolean): Updater[] {
-    if (fileName.includes('/imagery/')) return [new ImageryUpdater(fileName, config, tag, commit), new ImageryTileSetUpdater(fileName, config, tag, commit)];
     if (fileName.includes('/style/')) return [new StyleUpdater(fileName, config, tag, commit)];
     if (fileName.includes('/provider/')) return [new ProviderUpdater(fileName, config, tag, commit)];
     throw new Error(`Unable to find updater for path:${fileName}`);
