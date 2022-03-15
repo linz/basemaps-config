@@ -14,6 +14,7 @@ export class CommandImport extends Command {
   static flags = {
     tag: Flags.string({ char: 't', description: 'PR tag(PR-number) or production', required: true }),
     commit: Flags.boolean({ description: 'Actually run job' }),
+    verbose: Flags.boolean({ description: 'Verbose logging', default: false }),
   };
 
   promises: Promise<boolean>[] = [];
@@ -23,6 +24,7 @@ export class CommandImport extends Command {
   async run(): Promise<void> {
     const logger = LogConfig.get();
     const { flags } = await this.parse(CommandImport);
+    if (flags.verbose) logger.level = 'trace';
 
     // for await (const fileName of fsa.list(`./config/imagery`)) this.update(fileName, flags.tag, flags.commit);
     for await (const fileName of fsa.list(`./config/style`)) this.update(fileName, flags.tag, flags.commit);

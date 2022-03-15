@@ -2,7 +2,7 @@ import { LogType } from '@basemaps/shared';
 import c from 'ansi-colors';
 import diff from 'deep-diff';
 
-export const IgnoredProperties = ['id', 'createdAt', 'updatedAt'];
+export const IgnoredProperties = ['id', 'createdAt', 'updatedAt', 'year', 'resolution'];
 
 export class ConfigDiff {
   static printDiff<T>(changes: diff.Diff<T, T>[]): string {

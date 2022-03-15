@@ -1,7 +1,7 @@
 import { ConfigDynamoBase, ConfigImagery, ConfigTileSet, parseRgba, TileSetType } from '@basemaps/config';
 import { GoogleTms, Nztm2000QuadTms } from '@basemaps/geo';
 import { Config, LogConfig, LogType } from '@basemaps/shared';
-import { fsa } from '@chunkd/fs';
+import { url } from 'inspector';
 import { Production } from '../base.config.js';
 import { ConfigDiff } from '../config.diff.js';
 import { ImageryCache } from './imagery.config.js';
@@ -48,7 +48,10 @@ export class TileSetUpdater {
       }
     }
 
-    return Promise.all(imageryPaths);
+    this.logger.trace({ count: imageryPaths.length }, 'LoadImagery');
+    const ret = await Promise.all(imageryPaths);
+    this.logger.debug({ count: imageryPaths.length }, 'LoadImagery:Done');
+    return ret;
   }
 
   /** Ensure all imagery is present in the database with a associated tileset */
@@ -58,15 +61,19 @@ export class TileSetUpdater {
     let hasChanges = false;
     const allImgIds = new Set(img.map((i) => i.id));
     const allTsIds = new Set(img.map((i) => i.id.replace('im_', 'ts_')));
+
     const existingImagery = await Config.Imagery.getAll(allImgIds);
+    this.logger.info({ count: existingImagery.size }, 'LoadImageryConfig:Done');
+
     const existingTileSets = await Config.TileSet.getAll(allTsIds);
+    this.logger.info({ count: existingTileSets.size }, 'LoadTileSetConfig:Done');
 
     for (const i of img) {
       let hasImageryChanged = false;
       const dbImagery = existingImagery.get(i.id);
       if (dbImagery == null || ConfigDiff.showDiff('im', dbImagery, i, this.logger)) {
         const operation = dbImagery == null ? 'Insert' : 'Update';
-        this.logger.info({ type: 'im', record: i.id, title: i.name }, `Change:${operation}`);
+        this.logger.info({ type: 'im', record: i.id, title: i.name, projection: i.projection }, `Change:${operation}`);
         if (this.isCommit) {
           i.createdAt = dbImagery?.createdAt ?? i.createdAt;
 
@@ -79,10 +86,10 @@ export class TileSetUpdater {
       // Create a tile set for the imagery
       const tsId = i.id.replace('im_', 'ts_');
       const tileSet = ImageryCache.toTileSet(tsId, i);
-      const dbTileSet = existingTileSets.get(i.id);
+      const dbTileSet = existingTileSets.get(tsId);
       if (dbTileSet == null || ConfigDiff.showDiff('ts', dbTileSet, tileSet, this.logger)) {
-        const operation = dbImagery == null ? 'Insert' : 'Update';
-        this.logger.info({ type: 'ts', record: tsId, title: i.name }, `Change:${operation}`);
+        const operation = dbTileSet == null ? 'Insert' : 'Update';
+        this.logger.info({ type: 'ts', record: tsId, title: i.name, projection: i.projection }, `Change:${operation}`);
         if (this.isCommit) {
           tileSet.createdAt = dbTileSet?.createdAt ?? tileSet.createdAt;
 
@@ -130,13 +137,24 @@ export class TileSetUpdater {
     // Prepare background if exists
     const background = this.config.background ? parseRgba(this.config.background) : null;
 
+    function updateLayerUri(uri: string | undefined): string | undefined {
+      if (uri == null) return uri;
+      if (uri.startsWith('im_')) return uri;
+      const record = imagery.find((f) => f.uri === uri)?.id; ///
+      if (record == null) throw new Error('Unable to find imagery id for uri:' + uri);
+      return record;
+    }
+
     const layers = [];
     // Map the configuration sources into imagery ids
     for (const l of this.config.layers) {
       const layer = { ...l };
-      if (layer[2193]) layer[2193] = imagery.find((f) => f.uri === layer[2193])?.id;
-      if (layer[3857]) layer[3857] = imagery.find((f) => f.uri === layer[3857])?.id;
       layers.push(layer);
+
+      if (type === TileSetType.Raster) {
+        if (layer[2193]) layer[2193] = updateLayerUri(layer[2193]);
+        if (layer[3857]) layer[3857] = updateLayerUri(layer[3857]);
+      }
     }
 
     const tileSet: ConfigTileSet = {
@@ -155,12 +173,3 @@ export class TileSetUpdater {
     return tileSet;
   }
 }
-
-async function main(): Promise<void> {
-  const data = await fsa.readJson('./config/tileset/aerial.json');
-  const tsu = new TileSetUpdater('./config/tileset/aerial.json', data, 'production', false);
-
-  await tsu.reconcile();
-}
-
-main();

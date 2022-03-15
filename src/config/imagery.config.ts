@@ -25,10 +25,10 @@ export class ImageryConfigCache {
   }
 
   async fetchImageryConfig(uri: string, name: string, tms: TileMatrixSet, log: LogType): Promise<ConfigImagery> {
-    log.debug({ uri }, 'Fetching');
+    log.trace({ uri }, 'FetchImagery');
 
     // TODO is there a better way of guessing the imagery id?
-    const id = 'im_' + guessIdFromUri(uri); // TODO should we just generate a new id?
+    const id = 'im_' + guessIdFromUri(uri);
 
     const fileList = await fsa.toArray(fsa.list(uri));
     const tiffFiles = fileList.filter((f) => f.endsWith('.tiff'));
@@ -61,6 +61,8 @@ export class ImageryConfigCache {
 
       return bXyz[2] - aXyz[2];
     });
+
+    log.debug({ uri, files: files.length }, 'FetchImagery:Done');
 
     if (bounds == null) throw new Error('Failed to get bounds from URI: ' + uri);
     const now = Date.now();

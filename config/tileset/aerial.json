@@ -312,13 +312,13 @@
     {
       "2193": "s3://linz-basemaps/2193/canterbury-waitaki_rural_2021_0-3m_RGB/01FQ07ZVQYC3M57D8N84WFM4F5",
       "3857": "s3://linz-basemaps/3857/canterbury-waitaki_rural_2021_0-3m_RGB/01FQ07XS8GHPFS913PGY5P9010",
-      "name": "canterbury-waitaki_rural_2021_0.3m_RGB",
+      "name": "canterbury-waitaki_rural_2021_0-3m_RGB",
       "minZoom": 13
     },
     {
       "2193": "s3://linz-basemaps/2193/canterbury-mackenzie_rural_2021_0-3m_RGB/01FQ081YGQNSSB120WPZ3N70W0",
       "3857": "s3://linz-basemaps/3857/canterbury-mackenzie_rural_2021_0-3m_RGB/01FQ080VWM2VAMT9G2BYPWZTKB",
-      "name": "canterbury-mackenzie_rural_2021_0.3m_RGB",
+      "name": "canterbury-mackenzie_rural_2021_0-3m_RGB",
       "minZoom": 13
     },
     {
@@ -654,7 +654,7 @@
     {
       "2193": "s3://linz-basemaps/2193/ashburton_urban_2020_0-075m_RGB/01FPV7HMJN6RQNSANMZ2SRY0BK",
       "3857": "s3://linz-basemaps/3857/ashburton_urban_2020_0-075m_RGB/01FPV7ABAWS4ZCWN91VR7SDK0A",
-      "name": "ashburton_urban_2020_0.075m_RGB",
+      "name": "ashburton_urban_2020_0-075m_RGB",
       "minZoom": 14
     },
     {
@@ -714,13 +714,13 @@
     {
       "2193": "s3://linz-basemaps/2193/mackenzie_urban_2020_0-075m_RGB/01FPV7GGNZ008JBH25F35KXC71",
       "3857": "s3://linz-basemaps/3857/mackenzie_urban_2020_0-075m_RGB/01FPV7C0KD6R4FD8TTE3S43ETF",
-      "name": "mackenzie_urban_2020_0.075m_RGB",
+      "name": "mackenzie_urban_2020_0-075m_RGB",
       "minZoom": 14
     },
     {
       "2193": "s3://linz-basemaps/2193/timaru_urban_2020_0-075m_RGB/01FPV7FD7SX1JKW7TK25ESMYN1",
       "3857": "s3://linz-basemaps/3857/timaru_urban_2020_0-075m_RGB/01FPV7DVA9TW7XQCR64SSB12DA",
-      "name": "timaru_urban_2020_0.075m_RGB",
+      "name": "timaru_urban_2020_0-075m_RGB",
       "minZoom": 14
     },
     {
@@ -738,7 +738,7 @@
     {
       "2193": "s3://linz-basemaps/2193/christchurch_urban_2020-2021_0-075m_RGB/01FPXB0T4ZCASWGX1X1GVEHDQZ",
       "3857": "s3://linz-basemaps/3857/christchurch_urban_2020-2021_0-075m_RGB/01FPXB36CCAK3FC6FWCMK1D156",
-      "name": "christchurch_urban_2020-2021_0.075m_RGB",
+      "name": "christchurch_urban_2020-2021_0-075m_RGB",
       "minZoom": 14
     },
     {
@@ -766,7 +766,7 @@
     },
     {
       "3857": "s3://linz-basemaps/3857/geographx_nz_texture_shade_2012_8-0m/01FMK5CJHR30YG9A0JDNVXYCKN",
-      "name": "geographx_nz_texture_2012_8-0m",
+      "name": "geographx_nz_texture_shade_2012_8-0m",
       "maxZoom": 14
     }
   ]
