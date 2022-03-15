@@ -1,7 +1,6 @@
 import { ConfigDynamoBase, ConfigImagery, ConfigTileSet, parseRgba, TileSetType } from '@basemaps/config';
 import { GoogleTms, Nztm2000QuadTms } from '@basemaps/geo';
 import { Config, LogConfig, LogType } from '@basemaps/shared';
-import { url } from 'inspector';
 import { Production } from '../base.config.js';
 import { ConfigDiff } from '../config.diff.js';
 import { ImageryCache } from './imagery.config.js';
@@ -63,10 +62,10 @@ export class TileSetUpdater {
     const allTsIds = new Set(img.map((i) => i.id.replace('im_', 'ts_')));
 
     const existingImagery = await Config.Imagery.getAll(allImgIds);
-    this.logger.info({ count: existingImagery.size }, 'LoadImageryConfig:Done');
+    this.logger.info({ count: existingImagery.size, expected: allTsIds.size }, 'LoadImageryConfig:Done');
 
     const existingTileSets = await Config.TileSet.getAll(allTsIds);
-    this.logger.info({ count: existingTileSets.size }, 'LoadTileSetConfig:Done');
+    this.logger.info({ count: existingTileSets.size, expected: allTsIds.size }, 'LoadTileSetConfig:Done');
 
     for (const i of img) {
       let hasImageryChanged = false;
