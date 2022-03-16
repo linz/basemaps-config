@@ -7,8 +7,8 @@
     "LINZ Basemaps": { "type": "vector", "url": "/v1/tiles/topographic/EPSG:3857/tile.json", "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0" },
     "LINZ-Texture-Relief": { "type": "raster", "tiles": ["/v1/tiles/texturereliefshade/EPSG:3857/{z}/{x}/{y}.webp"], "tileSize": 256, "minzoom": 0, "maxzoom": 20 }
   },
-  "sprite": "https://basemaps.linz.govt.nz/sprites/topographic",
-  "glyphs": "https://basemaps.linz.govt.nz/glyphs/{fontstack}/{range}.pbf",
+  "sprite": "/sprites/topographic",
+  "glyphs": "/glyphs/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "Background",
