@@ -8,7 +8,7 @@
     "LINZ-Texture-Relief": { "type": "raster", "tiles": ["/v1/tiles/texturereliefshade/EPSG:3857/{z}/{x}/{y}.webp"], "tileSize": 256, "minzoom": 0, "maxzoom": 20 }
   },
   "sprite": "https://basemaps.linz.govt.nz/sprites/topographic",
-  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "glyphs": "https://basemaps.linz.govt.nz/glyphs/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "Background",
