@@ -56,10 +56,12 @@ export abstract class Updater<S extends { id: string } = { id: string }, T exten
 
     if (oldData == null || ConfigDiff.showDiff(this.db.prefix, oldData, newData, this.logger)) {
       const operation = oldData == null ? 'Insert' : 'Update';
-      this.logger.info({ type: this.db.prefix, record: newData.id }, `Change:${operation}`);
+      this.logger.info({ type: this.db.prefix, record: newData.id, commit: this.isCommit }, `Change:${operation}`);
       if (this.isCommit) {
-        if (this.db instanceof ConfigDynamoBase) await this.db.put(newData);
-        else throw new Error('Unable to commit changes to: ' + this.db.prefix);
+        if (this.db instanceof ConfigDynamoBase) {
+          console.log('Put', { newData });
+          await this.db.put(newData);
+        } else throw new Error('Unable to commit changes to: ' + this.db.prefix);
       }
       return true;
     }

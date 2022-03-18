@@ -1,7 +1,7 @@
 import { ConfigVectorStyle, StyleJson } from '@basemaps/config';
 import { Config } from '@basemaps/shared';
 import * as z from 'zod';
-import { Updater } from './base.config.js';
+import { Updater } from '../base.config.js';
 
 const zStyleJson = z.object({
   id: z.string(),
@@ -43,6 +43,6 @@ export class StyleUpdater extends Updater<StyleJsonConfigSchema, ConfigVectorSty
   }
 
   invalidatePath(): string {
-    return `/v1/tiles/togographic/style/${this.config.name}.json`;
+    return `/v1/tiles/togographic/style/${this.getId(this.tag).slice(3)}.json`;
   }
 }

@@ -5,8 +5,15 @@ import { Command, Flags } from '@oclif/core';
 import path from 'path';
 import { Q, Updater } from '../base.config.js';
 import { TileSetUpdater } from '../config/tileset.updater.js';
-import { ProviderUpdater } from '../provider.config.js';
-import { StyleUpdater } from '../style.conifg.js';
+import { ProviderUpdater } from '../config/provider.updater.js';
+import { StyleUpdater } from '../config/style.updater.js';
+
+export enum UpdaterType {
+  Style = 'style',
+  TileSet = 'tileset',
+  Provider = 'provider',
+  Sprites = 'sprites',
+}
 
 export class CommandImport extends Command {
   static description = 'Import Basemaps configs';
@@ -14,6 +21,7 @@ export class CommandImport extends Command {
   static flags = {
     tag: Flags.string({ char: 't', description: 'PR tag(PR-number) or production', required: true }),
     commit: Flags.boolean({ description: 'Actually run job' }),
+    update: Flags.string({ description: 'List of items to update', options: Object.values(UpdaterType), required: false }),
     verbose: Flags.boolean({ description: 'Verbose logging', default: false }),
   };
 
@@ -27,8 +35,12 @@ export class CommandImport extends Command {
     if (flags.verbose) logger.level = 'trace';
 
     // for await (const fileName of fsa.list(`./config/imagery`)) this.update(fileName, flags.tag, flags.commit);
-    for await (const fileName of fsa.list(`./config/style`)) this.update(fileName, flags.tag, flags.commit);
-    for await (const fileName of fsa.list(`./config/provider`)) this.update(fileName, flags.tag, flags.commit);
+    if (flags.update == null || flags.update.includes(UpdaterType.Style)) {
+      for await (const fileName of fsa.list(`./config/style`)) this.update(fileName, flags.tag, flags.commit);
+    }
+    if (flags.update == null || flags.update.includes(UpdaterType.Provider)) {
+      for await (const fileName of fsa.list(`./config/provider`)) this.update(fileName, flags.tag, flags.commit);
+    }
 
     const res = await Promise.all(this.promises);
     this.promises = [];
@@ -37,28 +49,33 @@ export class CommandImport extends Command {
       process.exit(1);
     }
 
-    for await (const filename of fsa.list(`./config/tileset`)) {
-      const updater = new TileSetUpdater(filename, await fsa.readJson(filename), flags.tag, flags.commit);
-      await updater.reconcile();
-      if (updater.invalidationPaths.length > 0) this.invalidates.push(...updater.invalidationPaths);
+    if (flags.update == null || flags.update.includes(UpdaterType.TileSet)) {
+      for await (const filename of fsa.list(`./config/tileset`)) {
+        const updater = new TileSetUpdater(filename, await fsa.readJson(filename), flags.tag, flags.commit);
+        await updater.reconcile();
+        if (updater.invalidationPaths.length > 0) this.invalidates.push(...updater.invalidationPaths);
+      }
     }
 
     let isSpriteUploaded = false;
-    const absSpritePath = path.resolve(`./build/sprites`);
-    for await (const fileName of fsa.list(absSpritePath)) {
-      let contentType = null;
-      // This should avoid us uploading the .svg files in the sub directories
-      if (fileName.endsWith('.json')) contentType = 'application/json';
-      if (fileName.endsWith('.png')) contentType = 'image/png';
 
-      if (contentType == null) continue;
-      const targetKey = path.join(`/sprites`, fileName.slice(absSpritePath.length));
-      console.log(fileName, targetKey);
-      if (flags.commit) {
-        const isUploaded = await uploadStaticFile(fileName, targetKey, contentType, 'public, max-age=60, stale-while-revalidate=300');
-        if (isUploaded) {
-          logger.info({ path: targetKey }, 'Sprite:Upload');
-          isSpriteUploaded = true;
+    if (flags.update == null || flags.update.includes(UpdaterType.Sprites)) {
+      const absSpritePath = path.resolve(`./build/sprites`);
+      for await (const fileName of fsa.list(absSpritePath)) {
+        let contentType = null;
+        // This should avoid us uploading the .svg files in the sub directories
+        if (fileName.endsWith('.json')) contentType = 'application/json';
+        if (fileName.endsWith('.png')) contentType = 'image/png';
+
+        if (contentType == null) continue;
+        const targetKey = path.join(`/sprites`, fileName.slice(absSpritePath.length));
+        console.log(fileName, targetKey);
+        if (flags.commit) {
+          const isUploaded = await uploadStaticFile(fileName, targetKey, contentType, 'public, max-age=60, stale-while-revalidate=300');
+          if (isUploaded) {
+            logger.info({ path: targetKey }, 'Sprite:Upload');
+            isSpriteUploaded = true;
+          }
         }
       }
     }
@@ -68,7 +85,7 @@ export class CommandImport extends Command {
       // Limit invalidations
       for (const invalidate of this.invalidates.slice(0, 10)) {
         logger.warn(`FlushCache: ${invalidate}`);
-        await invalidateCache(invalidate, flags.commit);
+        // await invalidateCache(invalidate, flags.commit);
       }
     }
 
@@ -97,8 +114,6 @@ export class CommandImport extends Command {
 
         const hasChanges = await updater.reconcile();
         if (hasChanges && updater.invalidatePath) this.invalidates.push(updater.invalidatePath());
-
-        if (fileName.includes('/imagery/')) this.imagery.add(updater.config.id);
       }
       return true;
     });
