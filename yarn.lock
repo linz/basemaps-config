@@ -40,17 +40,17 @@
     pretty-json-log "^1.0.0"
     zod "^3.2.0"
 
-"@basemaps/config@^6.10.0":
-  version "6.10.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/config/-/config-6.10.0.tgz#42583931fcc0e3d2e7da3e16e33c00260485cfe2"
-  integrity sha512-KuD3z8wPKMnuofPy0iZyBaZk2kx32TCryEHNrf5qNp51i0a/hqTQFQ1IAo+x89y63SOvMHwMoMUKa7q6BODnNA==
+"@basemaps/config@^6.10.0", "@basemaps/config@^6.21.1":
+  version "6.21.1"
+  resolved "https://registry.yarnpkg.com/@basemaps/config/-/config-6.21.1.tgz#1afa68fbf2164bca295a0f033cd7d33b8906c342"
+  integrity sha512-Zu6BctOmb0e4kQVB8y2yqClfVlCnLsnAL59YENd1ao2h3wYXfJTpgzq3bMsGwZofVwR6jvy1tGmYOCaqQUx6bg==
   dependencies:
-    "@basemaps/geo" "^6.10.0"
+    "@basemaps/geo" "^6.21.1"
 
-"@basemaps/geo@^6.10.0":
-  version "6.10.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/geo/-/geo-6.10.0.tgz#cd6fa7f0543e7cf2e9cb766d0cc6b813a42e55c6"
-  integrity sha512-oDM4kUzzBCNylzjmeSh0l5L4Ed+q0+V51SElOB9XL/Wr7YfCb7+ZUYXdHFPW72muD/OfKr+0B8JwaemDsyKThQ==
+"@basemaps/geo@^6.10.0", "@basemaps/geo@^6.21.1":
+  version "6.21.1"
+  resolved "https://registry.yarnpkg.com/@basemaps/geo/-/geo-6.21.1.tgz#30897d16bfb087c79b1ff503bc46e9d6aaab56ee"
+  integrity sha512-O4G15dz4oJsYe2xReRpxhkj+w50YZqRJ0m55iY/AWET5L0ZKDFztRT0U4jywsoyZfdX4kDRgyxsTRYyT2gy6Zg==
   dependencies:
     "@linzjs/tile-matrix-set" "^0.0.1"
 
