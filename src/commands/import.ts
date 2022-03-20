@@ -20,7 +20,7 @@ export class CommandImport extends Command {
 
   static flags = {
     tag: Flags.string({ char: 't', description: 'PR tag(PR-number) or production', required: true }),
-    commit: Flags.boolean({ description: 'Actually run job' }),
+    commit: Flags.boolean({ description: 'Import and commit to AWS' }),
     update: Flags.string({ description: 'List of items to update', options: Object.values(UpdaterType), required: false }),
     verbose: Flags.boolean({ description: 'Verbose logging', default: false }),
   };
@@ -34,7 +34,6 @@ export class CommandImport extends Command {
     const { flags } = await this.parse(CommandImport);
     if (flags.verbose) logger.level = 'trace';
 
-    // for await (const fileName of fsa.list(`./config/imagery`)) this.update(fileName, flags.tag, flags.commit);
     if (flags.update == null || flags.update.includes(UpdaterType.Style)) {
       for await (const fileName of fsa.list(`./config/style`)) this.update(fileName, flags.tag, flags.commit);
     }
@@ -85,7 +84,7 @@ export class CommandImport extends Command {
       // Limit invalidations
       for (const invalidate of this.invalidates.slice(0, 10)) {
         logger.warn(`FlushCache: ${invalidate}`);
-        // await invalidateCache(invalidate, flags.commit);
+        await invalidateCache(invalidate, flags.commit);
       }
     }
 

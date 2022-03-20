@@ -4,11 +4,16 @@ import { LogType } from '@basemaps/shared';
 import { fsa } from '@chunkd/fs';
 import { basename } from 'path';
 import { Q } from '../base.config.js';
+import ulid from 'ulid';
 
 function guessIdFromUri(uri: string): string {
   const parts = uri.split('/');
   const id = parts.pop();
-  if (id == null || !id.startsWith('01')) throw new Error('Could not get id from URI: ' + uri);
+
+  if (id == null) throw new Error('Could not get id from URI: ' + uri);
+  const date = new Date(ulid.decodeTime(id));
+  if (date.getUTCFullYear() < 2015) throw new Error('Could not get id from URI: ' + uri);
+  if (date.getUTCFullYear() > new Date().getUTCFullYear() + 1) throw new Error('Could not get id from URI: ' + uri);
   return id;
 }
 
@@ -66,19 +71,17 @@ export class ImageryConfigCache {
 
     if (bounds == null) throw new Error('Failed to get bounds from URI: ' + uri);
     const now = Date.now();
-    const output = {
+    const output: ConfigImagery = {
       id,
       name,
       createdAt: now,
       updatedAt: now,
       projection: tms.projection.code,
-      //   tileMatrix: tms.identifier,
       uri,
       bounds,
       files,
     };
-    // TODO remove unknown cast when resolution and year is removed from ConfigImagery
-    return output as unknown as ConfigImagery;
+    return output;
   }
 
   toTileSet(id: string, i: ConfigImagery): ConfigTileSet {

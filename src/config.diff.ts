@@ -35,8 +35,7 @@ export class ConfigDiff {
     const changes = diff.diff(oldData, newData, (_path: string[], key: string) => IgnoredProperties.indexOf(key) >= 0);
     if (changes) {
       logger.info({ type, record: newData.id }, 'Changes');
-      const output = ConfigDiff.printDiff(changes);
-      console.log(output);
+      ConfigDiff.printDiff(changes);
       return true;
     }
     return false;
