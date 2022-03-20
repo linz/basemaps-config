@@ -13,7 +13,7 @@
   "dependencies": {
     "@basemaps/cli": "^6.14.0",
     "@basemaps/config": "^6.10.0",
-    "@basemaps/geo": "^6.10.0",
+    "@basemaps/geo": "^6.21.1",
     "@basemaps/shared": "^6.12.0",
     "@chunkd/fs": "^8.1.0",
     "@cogeotiff/chunk": "^4.2.0",
