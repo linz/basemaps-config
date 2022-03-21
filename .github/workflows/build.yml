@@ -18,7 +18,7 @@ jobs:
         run: yarn build-sprites
 
       - name: AWS Configure
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v1.6.1
         with:
           aws-region: ap-southeast-2
           mask-aws-account-id: true
@@ -31,8 +31,6 @@ jobs:
         env:
           NODE_ENV: "production"
 
-      # TODO: This is currently broken, the tileset is the only thing that works with tags
-      # we need the imagery to work with @tags
       # - name: (Imagery Config) Create pull request tag
       #   if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
       #   run: |

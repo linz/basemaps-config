@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+if (process.env.AWS_REGION == null) process.env.AWS_REGION = process.env.AWS_DEFAULT_REGION;
 
 import { run, flush, Errors } from '@oclif/core';
 
