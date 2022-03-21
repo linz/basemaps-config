@@ -5,6 +5,10 @@ on:
 
 jobs:
   build:
+    permissions:
+      id-token: write
+      contents: read
+
     runs-on: ubuntu-latest
     permissions:
       id-token: write

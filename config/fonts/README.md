@@ -15,5 +15,5 @@ cargo install build_pbf_glyphs
 Build and import the fonts
 
 ```
-./bin/import-fonts.js
+./bin/bmc.js fonts
 ```
