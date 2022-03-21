@@ -109,7 +109,7 @@ export class TileSetUpdater {
     const imagerySets = await this.loadAllImagery();
     let hasChanges = await this.ensureImageryConfig(imagerySets);
 
-    const oldData = await Config.TileSet.get(this.getId(this.tag));
+    const oldData = await Config.TileSet.get(this.getId(Production));
     const newData = this.prepareNewData(oldData, imagerySets);
 
     if (oldData == null || ConfigDiff.showDiff('ts', oldData, newData, this.logger)) {
@@ -120,9 +120,9 @@ export class TileSetUpdater {
         else throw new Error('Unable to commit changes to: ' + Config.TileSet.prefix);
       }
       hasChanges = true;
-      this.invalidationPaths.push(`/v1/tiles/${newData.name}`);
+      this.invalidationPaths.push(`/v1/tiles/${this.getId(this.tag).slice(3)}/*`);
     }
-    // this.logger.trace({ type: this.db.prefix, record: newData.id }, 'NoChanges');
+    this.logger.trace({ type: Config.TileSet.prefix, record: newData.id }, 'NoChanges');
     return hasChanges;
   }
 
