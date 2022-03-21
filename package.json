@@ -11,7 +11,7 @@
     "bmc": "./bin/bmc.js"
   },
   "dependencies": {
-    "@basemaps/cli": "^6.21.0",
+    "@basemaps/cli": "^6.22.0",
     "@basemaps/config": "^6.21.0",
     "@basemaps/geo": "^6.21.0",
     "@basemaps/shared": "^6.21.0",
