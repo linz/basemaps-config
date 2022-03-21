@@ -86,7 +86,7 @@ export class CommandImport extends Command {
       if (isSpriteUploaded) this.invalidations.push('/sprites/*');
     }
 
-    if (flags.commit) {
+    if (flags.commit && this.invalidations.length > 0) {
       // Lots of invalidations just invalidate everything
       if (this.invalidations.length > 10) {
         await invalidateCache('/*', flags.commit);
