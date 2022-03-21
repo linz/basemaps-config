@@ -26,8 +26,15 @@ export class CommandImport extends Command {
   };
 
   promises: Promise<boolean>[] = [];
-  imagery = new Set<string>();
-  invalidates: string[] = [];
+  /** List of paths to invalidate at the end of the request */
+  invalidations: string[] = [];
+
+  /** wait for all promises in this.promises to exectue */
+  async join(): Promise<boolean[]> {
+    const ret = await Promise.all(this.promises);
+    this.promises = [];
+    return ret;
+  }
 
   async run(): Promise<void> {
     const logger = LogConfig.get();
@@ -41,8 +48,7 @@ export class CommandImport extends Command {
       for await (const fileName of fsa.list(`./config/provider`)) this.update(fileName, flags.tag, flags.commit);
     }
 
-    const res = await Promise.all(this.promises);
-    this.promises = [];
+    const res = await this.join();
     if (res.find((f) => f === false)) {
       logger.fatal('Failed to validate configuration');
       process.exit(1);
@@ -52,7 +58,7 @@ export class CommandImport extends Command {
       for await (const filename of fsa.list(`./config/tileset`)) {
         const updater = new TileSetUpdater(filename, await fsa.readJson(filename), flags.tag, flags.commit);
         await updater.reconcile();
-        if (updater.invalidationPaths.length > 0) this.invalidates.push(...updater.invalidationPaths);
+        if (updater.invalidationPaths.length > 0) this.invalidations.push(...updater.invalidationPaths);
       }
     }
 
@@ -77,14 +83,15 @@ export class CommandImport extends Command {
           }
         }
       }
+      if (isSpriteUploaded) this.invalidations.push('/sprites/*');
     }
 
     if (flags.commit) {
-      if (isSpriteUploaded) await invalidateCache('/sprites');
-      // Limit invalidations
-      for (const invalidate of this.invalidates.slice(0, 10)) {
-        logger.warn(`FlushCache: ${invalidate}`);
-        await invalidateCache(invalidate, flags.commit);
+      // Lots of invalidations just invalidate everything
+      if (this.invalidations.length > 10) {
+        await invalidateCache('/*', flags.commit);
+      } else {
+        await invalidateCache(this.invalidations, flags.commit);
       }
     }
 
@@ -112,7 +119,7 @@ export class CommandImport extends Command {
         }
 
         const hasChanges = await updater.reconcile();
-        if (hasChanges && updater.invalidatePath) this.invalidates.push(updater.invalidatePath());
+        if (hasChanges && updater.invalidatePath) this.invalidations.push(updater.invalidatePath());
       }
       return true;
     });
