@@ -1,12 +1,12 @@
 import { BaseConfig, ConfigDynamoBase } from '@basemaps/config';
 import { BasemapsConfigObject } from '@basemaps/config/build/base.config';
 import { LogConfig, LogType } from '@basemaps/shared';
-import c from 'ansi-colors';
-import diff from 'deep-diff';
-
-export const IgnoredProperties = ['id', 'createdAt', 'updatedAt'];
+import { ConfigDiff } from './config.diff.js';
+import PLimit from 'p-limit';
 
 export const Production = 'production';
+
+export const Q = PLimit(10);
 
 export abstract class Updater<S extends { id: string } = { id: string }, T extends BaseConfig = BaseConfig> {
   id: string;
@@ -54,9 +54,9 @@ export abstract class Updater<S extends { id: string } = { id: string }, T exten
     const oldData = await this.db.get(this.getId(Production));
     const newData = this.prepareNewData(oldData);
 
-    if (oldData == null || this.showDiff(oldData, newData)) {
+    if (oldData == null || ConfigDiff.showDiff(this.db.prefix, oldData, newData, this.logger)) {
       const operation = oldData == null ? 'Insert' : 'Update';
-      this.logger.info({ type: this.db.prefix, record: newData.id }, `Change:${operation}`);
+      this.logger.info({ type: this.db.prefix, record: newData.id, commit: this.isCommit }, `Change:${operation}`);
       if (this.isCommit) {
         if (this.db instanceof ConfigDynamoBase) await this.db.put(newData);
         else throw new Error('Unable to commit changes to: ' + this.db.prefix);
@@ -64,43 +64,6 @@ export abstract class Updater<S extends { id: string } = { id: string }, T exten
       return true;
     }
     this.logger.trace({ type: this.db.prefix, record: newData.id }, 'NoChanges');
-    return false;
-  }
-
-  printDiff(changes: diff.Diff<T, T>[]): string {
-    let output = '';
-    let isArray = false;
-    for (const change of changes) {
-      if (change.kind === 'A') {
-        if (change.path) output += change.path.join();
-        output += this.printDiff([change.item]);
-        isArray = true; // Stop displaying the array changes for each line.
-      } else {
-        if (isArray) continue;
-        if (change.kind === 'E') {
-          if (change.path) output += change.path.join();
-          output += c.green('\t+' + JSON.stringify(change.rhs));
-          output += c.red('\t-' + JSON.stringify(change.lhs)) + '\n';
-        } else if (change.kind === 'N') {
-          if (change.path) output += change.path.join();
-          output += c.green('\t+' + JSON.stringify(change.rhs)) + '\n';
-        } else if (change.kind === 'D') {
-          if (change.path) output += change.path.join();
-          output += c.red('\t-' + JSON.stringify(change.lhs)) + '\n';
-        }
-      }
-    }
-    return output;
-  }
-
-  showDiff(oldData: T, newData: T): boolean {
-    const changes = diff.diff(oldData, newData, (_path: string[], key: string) => IgnoredProperties.indexOf(key) >= 0);
-    if (changes) {
-      this.logger.info({ type: this.db.prefix, record: newData.id }, 'Changes');
-      const output = this.printDiff(changes);
-      console.log(output);
-      return true;
-    }
     return false;
   }
 }
