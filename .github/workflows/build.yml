@@ -1,6 +1,10 @@
 name: Build
 
 on:
+  pull_request:
+    paths:
+      - 'config/tileset/*.json'
+      - 'config/style/*.json'
   push:
 
 jobs:
@@ -31,12 +35,12 @@ jobs:
         env:
           NODE_ENV: "production"
 
-      # - name: (Imagery Config) Create pull request tag
-      #   if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
-      #   run: |
-      #     ./bin/bmc.js import -t pr-${{ github.event.number }} --commit
-      #   env:
-      #     NODE_ENV: "production"
+      - name: (Imagery Config) Create pull request tag
+        if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
+        run: |
+          ./bin/bmc.js import -t pr-${{ github.event.number }} --commit
+        env:
+          NODE_ENV: "production"
 
       - name: (Imagery Config) Create production tag
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
