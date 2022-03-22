@@ -19,6 +19,27 @@
       "paint": { "background-color": "rgba(184, 220, 242, 1)" }
     },
     {
+      "id": "Landcover-Sand",
+      "type": "fill",
+      "source": "LINZ Basemaps",
+      "source-layer": "landcover",
+      "minzoom": 8,
+      "maxzoom": 24,
+      "filter": ["all", ["==", "class", "sand"]],
+      "layout": { "visibility": "visible" },
+      "paint": { "fill-color": "rgba(220, 205, 177, 0.3)" }
+    },
+    {
+      "id": "Landuse-Mangrove",
+      "type": "fill",
+      "source": "LINZ Basemaps",
+      "source-layer": "landuse",
+      "minzoom": 12,
+      "filter": ["all", ["==", "wetland_feature", "mangrove"]],
+      "layout": { "visibility": "visible" },
+      "paint": { "fill-color": "rgba(184, 199, 155, 0.3)" }
+    },
+    {
       "id": "Coastline2",
       "type": "fill",
       "source": "LINZ Basemaps",
@@ -37,17 +58,6 @@
         "fill-antialias": true,
         "fill-translate-anchor": "map"
       }
-    },
-    {
-      "id": "Landcover-Sand",
-      "type": "fill",
-      "source": "LINZ Basemaps",
-      "source-layer": "landcover",
-      "minzoom": 8,
-      "maxzoom": 24,
-      "filter": ["all", ["==", "class", "sand"]],
-      "layout": { "visibility": "visible" },
-      "paint": { "fill-color": "rgba(255, 241, 211, 0.6)" }
     },
     {
       "id": "Vegetation-Scatteredscrub",
@@ -662,45 +672,6 @@
       }
     },
     {
-      "id": "Landuse-Mangrove",
-      "type": "fill",
-      "source": "LINZ Basemaps",
-      "source-layer": "landuse",
-      "minzoom": 12,
-      "filter": ["all", ["==", "wetland_feature", "mangrove"]],
-      "layout": { "visibility": "visible" },
-      "paint": { "fill-color": "rgba(116, 205, 144, 0.34)" }
-    },
-    {
-      "id": "Landuse-MarineFarm-half",
-      "type": "fill",
-      "source": "LINZ Basemaps",
-      "source-layer": "landuse",
-      "minzoom": 12,
-      "maxzoom": 15,
-      "filter": ["all", ["==", "class", "marine_farm"]],
-      "layout": { "visibility": "visible" },
-      "paint": {
-        "fill-color": "rgba(25, 114, 242, 0.45)",
-        "fill-opacity": 0.5,
-        "fill-pattern": "marine_farm_poly_half"
-      }
-    },
-    {
-      "id": "Landuse-MarineFarm",
-      "type": "fill",
-      "source": "LINZ Basemaps",
-      "source-layer": "landuse",
-      "minzoom": 15,
-      "filter": ["all", ["==", "class", "marine_farm"]],
-      "layout": { "visibility": "visible" },
-      "paint": {
-        "fill-color": "rgba(25, 114, 242, 0.45)",
-        "fill-opacity": 0.5,
-        "fill-pattern": "marine_farm_poly"
-      }
-    },
-    {
       "id": "Landuse-Pond",
       "type": "fill",
       "source": "LINZ Basemaps",
@@ -989,18 +960,6 @@
           ]
         },
         "line-color": "rgba(152, 145, 145,0.6)"
-      }
-    },
-    {
-      "id": "Transport-FerryCrossing",
-      "type": "line",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 10,
-      "filter": ["all", ["==", "class", "ferry"]],
-      "paint": {
-        "line-dasharray": [15, 10],
-        "line-color": "rgba(0, 140, 204, 1)"
       }
     },
     {
@@ -1959,27 +1918,6 @@
         "text-color": "rgba(0, 140, 204, 1)",
         "text-halo-color": "rgba(239, 239, 239, 0.80)",
         "text-halo-width": 1.5
-      }
-    },
-    {
-      "id": "Transport-Ferry-Symbol",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 11,
-      "filter": ["all", ["==", "class", "ferry"]],
-      "layout": {
-        "icon-rotation-alignment": "viewport",
-        "icon-allow-overlap": false,
-        "text-pitch-alignment": "auto",
-        "text-justify": "center",
-        "icon-text-fit": "none",
-        "symbol-z-order": "auto",
-        "icon-size": 0.5,
-        "symbol-placement": "line-center",
-        "icon-ignore-placement": false,
-        "icon-image": "star_pnt_fill",
-        "text-font": []
       }
     },
     {
