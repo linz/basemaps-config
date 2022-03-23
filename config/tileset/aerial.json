@@ -754,6 +754,12 @@
       "minZoom": 14
     },
     {
+      "2193": "s3://linz-basemaps/2193/ōtorohanga_urban_2021_0-1m_RGB/01FYWKAJ86W9P7RWM1VB62KD0H",
+      "3857": "s3://linz-basemaps/3857/ōtorohanga_urban_2021_0-1m_RGB/01FYWKATAEK2ZTJQ2PX44Y0XNT",
+      "name": "ōtorohanga_urban_2021_0-1m_RGB",
+      "minZoom": 14
+    },
+    {
       "2193": "s3://linz-basemaps/2193/auckland_rural_2020_0-075m_RGB/01FXP9YHEQM6XA6DDEGNKMEE7H",
       "3857": "s3://linz-basemaps/3857/auckland_rural_2020_0-075m_RGB/01FXPA0F9WZS0MMABYHRCFYMV0",
       "name": "auckland_rural_2020_0-075m_RGB",
