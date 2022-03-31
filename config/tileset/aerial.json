@@ -28,7 +28,7 @@
     },
     {
       "2193": "s3://linz-basemaps/2193/nz-nearshore-islands_satellite_2010-2021_0-5m_RGB/01FZEY2P6FE672E5P6G1HRES93",
-      "3857": "s3://linz-basemaps/3857/nz-nearshore-islands_satellite_2010-2021_0-5m_RGB/01FZF15J3TTVDR5ZGVAEPVXAA0",
+      "3857": "s3://linz-basemaps/3857/nz-nearshore-islands_satellite_2010-2021_0-5m_RGB/01FZF2DH81CT0R7NSS1G1E6YT5",
       "name": "nz-nearshore-islands_satellite_2010-2021_0-5m_RGB",
       "minZoom": 10
     },
