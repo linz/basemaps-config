@@ -39,6 +39,12 @@
       "minZoom": 5
     },
     {
+      "2193": "s3://linz-basemaps/2193/bounty-islands_satellite_2020_0-5m_RGB/01FZYK75PS5DM0BKGZ885RZ94D",
+      "3857": "s3://linz-basemaps/3857/bounty-islands_satellite_2020_0-5m_RGB/01FZYK7C7Y9GHSPRKM4B4C5RSY",
+      "name": "bounty-islands_satellite_2020_0-5m_RGB",
+      "minZoom": 5
+    },
+    {
       "2193": "s3://linz-basemaps/2193/tasman_rural_2001-2002_1m_RGB/01F6P1TJ28B0HSRV2MNTBFSMKA",
       "3857": "s3://linz-basemaps/3857/tasman_rural_2001-2002_1m_RGB/01EE9646WHWA7X46KDRATVWY9Z",
       "name": "tasman_rural_2001-2002_1m_RGB",
