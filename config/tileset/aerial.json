@@ -51,6 +51,12 @@
       "minZoom": 2
     },
     {
+      "2193": "s3://linz-basemaps/2193/kermadec-islands_satellite_2020-2021_0-5m_RGB/01G00S1WQ72T0PCN9T7QNE81V0",
+      "3857": "s3://linz-basemaps/3857/kermadec-islands_satellite_2020-2021_0-5m_RGB/01G00S25RMGY8FEHWFRYNPFDFJ",
+      "name": "kermadec-islands_satellite_2020-2021_0-5m_RGB",
+      "minZoom": 5
+    },
+    {
       "2193": "s3://linz-basemaps/2193/tasman_rural_2001-2002_1m_RGB/01F6P1TJ28B0HSRV2MNTBFSMKA",
       "3857": "s3://linz-basemaps/3857/tasman_rural_2001-2002_1m_RGB/01EE9646WHWA7X46KDRATVWY9Z",
       "name": "tasman_rural_2001-2002_1m_RGB",
