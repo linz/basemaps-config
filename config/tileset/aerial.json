@@ -57,6 +57,12 @@
       "minZoom": 5
     },
     {
+      "2193": "s3://linz-basemaps/2193/nz-nearshore-islands_satellite_2010-2021_0-5m_RGB/01G00XY0TVJJ4QVJ7988TCKGWS",
+      "3857": "s3://linz-basemaps/3857/nz-nearshore-islands_satellite_2010-2021_0-5m_RGB/01G00XYQ8YKAZC7P5QJ4BPCX22",
+      "name": "nz-nearshore-islands_satellite_2010-2021_0-5m_RGB",
+      "minZoom": 5
+    },
+    {
       "2193": "s3://linz-basemaps/2193/tasman_rural_2001-2002_1m_RGB/01F6P1TJ28B0HSRV2MNTBFSMKA",
       "3857": "s3://linz-basemaps/3857/tasman_rural_2001-2002_1m_RGB/01EE9646WHWA7X46KDRATVWY9Z",
       "name": "tasman_rural_2001-2002_1m_RGB",
