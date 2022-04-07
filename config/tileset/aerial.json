@@ -45,6 +45,12 @@
       "minZoom": 5
     },
     {
+      "2193": "s3://linz-basemaps/2193/campbell-island-motu-ihupuku_satellite_2015-2020_0-5m_RGB/01G00E8Y3HSN66NDDKP89H2VTT",
+      "3857": "s3://linz-basemaps/3857/campbell-island-motu-ihupuku_satellite_2015-2020_0-5m_RGB/01G00E9728953QMD6NY7BVDGSN",
+      "name": "campbell-island-motu-ihupuku_satellite_2015-2020_0-5m_RGB",
+      "minZoom": 2
+    },
+    {
       "2193": "s3://linz-basemaps/2193/tasman_rural_2001-2002_1m_RGB/01F6P1TJ28B0HSRV2MNTBFSMKA",
       "3857": "s3://linz-basemaps/3857/tasman_rural_2001-2002_1m_RGB/01EE9646WHWA7X46KDRATVWY9Z",
       "name": "tasman_rural_2001-2002_1m_RGB",
