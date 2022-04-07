@@ -54,14 +54,14 @@
   dependencies:
     "@linzjs/tile-matrix-set" "^0.0.1"
 
-"@basemaps/shared@^6.22.0":
-  version "6.22.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/shared/-/shared-6.22.0.tgz#18225f752a8b7db4c2b51e2463aeba853b1da297"
-  integrity sha512-u53Fod3gEMeqNrddrSCv3t2j4bCQWG9d1FwrzHPm5IhMP6owb4wT1kXcUf9kaLQ8/fAhExMw541ZUvtNE0eKuA==
+"@basemaps/shared@^6.22.0", "@basemaps/shared@^6.24.1":
+  version "6.24.1"
+  resolved "https://registry.yarnpkg.com/@basemaps/shared/-/shared-6.24.1.tgz#8297a750d210734c5961e53f6c46ebaf523249c3"
+  integrity sha512-hMiQ4sdWFe6Xlrr6y39L7pRCNyE/XYjo41mIuyCzIFAHSc9uabaoKgZWzY+rh/SqEpIVQQK/tCj7UZMI38Eitw==
   dependencies:
     "@basemaps/config" "^6.21.1"
     "@basemaps/geo" "^6.21.1"
-    "@basemaps/tiler" "^6.21.1"
+    "@basemaps/tiler" "^6.23.0"
     "@chunkd/source-aws-v2" "^8.1.0"
     "@linzjs/geojson" "^6.21.1"
     "@linzjs/metrics" "^6.21.1"
@@ -73,13 +73,13 @@
     source-map-support "^0.5.19"
     ulid "^2.3.0"
 
-"@basemaps/tiler@^6.21.1":
-  version "6.21.1"
-  resolved "https://registry.yarnpkg.com/@basemaps/tiler/-/tiler-6.21.1.tgz#f5e0861bae84b618c0d31bfd917e782f756bab20"
-  integrity sha512-G+mQbx8kQllY9HBf2tcSsK1EZ7q75A1Mpq2r9i9y9YhlGfkk5VrzClTxnIAh8xpZ+kvHMQAvgOclXmFRQlgEOA==
+"@basemaps/tiler@^6.23.0":
+  version "6.23.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/tiler/-/tiler-6.23.0.tgz#fe6651dc733807ef7a14725042c06b7839908328"
+  integrity sha512-ty1dp48XUdTH5TVY5xbgFcepJjoPAemtoGow56KfIuWtwnHCpOI9/3xA5rDXV2DRGUgteGVMUK/C1SW+NQeH5A==
   dependencies:
     "@basemaps/geo" "^6.21.1"
-    "@cogeotiff/core" "^6.1.1"
+    "@cogeotiff/core" "^7.0.0"
     "@linzjs/metrics" "^6.21.1"
 
 "@chunkd/core@^8.1.0":
@@ -127,7 +127,7 @@
     "@chunkd/core" "^8.1.0"
     node-fetch "^3.1.0"
 
-"@cogeotiff/core@7.0.0", "@cogeotiff/core@^6.1.1":
+"@cogeotiff/core@7.0.0", "@cogeotiff/core@^6.1.1", "@cogeotiff/core@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@cogeotiff/core/-/core-7.0.0.tgz#18a617229e100ab7cc03ce2a6c4e5bf15443d0bb"
   integrity sha512-YqIOmd6jYxR0u+m1Xode+2UP+UGapsrFxofkghmsc0Ym1DDcAVMHyAkNlPPBTzBOFtyaTA+bhhyZWJLwcfsKvQ==
