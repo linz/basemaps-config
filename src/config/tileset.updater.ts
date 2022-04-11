@@ -7,7 +7,7 @@ import { ImageryCache } from './imagery.config.js';
 import { TileSetConfigSchema, zTileSetConfig } from './tileset.parse.js';
 
 // There are multiple layers for chathams which causes issues when viewing them as a single layer
-const IgnoreTileSet = new Set(['01F66EE7AETCNNKDJYCRSJ4CED', '01ED849PJ44FA7S612QAXN9P11']);
+const IgnoreTileSet = new Set(['im_01F66EE7AETCNNKDJYCRSJ4CED', 'im_01ED849PJ44FA7S612QAXN9P11']);
 
 export class TileSetUpdater {
   path: string;
@@ -62,7 +62,12 @@ export class TileSetUpdater {
 
     let hasChanges = false;
     const allImgIds = new Set(img.map((i) => i.id));
-    const allTsIds = new Set(img.map((i) => i.id.replace('im_', 'ts_')));
+    const allTsIds = new Set<string>();
+
+    for (const i of img) {
+      allTsIds.add(i.id.replace('im_', 'ts_'));
+      allTsIds.add(`ts_${i.name}`);
+    }
 
     const existingImagery = await Config.Imagery.getAll(allImgIds);
     this.logger.info({ count: existingImagery.size, expected: allTsIds.size }, 'LoadImageryConfig:Done');
