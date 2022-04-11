@@ -6,6 +6,9 @@ import { ConfigDiff } from '../config.diff.js';
 import { ImageryCache } from './imagery.config.js';
 import { TileSetConfigSchema, zTileSetConfig } from './tileset.parse.js';
 
+// There are multiple layers for chathams which causes issues when viewing them as a single layer
+const IgnoreTileSet = new Set(['01F66EE7AETCNNKDJYCRSJ4CED', '01ED849PJ44FA7S612QAXN9P11']);
+
 export class TileSetUpdater {
   path: string;
   config: TileSetConfigSchema;
@@ -67,6 +70,8 @@ export class TileSetUpdater {
     const existingTileSets = await Config.TileSet.getAll(allTsIds);
     this.logger.info({ count: existingTileSets.size, expected: allTsIds.size }, 'LoadTileSetConfig:Done');
 
+    const imgByName = new Map<string, Map<number, ConfigImagery>>();
+
     for (const i of img) {
       let hasImageryChanged = false;
       const dbImagery = existingImagery.get(i.id);
@@ -99,9 +104,52 @@ export class TileSetUpdater {
       }
 
       // Invalidate the existing tile set as something has changed path
-      if (hasImageryChanged) this.invalidationPaths.push(`/v1/tiles/${tsId}/*`);
+      if (hasImageryChanged) {
+        this.invalidationPaths.push(`/v1/tiles/${tsId}/*`);
+        this.invalidationPaths.push(`/v1/tiles/${tsId.slice(3)}/*`);
+      }
       hasChanges = hasChanges || hasImageryChanged;
+
+      if (IgnoreTileSet.has(i.id)) continue;
+      const prevImages = imgByName.get(i.name) ?? new Map();
+      const prev = prevImages.get(i.projection);
+      if (prev?.uri === i.uri) continue;
+      if (prev != null) throw new Error('Duplicate projection differing uris ' + prev.uri + ' vs ' + i.uri);
+      prevImages.set(i.projection, i);
+      imgByName.set(i.name, prevImages);
     }
+
+    // Create a tileset based on the imagery name
+    for (const i of imgByName.values()) {
+      if (i.size > 2 || i.size < 1) throw new Error('Duplicate imagery: ' + [...i.values()].map((c) => c.uri).join(', '));
+      const imagery = [...i.values()]; // One or two imagery sets
+
+      // TODO should we sanitize the names here? generally the name is a s3 compliant uri
+      const tsId = 'ts_' + imagery[0].name; // TODO should we remove _RGBA/_RGB from the end of the name
+      // Create a tileset with the first imagery set this will only create one layer
+      const tileSet = ImageryCache.toTileSet(tsId, imagery[0]);
+      for (const img of imagery) tileSet.layers[0][img.projection] = img.id;
+
+      const dbTileSet = existingTileSets.get(tsId);
+      if (dbTileSet == null || ConfigDiff.showDiff('ts', dbTileSet, tileSet, this.logger)) {
+        const operation = dbTileSet == null ? 'Insert' : 'Update';
+        this.logger.info({ type: 'ts', record: tsId, title: tileSet.name, projections: imagery.map((c) => c.projection) }, `Change:${operation}`);
+        // TODO enable
+
+        // if (this.isCommit) {
+        //   tileSet.createdAt = dbTileSet?.createdAt ?? tileSet.createdAt;
+
+        //   if (Config.TileSet instanceof ConfigDynamoBase) await Config.TileSet.put(tileSet);
+        //   else throw new Error('Unable to commit changes to: ' + Config.TileSet.prefix);
+        // }
+
+        this.invalidationPaths.push(`/v1/tiles/${tsId}/*`);
+        this.invalidationPaths.push(`/v1/tiles/${tsId.slice(3)}/*`);
+
+        hasChanges = true;
+      }
+    }
+
     return hasChanges;
   }
 

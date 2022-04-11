@@ -67,7 +67,7 @@ export class ImageryConfigCache {
       return bXyz[2] - aXyz[2];
     });
 
-    log.debug({ uri, files: files.length }, 'FetchImagery:Done');
+    log.trace({ uri, files: files.length }, 'FetchImagery:Done');
 
     if (bounds == null) throw new Error('Failed to get bounds from URI: ' + uri);
     const now = Date.now();
