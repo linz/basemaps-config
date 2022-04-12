@@ -18,7 +18,7 @@
     "@chunkd/fs": "^8.1.0",
     "@linzjs/docker-command": "^6.21.1",
     "@mapbox/spritezero": "^8.0.0",
-    "@oclif/core": "^1.6.1",
+    "@oclif/core": "^1.7.0",
     "deep-diff": "^1.0.2",
     "p-limit": "^4.0.0",
     "pretty-json-log": "^1.0.0",
