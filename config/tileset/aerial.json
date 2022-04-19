@@ -1,7 +1,7 @@
 {
   "type": "raster",
   "id": "ts_aerial",
-  "background": "dce9edff",
+  "background": "05293dff",
   "layers": [
     {
       "3857": "s3://linz-basemaps/3857/gebco_2021_305-75m/01G0DBCAEQAAPD0D2F2VZS40XM",
