@@ -13,7 +13,7 @@
   "dependencies": {
     "@basemaps/cli": "^6.22.0",
     "@basemaps/config": "^6.21.1",
-    "@basemaps/geo": "^6.21.1",
+    "@basemaps/geo": "^6.24.2",
     "@basemaps/shared": "^6.22.0",
     "@chunkd/fs": "^8.1.0",
     "@linzjs/docker-command": "^6.21.1",
