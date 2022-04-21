@@ -5,12 +5,8 @@
   "layers": [
     {
       "2193": "s3://linz-basemaps/2193/gebco_2021_Nztm2000Quad_305-75m/01G14ZABTXES5EEVZJQ0CJAX5N",
+      "3857": "s3://linz-basemaps/2193/gebco_2021_Nztm2000Quad_305-75m/01G1735WKA6J8M24914Y16MSWY",
       "name": "gebco_2021_305-75m",
-      "maxZoom": 15
-    },
-    {
-      "3857": "s3://linz-basemaps/3857/gebco_2020_305-75m/01EDMTM3P563P06TWYQAZRA9F6",
-      "name": "gebco_2020_305-75m",
       "maxZoom": 15
     },
     {
