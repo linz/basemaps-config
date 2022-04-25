@@ -75,7 +75,7 @@
       "type": "fill",
       "source": "LINZ Basemaps",
       "source-layer": "landcover",
-      "filter": ["all", ["==", "class", "grass"], ["==", "natural", "scrub"]],
+      "filter": ["all", ["==", "class", "grass"], ["==", "natural", "scrub"], ["!has", "distribution"]],
       "layout": { "visibility": "visible" },
       "paint": {
         "fill-color": "rgba(199, 228, 183, 0.4)",
