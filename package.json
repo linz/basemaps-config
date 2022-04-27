@@ -35,7 +35,7 @@
     "@linzjs/style": "^3.7.0",
     "@types/deep-diff": "^1.0.0",
     "@types/mapbox__spritezero": "^6.3.2",
-    "@types/node": "^14.11.2",
+    "@types/node": "^17.0.29",
     "@types/p-limit": "^2.2.0",
     "@types/prettier": "^2.4.4",
     "conventional-changelog-cli": "^2.2.2",
