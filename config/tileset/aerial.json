@@ -781,7 +781,7 @@
       "2193": "s3://linz-basemaps/2193/christchurch_urban_2020-2021_0-075m_RGB/01FPXB0T4ZCASWGX1X1GVEHDQZ",
       "3857": "s3://linz-basemaps/3857/christchurch_urban_2020-2021_0-075m_RGB/01FPXB36CCAK3FC6FWCMK1D156",
       "name": "christchurch_urban_2020-2021_0-075m_RGB",
-      "minZoom": 14
+      "minZoom": 13
     },
     {
       "2193": "s3://linz-basemaps/2193/christchurch_urban_2021_0-05m_RGB/01FPXAY15VB9MES5WQ0N2SPEG6",
