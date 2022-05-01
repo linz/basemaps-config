@@ -406,6 +406,7 @@
       "type": "line",
       "source": "LINZ Basemaps",
       "source-layer": "parcel_boundaries",
+      "minzoom": 15,
       "filter": ["none", ["==", "parcel_intent", "Road"], ["==", "parcel_intent", "Hydro"]],
       "layout": { "visibility": "visible" },
       "paint": {
