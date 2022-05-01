@@ -2198,6 +2198,30 @@
       }
     },
     {
+      "id": "All-Waterway-River-Names",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "waterway",
+      "minzoom": 12,
+      "filter": ["all", ["==", "class", "river"], ["has", "name"]],
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 1000,
+        "text-field": "{name}",
+        "text-font": ["Open Sans Italic"],
+        "text-size": 12,
+        "text-anchor": "bottom",
+        "text-ignore-placement": true,
+        "text-allow-overlap": true
+      },
+      "paint": {
+        "text-color": "rgba(0, 140, 204, 1)",
+        "text-halo-color": "rgba(239, 239, 239, 0.80)",
+        "text-halo-width": 1.5,
+        "text-halo-blur": 1
+      }
+    },
+    {
       "id": "Housenumber",
       "type": "symbol",
       "source": "LINZ Basemaps",
