@@ -22,7 +22,6 @@
       "source": "openmaptiles",
       "source-layer": "coastline",
       "minzoom": 0,
-      "maxzoom": 24,
       "filter": ["all"],
       "layout": {
         "visibility": "visible"

@@ -78,7 +78,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "lane_count", 1], ["!=", "class", "motorway"], ["==", "status", "under construction"]],
       "layout": {
         "visibility": "none",
@@ -103,7 +102,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["in", "lane_count", 2, 3, 4, 5, 6, 7, 8], ["!=", "class", "motorway"], ["==", "status", "under construction"]],
       "layout": {
         "visibility": "none",
@@ -127,7 +125,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "status", "under construction"], ["in", "lane_count", 2, 3, 4, 5, 6, 7]],
       "layout": {
         "visibility": "none",
@@ -154,7 +151,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 11,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "railway"], ["has", "rway_use"]],
       "layout": {
         "visibility": "none",
@@ -169,7 +165,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 11,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "railway"], ["==", "track_type", "single"], ["!has", "rway_use"]],
       "layout": {
         "visibility": "none",
@@ -184,7 +179,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 11,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "railway"], ["==", "track_type", "multiple"]],
       "layout": {
         "visibility": "none",
@@ -203,7 +197,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 11,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "railway"], ["==", "track_type", "multiple"]],
       "layout": {
         "visibility": "none",
@@ -240,7 +233,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 14,
-      "maxzoom": 24,
       "filter": ["all", ["==", "brunnel", "bridge"], ["==", "use_1", "foot traffic"]],
       "layout": {
         "visibility": "none",
@@ -264,7 +256,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "brunnel", "tunnel"]],
       "layout": {
         "visibility": "none",
@@ -292,7 +283,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "brunnel", "bridge"], ["in", "use_1", "train", "vehicle"]],
       "layout": {
         "visibility": "none",
@@ -316,7 +306,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 14,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "track"], ["==", "track_use", "foot"]],
       "layout": {
         "visibility": "visible",
@@ -351,7 +340,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 14,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "track"], ["==", "track_use", "foot"]],
       "layout": {
         "visibility": "visible",
@@ -383,7 +371,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 13,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "track"], ["==", "track_use", "vehicle"]],
       "layout": {
         "visibility": "visible",
@@ -422,7 +409,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 13,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "track"], ["==", "track_use", "vehicle"]],
       "layout": {
         "visibility": "visible",
@@ -457,7 +443,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 13,
-      "maxzoom": 24,
       "filter": ["all", ["==", "lane_count", 1], ["!=", "class", "motorway"]],
       "layout": {
         "visibility": "visible",
@@ -488,7 +473,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 13,
-      "maxzoom": 24,
       "filter": ["all", ["in", "lane_count", 2, 3, 4, 5, 6, 7, 8], ["!=", "class", "motorway"]],
       "layout": {
         "visibility": "visible",
@@ -519,7 +503,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 13,
-      "maxzoom": 24,
       "filter": ["all", ["==", "surface", "metalled"], ["==", "lane_count", 1]],
       "layout": {
         "visibility": "visible",
@@ -552,7 +535,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 13,
-      "maxzoom": 24,
       "filter": ["all", ["==", "surface", "metalled"], ["in", "lane_count", 2, 3, 4, 5, 6, 7]],
       "layout": {
         "visibility": "visible",
@@ -585,7 +567,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "surface", "metalled"], ["==", "lane_count", 1]],
       "layout": {
         "visibility": "none",
@@ -618,7 +599,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "surface", "metalled"], ["in", "lane_count", 2, 3, 4, 5, 6, 7]],
       "layout": {
         "visibility": "none",
@@ -651,7 +631,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 13,
-      "maxzoom": 24,
       "filter": ["all", ["==", "surface", "unmetalled"]],
       "layout": {
         "visibility": "visible",
@@ -684,7 +663,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 13,
-      "maxzoom": 24,
       "filter": ["all", ["==", "surface", "unmetalled"], ["in", "lane_count", 2, 3, 4, 5, 6, 7]],
       "layout": {
         "visibility": "visible",
@@ -717,7 +695,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 13,
-      "maxzoom": 24,
       "filter": ["all", ["==", "surface", "sealed"], ["==", "lane_count", 1], ["!=", "class", "motorway"]],
       "layout": {
         "visibility": "visible",
@@ -750,7 +727,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 13,
-      "maxzoom": 24,
       "filter": ["all", ["==", "surface", "sealed"], ["in", "lane_count", 2, 3, 4, 5, 6, 7], ["!=", "class", "motorway"]],
       "layout": {
         "visibility": "visible",
@@ -783,7 +759,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 8,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "motorway"], ["in", "lane_count", 1]],
       "layout": {
         "visibility": "visible",
@@ -815,7 +790,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 8,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "motorway"], ["in", "lane_count", 2, 3]],
       "layout": {
         "visibility": "visible",
@@ -847,7 +821,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 8,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "motorway"], ["in", "lane_count", 4, 5, 6, 7]],
       "layout": {
         "visibility": "visible",
@@ -879,7 +852,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 8,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "motorway"], ["==", "lane_count", 1]],
       "layout": {
         "visibility": "visible",
@@ -917,7 +889,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 8,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "motorway"], ["in", "lane_count", 2, 3]],
       "layout": {
         "visibility": "visible",
@@ -955,7 +926,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 8,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "motorway"], ["in", "lane_count", 4, 5, 6, 7]],
       "layout": {
         "visibility": "visible",

@@ -24,7 +24,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "landcover",
       "minzoom": 8,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "sand"]],
       "layout": { "visibility": "visible" },
       "paint": { "fill-color": "rgba(226, 226, 226, 0.75)" }
@@ -55,7 +54,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "coastline",
       "minzoom": 0,
-      "maxzoom": 24,
       "filter": ["all"],
       "layout": { "visibility": "visible" },
       "paint": {
@@ -176,7 +174,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "landcover",
       "minzoom": 16,
-      "maxzoom": 24,
       "filter": ["all", ["==", "tree", "exotic"], ["==", "landuse", "wood"]],
       "layout": { "visibility": "visible" },
       "paint": {
@@ -199,7 +196,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "landcover",
       "minzoom": 0,
-      "maxzoom": 24,
       "filter": ["all", ["==", "tree", "native"]],
       "layout": { "visibility": "visible" },
       "paint": {
@@ -239,7 +235,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "landcover",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "landuse", "orchard"]],
       "layout": { "visibility": "visible" },
       "paint": { "fill-color": "rgba(27, 127, 36, 0.1)", "fill-outline-color": "rgba(255, 255, 255, 1)", "fill-translate-anchor": "viewport" }
@@ -250,7 +245,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "landcover",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "landuse", "vineyard"]],
       "layout": { "visibility": "visible" },
       "paint": { "fill-color": "rgba(27, 127, 36, 0.2)", "fill-translate-anchor": "viewport", "fill-outline-color": "rgba(255, 255, 255, 1)", "fill-antialias": false }
@@ -260,7 +254,6 @@
       "type": "fill",
       "source": "LINZ Basemaps",
       "source-layer": "landcover",
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "wetland"], ["==", "wetland_type", "swamp"]],
       "layout": { "visibility": "visible" },
       "paint": {
@@ -278,7 +271,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "landcover",
       "minzoom": 16,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "wetland"], ["==", "wetland_type", "swamp"]],
       "layout": { "visibility": "visible" },
       "paint": { "fill-antialias": true, "fill-opacity": 0.5, "fill-color": "rgba(156, 156, 156, 1)", "fill-pattern": "swamp_poly_sparse" }
@@ -414,6 +406,7 @@
       "type": "line",
       "source": "LINZ Basemaps",
       "source-layer": "parcel_boundaries",
+      "minzoom": 15,
       "filter": ["none", ["==", "parcel_intent", "Road"], ["==", "parcel_intent", "Hydro"]],
       "layout": { "visibility": "visible" },
       "paint": {
@@ -559,7 +552,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "water",
       "minzoom": 0,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "lake"]],
       "layout": { "visibility": "visible" },
       "paint": { "fill-color": "rgba(184, 220, 242, 1)", "fill-opacity": 1, "fill-translate-anchor": "map", "fill-antialias": true }
@@ -614,7 +606,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "landcover",
       "minzoom": 13,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "sand"]],
       "layout": { "visibility": "visible" },
       "paint": { "fill-opacity": 0.45, "fill-color": "rgba(135, 122, 122, 1)", "fill-pattern": "sand_land_poly_half" }
@@ -1038,7 +1029,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "landuse",
       "minzoom": 15,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "gravel_pit"]],
       "layout": { "visibility": "visible" },
       "paint": { "fill-pattern": "gravel_poly" }
@@ -1058,7 +1048,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "landuse",
       "minzoom": 15,
-      "maxzoom": 24,
       "filter": ["all", ["==", "wetland_feature", "mangrove"]],
       "layout": { "visibility": "visible" },
       "paint": { "fill-pattern": "mangrove_poly_sparse" }
@@ -1367,7 +1356,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "poi",
       "minzoom": 0,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "storage_tank"], ["!has", "store_item"]],
       "layout": { "visibility": "visible" },
       "paint": {
@@ -1393,7 +1381,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "poi",
       "minzoom": 0,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "storage_tank"], ["==", "store_item", "fuel"]],
       "layout": { "visibility": "visible" },
       "paint": {
@@ -1414,7 +1401,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "poi",
       "minzoom": 0,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "storage_tank"], ["==", "store_item", "water"]],
       "layout": { "visibility": "visible" },
       "paint": {
@@ -1436,7 +1422,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "poi",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "storage_tank_pt"]],
       "layout": { "visibility": "visible" },
       "paint": {
@@ -1462,7 +1447,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "poi",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "storage_tank_pt"], ["!has", "store_item"]],
       "layout": { "visibility": "visible" },
       "paint": {
@@ -1488,7 +1472,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "poi",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "storage_tank_pt"], ["==", "store_item", "fuel"]],
       "layout": { "visibility": "visible" },
       "paint": {
@@ -1514,7 +1497,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "poi",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "storage_tank_pt"], ["==", "store_item", "water"]],
       "layout": { "visibility": "visible" },
       "paint": {
@@ -1710,7 +1692,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "building",
       "minzoom": 14,
-      "maxzoom": 24,
       "layout": { "visibility": "visible" },
       "paint": {
         "fill-color": {
@@ -1799,7 +1780,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 13,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "track"], ["==", "track_use", "foot"]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
@@ -1819,7 +1799,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 13,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "track"], ["==", "track_use", "foot"]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
@@ -1847,7 +1826,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 13,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "track"], ["==", "track_use", "vehicle"]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
@@ -1870,7 +1848,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 13,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "track"], ["==", "track_use", "vehicle"]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
@@ -1900,7 +1877,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "lane_count", 1], ["!=", "class", "motorway"]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
@@ -1930,7 +1906,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["in", "lane_count", 2, 3, 4, 5, 6, 7, 8], ["!=", "class", "motorway"]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
@@ -1960,7 +1935,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 13,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "motorway"], ["in", "lane_count", 1]],
       "layout": { "visibility": "visible", "line-join": "round", "line-cap": "round" },
       "paint": {
@@ -1985,7 +1959,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 13,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "motorway"], ["in", "lane_count", 2, 3]],
       "layout": { "visibility": "visible", "line-join": "round", "line-cap": "round" },
       "paint": {
@@ -2010,7 +1983,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 13,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "motorway"], ["in", "lane_count", 4, 5, 6, 7]],
       "layout": { "visibility": "visible", "line-join": "round", "line-cap": "round" },
       "paint": {
@@ -2035,7 +2007,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "surface", "unmetalled"]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
@@ -2061,7 +2032,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "surface", "metalled"], ["==", "lane_count", 1]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
@@ -2087,7 +2057,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "surface", "metalled"], ["==", "lane_count", 1]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
@@ -2120,7 +2089,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "lane_count", 1], ["!=", "class", "motorway"], ["==", "status", "under construction"]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
@@ -2145,7 +2113,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "surface", "sealed"], ["==", "lane_count", 1], ["!=", "class", "motorway"]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
@@ -2177,7 +2144,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "surface", "unmetalled"], ["in", "lane_count", 2, 3, 4, 5, 6, 7]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
@@ -2203,7 +2169,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "surface", "metalled"], ["in", "lane_count", 2, 3, 4, 5, 6, 7]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
@@ -2229,7 +2194,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["in", "lane_count", 2, 3, 4, 5, 6, 7, 8], ["!=", "class", "motorway"], ["==", "status", "under construction"]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
@@ -2253,7 +2217,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "status", "under construction"], ["in", "lane_count", 2, 3, 4, 5, 6, 7]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
@@ -2280,7 +2243,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "surface", "metalled"], ["in", "lane_count", 2, 3, 4, 5, 6, 7]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
@@ -2313,7 +2275,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "surface", "sealed"], ["in", "lane_count", 2, 3, 4, 5, 6, 7], ["!=", "class", "motorway"]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
@@ -2377,7 +2338,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 11,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "rail"], ["has", "rway_use"]],
       "layout": { "visibility": "visible", "line-join": "round", "line-cap": "round" },
       "paint": { "line-color": "rgba(67, 61, 61, 0.95)", "line-width": 1 }
@@ -2388,7 +2348,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 11,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "rail"], ["==", "track_type", "single"], ["!has", "rway_use"]],
       "layout": { "visibility": "visible", "line-join": "round", "line-cap": "round" },
       "paint": { "line-color": "rgba(67, 61, 61, 0.95)", "line-width": 2 }
@@ -2399,7 +2358,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 11,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "rail"], ["==", "track_type", "multiple"]],
       "layout": { "visibility": "visible", "line-join": "round", "line-cap": "round" },
       "paint": {
@@ -2534,7 +2492,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 8,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "motorway"], ["==", "lane_count", 1]],
       "layout": { "visibility": "visible", "line-join": "round", "line-cap": "round" },
       "paint": {
@@ -2559,7 +2516,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 8,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "motorway"], ["in", "lane_count", 2, 3]],
       "layout": { "visibility": "visible", "line-join": "round", "line-cap": "round" },
       "paint": {
@@ -2585,7 +2541,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 8,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "motorway"], ["in", "lane_count", 4, 5, 6, 7]],
       "layout": { "visibility": "visible", "line-join": "round", "line-cap": "round" },
       "paint": {
@@ -2631,7 +2586,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 13,
-      "maxzoom": 24,
       "filter": ["all", ["==", "brunnel", "bridge"], ["==", "use_1", "foot traffic"]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
@@ -2651,7 +2605,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "brunnel", "bridge"], ["in", "use_1", "train", "vehicle"]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
@@ -3743,7 +3696,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "landcover",
       "minzoom": 14,
-      "maxzoom": 24,
       "filter": ["all", ["==", "landuse", "vineyard"]],
       "layout": {
         "text-font": ["Open Sans Italic"],
@@ -3782,7 +3734,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "building",
       "minzoom": 18,
-      "maxzoom": 24,
       "filter": ["none"],
       "layout": { "visibility": "visible" },
       "paint": {
@@ -3805,7 +3756,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "maxzoom": 24,
       "filter": ["all", ["==", "brunnel", "tunnel"]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
@@ -3829,7 +3779,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "landuse",
       "minzoom": 14,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "powerline"], ["has", "support_ty"]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "miter" },
       "paint": {
@@ -3873,7 +3822,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "landuse",
       "minzoom": 14,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "telephone"]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "miter" },
       "paint": {
@@ -3895,7 +3843,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "landuse",
       "minzoom": 14,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "walkwire"]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "miter" },
       "paint": {
@@ -4149,7 +4096,6 @@
       "source": "LINZ Basemaps",
       "source-layer": "landcover",
       "minzoom": 14,
-      "maxzoom": 24,
       "filter": ["all", ["==", "class", "wetland"], ["==", "wetland_type", "swamp"], ["has", "name"]],
       "layout": {
         "visibility": "visible",
@@ -4669,6 +4615,30 @@
         "text-justify": "center"
       },
       "paint": { "text-color": "rgba(0, 140, 204, 1)", "text-halo-color": "rgba(239, 239, 239, 0.80)", "text-halo-width": 1.5, "text-halo-blur": 1 }
+    },
+    {
+      "id": "All-Waterway-River-Names",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "waterway",
+      "minzoom": 12,
+      "filter": ["all", ["==", "class", "river"], ["has", "name"]],
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 1000,
+        "text-field": "{name}",
+        "text-font": ["Open Sans Italic"],
+        "text-size": 12,
+        "text-anchor": "bottom",
+        "text-ignore-placement": true,
+        "text-allow-overlap": true
+      },
+      "paint": {
+        "text-color": "rgba(0, 140, 204, 1)",
+        "text-halo-color": "rgba(239, 239, 239, 0.80)",
+        "text-halo-width": 1.5,
+        "text-halo-blur": 1
+      }
     },
     {
       "id": "Waterway-Waterfall-Label",
