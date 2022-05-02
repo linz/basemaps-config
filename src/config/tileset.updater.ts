@@ -54,26 +54,27 @@ export class TileSetUpdater {
   }
 
   /** Ensure all imagery is present in the database with a associated tileset */
-  async ensureImageryConfig(img: ConfigImagery[]): Promise<boolean> {
-    if (img.length === 0) return false;
+  static async ensureImageryConfig(img: ConfigImagery[], isCommit: boolean, logger: LogType): Promise<{ hasChanges: boolean; paths: string[] }> {
+    if (img.length === 0) return { hasChanges: false, paths: [] };
 
     let hasChanges = false;
     const allImgIds = new Set(img.map((i) => i.id));
     const allTsIds = new Set(img.map((i) => i.id.replace('im_', 'ts_')));
 
     const existingImagery = await Config.Imagery.getAll(allImgIds);
-    this.logger.info({ count: existingImagery.size, expected: allTsIds.size }, 'LoadImageryConfig:Done');
+    logger.info({ count: existingImagery.size, expected: allTsIds.size }, 'LoadImageryConfig:Done');
 
     const existingTileSets = await Config.TileSet.getAll(allTsIds);
-    this.logger.info({ count: existingTileSets.size, expected: allTsIds.size }, 'LoadTileSetConfig:Done');
+    logger.info({ count: existingTileSets.size, expected: allTsIds.size }, 'LoadTileSetConfig:Done');
 
+    const invalidationPaths: string[] = [];
     for (const i of img) {
       let hasImageryChanged = false;
       const dbImagery = existingImagery.get(i.id);
-      if (dbImagery == null || ConfigDiff.showDiff('im', dbImagery, i, this.logger)) {
+      if (dbImagery == null || ConfigDiff.showDiff('im', dbImagery, i, logger)) {
         const operation = dbImagery == null ? 'Insert' : 'Update';
-        this.logger.info({ type: 'im', record: i.id, title: i.name, projection: i.projection }, `Change:${operation}`);
-        if (this.isCommit) {
+        logger.info({ type: 'im', record: i.id, title: i.name, projection: i.projection }, `Change:${operation}`);
+        if (isCommit) {
           i.createdAt = dbImagery?.createdAt ?? i.createdAt;
 
           if (Config.Imagery instanceof ConfigDynamoBase) await Config.Imagery.put(i);
@@ -86,10 +87,10 @@ export class TileSetUpdater {
       const tsId = i.id.replace('im_', 'ts_');
       const tileSet = ImageryCache.toTileSet(tsId, i);
       const dbTileSet = existingTileSets.get(tsId);
-      if (dbTileSet == null || ConfigDiff.showDiff('ts', dbTileSet, tileSet, this.logger)) {
+      if (dbTileSet == null || ConfigDiff.showDiff('ts', dbTileSet, tileSet, logger)) {
         const operation = dbTileSet == null ? 'Insert' : 'Update';
-        this.logger.info({ type: 'ts', record: tsId, title: i.name, projection: i.projection }, `Change:${operation}`);
-        if (this.isCommit) {
+        logger.info({ type: 'ts', record: tsId, title: i.name, projection: i.projection }, `Change:${operation}`);
+        if (isCommit) {
           tileSet.createdAt = dbTileSet?.createdAt ?? tileSet.createdAt;
 
           if (Config.TileSet instanceof ConfigDynamoBase) await Config.TileSet.put(tileSet);
@@ -99,15 +100,17 @@ export class TileSetUpdater {
       }
 
       // Invalidate the existing tile set as something has changed path
-      if (hasImageryChanged) this.invalidationPaths.push(`/v1/tiles/${tsId}/*`);
+      if (hasImageryChanged) invalidationPaths.push(`/v1/tiles/${tsId}/*`);
       hasChanges = hasChanges || hasImageryChanged;
     }
-    return hasChanges;
+    return { hasChanges: false, paths: invalidationPaths };
   }
 
   async reconcile(): Promise<boolean> {
     const imagerySets = await this.loadAllImagery();
-    let hasChanges = await this.ensureImageryConfig(imagerySets);
+    const ret = await TileSetUpdater.ensureImageryConfig(imagerySets, this.isCommit, this.logger);
+    let hasChanges = ret.hasChanges;
+    this.invalidationPaths.push(...ret.paths);
 
     const oldData = await Config.TileSet.get(this.getId(Production));
     const newData = this.prepareNewData(oldData, imagerySets);
