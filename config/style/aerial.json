@@ -13,8 +13,7 @@
     {
       "id": "Aerial-Imagery",
       "type": "raster",
-      "source": "LINZ-Imagery",
-      "layout": { "visibility": "visible" }
+      "source": "LINZ-Imagery"
     }
   ]
 }
