@@ -1,0 +1,20 @@
+{
+  "id": "st_aerial",
+  "name": "aerial",
+  "version": 8,
+  "sources": {
+    "LINZ-Imagery": {
+      "type": "raster",
+      "tileSize": 256,
+      "tiles": ["/v1/tiles/aerial/EPSG:3857/{z}/{x}/{y}.webp"]
+    }
+  },
+  "layers": [
+    {
+      "id": "Aerial-Imagery",
+      "type": "raster",
+      "source": "LINZ-Imagery",
+      "layout": { "visibility": "visible" }
+    }
+  ]
+}
