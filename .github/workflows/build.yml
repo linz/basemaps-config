@@ -21,28 +21,50 @@ jobs:
       - name: Build Sprites
         run: yarn build-sprites
 
-      - name: AWS Configure
+
+      - name: (NonProd) AWS Configure
         uses: aws-actions/configure-aws-credentials@v1.6.1
         with:
           aws-region: ap-southeast-2
           mask-aws-account-id: true
-          role-to-assume: ${{ secrets.AWS_ROLE_PROD }}
-
-      - name: (Imagery Config) Compare to production
-        if: github.ref != 'refs/heads/master' && github.event_name == 'push'
-        run: |
-          ./bin/bmc.js import -t production
-        env:
-          NODE_ENV: "production"
-
-      - name: (Imagery Config) Create pull request tag
+          role-to-assume: ${{ secrets.AWS_ROLE_NON_PROD }}
+      
+      - name: (NonProd - Imagery Config) Create pull request tag
         if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
         run: |
           ./bin/bmc.js import -t pr-${{ github.event.number }} --commit
         env:
           NODE_ENV: "production"
 
-      - name: (Imagery Config) Create production tag
+      - name: (NonProd - Imagery Config) Create production tag
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        run: |
+          ./bin/bmc.js import -t production --commit
+        env:
+          NODE_ENV: "production"
+
+      - name: (Prod) AWS Configure
+        uses: aws-actions/configure-aws-credentials@v1.6.1
+        with:
+          aws-region: ap-southeast-2
+          mask-aws-account-id: true
+          role-to-assume: ${{ secrets.AWS_ROLE_PROD }}
+
+      - name: (Prod - Imagery Config) Compare to production
+        if: github.ref != 'refs/heads/master' && github.event_name == 'push'
+        run: |
+          ./bin/bmc.js import -t production
+        env:
+          NODE_ENV: "production"
+
+      - name: (Prod - Imagery Config) Create pull request tag
+        if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
+        run: |
+          ./bin/bmc.js import -t pr-${{ github.event.number }} --commit
+        env:
+          NODE_ENV: "production"
+
+      - name: (Prod - Imagery Config) Create production tag
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
           ./bin/bmc.js import -t production --commit
