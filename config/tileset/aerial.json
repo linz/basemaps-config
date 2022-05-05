@@ -802,6 +802,12 @@
       "minZoom": 14
     },
     {
+      "2193": "s3://linz-basemaps/2193/waipa_urban_2021_0-1m_RGB/01G28WB9GKP01A8DPYWG9CBMN1",
+      "3857": "s3://linz-basemaps/3857/waipa_urban_2021_0-1m_RGB/01G28WC5349Y0J3CGWGTZ796DD",
+      "name": "waipa_urban_2021_0-1m_RGB",
+      "minZoom": 14
+    },
+    {
       "2193": "s3://linz-basemaps/2193/auckland_rural_2020_0-075m_RGB/01FXP9YHEQM6XA6DDEGNKMEE7H",
       "3857": "s3://linz-basemaps/3857/auckland_rural_2020_0-075m_RGB/01FXPA0F9WZS0MMABYHRCFYMV0",
       "name": "auckland_rural_2020_0-075m_RGB",
