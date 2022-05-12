@@ -1,4 +1,5 @@
-import { parseRgba } from '@basemaps/config';
+import { parseRgba, TileSetType } from '@basemaps/config';
+import { ImageFormat, VectorFormat } from '@basemaps/geo';
 import { z } from 'zod';
 
 export function validateColor(str: string): boolean {
@@ -35,12 +36,15 @@ const zLayerConfig = z
   });
 
 export const zTileSetConfig = z.object({
-  type: z.string(),
+  type: z.nativeEnum(TileSetType),
   id: z.string(),
   title: z.string().optional(),
   description: z.string().optional(),
   background: zBackground.optional(),
   layers: z.array(zLayerConfig),
+  minZoom: zZoom.optional(),
+  maxZoom: zZoom.optional(),
+  format: z.union([z.nativeEnum(ImageFormat), z.nativeEnum(VectorFormat)]).optional(),
 });
 
 /**

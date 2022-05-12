@@ -1,5 +1,5 @@
 import { ConfigImagery, ConfigTileSet, TileSetType } from '@basemaps/config';
-import { Bounds, TileMatrixSet } from '@basemaps/geo';
+import { Bounds, ImageFormat, TileMatrixSet } from '@basemaps/geo';
 import { LogType } from '@basemaps/shared';
 import { fsa } from '@chunkd/fs';
 import { basename } from 'path';
@@ -91,6 +91,7 @@ export class ImageryConfigCache {
       type: TileSetType.Raster,
       id,
       name: i.name,
+      format: ImageFormat.Webp,
       layers: [{ [i.projection]: i.id, name: i.name, minZoom: 0, maxZoom: 32 }],
       background: { r: 0, g: 0, b: 0, alpha: 0 },
       createdAt: i.createdAt ? i.createdAt : now,
