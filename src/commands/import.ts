@@ -7,6 +7,7 @@ import { Q, Updater } from '../base.config.js';
 import { TileSetUpdater } from '../config/tileset.updater.js';
 import { ProviderUpdater } from '../config/provider.updater.js';
 import { StyleUpdater } from '../config/style.updater.js';
+import fetch from 'node-fetch';
 
 export enum UpdaterType {
   Style = 'style',

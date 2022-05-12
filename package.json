@@ -20,6 +20,7 @@
     "@mapbox/spritezero": "^8.0.0",
     "@oclif/core": "^1.6.1",
     "deep-diff": "^1.0.2",
+    "node-fetch": "^3.2.4",
     "p-limit": "^4.0.0",
     "pretty-json-log": "^1.0.0",
     "zod": "^3.8.2"
