@@ -23,45 +23,46 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@basemaps/cli@^6.22.0":
-  version "6.22.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/cli/-/cli-6.22.0.tgz#bc9608c63b8d86782379be4edfb7078bd0246931"
-  integrity sha512-bmtw0hI+YFBx9OUo0R7ZQ/NX0ellUOA6NSOVnKDg4ko76eMsZ6beFVIKDcPJgv+hPRGXXuoBPOcwgYSvcJ8TuQ==
+"@basemaps/cli@^6.26.0":
+  version "6.26.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/cli/-/cli-6.26.0.tgz#bc7530bf179c4f80b32c6167fb2a6a9f910d4777"
+  integrity sha512-mZF8QM3tilab4oVlJY+QxllB8MP3wp4aT9vQ4HxBESJFWgWc1VlD07Hi/yVZFK7HIoiuatmE0ak0wb13qPUZgA==
   dependencies:
-    "@basemaps/config" "^6.21.1"
-    "@basemaps/geo" "^6.21.1"
-    "@basemaps/shared" "^6.22.0"
+    "@basemaps/config" "^6.26.0"
+    "@basemaps/geo" "^6.26.0"
+    "@basemaps/shared" "^6.26.0"
     "@chunkd/fs" "^8.1.0"
-    "@cogeotiff/core" "^6.1.1"
+    "@cogeotiff/core" "^7.0.0"
     "@linzjs/geojson" "^6.21.1"
     "@rushstack/ts-command-line" "^4.3.13"
     ansi-colors "^4.1.1"
+    node-fetch "^3.2.3"
     p-limit "^4.0.0"
     pretty-json-log "^1.0.0"
     zod "^3.2.0"
 
-"@basemaps/config@^6.21.1":
-  version "6.21.1"
-  resolved "https://registry.yarnpkg.com/@basemaps/config/-/config-6.21.1.tgz#1afa68fbf2164bca295a0f033cd7d33b8906c342"
-  integrity sha512-Zu6BctOmb0e4kQVB8y2yqClfVlCnLsnAL59YENd1ao2h3wYXfJTpgzq3bMsGwZofVwR6jvy1tGmYOCaqQUx6bg==
+"@basemaps/config@^6.26.0":
+  version "6.26.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/config/-/config-6.26.0.tgz#2d84f1c4c686eb7edb7ec0eb6bce9ee32a2cac89"
+  integrity sha512-SQYfWrHXf8qqdlYZe3ACY2VA8Lhkirw9rHJ6lOU1tK4Kn7H42UVAGbWdyXTGMNexRGnBYRrQQfQf5iawN8tidQ==
   dependencies:
-    "@basemaps/geo" "^6.21.1"
+    "@basemaps/geo" "^6.26.0"
 
-"@basemaps/geo@^6.21.1":
-  version "6.21.1"
-  resolved "https://registry.yarnpkg.com/@basemaps/geo/-/geo-6.21.1.tgz#30897d16bfb087c79b1ff503bc46e9d6aaab56ee"
-  integrity sha512-O4G15dz4oJsYe2xReRpxhkj+w50YZqRJ0m55iY/AWET5L0ZKDFztRT0U4jywsoyZfdX4kDRgyxsTRYyT2gy6Zg==
+"@basemaps/geo@^6.26.0":
+  version "6.26.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/geo/-/geo-6.26.0.tgz#5427f96e5d8f829e7e65a1ba82f806d52e0c09a5"
+  integrity sha512-mvPL1mYzOu5QHB0WqQTX7PLwx1LbpIO+KMCH05V2Eb9/F1Sx2Jow9GHzzpS9EXPLc+MB0S651Ws2kPAC/cqoZQ==
   dependencies:
     "@linzjs/tile-matrix-set" "^0.0.1"
 
-"@basemaps/shared@^6.22.0":
-  version "6.22.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/shared/-/shared-6.22.0.tgz#18225f752a8b7db4c2b51e2463aeba853b1da297"
-  integrity sha512-u53Fod3gEMeqNrddrSCv3t2j4bCQWG9d1FwrzHPm5IhMP6owb4wT1kXcUf9kaLQ8/fAhExMw541ZUvtNE0eKuA==
+"@basemaps/shared@^6.26.0":
+  version "6.26.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/shared/-/shared-6.26.0.tgz#d45f438681858b265700f8e8c66dd5b509730470"
+  integrity sha512-0HakplnDOJoJ+WqBGcBqaV4ntHqwi6lqyqfhyKwRmDaMo3tHtT7odqIXUZ8ird7xRtCaile711ZKRqoIvXNBvw==
   dependencies:
-    "@basemaps/config" "^6.21.1"
-    "@basemaps/geo" "^6.21.1"
-    "@basemaps/tiler" "^6.21.1"
+    "@basemaps/config" "^6.26.0"
+    "@basemaps/geo" "^6.26.0"
+    "@basemaps/tiler" "^6.26.0"
     "@chunkd/source-aws-v2" "^8.1.0"
     "@linzjs/geojson" "^6.21.1"
     "@linzjs/metrics" "^6.21.1"
@@ -73,13 +74,13 @@
     source-map-support "^0.5.19"
     ulid "^2.3.0"
 
-"@basemaps/tiler@^6.21.1":
-  version "6.21.1"
-  resolved "https://registry.yarnpkg.com/@basemaps/tiler/-/tiler-6.21.1.tgz#f5e0861bae84b618c0d31bfd917e782f756bab20"
-  integrity sha512-G+mQbx8kQllY9HBf2tcSsK1EZ7q75A1Mpq2r9i9y9YhlGfkk5VrzClTxnIAh8xpZ+kvHMQAvgOclXmFRQlgEOA==
+"@basemaps/tiler@^6.26.0":
+  version "6.26.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/tiler/-/tiler-6.26.0.tgz#8b8213e5694d2d8851d3050b48bbf11a026a4f17"
+  integrity sha512-A9COA53A1iKBkjjGrVEaA/qtkxW/PJx9zhqqa7crzfQclDZobg4qqPHZ/Qe7W4yoXuiSFZka5oci8dWtVi+F6w==
   dependencies:
-    "@basemaps/geo" "^6.21.1"
-    "@cogeotiff/core" "^6.1.1"
+    "@basemaps/geo" "^6.26.0"
+    "@cogeotiff/core" "^7.0.0"
     "@linzjs/metrics" "^6.21.1"
 
 "@chunkd/core@^8.1.0":
@@ -127,7 +128,7 @@
     "@chunkd/core" "^8.1.0"
     node-fetch "^3.1.0"
 
-"@cogeotiff/core@7.0.0", "@cogeotiff/core@^6.1.1":
+"@cogeotiff/core@7.0.0", "@cogeotiff/core@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@cogeotiff/core/-/core-7.0.0.tgz#18a617229e100ab7cc03ce2a6c4e5bf15443d0bb"
   integrity sha512-YqIOmd6jYxR0u+m1Xode+2UP+UGapsrFxofkghmsc0Ym1DDcAVMHyAkNlPPBTzBOFtyaTA+bhhyZWJLwcfsKvQ==
@@ -2374,6 +2375,15 @@ node-fetch@^3.1.0:
   version "3.2.3"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-3.2.3.tgz#a03c9cc2044d21d1a021566bd52f080f333719a6"
   integrity sha512-AXP18u4pidSZ1xYXRDPY/8jdv3RAozIt/WLNR/MBGZAz+xjtlr90RvCnsvHQRiXyWliZF/CpytExp32UU67/SA==
+  dependencies:
+    data-uri-to-buffer "^4.0.0"
+    fetch-blob "^3.1.4"
+    formdata-polyfill "^4.0.10"
+
+node-fetch@^3.2.3:
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-3.2.4.tgz#3fbca2d8838111048232de54cb532bd3cf134947"
+  integrity sha512-WvYJRN7mMyOLurFR2YpysQGuwYrJN+qrrpHjJDuKMcSPdfFccRUla/kng2mz6HWSBxJcqPbvatS6Gb4RhOzCJw==
   dependencies:
     data-uri-to-buffer "^4.0.0"
     fetch-blob "^3.1.4"
