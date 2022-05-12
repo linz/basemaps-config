@@ -7,6 +7,7 @@ import { Q, Updater } from '../base.config.js';
 import { TileSetUpdater } from '../config/tileset.updater.js';
 import { ProviderUpdater } from '../config/provider.updater.js';
 import { StyleUpdater } from '../config/style.updater.js';
+import fetch from 'node-fetch';
 
 export enum UpdaterType {
   Style = 'style',
@@ -14,6 +15,8 @@ export enum UpdaterType {
   Provider = 'provider',
   Sprites = 'sprites',
 }
+
+const HostPrefix = process.env.NODE_ENV === 'production' ? '' : 'dev.';
 
 export class CommandImport extends Command {
   static description = 'Import Basemaps configs';
@@ -40,6 +43,14 @@ export class CommandImport extends Command {
     const logger = LogConfig.get();
     const { flags } = await this.parse(CommandImport);
     if (flags.verbose) logger.level = 'trace';
+
+    const healthEndpoint = `https://${HostPrefix}basemaps.linz.govt.nz/v1/health?version=${flags.tag}`;
+
+    logger.info({ url: healthEndpoint }, 'ValidateHealth');
+    if (flags.commit) {
+      const res = await fetch(healthEndpoint);
+      if (!res.ok) throw new Error('Cannot update basemaps is unhealthy');
+    }
 
     if (flags.update == null || flags.update.includes(UpdaterType.Style)) {
       for await (const fileName of fsa.list(`./config/style`)) this.update(fileName, flags.tag, flags.commit);
@@ -93,6 +104,11 @@ export class CommandImport extends Command {
       } else {
         await invalidateCache(this.invalidations, flags.commit);
       }
+
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+
+      const res = await fetch(healthEndpoint);
+      if (!res.ok) throw new Error('Basemaps is unhealthy');
     }
 
     if (flags.commit !== true) logger.info('DryRun:Done');

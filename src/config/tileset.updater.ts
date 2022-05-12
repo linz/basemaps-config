@@ -1,5 +1,5 @@
-import { ConfigDynamoBase, ConfigImagery, ConfigTileSet, parseRgba, TileSetType } from '@basemaps/config';
-import { GoogleTms, Nztm2000QuadTms } from '@basemaps/geo';
+import { ConfigDynamoBase, ConfigImagery, ConfigLayer, ConfigTileSet, parseRgba, TileSetType } from '@basemaps/config';
+import { GoogleTms, ImageFormat, Nztm2000QuadTms, VectorFormat } from '@basemaps/geo';
 import { Config, LogConfig, LogType } from '@basemaps/shared';
 import { Production } from '../base.config.js';
 import { ConfigDiff } from '../config.diff.js';
@@ -132,12 +132,16 @@ export class TileSetUpdater {
   prepareNewData(oldData: ConfigTileSet | null, imagery: ConfigImagery[]): ConfigTileSet {
     const now = Date.now();
 
-    // Get the type of tileset, Default Raster
-    let type = TileSetType.Raster;
-    if (this.config.type === TileSetType.Vector) type = TileSetType.Vector;
+    const layers: ConfigLayer[] = [];
 
-    // Prepare background if exists
-    const background = this.config.background ? parseRgba(this.config.background) : null;
+    const tileSet: Partial<ConfigTileSet> = {
+      type: this.config.type,
+      id: this.getId(this.tag),
+      name: Config.unprefix(Config.TileSet.prefix, this.config.id),
+      layers,
+      createdAt: oldData ? oldData.createdAt : now,
+      updatedAt: now,
+    };
 
     function updateLayerUri(uri: string | undefined): string | undefined {
       if (uri == null) return uri;
@@ -147,31 +151,29 @@ export class TileSetUpdater {
       return record;
     }
 
-    const layers = [];
     // Map the configuration sources into imagery ids
     for (const l of this.config.layers) {
       const layer = { ...l };
       layers.push(layer);
 
-      if (type === TileSetType.Raster) {
+      if (tileSet.type === TileSetType.Raster) {
         if (layer[2193]) layer[2193] = updateLayerUri(layer[2193]);
         if (layer[3857]) layer[3857] = updateLayerUri(layer[3857]);
       }
     }
 
-    const tileSet: ConfigTileSet = {
-      type,
-      id: this.getId(this.tag),
-      name: Config.unprefix(Config.TileSet.prefix, this.config.id),
-      layers,
-      createdAt: oldData ? oldData.createdAt : now,
-      updatedAt: now,
-    };
-
     if (this.config.title) tileSet.title = this.config.title;
     if (this.config.description) tileSet.description = this.config.description;
-    if (background) tileSet.background = background;
+    if (this.config.minZoom) tileSet.minZoom = this.config.minZoom;
+    if (this.config.maxZoom) tileSet.maxZoom = this.config.maxZoom;
+    if (this.config.background && tileSet.type === TileSetType.Raster) tileSet.background = parseRgba(this.config.background);
 
-    return tileSet;
+    if (this.config.format) {
+      tileSet.format = this.config.format as ImageFormat | VectorFormat;
+    } else {
+      tileSet.format = this.config.type === TileSetType.Vector ? VectorFormat.MapboxVectorTiles : ImageFormat.Webp;
+    }
+
+    return tileSet as ConfigTileSet;
   }
 }
