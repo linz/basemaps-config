@@ -15,7 +15,7 @@ export enum UpdaterType {
   Sprites = 'sprites',
 }
 
-const HostPrefix = process.env.NODE_ENV === 'production' ? '' ? 'dev.'
+const HostPrefix = process.env.NODE_ENV === 'production' ? '' : 'dev.';
 
 export class CommandImport extends Command {
   static description = 'Import Basemaps configs';
@@ -45,7 +45,7 @@ export class CommandImport extends Command {
 
     const healthEndpoint = `https://${HostPrefix}basemaps.linz.govt.nz/v1/health?version=${flags.tag}`;
 
-    logger.info({url: healthEndpoint}, 'ValidateHealth');
+    logger.info({ url: healthEndpoint }, 'ValidateHealth');
     if (flags.commit) {
       const res = await fetch(healthEndpoint);
       if (!res.ok) throw new Error('Cannot update basemaps is unhealthy');
