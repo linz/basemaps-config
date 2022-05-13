@@ -1,7 +1,6 @@
 import { GoogleTms, Nztm2000QuadTms } from '@basemaps/geo';
 import { Config, LogConfig } from '@basemaps/shared';
 import { Command, Flags } from '@oclif/core';
-import { fstat } from 'fs';
 import { mkdir } from 'fs/promises';
 import { chromium } from 'playwright';
 
