@@ -1,6 +1,8 @@
 import { GoogleTms, Nztm2000QuadTms } from '@basemaps/geo';
 import { Config, LogConfig } from '@basemaps/shared';
 import { Command, Flags } from '@oclif/core';
+import { fstat } from 'fs';
+import { mkdir } from 'fs/promises';
 import { chromium } from 'playwright';
 
 const TileTest = [
@@ -46,7 +48,9 @@ export class CommandScreenShot extends Command {
 
       const tagRegexp = new RegExp(`%40${flags.tag}`, 'g');
 
-      const fileName = 'static/' + flags.host + '_' + (search + '_' + loc).replace(/&/g, '_').replace(/=/g, '-').replace(/,/g, '_').replace(tagRegexp, '') + '.png';
+      const fileName = 'static/' + flags.host + '/' + (search + '_' + loc).replace(/&/g, '_').replace(/=/g, '-').replace(/,/g, '_').replace(tagRegexp, '') + '.png';
+
+      await mkdir(`static/${flags.host}`, { recursive: true });
 
       const url = `https://${flags.host}/?${searchParam.toString()}&debug=true&debug.overlay=screeenshot#${loc}`;
 

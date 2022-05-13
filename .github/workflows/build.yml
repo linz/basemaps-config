@@ -39,6 +39,13 @@ jobs:
         run: |
           ./bin/bmc.js screenshot -t pr-${{ github.event.number }} --host dev.basemaps.linz.govt.nz
 
+      - name: (NonProd - Imagery Config) Save snapshots
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          save-only: true
+          path: static/dev.basemaps.linz.govt.nz/
+
       - name: (NonProd - Imagery Config) Create production tag
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
