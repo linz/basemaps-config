@@ -33,11 +33,21 @@ jobs:
         if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
         run: |
           ./bin/bmc.js import -t pr-${{ github.event.number }} --commit
+        
+      - name: (NonProd - Imagery Config) Screenshot pull request updates
+        if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
+        run: |
+          ./bin/bmc.js screenshot -t pr-${{ github.event.number }} --host dev.basemaps.linz.govt.nz
 
       - name: (NonProd - Imagery Config) Create production tag
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
           ./bin/bmc.js import -t production --commit
+              
+      - name: (NonProd - Imagery Config) Screenshot updates
+        if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
+        run: |
+          ./bin/bmc.js screenshot -t production --host dev.basemaps.linz.govt.nz
 
       - name: (Prod) AWS Configure
         uses: aws-actions/configure-aws-credentials@v1.6.1

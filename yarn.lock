@@ -2721,6 +2721,18 @@ pino@^7.5.0:
     sonic-boom "^2.2.1"
     thread-stream "^0.13.0"
 
+playwright-core@1.22.0:
+  version "1.22.0"
+  resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.22.0.tgz#e738a0c83f4be0984c953ab25d2bc77545187ecc"
+  integrity sha512-XnDPiV4NCzTtXWxQdyJ6Wg8xhST3ciUjt5mITaxoqOoYggmRtofKm0PXLehfbetXh2ppPYj5U8UhtUpdIE4wag==
+
+playwright@^1.22.0:
+  version "1.22.0"
+  resolved "https://registry.yarnpkg.com/playwright/-/playwright-1.22.0.tgz#7b0f684f618faa6ff422fc584a9ff167d844c49a"
+  integrity sha512-T2UqJAuvJip7TfYwvl7h3gUWtEE5D950PKd96POhUpumG3BkMfiLmXOe6Ja6UP39Ab3wEvatUJYBXvZCkocfpg==
+  dependencies:
+    playwright-core "1.22.0"
+
 polygon-clipping@^0.15.1:
   version "0.15.3"
   resolved "https://registry.yarnpkg.com/polygon-clipping/-/polygon-clipping-0.15.3.tgz#0215840438470ba2e9e6593625e4ea5c1087b4b7"
