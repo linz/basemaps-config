@@ -1,8 +1,8 @@
 import { GoogleTms, Nztm2000QuadTms } from '@basemaps/geo';
-import { Config, LogConfig } from '@basemaps/shared';
+import { Config, LogConfig, LogType } from '@basemaps/shared';
 import { Command, Flags } from '@oclif/core';
 import { mkdir } from 'fs/promises';
-import { chromium } from 'playwright';
+import { chromium, Page } from 'playwright';
 
 const TileTest = [
   { tileMatrix: GoogleTms, location: { lat: -41.8899962, lng: 174.0492437, z: 5 }, tileSet: 'health', style: undefined },
@@ -29,8 +29,18 @@ export class CommandScreenShot extends Command {
 
     logger.info('Page:Launch');
     const chrome = await chromium.launch();
-
     const page = await chrome.newPage();
+
+    try {
+      await this.takeScreenshots(page, logger);
+    } finally {
+      await page.close();
+      await chrome.close();
+    }
+  }
+
+  async takeScreenshots(page: Page, logger: LogType): Promise<void> {
+    const { flags } = await this.parse(CommandScreenShot);
 
     for (const test of TileTest) {
       const tileSetId = await this.getTileSetId(test.tileSet, flags.tag);
@@ -51,25 +61,22 @@ export class CommandScreenShot extends Command {
 
       await mkdir(`static/${flags.host}`, { recursive: true });
 
-      const url = `https://${flags.host}/?${searchParam.toString()}&debug=true&debug.overlay=screeenshot#${loc}`;
+      const url = `https://${flags.host}/?${searchParam.toString()}&debug=true&debug.screenshot=true#${loc}`;
 
       logger.info({ url, expected: fileName }, 'Page:Load');
 
       await page.goto(url);
 
-      if (styleId) {
-        // TODO expose a map finished loading event to listen to
-        await page.evaluate(() => new Promise((resolve) => setTimeout(resolve, 10_000)));
+      if (flags.host.startsWith('dev')) {
+        await page.waitForSelector('div#map-loaded', { state: 'attached' });
+        await page.waitForTimeout(2_500);
       } else {
-        await page.evaluate(() => new Promise((resolve) => setTimeout(resolve, 25_000)));
+        throw new Error('Not supported on production yet');
       }
       await page.screenshot({ path: fileName });
 
       logger.info({ url, expected: fileName }, 'Page:Load:Done');
     }
-
-    await page.close();
-    await chrome.close();
   }
 
   async getTileSetId(tileSetId: string, tag: string): Promise<string> {

@@ -36,7 +36,7 @@ jobs:
         
       - name: (NonProd - Imagery Config) Screenshot pull request updates
         run: |
-          ./bin/bmc.js screenshot -t production --host dev.basemaps.linz.govt.nz
+          ./bin/bmc.js screenshot -t pr-${{ github.event.number }} --host dev.basemaps.linz.govt.nz
 
       - name: (NonProd - Imagery Config) Save snapshots
         if: always()
