@@ -36,12 +36,11 @@ jobs:
         run: |
           ./bin/bmc.js screenshot -t pr-${{ github.event.number }} --host dev.basemaps.linz.govt.nz
 
-      - name: (NonProd - Imagery Config) Save snapshots
-        if: always()
-        id: visual-snapshots
-        uses: actions/upload-artifact@v2
+      - name: Save snapshots
+        uses: getsentry/action-visual-snapshot@v2
         with:
-          path: static/dev.basemaps.linz.govt.nz/
+          save-only: true
+          snapshot-path: .artifacts/visual-snapshots
 
       # - name: (NonProd - Imagery Config) Create production tag
       #   if: github.ref == 'refs/heads/master' && github.event_name == 'push'
