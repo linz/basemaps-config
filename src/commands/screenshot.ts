@@ -5,10 +5,10 @@ import { mkdir } from 'fs/promises';
 import { chromium, Page } from 'playwright';
 
 const TileTest = [
-  { tileMatrix: GoogleTms, location: { lat: -41.8899962, lng: 174.0492437, z: 5 }, tileSet: 'health', style: undefined },
-  { tileMatrix: Nztm2000QuadTms, location: { lat: 0, lng: 0, z: 0 }, tileSet: 'aerial' },
-  { tileMatrix: GoogleTms, location: { lat: -41.8899962, lng: 174.0492437, z: 5 }, tileSet: 'topographic', style: 'topographic' },
-  { tileMatrix: GoogleTms, location: { lat: -41.8899962, lng: 174.0492437, z: 5 }, tileSet: 'topographic', style: 'topolite' },
+  { name: 'health3857-z5', tileMatrix: GoogleTms, location: { lat: -41.8899962, lng: 174.0492437, z: 5 }, tileSet: 'health', style: undefined },
+  { name: 'health2193-z5', tileMatrix: Nztm2000QuadTms, location: { lat: 0, lng: 0, z: 0 }, tileSet: 'aerial' },
+  { name: 'topographic-3857-z5', tileMatrix: GoogleTms, location: { lat: -41.8899962, lng: 174.0492437, z: 5 }, tileSet: 'topographic', style: 'topographic' },
+  { name: 'topolite-3857-z5', tileMatrix: GoogleTms, location: { lat: -41.8899962, lng: 174.0492437, z: 5 }, tileSet: 'topographic', style: 'topolite' },
 ];
 
 export class CommandScreenShot extends Command {
@@ -51,13 +51,8 @@ export class CommandScreenShot extends Command {
       searchParam.set('i', tileSetId);
       if (styleId) searchParam.set('s', styleId);
 
-      const search = searchParam.toString();
-
       const loc = `${test.location.lng},${test.location.lat},z${test.location.z}`;
-
-      const tagRegexp = new RegExp(`%40${flags.tag}`, 'g');
-
-      const fileName = '.artifacts/visual-snapshots/' + flags.host + '_' + (search + '_' + loc).replace(/&/g, '_').replace(/=/g, '-').replace(/,/g, '_').replace(tagRegexp, '') + '.png';
+      const fileName = '.artifacts/visual-snapshots/' + flags.host + '_' + test.name + '.png';
 
       await mkdir(`.artifacts/visual-snapshots/`, { recursive: true });
 
