@@ -79,18 +79,15 @@ jobs:
       #     ./bin/bmc.js import -t production --commit
       #   env:
       #     NODE_ENV: "production"
-  visual-diff:
-    # This guarantees that we will only schedule Visual Snapshots if all
-    # workflows that generate artifacts succeed
-    needs: [build]
-    name: triggers visual snapshot
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
-    steps:
-      - name: Diff snapshots
-        id: visual-snapshots-diff
-        uses: getsentry/action-visual-snapshot@v2
-        # Forks are handled in visual-diff.yml
-        with:
-          gcs-bucket: 'linz-basemaps-testing-bc'
-          gcp-service-account-key: ${{ secrets.GCP_SECRET }}
+  # visual-diff:
+  #   needs: [build]
+  #   name: Visual snapshot
+  #   runs-on: ubuntu-latest
+  #   timeout-minutes: 20
+  #   steps:
+  #     - name: Diff snapshots
+  #       id: visual-snapshots-diff
+  #       uses: getsentry/action-visual-snapshot@v2
+  #       with:
+  #         gcs-bucket: 'linz-basemaps-testing-bc'
+  #         gcp-service-account-key: ${{ secrets.GCP_SECRET }}
