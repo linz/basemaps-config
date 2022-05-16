@@ -57,9 +57,9 @@ export class CommandScreenShot extends Command {
 
       const tagRegexp = new RegExp(`%40${flags.tag}`, 'g');
 
-      const fileName = 'static/' + flags.host + '/' + (search + '_' + loc).replace(/&/g, '_').replace(/=/g, '-').replace(/,/g, '_').replace(tagRegexp, '') + '.png';
+      const fileName = '.artifacts/visual-snapshots/' + flags.host + '/' + (search + '_' + loc).replace(/&/g, '_').replace(/=/g, '-').replace(/,/g, '_').replace(tagRegexp, '') + '.png';
 
-      await mkdir(`static/${flags.host}`, { recursive: true });
+      await mkdir(`.artifacts/visual-snapshots/${flags.host}`, { recursive: true });
 
       const url = `https://${flags.host}/?${searchParam.toString()}&debug=true&debug.screenshot=true#${loc}`;
 

@@ -38,6 +38,7 @@ jobs:
 
       - name: (NonProd - Imagery Config) Save snapshots
         if: always()
+        id: visual-snapshots
         uses: actions/upload-artifact@v2
         with:
           path: static/dev.basemaps.linz.govt.nz/
