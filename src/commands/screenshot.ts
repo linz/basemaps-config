@@ -9,6 +9,7 @@ const TileTest = [
   { name: 'health2193-z5', tileMatrix: Nztm2000QuadTms, location: { lat: 0, lng: 0, z: 0 }, tileSet: 'aerial' },
   { name: 'topographic-3857-z5', tileMatrix: GoogleTms, location: { lat: -41.8899962, lng: 174.0492437, z: 5 }, tileSet: 'topographic', style: 'topographic' },
   { name: 'topolite-3857-z5', tileMatrix: GoogleTms, location: { lat: -41.8899962, lng: 174.0492437, z: 5 }, tileSet: 'topographic', style: 'topolite' },
+  { name: 'topographic-3857-z14', tileMatrix: GoogleTms, location: { lat: -41.8899962, lng: 174.0492437, z: 14 }, tileSet: 'topographic', style: 'topographic' },
 ];
 
 export class CommandScreenShot extends Command {
@@ -64,7 +65,7 @@ export class CommandScreenShot extends Command {
 
       if (flags.host.startsWith('dev')) {
         await page.waitForSelector('div#map-loaded', { state: 'attached' });
-        await page.waitForTimeout(2_500);
+        await page.waitForLoadState('networkidle');
       } else {
         throw new Error('Not supported on production yet');
       }
