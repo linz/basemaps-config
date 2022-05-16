@@ -65,7 +65,7 @@ export class CommandScreenShot extends Command {
 
       if (flags.host.startsWith('dev')) {
         await page.waitForSelector('div#map-loaded', { state: 'attached' });
-        await page.waitForTimeout(2_500);
+        await page.waitForTimeout(10_000);
       } else {
         throw new Error('Not supported on production yet');
       }
