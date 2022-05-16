@@ -2,11 +2,9 @@ name: Build
 
 on:
   pull_request:
-    paths:
-      - 'config/tileset/*.json'
-      - 'config/style/*.json'
   push:
-
+    branches:
+      - master
 jobs:
   build:
     permissions:
@@ -89,7 +87,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      # If any jobs we depend on fail, we will fail since this checks triggers Visual Snapshots which is a required check
       - name: Diff snapshots
         id: visual-snapshots-diff
         uses: getsentry/action-visual-snapshot@v2
