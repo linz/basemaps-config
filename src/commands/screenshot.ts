@@ -10,7 +10,7 @@ const TileTest = [
   { name: 'topographic-3857-z5', tileMatrix: GoogleTms, location: { lat: -41.8899962, lng: 174.0492437, z: 5 }, tileSet: 'topographic', style: 'topographic' },
   { name: 'topolite-3857-z5', tileMatrix: GoogleTms, location: { lat: -41.8899962, lng: 174.0492437, z: 5 }, tileSet: 'topographic', style: 'topolite' },
   { name: 'topographic-3857-z14', tileMatrix: GoogleTms, location: { lat: -41.8899962, lng: 174.0492437, z: 14 }, tileSet: 'topographic', style: 'topographic' },
-  { name: 'topolite-3857-z17', tileMatrix: GoogleTms, location: { lat: -41.222781, lng: 174.8705109, z: 17 }, tileSet: 'topographic', style: 'topolite' },
+  { name: 'topolite-3857-z17', tileMatrix: GoogleTms, location: { lat: -41.222781, lng: 174.8705109, z: 15 }, tileSet: 'topographic', style: 'topolite' },
 ];
 
 export class CommandScreenShot extends Command {
