@@ -53,7 +53,7 @@ export class CommandScreenShot extends Command {
       searchParam.set('i', tileSetId);
       if (styleId) searchParam.set('s', styleId);
 
-      const loc = `${test.location.lng},${test.location.lat},z${test.location.z}`;
+      const loc = `${test.location.lat},${test.location.lng},z${test.location.z}`;
       const fileName = '.artifacts/visual-snapshots/' + flags.host + '_' + test.name + '.png';
 
       await mkdir(`.artifacts/visual-snapshots/`, { recursive: true });
