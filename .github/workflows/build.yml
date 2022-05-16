@@ -87,7 +87,7 @@ jobs:
     steps:
       - name: Diff snapshots
         id: visual-snapshots-diff
-        uses: getsentry/action-visual-snapshot@v2
+        uses: blacha/action-visual-snapshot@v2
         with:
           gcs-bucket: 'linz-basemaps-testing-bc'
           gcp-service-account-key: ${{ secrets.GCP_SECRET }}
