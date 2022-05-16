@@ -4420,37 +4420,6 @@
       "paint": { "text-color": "rgba(80, 75, 75, 1)", "text-halo-color": "rgba(230, 230, 230, 0.5)", "text-halo-width": 2 }
     },
     {
-      "id": "All-Road-Labels",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 13,
-      "filter": ["all", ["has", "name"]],
-      "layout": {
-        "symbol-placement": "line",
-        "text-field": "{name}",
-        "text-font": ["Open Sans Regular"],
-        "icon-text-fit": "both",
-        "text-size": {
-          "stops": [
-            [13, 8],
-            [15, 11],
-            [18, 10],
-            [19, 30],
-            [22, 140]
-          ]
-        },
-        "symbol-spacing": 250,
-        "visibility": "visible",
-        "text-anchor": "center",
-        "text-justify": "center",
-        "text-transform": "none",
-        "icon-pitch-alignment": "auto",
-        "icon-ignore-placement": false
-      },
-      "paint": { "text-halo-width": 2.5, "text-halo-color": "rgba(243, 243, 242, 0.9)", "text-opacity": 0.9 }
-    },
-    {
       "id": "All-FootTrack-Labels",
       "type": "symbol",
       "source": "LINZ Basemaps",
