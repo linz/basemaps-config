@@ -8,11 +8,6 @@
       "3857": "s3://linz-basemaps/3857/gebco_2020_305-75m/01EDMTM3P563P06TWYQAZRA9F6",
       "name": "gebco_2020_305-75m",
       "maxZoom": 15
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/new_zealand_sentinel_2019-2020_10m/01F6P1G0S78XYXAQB7Y375MZ2Q",
-      "3857": "s3://linz-basemaps/3857/new_zealand_sentinel_2019-2020_10m/01ED82TFB1ZE9C75CH5VY3Z92B",
-      "name": "new_zealand_sentinel_2019-2020_10m"
     }
   ]
 }
