@@ -2,7 +2,7 @@ import { GoogleTms, Nztm2000QuadTms } from '@basemaps/geo';
 import { Config, LogConfig, LogType } from '@basemaps/shared';
 import { Command, Flags } from '@oclif/core';
 import { mkdir } from 'fs/promises';
-import { Browser, chromium, Page } from 'playwright';
+import { Browser, chromium } from 'playwright';
 
 const TileTest = [
   { name: 'health-3857-z5', tileMatrix: GoogleTms, location: { lat: -41.8899962, lng: 174.0492437, z: 5 }, tileSet: 'health', style: undefined },
