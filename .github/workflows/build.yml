@@ -1,12 +1,10 @@
-name: Build
+name: build
 
 on:
   pull_request:
-    paths:
-      - 'config/tileset/*.json'
-      - 'config/style/*.json'
   push:
-
+    branches:
+      - master
 jobs:
   build:
     permissions:
@@ -21,30 +19,75 @@ jobs:
       - name: Build Sprites
         run: yarn build-sprites
 
-      - name: AWS Configure
+
+      - name: (NonProd) AWS Configure
         uses: aws-actions/configure-aws-credentials@v1.6.1
         with:
           aws-region: ap-southeast-2
           mask-aws-account-id: true
-          role-to-assume: ${{ secrets.AWS_ROLE_PROD }}
-
-      - name: (Imagery Config) Compare to production
-        if: github.ref != 'refs/heads/master' && github.event_name == 'push'
+          role-to-assume: ${{ secrets.AWS_ROLE_NON_PROD }}
+      
+      # - name: (NonProd - Imagery Config) Create pull request tag
+      #   if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
+      #   run: |
+      #     ./bin/bmc.js import -t pr-${{ github.event.number }} --commit
+        
+      - name: (NonProd - Imagery Config) Screenshot pull request updates
         run: |
-          ./bin/bmc.js import -t production
-        env:
-          NODE_ENV: "production"
+          ./bin/bmc.js screenshot -t pr-${{ github.event.number }} --host dev.basemaps.linz.govt.nz
 
-      - name: (Imagery Config) Create pull request tag
-        if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
-        run: |
-          ./bin/bmc.js import -t pr-${{ github.event.number }} --commit
-        env:
-          NODE_ENV: "production"
+      - name: Save snapshots
+        uses: getsentry/action-visual-snapshot@v2
+        with:
+          save-only: true
+          snapshot-path: .artifacts/visual-snapshots
 
-      - name: (Imagery Config) Create production tag
-        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-        run: |
-          ./bin/bmc.js import -t production --commit
-        env:
-          NODE_ENV: "production"
+      # - name: (NonProd - Imagery Config) Create production tag
+      #   if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+      #   run: |
+      #     ./bin/bmc.js import -t production --commit
+              
+      # - name: (NonProd - Imagery Config) Screenshot updates
+      #   if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
+      #   run: |
+      #     ./bin/bmc.js screenshot -t production --host dev.basemaps.linz.govt.nz
+
+      # - name: (Prod) AWS Configure
+      #   uses: aws-actions/configure-aws-credentials@v1.6.1
+      #   with:
+      #     aws-region: ap-southeast-2
+      #     mask-aws-account-id: true
+      #     role-to-assume: ${{ secrets.AWS_ROLE_PROD }}
+
+      # - name: (Prod - Imagery Config) Compare to production
+      #   if: github.ref != 'refs/heads/master' && github.event_name == 'push'
+      #   run: |
+      #     ./bin/bmc.js import -t production
+      #   env:
+      #     NODE_ENV: "production"
+
+      # - name: (Prod - Imagery Config) Create pull request tag
+      #   if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
+      #   run: |
+      #     ./bin/bmc.js import -t pr-${{ github.event.number }} --commit
+      #   env:
+      #     NODE_ENV: "production"
+
+      # - name: (Prod - Imagery Config) Create production tag
+      #   if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+      #   run: |
+      #     ./bin/bmc.js import -t production --commit
+      #   env:
+      #     NODE_ENV: "production"
+  visual-diff:
+    needs: [build]
+    name: Visual snapshot
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Diff snapshots
+        id: visual-snapshots-diff
+        uses: blacha/action-visual-snapshot@v2
+        with:
+          gcs-bucket: 'linz-basemaps-testing-bc'
+          gcp-service-account-key: ${{ secrets.GCP_SECRET }}
