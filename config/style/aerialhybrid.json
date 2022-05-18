@@ -46,13 +46,13 @@
             [24, 1.5]
           ]
         },
+        "line-offset": 1,
         "line-color": {
           "stops": [
             [16, "rgba(58, 58, 58, 0.4)"],
             [20, "rgba(70, 70, 70, 0.7)"]
           ]
-        },
-        "line-offset": 1
+        }
       }
     },
     {
@@ -76,320 +76,13 @@
             [24, 1.5]
           ]
         },
+        "line-offset": 0,
         "line-color": {
           "stops": [
             [16, "rgba(141, 141, 141, 0.4)"],
             [20, "rgba(196, 196, 196, 0.7)"]
           ]
-        },
-        "line-offset": 0
-      }
-    },
-    {
-      "id": "Transport-Railway-High",
-      "type": "line",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 8,
-      "maxzoom": 11,
-      "filter": ["all", ["==", "class", "railway"]],
-      "layout": {
-        "visibility": "none",
-        "line-join": "round",
-        "line-cap": "butt"
-      },
-      "paint": { "line-width": 2, "line-color": "rgba(96, 90, 90, 0.95)" }
-    },
-    {
-      "id": "Transport-1-UnderCons",
-      "type": "line",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 10,
-      "filter": ["all", ["==", "lane_count", 1], ["!=", "class", "motorway"], ["==", "status", "under construction"]],
-      "layout": {
-        "visibility": "none",
-        "line-cap": "butt",
-        "line-join": "bevel"
-      },
-      "paint": {
-        "line-width": {
-          "stops": [
-            [10, 1],
-            [15, 4],
-            [19, 8]
-          ]
-        },
-        "line-color": "rgba(133, 130, 130, 1)",
-        "line-dasharray": [1, 5]
-      }
-    },
-    {
-      "id": "Transport-2-UnderCons",
-      "type": "line",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 10,
-      "filter": ["all", ["in", "lane_count", 2, 3, 4, 5, 6, 7, 8], ["!=", "class", "motorway"], ["==", "status", "under construction"]],
-      "layout": {
-        "visibility": "none",
-        "line-cap": "butt",
-        "line-join": "bevel"
-      },
-      "paint": {
-        "line-width": {
-          "stops": [
-            [10, 3],
-            [15, 7],
-            [19, 10]
-          ]
-        },
-        "line-color": "rgba(133, 130, 130, 1)"
-      }
-    },
-    {
-      "id": "Transport-2UnderContruction",
-      "type": "line",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 10,
-      "filter": ["all", ["==", "status", "under construction"], ["in", "lane_count", 2, 3, 4, 5, 6, 7]],
-      "layout": {
-        "visibility": "none",
-        "line-cap": "butt",
-        "line-join": "bevel"
-      },
-      "paint": {
-        "line-translate-anchor": "map",
-        "line-width": {
-          "stops": [
-            [10, 1],
-            [15, 4],
-            [19, 8]
-          ]
-        },
-        "line-gap-width": 0,
-        "line-dasharray": [5, 1],
-        "line-color": "rgba(255, 254, 252, 1)"
-      }
-    },
-    {
-      "id": "Transport-Railway-Siding",
-      "type": "line",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 11,
-      "filter": ["all", ["==", "class", "railway"], ["has", "rway_use"]],
-      "layout": {
-        "visibility": "none",
-        "line-join": "round",
-        "line-cap": "round"
-      },
-      "paint": { "line-width": 1, "line-color": "rgba(67, 61, 61, 0.95)" }
-    },
-    {
-      "id": "Transport-Railway-Single",
-      "type": "line",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 11,
-      "filter": ["all", ["==", "class", "railway"], ["==", "track_type", "single"], ["!has", "rway_use"]],
-      "layout": {
-        "visibility": "none",
-        "line-join": "round",
-        "line-cap": "round"
-      },
-      "paint": { "line-width": 2, "line-color": "rgba(67, 61, 61, 0.95)" }
-    },
-    {
-      "id": "Transport-Railway-Multiple-Fill",
-      "type": "line",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 11,
-      "filter": ["all", ["==", "class", "railway"], ["==", "track_type", "multiple"]],
-      "layout": {
-        "visibility": "none",
-        "line-join": "round",
-        "line-cap": "butt"
-      },
-      "paint": {
-        "line-width": 3,
-        "line-color": "rgba(67, 61, 61, 0.95)",
-        "line-dasharray": [6, 3]
-      }
-    },
-    {
-      "id": "Transport-Railway-Multiple",
-      "type": "line",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 11,
-      "filter": ["all", ["==", "class", "railway"], ["==", "track_type", "multiple"]],
-      "layout": {
-        "visibility": "none",
-        "line-join": "round",
-        "line-cap": "butt"
-      },
-      "paint": {
-        "line-width": 1.5,
-        "line-gap-width": 2,
-        "line-color": "rgba(67, 61, 61, 0.95)"
-      }
-    },
-    {
-      "id": "Transport-Railway-Topo250",
-      "type": "line",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "maxzoom": 8,
-      "filter": ["all", ["==", "class", "railway"]],
-      "layout": { "visibility": "none" },
-      "paint": {
-        "line-width": {
-          "stops": [
-            [5, 1],
-            [8, 2]
-          ]
-        },
-        "line-color": "rgba(121, 113, 113, 1)"
-      }
-    },
-    {
-      "id": "Transport-Bridge-Foot",
-      "type": "line",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 14,
-      "filter": ["all", ["==", "brunnel", "bridge"], ["==", "use_1", "foot traffic"]],
-      "layout": {
-        "visibility": "none",
-        "line-cap": "butt",
-        "line-join": "bevel"
-      },
-      "paint": {
-        "line-width": {
-          "stops": [
-            [10, 0.5],
-            [15, 4],
-            [19, 6]
-          ]
-        },
-        "line-color": "rgba(78, 78, 78, 1)"
-      }
-    },
-    {
-      "id": "Transport-Tunnel-VT",
-      "type": "line",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 10,
-      "filter": ["all", ["==", "brunnel", "tunnel"]],
-      "layout": {
-        "visibility": "none",
-        "line-cap": "butt",
-        "line-join": "bevel"
-      },
-      "paint": {
-        "line-opacity": 1,
-        "line-width": {
-          "stops": [
-            [10, 1],
-            [15, 3],
-            [19, 5]
-          ]
-        },
-        "line-blur": 0,
-        "line-gap-width": 2,
-        "line-dasharray": [5, 3],
-        "line-color": "rgba(150, 144, 144, 1)"
-      }
-    },
-    {
-      "id": "Transport-Bridge-VT",
-      "type": "line",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 10,
-      "filter": ["all", ["==", "brunnel", "bridge"], ["in", "use_1", "train", "vehicle"]],
-      "layout": {
-        "visibility": "none",
-        "line-cap": "butt",
-        "line-join": "bevel"
-      },
-      "paint": {
-        "line-width": {
-          "stops": [
-            [10, 4],
-            [15, 8.5],
-            [19, 14.5]
-          ]
-        },
-        "line-color": "rgba(78, 78, 78, 1)"
-      }
-    },
-    {
-      "id": "Transport-1Metalled-Orange",
-      "type": "line",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 10,
-      "filter": ["all", ["==", "surface", "metalled"], ["==", "lane_count", 1]],
-      "layout": {
-        "visibility": "none",
-        "line-cap": "butt",
-        "line-join": "bevel"
-      },
-      "paint": {
-        "line-translate-anchor": "map",
-        "line-opacity": {
-          "stops": [
-            [13, 1],
-            [18, 0.5]
-          ]
-        },
-        "line-width": {
-          "stops": [
-            [13, 0.5],
-            [15, 3],
-            [19, 16]
-          ]
-        },
-        "line-gap-width": 0,
-        "line-dasharray": [8, 5],
-        "line-color": "rgba(210, 162, 84, 1)"
-      }
-    },
-    {
-      "id": "Transport-2Metalled-Orange",
-      "type": "line",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 10,
-      "filter": ["all", ["==", "surface", "metalled"], ["in", "lane_count", 2, 3, 4, 5, 6, 7]],
-      "layout": {
-        "visibility": "none",
-        "line-cap": "butt",
-        "line-join": "bevel"
-      },
-      "paint": {
-        "line-translate-anchor": "map",
-        "line-opacity": {
-          "stops": [
-            [13, 1],
-            [18, 0.5]
-          ]
-        },
-        "line-width": {
-          "stops": [
-            [13, 1],
-            [15, 5],
-            [19, 18]
-          ]
-        },
-        "line-gap-width": 0,
-        "line-dasharray": [8, 5],
-        "line-color": "rgba(210, 162, 84, 1)"
+        }
       }
     },
     {
@@ -1035,9 +728,98 @@
       "minzoom": 11.5,
       "filter": ["all", ["==", "class", "ferry"]],
       "paint": {
+        "line-width": 1,
         "line-color": "rgba(74, 110, 153, 1)",
-        "line-dasharray": [8, 10],
-        "line-width": 1
+        "line-dasharray": [8, 10]
+      }
+    },
+    {
+      "id": "Airport-Label",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "aerodrome_label",
+      "minzoom": 12,
+      "layout": {
+        "icon-rotation-alignment": "viewport",
+        "icon-pitch-alignment": "viewport",
+        "visibility": "visible",
+        "text-field": "{name}",
+        "text-size": 11,
+        "text-anchor": "top",
+        "text-allow-overlap": false,
+        "icon-text-fit": "none",
+        "icon-size": 1.2,
+        "icon-ignore-placement": false,
+        "icon-image": "airport_airport_pnt_fill",
+        "text-font": ["Open Sans Bold Italic"],
+        "symbol-spacing": 250,
+        "text-pitch-alignment": "auto",
+        "text-justify": "center",
+        "text-max-width": 5,
+        "icon-anchor": "bottom",
+        "text-rotation-alignment": "auto",
+        "icon-offset": [0, 0],
+        "text-padding": 2
+      },
+      "paint": {
+        "text-halo-blur": 0.5,
+        "text-color": "rgba(255, 255, 255, 1)",
+        "text-halo-color": "rgba(0, 0, 0, 1)",
+        "text-halo-width": 1,
+        "icon-opacity": 0.8
+      }
+    },
+    {
+      "id": "All-Highway-Labels-three",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "transportation",
+      "minzoom": 8,
+      "filter": ["all", ["in", "hway_num", "25A", "20A", "20B", "29A", "30A", "74A", "67A"]],
+      "layout": {
+        "symbol-placement": "line",
+        "text-field": "{hway_num}",
+        "text-font": ["Open Sans Bold"],
+        "icon-text-fit": "none",
+        "text-size": {
+          "stops": [
+            [8, 9],
+            [11, 10],
+            [15, 14]
+          ]
+        },
+        "symbol-spacing": {
+          "stops": [
+            [6, 500],
+            [13, 400]
+          ]
+        },
+        "visibility": "visible",
+        "text-justify": "center",
+        "text-rotation-alignment": "viewport",
+        "text-pitch-alignment": "viewport",
+        "icon-rotation-alignment": "viewport",
+        "icon-offset": [0, 1],
+        "icon-pitch-alignment": "viewport",
+        "icon-anchor": "center",
+        "icon-keep-upright": false,
+        "text-keep-upright": true,
+        "icon-rotate": 0,
+        "icon-padding": 2,
+        "icon-text-fit-padding": [1, 4, 3, 3],
+        "icon-size": {
+          "stops": [
+            [8, 1.2],
+            [12, 1.5],
+            [15, 1.7]
+          ]
+        },
+        "icon-image": "highway_pnt_wide"
+      },
+      "paint": {
+        "text-translate-anchor": "map",
+        "text-color": "rgba(255, 255, 255, 1)",
+        "icon-translate-anchor": "map"
       }
     },
     {
@@ -1080,10 +862,9 @@
         "icon-text-fit-padding": [1, 4, 3, 3],
         "icon-size": {
           "stops": [
-            [8, 1],
-            [11, 1.1],
-            [15, 1.2],
-            [18, 1.5]
+            [8, 1.2],
+            [12, 1.5],
+            [15, 1.7]
           ]
         },
         "icon-image": "highway_pnt_standard"
@@ -1102,10 +883,12 @@
       "minzoom": 13,
       "filter": ["all", ["has", "name"]],
       "layout": {
-        "symbol-placement": "line",
+        "symbol-spacing": 250,
+        "text-transform": "none",
+        "icon-pitch-alignment": "auto",
+        "visibility": "visible",
+        "text-justify": "center",
         "text-field": "{name}",
-        "text-font": ["Open Sans Bold"],
-        "icon-text-fit": "both",
         "text-size": {
           "stops": [
             [13, 8],
@@ -1115,15 +898,15 @@
             [22, 28]
           ]
         },
-        "symbol-spacing": 250,
-        "visibility": "visible",
         "text-anchor": "center",
-        "text-justify": "center",
-        "text-transform": "none",
-        "icon-pitch-alignment": "auto",
-        "icon-ignore-placement": false
+        "icon-text-fit": "both",
+        "symbol-placement": "line",
+        "icon-ignore-placement": false,
+        "text-font": ["Open Sans Bold"]
       },
       "paint": {
+        "text-color": "rgba(255, 255, 255, 1)",
+        "text-halo-color": "rgba(0, 0, 0, 1)",
         "text-halo-width": {
           "stops": [
             [13, 1],
@@ -1132,8 +915,6 @@
             [19, 2.5]
           ]
         },
-        "text-color": "rgba(255, 255, 255, 1)",
-        "text-halo-color": "rgba(0, 0, 0, 1)",
         "text-opacity": 1
       }
     },
@@ -1153,77 +934,6 @@
           ]
         },
         "text-font": ["Open Sans Regular"]
-      }
-    },
-    {
-      "id": "Aeroway-Symbols",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "aeroway",
-      "minzoom": 11.5,
-      "maxzoom": 18,
-      "filter": ["all", ["==", "class", "aerodrome"]],
-      "layout": {
-        "icon-rotation-alignment": "viewport",
-        "icon-pitch-alignment": "viewport",
-        "visibility": "none",
-        "text-field": "{name}",
-        "text-size": 10,
-        "text-anchor": "top",
-        "text-allow-overlap": false,
-        "icon-text-fit": "none",
-        "icon-ignore-placement": false,
-        "icon-image": "airport_15",
-        "text-font": ["Open Sans Bold"],
-        "symbol-spacing": 250,
-        "text-pitch-alignment": "auto",
-        "text-justify": "center",
-        "icon-anchor": "bottom",
-        "text-rotation-alignment": "auto",
-        "icon-offset": [0, 0],
-        "text-padding": 2
-      },
-      "paint": {
-        "text-halo-blur": 0.5,
-        "text-color": "rgba(129, 123, 123, 1)",
-        "text-halo-color": "rgba(255, 255, 255, 1)",
-        "text-halo-width": 1
-      }
-    },
-    {
-      "id": "Airport-Label",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "aerodrome_label",
-      "minzoom": 12,
-      "layout": {
-        "text-field": "{name}",
-        "visibility": "visible",
-        "text-size": 11,
-        "text-pitch-alignment": "auto",
-        "text-rotation-alignment": "auto",
-        "text-font": ["Open Sans Bold Italic"],
-        "icon-rotation-alignment": "viewport",
-        "icon-ignore-placement": false,
-        "icon-text-fit": "none",
-        "text-justify": "center",
-        "symbol-spacing": 250,
-        "text-padding": 2,
-        "icon-offset": [0, 0],
-        "text-allow-overlap": false,
-        "icon-pitch-alignment": "viewport",
-        "text-anchor": "top",
-        "icon-anchor": "bottom",
-        "icon-size": 1.2,
-        "icon-image": "airport_airport_pnt_fill",
-        "text-max-width": 5
-      },
-      "paint": {
-        "text-color": "rgba(255, 255, 255, 1)",
-        "text-halo-width": 1,
-        "text-halo-blur": 0.5,
-        "text-halo-color": "rgba(0, 0, 0, 1)",
-        "icon-opacity": 0.8
       }
     },
     {
@@ -1248,6 +958,31 @@
         "text-halo-blur": 0.5,
         "text-color": "rgba(94, 94, 94, 1)",
         "text-halo-color": "rgba(255, 255, 255, 1)",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "Housenumber",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "housenumber",
+      "minzoom": 17,
+      "layout": {
+        "text-allow-overlap": false,
+        "text-field": "{housenumber}",
+        "text-font": ["Roboto Bold Italic"],
+        "text-size": {
+          "stops": [
+            [17, 10],
+            [19, 12]
+          ]
+        },
+        "text-anchor": "bottom"
+      },
+      "paint": {
+        "icon-color": "rgba(0, 0, 0, 1)",
+        "text-halo-color": "rgba(14, 14, 14, 1)",
+        "text-color": "rgba(255, 255, 255, 1)",
         "text-halo-width": 1
       }
     },
@@ -1298,49 +1033,6 @@
       }
     },
     {
-      "id": "All-River-Names",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "water",
-      "minzoom": 13,
-      "filter": ["all", ["==", "class", "river"], ["has", "name"]],
-      "layout": {
-        "symbol-spacing": 1000,
-        "visibility": "none",
-        "text-field": "{name}",
-        "icon-anchor": "center",
-        "text-size": 12,
-        "text-anchor": "bottom",
-        "symbol-placement": "line",
-        "text-font": ["Open Sans Italic"]
-      },
-      "paint": {
-        "text-halo-blur": 1,
-        "text-color": "rgba(0, 140, 204, 1)",
-        "text-halo-color": "rgba(239, 239, 239, 0.80)",
-        "text-halo-width": 1.5
-      }
-    },
-    {
-      "id": "All-Lake-Names",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "water",
-      "minzoom": 13,
-      "filter": ["all", ["==", "class", "lake"], ["has", "name"]],
-      "layout": {
-        "visibility": "none",
-        "text-field": "{name}",
-        "text-font": ["Open Sans Italic"],
-        "text-size": 12
-      },
-      "paint": {
-        "text-halo-width": 2,
-        "text-color": "rgba(0, 140, 204, 1)",
-        "text-halo-color": "rgba(239, 239, 239, 1)"
-      }
-    },
-    {
       "id": "Place-Names-3-12",
       "type": "symbol",
       "source": "LINZ Basemaps",
@@ -1348,7 +1040,9 @@
       "minzoom": 3,
       "maxzoom": 13,
       "layout": {
-        "text-font": ["Roboto Regular"],
+        "icon-rotation-alignment": "auto",
+        "text-variable-anchor": ["top", "bottom-left"],
+        "text-optional": true,
         "text-field": "{name}",
         "text-size": {
           "stops": [
@@ -1360,6 +1054,10 @@
             [14, 17]
           ]
         },
+        "text-anchor": "center",
+        "icon-ignore-placement": false,
+        "text-font": ["Roboto Regular"],
+        "text-pitch-alignment": "viewport",
         "text-letter-spacing": {
           "stops": [
             [10, 0.08],
@@ -1367,37 +1065,31 @@
             [14, 0]
           ]
         },
+        "text-max-width": 6,
         "text-offset": {
           "stops": [
             [4, [0, 1.75]],
             [6, [0, 1.25]]
           ]
         },
-        "text-max-width": 6,
-        "text-anchor": "center",
-        "text-variable-anchor": ["top", "bottom-left"],
-        "icon-rotation-alignment": "auto",
-        "icon-ignore-placement": false,
-        "text-rotation-alignment": "viewport",
-        "text-pitch-alignment": "viewport",
-        "text-optional": true
+        "text-rotation-alignment": "viewport"
       },
       "paint": {
-        "text-color": "rgba(255, 252, 252, 1)",
         "text-halo-color": "rgba(32, 32, 32, 1)",
-        "text-opacity": 1,
-        "text-halo-blur": 1,
-        "text-halo-width": {
-          "stops": [
-            [4, 1.5],
-            [9, 1.5]
-          ]
-        },
         "icon-halo-color": "rgba(255, 255, 255, 1)",
         "icon-color": {
           "stops": [
             [6, "rgba(53, 53, 53, 1)"],
             [10, "rgba(53, 53, 53, 1)"]
+          ]
+        },
+        "text-halo-blur": 1,
+        "icon-translate-anchor": "viewport",
+        "text-color": "rgba(255, 252, 252, 1)",
+        "text-halo-width": {
+          "stops": [
+            [4, 1.5],
+            [9, 1.5]
           ]
         },
         "icon-opacity": 1,
@@ -1407,32 +1099,7 @@
             [14, 0.5]
           ]
         },
-        "icon-translate-anchor": "viewport"
-      }
-    },
-    {
-      "id": "Housenumber",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "housenumber",
-      "minzoom": 17,
-      "layout": {
-        "text-font": ["Roboto Bold Italic"],
-        "text-field": "{housenumber}",
-        "text-size": {
-          "stops": [
-            [17, 10],
-            [19, 12]
-          ]
-        },
-        "text-anchor": "bottom",
-        "text-allow-overlap": false
-      },
-      "paint": {
-        "text-halo-color": "rgba(14, 14, 14, 1)",
-        "icon-color": "rgba(0, 0, 0, 1)",
-        "text-color": "rgba(255, 255, 255, 1)",
-        "text-halo-width": 1
+        "text-opacity": 1
       }
     },
     {
@@ -1443,10 +1110,11 @@
       "minzoom": 13,
       "filter": ["all", ["has", "name"], ["==", "class", "track"], ["==", "track_use", "foot"]],
       "layout": {
-        "symbol-placement": "point",
+        "icon-rotation-alignment": "viewport",
+        "icon-pitch-alignment": "auto",
+        "icon-allow-overlap": false,
+        "visibility": "visible",
         "text-field": "{name}",
-        "text-font": ["Open Sans Semi Bold"],
-        "icon-text-fit": "none",
         "text-size": {
           "stops": [
             [13, 10],
@@ -1456,35 +1124,34 @@
             [22, 140]
           ]
         },
-        "symbol-spacing": 100,
-        "visibility": "visible",
         "text-anchor": "top",
-        "text-justify": "center",
-        "text-transform": "none",
-        "icon-pitch-alignment": "auto",
-        "icon-ignore-placement": false,
-        "icon-image": "track_walking_pnt_fill",
-        "icon-anchor": "bottom",
         "text-allow-overlap": false,
-        "icon-allow-overlap": false,
-        "text-pitch-alignment": "viewport",
-        "text-rotation-alignment": "viewport",
-        "icon-rotation-alignment": "viewport",
-        "text-ignore-placement": false,
-        "text-max-width": 4,
+        "icon-text-fit": "none",
         "icon-size": {
           "stops": [
             [13, 1.2],
             [20, 2]
           ]
         },
-        "icon-offset": [0, -3]
+        "symbol-placement": "point",
+        "icon-ignore-placement": false,
+        "icon-image": "track_walking_pnt_fill",
+        "text-font": ["Open Sans Semi Bold"],
+        "symbol-spacing": 100,
+        "text-transform": "none",
+        "text-pitch-alignment": "viewport",
+        "text-justify": "center",
+        "text-max-width": 4,
+        "icon-anchor": "bottom",
+        "text-rotation-alignment": "viewport",
+        "icon-offset": [0, -3],
+        "text-ignore-placement": false
       },
       "paint": {
-        "text-opacity": 1,
         "text-color": "rgba(255, 255, 255, 1)",
         "text-halo-color": "rgba(0, 0, 0, 1)",
-        "text-halo-width": 0.8
+        "text-halo-width": 0.8,
+        "text-opacity": 1
       }
     },
     {
@@ -1496,243 +1163,24 @@
       "maxzoom": 20,
       "filter": ["all", ["==", "class", "grass"], ["==", "grass_type", "golf_course"]],
       "layout": {
-        "text-font": ["Open Sans Semi Bold Italic"],
         "icon-rotation-alignment": "viewport",
-        "text-field": "{name}",
-        "text-offset": [0.5, 0],
-        "text-anchor": "left",
-        "text-justify": "left",
-        "visibility": "visible",
-        "icon-anchor": "right",
         "icon-pitch-alignment": "viewport",
+        "visibility": "visible",
+        "text-field": "{name}",
+        "text-anchor": "left",
+        "text-size": 11,
         "icon-size": 1.2,
         "icon-image": "golf_course_pnt_dual",
+        "text-font": ["Open Sans Semi Bold Italic"],
+        "text-justify": "left",
         "text-max-width": 6,
-        "text-size": 11
+        "text-offset": [0.5, 0],
+        "icon-anchor": "right"
       },
       "paint": {
-        "text-color": "rgba(146, 201, 156, 1)",
-        "text-halo-color": "rgba(0, 0, 0, 1)",
-        "text-halo-width": 0.8
-      }
-    },
-    {
-      "id": "Poi-Railway-Symbol-copy",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "poi",
-      "minzoom": 13,
-      "filter": ["all", ["==", "class", "railway"]],
-      "layout": {
-        "text-font": ["Open Sans Bold Italic"],
-        "text-field": {
-          "stops": [
-            [12, "{name}"],
-            [13, "{name}"]
-          ]
-        },
-        "text-justify": "left",
-        "text-anchor": "left",
-        "icon-anchor": "center",
-        "text-size": {
-          "stops": [
-            [13, 10],
-            [16, 10],
-            [17, 16],
-            [18, 19]
-          ]
-        },
-        "icon-allow-overlap": true,
-        "icon-size": {
-          "stops": [
-            [12, 0.4],
-            [13, 1],
-            [20, 2]
-          ]
-        },
-        "text-max-width": 5,
-        "icon-image": "rail_station_train_diesel_pnt_red",
-        "text-offset": [1.25, 1.5],
-        "icon-optional": true,
-        "visibility": "visible",
-        "text-allow-overlap": false
-      },
-      "paint": {
-        "text-halo-color": "rgba(16, 16, 16, 1)",
-        "text-halo-width": 1,
-        "text-halo-blur": 0.5,
-        "text-translate": [0, -15],
-        "text-color": "rgba(255, 255, 255, 1)"
-      }
-    },
-    {
-      "id": "Poi-Railway-Symbol",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "poi",
-      "minzoom": 12,
-      "maxzoom": 14,
-      "filter": ["all", ["==", "class", "railway"]],
-      "layout": {
-        "text-font": ["Open Sans Bold Italic"],
-        "text-field": "",
-        "text-justify": "left",
-        "text-anchor": "left",
-        "icon-anchor": "center",
-        "text-size": 16,
-        "icon-allow-overlap": false,
-        "icon-size": {
-          "stops": [
-            [12, 1],
-            [13, 1],
-            [20, 2]
-          ]
-        },
-        "text-max-width": 5,
-        "icon-image": "rail_station_train_diesel_pnt_red",
-        "text-offset": [1.25, 1.5],
-        "icon-optional": true,
-        "visibility": "visible"
-      },
-      "paint": {
-        "text-color": "rgba(94, 94, 94, 1)",
-        "text-halo-color": "rgba(255, 255, 255, 1)",
-        "text-halo-width": 1.5,
-        "text-halo-blur": 0.5,
-        "text-translate": [0, -15]
-      }
-    },
-    {
-      "id": "Poi-Monument",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "poi",
-      "minzoom": 12,
-      "maxzoom": 20,
-      "filter": ["all", ["==", "class", "monument"]],
-      "layout": {
-        "text-font": ["Open Sans Semi Bold Italic"],
-        "text-field": "{name}",
-        "text-size": 11,
-        "text-justify": "left",
-        "text-anchor": "left",
-        "icon-anchor": "center",
-        "visibility": "visible",
-        "icon-allow-overlap": true,
-        "text-offset": [1.5, 0],
-        "text-allow-overlap": false,
-        "text-max-width": 5,
-        "icon-size": {
-          "stops": [
-            [12, 1.2],
-            [16, 1.6]
-          ]
-        },
-        "text-radial-offset": 0,
-        "icon-image": "monument_pnt"
-      },
-      "paint": {
-        "text-color": "rgba(255, 214, 150, 1)",
-        "text-halo-color": "rgba(0, 0, 0, 1)",
         "text-halo-width": 0.8,
-        "icon-opacity": 0.85
-      }
-    },
-    {
-      "id": "Poi-Beacon-Lighthouse",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "poi",
-      "minzoom": 12,
-      "maxzoom": 20,
-      "filter": ["all", ["==", "class", "beacon"], ["==", "type", "lighthouse"]],
-      "layout": {
-        "text-font": ["Open Sans Semi Bold Italic"],
-        "text-field": "{name}",
-        "text-size": 11,
-        "text-justify": "right",
-        "text-anchor": "left",
-        "icon-anchor": "center",
-        "text-allow-overlap": true,
-        "icon-allow-overlap": true,
-        "icon-size": 1.3,
-        "icon-image": "beacon_lighthouse_land_pnt"
-      },
-      "paint": {
-        "text-color": "rgba(255, 214, 150, 1)",
-        "text-halo-color": "rgba(0, 0, 0, 1)",
-        "text-halo-width": 0.8,
-        "text-translate": [15, 0]
-      }
-    },
-    {
-      "id": "Poi-RifleRange-Label",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "poi",
-      "minzoom": 13,
-      "filter": ["all", ["==", "class", "rifle_range"]],
-      "layout": {
-        "text-font": ["Open Sans Regular"],
-        "text-field": "",
-        "text-size": 9,
-        "icon-image": "rifle_range_pnt",
-        "icon-size": {
-          "stops": [
-            [12, 1.2],
-            [15, 1.5]
-          ]
-        }
-      },
-      "paint": {
-        "icon-opacity": {
-          "stops": [
-            [12, 0.25],
-            [13, 0.9]
-          ]
-        }
-      }
-    },
-    {
-      "id": "Poi-SportsField-Label",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "poi",
-      "minzoom": 13,
-      "filter": ["all", ["==", "class", "sports_field"]],
-      "layout": {
-        "text-font": ["Open Sans Semi Bold Italic"],
-        "text-field": "{name}",
-        "text-size": 11
-      },
-      "paint": {
         "text-color": "rgba(146, 201, 156, 1)",
-        "text-halo-color": "rgba(0, 0, 0, 1)",
-        "text-halo-width": 1
-      }
-    },
-    {
-      "id": "Poi-Showground-Symbol",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "poi",
-      "minzoom": 13.5,
-      "filter": ["all", ["==", "class", "showground"]],
-      "layout": {
-        "text-font": ["Open Sans Bold Italic"],
-        "text-size": 9,
-        "text-field": "",
-        "icon-image": "showground_pnt",
-        "icon-size": {
-          "stops": [
-            [12, 1.2],
-            [16, 1.5]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "rgba(121, 195, 128, 0.2)",
-        "text-halo-color": "rgba(255, 255, 255, 1)"
+        "text-halo-color": "rgba(0, 0, 0, 1)"
       }
     },
     {
@@ -1744,59 +1192,278 @@
       "filter": ["all", ["==", "class", "landfill"]],
       "layout": {
         "text-justify": "left",
-        "text-anchor": "left",
+        "text-max-width": 4,
+        "visibility": "visible",
         "text-field": "{name}",
-        "text-font": ["Roboto Condensed Italic"],
         "icon-anchor": "right",
-        "text-size": 12,
         "text-offset": [0.5, 0],
+        "text-anchor": "left",
+        "text-size": 12,
         "icon-size": {
           "stops": [
             [12, 1.2],
             [16, 1.5]
           ]
         },
-        "text-max-width": 4,
-        "visibility": "visible",
-        "icon-image": "landfill_pnt"
+        "icon-image": "landfill_pnt",
+        "text-font": ["Roboto Condensed Italic"]
       },
       "paint": {
-        "text-halo-color": "rgba(28, 25, 17, 1)",
-        "text-halo-width": 1.5,
         "text-halo-blur": 0.5,
-        "text-color": "rgba(255, 255, 255, 1)"
+        "text-halo-color": "rgba(28, 25, 17, 1)",
+        "text-color": "rgba(255, 255, 255, 1)",
+        "text-halo-width": 1.5
       }
     },
     {
-      "id": "Poi-Hut-Label-Sprite",
+      "id": "Poi-Beacon-Lighthouse",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "poi",
+      "minzoom": 12,
+      "maxzoom": 20,
+      "filter": ["all", ["==", "class", "beacon"], ["==", "type", "lighthouse"]],
+      "layout": {
+        "icon-allow-overlap": true,
+        "text-justify": "right",
+        "text-field": "{name}",
+        "icon-anchor": "center",
+        "text-size": 11,
+        "text-anchor": "left",
+        "text-allow-overlap": true,
+        "icon-size": 1.3,
+        "icon-image": "beacon_lighthouse_land_pnt",
+        "text-font": ["Open Sans Semi Bold Italic"]
+      },
+      "paint": {
+        "text-color": "rgba(255, 214, 150, 1)",
+        "text-halo-color": "rgba(0, 0, 0, 1)",
+        "text-halo-width": 0.8,
+        "text-translate": [15, 0]
+      }
+    },
+    {
+      "id": "Poi-Hut-Label",
       "type": "symbol",
       "source": "LINZ Basemaps",
       "source-layer": "poi",
       "minzoom": 13,
       "filter": ["any", ["==", "class", "hut"]],
       "layout": {
+        "icon-allow-overlap": true,
+        "text-justify": "left",
+        "text-max-width": 5,
+        "visibility": "visible",
         "text-field": {
           "stops": [
             [6, ""],
             [15, "{name}"]
           ]
         },
-        "text-font": ["Open Sans Semi Bold"],
-        "text-size": 12,
-        "icon-size": 1.5,
-        "text-justify": "left",
-        "text-anchor": "left",
-        "icon-allow-overlap": true,
         "text-offset": [1, 0],
-        "text-max-width": 5,
+        "text-size": 12,
+        "text-anchor": "left",
+        "icon-size": 1.5,
         "icon-image": "building_pnt_hut",
-        "visibility": "visible"
+        "text-font": ["Open Sans Semi Bold"]
       },
       "paint": {
-        "text-halo-width": 1.5,
-        "icon-opacity": 0.9,
         "text-halo-color": "rgba(59, 55, 55, 1)",
-        "text-color": "rgba(255, 255, 255, 1)"
+        "text-color": "rgba(255, 255, 255, 1)",
+        "text-halo-width": 1.5,
+        "icon-opacity": 0.9
+      }
+    },
+    {
+      "id": "Poi-Monument",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "poi",
+      "minzoom": 12,
+      "maxzoom": 20,
+      "filter": ["all", ["==", "class", "monument"]],
+      "layout": {
+        "icon-allow-overlap": true,
+        "text-radial-offset": 0,
+        "visibility": "visible",
+        "text-field": "{name}",
+        "text-size": 11,
+        "text-anchor": "left",
+        "text-allow-overlap": false,
+        "icon-size": {
+          "stops": [
+            [12, 1.2],
+            [16, 1.6]
+          ]
+        },
+        "icon-image": "monument_pnt",
+        "text-font": ["Open Sans Semi Bold Italic"],
+        "text-justify": "left",
+        "text-max-width": 5,
+        "icon-anchor": "center",
+        "text-offset": [1.5, 0]
+      },
+      "paint": {
+        "text-color": "rgba(255, 214, 150, 1)",
+        "text-halo-color": "rgba(0, 0, 0, 1)",
+        "text-halo-width": 0.8,
+        "icon-opacity": 0.85
+      }
+    },
+    {
+      "id": "Poi-Railway-Symbol",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "poi",
+      "minzoom": 12,
+      "maxzoom": 14,
+      "filter": ["all", ["==", "class", "railway"]],
+      "layout": {
+        "icon-allow-overlap": false,
+        "visibility": "visible",
+        "text-field": "",
+        "text-anchor": "left",
+        "text-size": 16,
+        "icon-size": {
+          "stops": [
+            [12, 1],
+            [13, 1],
+            [20, 2]
+          ]
+        },
+        "icon-image": "rail_station_train_diesel_pnt_red",
+        "text-font": ["Open Sans Bold Italic"],
+        "icon-optional": true,
+        "text-justify": "left",
+        "text-max-width": 5,
+        "icon-anchor": "center",
+        "text-offset": [1.25, 1.5]
+      },
+      "paint": {
+        "text-halo-blur": 0.5,
+        "text-color": "rgba(94, 94, 94, 1)",
+        "text-halo-color": "rgba(255, 255, 255, 1)",
+        "text-halo-width": 1.5,
+        "text-translate": [0, -15]
+      }
+    },
+    {
+      "id": "Poi-Railway-Symbol-copy",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "poi",
+      "minzoom": 13,
+      "filter": ["all", ["==", "class", "railway"]],
+      "layout": {
+        "icon-allow-overlap": true,
+        "visibility": "visible",
+        "text-field": {
+          "stops": [
+            [12, "{name}"],
+            [13, "{name}"]
+          ]
+        },
+        "text-anchor": "left",
+        "text-size": {
+          "stops": [
+            [13, 10],
+            [16, 10],
+            [17, 16],
+            [18, 19]
+          ]
+        },
+        "text-allow-overlap": false,
+        "icon-size": {
+          "stops": [
+            [12, 0.4],
+            [13, 1],
+            [20, 2]
+          ]
+        },
+        "icon-image": "rail_station_train_diesel_pnt_red",
+        "text-font": ["Open Sans Bold Italic"],
+        "icon-optional": true,
+        "text-justify": "left",
+        "text-max-width": 5,
+        "icon-anchor": "center",
+        "text-offset": [1.25, 1.5]
+      },
+      "paint": {
+        "text-halo-blur": 0.5,
+        "text-halo-color": "rgba(16, 16, 16, 1)",
+        "text-color": "rgba(255, 255, 255, 1)",
+        "text-halo-width": 1,
+        "text-translate": [0, -15]
+      }
+    },
+    {
+      "id": "Poi-RifleRange-Label",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "poi",
+      "minzoom": 13,
+      "filter": ["all", ["==", "class", "rifle_range"]],
+      "layout": {
+        "icon-size": {
+          "stops": [
+            [12, 1.2],
+            [15, 1.5]
+          ]
+        },
+        "text-field": "",
+        "icon-image": "rifle_range_pnt",
+        "text-font": ["Open Sans Regular"],
+        "text-size": 9
+      },
+      "paint": {
+        "icon-opacity": {
+          "stops": [
+            [12, 0.25],
+            [13, 0.9]
+          ]
+        }
+      }
+    },
+    {
+      "id": "Poi-Showground-Symbol",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "poi",
+      "minzoom": 13.5,
+      "filter": ["all", ["==", "class", "showground"]],
+      "layout": {
+        "icon-size": {
+          "stops": [
+            [12, 1.2],
+            [16, 1.5]
+          ]
+        },
+        "text-field": "",
+        "icon-image": "showground_pnt",
+        "text-font": ["Open Sans Bold Italic"],
+        "text-size": 9
+      },
+      "paint": {
+        "text-color": "rgba(121, 195, 128, 0.2)",
+        "text-halo-color": "rgba(255, 255, 255, 1)"
+      }
+    },
+    {
+      "id": "Poi-SportsField-Label",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "poi",
+      "minzoom": 13,
+      "filter": ["all", ["==", "class", "sports_field"]],
+      "layout": {
+        "text-field": "{name}",
+        "text-font": ["Open Sans Semi Bold Italic"],
+        "text-size": 11
+      },
+      "paint": {
+        "text-halo-width": 1,
+        "text-color": "rgba(146, 201, 156, 1)",
+        "text-halo-color": "rgba(0, 0, 0, 1)"
       }
     }
   ],
