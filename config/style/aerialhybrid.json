@@ -1095,7 +1095,7 @@
       }
     },
     {
-      "id": "All-Road-Labels-test",
+      "id": "All-Road-Labels",
       "type": "symbol",
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
@@ -1135,41 +1135,6 @@
         "text-color": "rgba(255, 255, 255, 1)",
         "text-halo-color": "rgba(0, 0, 0, 1)",
         "text-opacity": 1
-      }
-    },
-    {
-      "id": "All-Road-Labels",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 13,
-      "filter": ["all", ["has", "name"]],
-      "layout": {
-        "symbol-placement": "line",
-        "text-field": "{name}",
-        "text-font": ["Open Sans Regular"],
-        "icon-text-fit": "both",
-        "text-size": {
-          "stops": [
-            [13, 8],
-            [15, 11],
-            [18, 10],
-            [19, 30],
-            [22, 140]
-          ]
-        },
-        "symbol-spacing": 250,
-        "visibility": "none",
-        "text-anchor": "center",
-        "text-justify": "center",
-        "text-transform": "none",
-        "icon-pitch-alignment": "auto",
-        "icon-ignore-placement": false
-      },
-      "paint": {
-        "text-halo-width": 2.5,
-        "text-halo-color": "rgba(243, 243, 242, 0.9)",
-        "text-opacity": 0.9
       }
     },
     {
@@ -1226,7 +1191,7 @@
       }
     },
     {
-      "id": "Airport-Label-test",
+      "id": "Airport-Label",
       "type": "symbol",
       "source": "LINZ Basemaps",
       "source-layer": "aerodrome_label",
@@ -1376,7 +1341,7 @@
       }
     },
     {
-      "id": "Place-Names-3-12-test",
+      "id": "Place-Names-3-12",
       "type": "symbol",
       "source": "LINZ Basemaps",
       "source-layer": "place",
@@ -1426,82 +1391,6 @@
           "stops": [
             [4, 1.5],
             [9, 1.5]
-          ]
-        },
-        "icon-halo-color": "rgba(255, 255, 255, 1)",
-        "icon-color": {
-          "stops": [
-            [6, "rgba(53, 53, 53, 1)"],
-            [10, "rgba(53, 53, 53, 1)"]
-          ]
-        },
-        "icon-opacity": 1,
-        "icon-halo-blur": {
-          "stops": [
-            [13, 1],
-            [14, 0.5]
-          ]
-        },
-        "icon-translate-anchor": "viewport"
-      }
-    },
-    {
-      "id": "Place-Names-3-12",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "place",
-      "minzoom": 3,
-      "maxzoom": 13,
-      "layout": {
-        "text-font": ["Roboto Regular"],
-        "text-field": "{name}",
-        "text-size": {
-          "stops": [
-            [2, 10],
-            [5, 16],
-            [8, 16],
-            [10, 17],
-            [12, 17],
-            [14, 17]
-          ]
-        },
-        "text-letter-spacing": {
-          "stops": [
-            [10, 0.08],
-            [13, 0.04],
-            [14, 0]
-          ]
-        },
-        "text-offset": {
-          "stops": [
-            [4, [0, 1.75]],
-            [6, [0, 1.25]]
-          ]
-        },
-        "text-max-width": 6,
-        "text-anchor": "center",
-        "text-variable-anchor": ["top", "bottom-left"],
-        "icon-rotation-alignment": "auto",
-        "icon-ignore-placement": false,
-        "text-rotation-alignment": "viewport",
-        "text-pitch-alignment": "viewport",
-        "text-optional": true,
-        "visibility": "none"
-      },
-      "paint": {
-        "text-color": {
-          "stops": [
-            [6, "rgba(34, 34, 34, 1)"],
-            [19, "rgba(111, 111, 111, 1)"]
-          ]
-        },
-        "text-halo-color": "rgba(255, 252, 252, 1)",
-        "text-opacity": 1,
-        "text-halo-blur": 1,
-        "text-halo-width": {
-          "stops": [
-            [4, 1.5],
-            [9, 2]
           ]
         },
         "icon-halo-color": "rgba(255, 255, 255, 1)",
@@ -1908,72 +1797,6 @@
         "icon-opacity": 0.9,
         "text-halo-color": "rgba(59, 55, 55, 1)",
         "text-color": "rgba(255, 255, 255, 1)"
-      }
-    },
-    {
-      "id": "Poi-School-Label-Sprite-test-copy",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "poi",
-      "minzoom": 14,
-      "filter": ["any", ["==", "class", "school"]],
-      "layout": {
-        "text-field": {
-          "stops": [
-            [16, ""],
-            [17, "{name}"]
-          ]
-        },
-        "text-font": ["Open Sans Semi Bold"],
-        "text-size": 12,
-        "text-justify": "left",
-        "text-anchor": "left",
-        "icon-allow-overlap": false,
-        "text-offset": [1, 0],
-        "text-max-width": 5,
-        "icon-image": "building_pnt_school",
-        "visibility": "none",
-        "icon-size": 1.2
-      },
-      "paint": {
-        "text-halo-width": 1.5,
-        "text-color": "rgba(255, 255, 255, 1)",
-        "icon-opacity": 1,
-        "text-opacity": 1,
-        "text-halo-color": "rgba(7, 7, 7, 1)"
-      }
-    },
-    {
-      "id": "Poi-Hospital-Label-Sprite-test",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "poi",
-      "minzoom": 14,
-      "filter": ["any", ["==", "class", "hospital"]],
-      "layout": {
-        "text-field": {
-          "stops": [
-            [16, ""],
-            [17, "{name}"]
-          ]
-        },
-        "text-font": ["Open Sans Semi Bold"],
-        "text-size": 12,
-        "text-justify": "left",
-        "text-anchor": "left",
-        "icon-allow-overlap": false,
-        "text-offset": [1, 0],
-        "text-max-width": 5,
-        "icon-image": "building_pnt_hospital",
-        "visibility": "none",
-        "icon-size": 1.2
-      },
-      "paint": {
-        "text-halo-color": "rgba(0, 0, 0, 1)",
-        "text-halo-width": 1.3,
-        "text-color": "rgba(255, 155, 155, 1)",
-        "icon-opacity": 0.9,
-        "text-opacity": 1
       }
     }
   ],
