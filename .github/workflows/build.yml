@@ -82,7 +82,7 @@ jobs:
   visual-diff:
     permissions:
       id-token: write
-      contents: read
+      contents: write
     needs: [build]
     name: Visual snapshot
     runs-on: ubuntu-latest
