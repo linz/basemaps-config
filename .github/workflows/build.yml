@@ -27,10 +27,10 @@ jobs:
           mask-aws-account-id: true
           role-to-assume: ${{ secrets.AWS_ROLE_NON_PROD }}
       
-  #     # - name: (NonProd - Imagery Config) Create pull request tag
-  #     #   if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
-  #     #   run: |
-  #     #     ./bin/bmc.js import -t pr-${{ github.event.number }} --commit
+      # - name: (NonProd - Imagery Config) Create pull request tag
+      #   if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
+      #   run: |
+      #     ./bin/bmc.js import -t pr-${{ github.event.number }} --commit
         
       - name: (NonProd - Imagery Config) Screenshot pull request updates
         run: |
@@ -84,8 +84,9 @@ jobs:
       id-token: write
       contents: write
       checks: write
-    # needs: [build]
-    name: Visual snapshot
+    needs: [build]
+    name: validate screenshots
+    if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
