@@ -25,7 +25,7 @@ jobs:
         with:
           aws-region: ap-southeast-2
           mask-aws-account-id: true
-          role-to-assume: ${{ secrets.AWS_ROLE_NON_PROD }}
+          role-to-assume: ${{ secrets.AWS_ROLE_SCREENSHOT }}
       
       # - name: (NonProd - Imagery Config) Create pull request tag
       #   if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
@@ -85,9 +85,15 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
+      - name:  AWS Configure
+        uses: aws-actions/configure-aws-credentials@v1.6.1
+        with:
+          aws-region: ap-southeast-2
+          mask-aws-account-id: true
+          role-to-assume: ${{ secrets.AWS_ROLE_SCREENSHOT }}
       - name: Diff snapshots
         id: visual-snapshots-diff
         uses: blacha/action-visual-snapshot@v2
         with:
-          gcs-bucket: 'linz-basemaps-testing-bc'
-          gcp-service-account-key: ${{ secrets.GCP_SECRET }}
+          storage-prefix: 's3://linz-basemaps-screenshot'
+          storage-url: 'https://d25mfjh9syaxsr.cloudfront.net'
