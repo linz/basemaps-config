@@ -6,35 +6,35 @@ on:
     branches:
       - master
 jobs:
-  # build:
-  #   permissions:
-  #     id-token: write
-  #     contents: read
+  build:
+    permissions:
+      id-token: write
+      contents: read
 
-  #   runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-  #   steps:
-  #     - uses: linz/action-typescript@v1
+    steps:
+      - uses: linz/action-typescript@v1
 
-  #     - name: Build Sprites
-  #       run: yarn build-sprites
+      - name: Build Sprites
+        run: yarn build-sprites
 
 
-  #     - name: (NonProd) AWS Configure
-  #       uses: aws-actions/configure-aws-credentials@v1.6.1
-  #       with:
-  #         aws-region: ap-southeast-2
-  #         mask-aws-account-id: true
-  #         role-to-assume: ${{ secrets.AWS_ROLE_NON_PROD }}
+      - name: (NonProd) AWS Configure
+        uses: aws-actions/configure-aws-credentials@v1.6.1
+        with:
+          aws-region: ap-southeast-2
+          mask-aws-account-id: true
+          role-to-assume: ${{ secrets.AWS_ROLE_NON_PROD }}
       
-  #     # - name: (NonProd - Imagery Config) Create pull request tag
-  #     #   if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
-  #     #   run: |
-  #     #     ./bin/bmc.js import -t pr-${{ github.event.number }} --commit
+      # - name: (NonProd - Imagery Config) Create pull request tag
+      #   if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
+      #   run: |
+      #     ./bin/bmc.js import -t pr-${{ github.event.number }} --commit
         
-  #     - name: (NonProd - Imagery Config) Screenshot pull request updates
-  #       run: |
-  #         ./bin/bmc.js screenshot -t pr-${{ github.event.number }} --host dev.basemaps.linz.govt.nz
+      - name: (NonProd - Imagery Config) Screenshot pull request updates
+        run: |
+          ./bin/bmc.js screenshot -t pr-${{ github.event.number }} --host dev.basemaps.linz.govt.nz
 
   #     - name: Save snapshots
   #       uses: getsentry/action-visual-snapshot@v2
@@ -84,8 +84,8 @@ jobs:
       id-token: write
       contents: write
       checks: write
-    # needs: [build]
-    name: Visual snapshot
+    needs: [build]
+    name: validate screenshots
     if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     timeout-minutes: 20
