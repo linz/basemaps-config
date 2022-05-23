@@ -85,12 +85,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - name:  AWS Configure
+      - name: AWS Configure
         uses: aws-actions/configure-aws-credentials@v1.6.1
         with:
           aws-region: ap-southeast-2
           mask-aws-account-id: true
-          role-to-assume: ${{ secrets.AWS_ROLE_SCREENSHOT }}
+          role-to-assume: ${{ secrets.AWS_ROLE_NON_PROD }}
+          
       - name: Diff snapshots
         id: visual-snapshots-diff
         uses: blacha/action-visual-snapshot@v2
