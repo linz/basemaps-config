@@ -41,10 +41,10 @@
     pretty-json-log "^1.0.0"
     zod "^3.2.0"
 
-"@basemaps/config@^6.26.0":
-  version "6.26.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/config/-/config-6.26.0.tgz#2d84f1c4c686eb7edb7ec0eb6bce9ee32a2cac89"
-  integrity sha512-SQYfWrHXf8qqdlYZe3ACY2VA8Lhkirw9rHJ6lOU1tK4Kn7H42UVAGbWdyXTGMNexRGnBYRrQQfQf5iawN8tidQ==
+"@basemaps/config@^6.26.0", "@basemaps/config@^6.27.0":
+  version "6.27.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/config/-/config-6.27.0.tgz#2d2fb99079c370a06e96b5529eb9e6092f1d50eb"
+  integrity sha512-/T4G+2F5YtUZuL1w9yGd/IBVvZ4/jM8467du8oHsydrGcZcjfgfwf3XYCs/CX1sCPK2PKAZ8mdvu5cc4U90vAQ==
   dependencies:
     "@basemaps/geo" "^6.26.0"
 
@@ -55,18 +55,17 @@
   dependencies:
     "@linzjs/tile-matrix-set" "^0.0.1"
 
-"@basemaps/shared@^6.26.0":
-  version "6.26.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/shared/-/shared-6.26.0.tgz#d45f438681858b265700f8e8c66dd5b509730470"
-  integrity sha512-0HakplnDOJoJ+WqBGcBqaV4ntHqwi6lqyqfhyKwRmDaMo3tHtT7odqIXUZ8ird7xRtCaile711ZKRqoIvXNBvw==
+"@basemaps/shared@^6.26.0", "@basemaps/shared@^6.27.0":
+  version "6.27.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/shared/-/shared-6.27.0.tgz#227457f544342f8fd847489d816dc462dfec2473"
+  integrity sha512-/EVKi2FB3p2NPtR6vJBERgdb+BdXDLoMTYyDECw4gihHg10ByAGOQfcfEKADzhwBOKx82mYNYo+JaoRUu2A/Gw==
   dependencies:
-    "@basemaps/config" "^6.26.0"
+    "@basemaps/config" "^6.27.0"
     "@basemaps/geo" "^6.26.0"
     "@basemaps/tiler" "^6.26.0"
     "@chunkd/source-aws-v2" "^8.1.0"
     "@linzjs/geojson" "^6.21.1"
     "@linzjs/metrics" "^6.21.1"
-    "@linzjs/s3fs" "^6.9.1"
     aws-sdk "^2.890.0"
     pino "^7.5.0"
     proj4 "^2.6.2"
@@ -183,11 +182,6 @@
   version "6.21.1"
   resolved "https://registry.yarnpkg.com/@linzjs/metrics/-/metrics-6.21.1.tgz#58d008c6b9c26400ea9934e2b07bc7f3dbcdd6d7"
   integrity sha512-3QupitQN91FwxBN+EEmlBRIcLEwoOG/RK+T2yZtIHuFxXmaPJabnVFnJG62/uzlMZw8gRwmyixUg5qTVuSnziQ==
-
-"@linzjs/s3fs@^6.9.1":
-  version "6.9.1"
-  resolved "https://registry.yarnpkg.com/@linzjs/s3fs/-/s3fs-6.9.1.tgz#6292999dd13b588890757ecd55e05f3cb036931f"
-  integrity sha512-jUFIJd93vLwvxdZdIbAm0iYEUmFIAXBTh4Wn8ikofYZglf8VxSDjBnPDZ6Eu7WQAh7DeVP9TfK5v3wLO0xFIlg==
 
 "@linzjs/style@^3.7.0":
   version "3.7.0"
