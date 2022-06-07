@@ -41,32 +41,31 @@
     pretty-json-log "^1.0.0"
     zod "^3.2.0"
 
-"@basemaps/config@^6.26.0":
-  version "6.26.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/config/-/config-6.26.0.tgz#2d84f1c4c686eb7edb7ec0eb6bce9ee32a2cac89"
-  integrity sha512-SQYfWrHXf8qqdlYZe3ACY2VA8Lhkirw9rHJ6lOU1tK4Kn7H42UVAGbWdyXTGMNexRGnBYRrQQfQf5iawN8tidQ==
+"@basemaps/config@^6.26.0", "@basemaps/config@^6.28.1":
+  version "6.28.1"
+  resolved "https://registry.yarnpkg.com/@basemaps/config/-/config-6.28.1.tgz#266100b1fd40d183b1c9c9045093d2bee91cca07"
+  integrity sha512-FO453/O5oXOuRcaH65nquvLAfhSjdS+F0Ebn29oiDzNhsTOmqnzUQWZGS7XoeJAXPjvhFpJYm+RZIy7vE3lemw==
   dependencies:
-    "@basemaps/geo" "^6.26.0"
+    "@basemaps/geo" "^6.28.1"
 
-"@basemaps/geo@^6.26.0":
-  version "6.26.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/geo/-/geo-6.26.0.tgz#5427f96e5d8f829e7e65a1ba82f806d52e0c09a5"
-  integrity sha512-mvPL1mYzOu5QHB0WqQTX7PLwx1LbpIO+KMCH05V2Eb9/F1Sx2Jow9GHzzpS9EXPLc+MB0S651Ws2kPAC/cqoZQ==
+"@basemaps/geo@^6.26.0", "@basemaps/geo@^6.28.1":
+  version "6.28.1"
+  resolved "https://registry.yarnpkg.com/@basemaps/geo/-/geo-6.28.1.tgz#602251ab479e100a162d3008f9e5ed840894e54a"
+  integrity sha512-WswBP8SaSIHDCKHjF+ayiFgZvsdsOdjYlyE3X3pMrGzehlqz0gEwamJfJoby4MVBpTagV1K9Or7xyCzgTQhlHA==
   dependencies:
     "@linzjs/tile-matrix-set" "^0.0.1"
 
-"@basemaps/shared@^6.26.0":
-  version "6.26.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/shared/-/shared-6.26.0.tgz#d45f438681858b265700f8e8c66dd5b509730470"
-  integrity sha512-0HakplnDOJoJ+WqBGcBqaV4ntHqwi6lqyqfhyKwRmDaMo3tHtT7odqIXUZ8ird7xRtCaile711ZKRqoIvXNBvw==
+"@basemaps/shared@^6.26.0", "@basemaps/shared@^6.28.1":
+  version "6.28.1"
+  resolved "https://registry.yarnpkg.com/@basemaps/shared/-/shared-6.28.1.tgz#2827aa57e170002787f5d071250e1952c74d310e"
+  integrity sha512-y41zm4P+zWY7jYEJ6uNYpHcmwMpqtp1QoFACdtrUhAXnFNqlwkNopcyd8frkr20y+GHJmhfPOGcFFQYmwLrAjQ==
   dependencies:
-    "@basemaps/config" "^6.26.0"
-    "@basemaps/geo" "^6.26.0"
-    "@basemaps/tiler" "^6.26.0"
+    "@basemaps/config" "^6.28.1"
+    "@basemaps/geo" "^6.28.1"
+    "@basemaps/tiler" "^6.28.1"
     "@chunkd/source-aws-v2" "^8.1.0"
-    "@linzjs/geojson" "^6.21.1"
-    "@linzjs/metrics" "^6.21.1"
-    "@linzjs/s3fs" "^6.9.1"
+    "@linzjs/geojson" "^6.28.1"
+    "@linzjs/metrics" "^6.28.1"
     aws-sdk "^2.890.0"
     pino "^7.5.0"
     proj4 "^2.6.2"
@@ -74,14 +73,14 @@
     source-map-support "^0.5.19"
     ulid "^2.3.0"
 
-"@basemaps/tiler@^6.26.0":
-  version "6.26.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/tiler/-/tiler-6.26.0.tgz#8b8213e5694d2d8851d3050b48bbf11a026a4f17"
-  integrity sha512-A9COA53A1iKBkjjGrVEaA/qtkxW/PJx9zhqqa7crzfQclDZobg4qqPHZ/Qe7W4yoXuiSFZka5oci8dWtVi+F6w==
+"@basemaps/tiler@^6.28.1":
+  version "6.28.1"
+  resolved "https://registry.yarnpkg.com/@basemaps/tiler/-/tiler-6.28.1.tgz#59698d711458298a5a64736ec1310fef02c28857"
+  integrity sha512-zMze715uTcM/OiEe64pMVCdrxK7QWwirAyn8hQYDgVC+2L3TiBiXC4xXgW1Uz8pOUZsGTWH5LodSozOTgKlP+Q==
   dependencies:
-    "@basemaps/geo" "^6.26.0"
+    "@basemaps/geo" "^6.28.1"
     "@cogeotiff/core" "^7.0.0"
-    "@linzjs/metrics" "^6.21.1"
+    "@linzjs/metrics" "^6.28.1"
 
 "@chunkd/core@^8.1.0":
   version "8.1.0"
@@ -170,24 +169,19 @@
   resolved "https://registry.yarnpkg.com/@linzjs/docker-command/-/docker-command-6.21.1.tgz#1a2726f3e1fd462b1d921e1c129238e6588d2efb"
   integrity sha512-0rMdVJ6abZIOCpo3pZaZhPhOu6tkygioRXqTfRYvJoGz7Z6MS0zQM60IPom+o4a03S4ioDJu9U9PGWSDX/2IUQ==
 
-"@linzjs/geojson@^6.21.1":
-  version "6.21.1"
-  resolved "https://registry.yarnpkg.com/@linzjs/geojson/-/geojson-6.21.1.tgz#4101a514c6b69b5f8a3a7bcbdf5c5f95392a560f"
-  integrity sha512-tjJpvAMFPsesI8zX5j0OHzX8y2XV0qIBUdMRjAfY3+/3j/yGfcO9yu+sXyemRBioAv1YgfIc0wyhv6Pxj6KSLA==
+"@linzjs/geojson@^6.21.1", "@linzjs/geojson@^6.28.1":
+  version "6.28.1"
+  resolved "https://registry.yarnpkg.com/@linzjs/geojson/-/geojson-6.28.1.tgz#5f35447ff18c6b4f68a6cb238fdda3c0e89676aa"
+  integrity sha512-iiah2sGcRdGFsEvGAGEmb0TStRVmwuz6uF5xk2Ktzw7PsvOtz2wpOt2Qe3i4ZqXDbINzm+7nnbVqDZaWRO0SyA==
   dependencies:
     "@types/geojson" "^7946.0.7"
     lineclip "^1.1.5"
     polygon-clipping "^0.15.1"
 
-"@linzjs/metrics@^6.21.1":
-  version "6.21.1"
-  resolved "https://registry.yarnpkg.com/@linzjs/metrics/-/metrics-6.21.1.tgz#58d008c6b9c26400ea9934e2b07bc7f3dbcdd6d7"
-  integrity sha512-3QupitQN91FwxBN+EEmlBRIcLEwoOG/RK+T2yZtIHuFxXmaPJabnVFnJG62/uzlMZw8gRwmyixUg5qTVuSnziQ==
-
-"@linzjs/s3fs@^6.9.1":
-  version "6.9.1"
-  resolved "https://registry.yarnpkg.com/@linzjs/s3fs/-/s3fs-6.9.1.tgz#6292999dd13b588890757ecd55e05f3cb036931f"
-  integrity sha512-jUFIJd93vLwvxdZdIbAm0iYEUmFIAXBTh4Wn8ikofYZglf8VxSDjBnPDZ6Eu7WQAh7DeVP9TfK5v3wLO0xFIlg==
+"@linzjs/metrics@^6.28.1":
+  version "6.28.1"
+  resolved "https://registry.yarnpkg.com/@linzjs/metrics/-/metrics-6.28.1.tgz#c0243c00b7deaed7f583d7e436ecbfef2cb2b9b7"
+  integrity sha512-DFfgNfXFWBYrs62vE2Yzzz5r+W7DGu1D6SLas6zidOuTtJYdlDZdxDPlT0X70GGrQZqfVow4+djaHupVopI2hg==
 
 "@linzjs/style@^3.7.0":
   version "3.7.0"
