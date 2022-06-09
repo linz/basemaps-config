@@ -83,20 +83,22 @@
     "@cogeotiff/core" "^7.0.0"
     "@linzjs/metrics" "^6.21.1"
 
-"@chunkd/core@^8.1.0":
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/@chunkd/core/-/core-8.1.0.tgz#724da02f4059eef853c8b690af6729d77d54702c"
-  integrity sha512-Ij+UlGyz9kQW27/NKBDYh89v+6jOHoVdKv6bhxNG1SQzJRThumbnJelbm27rOYzF1MTbgvECIWjEqHTeSljtOQ==
+"@chunkd/core@^8.1.0", "@chunkd/core@^8.3.0":
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/@chunkd/core/-/core-8.3.0.tgz#3bdd25e0d8da12ba0d752ba61a16d90c308eebf9"
+  integrity sha512-tM5ulZ4Jc/vWRtYXNZCYLMXZBhE76mFTs/Ut2Bx0c5yI02EBK9lgVNXt5gRSEPc/A1Zsod0W4kLl6Yq2NcInWg==
 
-"@chunkd/fs@^8.1.0":
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/@chunkd/fs/-/fs-8.1.0.tgz#730ccd29cd8d5d467327d5ba8ada902ca1ec703a"
-  integrity sha512-+xnVWnnWnvPR3HOYwbjmEnwveYodnS7B9rzrEtCi1wS/vAxdJRywyawgTx1RIUIcF9R1Orex5w8kx2vsZgIRfQ==
+"@chunkd/fs@^8.1.0", "@chunkd/fs@^8.3.0":
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/@chunkd/fs/-/fs-8.3.0.tgz#4c43e7435fe85c02f86584a702249dfd9af8bc42"
+  integrity sha512-aqBGZX1eHjWCHHgQ5l1WSS0fNS+OOQbOwKlO9OS1oZc3P0EUqhfmpawugxTeGREMhVE3VQ6o7t/VGOUoUCouZA==
   dependencies:
-    "@chunkd/core" "^8.1.0"
-    "@chunkd/source-aws" "^8.1.0"
-    "@chunkd/source-file" "^8.1.0"
-    "@chunkd/source-http" "^8.1.0"
+    "@chunkd/core" "^8.3.0"
+    "@chunkd/source-file" "^8.3.0"
+    "@chunkd/source-http" "^8.3.0"
+  optionalDependencies:
+    "@chunkd/source-aws" "^8.3.0"
+    "@chunkd/source-google-cloud" "^8.3.0"
 
 "@chunkd/source-aws-v2@^8.1.0":
   version "8.1.0"
@@ -106,26 +108,33 @@
     "@chunkd/core" "^8.1.0"
     "@chunkd/source-aws" "^8.1.0"
 
-"@chunkd/source-aws@^8.1.0":
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/@chunkd/source-aws/-/source-aws-8.1.0.tgz#2cfe1f32132e363c1389e3ce6242f3fe0faa2eb9"
-  integrity sha512-N1zAOFuPK8J1GfvlW9lbYxExXMud7MIpLTcWV6x9rBlnWrmCV9QtfxvJjSCvb5Ji9xdUNxmAN/C+1nIiLyHuKw==
+"@chunkd/source-aws@^8.1.0", "@chunkd/source-aws@^8.3.0":
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/@chunkd/source-aws/-/source-aws-8.3.0.tgz#c58f150d576cdbd718f36506a516b297d15aba0e"
+  integrity sha512-WwtEKpu0sA7xDRE52d9JLAXuxFErf1QoMmWJqE1oD3KymTlbjRN0EbXqIdVjLIynwl83RpGbnJWtwDwLsVO31A==
   dependencies:
-    "@chunkd/core" "^8.1.0"
+    "@chunkd/core" "^8.3.0"
 
-"@chunkd/source-file@^8.1.0":
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/@chunkd/source-file/-/source-file-8.1.0.tgz#f6b9378a4610194eadda2212185f0cc2df32a27e"
-  integrity sha512-6McqwaoLNjsv0AygZoRvw6ZC1+aPHyNJMCZUG7g5nDPtNwYWFBBTn4RIeRPUyN40m5/O0YTINvpYMnJamfePZw==
+"@chunkd/source-file@^8.3.0":
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/@chunkd/source-file/-/source-file-8.3.0.tgz#0268d80018a2c2697c66f2b3ca940dd90ea1ba67"
+  integrity sha512-WIYjw06NSeIeW8nlcaAvsDCApagTu6Ne5DslSDFYFlVE4H4Iv7FEdrPghHGjsIZEdPPVPewHNhoQtU4Pfa12SA==
   dependencies:
-    "@chunkd/core" "^8.1.0"
+    "@chunkd/core" "^8.3.0"
 
-"@chunkd/source-http@^8.1.0":
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/@chunkd/source-http/-/source-http-8.1.0.tgz#fadf250f515839f1d8a021f2892ed9cd68641c79"
-  integrity sha512-iRRuimlzZ0shjKkgfp2uCgHWEFySMhQQzINmuJspWU+sDSk5jQC2gnKGz2fDxaqNe8dgRZTb639VAfFMHPkTJg==
+"@chunkd/source-google-cloud@^8.3.0":
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/@chunkd/source-google-cloud/-/source-google-cloud-8.3.0.tgz#2746f1bd97b9a8f7f5bee76741fd1bdfdfa494ad"
+  integrity sha512-4uo8s6e66QNkL/79nK8zu+pPWDEHfx+GYvz61/xJClihZ7EumcMX1RMHqoIYcwTU55BnzNMZ9GDJjXHa6tIC7g==
   dependencies:
-    "@chunkd/core" "^8.1.0"
+    "@chunkd/core" "^8.3.0"
+
+"@chunkd/source-http@^8.3.0":
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/@chunkd/source-http/-/source-http-8.3.0.tgz#c328b4d01178a7d50c20290fc858d87a883fb5c2"
+  integrity sha512-IzSnUjxc2IDVve2fqtnVWQygXuUXCOBmfXPYWxZqF2ae5hc5t62ZNCwxoiJOsnTI5gVwrse35Ih9rUcMh6OMhg==
+  dependencies:
+    "@chunkd/core" "^8.3.0"
     node-fetch "^3.1.0"
 
 "@cogeotiff/core@7.0.0", "@cogeotiff/core@^7.0.0":
