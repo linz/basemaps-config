@@ -353,7 +353,7 @@
       "source": "LINZ Basemaps",
       "source-layer": "water",
       "minzoom": 11,
-      "filter": ["any", ["==", "class", "lake"], ["==", "feat_type", "river_poly"], ["==", "feat_type", "canal_poly"], ["==", "class", "lagoon"]],
+      "filter": ["any", ["==", "class", "lake"], ["==", "class", "river"], ["==", "class", "canal"], ["==", "class", "lagoon"]],
       "layout": {
         "visibility": "visible",
         "line-cap": "round",
@@ -383,7 +383,7 @@
       "source-layer": "water",
       "minzoom": 9,
       "maxzoom": 13,
-      "filter": ["all", ["==", "feat_type", "canal_poly"], ["has", "name"]],
+      "filter": ["all", ["==", "class", "canal"], ["has", "name"]],
       "layout": { "visibility": "visible" },
       "paint": {
         "fill-color": "rgba(204, 232, 245, 1)",
@@ -445,7 +445,23 @@
       "source-layer": "water",
       "minzoom": 8,
       "maxzoom": 13,
-      "filter": ["all", ["==", "feat_type", "river_poly"], ["has", "name"]],
+      "filter": ["all", ["==", "class", "river"], ["has", "name"]],
+      "layout": { "visibility": "visible" },
+      "paint": {
+        "fill-color": "rgba(184, 220, 242, 1)",
+        "fill-opacity": 1,
+        "fill-translate-anchor": "map",
+        "fill-antialias": true
+      }
+    },
+    {
+      "id": "Water-Canal-Poly",
+      "type": "fill",
+      "source": "LINZ Basemaps",
+      "source-layer": "water",
+      "minzoom": 13,
+      "maxzoom": 21,
+      "filter": ["any", ["==", "class", "canal"]],
       "layout": { "visibility": "visible" },
       "paint": {
         "fill-color": "rgba(184, 220, 242, 1)",
@@ -461,7 +477,7 @@
       "source-layer": "water",
       "minzoom": 13,
       "maxzoom": 21,
-      "filter": ["any", ["==", "feat_type", "river_poly"], ["==", "feat_type", "canal_poly"]],
+      "filter": ["any", ["==", "class", "river"]],
       "layout": { "visibility": "visible" },
       "paint": {
         "fill-color": "rgba(184, 220, 242, 1)",
@@ -496,7 +512,7 @@
       "source-layer": "waterway",
       "minzoom": 13,
       "maxzoom": 21,
-      "filter": ["all", ["==", "class", "river"], ["==", "feat_type", "canal_cl"]],
+      "filter": ["all", ["==", "class", "canal"]],
       "layout": { "visibility": "visible" },
       "paint": {
         "line-opacity": 1,
@@ -523,7 +539,7 @@
       "source-layer": "waterway",
       "minzoom": 13,
       "maxzoom": 21,
-      "filter": ["all", ["==", "class", "river"], ["==", "feat_type", "drain_cl"]],
+      "filter": ["all", ["==", "class", "drain"]],
       "layout": { "visibility": "visible" },
       "paint": {
         "line-opacity": 1,
@@ -569,7 +585,7 @@
       "source-layer": "waterway",
       "minzoom": 13,
       "maxzoom": 21,
-      "filter": ["all", ["==", "feat_type", "river_cl"]],
+      "filter": ["all", ["==", "class", "river"]],
       "layout": { "visibility": "visible" },
       "paint": {
         "line-opacity": 1,
@@ -594,7 +610,7 @@
       "source-layer": "waterway",
       "minzoom": 8,
       "maxzoom": 13,
-      "filter": ["all", ["==", "feat_type", "river_cl"], ["has", "name"]],
+      "filter": ["all", ["==", "class", "river"], ["has", "name"]],
       "layout": { "visibility": "visible" },
       "paint": {
         "line-opacity": 1,
