@@ -3,5 +3,5 @@
   "id": "ts_topographic",
   "maxZoom": 15,
   "format": "pbf",
-  "layers": [{ "3857": "s3://linz-basemaps/vector/3857/01G4XY46Y6PBGVESD67SXENHXA/topographic.tar.co", "name": "topographic" }]
+  "layers": [{ "3857": "s3://linz-basemaps/vector/3857/01G50599Q9GAD4TRYF43V08MFS/topographic.tar.co", "name": "topographic" }]
 }
