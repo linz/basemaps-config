@@ -948,12 +948,9 @@
       "minZoom": 13,
       "title": "Auckland 0.075m Rural Aerial Photos (2020)"
     },
-    { "3857": "s3://linz-basemaps/3857/geographx_nz_dem_2012_8-0m/01FM8DEN1XG1QGNT229A4T3KZ6",
-      "name": "geographx_nz_dem_2012_8-0m",
-      "maxZoom": 14,
-      "title": "NZ 8m DEM Hillshade (2012)"
-    },
-    { "3857": "s3://linz-basemaps/3857/geographx_nz_texture_shade_2012_8-0m/01FMK5CJHR30YG9A0JDNVXYCKN",
+    { "3857": "s3://linz-basemaps/3857/geographx_nz_dem_2012_8-0m/01FM8DEN1XG1QGNT229A4T3KZ6", "name": "geographx_nz_dem_2012_8-0m", "maxZoom": 14, "title": "NZ 8m DEM Hillshade (2012)" },
+    {
+      "3857": "s3://linz-basemaps/3857/geographx_nz_texture_shade_2012_8-0m/01FMK5CJHR30YG9A0JDNVXYCKN",
       "name": "geographx_nz_texture_shade_2012_8-0m",
       "maxZoom": 14,
       "title": "NZ 8m DEM Texture Shade (2012)"
