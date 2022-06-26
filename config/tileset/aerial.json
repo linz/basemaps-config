@@ -920,7 +920,7 @@
       "3857": "s3://linz-basemaps/3857/porirua_urban_2020_0-10m_RGB/01ESM35CSPVJD54ZMT4T5FVV29",
       "name": "porirua_urban_2020_0-10m_RGB",
       "minZoom": 14,
-      "title": "Porirua 0.10m Urban Aerial Photos (2020)",
+      "title": "Porirua 0.1m Urban Aerial Photos (2020)",
       "category": "Urban Aerial Photos"
     },
     {
@@ -1056,7 +1056,7 @@
       "3857": "s3://linz-basemaps/3857/waitaki_urban_2020-2021_0-075m_RGB/01FSWMXCT9AF67HW8BQKV9WM0K",
       "name": "waitaki_urban_2020-2021_0-075m_RGB",
       "minZoom": 14,
-      "title": "Waikati 0.075m Urban Aerial Photos (2020-2021)",
+      "title": "Waitaki 0.075m Urban Aerial Photos (2020-2021)",
       "category": "Urban Aerial Photos"
     },
     {
