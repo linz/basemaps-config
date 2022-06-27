@@ -364,12 +364,6 @@
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/auckland_rural_2022_0-075m_RGB/01G6HJ9S4PGK6MTVEZWWHV56QN",
-      "3857": "s3://linz-basemaps/3857/auckland_rural_2022_0-075m_RGB/01G6HJBFJRBKJ7FQPHVRACKMNQ",
-      "name": "auckland_rural_2022_0-075m_RGB",
-      "minZoom": 13
-    },
-    {
       "2193": "s3://linz-basemaps/2193/selwyn_urban_2012-2013_0-125m_RGBA/01F6P1Q0MQC2FXNDVZJGT88CC2",
       "3857": "s3://linz-basemaps/3857/selwyn_urban_2012-2013_0-125m_RGBA/01ED8355C00DRTSNAQ04AHJDDZ",
       "name": "selwyn_urban_2012-2013_0-125m_RGBA",
@@ -817,6 +811,12 @@
       "2193": "s3://linz-basemaps/2193/auckland_rural_2020_0-075m_RGB/01G4XPNP9JTGGPABCFRWC4N21E",
       "3857": "s3://linz-basemaps/3857/auckland_rural_2020_0-075m_RGB/01G4XPQKF6VB9SXCQ93R2XC1W8",
       "name": "auckland_rural_2020_0-075m_RGB",
+      "minZoom": 13
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/auckland_rural_2022_0-075m_RGB/01G6HJ9S4PGK6MTVEZWWHV56QN",
+      "3857": "s3://linz-basemaps/3857/auckland_rural_2022_0-075m_RGB/01G6HJBFJRBKJ7FQPHVRACKMNQ",
+      "name": "auckland_rural_2022_0-075m_RGB",
       "minZoom": 13
     },
     {
