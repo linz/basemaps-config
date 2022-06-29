@@ -1087,7 +1087,9 @@
       "2193": "s3://linz-basemaps/2193/auckland_rural_2022_0-075m_RGB/01G6HJ9S4PGK6MTVEZWWHV56QN",
       "3857": "s3://linz-basemaps/3857/auckland_rural_2022_0-075m_RGB/01G6HJBFJRBKJ7FQPHVRACKMNQ",
       "name": "auckland_rural_2022_0-075m_RGB",
-      "minZoom": 13
+      "minZoom": 13,
+      "title": "Auckland 0.075m Rural Aerial Photos (2022)",
+      "category": "Rural Aerial Photos"
     },
     {
       "3857": "s3://linz-basemaps/3857/geographx_nz_dem_2012_8-0m/01FM8DEN1XG1QGNT229A4T3KZ6",
