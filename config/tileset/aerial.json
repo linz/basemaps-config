@@ -31,7 +31,7 @@
       "2193": "s3://linz-basemaps/2193/nz_satellite_2020-2021_10m_RGB/01FHV9VX322F20JYYZ90ZPPM3R",
       "3857": "s3://linz-basemaps/3857/nz_satellite_2020-2021_10m_RGB/01FHV461P0C5H79T2VXE4T201J",
       "name": "nz_satellite_2020-2021_10m_RGB",
-      "title": "NZ 10m Satellite Imagery (2020-2021)",
+      "title": "New Zealand 10m Satellite Imagery (2020-2021)",
       "category": "Satellite Imagery"
     },
     {
@@ -79,7 +79,7 @@
       "3857": "s3://linz-basemaps/3857/nz-nearshore-islands_satellite_2010-2021_0-5m_RGB/01G00XYQ8YKAZC7P5QJ4BPCX22",
       "name": "nz-nearshore-islands_satellite_2010-2021_0-5m_RGB",
       "minZoom": 13,
-      "title": "NZ Nearshore Islands 0.5m Satellite Imagery (2010-2021)",
+      "title": "New Zealand Nearshore Islands 0.5m Satellite Imagery (2010-2021)",
       "category": "Satellite Imagery"
     },
     {
@@ -1095,14 +1095,14 @@
       "3857": "s3://linz-basemaps/3857/geographx_nz_dem_2012_8-0m/01FM8DEN1XG1QGNT229A4T3KZ6",
       "name": "geographx_nz_dem_2012_8-0m",
       "maxZoom": 14,
-      "title": "NZ 8m DEM Hillshade (2012)",
+      "title": "New Zealand 8m DEM Hillshade (2012)",
       "category": "Elevation"
     },
     {
       "3857": "s3://linz-basemaps/3857/geographx_nz_texture_shade_2012_8-0m/01FMK5CJHR30YG9A0JDNVXYCKN",
       "name": "geographx_nz_texture_shade_2012_8-0m",
       "maxZoom": 14,
-      "title": "NZ 8m DEM Texture Shade (2012)",
+      "title": "New Zealand 8m DEM Texture Shade (2012)",
       "category": "Elevation"
     }
   ]
