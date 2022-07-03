@@ -91,6 +91,12 @@
       "category": "Satellite Imagery"
     },
     {
+      "2193": "s3://linz-basemaps/2193/nz_satellite_2021-2022_10m_RGB/01G731JZC9H7MPRKGK9K5T39AZ",
+      "3857": "s3://linz-basemaps/3857/nz_satellite_2021-2022_10m_RGB/01G731KXCKZDTDG0MSDN1V06DJ",
+      "name": "nz_satellite_2021-2022_10m_RGB",
+      "minZoom": 5
+    },
+    {
       "2193": "s3://linz-basemaps/2193/tasman_rural_2001-2002_1m_RGB/01F6P1TJ28B0HSRV2MNTBFSMKA",
       "3857": "s3://linz-basemaps/3857/tasman_rural_2001-2002_1m_RGB/01EE9646WHWA7X46KDRATVWY9Z",
       "name": "tasman_rural_2001-2002_1m_RGB",
