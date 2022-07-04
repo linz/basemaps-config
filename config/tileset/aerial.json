@@ -28,11 +28,9 @@
       "category": "Satellite Imagery"
     },
     {
-      "2193": "s3://linz-basemaps/2193/nz_satellite_2020-2021_10m_RGB/01FHV9VX322F20JYYZ90ZPPM3R",
-      "3857": "s3://linz-basemaps/3857/nz_satellite_2020-2021_10m_RGB/01FHV461P0C5H79T2VXE4T201J",
-      "name": "nz_satellite_2020-2021_10m_RGB",
-      "title": "New Zealand 10m Satellite Imagery (2020-2021)",
-      "category": "Satellite Imagery"
+      "2193": "s3://linz-basemaps/2193/nz_satellite_2021-2022_10m_RGB/01G731JZC9H7MPRKGK9K5T39AZ",
+      "3857": "s3://linz-basemaps/3857/nz_satellite_2021-2022_10m_RGB/01G731KXCKZDTDG0MSDN1V06DJ",
+      "name": "nz_satellite_2021-2022_10m_RGB"
     },
     {
       "2193": "s3://linz-basemaps/2193/auckland-islands_satellite_2014-2021_0-5m_RGB/01FZYE8BB9EBP892F3JQSSSHQG",
@@ -89,12 +87,6 @@
       "minZoom": 5,
       "title": "Snares Islands/Tini Heke 0.5m Satellite Imagery (2019-2020)",
       "category": "Satellite Imagery"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/nz_satellite_2021-2022_10m_RGB/01G731JZC9H7MPRKGK9K5T39AZ",
-      "3857": "s3://linz-basemaps/3857/nz_satellite_2021-2022_10m_RGB/01G731KXCKZDTDG0MSDN1V06DJ",
-      "name": "nz_satellite_2021-2022_10m_RGB",
-      "minZoom": 5
     },
     {
       "2193": "s3://linz-basemaps/2193/tasman_rural_2001-2002_1m_RGB/01F6P1TJ28B0HSRV2MNTBFSMKA",
