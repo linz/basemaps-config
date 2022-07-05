@@ -9,7 +9,7 @@ jobs:
   build:
     permissions:
       id-token: write
-      contents: write
+      contents: read
 
     runs-on: ubuntu-latest
     concurrency: deploy-${{ github.head_ref }}
@@ -28,6 +28,17 @@ jobs:
           mask-aws-account-id: true
           role-to-assume: ${{ secrets.AWS_ROLE_NON_PROD }}
 
+      - name: (NonProd - Config) Prepare path for glyphs and sprites
+        run: |
+          mkdir -p assets/glyphs/
+          mkdir -p assets/sprites/
+
+      - name: (NonProd - Config) Build Glyphs
+        uses: linz/action-build-pbf-glyphs@v1
+        with:
+          source: config/fonts/
+          target: assets/glyphs/
+          
       - name: (NonProd - Config) Bundle Config File
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle --config $PWD/config --output $PWD/config.json
@@ -44,12 +55,6 @@ jobs:
       - name: (NonProd - Config) Build Sprites
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} sprites --path $PWD/config/sprites/topographic/ --output $PWD/assets/sprites
-      
-      - name: (NonProd - Config) Build Glyphs
-        uses: linz/action-build-pbf-glyphs@v1
-        with:
-          source: config/fonts/
-          target: assets/glyphs/
 
       - name: (NonProd - Screenshot) Screenshot Pull Request Changes
         run: |
