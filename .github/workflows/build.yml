@@ -12,12 +12,14 @@ jobs:
       contents: read
 
     runs-on: ubuntu-latest
+    concurrency: deploy-${{ github.head_ref }}
+    env:
+      BASEMAPS_BUCKET: linz-basemaps
+      BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.29.0-15-g3358caa2
+      DOCKER_AWS_ENV: -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN -e AWS_REGION -e AWS_DEFAULT_REGION
 
     steps:
-      - uses: linz/action-typescript@v1
-
-      - name: Build Sprites
-        run: yarn build-sprites
+      - uses: actions/checkout@v3
 
       - name: (NonProd) AWS Configure
         uses: aws-actions/configure-aws-credentials@v1.6.1
@@ -26,30 +28,27 @@ jobs:
           mask-aws-account-id: true
           role-to-assume: ${{ secrets.AWS_ROLE_NON_PROD }}
 
-      - name: (NonProd - Imagery Config) Create pull request tag
-        if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
+      - name: (NonProd - Config) Bundle Config File
         run: |
-          ./bin/bmc.js import -t pr-${{ github.event.number }} --commit
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle --config $PWD/config --output $PWD/config.json
 
-      - name: (NonProd - Imagery Config) Screenshot pull request updates
+      - name: (NonProd - Config) Compare To Production
         run: |
-          ./bin/bmc.js screenshot -t pr-${{ github.event.number }} --host dev.basemaps.linz.govt.nz
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config $PWD/config.json
+
+      - name: (NonProd - Config) Build Sprites
+        run: |
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} sprites --path $PWD/config/sprites/topographic/ --output $PWD/assets
+      
+      - name: (NonProd - Screenshot) Screenshot Pull Request Changes
+        run: |
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} screenshot --config $PWD/config.json --tiles $PWD/test-tiles/default.test.tiles.json --output $PWD/.artifacts/visual-snapshots
 
       - name: Save snapshots
         uses: getsentry/action-visual-snapshot@v2
         with:
           save-only: true
           snapshot-path: .artifacts/visual-snapshots
-
-      - name: (NonProd - Imagery Config) Create production tag
-        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-        run: |
-          ./bin/bmc.js import -t production --commit
-
-      - name: (NonProd - Imagery Config) Screenshot updates
-        if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
-        run: |
-          ./bin/bmc.js screenshot -t production --host dev.basemaps.linz.govt.nz
 
       - name: (Prod) AWS Configure
         uses: aws-actions/configure-aws-credentials@v1.6.1
@@ -58,26 +57,38 @@ jobs:
           mask-aws-account-id: true
           role-to-assume: ${{ secrets.AWS_ROLE_PROD }}
 
-      - name: (Prod - Imagery Config) Compare to production
-        if: github.ref != 'refs/heads/master' && github.event_name == 'push'
-        run: |
-          ./bin/bmc.js import -t production
-        env:
-          NODE_ENV: "production"
+      # Comment out now before we start uploading stuff to production
+      #
+      # - name: (Prod - Config) Upload Hasded Config File
+      #   run: |
+      #     CONFIG_HASH=$(cat config.json | jq .hash -r)
+      #     gzip -9 -k config.json
+      #     aws s3 cp config.json.gz s3://${BASEMAPS_BUCKET}/config/hash-${CONFIG_HASH}.json.gz --content-encoding gzip
 
-      - name: (Prod - Imagery Config) Create pull request tag
-        if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
-        run: |
-          ./bin/bmc.js import -t pr-${{ github.event.number }} --commit
-        env:
-          NODE_ENV: "production"
+      # - name: (Prod - Config) Upload Hashed Sprite Sheet
+      #   run: |
+      #     SPRITE_HASH=$(sha256sum assets/topographic.json | cut -f 1 -d " " )
+      #     aws s3 sync assets/ s3://${BASEMAPS_BUCKET}/config/sprites/hash-${SPRITE_HASH}/
 
-      - name: (Prod - Imagery Config) Create production tag
+      - name: (Prod - Config) Compare to production
+        run: |
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config $PWD/config.json
+
+      - name: (Prod - Config) Upload Latest Config
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
-          ./bin/bmc.js import -t production --commit
-        env:
-          NODE_ENV: "production"
+          aws s3 cp config.json.gz s3://${BASEMAPS_BUCKET}/config/latest.json.gz --content-encoding gzip
+
+      - name: (Prod - Config) Upload Latest Sprites
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        run: |
+          aws s3 sync assets/ s3://${BASEMAPS_BUCKET}/config/sprites/latest/
+
+      - name: (Prod - Config) Import Config To Production
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        run: |
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config $PWD/config.json --commit
+        
   visual-diff:
     permissions:
       id-token: write
