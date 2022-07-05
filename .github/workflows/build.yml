@@ -43,11 +43,11 @@ jobs:
 
       - name: (NonProd - Config) Build Sprites
         run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} sprites --path $PWD/config/sprites/topographic/ --output $PWD/assets
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} sprites --path $PWD/config/sprites/topographic/ --output $PWD/assets/sprites
       
       - name: (NonProd - Screenshot) Screenshot Pull Request Changes
         run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} screenshot --config $PWD/config.json --tiles $PWD/test-tiles/default.test.tiles.json --output $PWD/.artifacts/visual-snapshots
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} screenshot --config $PWD/config.json --assets assets/ --tiles $PWD/test-tiles/default.test.tiles.json --output $PWD/.artifacts/visual-snapshots
 
       - name: Save snapshots
         uses: getsentry/action-visual-snapshot@v2
@@ -73,7 +73,7 @@ jobs:
       # - name: (Prod - Config) Upload Hashed Sprite Sheet
       #   run: |
       #     SPRITE_HASH=$(sha256sum assets/topographic.json | cut -f 1 -d " " )
-      #     aws s3 sync assets/ s3://${BASEMAPS_BUCKET}/config/sprites/hash-${SPRITE_HASH}/
+      #     aws s3 sync assets/sprites/ s3://${BASEMAPS_BUCKET}/config/sprites/hash-${SPRITE_HASH}/
 
       - name: (Prod - Config) Compare to production
         run: |
@@ -87,7 +87,7 @@ jobs:
       - name: (Prod - Config) Upload Latest Sprites
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
-          aws s3 sync assets/ s3://${BASEMAPS_BUCKET}/config/sprites/latest/
+          aws s3 sync assets/sprites/ s3://${BASEMAPS_BUCKET}/config/sprites/latest/
 
       - name: (Prod - Config) Import Config To Production
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
