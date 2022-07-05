@@ -16,8 +16,8 @@
     },
     "LINZ Basemaps": { "type": "vector", "url": "/v1/tiles/topographic/EPSG:3857/tile.json", "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0" }
   },
-  "sprite": "/sprites/topographic",
-  "glyphs": "/glyphs/{fontstack}/{range}.pbf",
+  "sprite": "/v1/sprites/topographic",
+  "glyphs": "/v1/glyphs/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "Aerial-Imagery",
