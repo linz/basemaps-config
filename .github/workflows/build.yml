@@ -36,6 +36,11 @@ jobs:
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config $PWD/config.json
 
+      - name: (NonProd - Config) Import Config To Production
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        run: |
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config $PWD/config.json --commit
+
       - name: (NonProd - Config) Build Sprites
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} sprites --path $PWD/config/sprites/topographic/ --output $PWD/assets
