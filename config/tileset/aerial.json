@@ -364,6 +364,12 @@
       "minZoom": 13
     },
     {
+      "2193": "s3://basemaps-cog-test/2193/tasman_rural_2022_0-3m_RGB/01G75XYW1NDZEHTRAKTC7BQCGV",
+      "3857": "s3://basemaps-cog-test/3857/tasman_rural_2022_0-3m_RGB/01G75XZ83G80JATCGX7CERACBM",
+      "name": "tasman_rural_2022_0-3m_RGB",
+      "minZoom": 13
+    },
+    {
       "2193": "s3://linz-basemaps/2193/selwyn_urban_2012-2013_0-125m_RGBA/01F6P1Q0MQC2FXNDVZJGT88CC2",
       "3857": "s3://linz-basemaps/3857/selwyn_urban_2012-2013_0-125m_RGBA/01ED8355C00DRTSNAQ04AHJDDZ",
       "name": "selwyn_urban_2012-2013_0-125m_RGBA",
