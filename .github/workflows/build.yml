@@ -48,7 +48,7 @@ jobs:
       - name: (NonProd - Config) Build Glyphs
         uses: linz/action-build-pbf-glyphs@v1
         with:
-          source: fonts/
+          source: config/fonts/
           target: assets/glyphs/
 
       - name: (NonProd - Screenshot) Screenshot Pull Request Changes
