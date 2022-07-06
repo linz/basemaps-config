@@ -1,0 +1,57 @@
+name: "Pull Request Preview"
+
+on:
+  pull_request:
+    types: [labeled, opened, synchronize]
+
+jobs:
+  deploy:
+    concurrency: preview-${{ github.head_ref }}
+    if: |
+      (github.event.action == 'labeled' && github.event.label.name == 'preview :world_map:') ||
+      (github.event.action != 'labeled' && contains(github.event.pull_request.labels.*.name, 'preview :world_map:'))
+    permissions:
+      id-token: write
+      deployments: write
+      contents: write
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: set STAGE variable in environment for next steps
+        run: echo "STAGE=Pr${{ github.event.number }}" >> $GITHUB_ENV
+
+      - name: create a github deployment
+        uses: bobheadxi/deployments@v1
+        id: deployment
+        with:
+          step: start
+          token: ${{ secrets.GITHUB_TOKEN }}
+          env: ${{ env.STAGE }}
+          ref: ${{ github.head_ref }}
+
+      - uses: linz/action-typescript@v1
+
+      - name: (NonProd) AWS Configure
+        uses: aws-actions/configure-aws-credentials@v1.6.1
+        with:
+          aws-region: ap-southeast-2
+          mask-aws-account-id: true
+          role-to-assume: ${{ secrets.AWS_ROLE_NON_PROD }}
+
+      - name: Deploy
+        id: cdk_deploy
+        run: |
+          npx cdk deploy --require-approval never --outputs-file cdk.out.json
+          node --eval "console.log('::set-output name=env_url::' + require('./cdk.out.json')['BasemapsConfig${STAGE}'].DeploymentUrl)"
+
+      - name: update the github deployment status
+        uses: bobheadxi/deployments@v1
+        if: always()
+        with:
+          step: finish
+          token: ${{ secrets.GITHUB_TOKEN }}
+          env: ${{ env.STAGE }}
+          status: ${{ job.status }}
+          deployment_id: ${{ steps.deployment.outputs.deployment_id }}
+          env_url: ${{ steps.cdk_deploy.outputs.env_url }}
