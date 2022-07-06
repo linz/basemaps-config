@@ -21,13 +21,28 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: (Build) Prepare path for glyphs and sprites
+        run: |
+          mkdir -p assets/fonts/
+          mkdir -p assets/sprites/
+
+      - name: (Build) Build Glyphs
+        uses: linz/action-build-pbf-glyphs@v1
+        with:
+          source: config/fonts/
+          target: assets/fonts/
+          
+      - name: (Build) Build Sprites
+        run: |
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} sprites --path $PWD/config/sprites/topographic/ --output $PWD/assets/sprites/
+        
       - name: (NonProd) AWS Configure
         uses: aws-actions/configure-aws-credentials@v1.6.1
         with:
           aws-region: ap-southeast-2
           mask-aws-account-id: true
           role-to-assume: ${{ secrets.AWS_ROLE_NON_PROD }}
-
+      
       - name: (NonProd - Config) Bundle Config File
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle --config $PWD/config --output $PWD/config.json
@@ -39,24 +54,9 @@ jobs:
       - name: (NonProd - Config) Import Config To Production
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config $PWD/config.json --commit
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config $PWD/config.json --commi
 
-      - name: (NonProd - Config) Prepare path for glyphs and sprites
-        run: |
-          mkdir -p assets/fonts/
-          mkdir -p assets/sprites/
-
-      - name: (NonProd - Config) Build Glyphs
-        uses: linz/action-build-pbf-glyphs@v1
-        with:
-          source: config/fonts/
-          target: assets/fonts/
-          
-      - name: (NonProd - Config) Build Sprites
-        run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} sprites --path $PWD/config/sprites/topographic/ --output $PWD/assets/sprites/
-
-      - name: (NonProd - Screenshot) Screenshot Pull Request Changes
+      - name: (Screenshot) Screenshot Pull Request Changes
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} screenshot --config $PWD/config.json --assets $PWD/assets/ --tiles $PWD/test-tiles/default.test.tiles.json --output $PWD/.artifacts/visual-snapshots
 
