@@ -43,14 +43,14 @@ jobs:
 
       - name: (NonProd - Config) Prepare path for glyphs and sprites
         run: |
-          mkdir -p assets/glyphs/
+          mkdir -p assets/fonts/
           mkdir -p assets/sprites/
 
       - name: (NonProd - Config) Build Glyphs
         uses: linz/action-build-pbf-glyphs@v1
         with:
           source: config/fonts/
-          target: assets/glyphs/
+          target: assets/fonts/
           
       - name: (NonProd - Config) Build Sprites
         run: |
@@ -89,11 +89,12 @@ jobs:
       #   run: |
       #     SPRITE_HASH=$(sha256sum assets/sprites/topographic.json | cut -f 1 -d " " )
       #     aws s3 sync assets/sprites/ s3://${BASEMAPS_BUCKET}/config/sprites/hash-${SPRITE_HASH}/
-
-      # - name: (Prod - Config) Upload Hashed Glyphs
+      #   
+      # TODO: Do we need upload this? Or we just upload the glyphs.json?
+      # - name: (Prod - Config) Upload Hashed Glyphs 
       #   run: |
-      #     SPRITE_HASH=$(sha256sum assets/glyphs/glyphs.json | cut -f 1 -d " " )
-      #     aws s3 sync assets/sprites/ s3://${BASEMAPS_BUCKET}/config/sprites/hash-${SPRITE_HASH}/
+      #     SPRITE_HASH=$(sha256sum assets/fonts/fonts.json | cut -f 1 -d " " )
+      #     aws s3 sync assets/fonts/ s3://${BASEMAPS_BUCKET}/config/fonts/hash-${SPRITE_HASH}/
 
       - name: (Prod - Config) Compare to production
         run: |
@@ -112,7 +113,7 @@ jobs:
       - name: (Prod - Config) Upload Latest Glyphs
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
-          aws s3 sync assets/glyphs/ s3://${BASEMAPS_BUCKET}/config/glyphs/latest/
+          aws s3 sync assets/fonts/ s3://${BASEMAPS_BUCKET}/config/fonts/latest/
 
       - name: (Prod - Config) Import Config To Production
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'

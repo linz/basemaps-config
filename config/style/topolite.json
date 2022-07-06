@@ -8,7 +8,7 @@
     "LINZ-Texture-Relief": { "type": "raster", "tiles": ["/v1/tiles/texturereliefshade/EPSG:3857/{z}/{x}/{y}.webp"], "tileSize": 256, "minzoom": 0, "maxzoom": 20 }
   },
   "sprite": "/v1/sprites/topographic",
-  "glyphs": "/v1/glyphs/{fontstack}/{range}.pbf",
+  "glyphs": "/v1/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "Background",
