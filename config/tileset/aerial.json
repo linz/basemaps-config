@@ -31,7 +31,15 @@
       "2193": "s3://linz-basemaps/2193/nz_satellite_2020-2021_10m_RGB/01FHV9VX322F20JYYZ90ZPPM3R",
       "3857": "s3://linz-basemaps/3857/nz_satellite_2020-2021_10m_RGB/01FHV461P0C5H79T2VXE4T201J",
       "name": "nz_satellite_2020-2021_10m_RGB",
+      "minZoom": 32,
       "title": "New Zealand 10m Satellite Imagery (2020-2021)",
+      "category": "Satellite Imagery"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/nz_satellite_2021-2022_10m_RGB/01G73E4AMSQ91TXQ3KC90NNPA0",
+      "3857": "s3://linz-basemaps/3857/nz_satellite_2021-2022_10m_RGB/01G73E5DZKE9NSW6E41QQRT28T",
+      "name": "nz_satellite_2021-2022_10m_RGB",
+      "title": "New Zealand 10m Satellite Imagery (2021-2022)",
       "category": "Satellite Imagery"
     },
     {
@@ -481,6 +489,14 @@
       "name": "canterbury-mackenzie_rural_2021_0-3m_RGB",
       "minZoom": 13,
       "title": "Canterbury - Mackenzie 0.3m Rural Aerial Photos (2021)",
+      "category": "Rural Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/tasman_rural_2022_0-3m_RGB/01G75YD43EBA980HFWVF6ZFV6B",
+      "3857": "s3://linz-basemaps/3857/tasman_rural_2022_0-3m_RGB/01G75YDG4KFEZ5BAGTPHMEAPP7",
+      "name": "tasman_rural_2022_0-3m_RGB",
+      "minZoom": 13,
+      "title": "Tasman 0.3m Rural Aerial Photos (2022)",
       "category": "Rural Aerial Photos"
     },
     {
