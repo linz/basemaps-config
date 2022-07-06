@@ -15,7 +15,7 @@ jobs:
     concurrency: deploy-${{ github.head_ref }}
     env:
       BASEMAPS_BUCKET: linz-basemaps
-      BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.29.0-15-g3358caa2
+      BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.29.0-17-ga64a626b
       DOCKER_AWS_ENV: -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN -e AWS_REGION -e AWS_DEFAULT_REGION
 
     steps:
