@@ -36,7 +36,7 @@ jobs:
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} sprites --path $PWD/config/sprites/topographic/ --output $PWD/assets/sprites/
         
-      - name: (Build) Bundle assets into cotar file
+      - name: (Build) Bundle Assets Into Cotar
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle-assets --assets $PWD/assets/ --output assets.tar.co
 
@@ -51,18 +51,18 @@ jobs:
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle --config $PWD/config --output $PWD/config.json
 
-      - name: (NonProd - Config) Compare To Production
+      - name: (NonProd - Config) Compare To DynamoDB
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config $PWD/config.json
 
-      - name: (NonProd - Config) Import Config To Production
+      - name: (NonProd - Config) Import Config To DynamoDB
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config $PWD/config.json --commi
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config $PWD/config.json --commit
 
       - name: (Screenshot) Screenshot Pull Request Changes
         run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} screenshot --config $PWD/config.json --assets $PWD/assets.tar.co --tiles $PWD/test-tiles/default.test.tiles.json --output $PWD/.artifacts/visual-snapshots
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} screenshot --config $PWD/config.json --assets $PWD/assets --tiles $PWD/test-tiles/default.test.tiles.json --output $PWD/.artifacts/visual-snapshots
 
       - name: Save snapshots
         uses: getsentry/action-visual-snapshot@v2
@@ -87,10 +87,6 @@ jobs:
       #   run: |
       #     SPRITE_HASH=$(sha256sum assets.tar.co | cut -f 1 -d " " )
       #     aws s3 cp assets.tar.co s3://${BASEMAPS_BUCKET}/assets/assets-${SPRITE_HASH}.tar.co
-      
-      - name: (Prod - Config) Compare to production
-        run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config $PWD/config.json
 
       - name: (Prod - Config) Upload Latest Config
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
@@ -102,7 +98,11 @@ jobs:
         run: |
           aws s3 cp assets.tar.co s3://${BASEMAPS_BUCKET}/assets-latest.tar.co
 
-      - name: (Prod - Config) Import Config To Production
+      - name: (Prod - Config) Compare to DynamoDB
+        run: |
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config $PWD/config.json
+
+      - name: (Prod - Config) Import Config To DynamoDB
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config $PWD/config.json --commit
