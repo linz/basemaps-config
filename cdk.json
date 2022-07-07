@@ -1,6 +1,0 @@
-{
-    "app": "yarn esno infra/index.ts",
-    "context": {
-      "@aws-cdk/core:newStyleStackSynthesis": true
-    }
-  }
