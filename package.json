@@ -6,52 +6,20 @@
   "repository": "github:linz/basemaps-config",
   "type": "module",
   "license": "MIT",
-  "main": "./build/src/index.js",
-  "bin": {
-    "bmc": "./bin/bmc.js"
-  },
+  "main": "index.js",
   "dependencies": {
-    "@basemaps/cli": "^6.26.0",
-    "@basemaps/config": "^6.26.0",
-    "@basemaps/geo": "^6.26.0",
-    "@basemaps/shared": "^6.26.0",
-    "@chunkd/fs": "^8.1.0",
-    "@linzjs/docker-command": "^6.21.1",
-    "@mapbox/spritezero": "^8.0.0",
-    "@oclif/core": "^1.6.1",
-    "deep-diff": "^1.0.2",
-    "node-fetch": "^3.2.4",
-    "p-limit": "^4.0.0",
-    "playwright": "^1.22.0",
     "pretty-json-log": "^1.0.0",
-    "zod": "^3.8.2"
-  },
-  "scripts": {
-    "lint": "eslint . --quiet --fix --report-unused-disable-directives --ignore-path .gitignore",
-    "clean": "tsc -b --clean && rimraf 'build'",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
-    "build": "tsc --build tsconfig.json",
-    "build-sprites": "node build/src/sprite.sheet.js && npx eslint build/sprites/ --fix"
+    "zod": "^3.17.3"
   },
   "devDependencies": {
-    "@linzjs/style": "^3.7.0",
-    "@types/deep-diff": "^1.0.0",
-    "@types/mapbox__spritezero": "^6.3.2",
-    "@types/node": "^14.11.2",
-    "@types/p-limit": "^2.2.0",
-    "@types/prettier": "^2.4.4",
-    "conventional-changelog-cli": "^2.2.2",
-    "rimraf": "^3.0.0"
-  },
-  "files": [
-    "build",
-    "bin"
-  ],
-  "resolutions": {
-    "@cogeotiff/core": "7.0.0"
-  },
-  "oclif": {
-    "commands": "./build/src/commands",
-    "bin": "bmc"
+    "@basemaps/lambda-tiler": "^6.28.1",
+    "@basemaps/landing": "^6.28.1",
+    "@basemaps/server": "^6.28.1",
+    "@linzjs/style": "^3.8.0",
+    "@types/node": "^17.0.40",
+    "aws-cdk": "^2.27.0",
+    "aws-cdk-lib": "^2.27.0",
+    "constructs": "^10.1.31",
+    "esno": "^0.16.3"
   }
 }
