@@ -16,7 +16,7 @@ yarn add @basemaps/server
 npx basemaps-server config
 ```
 
-You will need access to basemaps imagery, if you need access to basemaps imagery please contact basemaps@linz.govt.nz 
+You will need access to basemaps imagery, if you need access to basemaps imagery please contact basemaps@linz.govt.nz
 
 ### Imagery `/config/imagery`
 
@@ -30,42 +30,16 @@ WebMercator: [wellington_urban_2021_0-075m_RGB](./config/imagery/wellington_urba
 
 NZTM - [wellington_urban_2021_0-075m_RGB](./config/imagery/wellington_urban_2021_0-075m_RGB-NZTM2000Quad.json) - https://basemaps.linz.govt.nz/?i=01F6P21F387PCQQB757VZ4E6GS&p=nztm2000quad#@-41.2777800,174.7949622,z10.4323
 
-
 ### Tileset `/config/tileset`
 
 Specifies how the imagery is combined into a single layer
 
 [config/tileset/aerial.json](./config/tileset/aerial.json) - https://basemaps.linz.govt.nz/?i=aerial
-[config/tileset/topo.json](./config/tileset/topo.json) - https://basemaps.linz.govt.nz/?i=topo&p=nztm2000quad 
-
+[config/tileset/topo.json](./config/tileset/topo.json) - https://basemaps.linz.govt.nz/?i=topo&p=nztm2000quad
 
 ### Fonts `./config/fonts`
 
 Fonts are manually built and deployed with `awscli` and `build_pbf_glyphs` see [README.md](./config/fonts/README.md) for more information
-
-
-## Building
-
-This repository requires [NodeJs](https://nodejs.org/en/) > 12 & [Yarn](https://yarnpkg.com/en/)
-
-Use [n](https://github.com/tj/n) to manage nodeJs versions
-
-```bash
-# Download the latest nodejs & yarn
-n latest
-npm install -g yarn
-
-# Install node deps
-yarn
-
-# Build everything into /build
-yarn run build
-
-# Run the unit tests
-yarn run test
-```
-
-
 
 ## Contributing
 
@@ -93,5 +67,5 @@ Must be one of the following:
 - `imagery` Adding or removing imagery layers `./config/imagery/*`
 - `vector` Changes to the vector layers `./config/style/*` or `./config/tileset/topographic.json`
 - `sprites` Changes to the sprites `./config/sprites/**`
-- `fonts` Changes to fonts  `./config/fonts/**`
+- `fonts` Changes to fonts `./config/fonts/**`
 - `scripts` Changes to the importing scripts `./src`
