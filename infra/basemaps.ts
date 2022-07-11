@@ -1,8 +1,9 @@
 import { handler as h } from '@basemaps/lambda-tiler';
-import { ConfigProviderMemory, Config } from '@basemaps/config';
-import { ConfigData } from '../config.json';
+import { ConfigProviderMemory, Config, ConfigBundled } from '@basemaps/config';
+import { fsa } from '@chunkd/fs';
 
-const mem = ConfigProviderMemory.fromJson(ConfigData);
+const configJson = await fsa.readJson<ConfigBundled>('../config.json');
+const mem = ConfigProviderMemory.fromJson(configJson);
 Config.setConfigProvider(mem);
 
 export function handler(evt: any, context: any, cb: any): void {
