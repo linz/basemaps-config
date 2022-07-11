@@ -1,7 +1,6 @@
 import { handler as h } from '@basemaps/lambda-tiler';
-
 import { ConfigProviderMemory, Config } from '@basemaps/config';
-import { ConfigData } from './config.js';
+import { ConfigData } from '../config.json';
 
 const mem = ConfigProviderMemory.fromJson(ConfigData);
 Config.setConfigProvider(mem);

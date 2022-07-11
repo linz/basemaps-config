@@ -46,7 +46,7 @@ jobs:
 
       - name: (NonProd - Config) Bundle Config File
         run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle --config $PWD/config --output $PWD/config.js
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle --config $PWD/config --output $PWD/config.json
 
       - name: Deploy
         id: cdk_deploy
