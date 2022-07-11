@@ -1,11 +1,10 @@
 import { handler as h } from '@basemaps/lambda-tiler';
 
-// import { ConfigProviderMemory, Config } from '@basemaps/config';
-// import { Config } from '@basemaps/lambda-tiler';
-// import { ConfigData } from './config.js';
+import { ConfigProviderMemory, Config } from '@basemaps/config';
+import { ConfigData } from './config.js';
 
-// const mem = ConfigProviderMemory.fromJson(ConfigData);
-// Config.setConfigProvider(mem);
+const mem = ConfigProviderMemory.fromJson(ConfigData);
+Config.setConfigProvider(mem);
 
 export function handler(evt: any, context: any, cb: any): void {
   if (evt.requestContext.domainName) {

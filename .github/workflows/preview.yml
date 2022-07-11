@@ -16,6 +16,11 @@ jobs:
       contents: write
 
     runs-on: ubuntu-latest
+    concurrency: deploy-${{ github.head_ref }}
+    env:
+      BASEMAPS_BUCKET: linz-basemaps
+      BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.29.0-21-gd632301c
+      DOCKER_AWS_ENV: -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN -e AWS_REGION -e AWS_DEFAULT_REGION
 
     steps:
       - name: set STAGE variable in environment for next steps
@@ -39,11 +44,15 @@ jobs:
           mask-aws-account-id: true
           role-to-assume: ${{ secrets.AWS_ROLE_NON_PROD }}
 
+      - name: (NonProd - Config) Bundle Config File
+        run: |
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle --config $PWD/config --output $PWD/config.js
+
       - name: Deploy
         id: cdk_deploy
         run: |
           npx cdk deploy --require-approval never --outputs-file cdk.out.json
-          node --eval "console.log('::set-output name=env_url::' + require('./cdk.out.json')['BasemapsConfigTest${STAGE}'].DeploymentUrl)"
+          node --eval "console.log('::set-output name=env_url::' + require('./cdk.out.json')['BasemapsConfig${STAGE}'].DeploymentUrl)"
 
       - name: update the github deployment status
         uses: bobheadxi/deployments@v1

@@ -42,5 +42,5 @@ export class PreviewStack extends Stack {
 
 const app = new App();
 
-const stackName = `BasemapsConfigTest${process.env.STAGE ?? ''}`;
+const stackName = `BasemapsConfig${process.env.STAGE ?? ''}`;
 new PreviewStack(app, stackName);
