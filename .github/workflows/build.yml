@@ -89,13 +89,12 @@ jobs:
       #     aws s3 cp assets.tar.co s3://${BASEMAPS_BUCKET}/assets/assets-${SPRITE_HASH}.tar.co
 
       - name: (Prod - Config) Upload Latest Config
-        # if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
-          gzip -9 -k config.json
           aws s3 cp config.json.gz s3://${BASEMAPS_BUCKET}/config-latest.json.gz --content-encoding gzip
 
       - name: (Prod - Config) Upload Latest Assets
-        # if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
           aws s3 cp assets.tar.co s3://${BASEMAPS_BUCKET}/assets-latest.tar.co
 
