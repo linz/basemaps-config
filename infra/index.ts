@@ -38,6 +38,7 @@ export class PreviewStack extends Stack {
       },
     });
     Bucket.fromBucketName(this, 'BasemapsCogs', 'linz-basemaps').grantRead(this.lambda);
+    Bucket.fromBucketName(this, 'BasemapsDev', 'linz-basemaps-dev').grantRead(this.lambda);
     new CfnOutput(this, 'DeploymentUrl', { value: this.functionUrl.url });
   }
 }
