@@ -1,13 +1,16 @@
 import { handler as h } from '@basemaps/lambda-tiler';
 import { ConfigProviderMemory, Config, ConfigBundled } from '@basemaps/config';
-import fs from 'fs';
+import { fsa } from '@chunkd/fs';
 
-const data = fs.readFileSync('./config.json');
-const json = JSON.parse(data.toString());
-const mem = ConfigProviderMemory.fromJson(json as ConfigBundled);
-Config.setConfigProvider(mem);
+const configLocation = process.env['CONFIG_LOCATION'];
+process.env['BASEMAPS_ASSEST_LOCATION'] = process.env['ASSETS_LOCATION'];
 
-export function handler(evt: any, context: any, cb: any): void {
+export async function handler(evt: any, context: any, cb: any): Promise<void> {
+  if (configLocation == null) throw new Error('Config File Not Found');
+  const configJson = await fsa.readJson<ConfigBundled>(configLocation);
+  const mem = ConfigProviderMemory.fromJson(configJson);
+  Config.setConfigProvider(mem);
+
   if (evt.requestContext.domainName) {
     process.env['BASEMAPS_PUBLIC_URL'] = 'https://' + evt.requestContext.domainName;
     process.env['BASEMAPS_ASSEST_LOCATION'] = './assets';

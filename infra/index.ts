@@ -18,6 +18,8 @@ export class PreviewStack extends Stack {
         AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1',
         GIT_VERSION: 'v6.28.1',
         GIT_HASH: '#' + process.env.STAGE,
+        CONFIG_LOCATION: process.env.CONFIG_LOCATION ?? '',
+        ASSETS_LOCATION: process.env.ASSETS_LOCATION ?? '',
       },
       bundling: {
         nodeModules: ['sharp'],
