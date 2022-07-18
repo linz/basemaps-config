@@ -23,7 +23,7 @@ export class PreviewStack extends Stack {
       },
       bundling: {
         nodeModules: ['sharp'],
-        externalModules: ['aws-sdk'],
+        externalModules: ['aws-sdk', '@basemaps/landing'],
       },
     });
 
