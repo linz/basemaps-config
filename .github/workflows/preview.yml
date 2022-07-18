@@ -17,6 +17,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
+      BASEMAPS_BUCKET: linz-basemaps-dev
       BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.29.0-21-gd632301c
       DOCKER_AWS_ENV: -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN -e AWS_REGION -e AWS_DEFAULT_REGION
 
@@ -64,6 +65,17 @@ jobs:
       - name: (NonProd - Config) Bundle Config File
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle --config $PWD/config --output $PWD/infra/config.json
+
+      - name: (NonProd) Upload Hasded Config File
+        run: |
+          CONFIG_HASH=$(cat config.json | jq .hash -r)
+          gzip -9 -k config.json
+          aws s3 cp config.json.gz s3://${BASEMAPS_BUCKET}/config/config-${CONFIG_HASH}.json.gz --content-encoding gzip
+
+      - name: (NonProd) Upload Hashed Assets
+        run: |
+          SPRITE_HASH=$(sha256sum assets.tar.co | cut -f 1 -d " " )
+          aws s3 cp assets.tar.co s3://${BASEMAPS_BUCKET}/assets/assets-${SPRITE_HASH}.tar.co
 
       - name: Deploy
         id: cdk_deploy
