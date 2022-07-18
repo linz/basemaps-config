@@ -77,16 +77,16 @@ jobs:
           mask-aws-account-id: true
           role-to-assume: ${{ secrets.AWS_ROLE_PROD }}
       
-      # - name: (Prod - Config) Upload Hasded Config File
-      #   run: |
-      #     CONFIG_HASH=$(cat config.json | jq .hash -r)
-      #     gzip -9 -k config.json
-      #     aws s3 cp config.json.gz s3://${BASEMAPS_BUCKET}/config/config-${CONFIG_HASH}.json.gz --content-encoding gzip
+      - name: (Prod - Config) Upload Hasded Config File
+        run: |
+          CONFIG_HASH=$(cat config.json | jq .hash -r)
+          gzip -9 -k config.json
+          aws s3 cp config.json.gz s3://${BASEMAPS_BUCKET}/config/config-${CONFIG_HASH}.json.gz --content-encoding gzip
 
-      # - name: (Prod - Config) Upload Hashed Assets
-      #   run: |
-      #     SPRITE_HASH=$(sha256sum assets.tar.co | cut -f 1 -d " " )
-      #     aws s3 cp assets.tar.co s3://${BASEMAPS_BUCKET}/assets/assets-${SPRITE_HASH}.tar.co
+      - name: (Prod - Config) Upload Hashed Assets
+        run: |
+          SPRITE_HASH=$(sha256sum assets.tar.co | cut -f 1 -d " " )
+          aws s3 cp assets.tar.co s3://${BASEMAPS_BUCKET}/assets/assets-${SPRITE_HASH}.tar.co
 
       - name: (Prod - Config) Upload Latest Config
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
@@ -103,10 +103,10 @@ jobs:
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config $PWD/config.json
 
-      - name: (Prod - Config) Import Config To DynamoDB
-        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-        run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config $PWD/config.json --commit
+      # - name: (Prod - Config) Import Config To DynamoDB
+      #   if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+      #   run: |
+      #     docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config $PWD/config.json --commit
         
   visual-diff:
     permissions:
