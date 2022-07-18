@@ -22,8 +22,8 @@ export class PreviewStack extends Stack {
         ASSETS_LOCATION: process.env.ASSETS_LOCATION ?? '',
       },
       bundling: {
-        nodeModules: ['sharp'],
-        externalModules: ['aws-sdk', '@basemaps/landing'],
+        nodeModules: ['sharp', '@basemaps/landing'],
+        externalModules: ['aws-sdk'],
       },
     });
 
