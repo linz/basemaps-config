@@ -38,22 +38,22 @@ jobs:
 
       - name: (Build) Prepare path for glyphs and sprites
         run: |
-          mkdir -p infra/assets/fonts/
-          mkdir -p infra/assets/sprites/
+          mkdir -p assets/fonts/
+          mkdir -p assets/sprites/
 
       - name: (Build) Build Glyphs
         uses: linz/action-build-pbf-glyphs@v1
         with:
           source: config/fonts/
-          target: infra/assets/fonts/
+          target: assets/fonts/
           
       - name: (Build) Build Sprites
         run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} sprites --path $PWD/config/sprites/topographic/ --output $PWD/infra/assets/sprites/
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} sprites --path $PWD/config/sprites/topographic/ --output $PWD/assets/sprites/
         
       - name: (Build) Bundle Assets Into Cotar
         run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle-assets --assets $PWD/infra/assets/ --output $PWD/infra/assets/assets.tar.co
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle-assets --assets $PWD/assets/ --output $PWD/assets/assets.tar.co
           
       - name: (NonProd) AWS Configure
         uses: aws-actions/configure-aws-credentials@v1.6.1
@@ -64,7 +64,7 @@ jobs:
 
       - name: (NonProd - Config) Bundle Config File
         run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle --config $PWD/config --output $PWD/infra/config.json
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle --config $PWD/config --output $PWD/config.json
 
       - name: (NonProd) Upload Hasded Config File
         run: |
