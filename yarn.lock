@@ -41,52 +41,58 @@
     pretty-json-log "^1.0.0"
     zod "^3.2.0"
 
-"@basemaps/config@^6.26.0":
-  version "6.26.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/config/-/config-6.26.0.tgz#2d84f1c4c686eb7edb7ec0eb6bce9ee32a2cac89"
-  integrity sha512-SQYfWrHXf8qqdlYZe3ACY2VA8Lhkirw9rHJ6lOU1tK4Kn7H42UVAGbWdyXTGMNexRGnBYRrQQfQf5iawN8tidQ==
+"@basemaps/config@^6.26.0", "@basemaps/config@^6.30.0":
+  version "6.30.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/config/-/config-6.30.0.tgz#4c80171dfd42fb67a3cb0cf2ef08f67e991b43a4"
+  integrity sha512-LuXUWW0FLQxbfgNbVPxgtJ3CoFr+3mG3wHQMw+FX+S5XKdTUl8dmrwCWeS53JtRpGnPRLkpcW0Hw9Ys3cVm36w==
   dependencies:
-    "@basemaps/geo" "^6.26.0"
+    "@basemaps/geo" "^6.28.1"
+    zod "^3.17.3"
 
-"@basemaps/geo@^6.26.0":
-  version "6.26.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/geo/-/geo-6.26.0.tgz#5427f96e5d8f829e7e65a1ba82f806d52e0c09a5"
-  integrity sha512-mvPL1mYzOu5QHB0WqQTX7PLwx1LbpIO+KMCH05V2Eb9/F1Sx2Jow9GHzzpS9EXPLc+MB0S651Ws2kPAC/cqoZQ==
+"@basemaps/geo@^6.26.0", "@basemaps/geo@^6.28.1":
+  version "6.28.1"
+  resolved "https://registry.yarnpkg.com/@basemaps/geo/-/geo-6.28.1.tgz#602251ab479e100a162d3008f9e5ed840894e54a"
+  integrity sha512-WswBP8SaSIHDCKHjF+ayiFgZvsdsOdjYlyE3X3pMrGzehlqz0gEwamJfJoby4MVBpTagV1K9Or7xyCzgTQhlHA==
   dependencies:
     "@linzjs/tile-matrix-set" "^0.0.1"
 
-"@basemaps/shared@^6.26.0":
-  version "6.26.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/shared/-/shared-6.26.0.tgz#d45f438681858b265700f8e8c66dd5b509730470"
-  integrity sha512-0HakplnDOJoJ+WqBGcBqaV4ntHqwi6lqyqfhyKwRmDaMo3tHtT7odqIXUZ8ird7xRtCaile711ZKRqoIvXNBvw==
+"@basemaps/shared@^6.26.0", "@basemaps/shared@^6.30.0":
+  version "6.30.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/shared/-/shared-6.30.0.tgz#8108fd86f40c2173f1808f6bcf6cf87cc909c108"
+  integrity sha512-l8aUlAdPQkfPsFkIeFSxz7XFhQUVWPrikyNfRF7Lk9ycbUJ0Nd2JVRPInI1fQRnS8s4qBf/5myyi/p5lqWE0Iw==
   dependencies:
-    "@basemaps/config" "^6.26.0"
-    "@basemaps/geo" "^6.26.0"
-    "@basemaps/tiler" "^6.26.0"
-    "@chunkd/source-aws-v2" "^8.1.0"
-    "@linzjs/geojson" "^6.21.1"
-    "@linzjs/metrics" "^6.21.1"
-    "@linzjs/s3fs" "^6.9.1"
+    "@basemaps/config" "^6.30.0"
+    "@basemaps/geo" "^6.28.1"
+    "@basemaps/tiler" "^6.29.0"
+    "@chunkd/source-aws-v2" "^8.4.0"
+    "@linzjs/geojson" "^6.28.1"
+    "@linzjs/metrics" "^6.28.1"
     aws-sdk "^2.890.0"
+    entities "^4.3.0"
     pino "^7.5.0"
     proj4 "^2.6.2"
     sax "^1.2.4"
     source-map-support "^0.5.19"
     ulid "^2.3.0"
 
-"@basemaps/tiler@^6.26.0":
-  version "6.26.0"
-  resolved "https://registry.yarnpkg.com/@basemaps/tiler/-/tiler-6.26.0.tgz#8b8213e5694d2d8851d3050b48bbf11a026a4f17"
-  integrity sha512-A9COA53A1iKBkjjGrVEaA/qtkxW/PJx9zhqqa7crzfQclDZobg4qqPHZ/Qe7W4yoXuiSFZka5oci8dWtVi+F6w==
+"@basemaps/tiler@^6.29.0":
+  version "6.29.0"
+  resolved "https://registry.yarnpkg.com/@basemaps/tiler/-/tiler-6.29.0.tgz#c8ff139b8cfbc98380c77489cbda8862cbea2d35"
+  integrity sha512-zkmQtxFe/KFilemmlCLBYoJuXy2HB3SExqy4GNyj21ueyzytIGvqRdDpE1cPkisRHnSbq/I+0wnsx+ifAjoXyw==
   dependencies:
-    "@basemaps/geo" "^6.26.0"
+    "@basemaps/geo" "^6.28.1"
     "@cogeotiff/core" "^7.0.0"
-    "@linzjs/metrics" "^6.21.1"
+    "@linzjs/metrics" "^6.28.1"
 
 "@chunkd/core@^8.1.0":
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/@chunkd/core/-/core-8.1.0.tgz#724da02f4059eef853c8b690af6729d77d54702c"
   integrity sha512-Ij+UlGyz9kQW27/NKBDYh89v+6jOHoVdKv6bhxNG1SQzJRThumbnJelbm27rOYzF1MTbgvECIWjEqHTeSljtOQ==
+
+"@chunkd/core@^8.4.0":
+  version "8.4.0"
+  resolved "https://registry.yarnpkg.com/@chunkd/core/-/core-8.4.0.tgz#749434f6ae6d8fd95405bb0b33d73ebae6583d79"
+  integrity sha512-ayU+POyD/klSRJVf/x4ePeNnl6o+AFD87gTkqvwCuvh00snaJZGgtO7q8zzErAcDcvLla6mCElHtaQO6kn3dVw==
 
 "@chunkd/fs@^8.1.0":
   version "8.1.0"
@@ -98,13 +104,13 @@
     "@chunkd/source-file" "^8.1.0"
     "@chunkd/source-http" "^8.1.0"
 
-"@chunkd/source-aws-v2@^8.1.0":
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/@chunkd/source-aws-v2/-/source-aws-v2-8.1.0.tgz#48c310abc8d1a92f979ee3d1c902643e60559526"
-  integrity sha512-mZ1Jf769oOZpkqFc2bNhW/4GG+s8wKfBjUk6nHQKxkjH3HyJ+f6cJQ1trKUiAfgvmUaYlX4lS+OpnEnPCriUfQ==
+"@chunkd/source-aws-v2@^8.4.0":
+  version "8.4.0"
+  resolved "https://registry.yarnpkg.com/@chunkd/source-aws-v2/-/source-aws-v2-8.4.0.tgz#5e44bb31e8cdcb41991250cb0b2b4c04cec1ef8f"
+  integrity sha512-B7RlfLpuagtOYU414AGOPXSWMqHo+6d9NA6R6UdpEalvMDkT1M/hXkJG443Gpu0jViyq+x2YxEjupBU1ZeoZdQ==
   dependencies:
-    "@chunkd/core" "^8.1.0"
-    "@chunkd/source-aws" "^8.1.0"
+    "@chunkd/core" "^8.4.0"
+    "@chunkd/source-aws" "^8.4.0"
 
 "@chunkd/source-aws@^8.1.0":
   version "8.1.0"
@@ -112,6 +118,13 @@
   integrity sha512-N1zAOFuPK8J1GfvlW9lbYxExXMud7MIpLTcWV6x9rBlnWrmCV9QtfxvJjSCvb5Ji9xdUNxmAN/C+1nIiLyHuKw==
   dependencies:
     "@chunkd/core" "^8.1.0"
+
+"@chunkd/source-aws@^8.4.0":
+  version "8.4.0"
+  resolved "https://registry.yarnpkg.com/@chunkd/source-aws/-/source-aws-8.4.0.tgz#4dc8ab748a87fd15f29d93ef872375998e90f0e2"
+  integrity sha512-GwUuQ2Z6mdws1hRv7nilszvTnGZx+X3IMtB+wR8oT76ISxd1fXp19tGB7YqtcHnqQIBMWCk+XzjfDoFyGJ2xcg==
+  dependencies:
+    "@chunkd/core" "^8.4.0"
 
 "@chunkd/source-file@^8.1.0":
   version "8.1.0"
@@ -170,24 +183,19 @@
   resolved "https://registry.yarnpkg.com/@linzjs/docker-command/-/docker-command-6.21.1.tgz#1a2726f3e1fd462b1d921e1c129238e6588d2efb"
   integrity sha512-0rMdVJ6abZIOCpo3pZaZhPhOu6tkygioRXqTfRYvJoGz7Z6MS0zQM60IPom+o4a03S4ioDJu9U9PGWSDX/2IUQ==
 
-"@linzjs/geojson@^6.21.1":
-  version "6.21.1"
-  resolved "https://registry.yarnpkg.com/@linzjs/geojson/-/geojson-6.21.1.tgz#4101a514c6b69b5f8a3a7bcbdf5c5f95392a560f"
-  integrity sha512-tjJpvAMFPsesI8zX5j0OHzX8y2XV0qIBUdMRjAfY3+/3j/yGfcO9yu+sXyemRBioAv1YgfIc0wyhv6Pxj6KSLA==
+"@linzjs/geojson@^6.21.1", "@linzjs/geojson@^6.28.1":
+  version "6.28.1"
+  resolved "https://registry.yarnpkg.com/@linzjs/geojson/-/geojson-6.28.1.tgz#5f35447ff18c6b4f68a6cb238fdda3c0e89676aa"
+  integrity sha512-iiah2sGcRdGFsEvGAGEmb0TStRVmwuz6uF5xk2Ktzw7PsvOtz2wpOt2Qe3i4ZqXDbINzm+7nnbVqDZaWRO0SyA==
   dependencies:
     "@types/geojson" "^7946.0.7"
     lineclip "^1.1.5"
     polygon-clipping "^0.15.1"
 
-"@linzjs/metrics@^6.21.1":
-  version "6.21.1"
-  resolved "https://registry.yarnpkg.com/@linzjs/metrics/-/metrics-6.21.1.tgz#58d008c6b9c26400ea9934e2b07bc7f3dbcdd6d7"
-  integrity sha512-3QupitQN91FwxBN+EEmlBRIcLEwoOG/RK+T2yZtIHuFxXmaPJabnVFnJG62/uzlMZw8gRwmyixUg5qTVuSnziQ==
-
-"@linzjs/s3fs@^6.9.1":
-  version "6.9.1"
-  resolved "https://registry.yarnpkg.com/@linzjs/s3fs/-/s3fs-6.9.1.tgz#6292999dd13b588890757ecd55e05f3cb036931f"
-  integrity sha512-jUFIJd93vLwvxdZdIbAm0iYEUmFIAXBTh4Wn8ikofYZglf8VxSDjBnPDZ6Eu7WQAh7DeVP9TfK5v3wLO0xFIlg==
+"@linzjs/metrics@^6.28.1":
+  version "6.28.1"
+  resolved "https://registry.yarnpkg.com/@linzjs/metrics/-/metrics-6.28.1.tgz#c0243c00b7deaed7f583d7e436ecbfef2cb2b9b7"
+  integrity sha512-DFfgNfXFWBYrs62vE2Yzzz5r+W7DGu1D6SLas6zidOuTtJYdlDZdxDPlT0X70GGrQZqfVow4+djaHupVopI2hg==
 
 "@linzjs/style@^3.7.0":
   version "3.7.0"
@@ -1189,6 +1197,11 @@ entities@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/entities/-/entities-2.2.0.tgz#098dc90ebb83d8dffa089d55256b351d34c4da55"
   integrity sha512-p92if5Nz619I0w+akJrLZH0MX0Pb5DX39XOwQTtXSdQQOaYH03S1uIQp4mhOZtAXrxq4ViO67YTiLBo2638o9A==
+
+entities@^4.3.0:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/entities/-/entities-4.3.1.tgz#c34062a94c865c322f9d67b4384e4169bcede6a4"
+  integrity sha512-o4q/dYJlmyjP2zfnaWDUC6A3BQFmVTX+tZPezK7k0GLSU9QYCauscf5Y+qcEPzKL+EixVouYDgLQK5H9GrLpkg==
 
 error-ex@^1.2.0, error-ex@^1.3.1:
   version "1.3.2"
@@ -3678,6 +3691,11 @@ yocto-queue@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-1.0.0.tgz#7f816433fb2cbc511ec8bf7d263c3b58a1a3c251"
   integrity sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==
+
+zod@^3.17.3:
+  version "3.17.9"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.17.9.tgz#6ce737474e51677e7166602ed58f6f8ba8d89c86"
+  integrity sha512-QF1843pYoRk1jFP+/UiEySXaTSiIyFod3KyDzoO3qHKGZdX7z7RNXI4lEsiibvpnIZQwcDVU58ZrxP4pQ7BmTQ==
 
 zod@^3.2.0, zod@^3.8.2:
   version "3.11.4"
