@@ -59,7 +59,7 @@ jobs:
         run: |
           aws s3 cp assets.tar.co ${ASSETS_LOCATION}
 
-      - name: (Prod - Config) Upload Hasded Config File
+      - name: (Prod - Config) Upload Hashed Config File
         run: |
           gzip -9 -k config.json
           aws s3 cp config.json.gz ${CONFIG_LOCATION} --content-encoding gzip
