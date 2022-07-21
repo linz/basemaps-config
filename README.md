@@ -43,30 +43,6 @@ Specifies how the imagery is combined into a single layer
 
 Fonts are manually built and deployed with `awscli` and `build_pbf_glyphs` see [README.md](./config/fonts/README.md) for more information
 
-
-## Building
-
-This repository requires [NodeJs](https://nodejs.org/en/) > 12 & [Yarn](https://yarnpkg.com/en/)
-
-Use [n](https://github.com/tj/n) to manage nodeJs versions
-
-```bash
-# Download the latest nodejs & yarn
-n latest
-npm install -g yarn
-
-# Install node deps
-yarn
-
-# Build everything into /build
-yarn run build
-
-# Run the unit tests
-yarn run test
-```
-
-
-
 ## Contributing
 
 This repository uses [Conventional Commits](https://www.conventionalcommits.org/)

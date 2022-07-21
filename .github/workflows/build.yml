@@ -15,7 +15,7 @@ jobs:
     concurrency: deploy-${{ github.head_ref }}
     env:
       BASEMAPS_BUCKET: linz-basemaps
-      BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.30.0-4-g366ef793
+      BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.30.0-7-g86883518
       DOCKER_AWS_ENV: -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN -e AWS_REGION -e AWS_DEFAULT_REGION
 
     steps:
@@ -39,8 +39,8 @@ jobs:
       - name: (Build) Bundle Assets Into Cotar
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle-assets --assets $PWD/assets/ --output $PWD/assets.tar.co
-          ASSETS_HASH=$(sha256sum assets.tar.co | cut -f 1 -d " " )
-          echo "ASSETS_LOCATION=s3://${BASEMAPS_BUCKET}/assets/assets-${ASSETS_HASH}.tar.co" >> $GITHUB_ENV
+          echo "ASSETS_HASH=$(ls assets*.tar.co)" >> $GITHUB_ENV
+          echo "ASSETS_LOCATION=s3://${BASEMAPS_BUCKET}/assets/${ASSETS_HASH}" >> $GITHUB_ENV
 
       - name: (Prod) AWS Configure
         uses: aws-actions/configure-aws-credentials@v1.6.1
@@ -57,9 +57,9 @@ jobs:
       
       - name: (Prod - Config) Upload Hashed Assets
         run: |
-          aws s3 cp assets.tar.co ${ASSETS_LOCATION}
+          aws s3 cp ${ASSETS_HASH} ${ASSETS_LOCATION}
 
-      - name: (Prod - Config) Upload Hasded Config File
+      - name: (Prod - Config) Upload Hashed Config File
         run: |
           gzip -9 -k config.json
           aws s3 cp config.json.gz ${CONFIG_LOCATION} --content-encoding gzip
@@ -92,7 +92,7 @@ jobs:
 
       - name: (Screenshot) Screenshot Pull Request Changes
         run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} screenshot --config $PWD/config.json --assets $PWD/assets.tar.co --tiles $PWD/test-tiles/default.test.tiles.json --output $PWD/.artifacts/visual-snapshots
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} screenshot --config $PWD/config.json --assets $PWD/${ASSETS_HASH} --tiles $PWD/test-tiles/default.test.tiles.json --output $PWD/.artifacts/visual-snapshots
 
       - name: Save snapshots
         uses: getsentry/action-visual-snapshot@v2
