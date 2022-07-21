@@ -15,7 +15,7 @@ jobs:
     concurrency: deploy-${{ github.head_ref }}
     env:
       BASEMAPS_BUCKET: linz-basemaps
-      BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.30.0-2-g143eeda6
+      BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.30.0-4-g366ef793
       DOCKER_AWS_ENV: -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN -e AWS_REGION -e AWS_DEFAULT_REGION
 
     steps:
@@ -40,7 +40,7 @@ jobs:
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle-assets --assets $PWD/assets/ --output $PWD/assets.tar.co
           ASSETS_HASH=$(sha256sum assets.tar.co | cut -f 1 -d " " )
-          echo "ASSETS_LOCATION=s3://${BASEMAPS_BUCKET}/assets/assets-${SPRITE_HASH}.tar.co" >> $GITHUB_ENV
+          echo "ASSETS_LOCATION=s3://${BASEMAPS_BUCKET}/assets/assets-${ASSETS_HASH}.tar.co" >> $GITHUB_ENV
 
       - name: (Prod) AWS Configure
         uses: aws-actions/configure-aws-credentials@v1.6.1
@@ -55,14 +55,14 @@ jobs:
           CONFIG_HASH=$(cat config.json | jq .hash -r)
           echo "CONFIG_LOCATION=s3://${BASEMAPS_BUCKET}/config/config-${CONFIG_HASH}.json.gz" >> $GITHUB_ENV
       
+      - name: (Prod - Config) Upload Hashed Assets
+        run: |
+          aws s3 cp assets.tar.co ${ASSETS_LOCATION}
+
       - name: (Prod - Config) Upload Hasded Config File
         run: |
           gzip -9 -k config.json
           aws s3 cp config.json.gz ${CONFIG_LOCATION} --content-encoding gzip
-
-      - name: (Prod - Config) Upload Hashed Assets
-        run: |
-          aws s3 cp assets.tar.co ${ASSETS_LOCATION}
 
       - name: (Prod - Config) Compare to DynamoDB
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
