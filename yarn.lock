@@ -2721,17 +2721,17 @@ pino@^7.5.0:
     sonic-boom "^2.2.1"
     thread-stream "^0.13.0"
 
-playwright-core@1.22.0:
-  version "1.22.0"
-  resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.22.0.tgz#e738a0c83f4be0984c953ab25d2bc77545187ecc"
-  integrity sha512-XnDPiV4NCzTtXWxQdyJ6Wg8xhST3ciUjt5mITaxoqOoYggmRtofKm0PXLehfbetXh2ppPYj5U8UhtUpdIE4wag==
+playwright-core@1.23.4:
+  version "1.23.4"
+  resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.23.4.tgz#e8a45e549faf6bfad24a0e9998e451979514d41e"
+  integrity sha512-h5V2yw7d8xIwotjyNrkLF13nV9RiiZLHdXeHo+nVJIYGVlZ8U2qV0pMxNJKNTvfQVT0N8/A4CW6/4EW2cOcTiA==
 
-playwright@^1.22.0:
-  version "1.22.0"
-  resolved "https://registry.yarnpkg.com/playwright/-/playwright-1.22.0.tgz#7b0f684f618faa6ff422fc584a9ff167d844c49a"
-  integrity sha512-T2UqJAuvJip7TfYwvl7h3gUWtEE5D950PKd96POhUpumG3BkMfiLmXOe6Ja6UP39Ab3wEvatUJYBXvZCkocfpg==
+playwright@^1.23.4:
+  version "1.23.4"
+  resolved "https://registry.yarnpkg.com/playwright/-/playwright-1.23.4.tgz#a9641a8d523fafdc58a5a2b59efe3496dec49c8d"
+  integrity sha512-NUPOLMpd8WydmwZFllST/YZ7cImgDDDrvcaq7Gj2vAjNg0jYCndFJt6HHtbkOPSIlRo4BaQYlbFx6meq1r1FXQ==
   dependencies:
-    playwright-core "1.22.0"
+    playwright-core "1.23.4"
 
 polygon-clipping@^0.15.1:
   version "0.15.3"
