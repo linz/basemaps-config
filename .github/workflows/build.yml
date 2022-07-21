@@ -15,7 +15,7 @@ jobs:
     concurrency: deploy-${{ github.head_ref }}
     env:
       BASEMAPS_BUCKET: linz-basemaps
-      BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.30.0-4-g366ef793
+      BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.30.0-7-g86883518
       DOCKER_AWS_ENV: -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN -e AWS_REGION -e AWS_DEFAULT_REGION
 
     steps:
@@ -39,8 +39,8 @@ jobs:
       - name: (Build) Bundle Assets Into Cotar
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle-assets --assets $PWD/assets/ --output $PWD/assets.tar.co
-          ASSETS_HASH=$(sha256sum assets.tar.co | cut -f 1 -d " " )
-          echo "ASSETS_LOCATION=s3://${BASEMAPS_BUCKET}/assets/assets-${ASSETS_HASH}.tar.co" >> $GITHUB_ENV
+          ASSETS_HASH=$(l assets*.tar.co)
+          echo "ASSETS_LOCATION=s3://${BASEMAPS_BUCKET}/assets/${ASSETS_HASH}" >> $GITHUB_ENV
 
       - name: (Prod) AWS Configure
         uses: aws-actions/configure-aws-credentials@v1.6.1
