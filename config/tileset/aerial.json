@@ -1,6 +1,8 @@
 {
   "type": "raster",
   "id": "ts_aerial",
+  "title": "Aerial Imagery Basemap",
+  "category": "Basemaps",
   "background": "dce9edff",
   "layers": [
     {
