@@ -39,7 +39,7 @@ jobs:
       - name: (Build) Bundle Assets Into Cotar
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle-assets --assets $PWD/assets/ --output $PWD/assets.tar.co
-          ASSETS_HASH=$(ls assets*.tar.co)
+          echo "ASSETS_HASH=$(ls assets*.tar.co)" >> $GITHUB_ENV
           echo "ASSETS_LOCATION=s3://${BASEMAPS_BUCKET}/assets/${ASSETS_HASH}" >> $GITHUB_ENV
 
       - name: (Prod) AWS Configure
