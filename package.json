@@ -24,7 +24,7 @@
     "p-limit": "^4.0.0",
     "playwright": "^1.22.0",
     "pretty-json-log": "^1.0.0",
-    "zod": "^3.8.2"
+    "zod": "^3.17.9"
   },
   "scripts": {
     "lint": "eslint . --quiet --fix --report-unused-disable-directives --ignore-path .gitignore",
