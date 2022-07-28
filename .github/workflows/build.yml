@@ -42,28 +42,36 @@ jobs:
           echo "ASSETS_HASH=$(ls assets*.tar.co)" >> $GITHUB_ENV
           echo "ASSETS_LOCATION=s3://${BASEMAPS_BUCKET}/assets/${ASSETS_HASH}" >> $GITHUB_ENV
 
-      - name: (Prod) AWS Configure
+      - name: (Build) AWS Configure
         uses: aws-actions/configure-aws-credentials@v1.6.1
         with:
           aws-region: ap-southeast-2
           mask-aws-account-id: true
-          role-to-assume: ${{ secrets.AWS_ROLE_PROD }}
+          role-to-assume: ${{ secrets.AWS_ROLE_SCREENSHOT }}
 
-      - name: (Prod - Config) Bundle Config File
+      - name: Bundle Config File
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle --config $PWD/config --output $PWD/config.json --assets ${ASSETS_LOCATION}
           CONFIG_HASH=$(cat config.json | jq .hash -r)
           echo "CONFIG_LOCATION=s3://${BASEMAPS_BUCKET}/config/config-${CONFIG_HASH}.json.gz" >> $GITHUB_ENV
       
-      - name: (Prod - Config) Upload Hashed Assets
+      - name: Upload Hashed Assets
         run: |
           aws s3 cp ${ASSETS_HASH} ${ASSETS_LOCATION}
 
-      - name: (Prod - Config) Upload Hashed Config File
+      - name: Upload Hashed Config File
         run: |
           gzip -9 -k config.json
           aws s3 cp config.json.gz ${CONFIG_LOCATION} --content-encoding gzip
 
+      - name: (Prod) AWS Configure
+        uses: aws-actions/configure-aws-credentials@v1.6.1
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        with:
+          aws-region: ap-southeast-2
+          mask-aws-account-id: true
+          role-to-assume: ${{ secrets.AWS_ROLE_PROD }}
+  
       - name: (Prod - Config) Compare to DynamoDB
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
