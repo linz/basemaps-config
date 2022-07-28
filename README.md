@@ -1,6 +1,6 @@
 # Basemaps Config
 
-LINZ specific configuration and delployment of [basemaps](https://github.com/linz/basemaps).
+LINZ specific configuration and deployment of [basemaps](https://github.com/linz/basemaps).
 
 ## Usage
 
@@ -18,30 +18,38 @@ npx basemaps-server config
 
 You will need access to basemaps imagery, if you need access to basemaps imagery please contact basemaps@linz.govt.nz 
 
-### Imagery `/config/imagery`
-
-All individual imagery layers these are stored in both WebMercator (3857) and [NZTM (2193)](https://github.com/linz/NZTM2000TileMatrixSet) in a LINZ s3 bucket as [cloud optimized geotiffs (COG)](https://www.cogeo.org/).
-
-these config files reference the locations of all the tiffs and their bounding boxes that make up the dataset.
-
-These imagery sets can be viewed in basemaps by using their id.
-
-WebMercator: [wellington_urban_2021_0-075m_RGB](./config/imagery/wellington_urban_2021_0-075m_RGB-WebMercatorQuad.json) - https://basemaps.linz.govt.nz/?i=01FBNERWAX2XVCKQ4AACWGP2K5#@-41.2777800,174.7949622,z10.4323
-
-NZTM - [wellington_urban_2021_0-075m_RGB](./config/imagery/wellington_urban_2021_0-075m_RGB-NZTM2000Quad.json) - https://basemaps.linz.govt.nz/?i=01F6P21F387PCQQB757VZ4E6GS&p=nztm2000quad#@-41.2777800,174.7949622,z10.4323
-
 
 ### Tileset `/config/tileset`
 
 Specifies how the imagery is combined into a single layer
 
 [config/tileset/aerial.json](./config/tileset/aerial.json) - https://basemaps.linz.govt.nz/?i=aerial
-[config/tileset/topo.json](./config/tileset/topo.json) - https://basemaps.linz.govt.nz/?i=topo&p=nztm2000quad 
+
+Each layer inside the tile set is also created as a individual layer that can be viewed by name or by id
+
+For example the layer "Auckland 0.075m Rural Aerial Photos (2020)" has one name and two ids
+
+```
+name: auckland-rural-2022-0.075m
+3857/WebMercator: 01G4XPQKF6VB9SXCQ93R2XC1W8
+2193/NZTM2000Quad: 01G4XPNP9JTGGPABCFRWC4N21E
+```
+
+which create the following urls
+
+#### By Name
+- [3857/WebMercator - auckland-rural-2022-0.075m](https://basemaps.linz.govt.nz/?i=auckland-rural-2022-0.075m)
+- [2193/NZTM2000Quad - auckland-rural-2022-0.075m](https://basemaps.linz.govt.nz/?i=auckland-rural-2022-0.075m&p=nztm2000quad)
+
+#### By Id
+- [3857/WebMercator - 01G4XPQKF6VB9SXCQ93R2XC1W8](https://basemaps.linz.govt.nz/?i=01G4XPQKF6VB9SXCQ93R2XC1W8)
+- [2193/NZTM2000Quad - 01G4XPNP9JTGGPABCFRWC4N21E](https://basemaps.linz.govt.nz/?i=01G4XPNP9JTGGPABCFRWC4N21E&p=nztm2000quad)
+
 
 
 ### Fonts `./config/fonts`
 
-Fonts are manually built and deployed with `awscli` and `build_pbf_glyphs` see [README.md](./config/fonts/README.md) for more information
+Fonts are built automatically using [linz/action-build-pbf-glyphs](https://github.com/linz/action-build-pbf-glyphs@v1) and then deployed as a [Cotar](https://github.com/linz/cotar) asset bundle
 
 ## Contributing
 
@@ -66,8 +74,6 @@ Must be one of the following:
 ### Scope
 
 - `aerial` Changes the aerial tile set `./config/tileset/aerial.json`
-- `imagery` Adding or removing imagery layers `./config/imagery/*`
 - `vector` Changes to the vector layers `./config/style/*` or `./config/tileset/topographic.json`
 - `sprites` Changes to the sprites `./config/sprites/**`
 - `fonts` Changes to fonts  `./config/fonts/**`
-- `scripts` Changes to the importing scripts `./src`
