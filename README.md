@@ -49,7 +49,7 @@ which create the following urls
 
 ### Fonts `./config/fonts`
 
-Fonts are built automatically using [linz/action-build-pbf-glyphs](https://github.com/linz/action-build-pbf-glyphs@v1) and then deployed as a [Cotar](https://github.com/linz/cotar) asset bundle
+Fonts are built automatically using [linz/action-build-pbf-glyphs](https://github.com/linz/action-build-pbf-glyphs) and then deployed as a [Cotar](https://github.com/linz/cotar) asset bundle
 
 ## Contributing
 
