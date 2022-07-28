@@ -64,24 +64,6 @@ jobs:
           gzip -9 -k config.json
           aws s3 cp config.json.gz ${CONFIG_LOCATION} --content-encoding gzip
 
-      - name: (Prod) AWS Configure
-        uses: aws-actions/configure-aws-credentials@v1.6.1
-        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-        with:
-          aws-region: ap-southeast-2
-          mask-aws-account-id: true
-          role-to-assume: ${{ secrets.AWS_ROLE_PROD }}
-  
-      - name: (Prod - Config) Compare to DynamoDB
-        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-        run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config ${CONFIG_LOCATION}
-
-      # - name: (Prod - Config) Import Config To DynamoDB
-      #   if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-      #   run: |
-      #     docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config ${CONFIG_LOCATION} --commit
-
       - name: (NonProd) AWS Configure
         uses: aws-actions/configure-aws-credentials@v1.6.1
         with:
@@ -101,6 +83,24 @@ jobs:
       - name: (Screenshot) Screenshot Pull Request Changes
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} screenshot --config $PWD/config.json --assets $PWD/${ASSETS_HASH} --output $PWD/.artifacts/visual-snapshots
+
+      - name: (Prod) AWS Configure
+        uses: aws-actions/configure-aws-credentials@v1.6.1
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        with:
+          aws-region: ap-southeast-2
+          mask-aws-account-id: true
+          role-to-assume: ${{ secrets.AWS_ROLE_PROD }}
+  
+      - name: (Prod - Config) Compare to DynamoDB
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        run: |
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config ${CONFIG_LOCATION}
+
+      - name: (Prod - Config) Import Config To DynamoDB
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        run: |
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config ${CONFIG_LOCATION} --commit
 
       - name: Save snapshots
         uses: getsentry/action-visual-snapshot@v2
