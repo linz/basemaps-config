@@ -14,7 +14,11 @@
       "maxzoom": 28,
       "tileSize": 256
     },
-    "LINZ Basemaps": { "type": "vector", "url": "/v1/tiles/topographic/EPSG:3857/tile.json", "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0" }
+    "LINZ Basemaps": {
+      "type": "vector",
+      "url": "/v1/tiles/topographic/EPSG:3857/tile.json",
+      "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0"
+    }
   },
   "sprite": "/v1/sprites/topographic",
   "glyphs": "/v1/fonts/{fontstack}/{range}.pbf",
@@ -448,7 +452,12 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 13,
-      "filter": ["all", ["==", "surface", "sealed"], ["in", "lane_count", 2, 3, 4, 5, 6, 7], ["!=", "class", "motorway"]],
+      "filter": [
+        "all",
+        ["==", "surface", "sealed"],
+        ["in", "lane_count", 2, 3, 4, 5, 6, 7],
+        ["!=", "class", "motorway"]
+      ],
       "layout": {
         "visibility": "visible",
         "line-cap": "butt",
@@ -684,7 +693,11 @@
       "source-layer": "transportation",
       "minzoom": 6,
       "maxzoom": 8,
-      "filter": ["all", ["==", "class", "motorway"], ["in", "hway_num", "1", "1B", "2", "3", "3A", "4", "5", "6", "6A", "7", "8", "8A", "18", "20", "51", "76"]],
+      "filter": [
+        "all",
+        ["==", "class", "motorway"],
+        ["in", "hway_num", "1", "1B", "2", "3", "3A", "4", "5", "6", "6A", "7", "8", "8A", "18", "20", "51", "76"]
+      ],
       "layout": { "visibility": "visible" },
       "paint": {
         "line-width": {
@@ -703,7 +716,10 @@
       "source-layer": "transportation",
       "minzoom": 6,
       "maxzoom": 8,
-      "filter": ["all", ["in", "hway_num", "1", "1B", "2", "3", "3A", "4", "5", "6", "6A", "7", "8", "8A", "18", "20", "51", "76"]],
+      "filter": [
+        "all",
+        ["in", "hway_num", "1", "1B", "2", "3", "3A", "4", "5", "6", "6A", "7", "8", "8A", "18", "20", "51", "76"]
+      ],
       "layout": { "visibility": "visible" },
       "paint": {
         "line-width": {
@@ -828,7 +844,28 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 8,
-      "filter": ["all", ["has", "hway_num"], ["!in", "hway_num", "6,94", "2,50", "1,3", "12,15", "14,15", "6,96", "25A", "20A", "20B", "29A", "30A", "74A", "67A"], ["!=", "lane_count", 1]],
+      "filter": [
+        "all",
+        ["has", "hway_num"],
+        [
+          "!in",
+          "hway_num",
+          "6,94",
+          "2,50",
+          "1,3",
+          "12,15",
+          "14,15",
+          "6,96",
+          "25A",
+          "20A",
+          "20B",
+          "29A",
+          "30A",
+          "74A",
+          "67A"
+        ],
+        ["!=", "lane_count", 1]
+      ],
       "layout": {
         "symbol-placement": "line",
         "text-field": "{hway_num}",

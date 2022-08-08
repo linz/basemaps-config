@@ -4,8 +4,18 @@
   "name": "topolite",
   "metadata": { "maputnik:renderer": "mbgljs" },
   "sources": {
-    "LINZ Basemaps": { "type": "vector", "url": "/v1/tiles/topographic/EPSG:3857/tile.json", "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0" },
-    "LINZ-Texture-Relief": { "type": "raster", "tiles": ["/v1/tiles/texturereliefshade/EPSG:3857/{z}/{x}/{y}.webp"], "tileSize": 256, "minzoom": 0, "maxzoom": 20 }
+    "LINZ Basemaps": {
+      "type": "vector",
+      "url": "/v1/tiles/topographic/EPSG:3857/tile.json",
+      "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0"
+    },
+    "LINZ-Texture-Relief": {
+      "type": "raster",
+      "tiles": ["/v1/tiles/texturereliefshade/EPSG:3857/{z}/{x}/{y}.webp"],
+      "tileSize": 256,
+      "minzoom": 0,
+      "maxzoom": 20
+    }
   },
   "sprite": "/v1/sprites/topographic",
   "glyphs": "/v1/fonts/{fontstack}/{range}.pbf",
@@ -353,7 +363,13 @@
       "source": "LINZ Basemaps",
       "source-layer": "water",
       "minzoom": 11,
-      "filter": ["any", ["==", "class", "lake"], ["==", "class", "river"], ["==", "class", "canal"], ["==", "class", "lagoon"]],
+      "filter": [
+        "any",
+        ["==", "class", "lake"],
+        ["==", "class", "river"],
+        ["==", "class", "canal"],
+        ["==", "class", "lagoon"]
+      ],
       "layout": {
         "visibility": "visible",
         "line-cap": "round",
@@ -1233,7 +1249,12 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "filter": ["all", ["==", "surface", "unmetalled"], ["in", "lane_count", 2, 3, 4, 5, 6, 7], ["!=", "staus", "under construction"]],
+      "filter": [
+        "all",
+        ["==", "surface", "unmetalled"],
+        ["in", "lane_count", 2, 3, 4, 5, 6, 7],
+        ["!=", "staus", "under construction"]
+      ],
       "layout": {
         "visibility": "visible",
         "line-cap": "round",
@@ -1321,7 +1342,12 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "filter": ["all", ["==", "surface", "sealed"], ["in", "lane_count", 2, 3, 4, 5, 6, 7], ["!=", "class", "motorway"]],
+      "filter": [
+        "all",
+        ["==", "surface", "sealed"],
+        ["in", "lane_count", 2, 3, 4, 5, 6, 7],
+        ["!=", "class", "motorway"]
+      ],
       "layout": {
         "visibility": "visible",
         "line-cap": "round",
@@ -1907,7 +1933,28 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 8,
-      "filter": ["all", ["has", "hway_num"], ["!in", "hway_num", "6,94", "2,50", "1,3", "12,15", "14,15", "6,96", "25A", "20A", "20B", "29A", "30A", "74A", "67A"], ["!=", "lane_count", 1]],
+      "filter": [
+        "all",
+        ["has", "hway_num"],
+        [
+          "!in",
+          "hway_num",
+          "6,94",
+          "2,50",
+          "1,3",
+          "12,15",
+          "14,15",
+          "6,96",
+          "25A",
+          "20A",
+          "20B",
+          "29A",
+          "30A",
+          "74A",
+          "67A"
+        ],
+        ["!=", "lane_count", 1]
+      ],
       "layout": {
         "icon-rotation-alignment": "viewport",
         "icon-pitch-alignment": "viewport",

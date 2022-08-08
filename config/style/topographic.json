@@ -4,8 +4,18 @@
   "name": "topographic",
   "metadata": { "maputnik:renderer": "mbgljs" },
   "sources": {
-    "LINZ Basemaps": { "type": "vector", "url": "/v1/tiles/topographic/EPSG:3857/tile.json", "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0" },
-    "LINZ-Texture-Relief": { "type": "raster", "tiles": ["/v1/tiles/texturereliefshade/EPSG:3857/{z}/{x}/{y}.webp"], "tileSize": 256, "minzoom": 0, "maxzoom": 20 }
+    "LINZ Basemaps": {
+      "type": "vector",
+      "url": "/v1/tiles/topographic/EPSG:3857/tile.json",
+      "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0"
+    },
+    "LINZ-Texture-Relief": {
+      "type": "raster",
+      "tiles": ["/v1/tiles/texturereliefshade/EPSG:3857/{z}/{x}/{y}.webp"],
+      "tileSize": 256,
+      "minzoom": 0,
+      "maxzoom": 20
+    }
   },
   "sprite": "/v1/sprites/topographic",
   "glyphs": "/v1/fonts/{fontstack}/{range}.pbf",
@@ -84,7 +94,11 @@
       "source-layer": "landcover",
       "filter": ["all", ["==", "class", "grass"], ["==", "natural", "scrub"], ["==", "distribution", "scattered"]],
       "layout": { "visibility": "visible" },
-      "paint": { "fill-color": "rgba(204, 222, 195, 1)", "fill-antialias": false, "fill-outline-color": "rgba(210, 210, 210, 0.27)" }
+      "paint": {
+        "fill-color": "rgba(204, 222, 195, 1)",
+        "fill-antialias": false,
+        "fill-outline-color": "rgba(210, 210, 210, 0.27)"
+      }
     },
     {
       "id": "Vegetation-Scrub",
@@ -235,7 +249,11 @@
       "minzoom": 10,
       "filter": ["all", ["==", "landuse", "orchard"]],
       "layout": { "visibility": "visible" },
-      "paint": { "fill-color": "rgba(27, 127, 36, 0.1)", "fill-outline-color": "rgba(255, 255, 255, 1)", "fill-translate-anchor": "viewport" }
+      "paint": {
+        "fill-color": "rgba(27, 127, 36, 0.1)",
+        "fill-outline-color": "rgba(255, 255, 255, 1)",
+        "fill-translate-anchor": "viewport"
+      }
     },
     {
       "id": "Landcover-Vineyard-Fill",
@@ -245,7 +263,12 @@
       "minzoom": 10,
       "filter": ["all", ["==", "landuse", "vineyard"]],
       "layout": { "visibility": "visible" },
-      "paint": { "fill-color": "rgba(27, 127, 36, 0.2)", "fill-translate-anchor": "viewport", "fill-outline-color": "rgba(255, 255, 255, 1)", "fill-antialias": false }
+      "paint": {
+        "fill-color": "rgba(27, 127, 36, 0.2)",
+        "fill-translate-anchor": "viewport",
+        "fill-outline-color": "rgba(255, 255, 255, 1)",
+        "fill-antialias": false
+      }
     },
     {
       "id": "Landcover-Swamp-Fill",
@@ -271,7 +294,12 @@
       "minzoom": 16,
       "filter": ["all", ["==", "class", "wetland"], ["==", "wetland_type", "swamp"]],
       "layout": { "visibility": "visible" },
-      "paint": { "fill-antialias": true, "fill-opacity": 0.5, "fill-color": "rgba(156, 156, 156, 1)", "fill-pattern": "swamp_poly_sparse" }
+      "paint": {
+        "fill-antialias": true,
+        "fill-opacity": 0.5,
+        "fill-color": "rgba(156, 156, 156, 1)",
+        "fill-pattern": "swamp_poly_sparse"
+      }
     },
     {
       "id": "Landcover-Swamp-sparse-half",
@@ -282,7 +310,12 @@
       "maxzoom": 16,
       "filter": ["all", ["==", "class", "wetland"], ["==", "wetland_type", "swamp"]],
       "layout": { "visibility": "visible" },
-      "paint": { "fill-antialias": true, "fill-opacity": 0.5, "fill-color": "rgba(156, 156, 156, 1)", "fill-pattern": "swamp_poly_sparse_half" }
+      "paint": {
+        "fill-antialias": true,
+        "fill-opacity": 0.5,
+        "fill-color": "rgba(156, 156, 156, 1)",
+        "fill-pattern": "swamp_poly_sparse_half"
+      }
     },
     {
       "id": "Landcover-Swamp-Ln",
@@ -393,7 +426,12 @@
           ]
         }
       },
-      "paint": { "text-color": "rgba(193, 104, 9, 1)", "text-halo-color": "rgba(243, 243, 242, 1)", "text-halo-width": 1, "text-halo-blur": 0.5 }
+      "paint": {
+        "text-color": "rgba(193, 104, 9, 1)",
+        "text-halo-color": "rgba(243, 243, 242, 1)",
+        "text-halo-width": 1,
+        "text-halo-blur": 0.5
+      }
     },
     {
       "id": "Parcels-Ln",
@@ -490,7 +528,13 @@
       "source": "LINZ Basemaps",
       "source-layer": "water",
       "minzoom": 11,
-      "filter": ["any", ["==", "class", "lake"], ["==", "class", "river"], ["==", "class", "canal"], ["==", "class", "lagoon"]],
+      "filter": [
+        "any",
+        ["==", "class", "lake"],
+        ["==", "class", "river"],
+        ["==", "class", "canal"],
+        ["==", "class", "lagoon"]
+      ],
       "layout": { "line-cap": "round", "line-join": "round", "visibility": "visible" },
       "paint": {
         "line-color": {
@@ -548,7 +592,12 @@
       "minzoom": 13,
       "filter": ["all", ["==", "class", "lake"]],
       "layout": { "visibility": "visible" },
-      "paint": { "fill-color": "rgba(184, 220, 242, 1)", "fill-opacity": 1, "fill-translate-anchor": "map", "fill-antialias": true }
+      "paint": {
+        "fill-color": "rgba(184, 220, 242, 1)",
+        "fill-opacity": 1,
+        "fill-translate-anchor": "map",
+        "fill-antialias": true
+      }
     },
     {
       "id": "Water-Lake-Named",
@@ -559,7 +608,12 @@
       "maxzoom": 13,
       "filter": ["all", ["==", "class", "lake"], ["has", "name"]],
       "layout": { "visibility": "visible" },
-      "paint": { "fill-color": "rgba(184, 220, 242, 1)", "fill-opacity": 1, "fill-translate-anchor": "map", "fill-antialias": true }
+      "paint": {
+        "fill-color": "rgba(184, 220, 242, 1)",
+        "fill-opacity": 1,
+        "fill-translate-anchor": "map",
+        "fill-antialias": true
+      }
     },
     {
       "id": "Water-River-Poly-Named",
@@ -570,7 +624,12 @@
       "maxzoom": 13,
       "filter": ["all", ["==", "class", "river"], ["has", "name"]],
       "layout": { "visibility": "visible" },
-      "paint": { "fill-color": "rgba(184, 220, 242, 1)", "fill-opacity": 1, "fill-translate-anchor": "map", "fill-antialias": true }
+      "paint": {
+        "fill-color": "rgba(184, 220, 242, 1)",
+        "fill-opacity": 1,
+        "fill-translate-anchor": "map",
+        "fill-antialias": true
+      }
     },
     {
       "id": "Water-Canal-Poly",
@@ -580,7 +639,12 @@
       "minzoom": 13,
       "filter": ["any", ["==", "class", "canal"]],
       "layout": { "visibility": "visible" },
-      "paint": { "fill-color": "rgba(184, 220, 242, 1)", "fill-opacity": 1, "fill-translate-anchor": "map", "fill-antialias": true }
+      "paint": {
+        "fill-color": "rgba(184, 220, 242, 1)",
+        "fill-opacity": 1,
+        "fill-translate-anchor": "map",
+        "fill-antialias": true
+      }
     },
     {
       "id": "Water-River-Poly",
@@ -590,7 +654,12 @@
       "minzoom": 13,
       "filter": ["any", ["==", "class", "river"]],
       "layout": { "visibility": "visible" },
-      "paint": { "fill-color": "rgba(184, 220, 242, 1)", "fill-opacity": 1, "fill-translate-anchor": "map", "fill-antialias": true }
+      "paint": {
+        "fill-color": "rgba(184, 220, 242, 1)",
+        "fill-opacity": 1,
+        "fill-translate-anchor": "map",
+        "fill-antialias": true
+      }
     },
     {
       "id": "Landcover-Sand-pattern",
@@ -643,7 +712,12 @@
       "maxzoom": 15,
       "filter": ["all", ["==", "class", "shingle"]],
       "layout": { "visibility": "visible" },
-      "paint": { "fill-antialias": false, "fill-color": "rgba(211, 207, 207, 0.75)", "fill-opacity": 0.85, "fill-pattern": "sand_land_poly_quarter" }
+      "paint": {
+        "fill-antialias": false,
+        "fill-color": "rgba(211, 207, 207, 0.75)",
+        "fill-opacity": 0.85,
+        "fill-pattern": "sand_land_poly_quarter"
+      }
     },
     {
       "id": "Landcover-Shingle-poly",
@@ -653,7 +727,12 @@
       "minzoom": 15,
       "filter": ["all", ["==", "class", "shingle"]],
       "layout": { "visibility": "visible" },
-      "paint": { "fill-antialias": false, "fill-color": "rgba(211, 207, 207, 0.75)", "fill-opacity": 0.85, "fill-pattern": "sand_land_poly_half" }
+      "paint": {
+        "fill-antialias": false,
+        "fill-color": "rgba(211, 207, 207, 0.75)",
+        "fill-opacity": 0.85,
+        "fill-pattern": "sand_land_poly_half"
+      }
     },
     {
       "id": "Landcover-Moraine-poly-half",
@@ -1082,7 +1161,11 @@
       "maxzoom": 15,
       "filter": ["all", ["==", "class", "marine_farm"]],
       "layout": { "visibility": "visible" },
-      "paint": { "fill-color": "rgba(25, 114, 242, 0.45)", "fill-pattern": "marine_farm_poly_half", "fill-opacity": 0.5 }
+      "paint": {
+        "fill-color": "rgba(25, 114, 242, 0.45)",
+        "fill-pattern": "marine_farm_poly_half",
+        "fill-opacity": 0.5
+      }
     },
     {
       "id": "Landuse-MarineFarm",
@@ -1182,7 +1265,12 @@
       "minzoom": 13,
       "filter": ["all", ["==", "class", "relief"], ["==", "sand_feature", "cutting"]],
       "layout": { "visibility": "visible" },
-      "paint": { "line-color": "rgba(81, 79, 79, 1)", "line-pattern": "cutting_edge", "line-width": 20, "line-offset": -3 }
+      "paint": {
+        "line-color": "rgba(81, 79, 79, 1)",
+        "line-pattern": "cutting_edge",
+        "line-width": 20,
+        "line-offset": -3
+      }
     },
     {
       "id": "Landcover-Embankment",
@@ -1190,7 +1278,12 @@
       "source": "LINZ Basemaps",
       "source-layer": "landcover",
       "minzoom": 13,
-      "filter": ["all", ["==", "class", "rock"], ["==", "rock_feature", "embankment"], ["!=", "embkmt_use", "stopbank"]],
+      "filter": [
+        "all",
+        ["==", "class", "rock"],
+        ["==", "rock_feature", "embankment"],
+        ["!=", "embkmt_use", "stopbank"]
+      ],
       "layout": { "visibility": "visible" },
       "paint": { "line-opacity": 1, "line-pattern": "embankment_gap_cl_thick", "line-width": 30 }
     },
@@ -1219,7 +1312,12 @@
       "source": "LINZ Basemaps",
       "source-layer": "landcover",
       "minzoom": 13,
-      "filter": ["all", ["==", "class", "rock"], ["==", "rock_feature", "embankment"], ["==", "embkmt_use", "stopbank"]],
+      "filter": [
+        "all",
+        ["==", "class", "rock"],
+        ["==", "rock_feature", "embankment"],
+        ["==", "embkmt_use", "stopbank"]
+      ],
       "paint": {
         "line-opacity": 1,
         "line-color": "rgba(61, 58, 58, 1)",
@@ -1415,7 +1513,14 @@
         }
       }
     },
-    { "id": "Poi-Siphon", "type": "fill", "source": "LINZ Basemaps", "source-layer": "poi", "minzoom": 12, "filter": ["all", ["==", "class", "siphon"]] },
+    {
+      "id": "Poi-Siphon",
+      "type": "fill",
+      "source": "LINZ Basemaps",
+      "source-layer": "poi",
+      "minzoom": 12,
+      "filter": ["all", ["==", "class", "siphon"]]
+    },
     {
       "id": "Poi-Tank-Pt-Background",
       "type": "circle",
@@ -1559,7 +1664,12 @@
       "source-layer": "poi",
       "minzoom": 12,
       "filter": ["all", ["==", "class", "dredge_tailing"]],
-      "paint": { "line-color": "rgba(55, 55, 55, 1)", "line-pattern": "dredge_tailing_pnt", "line-width": 10, "line-opacity": 0.9 }
+      "paint": {
+        "line-color": "rgba(55, 55, 55, 1)",
+        "line-pattern": "dredge_tailing_pnt",
+        "line-width": 10,
+        "line-opacity": 0.9
+      }
     },
     {
       "id": "Poi-Mine-Quarry-Outline",
@@ -1763,7 +1873,12 @@
         "text-variable-anchor": ["bottom-left", "bottom-right"],
         "text-optional": false
       },
-      "paint": { "text-halo-color": "rgba(243, 243, 242, 0.75)", "text-halo-width": 1, "text-halo-blur": 0.5, "text-translate-anchor": "map" }
+      "paint": {
+        "text-halo-color": "rgba(243, 243, 242, 0.75)",
+        "text-halo-width": 1,
+        "text-halo-blur": 0.5,
+        "text-translate-anchor": "map"
+      }
     },
     {
       "id": "Transport-FerryCrossing",
@@ -2278,7 +2393,12 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "filter": ["all", ["in", "lane_count", 2, 3, 4, 5, 6, 7, 8], ["!=", "class", "motorway"], ["==", "status", "under construction"]],
+      "filter": [
+        "all",
+        ["in", "lane_count", 2, 3, 4, 5, 6, 7, 8],
+        ["!=", "class", "motorway"],
+        ["==", "status", "under construction"]
+      ],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
         "line-color": "rgba(133, 130, 130, 1)",
@@ -2359,7 +2479,12 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "filter": ["all", ["==", "surface", "sealed"], ["in", "lane_count", 2, 3, 4, 5, 6, 7], ["!=", "class", "motorway"]],
+      "filter": [
+        "all",
+        ["==", "surface", "sealed"],
+        ["in", "lane_count", 2, 3, 4, 5, 6, 7],
+        ["!=", "class", "motorway"]
+      ],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
         "line-color": {
@@ -2777,7 +2902,14 @@
         }
       }
     },
-    { "id": "Landuse-Ladder", "type": "line", "source": "LINZ Basemaps", "source-layer": "landuse", "filter": ["all", ["==", "class", "ladder"]], "paint": { "line-color": "rgba(65, 63, 63, 1)" } },
+    {
+      "id": "Landuse-Ladder",
+      "type": "line",
+      "source": "LINZ Basemaps",
+      "source-layer": "landuse",
+      "filter": ["all", ["==", "class", "ladder"]],
+      "paint": { "line-color": "rgba(65, 63, 63, 1)" }
+    },
     {
       "id": "Landuse-MarineFarm-Ln",
       "type": "line",
@@ -2809,7 +2941,13 @@
         },
         "icon-image": "beacon_beacon_water_pnt"
       },
-      "paint": { "text-color": "rgba(224, 168, 33, 1)", "text-halo-color": "rgba(255, 255, 255, 1)", "text-halo-width": 2, "text-halo-blur": 0.5, "icon-opacity": 0.9 }
+      "paint": {
+        "text-color": "rgba(224, 168, 33, 1)",
+        "text-halo-color": "rgba(255, 255, 255, 1)",
+        "text-halo-width": 2,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 0.9
+      }
     },
     {
       "id": "Poi-Beacon-Lighthouse",
@@ -2830,7 +2968,13 @@
         "icon-size": 1.3,
         "icon-image": "beacon_lighthouse_land_pnt"
       },
-      "paint": { "text-color": "rgba(131, 82, 19, 1)", "text-halo-color": "rgba(255, 255, 255, 1)", "text-halo-width": 2, "text-halo-blur": 0.5, "text-translate": [15, 0] }
+      "paint": {
+        "text-color": "rgba(131, 82, 19, 1)",
+        "text-halo-color": "rgba(255, 255, 255, 1)",
+        "text-halo-width": 2,
+        "text-halo-blur": 0.5,
+        "text-translate": [15, 0]
+      }
     },
     {
       "id": "Poi-Bivouac-Rock",
@@ -2875,7 +3019,14 @@
       "source-layer": "poi",
       "minzoom": 12,
       "filter": ["all", ["==", "class", "buoy"]],
-      "layout": { "icon-image": "circle_pnt_line", "text-field": "Buoy", "text-font": ["Open Sans Regular"], "text-size": 12, "text-offset": [1.5, -1], "icon-size": 0.7 }
+      "layout": {
+        "icon-image": "circle_pnt_line",
+        "text-field": "Buoy",
+        "text-font": ["Open Sans Regular"],
+        "text-size": 12,
+        "text-offset": [1.5, -1],
+        "icon-size": 0.7
+      }
     },
     {
       "id": "Poi-Cave-Pt",
@@ -2894,7 +3045,12 @@
         "text-anchor": "left",
         "text-max-width": 4
       },
-      "paint": { "text-halo-color": "rgba(255, 255, 255, 1)", "text-halo-width": 1.5, "text-halo-blur": 0.5, "text-translate": [15, 0] }
+      "paint": {
+        "text-halo-color": "rgba(255, 255, 255, 1)",
+        "text-halo-width": 1.5,
+        "text-halo-blur": 0.5,
+        "text-translate": [15, 0]
+      }
     },
     {
       "id": "Poi-Cemetery-Pt",
@@ -2947,7 +3103,15 @@
       "source-layer": "poi",
       "minzoom": 12,
       "filter": ["all", ["==", "class", "chimney"]],
-      "layout": { "icon-image": "chimney_pnt", "text-font": ["Open Sans Regular"], "text-field": "", "text-justify": "right", "text-anchor": "left", "text-offset": [1, 0], "icon-size": 1.5 }
+      "layout": {
+        "icon-image": "chimney_pnt",
+        "text-font": ["Open Sans Regular"],
+        "text-field": "",
+        "text-justify": "right",
+        "text-anchor": "left",
+        "text-offset": [1, 0],
+        "icon-size": 1.5
+      }
     },
     {
       "id": "Poi-Dredge",
@@ -2956,7 +3120,14 @@
       "source-layer": "poi",
       "minzoom": 12,
       "filter": ["all", ["==", "class", "dredge"]],
-      "layout": { "text-field": "", "text-font": ["Open Sans Regular"], "text-justify": "left", "text-anchor": "bottom-left", "icon-image": "square_pnt_fill", "icon-size": 0.8 }
+      "layout": {
+        "text-field": "",
+        "text-font": ["Open Sans Regular"],
+        "text-justify": "left",
+        "text-anchor": "bottom-left",
+        "icon-image": "square_pnt_fill",
+        "icon-size": 0.8
+      }
     },
     {
       "id": "Poi-FishFarm-Label",
@@ -2966,7 +3137,12 @@
       "minzoom": 16,
       "filter": ["all", ["==", "class", "fish_farm"]],
       "layout": { "text-font": ["Roboto Bold Italic"], "text-field": "{species}", "text-size": 10 },
-      "paint": { "text-color": "rgba(0, 140, 204, 1)", "text-halo-color": "rgba(239, 239, 239, 1)", "text-halo-width": 1.5, "text-halo-blur": 0.5 }
+      "paint": {
+        "text-color": "rgba(0, 140, 204, 1)",
+        "text-halo-color": "rgba(239, 239, 239, 1)",
+        "text-halo-width": 1.5,
+        "text-halo-blur": 0.5
+      }
     },
     {
       "id": "Poi-Flare",
@@ -2975,7 +3151,15 @@
       "source-layer": "poi",
       "minzoom": 12,
       "filter": ["all", ["==", "class", "flare"]],
-      "layout": { "icon-image": "square_pnt_fill", "text-field": "{class}", "icon-size": 0.8, "text-font": ["Open Sans Regular"], "text-size": 12, "text-anchor": "top", "text-offset": [0, 0.5] },
+      "layout": {
+        "icon-image": "square_pnt_fill",
+        "text-field": "{class}",
+        "icon-size": 0.8,
+        "text-font": ["Open Sans Regular"],
+        "text-size": 12,
+        "text-anchor": "top",
+        "text-offset": [0, 0.5]
+      },
       "paint": {
         "text-halo-width": 1,
         "text-halo-blur": 0.5,
@@ -3095,7 +3279,15 @@
       "source-layer": "poi",
       "minzoom": 19,
       "filter": ["all", ["==", "class", "geo_bore"]],
-      "layout": { "icon-allow-overlap": true, "visibility": "visible", "icon-size": 1, "text-font": ["Open Sans Regular"], "text-field": "{class}", "text-size": 10, "text-offset": [0, 1] }
+      "layout": {
+        "icon-allow-overlap": true,
+        "visibility": "visible",
+        "icon-size": 1,
+        "text-font": ["Open Sans Regular"],
+        "text-field": "{class}",
+        "text-size": 10,
+        "text-offset": [0, 1]
+      }
     },
     {
       "id": "Poi-Grave-Pt",
@@ -3139,7 +3331,12 @@
         "text-max-width": 5,
         "icon-image": "building_pnt_hut"
       },
-      "paint": { "text-halo-color": "rgba(255, 255, 255, 1)", "text-halo-width": 1.5, "text-color": "rgba(73, 68, 68, 1)", "text-opacity": 1 }
+      "paint": {
+        "text-halo-color": "rgba(255, 255, 255, 1)",
+        "text-halo-width": 1.5,
+        "text-color": "rgba(73, 68, 68, 1)",
+        "text-opacity": 1
+      }
     },
     {
       "id": "Poi-Historic-Site",
@@ -3148,7 +3345,15 @@
       "source-layer": "poi",
       "minzoom": 12,
       "filter": ["all", ["==", "class", "historic_site"]],
-      "layout": { "text-field": "{ref}", "icon-image": "historic_site_pnt", "text-font": ["Open Sans Regular"], "text-justify": "left", "text-anchor": "left", "text-offset": [1, 0], "text-size": 10 },
+      "layout": {
+        "text-field": "{ref}",
+        "icon-image": "historic_site_pnt",
+        "text-font": ["Open Sans Regular"],
+        "text-justify": "left",
+        "text-anchor": "left",
+        "text-offset": [1, 0],
+        "text-size": 10
+      },
       "paint": {
         "text-color": "rgba(203, 12, 12, 1)",
         "icon-opacity": {
@@ -3185,7 +3390,12 @@
         "icon-size": 0.75,
         "text-offset": [1, 0]
       },
-      "paint": { "text-color": "rgba(0, 0, 0, 1)", "text-halo-width": 1.5, "text-halo-blur": 0.5, "text-halo-color": "rgba(255, 255, 255, 1)" }
+      "paint": {
+        "text-color": "rgba(0, 0, 0, 1)",
+        "text-halo-width": 1.5,
+        "text-halo-blur": 0.5,
+        "text-halo-color": "rgba(255, 255, 255, 1)"
+      }
     },
     {
       "id": "Poi-Ladder",
@@ -3193,7 +3403,12 @@
       "source": "LINZ Basemaps",
       "source-layer": "landuse",
       "filter": ["all", ["==", "class", "ladder"]],
-      "layout": { "text-font": ["Roboto Light"], "text-field": "ladder", "symbol-placement": "line", "text-anchor": "top" }
+      "layout": {
+        "text-font": ["Roboto Light"],
+        "text-field": "ladder",
+        "symbol-placement": "line",
+        "text-anchor": "top"
+      }
     },
     {
       "id": "Poi-Ladder-Pt",
@@ -3253,7 +3468,13 @@
         "visibility": "visible",
         "icon-image": "square_pnt_fill"
       },
-      "paint": { "text-halo-color": "rgba(255, 255, 255, 1)", "text-halo-width": 0.75, "text-halo-blur": 0.75, "icon-opacity": 0.8, "text-opacity": 0.9 }
+      "paint": {
+        "text-halo-color": "rgba(255, 255, 255, 1)",
+        "text-halo-width": 0.75,
+        "text-halo-blur": 0.75,
+        "icon-opacity": 0.8,
+        "text-opacity": 0.9
+      }
     },
     {
       "id": "Poi-Monument",
@@ -3283,7 +3504,13 @@
         "text-radial-offset": 0,
         "icon-image": "monument_pnt"
       },
-      "paint": { "text-color": "rgba(98, 53, 0, 1)", "text-halo-color": "rgba(255, 255, 255, 1)", "text-halo-width": 2, "text-halo-blur": 0.5, "icon-opacity": 0.85 }
+      "paint": {
+        "text-color": "rgba(98, 53, 0, 1)",
+        "text-halo-color": "rgba(255, 255, 255, 1)",
+        "text-halo-width": 2,
+        "text-halo-blur": 0.5,
+        "icon-opacity": 0.85
+      }
     },
     {
       "id": "Poi-Pa",
@@ -3292,7 +3519,12 @@
       "source-layer": "poi",
       "minzoom": 12,
       "filter": ["all", ["==", "class", "pa"]],
-      "layout": { "text-ignore-placement": true, "icon-image": "pa_pnt", "icon-allow-overlap": true, "text-anchor": "center" },
+      "layout": {
+        "text-ignore-placement": true,
+        "icon-image": "pa_pnt",
+        "icon-allow-overlap": true,
+        "text-anchor": "center"
+      },
       "paint": {
         "icon-opacity": {
           "stops": [
@@ -3311,7 +3543,14 @@
       "source-layer": "poi",
       "minzoom": 15,
       "filter": ["all", ["==", "class", "pylon"]],
-      "layout": { "text-font": [], "text-pitch-alignment": "map", "text-rotation-alignment": "map", "icon-pitch-alignment": "map", "icon-rotation-alignment": "auto", "icon-image": "square_pnt_line" },
+      "layout": {
+        "text-font": [],
+        "text-pitch-alignment": "map",
+        "text-rotation-alignment": "map",
+        "icon-pitch-alignment": "map",
+        "icon-rotation-alignment": "auto",
+        "icon-image": "square_pnt_line"
+      },
       "paint": {
         "icon-opacity": {
           "stops": [
@@ -3342,7 +3581,13 @@
         "text-max-width": 4,
         "text-offset": [0, 0.5]
       },
-      "paint": { "text-color": "rgba(47, 47, 47, 1)", "text-halo-width": 1, "text-halo-blur": 0.75, "text-halo-color": "rgba(255, 255, 255, 1)", "icon-opacity": 0.65 }
+      "paint": {
+        "text-color": "rgba(47, 47, 47, 1)",
+        "text-halo-width": 1,
+        "text-halo-blur": 0.75,
+        "text-halo-color": "rgba(255, 255, 255, 1)",
+        "icon-opacity": 0.65
+      }
     },
     {
       "id": "Poi-Quarry-Poly-Name",
@@ -3383,7 +3628,13 @@
       "source-layer": "poi",
       "minzoom": 13,
       "filter": ["any", ["==", "class", "racetrack"], ["==", "class", "racetrack_ln"]],
-      "layout": { "text-field": "{name}", "text-font": ["Open Sans Bold"], "text-size": 10, "text-pitch-alignment": "viewport", "text-rotation-alignment": "viewport" },
+      "layout": {
+        "text-field": "{name}",
+        "text-font": ["Open Sans Bold"],
+        "text-size": 10,
+        "text-pitch-alignment": "viewport",
+        "text-rotation-alignment": "viewport"
+      },
       "paint": {
         "text-translate-anchor": "viewport",
         "text-color": "rgba(129, 123, 123, 1)",
@@ -3447,7 +3698,13 @@
         "icon-optional": true,
         "visibility": "visible"
       },
-      "paint": { "text-color": "rgba(94, 94, 94, 1)", "text-halo-color": "rgba(255, 255, 255, 1)", "text-halo-width": 1.5, "text-halo-blur": 0.5, "text-translate": [0, -15] }
+      "paint": {
+        "text-color": "rgba(94, 94, 94, 1)",
+        "text-halo-color": "rgba(255, 255, 255, 1)",
+        "text-halo-width": 1.5,
+        "text-halo-blur": 0.5,
+        "text-translate": [0, -15]
+      }
     },
     {
       "id": "Poi-Redoubt",
@@ -3585,7 +3842,11 @@
       "minzoom": 12,
       "filter": ["all", ["==", "class", "sports_field"]],
       "layout": { "text-font": ["Open Sans Bold Italic"], "text-field": "{name}", "text-size": 9 },
-      "paint": { "text-color": "rgba(37, 108, 41, 1)", "text-halo-color": "rgba(255, 255, 255, 1)", "text-halo-width": 1 }
+      "paint": {
+        "text-color": "rgba(37, 108, 41, 1)",
+        "text-halo-color": "rgba(255, 255, 255, 1)",
+        "text-halo-width": 1
+      }
     },
     {
       "id": "Poi-Stockyard",
@@ -3619,7 +3880,15 @@
       "source-layer": "poi",
       "minzoom": 15,
       "filter": ["all", ["==", "class", "trig"]],
-      "layout": { "text-font": ["Open Sans Italic"], "text-size": 9, "text-field": "{elevation} m", "text-justify": "center", "text-anchor": "top", "visibility": "visible", "text-offset": [0, 1.3] },
+      "layout": {
+        "text-font": ["Open Sans Italic"],
+        "text-size": 9,
+        "text-field": "{elevation} m",
+        "text-justify": "center",
+        "text-anchor": "top",
+        "visibility": "visible",
+        "text-offset": [0, 1.3]
+      },
       "paint": { "text-halo-width": 0.75, "text-halo-blur": 0.75, "text-halo-color": "rgba(255, 255, 255, 1)" }
     },
     {
@@ -3686,7 +3955,12 @@
           ]
         }
       },
-      "paint": { "text-halo-width": 0.75, "text-halo-blur": 0.75, "text-color": "rgba(133, 112, 112, 1)", "text-halo-color": "rgba(242, 242, 242, 1)" }
+      "paint": {
+        "text-halo-width": 0.75,
+        "text-halo-blur": 0.75,
+        "text-color": "rgba(133, 112, 112, 1)",
+        "text-halo-color": "rgba(242, 242, 242, 1)"
+      }
     },
     {
       "id": "Poi-Windmill",
@@ -3750,7 +4024,12 @@
         "icon-rotation-alignment": "viewport",
         "text-max-width": 7
       },
-      "paint": { "text-halo-color": "rgba(255, 255, 255, 1)", "text-halo-width": 1, "text-color": "rgba(69, 50, 50, 1)", "text-translate": [10, 0] }
+      "paint": {
+        "text-halo-color": "rgba(255, 255, 255, 1)",
+        "text-halo-width": 1,
+        "text-color": "rgba(69, 50, 50, 1)",
+        "text-translate": [10, 0]
+      }
     },
     {
       "id": "Orchard-Label",
@@ -3979,7 +4258,12 @@
         "icon-keep-upright": false,
         "icon-offset": [0, 0]
       },
-      "paint": { "text-color": "rgba(78, 78, 78, 1)", "text-halo-color": "rgba(252, 252, 252, 1)", "text-halo-width": 0.75, "text-halo-blur": 0.75 }
+      "paint": {
+        "text-color": "rgba(78, 78, 78, 1)",
+        "text-halo-color": "rgba(252, 252, 252, 1)",
+        "text-halo-width": 0.75,
+        "text-halo-blur": 0.75
+      }
     },
     {
       "id": "Landuse-GravelPit-Label",
@@ -4007,7 +4291,13 @@
       "source-layer": "landuse",
       "minzoom": 12,
       "filter": ["all", ["==", "class", "grave"]],
-      "layout": { "text-field": "", "text-font": ["Open Sans Regular"], "icon-size": 1, "visibility": "visible", "icon-image": "grave_pnt" }
+      "layout": {
+        "text-field": "",
+        "text-font": ["Open Sans Regular"],
+        "icon-size": 1,
+        "visibility": "visible",
+        "icon-image": "grave_pnt"
+      }
     },
     {
       "id": "Landuse-Landfill-Symbol",
@@ -4034,7 +4324,12 @@
         "visibility": "visible",
         "icon-image": "landfill_pnt"
       },
-      "paint": { "text-color": "rgba(28, 25, 17, 1)", "text-halo-width": 1.5, "text-halo-blur": 0.5, "text-halo-color": "rgba(247, 165, 66, 0.75)" }
+      "paint": {
+        "text-color": "rgba(28, 25, 17, 1)",
+        "text-halo-width": 1.5,
+        "text-halo-blur": 0.5,
+        "text-halo-color": "rgba(247, 165, 66, 0.75)"
+      }
     },
     {
       "id": "Landuse-Mangrove-Symbol",
@@ -4055,7 +4350,11 @@
       "minzoom": 15,
       "filter": ["all", ["==", "class", "marine_farm"]],
       "layout": { "text-field": "{species}", "text-font": ["Roboto Bold Italic"], "text-size": 10 },
-      "paint": { "text-color": "rgba(0, 140, 204, 1)", "text-halo-color": "rgba(239, 239, 239, 1)", "text-halo-width": 1.5 }
+      "paint": {
+        "text-color": "rgba(0, 140, 204, 1)",
+        "text-halo-color": "rgba(239, 239, 239, 1)",
+        "text-halo-width": 1.5
+      }
     },
     {
       "id": "Landuse-PumicePit-Label",
@@ -4079,7 +4378,11 @@
           ]
         }
       },
-      "paint": { "text-halo-color": "rgba(255, 255, 255, 1)", "text-halo-width": 1.5, "text-color": "rgba(34, 34, 34, 1)" }
+      "paint": {
+        "text-halo-color": "rgba(255, 255, 255, 1)",
+        "text-halo-width": 1.5,
+        "text-color": "rgba(34, 34, 34, 1)"
+      }
     },
     {
       "id": "Landuse-Tower",
@@ -4172,7 +4475,12 @@
         "icon-image": "golf_course_pnt_dual",
         "text-max-width": 6
       },
-      "paint": { "text-color": "rgba(27, 77, 29, 1)", "text-halo-width": 1.5, "text-halo-color": "rgba(255, 255, 255, 1)", "text-halo-blur": 0.5 }
+      "paint": {
+        "text-color": "rgba(27, 77, 29, 1)",
+        "text-halo-width": 1.5,
+        "text-halo-color": "rgba(255, 255, 255, 1)",
+        "text-halo-blur": 0.5
+      }
     },
     {
       "id": "Landcover-Rock-Pt",
@@ -4188,7 +4496,12 @@
       "source": "LINZ Basemaps",
       "source-layer": "landcover",
       "filter": ["all", ["==", "class", "rock_outcrop"]],
-      "layout": { "icon-allow-overlap": false, "icon-offset": [-3, -6], "visibility": "visible", "icon-image": "rock_outcrop_large_pnt" }
+      "layout": {
+        "icon-allow-overlap": false,
+        "icon-offset": [-3, -6],
+        "visibility": "visible",
+        "icon-image": "rock_outcrop_large_pnt"
+      }
     },
     {
       "id": "Landcover-Swamp-Name",
@@ -4208,7 +4521,13 @@
         "text-allow-overlap": true,
         "icon-allow-overlap": true
       },
-      "paint": { "text-color": "rgba(2, 46, 39, 1)", "text-halo-width": 0.5, "text-halo-color": "rgba(252, 252, 252, 1)", "text-halo-blur": 0.5, "text-translate": [8, 0] }
+      "paint": {
+        "text-color": "rgba(2, 46, 39, 1)",
+        "text-halo-width": 0.5,
+        "text-halo-color": "rgba(252, 252, 252, 1)",
+        "text-halo-blur": 0.5,
+        "text-translate": [8, 0]
+      }
     },
     {
       "id": "Landcover-Swamp-Symbol",
@@ -4230,7 +4549,13 @@
         "text-allow-overlap": true,
         "icon-allow-overlap": true
       },
-      "paint": { "text-color": "rgba(2, 46, 39, 1)", "text-halo-width": 0.5, "text-halo-color": "rgba(252, 252, 252, 1)", "text-halo-blur": 0.5, "text-translate": [8, 0] }
+      "paint": {
+        "text-color": "rgba(2, 46, 39, 1)",
+        "text-halo-width": 0.5,
+        "text-halo-color": "rgba(252, 252, 252, 1)",
+        "text-halo-blur": 0.5,
+        "text-translate": [8, 0]
+      }
     },
     {
       "id": "Landcover-Swamp-pt",
@@ -4270,7 +4595,13 @@
         "text-anchor": "bottom",
         "text-allow-overlap": false
       },
-      "paint": { "text-color": "rgba(47, 47, 47, 1)", "text-halo-color": "rgba(255, 255, 255, 0.7)", "text-halo-blur": 20, "text-halo-width": 0.25, "icon-color": "rgba(0, 0, 0, 1)" }
+      "paint": {
+        "text-color": "rgba(47, 47, 47, 1)",
+        "text-halo-color": "rgba(255, 255, 255, 0.7)",
+        "text-halo-blur": 20,
+        "text-halo-width": 0.25,
+        "icon-color": "rgba(0, 0, 0, 1)"
+      }
     },
     {
       "id": "Waterway-Flume-Name",
@@ -4316,7 +4647,12 @@
         "text-anchor": "bottom",
         "visibility": "visible"
       },
-      "paint": { "text-color": "rgba(0, 140, 204, 1)", "text-halo-color": "rgba(239, 239, 239, 0.80)", "text-halo-width": 1.5, "text-halo-blur": 1 }
+      "paint": {
+        "text-color": "rgba(0, 140, 204, 1)",
+        "text-halo-color": "rgba(239, 239, 239, 0.80)",
+        "text-halo-width": 1.5,
+        "text-halo-blur": 1
+      }
     },
     {
       "id": "Water-Spring-Cold",
@@ -4421,7 +4757,11 @@
         },
         "icon-image": "highway_pnt_wide"
       },
-      "paint": { "text-translate-anchor": "map", "text-color": "rgba(255, 255, 255, 1)", "icon-translate-anchor": "map" }
+      "paint": {
+        "text-translate-anchor": "map",
+        "text-color": "rgba(255, 255, 255, 1)",
+        "icon-translate-anchor": "map"
+      }
     },
     {
       "id": "All-Highway-Labels-standard",
@@ -4429,7 +4769,28 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 8,
-      "filter": ["all", ["has", "hway_num"], ["!in", "hway_num", "6,94", "2,50", "1,3", "12,15", "14,15", "6,96", "25A", "20A", "20B", "29A", "30A", "74A", "67A"], ["!=", "lane_count", 1]],
+      "filter": [
+        "all",
+        ["has", "hway_num"],
+        [
+          "!in",
+          "hway_num",
+          "6,94",
+          "2,50",
+          "1,3",
+          "12,15",
+          "14,15",
+          "6,96",
+          "25A",
+          "20A",
+          "20B",
+          "29A",
+          "30A",
+          "74A",
+          "67A"
+        ],
+        ["!=", "lane_count", 1]
+      ],
       "layout": {
         "symbol-placement": "line",
         "text-field": "{hway_num}",
@@ -4470,7 +4831,11 @@
         },
         "icon-image": "highway_pnt_standard"
       },
-      "paint": { "text-translate-anchor": "map", "text-color": "rgba(255, 255, 255, 1)", "icon-translate-anchor": "map" }
+      "paint": {
+        "text-translate-anchor": "map",
+        "text-color": "rgba(255, 255, 255, 1)",
+        "icon-translate-anchor": "map"
+      }
     },
     {
       "id": "Transport-Ferry-Symbol",
@@ -4517,7 +4882,11 @@
         },
         "visibility": "visible"
       },
-      "paint": { "text-color": "rgba(80, 75, 75, 1)", "text-halo-color": "rgba(230, 230, 230, 0.5)", "text-halo-width": 2 }
+      "paint": {
+        "text-color": "rgba(80, 75, 75, 1)",
+        "text-halo-color": "rgba(230, 230, 230, 0.5)",
+        "text-halo-width": 2
+      }
     },
     {
       "id": "All-Road-Labels",
@@ -4677,7 +5046,14 @@
         "text-ignore-placement": false,
         "text-max-width": 4
       },
-      "paint": { "text-halo-width": 2.5, "text-halo-color": "rgba(205, 53, 53, 0.4)", "text-opacity": 0.9, "icon-halo-color": "rgba(205, 53, 53, 0.4)", "icon-halo-width": 10, "icon-halo-blur": 0.5 }
+      "paint": {
+        "text-halo-width": 2.5,
+        "text-halo-color": "rgba(205, 53, 53, 0.4)",
+        "text-opacity": 0.9,
+        "icon-halo-color": "rgba(205, 53, 53, 0.4)",
+        "icon-halo-width": 10,
+        "icon-halo-blur": 0.5
+      }
     },
     {
       "id": "All-FootTrack-Labels",
@@ -4685,7 +5061,14 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 13,
-      "filter": ["all", ["has", "name"], ["==", "class", "track"], ["==", "track_use", "foot"], ["!=", "subclass", "foot_route_closed"], ["!=", "subclass", "foot_closed"]],
+      "filter": [
+        "all",
+        ["has", "name"],
+        ["==", "class", "track"],
+        ["==", "track_use", "foot"],
+        ["!=", "subclass", "foot_route_closed"],
+        ["!=", "subclass", "foot_closed"]
+      ],
       "layout": {
         "symbol-placement": "point",
         "text-field": "{name} {status}",
@@ -4748,7 +5131,13 @@
         "icon-image": "airport_airport_pnt_fill",
         "text-max-width": 5
       },
-      "paint": { "text-color": "rgba(129, 123, 123, 1)", "text-halo-width": 1, "text-halo-blur": 0.5, "text-halo-color": "rgba(255, 255, 255, 1)", "icon-opacity": 0.8 }
+      "paint": {
+        "text-color": "rgba(129, 123, 123, 1)",
+        "text-halo-width": 1,
+        "text-halo-blur": 0.5,
+        "text-halo-color": "rgba(255, 255, 255, 1)",
+        "icon-opacity": 0.8
+      }
     },
     {
       "id": "Aeroway-Airstrip-Label",
@@ -4757,7 +5146,13 @@
       "source-layer": "aeroway",
       "minzoom": 15,
       "filter": ["all", ["==", "class", "runway"], ["!has", "surface"]],
-      "layout": { "text-font": ["Roboto Light"], "text-field": "airstrip", "text-size": 10, "text-justify": "left", "text-anchor": "left" },
+      "layout": {
+        "text-font": ["Roboto Light"],
+        "text-field": "airstrip",
+        "text-size": 10,
+        "text-justify": "left",
+        "text-anchor": "left"
+      },
       "paint": { "text-halo-color": "rgba(246, 246, 246, 1)", "text-halo-width": 1.5, "text-halo-blur": 0.5 }
     },
     {
@@ -4777,8 +5172,20 @@
       "source-layer": "water",
       "minzoom": 13,
       "filter": ["all", ["==", "class", "reef"], ["has", "name"]],
-      "layout": { "visibility": "visible", "text-field": "{name}", "text-font": ["Open Sans Italic"], "text-size": 12, "text-max-width": 4, "text-anchor": "center", "text-offset": [0, 1] },
-      "paint": { "text-color": "rgba(0, 140, 204, 1)", "text-halo-color": "rgba(239, 239, 239, 1)", "text-halo-width": 2 }
+      "layout": {
+        "visibility": "visible",
+        "text-field": "{name}",
+        "text-font": ["Open Sans Italic"],
+        "text-size": 12,
+        "text-max-width": 4,
+        "text-anchor": "center",
+        "text-offset": [0, 1]
+      },
+      "paint": {
+        "text-color": "rgba(0, 140, 204, 1)",
+        "text-halo-color": "rgba(239, 239, 239, 1)",
+        "text-halo-width": 2
+      }
     },
     {
       "id": "All-Lake-Names",
@@ -4787,8 +5194,18 @@
       "source-layer": "water",
       "minzoom": 11,
       "filter": ["all", ["==", "class", "lake"], ["has", "name"]],
-      "layout": { "visibility": "visible", "text-field": "{name}", "text-font": ["Open Sans Italic"], "text-size": 12, "text-max-width": 4 },
-      "paint": { "text-color": "rgba(0, 140, 204, 1)", "text-halo-color": "rgba(239, 239, 239, 1)", "text-halo-width": 2 }
+      "layout": {
+        "visibility": "visible",
+        "text-field": "{name}",
+        "text-font": ["Open Sans Italic"],
+        "text-size": 12,
+        "text-max-width": 4
+      },
+      "paint": {
+        "text-color": "rgba(0, 140, 204, 1)",
+        "text-halo-color": "rgba(239, 239, 239, 1)",
+        "text-halo-width": 2
+      }
     },
     {
       "id": "All-Canal-Names",
@@ -4812,7 +5229,12 @@
         "text-ignore-placement": true,
         "text-justify": "center"
       },
-      "paint": { "text-color": "rgba(0, 140, 204, 1)", "text-halo-color": "rgba(239, 239, 239, 0.80)", "text-halo-width": 1.5, "text-halo-blur": 1 }
+      "paint": {
+        "text-color": "rgba(0, 140, 204, 1)",
+        "text-halo-color": "rgba(239, 239, 239, 0.80)",
+        "text-halo-width": 1.5,
+        "text-halo-blur": 1
+      }
     },
     {
       "id": "All-River-Names",
@@ -4836,7 +5258,12 @@
         "text-ignore-placement": true,
         "text-justify": "center"
       },
-      "paint": { "text-color": "rgba(0, 140, 204, 1)", "text-halo-color": "rgba(239, 239, 239, 0.80)", "text-halo-width": 1.5, "text-halo-blur": 1 }
+      "paint": {
+        "text-color": "rgba(0, 140, 204, 1)",
+        "text-halo-color": "rgba(239, 239, 239, 0.80)",
+        "text-halo-width": 1.5,
+        "text-halo-blur": 1
+      }
     },
     {
       "id": "All-Waterway-River-Names",
@@ -4855,7 +5282,12 @@
         "text-ignore-placement": true,
         "text-allow-overlap": true
       },
-      "paint": { "text-color": "rgba(0, 140, 204, 1)", "text-halo-color": "rgba(239, 239, 239, 0.80)", "text-halo-width": 1.5, "text-halo-blur": 1 }
+      "paint": {
+        "text-color": "rgba(0, 140, 204, 1)",
+        "text-halo-color": "rgba(239, 239, 239, 0.80)",
+        "text-halo-width": 1.5,
+        "text-halo-blur": 1
+      }
     },
     {
       "id": "Waterway-Waterfall-Label",
@@ -4872,7 +5304,12 @@
         "text-allow-overlap": true,
         "text-max-width": 3
       },
-      "paint": { "text-color": "rgba(0, 140, 204, 1)", "text-halo-color": "rgba(239, 239, 239, 1)", "text-halo-width": 1.5, "text-halo-blur": 0.5 }
+      "paint": {
+        "text-color": "rgba(0, 140, 204, 1)",
+        "text-halo-color": "rgba(239, 239, 239, 1)",
+        "text-halo-width": 1.5,
+        "text-halo-blur": 0.5
+      }
     },
     {
       "id": "Waterway-Waterfall-Pt-Ln",
@@ -4924,7 +5361,12 @@
         "text-max-width": 3,
         "text-rotate": 0
       },
-      "paint": { "text-color": "rgba(0, 140, 204, 1)", "text-halo-color": "rgba(232, 232, 232, 1)", "text-halo-width": 1.5, "text-halo-blur": 0.5 }
+      "paint": {
+        "text-color": "rgba(0, 140, 204, 1)",
+        "text-halo-color": "rgba(232, 232, 232, 1)",
+        "text-halo-width": 1.5,
+        "text-halo-blur": 0.5
+      }
     },
     {
       "id": "Place-Names-13",
