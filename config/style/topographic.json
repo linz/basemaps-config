@@ -528,13 +528,7 @@
       "source": "LINZ Basemaps",
       "source-layer": "water",
       "minzoom": 11,
-      "filter": [
-        "any",
-        ["==", "class", "lake"],
-        ["==", "class", "river"],
-        ["==", "class", "canal"],
-        ["==", "class", "lagoon"]
-      ],
+      "filter": ["any", ["==", "class", "lake"], ["==", "class", "river"], ["==", "class", "canal"], ["==", "class", "lagoon"]],
       "layout": { "line-cap": "round", "line-join": "round", "visibility": "visible" },
       "paint": {
         "line-color": {
@@ -1278,12 +1272,7 @@
       "source": "LINZ Basemaps",
       "source-layer": "landcover",
       "minzoom": 13,
-      "filter": [
-        "all",
-        ["==", "class", "rock"],
-        ["==", "rock_feature", "embankment"],
-        ["!=", "embkmt_use", "stopbank"]
-      ],
+      "filter": ["all", ["==", "class", "rock"], ["==", "rock_feature", "embankment"], ["!=", "embkmt_use", "stopbank"]],
       "layout": { "visibility": "visible" },
       "paint": { "line-opacity": 1, "line-pattern": "embankment_gap_cl_thick", "line-width": 30 }
     },
@@ -1312,12 +1301,7 @@
       "source": "LINZ Basemaps",
       "source-layer": "landcover",
       "minzoom": 13,
-      "filter": [
-        "all",
-        ["==", "class", "rock"],
-        ["==", "rock_feature", "embankment"],
-        ["==", "embkmt_use", "stopbank"]
-      ],
+      "filter": ["all", ["==", "class", "rock"], ["==", "rock_feature", "embankment"], ["==", "embkmt_use", "stopbank"]],
       "paint": {
         "line-opacity": 1,
         "line-color": "rgba(61, 58, 58, 1)",
@@ -2393,12 +2377,7 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "filter": [
-        "all",
-        ["in", "lane_count", 2, 3, 4, 5, 6, 7, 8],
-        ["!=", "class", "motorway"],
-        ["==", "status", "under construction"]
-      ],
+      "filter": ["all", ["in", "lane_count", 2, 3, 4, 5, 6, 7, 8], ["!=", "class", "motorway"], ["==", "status", "under construction"]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
         "line-color": "rgba(133, 130, 130, 1)",
@@ -2479,12 +2458,7 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 10,
-      "filter": [
-        "all",
-        ["==", "surface", "sealed"],
-        ["in", "lane_count", 2, 3, 4, 5, 6, 7],
-        ["!=", "class", "motorway"]
-      ],
+      "filter": ["all", ["==", "surface", "sealed"], ["in", "lane_count", 2, 3, 4, 5, 6, 7], ["!=", "class", "motorway"]],
       "layout": { "visibility": "visible", "line-cap": "butt", "line-join": "bevel" },
       "paint": {
         "line-color": {
@@ -4769,28 +4743,7 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 8,
-      "filter": [
-        "all",
-        ["has", "hway_num"],
-        [
-          "!in",
-          "hway_num",
-          "6,94",
-          "2,50",
-          "1,3",
-          "12,15",
-          "14,15",
-          "6,96",
-          "25A",
-          "20A",
-          "20B",
-          "29A",
-          "30A",
-          "74A",
-          "67A"
-        ],
-        ["!=", "lane_count", 1]
-      ],
+      "filter": ["all", ["has", "hway_num"], ["!in", "hway_num", "6,94", "2,50", "1,3", "12,15", "14,15", "6,96", "25A", "20A", "20B", "29A", "30A", "74A", "67A"], ["!=", "lane_count", 1]],
       "layout": {
         "symbol-placement": "line",
         "text-field": "{hway_num}",
@@ -5061,14 +5014,7 @@
       "source": "LINZ Basemaps",
       "source-layer": "transportation",
       "minzoom": 13,
-      "filter": [
-        "all",
-        ["has", "name"],
-        ["==", "class", "track"],
-        ["==", "track_use", "foot"],
-        ["!=", "subclass", "foot_route_closed"],
-        ["!=", "subclass", "foot_closed"]
-      ],
+      "filter": ["all", ["has", "name"], ["==", "class", "track"], ["==", "track_use", "foot"], ["!=", "subclass", "foot_route_closed"], ["!=", "subclass", "foot_closed"]],
       "layout": {
         "symbol-placement": "point",
         "text-field": "{name} {status}",
