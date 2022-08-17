@@ -436,7 +436,7 @@
       }
     },
     {
-      "id": "Aeroway-Airport",
+      "id": "Aeroway-Aerodrome",
       "type": "fill",
       "source": "LINZ Basemaps",
       "source-layer": "aeroway",
@@ -446,7 +446,7 @@
       "paint": { "fill-color": "rgba(211, 211, 211, 1)" }
     },
     {
-      "id": "Aeroway-Airstrip-Sealed",
+      "id": "Aeroway-Runway-Sealed",
       "type": "fill",
       "source": "LINZ Basemaps",
       "source-layer": "aeroway",
@@ -456,7 +456,7 @@
       "paint": { "fill-color": "rgba(193, 193, 193, 0.5)", "fill-antialias": false }
     },
     {
-      "id": "Aeroway-Airstrip-Ln",
+      "id": "Aeroway-Runway-Grass-Ln",
       "type": "line",
       "source": "LINZ Basemaps",
       "source-layer": "aeroway",
@@ -466,7 +466,7 @@
       "paint": { "line-color": "rgba(125, 125, 125, 1)", "line-dasharray": [5, 5] }
     },
     {
-      "id": "Aeroway-Runway-Ln",
+      "id": "Aeroway-Runway-Sealed-Ln",
       "type": "line",
       "source": "LINZ Basemaps",
       "source-layer": "aeroway",
@@ -739,6 +739,34 @@
       }
     },
     {
+      "id": "Waterway-Canal-Ln-Named",
+      "type": "line",
+      "source": "LINZ Basemaps",
+      "source-layer": "waterway",
+      "minzoom": 8,
+      "maxzoom": 13,
+      "filter": ["all", ["==", "class", "canal"], ["has", "name"]],
+      "layout": { "visibility": "visible" },
+      "paint": {
+        "line-color": {
+          "stops": [
+            [9, "rgba(125, 198, 215, 0.01)"],
+            [10, "rgba(125, 198, 215, 0.75)"],
+            [11, "rgba(167, 209, 232, 0.75)"],
+            [12, "rgba(167, 209, 232, 0.75)"],
+            [13, "rgba(76, 147, 226, 0.75)"]
+          ]
+        },
+        "line-opacity": 1,
+        "line-width": {
+          "stops": [
+            [12, 1.5],
+            [13, 1]
+          ]
+        }
+      }
+    },
+    {
       "id": "Waterway-Drain-Ln",
       "type": "line",
       "source": "LINZ Basemaps",
@@ -765,26 +793,35 @@
       }
     },
     {
-      "id": "Water-Dry-Dock-ln",
+      "id": "Waterway-Drain-Ln-Named",
       "type": "line",
       "source": "LINZ Basemaps",
-      "source-layer": "water",
-      "minzoom": 12,
-      "filter": ["all", ["==", "class", "dock"]],
+      "source-layer": "waterway",
+      "minzoom": 8,
+      "maxzoom": 13,
+      "filter": ["all", ["==", "class", "drain"], ["has", "name"]],
       "layout": { "visibility": "visible" },
       "paint": {
-        "line-width": {
+        "line-color": {
           "stops": [
-            [10, 0.75],
-            [14, 1.5],
-            [18, 2]
+            [9, "rgba(125, 198, 215, 0.01)"],
+            [10, "rgba(125, 198, 215, 0.75)"],
+            [11, "rgba(167, 209, 232, 0.75)"],
+            [12, "rgba(167, 209, 232, 0.75)"],
+            [13, "rgba(76, 147, 226, 0.75)"]
           ]
         },
-        "line-color": "rgba(73, 73, 73, 1)"
+        "line-opacity": 1,
+        "line-width": {
+          "stops": [
+            [12, 1.5],
+            [13, 1]
+          ]
+        }
       }
     },
     {
-      "id": "Water-River-Ln",
+      "id": "Waterway-River-Ln",
       "type": "line",
       "source": "LINZ Basemaps",
       "source-layer": "waterway",
@@ -808,7 +845,7 @@
       }
     },
     {
-      "id": "Water-River-Ln-Named",
+      "id": "Waterway-River-Ln-Named",
       "type": "line",
       "source": "LINZ Basemaps",
       "source-layer": "waterway",
@@ -833,6 +870,25 @@
             [13, 1]
           ]
         }
+      }
+    },
+    {
+      "id": "Water-Dry-Dock-ln",
+      "type": "line",
+      "source": "LINZ Basemaps",
+      "source-layer": "water",
+      "minzoom": 12,
+      "filter": ["all", ["==", "class", "dock"]],
+      "layout": { "visibility": "visible" },
+      "paint": {
+        "line-width": {
+          "stops": [
+            [10, 0.75],
+            [14, 1.5],
+            [18, 2]
+          ]
+        },
+        "line-color": "rgba(73, 73, 73, 1)"
       }
     },
     {
@@ -2725,6 +2781,176 @@
       }
     },
     {
+      "id": "All-ClosedFootRouteTrack-Labels",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "transportation",
+      "minzoom": 13,
+      "filter": ["all", ["has", "name"], ["==", "class", "track"], ["in", "subclass", "foot_route_closed"]],
+      "layout": {
+        "symbol-placement": "point",
+        "text-field": "{name} {status}",
+        "text-font": ["Open Sans Regular"],
+        "icon-text-fit": "none",
+        "text-size": {
+          "stops": [
+            [13, 8],
+            [15, 11],
+            [18, 10],
+            [19, 30],
+            [22, 140]
+          ]
+        },
+        "symbol-spacing": 100,
+        "visibility": "visible",
+        "text-anchor": "top",
+        "text-justify": "center",
+        "text-transform": "none",
+        "icon-pitch-alignment": "auto",
+        "icon-ignore-placement": false,
+        "icon-image": "track_walking_pnt_fill",
+        "icon-anchor": "bottom",
+        "icon-offset": [0, -3],
+        "text-allow-overlap": true,
+        "icon-allow-overlap": false,
+        "text-pitch-alignment": "viewport",
+        "text-rotation-alignment": "viewport",
+        "icon-rotation-alignment": "viewport",
+        "text-ignore-placement": false,
+        "text-max-width": 4
+      },
+      "paint": { "text-halo-width": 2.5, "text-halo-color": "rgba(205, 53, 53, 0.4)", "text-opacity": 0.9 }
+    },
+    {
+      "id": "All-ClosedFootTrack-Labels",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "transportation",
+      "minzoom": 13,
+      "filter": ["all", ["has", "name"], ["==", "class", "track"], ["in", "subclass", "foot_closed"]],
+      "layout": {
+        "symbol-placement": "point",
+        "text-field": "{name} {status}",
+        "text-font": ["Open Sans Regular"],
+        "icon-text-fit": "none",
+        "text-size": {
+          "stops": [
+            [13, 8],
+            [15, 11],
+            [18, 10],
+            [19, 30],
+            [22, 140]
+          ]
+        },
+        "symbol-spacing": 100,
+        "visibility": "visible",
+        "text-anchor": "top",
+        "text-justify": "center",
+        "text-transform": "none",
+        "icon-pitch-alignment": "auto",
+        "icon-ignore-placement": false,
+        "icon-image": "track_walking_pnt_fill",
+        "icon-anchor": "bottom",
+        "icon-offset": [0, -3],
+        "text-allow-overlap": true,
+        "icon-allow-overlap": false,
+        "text-pitch-alignment": "viewport",
+        "text-rotation-alignment": "viewport",
+        "icon-rotation-alignment": "viewport",
+        "text-ignore-placement": false,
+        "text-max-width": 4
+      },
+      "paint": { "text-halo-width": 2.5, "text-halo-color": "rgba(205, 53, 53, 0.4)", "text-opacity": 0.9, "icon-halo-color": "rgba(205, 53, 53, 0.4)", "icon-halo-width": 10, "icon-halo-blur": 0.5 }
+    },
+    {
+      "id": "All-CycleTrack-Labels",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "transportation",
+      "minzoom": 13,
+      "filter": ["all", ["has", "name"], ["==", "class", "track"], ["==", "track_use", "cycle only"]],
+      "layout": {
+        "symbol-placement": "point",
+        "text-field": "{name}",
+        "text-font": ["Open Sans Regular"],
+        "icon-text-fit": "none",
+        "text-size": {
+          "stops": [
+            [13, 8],
+            [15, 11],
+            [18, 10],
+            [19, 30],
+            [22, 140]
+          ]
+        },
+        "symbol-spacing": 100,
+        "visibility": "visible",
+        "text-anchor": "top",
+        "text-justify": "center",
+        "text-transform": "none",
+        "icon-pitch-alignment": "auto",
+        "icon-ignore-placement": false,
+        "icon-anchor": "bottom",
+        "icon-offset": [0, -3],
+        "text-allow-overlap": true,
+        "icon-allow-overlap": false,
+        "text-pitch-alignment": "viewport",
+        "text-rotation-alignment": "viewport",
+        "icon-rotation-alignment": "viewport",
+        "text-ignore-placement": false,
+        "text-max-width": 4,
+        "icon-image": "racetrack_cycle_pnt",
+        "icon-size": {
+          "stops": [
+            [10, 1],
+            [17, 1.3]
+          ]
+        }
+      },
+      "paint": { "text-halo-width": 2.5, "text-halo-color": "rgba(243, 243, 242, 0.9)", "text-opacity": 0.9 }
+    },
+    {
+      "id": "All-FootTrack-Labels",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "transportation",
+      "minzoom": 13,
+      "filter": ["all", ["has", "name"], ["==", "class", "track"], ["==", "track_use", "foot"], ["!=", "subclass", "foot_route_closed"], ["!=", "subclass", "foot_closed"]],
+      "layout": {
+        "symbol-placement": "point",
+        "text-field": "{name} {status}",
+        "text-font": ["Open Sans Regular"],
+        "icon-text-fit": "none",
+        "text-size": {
+          "stops": [
+            [13, 8],
+            [15, 11],
+            [18, 10],
+            [19, 30],
+            [22, 140]
+          ]
+        },
+        "symbol-spacing": 100,
+        "visibility": "visible",
+        "text-anchor": "top",
+        "text-justify": "center",
+        "text-transform": "none",
+        "icon-pitch-alignment": "auto",
+        "icon-ignore-placement": false,
+        "icon-image": "track_walking_pnt_fill",
+        "icon-anchor": "bottom",
+        "icon-offset": [0, -3],
+        "text-allow-overlap": true,
+        "icon-allow-overlap": false,
+        "text-pitch-alignment": "viewport",
+        "text-rotation-alignment": "viewport",
+        "icon-rotation-alignment": "viewport",
+        "text-ignore-placement": false,
+        "text-max-width": 4
+      },
+      "paint": { "text-halo-width": 2.5, "text-halo-color": "rgba(243, 243, 242, 0.9)", "text-opacity": 0.9 }
+    },
+    {
       "id": "Landuse-Boom",
       "type": "line",
       "source": "LINZ Basemaps",
@@ -3117,31 +3343,6 @@
       "paint": { "icon-opacity": 0.9 }
     },
     {
-      "id": "Poi-Hut-Label",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "poi",
-      "filter": ["any", ["==", "class", "hut"]],
-      "layout": {
-        "text-field": {
-          "stops": [
-            [6, ""],
-            [12, "{name}"]
-          ]
-        },
-        "text-font": ["Roboto Bold"],
-        "text-size": 10,
-        "icon-size": 1,
-        "text-justify": "left",
-        "text-anchor": "left",
-        "icon-allow-overlap": true,
-        "text-offset": [1, 0],
-        "text-max-width": 5,
-        "icon-image": "building_pnt_hut"
-      },
-      "paint": { "text-halo-color": "rgba(255, 255, 255, 1)", "text-halo-width": 1.5, "text-color": "rgba(73, 68, 68, 1)", "text-opacity": 1 }
-    },
-    {
       "id": "Poi-Historic-Site",
       "type": "symbol",
       "source": "LINZ Basemaps",
@@ -3167,6 +3368,31 @@
           ]
         }
       }
+    },
+    {
+      "id": "Poi-Hut-Label",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "poi",
+      "filter": ["any", ["==", "class", "hut"]],
+      "layout": {
+        "text-field": {
+          "stops": [
+            [6, ""],
+            [12, "{name}"]
+          ]
+        },
+        "text-font": ["Roboto Bold"],
+        "text-size": 10,
+        "icon-size": 1,
+        "text-justify": "left",
+        "text-anchor": "left",
+        "icon-allow-overlap": true,
+        "text-offset": [1, 0],
+        "text-max-width": 5,
+        "icon-image": "building_pnt_hut"
+      },
+      "paint": { "text-halo-color": "rgba(255, 255, 255, 1)", "text-halo-width": 1.5, "text-color": "rgba(73, 68, 68, 1)", "text-opacity": 1 }
     },
     {
       "id": "Poi-Kiln",
@@ -4293,7 +4519,7 @@
         "icon-text-fit": "none",
         "symbol-z-order": "auto",
         "text-offset": [0, 0.015],
-        "icon-image": "Flume_Point",
+        "icon-image": "flume_pnt_blue",
         "icon-rotation-alignment": "map",
         "icon-pitch-alignment": "map"
       },
@@ -4551,177 +4777,7 @@
       "paint": { "text-halo-width": 2.5, "text-halo-color": "rgba(243, 243, 242, 0.9)", "text-opacity": 0.9 }
     },
     {
-      "id": "All-CycleTrack-Labels",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 13,
-      "filter": ["all", ["has", "name"], ["==", "class", "track"], ["==", "track_use", "cycle only"]],
-      "layout": {
-        "symbol-placement": "point",
-        "text-field": "{name}",
-        "text-font": ["Open Sans Regular"],
-        "icon-text-fit": "none",
-        "text-size": {
-          "stops": [
-            [13, 8],
-            [15, 11],
-            [18, 10],
-            [19, 30],
-            [22, 140]
-          ]
-        },
-        "symbol-spacing": 100,
-        "visibility": "visible",
-        "text-anchor": "top",
-        "text-justify": "center",
-        "text-transform": "none",
-        "icon-pitch-alignment": "auto",
-        "icon-ignore-placement": false,
-        "icon-anchor": "bottom",
-        "icon-offset": [0, -3],
-        "text-allow-overlap": true,
-        "icon-allow-overlap": false,
-        "text-pitch-alignment": "viewport",
-        "text-rotation-alignment": "viewport",
-        "icon-rotation-alignment": "viewport",
-        "text-ignore-placement": false,
-        "text-max-width": 4,
-        "icon-image": "racetrack_cycle_pnt",
-        "icon-size": {
-          "stops": [
-            [10, 1],
-            [17, 1.3]
-          ]
-        }
-      },
-      "paint": { "text-halo-width": 2.5, "text-halo-color": "rgba(243, 243, 242, 0.9)", "text-opacity": 0.9 }
-    },
-    {
-      "id": "All-ClosedFootRouteTrack-Labels",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 13,
-      "filter": ["all", ["has", "name"], ["==", "class", "track"], ["in", "subclass", "foot_route_closed"]],
-      "layout": {
-        "symbol-placement": "point",
-        "text-field": "{name} {status}",
-        "text-font": ["Open Sans Regular"],
-        "icon-text-fit": "none",
-        "text-size": {
-          "stops": [
-            [13, 8],
-            [15, 11],
-            [18, 10],
-            [19, 30],
-            [22, 140]
-          ]
-        },
-        "symbol-spacing": 100,
-        "visibility": "visible",
-        "text-anchor": "top",
-        "text-justify": "center",
-        "text-transform": "none",
-        "icon-pitch-alignment": "auto",
-        "icon-ignore-placement": false,
-        "icon-image": "track_walking_pnt_fill",
-        "icon-anchor": "bottom",
-        "icon-offset": [0, -3],
-        "text-allow-overlap": true,
-        "icon-allow-overlap": false,
-        "text-pitch-alignment": "viewport",
-        "text-rotation-alignment": "viewport",
-        "icon-rotation-alignment": "viewport",
-        "text-ignore-placement": false,
-        "text-max-width": 4
-      },
-      "paint": { "text-halo-width": 2.5, "text-halo-color": "rgba(205, 53, 53, 0.4)", "text-opacity": 0.9 }
-    },
-    {
-      "id": "All-ClosedFootTrack-Labels",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 13,
-      "filter": ["all", ["has", "name"], ["==", "class", "track"], ["in", "subclass", "foot_closed"]],
-      "layout": {
-        "symbol-placement": "point",
-        "text-field": "{name} {status}",
-        "text-font": ["Open Sans Regular"],
-        "icon-text-fit": "none",
-        "text-size": {
-          "stops": [
-            [13, 8],
-            [15, 11],
-            [18, 10],
-            [19, 30],
-            [22, 140]
-          ]
-        },
-        "symbol-spacing": 100,
-        "visibility": "visible",
-        "text-anchor": "top",
-        "text-justify": "center",
-        "text-transform": "none",
-        "icon-pitch-alignment": "auto",
-        "icon-ignore-placement": false,
-        "icon-image": "track_walking_pnt_fill",
-        "icon-anchor": "bottom",
-        "icon-offset": [0, -3],
-        "text-allow-overlap": true,
-        "icon-allow-overlap": false,
-        "text-pitch-alignment": "viewport",
-        "text-rotation-alignment": "viewport",
-        "icon-rotation-alignment": "viewport",
-        "text-ignore-placement": false,
-        "text-max-width": 4
-      },
-      "paint": { "text-halo-width": 2.5, "text-halo-color": "rgba(205, 53, 53, 0.4)", "text-opacity": 0.9, "icon-halo-color": "rgba(205, 53, 53, 0.4)", "icon-halo-width": 10, "icon-halo-blur": 0.5 }
-    },
-    {
-      "id": "All-FootTrack-Labels",
-      "type": "symbol",
-      "source": "LINZ Basemaps",
-      "source-layer": "transportation",
-      "minzoom": 13,
-      "filter": ["all", ["has", "name"], ["==", "class", "track"], ["==", "track_use", "foot"], ["!=", "subclass", "foot_route_closed"], ["!=", "subclass", "foot_closed"]],
-      "layout": {
-        "symbol-placement": "point",
-        "text-field": "{name} {status}",
-        "text-font": ["Open Sans Regular"],
-        "icon-text-fit": "none",
-        "text-size": {
-          "stops": [
-            [13, 8],
-            [15, 11],
-            [18, 10],
-            [19, 30],
-            [22, 140]
-          ]
-        },
-        "symbol-spacing": 100,
-        "visibility": "visible",
-        "text-anchor": "top",
-        "text-justify": "center",
-        "text-transform": "none",
-        "icon-pitch-alignment": "auto",
-        "icon-ignore-placement": false,
-        "icon-image": "track_walking_pnt_fill",
-        "icon-anchor": "bottom",
-        "icon-offset": [0, -3],
-        "text-allow-overlap": true,
-        "icon-allow-overlap": false,
-        "text-pitch-alignment": "viewport",
-        "text-rotation-alignment": "viewport",
-        "icon-rotation-alignment": "viewport",
-        "text-ignore-placement": false,
-        "text-max-width": 4
-      },
-      "paint": { "text-halo-width": 2.5, "text-halo-color": "rgba(243, 243, 242, 0.9)", "text-opacity": 0.9 }
-    },
-    {
-      "id": "Aeroway-Airport-Label",
+      "id": "Aeroway-Aerodrome-Label",
       "type": "symbol",
       "source": "LINZ Basemaps",
       "source-layer": "aerodrome_label",
@@ -4751,7 +4807,7 @@
       "paint": { "text-color": "rgba(129, 123, 123, 1)", "text-halo-width": 1, "text-halo-blur": 0.5, "text-halo-color": "rgba(255, 255, 255, 1)", "icon-opacity": 0.8 }
     },
     {
-      "id": "Aeroway-Airstrip-Label",
+      "id": "Aeroway-Runway-Grass-Label",
       "type": "symbol",
       "source": "LINZ Basemaps",
       "source-layer": "aeroway",
@@ -4835,6 +4891,44 @@
         "text-allow-overlap": true,
         "text-ignore-placement": true,
         "text-justify": "center"
+      },
+      "paint": { "text-color": "rgba(0, 140, 204, 1)", "text-halo-color": "rgba(239, 239, 239, 0.80)", "text-halo-width": 1.5, "text-halo-blur": 1 }
+    },
+    {
+      "id": "All-Waterway-Canal-Names",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "waterway",
+      "minzoom": 12,
+      "filter": ["all", ["==", "class", "canal"], ["has", "name"]],
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 1000,
+        "text-field": "{name}",
+        "text-font": ["Open Sans Italic"],
+        "text-size": 12,
+        "text-anchor": "bottom",
+        "text-ignore-placement": true,
+        "text-allow-overlap": true
+      },
+      "paint": { "text-color": "rgba(0, 140, 204, 1)", "text-halo-color": "rgba(239, 239, 239, 0.80)", "text-halo-width": 1.5, "text-halo-blur": 1 }
+    },
+    {
+      "id": "All-Waterway-Drain-Names",
+      "type": "symbol",
+      "source": "LINZ Basemaps",
+      "source-layer": "waterway",
+      "minzoom": 12,
+      "filter": ["all", ["==", "class", "drain"], ["has", "name"]],
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 1000,
+        "text-field": "{name}",
+        "text-font": ["Open Sans Italic"],
+        "text-size": 12,
+        "text-anchor": "bottom",
+        "text-ignore-placement": true,
+        "text-allow-overlap": true
       },
       "paint": { "text-color": "rgba(0, 140, 204, 1)", "text-halo-color": "rgba(239, 239, 239, 0.80)", "text-halo-width": 1.5, "text-halo-blur": 1 }
     },
