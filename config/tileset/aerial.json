@@ -502,8 +502,8 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/marlborough_rural_2021-2022_0-25m_RGB/01GAJ7W0H208Z83JE0R10M4J87",
-      "3857": "s3://linz-basemaps/3857/marlborough_rural_2021-2022_0-25m_RGB/01GAJ7XDT7D61JPCYRRYB58PDW",
+      "2193": "s3://linz-basemaps/2193/marlborough_rural_2021-2022_0-25m_RGB/01GAMZ84DPHCND4PG6BD0W999A",
+      "3857": "s3://linz-basemaps/3857/marlborough_rural_2021-2022_0-25m_RGB/01GAMZ9988GKX5JF0F0EW2R9Q3",
       "name": "marlborough_rural_2021-2022_0-25m_RGB",
       "minZoom": 13
     },
