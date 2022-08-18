@@ -264,7 +264,7 @@
       "2193": "s3://linz-basemaps/2193/marlborough_rural_2015-2016_0-20m_RGBA/01F6P1D8DJGBN4QNAB2Y64DVV3",
       "3857": "s3://linz-basemaps/3857/marlborough_rural_2015-2016_0-20m_RGBA/01ED82MG0Q6A8VFAJSY7Q543N5",
       "name": "marlborough_rural_2015-2016_0-20m_RGBA",
-      "minZoom": 13,
+      "minZoom": 32,
       "title": "Marlborough 0.2m Rural Aerial Photos (2015-2016)",
       "category": "Rural Aerial Photos"
     },
