@@ -105,6 +105,16 @@ jobs:
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config ${CONFIG_LOCATION} --commit
 
+      - name: (Prod - Config) Upload Latest Assets
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        run: |
+          aws s3 cp ${ASSETS_HASH} s3://${BASEMAPS_BUCKET}/assets/assets-latest.tar.co
+
+      - name: (Prod - Config) Upload Latest Config File
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        run: |
+          aws s3 cp config.json.gz s3://${BASEMAPS_BUCKET}/config/config-latest.json.gz --content-encoding gzip
+
       - name: Save snapshots
         uses: getsentry/action-visual-snapshot@v2
         with:
