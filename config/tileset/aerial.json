@@ -966,8 +966,8 @@
       "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/wellington-city_urban_2021_0-075m_RGB/01GBRR1A3CFNPE6R2BSRP1Z3PH",
-      "3857": "s3://linz-basemaps/3857/wellington-city_urban_2021_0-075m_RGB/01GBRR1QNCDV572WESKWQ7QE8X",
+      "2193": "s3://linz-basemaps/2193/wellington-city_urban_2021_0-075m_RGB/01GBRRFSNR0V1N50WP0H1E7SDP",
+      "3857": "s3://linz-basemaps/3857/wellington-city_urban_2021_0-075m_RGB/01GBRRG6Z6Q8SJNECE7K49M88R",
       "name": "wellington-city_urban_2021_0-075m_RGB",
       "minZoom": 14,
       "title": "Wellington City 0.075m Urban Aerial Photos (2021)",
