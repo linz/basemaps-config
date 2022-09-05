@@ -1162,6 +1162,14 @@
       "maxZoom": 14,
       "title": "New Zealand 8m DEM Texture Shade (2012)",
       "category": "Elevation"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/top-of-the-south_flood_2022_0.15m/01GC5XS1KE4PEE6S4FF2QVK8T8",
+      "3857": "s3://linz-basemaps/3857/top-of-the-south_flood_2022_0.15m/01GC5XSA855VCKT5MEKCJWJ39R",
+      "name": "top-of-the-south_flood_2022_0.15m",
+      "minZoom": 32,
+      "title": "Top of the South 0.15m Flood Aerial Photos (2022)",
+      "category": "Event"
     }
   ]
 }
