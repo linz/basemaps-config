@@ -21,6 +21,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - uses: linz/action-typescript@v1
+
       - name: (Build) Prepare path for glyphs and sprites
         run: |
           mkdir -p assets/fonts/
@@ -39,7 +41,8 @@ jobs:
       - name: (Build) Bundle Assets Into Cotar
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle-assets --assets $PWD/assets/ --output $PWD/assets.tar.co
-          echo "ASSETS_HASH=$(ls assets*.tar.co)" >> $GITHUB_ENV
+          ASSETS_HASH=$(ls assets*.tar.co)
+          echo "ASSETS_HASH=${ASSETS_HASH}" >> $GITHUB_ENV
           echo "ASSETS_LOCATION=s3://${BASEMAPS_BUCKET}/assets/${ASSETS_HASH}" >> $GITHUB_ENV
 
       - name: (Build) AWS Configure
@@ -101,6 +104,11 @@ jobs:
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config ${CONFIG_LOCATION} --commit
+
+      - name: (Prod - Config) Upload Latest Config File
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        run: |
+          aws s3 cp config.json.gz s3://${BASEMAPS_BUCKET}/config/config-latest.json.gz --content-encoding gzip
 
       - name: Save snapshots
         uses: getsentry/action-visual-snapshot@v2
