@@ -1153,7 +1153,7 @@
       "3857": "s3://linz-basemaps/3857/tauranga-city_urban_2022_0.1m_RGB/01GD1V81RYJDH8NWK7C33PVNWR",
       "name": "tauranga-city_urban_2022_0.1m_RGB",
       "minZoom": 13,
-      "title": "Tauranga City 0.1m Urban Aerial Photos (2022)",
+      "title": "Tauranga 0.1m Urban Aerial Photos (2022)",
       "category": "Urban Aerial Photos"
     },
     {
