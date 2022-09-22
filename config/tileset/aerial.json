@@ -517,6 +517,12 @@
       "category": "Rural Aerial Photos"
     },
     {
+      "2193": "s3://linz-basemaps/2193/taranaki_rural_2021-2022_0.25m_RGB/01GDKFTY5BPAHMSKKVC336J9Y2",
+      "3857": "s3://linz-basemaps/3857/taranaki_rural_2021-2022_0.25m_RGB/01GDKFVY7VZ7CVYGYG02FXSEMJ",
+      "name": "taranaki_rural_2021-2022_0.25m_RGB",
+      "minZoom": 13
+    },
+    {
       "2193": "s3://linz-basemaps/2193/selwyn_urban_2012-2013_0-125m_RGBA/01F6P1Q0MQC2FXNDVZJGT88CC2",
       "3857": "s3://linz-basemaps/3857/selwyn_urban_2012-2013_0-125m_RGBA/01ED8355C00DRTSNAQ04AHJDDZ",
       "name": "selwyn_urban_2012-2013_0-125m_RGBA",
