@@ -71,7 +71,13 @@ jobs:
 
       - name: Update PR body
         run: |
-          gh pr view ${PR_NUMBER}
+          gh pr view ${PR_NUMBER} --json body -q '.body' > body.json
+          NZTM2000QuadLocation=${jq -r .Location.NZTM2000Quad}
+          WebMercatorQuadUrl=${jq -r .Location.WebMercatorQuad}
+          NZTM2000QuadUrl="https://basemaps.linz.govt.nz/?p=NZTM2000Quad&config=${CONFIG_LOCATION}${NZTM2000QuadLocation}"
+          WebMercatorQuadUrl="https://basemaps.linz.govt.nz/?p=WebMercatorQuad&config=${CONFIG_LOCATION}${WebMercatorQuadUrl}"
+          echo "$(jq --arg NZTM2000QuadUrl "$NZTM2000QuadUrl" --arg WebMercatorQuadUrl "$WebMercatorQuadUrl" '. += {"Aerial": {"NZTM2000Quad":$NZTM2000QuadUrl,"WebMercatorQuad":$WebMercatorQuadUrl}}' body.json)" > body.json
+          gh pr edit ${PR_NUMBER} --body-file body.json
 
       - name: (NonProd) AWS Configure
         uses: aws-actions/configure-aws-credentials@v1.6.1
