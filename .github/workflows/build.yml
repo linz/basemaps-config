@@ -18,6 +18,7 @@ jobs:
       BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.31.0-20-g96f5d669
       DOCKER_AWS_ENV: -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN -e AWS_REGION -e AWS_DEFAULT_REGION
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      PR_NUMBER: ${{ github.event.number }}
 
     steps:
       - uses: actions/checkout@v3
@@ -68,9 +69,9 @@ jobs:
           gzip -9 -k config.json
           aws s3 cp config.json.gz ${CONFIG_LOCATION} --content-encoding gzip
 
-      - name: Upload Hashed Config File
+      - name: Update PR body
         run: |
-          gh pr view
+          gh pr view ${PR_NUMBER}
 
       - name: (NonProd) AWS Configure
         uses: aws-actions/configure-aws-credentials@v1.6.1
