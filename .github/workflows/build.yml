@@ -67,6 +67,10 @@ jobs:
           gzip -9 -k config.json
           aws s3 cp config.json.gz ${CONFIG_LOCATION} --content-encoding gzip
 
+      - name: Upload Hashed Config File
+        run: |
+          gh pr view
+
       - name: (NonProd) AWS Configure
         uses: aws-actions/configure-aws-credentials@v1.6.1
         with:
