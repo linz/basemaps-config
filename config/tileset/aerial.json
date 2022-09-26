@@ -1173,6 +1173,14 @@
       "category": "Urban Aerial Photos"
     },
     {
+      "2193": "s3://linz-basemaps/2193/taranaki_urban_2022_0.05m_RGB/01GDM781KPM27STN22MDPWC57Y",
+      "3857": "s3://linz-basemaps/3857/taranaki_urban_2022_0.05m_RGB/01GDM7896HY2KQG4K3ESSZMPH6",
+      "name": "taranaki_urban_2022_0.05m_RGB",
+      "minZoom": 14,
+      "title": "Taranaki 0.05m Urban Aerial Photos (2022)",
+      "category": "Urban Aerial Photos"
+    },
+    {
       "2193": "s3://linz-basemaps/2193/auckland_rural_2020_0-075m_RGB/01G4XPNP9JTGGPABCFRWC4N21E",
       "3857": "s3://linz-basemaps/3857/auckland_rural_2020_0-075m_RGB/01G4XPQKF6VB9SXCQ93R2XC1W8",
       "name": "auckland_rural_2020_0-075m_RGB",
