@@ -10,6 +10,7 @@ jobs:
     permissions:
       id-token: write
       contents: read
+      issues: write # This permission shouldn't needed as there is a bug currently for gh pr edit. https://github.com/cli/cli/issues/4631
       pull-requests: write
 
     runs-on: ubuntu-latest
@@ -78,6 +79,7 @@ jobs:
           NZTM2000QuadUrl="https://basemaps.linz.govt.nz/?p=NZTM2000Quad&config=${CONFIG_LOCATION}${NZTM2000QuadLocation}"
           WebMercatorQuadUrl="https://basemaps.linz.govt.nz/?p=WebMercatorQuad&config=${CONFIG_LOCATION}${WebMercatorQuadUrl}"
           echo "$(jq --arg NZTM2000QuadUrl "$NZTM2000QuadUrl" --arg WebMercatorQuadUrl "$WebMercatorQuadUrl" '. += {"Aerial": {"NZTM2000Quad":$NZTM2000QuadUrl,"WebMercatorQuad":$WebMercatorQuadUrl}}' body.json)" > body.json
+          gh pr edit ${PR_NUMBER} --body-file body.json
 
       - name: (NonProd) AWS Configure
         uses: aws-actions/configure-aws-credentials@v1.6.1
