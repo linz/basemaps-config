@@ -9,7 +9,8 @@ jobs:
   build:
     permissions:
       id-token: write
-      contents: write
+      contents: read
+      pull-requests: write
 
     runs-on: ubuntu-latest
     concurrency: deploy-${{ github.head_ref }}
