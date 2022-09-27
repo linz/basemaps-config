@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     concurrency: deploy-${{ github.head_ref }}
     env:
+      BASEMAPS_HOST: https://basemaps.linz.govt.nz/
       BASEMAPS_BUCKET: linz-basemaps
       BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.31.0-20-g96f5d669
       DOCKER_AWS_ENV: -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN -e AWS_REGION -e AWS_DEFAULT_REGION
@@ -76,8 +77,8 @@ jobs:
           gh pr view ${PR_NUMBER} --json body -q '.body' > body.json
           NZTM2000QuadLocation=$(jq -r '.Location.NZTM2000Quad' body.json)
           WebMercatorQuadUrl=$(jq -r '.Location.WebMercatorQuad' body.json)
-          NZTM2000QuadUrl="https://basemaps.linz.govt.nz/?p=NZTM2000Quad&config=${CONFIG_LOCATION}${NZTM2000QuadLocation}"
-          WebMercatorQuadUrl="https://basemaps.linz.govt.nz/?p=WebMercatorQuad&config=${CONFIG_LOCATION}${WebMercatorQuadUrl}"
+          NZTM2000QuadUrl="${BASEMAPS_HOST}?p=NZTM2000Quad&config=${CONFIG_LOCATION}${NZTM2000QuadLocation}"
+          WebMercatorQuadUrl="${BASEMAPS_HOST}?p=WebMercatorQuad&config=${CONFIG_LOCATION}${WebMercatorQuadUrl}"
           echo "$(jq --arg NZTM2000QuadUrl "$NZTM2000QuadUrl" --arg WebMercatorQuadUrl "$WebMercatorQuadUrl" '. += {"Aerial": {"NZTM2000Quad":$NZTM2000QuadUrl,"WebMercatorQuad":$WebMercatorQuadUrl}}' body.json)" > body.json
           gh pr edit ${PR_NUMBER} --body-file body.json
 
