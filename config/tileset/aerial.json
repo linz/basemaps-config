@@ -157,6 +157,14 @@
       "category": "Rural Aerial Photos"
     },
     {
+      "2193": "s3://linz-basemaps/2193/marlborough_rural_2011-2012_0-40m_RGBA/01F6P1CMT137757Y7M473TP4MG",
+      "3857": "s3://linz-basemaps/3857/marlborough_rural_2011-2012_0-40m_RGBA/01ED82KF10YWWCA59936P87R9B",
+      "name": "marlborough_rural_2011-2013_0-40m_RGBA",
+      "minZoom": 14,
+      "title": "Marlborough 0.4m Rural Aerial Photos (2011-2013)",
+      "category": "Rural Aerial Photos"
+    },
+    {
       "2193": "s3://linz-basemaps/2193/canterbury_rural_2012-2013_0-40m_RGBA/01F66E9294YKPYAJP7SXTVY2EM",
       "3857": "s3://linz-basemaps/3857/canterbury_rural_2012-2013_0-40m_RGBA/01ED81XK539QM497AYHM1X70JQ",
       "name": "canterbury_rural_2012-2013_0-40m_RGBA",
