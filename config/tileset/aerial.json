@@ -120,7 +120,7 @@
       "2193": "s3://linz-basemaps/2193/southland_rural_2005-2011_0-75m_RGBA/01F6P1S7DSP4N5DCBGCTZCMJ27",
       "3857": "s3://linz-basemaps/3857/southland_rural_2005-2011_0-75m_RGBA/01ED835ZSP0MQ3W55QEMVZKNR1",
       "name": "southland_rural_2005-2011_0-75m_RGBA",
-      "minZoom": 32,
+      "minZoom": 13,
       "title": "Southland 0.75m Rural Aerial Photos (2005-2011)",
       "category": "Rural Aerial Photos"
     },
@@ -133,16 +133,8 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/tasman_rural_2009-2010_0-50m_RGBA/01F6P1TWRFSGJ65V9Z0YXX4DH1",
-      "3857": "s3://linz-basemaps/3857/tasman_rural_2009-2010_0-50m_RGBA/01ED83CJ5ZT8SAGQKFT9MM59X1",
-      "name": "tasman_rural_2009-2010_0-50m_RGBA",
-      "minZoom": 14,
-      "title": "Tasman 0.5m Rural Aerial Photos (2099)",
-      "category": "Rural Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/auckland_rural_2010-2012_0-50m_RGBA/01F66DT3ZBYZZM6R0AF9Q29891",
-      "3857": "s3://linz-basemaps/3857/auckland_rural_2010-2012_0-50m_RGBA/01ED81BNAX2ESPMV59YPC3AQ21",
+      "2193": "s3://linz-basemaps/2193/auckland_rural_2010-2012_0-50m_RGBA/01F66DT3ZBYZZM6R0AF9Q2989R",
+      "3857": "s3://linz-basemaps/3857/auckland_rural_2010-2012_0-50m_RGBA/01ED81BNAX2ESPMV59YPC3AQ2C",
       "name": "auckland_rural_2010-2012_0-50m_RGBA",
       "minZoom": 13,
       "title": "Auckland 0.5m Rural Aerial Photos (2010-2012)",
