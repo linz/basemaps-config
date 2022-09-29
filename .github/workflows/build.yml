@@ -72,16 +72,6 @@ jobs:
           gzip -9 -k config.json
           aws s3 cp config.json.gz ${CONFIG_LOCATION} --content-encoding gzip
 
-      - name: Update PR body
-        run: |
-          gh pr view ${PR_NUMBER} --json body -q '.body' > body.json
-          NZTM2000QuadLocation=$(jq -r '.Location.NZTM2000Quad' body.json)
-          WebMercatorQuadUrl=$(jq -r '.Location.WebMercatorQuad' body.json)
-          NZTM2000QuadUrl="${BASEMAPS_HOST}?p=NZTM2000Quad&config=${CONFIG_LOCATION}${NZTM2000QuadLocation}"
-          WebMercatorQuadUrl="${BASEMAPS_HOST}?p=WebMercatorQuad&config=${CONFIG_LOCATION}${WebMercatorQuadUrl}"
-          echo "$(jq --arg NZTM2000QuadUrl "$NZTM2000QuadUrl" --arg WebMercatorQuadUrl "$WebMercatorQuadUrl" '. += {"Aerial": {"NZTM2000Quad":$NZTM2000QuadUrl,"WebMercatorQuad":$WebMercatorQuadUrl}}' body.json)" > body.json
-          gh pr edit ${PR_NUMBER} --body-file body.json
-
       - name: (NonProd) AWS Configure
         uses: aws-actions/configure-aws-credentials@v1.6.1
         with:
@@ -91,7 +81,7 @@ jobs:
 
       - name: (NonProd - Config) Compare To DynamoDB
         run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config ${CONFIG_LOCATION}
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config ${CONFIG_LOCATION} --output changes.md
 
       - name: (NonProd - Config) Import Config To DynamoDB
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
@@ -113,7 +103,7 @@ jobs:
       - name: (Prod - Config) Compare to DynamoDB
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config ${CONFIG_LOCATION}
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config ${CONFIG_LOCATION} --output changes.md
 
       - name: (Prod - Config) Import Config To DynamoDB
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
@@ -125,6 +115,10 @@ jobs:
         run: |
           aws s3 cp config.json.gz s3://${BASEMAPS_BUCKET}/config/config-latest.json.gz --content-encoding gzip
 
+      - name: Update Description
+        run: |
+          [ ! -f changes.md ] || gh pr edit ${PR_NUMBER} --body-file changes.md
+          
       - name: Save snapshots
         uses: getsentry/action-visual-snapshot@v2
         with:
