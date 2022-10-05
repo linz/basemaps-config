@@ -90,7 +90,13 @@ jobs:
 
       - name: (Screenshot) Screenshot Pull Request Changes
         run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${SCREENSHOT_CONTAINER} screenshot --config $PWD/config.json --assets $PWD/${ASSETS_HASH} --output $PWD/.artifacts/visual-snapshots
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER}  serve --config ${CONFIG_LOCATION} --assets ${ASSETS_LOCATION} &
+          
+          # Wait for the server to start
+          sleep 3
+          curl http://localhost:5000/v1/version
+
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${SCREENSHOT_CONTAINER} screenshot --url http://localhost:5000 --output $PWD/.artifacts/visual-snapshots
 
       - name: (Prod) AWS Configure
         uses: aws-actions/configure-aws-credentials@v1.6.1
