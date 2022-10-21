@@ -264,7 +264,7 @@
       "2193": "s3://linz-basemaps/2193/manawatu-whanganui_rural_2015-16_0-3m/01F6P1B7SH0X2FETDDT3RWT9Q9",
       "3857": "s3://linz-basemaps/3857/manawatu-whanganui_rural_2015-16_0-3m/01ED82HKA5T8V6S1KZ4WN9EFNN",
       "name": "manawatu-whanganui_rural_2015-16_0-3m",
-      "minZoom": 13,
+      "minZoom": 32,
       "title": "Manawatū-Whanganui 0.3m Rural Aerial Photos (2015-2016)",
       "category": "Rural Aerial Photos"
     },
@@ -328,7 +328,7 @@
       "2193": "s3://linz-basemaps/2193/manawatu-whanganui_rural_2016-17_0-3m/01F6P1BSQ6V27WZK0KM56M4Z1C",
       "3857": "s3://linz-basemaps/3857/manawatu-whanganui_rural_2016-17_0-3m/01ED82JQASJDFZ6XEM018RJQN0",
       "name": "manawatu-whanganui_rural_2016-17_0-3m",
-      "minZoom": 13,
+      "minZoom": 32,
       "title": "Manawatū-Whanganui 0.3m Rural Aerial Photos (2016-2017)",
       "category": "Rural Aerial Photos"
     },
@@ -336,7 +336,7 @@
       "2193": "s3://linz-basemaps/2193/taranaki_rural_2016-17_0-3m/01F6P1SZXEN3X5SDKT7XRQHEGY",
       "3857": "s3://linz-basemaps/3857/taranaki_rural_2016-17_0-3m/01ED83B7TAK5SBKVYFJZMTE9AV",
       "name": "taranaki_rural_2016-17_0-3m",
-      "minZoom": 13,
+      "minZoom": 32,
       "title": "Taranaki 0.3m Rural Aerial Photos (2016-2018)",
       "category": "Rural Aerial Photos"
     },
@@ -529,7 +529,7 @@
       "3857": "s3://linz-basemaps/3857/manawatu-whanganui_2021-2022_0.3m/01GFQ2BT8G6EYTTD295AHQZ575",
       "name": "manawatu-whanganui_rural_2021-2022_0.3m",
       "minZoom": 13,
-      "title": "Manawatu Whanganui 0.3m Rural Aerial Photos (2021-2022)",
+      "title": "Manawatū-Whanganui 0.3m Rural Aerial Photos (2021-2022)",
       "category": "Rural Aerial Photos"
     },
     {
