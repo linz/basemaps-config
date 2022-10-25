@@ -525,6 +525,14 @@
       "category": "Rural Aerial Photos"
     },
     {
+      "2193": "s3://linz-basemaps/2193/invercargill_rural_2022_0.1m/01GG8G03K4N284BJ7Q0DFTRW6P",
+      "3857": "s3://linz-basemaps/3857/invercargill_rural_2022_0.1m/01GG8G0NQDH4F6XPCMQS312DRK",
+      "name": "invercargill_rural_2022_0.1m",
+      "minZoom": 13,
+      "title": "Invercargill 0.1m Rural Aerial Photos (2022)",
+      "category": "Rural Aerial Photos"
+    },
+    {
       "2193": "s3://linz-basemaps/2193/selwyn_urban_2012-2013_0-125m_RGBA/01F6P1Q0MQC2FXNDVZJGT88CC2",
       "3857": "s3://linz-basemaps/3857/selwyn_urban_2012-2013_0-125m_RGBA/01ED8355C00DRTSNAQ04AHJDDZ",
       "name": "selwyn_urban_2012-2013_0-125m_RGBA",
