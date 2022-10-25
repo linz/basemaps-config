@@ -81,7 +81,7 @@ jobs:
 
       - name: (NonProd - Config) Compare To DynamoDB
         run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config ${CONFIG_LOCATION} --output changes.md
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config ${CONFIG_LOCATION} --output $PWD/changes.md
 
       - name: (NonProd - Config) Import Config To DynamoDB
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
@@ -109,7 +109,7 @@ jobs:
       - name: (Prod - Config) Compare to DynamoDB
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config ${CONFIG_LOCATION} --output changes.md
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config ${CONFIG_LOCATION} --output $PWD/changes.md
 
       - name: (Prod - Config) Import Config To DynamoDB
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
