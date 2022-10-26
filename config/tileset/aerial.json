@@ -525,8 +525,8 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/manawatu-whanganui_2021-2022_0.3m/01GFWBBM46WY70ED41V23KN9HT",
-      "3857": "s3://linz-basemaps/3857/manawatu-whanganui_2021-2022_0.3m/01GFWBCQF30W8AMEEKK5846RYQ",
+      "2193": "s3://linz-basemaps/2193/manawatu-whanganui_2021-2022_0.3m/01GG8ND35QVC3EWBNBSYZ12T6D",
+      "3857": "s3://linz-basemaps/3857/manawatu-whanganui_2021-2022_0.3m/01GG8NE6KHKZDJESJT6VMZFWV3",
       "name": "manawatu-whanganui_rural_2021-2022_0.3m",
       "minZoom": 13,
       "title": "Manawatū-Whanganui 0.3m Rural Aerial Photos (2021-2022)",
