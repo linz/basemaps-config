@@ -1211,8 +1211,8 @@
       "category": "Elevation"
     },
     {
-      "2193": "s3://linz-basemaps/2193/top-of-the-south_flood_2022_0.15m/01GD1JCHCKQGK8FS2EP9PMNM7X",
-      "3857": "s3://linz-basemaps/3857/top-of-the-south_flood_2022_0.15m/01GD1JD8R7CM2X2YBET1AS2G98",
+      "2193": "s3://linz-basemaps/2193/top-of-the-south_flood_2022_0.15m/01GGDTRTDV2BA47P4TQ6CGWMFR",
+      "3857": "s3://linz-basemaps/3857/top-of-the-south_flood_2022_0.15m/01GGDTSGRK0Z4C70WXBYMEXK4X",
       "name": "top-of-the-south_flood_2022_0.15m",
       "minZoom": 32,
       "title": "Top of the South 0.15m Flood Aerial Photos (2022)",
