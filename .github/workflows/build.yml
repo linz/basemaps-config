@@ -122,6 +122,7 @@ jobs:
           aws s3 cp config.json.gz s3://${BASEMAPS_BUCKET}/config/config-latest.json.gz --content-encoding gzip
 
       - name: Update Description
+        if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
         run: |
           [ ! -f changes.md ] || gh pr edit ${PR_NUMBER} --body-file changes.md
           
