@@ -9,6 +9,6 @@
     "lint": "eslint config/**/*.json --quiet --fix --report-unused-disable-directives"
   },
   "devDependencies": {
-    "@linzjs/style": "^3.9.0"
+    "@linzjs/style": "^3.11.0"
   }
 }
