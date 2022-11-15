@@ -424,7 +424,7 @@
       "2193": "s3://linz-basemaps/2193/bay-of-plenty_rural_2019_0-3m/01F66E4BR5XTJENFTSACWB55DM",
       "3857": "s3://linz-basemaps/3857/bay-of-plenty_rural_2019_0-3m/01ED81R5BX4EB3W7TB3Z8ZE89S",
       "name": "bay-of-plenty_rural_2019_0-3m",
-      "minZoom": 13,
+      "minZoom": 32,
       "title": "Bay of Plenty 0.3m Rural Aerial Photos (2019)",
       "category": "Rural Aerial Photos"
     },
