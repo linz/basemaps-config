@@ -1251,7 +1251,8 @@
       "category": "Event"
     },
     {
-      "3857": "s3://linz-basemaps-staging/3857/invercargill_2022_0.05m/01GJBBT830H2K7S0BVFZH657FD",
+      "2193": "s3://linz-basemaps-staging/2193/invercargill_2022_0.05m/01GJBCASYHMP6APHW99WMA0XN0",
+      "3857": "s3://linz-basemaps-staging/3857/invercargill_2022_0.05m/01GJBCB9SFNA6CC6DAAJA6W221",
       "name": "invercargill_2022_0.05m",
       "title": "Invercargill 2022 0.05m",
       "minZoom": 32,
