@@ -1249,6 +1249,13 @@
       "minZoom": 32,
       "title": "Top of the South 0.15m Flood Aerial Photos (2022)",
       "category": "Event"
+    },
+    {
+      "3857": "s3://linz-basemaps-staging/3857/invercargill_2022_0.05m/01GJBBT830H2K7S0BVFZH657FD",
+      "name": "invercargill_2022_0.05m",
+      "title": "Invercargill 2022 0.05m",
+      "minZoom": 32,
+      "category": "New Aerial Photos"
     }
   ]
 }
