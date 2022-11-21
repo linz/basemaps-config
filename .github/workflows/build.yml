@@ -18,7 +18,7 @@ jobs:
     env:
       BASEMAPS_BUCKET: linz-basemaps
       BASEMAPS_STAGING_BUCKET: linz-basemaps-staging
-      BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.35.0-10-gbe64a254
+      BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.36.0-27-g53152aad
       SCREENSHOT_CONTAINER: ghcr.io/linz/basemaps-screenshot/cli:v1.1.1-2-g3030356
       DOCKER_AWS_ENV: -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN -e AWS_REGION -e AWS_DEFAULT_REGION
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -84,12 +84,12 @@ jobs:
 
       - name: (NonProd - Config) Compare To DynamoDB
         run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config $PWD/config.json --output $PWD/changes.md
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config ${CONFIG_LOCATION_STAGING} --output $PWD/changes.md
 
       - name: (NonProd - Config) Import Config To DynamoDB
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config $PWD/config.json --commit
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config ${CONFIG_LOCATION_STAGING} --commit
 
       - name: (Screenshot) Screenshot Pull Request Changes
         run: |
