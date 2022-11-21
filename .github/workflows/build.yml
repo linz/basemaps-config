@@ -110,10 +110,12 @@ jobs:
           role-to-assume: ${{ secrets.AWS_ROLE_PROD }}
 
       - name: (Prod - Config) Upload Hashed Assets
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
           aws s3 cp ${ASSETS_HASH} ${ASSETS_LOCATION}
 
       - name: (Prod - Config) Upload Hashed Config File
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
           gzip -9 -k config.json
           aws s3 cp config.json.gz ${CONFIG_LOCATION} --content-encoding gzip
