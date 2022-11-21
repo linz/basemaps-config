@@ -17,6 +17,7 @@ jobs:
     concurrency: deploy-${{ github.head_ref }}
     env:
       BASEMAPS_BUCKET: linz-basemaps
+      BASEMAPS_STAGING_BUCKET: linz-basemaps-staging
       BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.35.0-10-gbe64a254
       SCREENSHOT_CONTAINER: ghcr.io/linz/basemaps-screenshot/cli:v1.1.1-2-g3030356
       DOCKER_AWS_ENV: -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN -e AWS_REGION -e AWS_DEFAULT_REGION
@@ -48,6 +49,7 @@ jobs:
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle-assets --assets $PWD/assets/ --output $PWD/assets.tar.co
           ASSETS_HASH=$(ls assets*.tar.co)
           echo "ASSETS_HASH=${ASSETS_HASH}" >> $GITHUB_ENV
+          echo "ASSETS_LOCATION_STAGING=s3://${BASEMAPS_STAGING_BUCKET}/assets/${ASSETS_HASH}" >> $GITHUB_ENV
           echo "ASSETS_LOCATION=s3://${BASEMAPS_BUCKET}/assets/${ASSETS_HASH}" >> $GITHUB_ENV
 
       - name: (Build) AWS Configure
@@ -61,16 +63,17 @@ jobs:
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle --config $PWD/config --output $PWD/config.json --assets ${ASSETS_LOCATION}
           CONFIG_HASH=$(cat config.json | jq .hash -r)
+          echo "CONFIG_LOCATION_STAGING=s3://${BASEMAPS_STAGING_BUCKET}/config/config-${CONFIG_HASH}.json.gz" >> $GITHUB_ENV
           echo "CONFIG_LOCATION=s3://${BASEMAPS_BUCKET}/config/config-${CONFIG_HASH}.json.gz" >> $GITHUB_ENV
       
       - name: Upload Hashed Assets
         run: |
-          aws s3 cp ${ASSETS_HASH} ${ASSETS_LOCATION}
+          aws s3 cp ${ASSETS_HASH} ${ASSETS_LOCATION_STAGING}
 
       - name: Upload Hashed Config File
         run: |
           gzip -9 -k config.json
-          aws s3 cp config.json.gz ${CONFIG_LOCATION} --content-encoding gzip
+          aws s3 cp config.json.gz ${CONFIG_LOCATION_STAGING} --content-encoding gzip
 
       - name: (NonProd) AWS Configure
         uses: aws-actions/configure-aws-credentials@v1.6.1
@@ -81,12 +84,12 @@ jobs:
 
       - name: (NonProd - Config) Compare To DynamoDB
         run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config ${CONFIG_LOCATION} --output $PWD/changes.md
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config $PWD/config.json --output $PWD/changes.md
 
       - name: (NonProd - Config) Import Config To DynamoDB
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config ${CONFIG_LOCATION} --commit
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config $PWD/config.json --commit
 
       - name: (Screenshot) Screenshot Pull Request Changes
         run: |
@@ -105,6 +108,21 @@ jobs:
           aws-region: ap-southeast-2
           mask-aws-account-id: true
           role-to-assume: ${{ secrets.AWS_ROLE_PROD }}
+
+      - name: (Prod - Config) Upload Hashed Assets
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        run: |
+          aws s3 cp ${ASSETS_HASH} ${ASSETS_LOCATION}
+
+      - name: (Prod - Config) Upload Hashed Config File
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        run: |
+          aws s3 cp config.json.gz ${CONFIG_LOCATION} --content-encoding gzip
+
+      - name: (Prod - Config) Upload Latest Config File
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        run: |
+          aws s3 cp config.json.gz s3://${BASEMAPS_BUCKET}/config/config-latest.json.gz --content-encoding gzip
   
       - name: (Prod - Config) Compare to DynamoDB
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
@@ -115,11 +133,6 @@ jobs:
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config ${CONFIG_LOCATION} --commit
-
-      - name: (Prod - Config) Upload Latest Config File
-        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-        run: |
-          aws s3 cp config.json.gz s3://${BASEMAPS_BUCKET}/config/config-latest.json.gz --content-encoding gzip
 
       - name: Update Description
         if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
