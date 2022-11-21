@@ -84,12 +84,12 @@ jobs:
 
       - name: (NonProd - Config) Compare To DynamoDB
         run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config $PWD/config.json --output $PWD/changes.md
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config ${CONFIG_LOCATION_STAGING} --output $PWD/changes.md
 
       - name: (NonProd - Config) Import Config To DynamoDB
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config $PWD/config.json --commit
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config ${CONFIG_LOCATION_STAGING} --commit
 
       - name: (Screenshot) Screenshot Pull Request Changes
         run: |
