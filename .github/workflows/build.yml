@@ -117,7 +117,6 @@ jobs:
       - name: (Prod - Config) Upload Hashed Config File
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
-          gzip -9 -k config.json
           aws s3 cp config.json.gz ${CONFIG_LOCATION} --content-encoding gzip
 
       - name: (Prod - Config) Upload Latest Config File
