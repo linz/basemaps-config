@@ -1213,6 +1213,14 @@
       "category": "Urban Aerial Photos"
     },
     {
+      "2193": "s3://linz-basemaps/2193/tauranga_winter_2022_0.1m/01GK5GPDK50QX6XXQ44KJEDHAW",
+      "3857": "s3://linz-basemaps/3857/tauranga_winter_2022_0.1m/01GK5GQ48BAXY62JFW6CPAH5XX",
+      "name": "tauranga_winter_2022_0.1m",
+      "minZoom": 32,
+      "title": "Tauranga Winter Urban Aerial Photos (2022)",
+      "category": "Urban Aerial Photos"
+    },
+    {
       "2193": "s3://linz-basemaps/2193/auckland_rural_2020_0-075m_RGB/01G4XPNP9JTGGPABCFRWC4N21E",
       "3857": "s3://linz-basemaps/3857/auckland_rural_2020_0-075m_RGB/01G4XPQKF6VB9SXCQ93R2XC1W8",
       "name": "auckland_rural_2020_0-075m_RGB",
@@ -1249,14 +1257,6 @@
       "minZoom": 32,
       "title": "Top of the South 0.15m Flood Aerial Photos (2022)",
       "category": "Event"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/tauranga_winter_2022_0.1m/01GK5GPDK50QX6XXQ44KJEDHAW",
-      "3857": "s3://linz-basemaps/3857/tauranga_winter_2022_0.1m/01GK5GQ48BAXY62JFW6CPAH5XX",
-      "name": "tauranga_winter_2022_0.1m",
-      "title": "Tauranga winter 2022 0.1m",
-      "minZoom": 32,
-      "category": "New Aerial Photos"
     }
   ]
 }
