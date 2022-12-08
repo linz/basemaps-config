@@ -1257,6 +1257,14 @@
       "minZoom": 32,
       "title": "Top of the South 0.15m Flood Aerial Photos (2022)",
       "category": "Event"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/waimate_2021_0.075m/01GKSQ99D3KZ2NN9H7MWSABMNM",
+      "3857": "s3://linz-basemaps/3857/waimate_2021_0.075m/01GKSQ9HMFNF4Z55QXCJ2Y2X0X",
+      "name": "waimate_2021_0.075m",
+      "title": "Waimate 2021 0.075m",
+      "minZoom": 32,
+      "category": "New Aerial Photos"
     }
   ]
 }
