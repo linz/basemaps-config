@@ -8,8 +8,8 @@
       "attribution": "© 2022 Toitū Te Whenua © OpenMapTiles - CC BY 4.0"
     }
   },
-  "sprite": "https://openmaptiles.github.io/positron-gl-style/sprite",
-  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key={key}",
+  "sprite": "/v1/sprites/topographic",
+  "glyphs": "/v1/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
