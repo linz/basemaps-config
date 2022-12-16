@@ -1265,6 +1265,14 @@
       "minZoom": 32,
       "title": "Top of the South 0.15m Flood Aerial Photos (2022)",
       "category": "Event"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/palmerston_north_2022_0.125m/01GMC9M29APG7DC863QWQKB2SM",
+      "3857": "s3://linz-basemaps/3857/palmerston_north_2022_0.125m/01GMC9MMCG7F5XB8T43SD6F88R",
+      "name": "palmerston_north_2022_0.125m",
+      "title": "Palmerston north 2022 0.125m",
+      "minZoom": 32,
+      "category": "New Aerial Photos"
     }
   ]
 }
