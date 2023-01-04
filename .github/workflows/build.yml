@@ -92,7 +92,7 @@ jobs:
 
       - name: (Screenshot) Screenshot Pull Request Changes
         run: |
-          docker run -p 5000:5000 -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} serve --config $PWD/config.json --assets $PWD/${ASSETS_HASH} &
+          docker run -p 5000:5000 -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} serve --config $PWD/config-staging.json --assets $PWD/${ASSETS_HASH} &
           
           # Wait for the server to start
           sleep 3
