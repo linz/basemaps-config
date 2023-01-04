@@ -2,7 +2,7 @@
   "version": 8,
   "name": "Positron",
   "sources": {
-    "openmaptiles": {
+    "LINZ Basemaps": {
       "type": "vector",
       "url": "/v1/tiles/topographic/EPSG:3857/tile.json",
       "attribution": "© 2022 Toitū Te Whenua © OpenMapTiles - CC BY 4.0"
