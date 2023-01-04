@@ -59,21 +59,20 @@ jobs:
           mask-aws-account-id: true
           role-to-assume: ${{ secrets.AWS_ROLE_SCREENSHOT }}
 
-      - name: Bundle Config File
+      - name: (NonProd) Bundle Config File
         run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle --config $PWD/config --output $PWD/config.json --assets ${ASSETS_LOCATION}
-          CONFIG_HASH=$(cat config.json | jq .hash -r)
-          echo "CONFIG_LOCATION_STAGING=s3://${BASEMAPS_STAGING_BUCKET}/config/config-${CONFIG_HASH}.json.gz" >> $GITHUB_ENV
-          echo "CONFIG_LOCATION=s3://${BASEMAPS_BUCKET}/config/config-${CONFIG_HASH}.json.gz" >> $GITHUB_ENV
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle --config $PWD/config --output $PWD/config-staging.json --assets ${ASSETS_LOCATION_STAGING}
+          CONFIG_HASH_STAGING=$(cat config-staging.json | jq .hash -r)
+          echo "CONFIG_LOCATION_STAGING=s3://${BASEMAPS_STAGING_BUCKET}/config/config-${CONFIG_HASH_STAGING}.json.gz" >> $GITHUB_EN
       
-      - name: Upload Hashed Assets
+      - name: (NonProd) Upload Hashed Assets
         run: |
           aws s3 cp ${ASSETS_HASH} ${ASSETS_LOCATION_STAGING}
 
-      - name: Upload Hashed Config File
+      - name: (NonProd) Upload Hashed Config File
         run: |
-          gzip -9 -k config.json
-          aws s3 cp config.json.gz ${CONFIG_LOCATION_STAGING} --content-encoding gzip
+          gzip -9 -k config-staging.json
+          aws s3 cp config-staging.json.gz ${CONFIG_LOCATION_STAGING} --content-encoding gzip
 
       - name: (NonProd) AWS Configure
         uses: aws-actions/configure-aws-credentials@v1.6.1
@@ -108,6 +107,13 @@ jobs:
           aws-region: ap-southeast-2
           mask-aws-account-id: true
           role-to-assume: ${{ secrets.AWS_ROLE_PROD }}
+
+      - name: (Prod) Bundle Config File
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        run: |
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle --config $PWD/config --output $PWD/config.json --assets ${ASSETS_LOCATION}
+          CONFIG_HASH=$(cat config.json | jq .hash -r)
+          echo "CONFIG_LOCATION=s3://${BASEMAPS_BUCKET}/config/config-${CONFIG_HASH}.json.gz" >> $GITHUB_ENV
 
       - name: (Prod - Config) Upload Hashed Assets
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
