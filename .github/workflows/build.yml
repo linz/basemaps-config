@@ -63,7 +63,7 @@ jobs:
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle --config $PWD/config --output $PWD/config-staging.json --assets ${ASSETS_LOCATION_STAGING}
           CONFIG_HASH_STAGING=$(cat config-staging.json | jq .hash -r)
-          echo "CONFIG_LOCATION_STAGING=s3://${BASEMAPS_STAGING_BUCKET}/config/config-${CONFIG_HASH_STAGING}.json.gz" >> $GITHUB_EN
+          echo "CONFIG_LOCATION_STAGING=s3://${BASEMAPS_STAGING_BUCKET}/config/config-${CONFIG_HASH_STAGING}.json.gz" >> $GITHUB_ENV
       
       - name: (NonProd) Upload Hashed Assets
         run: |
