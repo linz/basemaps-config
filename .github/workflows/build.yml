@@ -18,7 +18,7 @@ jobs:
     env:
       BASEMAPS_BUCKET: linz-basemaps
       BASEMAPS_STAGING_BUCKET: linz-basemaps-staging
-      BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.36.0-31-g59a01e66
+      BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.38.0-3-g6eab1a8f
       SCREENSHOT_CONTAINER: ghcr.io/linz/basemaps-screenshot/cli:v1.1.1-2-g3030356
       DOCKER_AWS_ENV: -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN -e AWS_REGION -e AWS_DEFAULT_REGION
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -59,21 +59,20 @@ jobs:
           mask-aws-account-id: true
           role-to-assume: ${{ secrets.AWS_ROLE_SCREENSHOT }}
 
-      - name: Bundle Config File
+      - name: (NonProd) Bundle Config File
         run: |
-          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle --config $PWD/config --output $PWD/config.json --assets ${ASSETS_LOCATION}
-          CONFIG_HASH=$(cat config.json | jq .hash -r)
-          echo "CONFIG_LOCATION_STAGING=s3://${BASEMAPS_STAGING_BUCKET}/config/config-${CONFIG_HASH}.json.gz" >> $GITHUB_ENV
-          echo "CONFIG_LOCATION=s3://${BASEMAPS_BUCKET}/config/config-${CONFIG_HASH}.json.gz" >> $GITHUB_ENV
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle --config $PWD/config --output $PWD/config-staging.json --assets ${ASSETS_LOCATION_STAGING}
+          CONFIG_HASH_STAGING=$(cat config-staging.json | jq .hash -r)
+          echo "CONFIG_LOCATION_STAGING=s3://${BASEMAPS_STAGING_BUCKET}/config/config-${CONFIG_HASH_STAGING}.json.gz" >> $GITHUB_ENV
       
-      - name: Upload Hashed Assets
+      - name: (NonProd) Upload Hashed Assets
         run: |
           aws s3 cp ${ASSETS_HASH} ${ASSETS_LOCATION_STAGING}
 
-      - name: Upload Hashed Config File
+      - name: (NonProd) Upload Hashed Config File
         run: |
-          gzip -9 -k config.json
-          aws s3 cp config.json.gz ${CONFIG_LOCATION_STAGING} --content-encoding gzip
+          gzip -9 -k config-staging.json
+          aws s3 cp config-staging.json.gz ${CONFIG_LOCATION_STAGING} --content-encoding gzip
 
       - name: (NonProd) AWS Configure
         uses: aws-actions/configure-aws-credentials@v1.6.1
@@ -93,7 +92,7 @@ jobs:
 
       - name: (Screenshot) Screenshot Pull Request Changes
         run: |
-          docker run -p 5000:5000 -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} serve --config $PWD/config.json --assets $PWD/${ASSETS_HASH} &
+          docker run -p 5000:5000 -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} serve --config $PWD/config-staging.json --assets $PWD/${ASSETS_HASH} &
           
           # Wait for the server to start
           sleep 3
@@ -109,6 +108,13 @@ jobs:
           mask-aws-account-id: true
           role-to-assume: ${{ secrets.AWS_ROLE_PROD }}
 
+      - name: (Prod) Bundle Config File
+        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+        run: |
+          docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle --config $PWD/config --output $PWD/config.json --assets ${ASSETS_LOCATION}
+          CONFIG_HASH=$(cat config.json | jq .hash -r)
+          echo "CONFIG_LOCATION=s3://${BASEMAPS_BUCKET}/config/config-${CONFIG_HASH}.json.gz" >> $GITHUB_ENV
+
       - name: (Prod - Config) Upload Hashed Assets
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
@@ -117,6 +123,7 @@ jobs:
       - name: (Prod - Config) Upload Hashed Config File
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
+          gzip -9 -k config.json
           aws s3 cp config.json.gz ${CONFIG_LOCATION} --content-encoding gzip
 
       - name: (Prod - Config) Upload Latest Config File
