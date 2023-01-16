@@ -992,7 +992,7 @@
       "2193": "s3://linz-basemaps/2193/ashburton_urban_2020_0-075m_RGB/01FPV7HMJN6RQNSANMZ2SRY0BK",
       "3857": "s3://linz-basemaps/3857/ashburton_urban_2020_0-075m_RGB/01FPV7ABAWS4ZCWN91VR7SDK0A",
       "name": "ashburton_urban_2020_0-075m_RGB",
-      "minZoom": 14,
+      "minZoom": 32,
       "title": "Ashburton 0.075m Urban Aerial Photos (2020)",
       "category": "Urban Aerial Photos"
     },
@@ -1210,6 +1210,14 @@
       "name": "invercargill_urban_2022_0.1m",
       "minZoom": 14,
       "title": "Invercargill 0.1m Urban Aerial Photos (2022)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/ashburton_urban_2021-2022_0.075m/01GM796A98A5WRYAKBJXRN57Z4",
+      "3857": "s3://linz-basemaps/3857/ashburton_urban_2021-2022_0.075m/01GM79743023G6STTDG08J4GV8",
+      "name": "ashburton_urban_2021-2022_0.075m",
+      "minZoom": 14,
+      "title": "Ashburton 0.075m Urban Aerial Photos (2021-2022)",
       "category": "Urban Aerial Photos"
     },
     {
