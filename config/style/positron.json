@@ -24,28 +24,6 @@
       "paint": { "fill-color": "rgb(242,243,240)" }
     },
     {
-      "id": "Coastline",
-      "type": "line",
-      "source": "LINZ Basemaps",
-      "source-layer": "coastline",
-      "layout": { "visibility": "visible" },
-      "paint": {
-        "line-color": "rgb(230, 204, 207)",
-        "line-width": {
-          "stops": [
-            [3, 1],
-            [22, 20]
-          ]
-        },
-        "line-blur": {
-          "stops": [
-            [0, 0.4],
-            [22, 4]
-          ]
-        }
-      }
-    },
-    {
       "id": "park",
       "type": "fill",
       "source": "LINZ Basemaps",
