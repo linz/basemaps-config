@@ -541,6 +541,14 @@
       "category": "Rural Aerial Photos"
     },
     {
+      "2193": "s3://linz-basemaps/2193/canterbury_2022_0.3m/01GPEXMRQCA525WF8B0XBV5575",
+      "3857": "s3://linz-basemaps/3857/canterbury_2022_0.3m/01GPEXPBHG2XJZK0JPGKNAVD6A",
+      "name": "canterbury_2022_0.3m",
+      "minZoom": 13,
+      "title": "Canterbury 0.3m Rural Aerial Photos (2022)",
+      "category": "Rural Aerial Photos"
+    },
+    {
       "2193": "s3://linz-basemaps/2193/selwyn_urban_2012-2013_0-125m_RGBA/01F6P1Q0MQC2FXNDVZJGT88CC2",
       "3857": "s3://linz-basemaps/3857/selwyn_urban_2012-2013_0-125m_RGBA/01ED8355C00DRTSNAQ04AHJDDZ",
       "name": "selwyn_urban_2012-2013_0-125m_RGBA",
