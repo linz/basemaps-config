@@ -1289,6 +1289,14 @@
       "minZoom": 32,
       "title": "Top of the South 0.15m Flood Aerial Photos (2022)",
       "category": "Event"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/canterbury_2022_0.3m/01GQ0S6W8B8HV76YP8XX7P7MXJ",
+      "3857": "s3://linz-basemaps/3857/canterbury_2022_0.3m/01GQ0S8GR5YY5CD6GYYM5W7EFN",
+      "name": "canterbury_2022_0.3m",
+      "title": "Canterbury 2022 0.3m",
+      "minZoom": 32,
+      "category": "New Aerial Photos"
     }
   ]
 }
