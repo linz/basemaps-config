@@ -31,7 +31,7 @@
     },
     {
       "2193": "s3://linz-basemaps/2193/nz_satellite_2020-2021_10m_RGB/01FHV9VX322F20JYYZ90ZPPM3R",
-      "3857": "s3://linz-basemaps/3857/nz_satellite_2020-2021_10m_RGB/01GQ1BY7VRX3T9ZYMERXYRZZHH",
+      "3857": "s3://linz-basemaps/3857/nz_satellite_2020-2021_10m_RGB/01GQ1HYZYCVRERQQS6FR1P5X7M",
       "name": "nz_satellite_2020-2021_10m_RGB",
       "minZoom": 32,
       "title": "New Zealand 10m Satellite Imagery (2020-2021)",
@@ -39,7 +39,7 @@
     },
     {
       "2193": "s3://linz-basemaps/2193/nz_satellite_2021-2022_10m_RGB/01G73E4AMSQ91TXQ3KC90NNPA0",
-      "3857": "s3://linz-basemaps/3857/nz_satellite_2021-2022_10m_RGB/01GQ1BSND57ZVT82AGEEKA2VJR",
+      "3857": "s3://linz-basemaps/3857/nz_satellite_2021-2022_10m_RGB/01GQ1J1V05X64SDTM673WTMJ7J",
       "name": "nz_satellite_2021-2022_10m_RGB",
       "title": "New Zealand 10m Satellite Imagery (2021-2022)",
       "category": "Satellite Imagery"
