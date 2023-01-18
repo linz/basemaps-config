@@ -438,7 +438,7 @@
     },
     {
       "2193": "s3://linz-basemaps/2193/tasman_rural_2020_0-3m_RGB/01FBGB1QN859XRGNNWT6ZBHEN8",
-      "3857": "s3://linz-basemaps/3857/tasman_rural_2020_0-3m_RGB/01EXJV4VZ22G163H5565R2D04R",
+      "3857": "s3://linz-basemaps/3857/tasman_rural_2020_0-3m_RGB/01FBGB0T73562VAZBEBHZ7E84T",
       "name": "tasman_rural_2020_0-3m_RGB",
       "minZoom": 13,
       "title": "Tasman 0.3m Rural Aerial Photos (2020)",
