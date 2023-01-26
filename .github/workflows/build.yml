@@ -27,7 +27,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: linz/action-typescript@v1
+      - uses: linz/action-typescript@v2
 
       - name: (Build) Prepare path for glyphs and sprites
         run: |
