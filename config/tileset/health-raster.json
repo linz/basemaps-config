@@ -1,6 +1,6 @@
 {
   "type": "raster",
-  "id": "ts_health",
+  "id": "ts_health-raster",
   "background": "dce9edff",
   "layers": [
     {
