@@ -9,13 +9,13 @@
       "2193": "s3://linz-basemaps/2193/topo250_2020_21-17m/01ENS2R7PB3K2HPW1032ZXJKXD",
       "name": "topo250_2020_21-17m",
       "maxZoom": 13,
-      "title": "New Zealand Topographic Raster 2.5m (2020)"
+      "title": "New Zealand Topo250 Map Series (2020)"
     },
     {
       "2193": "s3://linz-basemaps/2193/topo50-gridless_2020_4-23m/01EFJ7EHQRJJ70XWBEJXGEAW6W",
       "name": "topo50-gridless_2020_4-23m",
       "minZoom": 14,
-      "title": "New Zealand Topographic Raster 0.5m (2020)"
+      "title": "New Zealand Topo50 Gridless Map Series (2020)"
     }
   ]
 }

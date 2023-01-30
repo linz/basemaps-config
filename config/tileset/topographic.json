@@ -7,7 +7,7 @@
     {
       "3857": "s3://linz-basemaps/vector/3857/01GEZADDVNRV1CB1KW55JCTJS8/topographic.tar.co",
       "name": "topographic",
-      "title": "New Zealand Topographic Vector"
+      "title": "Topographic"
     }
   ]
 }
