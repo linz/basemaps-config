@@ -5,7 +5,8 @@
   "layers": [
     {
       "3857": "s3://linz-basemaps/3857/geographx_nz_dem_2012_8-0m/01FM8DEN1XG1QGNT229A4T3KZ6",
-      "name": "geographx_nz_dem_2012_8-0m"
+      "name": "geographx_nz_dem_2012_8-0m",
+      "title": "New Zealand 8m DEM Hillshade (2012)"
     }
   ]
 }
