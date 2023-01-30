@@ -549,6 +549,14 @@
       "category": "Rural Aerial Photos"
     },
     {
+      "2193": "s3://linz-basemaps/2193/waikato_2021-2023_0.3m/01GR01J88ME71DQHG17PX0KHBJ",
+      "3857": "s3://linz-basemaps/3857/waikato_2021-2023_0.3m/01GR01MDBQ033559AM244BZQTY",
+      "name": "waikato_2021-2023_0.3m",
+      "title": "Waikato 0.3m Rural Aerial Photos (2021-2023) - Draft",
+      "minZoom": 32,
+      "category": "Rural Aerial Photos"
+    },
+    {
       "2193": "s3://linz-basemaps/2193/selwyn_urban_2012-2013_0-125m_RGBA/01F6P1Q0MQC2FXNDVZJGT88CC2",
       "3857": "s3://linz-basemaps/3857/selwyn_urban_2012-2013_0-125m_RGBA/01ED8355C00DRTSNAQ04AHJDDZ",
       "name": "selwyn_urban_2012-2013_0-125m_RGBA",
