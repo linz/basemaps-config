@@ -1,7 +1,7 @@
 {
   "type": "vector",
   "id": "ts_topographic",
-  "title": "NZ Topographic Vector Map",
+  "title": "New Zealand Topographic Vector Map",
   "maxZoom": 15,
   "format": "pbf",
   "layers": [
