@@ -1,6 +1,7 @@
 {
   "type": "raster",
   "id": "ts_reliefshade",
+  "title": "New Zealand Relief Shade",
   "background": "00000000",
   "layers": [
     {

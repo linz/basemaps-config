@@ -1,6 +1,7 @@
 {
   "type": "raster",
   "id": "ts_health",
+  "title": "Aerial Imagery Basemap Health",
   "background": "dce9edff",
   "layers": [
     {
