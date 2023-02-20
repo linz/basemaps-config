@@ -144,7 +144,7 @@ jobs:
       - name: Update Description
         if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
         run: |
-          [ ! -f changes.md ] || gh pr edit ${PR_NUMBER} --body-file changes.md
+          [ ! -f changes.md ] || gh pr comment ${PR_NUMBER} --body-file changes.md
           
       - name: Save snapshots
         uses: getsentry/action-visual-snapshot@v2
