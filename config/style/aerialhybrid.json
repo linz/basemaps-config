@@ -23,7 +23,7 @@
       "id": "Aerial-Imagery",
       "type": "raster",
       "source": "LINZ-Imagery",
-      "layout": { "visibility": "visible" }
+      "layout": { "visibility": "none" }
     },
     {
       "id": "Parcels-Ln-Shadow",
