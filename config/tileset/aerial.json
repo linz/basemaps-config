@@ -38,6 +38,13 @@
       "category": "Satellite Imagery"
     },
     {
+      "2193": "s3://linz-basemaps/2193/nz_satellite_2021-2022_10m_RGB/01G73E4AMSQ91TXQ3KC90NNPA0",
+      "3857": "s3://linz-basemaps/3857/nz_satellite_2021-2022_10m_RGB/01G73E5DZKE9NSW6E41QQRT28T",
+      "name": "nz_satellite_2021-2022_10m_RGB",
+      "title": "New Zealand 10m Satellite Imagery (2021-2022)",
+      "category": "Satellite Imagery"
+    },
+    {
       "2193": "s3://linz-basemaps/2193/auckland-islands_satellite_2014-2021_0-5m_RGB/01FZYE8BB9EBP892F3JQSSSHQG",
       "3857": "s3://linz-basemaps/3857/auckland-islands_satellite_2014-2021_0-5m_RGB/01FZYE8NX9DE6ZA3Y5VK1QAHNK",
       "name": "auckland-islands_satellite_2014-2021_0-5m_RGB",
