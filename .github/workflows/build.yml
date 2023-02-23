@@ -18,7 +18,7 @@ jobs:
     env:
       BASEMAPS_BUCKET: linz-basemaps
       BASEMAPS_STAGING_BUCKET: linz-basemaps-staging
-      BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.38.0-3-g6eab1a8f
+      BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.39.0-28-g74ce3205
       SCREENSHOT_CONTAINER: ghcr.io/linz/basemaps-screenshot/cli:v1.1.1-2-g3030356
       DOCKER_AWS_ENV: -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN -e AWS_REGION -e AWS_DEFAULT_REGION
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -144,7 +144,7 @@ jobs:
       - name: Update Description
         if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
         run: |
-          [ ! -f changes.md ] || gh pr edit ${PR_NUMBER} --body-file changes.md
+          [ ! -f changes.md ] || gh pr comment ${PR_NUMBER} --body-file changes.md
           
       - name: Save snapshots
         uses: getsentry/action-visual-snapshot@v2
