@@ -105,7 +105,7 @@
       "3857": "s3://linz-basemaps/3857/north-island-cyclone-gabrielle_2023_10m/01GT86BYJ4VBD14QKA0HN76FE2",
       "name": "north-island-cyclone-gabrielle_2023_10m",
       "title": "North-island-cyclone-gabrielle 2023 10m",
-      "minZoom": 5,
+      "minZoom": 32,
       "category": "Satellite Imagery"
     },
     {
