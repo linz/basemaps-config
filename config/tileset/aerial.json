@@ -101,6 +101,14 @@
       "category": "Satellite Imagery"
     },
     {
+      "2193": "s3://linz-basemaps/2193/north-island-cyclone-gabrielle_2023_10m/01GT86B8BWT1WQEAQK7CE4KEXA",
+      "3857": "s3://linz-basemaps/3857/north-island-cyclone-gabrielle_2023_10m/01GT86BYJ4VBD14QKA0HN76FE2",
+      "name": "north-island-cyclone-gabrielle_2023_10m",
+      "title": "North Island 10m Cyclone Gabrielle Satellite Imagery (2023)",
+      "minZoom": 32,
+      "category": "Event"
+    },
+    {
       "2193": "s3://linz-basemaps/2193/tasman_rural_2001-2002_1m_RGB/01F6P1TJ28B0HSRV2MNTBFSMKA",
       "3857": "s3://linz-basemaps/3857/tasman_rural_2001-2002_1m_RGB/01EE9646WHWA7X46KDRATVWY9Z",
       "name": "tasman_rural_2001-2002_1m_RGB",
@@ -560,7 +568,7 @@
       "2193": "s3://linz-basemaps/2193/selwyn_urban_2012-2013_0-125m_RGBA/01F6P1Q0MQC2FXNDVZJGT88CC2",
       "3857": "s3://linz-basemaps/3857/selwyn_urban_2012-2013_0-125m_RGBA/01ED8355C00DRTSNAQ04AHJDDZ",
       "name": "selwyn_urban_2012-2013_0-125m_RGBA",
-      "minZoom": 14,
+      "minZoom": 32,
       "title": "Selwyn 0.125m Urban Aerial Photos (2012-2013)",
       "category": "Urban Aerial Photos"
     },
@@ -624,7 +632,7 @@
       "2193": "s3://linz-basemaps/2193/wairoa_urban_2014-2015_0-10m_RGBA/01F6P20PT6TN7XVJGPSA7NPQ93",
       "3857": "s3://linz-basemaps/3857/wairoa_urban_2014-2015_0-10m_RGBA/01ED83R64ZX665P14R805CJVE2",
       "name": "wairoa_urban_2014-2015_0-10m_RGBA",
-      "minZoom": 14,
+      "minZoom": 32,
       "title": "Wairoa 0.1m Urban Aerial Photos (2014-2015)",
       "category": "Urban Aerial Photos"
     },
