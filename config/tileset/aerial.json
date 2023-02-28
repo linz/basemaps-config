@@ -104,9 +104,9 @@
       "2193": "s3://linz-basemaps/2193/north-island-pre-cyclone-gabrielle_2022_10m/01GTAG50A6WKF24ND3VNWWNYFQ",
       "3857": "s3://linz-basemaps/3857/north-island-pre-cyclone-gabrielle_2022_10m/01GTAG5NS0GYE7D560SS97ASP1",
       "name": "north-island-pre-cyclone-gabrielle_2022_10m",
-      "title": "North-island-pre-cyclone-gabrielle 2022 10m",
-      "minZoom": 5,
-      "category": "Satellite Imagery"
+      "title": "North Island 10m Pre-Cyclone Gabrielle Satellite Imagery (22 November 2022)",
+      "minZoom": 32,
+      "category": "Event"
     },
     {
       "2193": "s3://linz-basemaps/2193/tasman_rural_2001-2002_1m_RGB/01F6P1TJ28B0HSRV2MNTBFSMKA",
