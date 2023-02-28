@@ -1291,7 +1291,7 @@
       "category": "Event"
     },
     {
-      "2193": "s3://linz-basemaps/2193/north-island-cyclone-gabrielle_2023_10m/01GTAM4EVVXJVT0K6G679KKYCH",
+      "2193": "s3://linz-basemaps/3857/north-island-cyclone-gabrielle_2023_10m/01GTAPC7K7NBD0QRMSXYFHH0QG",
       "3857": "s3://linz-basemaps/3857/north-island-cyclone-gabrielle_2023_10m/01GTAM4YD5RBZTANP5Z52FHYZM",
       "name": "north-island-cyclone-gabrielle_2023_10m",
       "title": "North Island 10m Cyclone Gabrielle Satellite Imagery (20 February 2023)",
