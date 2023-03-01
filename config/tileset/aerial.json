@@ -565,14 +565,6 @@
       "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/hawkes-bay-cyclone-gabrielle_2023_0.1m/01GTF2M1MDGF1WQK198M68HS2N",
-      "3857": "s3://linz-basemaps/3857/hawkes-bay-cyclone-gabrielle_2023_0.1m/01GTF2Q6YCZ67HAAAYRTVHGANY",
-      "name": "hawkes-bay-cyclone-gabrielle_2023_0.1m",
-      "title": "Hawkes-bay-cyclone-gabrielle 2023 0.1m",
-      "minZoom": 13,
-      "category": "Rural Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/timaru_urban_2012-2013_0-075m_RGBA/01F6P1XAGNDZVM0DH9JCFSE7QB",
       "3857": "s3://linz-basemaps/3857/timaru_urban_2012-2013_0-075m_RGBA/01ED83HWB82K047N1KYK9A5SKD",
       "name": "timaru_urban_2012-2013_0-075m_RGBA",
@@ -1311,6 +1303,14 @@
       "3857": "s3://linz-basemaps/3857/north-island-pre-cyclone-gabrielle_2022_10m/01GTAG5NS0GYE7D560SS97ASP1",
       "name": "north-island-pre-cyclone-gabrielle_2022_10m",
       "title": "North Island 10m Pre-Cyclone Gabrielle Satellite Imagery (22 November 2022)",
+      "minZoom": 32,
+      "category": "Event"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/hawkes-bay-cyclone-gabrielle_2023_0.1m/01GTF2M1MDGF1WQK198M68HS2N",
+      "3857": "s3://linz-basemaps/3857/hawkes-bay-cyclone-gabrielle_2023_0.1m/01GTF2Q6YCZ67HAAAYRTVHGANY",
+      "name": "hawkes-bay-cyclone-gabrielle_2023_0.1m",
+      "title": "Hawke's Bay 0.1m Cyclone Gabrielle Aerial Photos (2023)",
       "minZoom": 32,
       "category": "Event"
     }
