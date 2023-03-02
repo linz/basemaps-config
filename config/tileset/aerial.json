@@ -1305,6 +1305,14 @@
       "title": "North Island 10m Pre-Cyclone Gabrielle Satellite Imagery (22 November 2022)",
       "minZoom": 32,
       "category": "Event"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/hawkes-bay-cyclone-gabrielle_2023_0.1m/01GTF2M1MDGF1WQK198M68HS2N",
+      "3857": "s3://linz-basemaps/3857/hawkes-bay-cyclone-gabrielle_2023_0.1m/01GTF2Q6YCZ67HAAAYRTVHGANY",
+      "name": "hawkes-bay-cyclone-gabrielle_2023_0.1m",
+      "title": "Hawke's Bay 0.1m Cyclone Gabrielle Aerial Photos (2023)",
+      "minZoom": 32,
+      "category": "Event"
     }
   ]
 }
