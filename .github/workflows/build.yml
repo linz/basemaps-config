@@ -90,15 +90,15 @@ jobs:
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config ${CONFIG_LOCATION_STAGING} --commit
 
-      - name: (Screenshot) Screenshot Pull Request Changes
-        run: |
-          docker run -p 5000:5000 -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} serve --config $PWD/config-staging.json --assets $PWD/${ASSETS_HASH} &
+      # - name: (Screenshot) Screenshot Pull Request Changes
+      #   run: |
+      #     docker run -p 5000:5000 -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} serve --config $PWD/config-staging.json --assets $PWD/${ASSETS_HASH} &
           
-          # Wait for the server to start
-          sleep 3
-          curl http://localhost:5000/v1/version
+      #     # Wait for the server to start
+      #     sleep 3
+      #     curl http://localhost:5000/v1/version
 
-          docker run --rm --network="host" -v $PWD:$PWD ${DOCKER_AWS_ENV} ${SCREENSHOT_CONTAINER} --url http://localhost:5000 --output $PWD/.artifacts/visual-snapshots
+      #     docker run --rm --network="host" -v $PWD:$PWD ${DOCKER_AWS_ENV} ${SCREENSHOT_CONTAINER} --url http://localhost:5000 --output $PWD/.artifacts/visual-snapshots
 
       - name: (Prod) AWS Configure
         uses: aws-actions/configure-aws-credentials@v1.6.1
