@@ -1,0 +1,32 @@
+{
+  "type": "raster",
+  "id": "ts_cyclonegabrielle",
+  "title": "Cyclone Gabrielle Aerial Imagery Basemap",
+  "category": "Event",
+  "background": "dce9edff",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/gebco_2021_Nztm2000Quad_305-75m/01G14ZABTXES5EEVZJQ0CJAX5N",
+      "3857": "s3://linz-basemaps/3857/gebco_2021_305-75m/01G1735WKA6J8M24914Y16MSWY",
+      "name": "gebco_2021_305-75m",
+      "maxZoom": 15
+      "title": "GEBCO Gridded Bathymetry (2021)",
+      "category": "Bathymetry"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/north-island-cyclone-gabrielle_2023_10m/01GTDH47C49PXXB4AJR7CXYZZW",
+      "3857": "s3://linz-basemaps/3857/north-island-cyclone-gabrielle_2023_10m/01GTDH4P0C9D2MQNSX3D616QKY",
+      "name": "north-island-cyclone-gabrielle_2023_10m",
+      "title": "North Island 10m Cyclone Gabrielle Satellite Imagery (20 February 2023)",
+      "category": "Event"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/hawkes-bay-cyclone-gabrielle_2023_0.1m/01GTF2M1MDGF1WQK198M68HS2N",
+      "3857": "s3://linz-basemaps/3857/hawkes-bay-cyclone-gabrielle_2023_0.1m/01GTF2Q6YCZ67HAAAYRTVHGANY",
+      "name": "hawkes-bay-cyclone-gabrielle_2023_0.1m",
+      "title": "Hawke's Bay 0.1m Cyclone Gabrielle Aerial Photos (2023)",
+      "minZoom": 12,
+      "category": "Event"
+    }
+  ]
+}
