@@ -98,7 +98,7 @@ jobs:
           sleep 3
           curl http://localhost:5000/v1/version
 
-          docker run --rm --network="host" -v $PWD:$PWD ${DOCKER_AWS_ENV} ${SCREENSHOT_CONTAINER} --url http://localhost:5000 --output $PWD/.artifacts/visual-snapshots --timeout 450000
+          docker run --rm --network="host" -v $PWD:$PWD ${DOCKER_AWS_ENV} ${SCREENSHOT_CONTAINER} --url http://localhost:5000 --output $PWD/.artifacts/visual-snapshots --timeout 45000
 
       - name: (Prod) AWS Configure
         uses: aws-actions/configure-aws-credentials@v2.0.0
