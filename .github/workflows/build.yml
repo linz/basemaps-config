@@ -53,7 +53,7 @@ jobs:
           echo "ASSETS_LOCATION=s3://${BASEMAPS_BUCKET}/assets/${ASSETS_HASH}" >> $GITHUB_ENV
 
       - name: (Build) AWS Configure
-        uses: aws-actions/configure-aws-credentials@v1.6.1
+        uses: aws-actions/configure-aws-credentials@v2.0.0
         with:
           aws-region: ap-southeast-2
           mask-aws-account-id: true
@@ -75,7 +75,7 @@ jobs:
           aws s3 cp config-staging.json.gz ${CONFIG_LOCATION_STAGING} --content-encoding gzip
 
       - name: (NonProd) AWS Configure
-        uses: aws-actions/configure-aws-credentials@v1.6.1
+        uses: aws-actions/configure-aws-credentials@v2.0.0
         with:
           aws-region: ap-southeast-2
           mask-aws-account-id: true
@@ -101,7 +101,7 @@ jobs:
           docker run --rm --network="host" -v $PWD:$PWD ${DOCKER_AWS_ENV} ${SCREENSHOT_CONTAINER} --url http://localhost:5000 --output $PWD/.artifacts/visual-snapshots
 
       - name: (Prod) AWS Configure
-        uses: aws-actions/configure-aws-credentials@v1.6.1
+        uses: aws-actions/configure-aws-credentials@v2.0.0
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         with:
           aws-region: ap-southeast-2
