@@ -1307,8 +1307,8 @@
       "category": "Event"
     },
     {
-      "2193": "s3://linz-basemaps/2193/north-island_2023_0.5m/01GTZC0FWYD8EYTSRPN5NX53ZZ",
-      "3857": "s3://linz-basemaps/3857/north-island_2023_0.5m/01GTZC3CQG2Z1SZ5HPPTP8FSBN",
+      "2193": "s3://linz-basemaps/2193/north-island_2023_0.5m/01GTZRR2GTFD3G1VMM8ARN8DAQ",
+      "3857": "s3://linz-basemaps/3857/north-island_2023_0.5m/01GTZRV2465QKJHXXV063CMPK7",
       "name": "north-island_2023_0.5m",
       "title": "North Island 0.5m Cyclone Gabrielle Satellite Imagery (2023)",
       "minZoom": 32,
