@@ -101,14 +101,6 @@
       "category": "Satellite Imagery"
     },
     {
-      "2193": "s3://linz-basemaps/2193/north-island_2023_0.5m/01GTZC0FWYD8EYTSRPN5NX53ZZ",
-      "3857": "s3://linz-basemaps/3857/north-island_2023_0.5m/01GTZC3CQG2Z1SZ5HPPTP8FSBN",
-      "name": "north-island_2023_0.5m",
-      "title": "North-island 2023 0.5m",
-      "minZoom": 5,
-      "category": "Satellite Imagery"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/tasman_rural_2001-2002_1m_RGB/01F6P1TJ28B0HSRV2MNTBFSMKA",
       "3857": "s3://linz-basemaps/3857/tasman_rural_2001-2002_1m_RGB/01EE9646WHWA7X46KDRATVWY9Z",
       "name": "tasman_rural_2001-2002_1m_RGB",
@@ -1311,6 +1303,14 @@
       "3857": "s3://linz-basemaps/3857/north-island-pre-cyclone-gabrielle_2022_10m/01GTFV2P4GH36AS9P3AZ88ABYY",
       "name": "north-island-pre-cyclone-gabrielle_2022_10m",
       "title": "North Island 10m Pre-Cyclone Gabrielle Satellite Imagery (22 November 2022)",
+      "minZoom": 32,
+      "category": "Event"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/north-island_2023_0.5m/01GTZC0FWYD8EYTSRPN5NX53ZZ",
+      "3857": "s3://linz-basemaps/3857/north-island_2023_0.5m/01GTZC3CQG2Z1SZ5HPPTP8FSBN",
+      "name": "north-island_2023_0.5m",
+      "title": "North Island 0.5m Cyclone Gabrielle Satellite Imagery (2023)",
       "minZoom": 32,
       "category": "Event"
     },
