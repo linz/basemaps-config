@@ -21,6 +21,14 @@
       "category": "Event"
     },
     {
+      "2193": "s3://linz-basemaps/2193/north-island_2023_0.5m/01GTZRR2GTFD3G1VMM8ARN8DAQ",
+      "3857": "s3://linz-basemaps/3857/north-island_2023_0.5m/01GTZRV2465QKJHXXV063CMPK7",
+      "name": "north-island_2023_0.5m",
+      "title": "North Island 0.5m Cyclone Gabrielle Satellite Imagery (2023)",
+      "minZoom": 10,
+      "category": "Event"
+    },
+    {
       "2193": "s3://linz-basemaps/2193/hawkes-bay-cyclone-gabrielle_2023_0.1m/01GTF2M1MDGF1WQK198M68HS2N",
       "3857": "s3://linz-basemaps/3857/hawkes-bay-cyclone-gabrielle_2023_0.1m/01GTF2Q6YCZ67HAAAYRTVHGANY",
       "name": "hawkes-bay-cyclone-gabrielle_2023_0.1m",
