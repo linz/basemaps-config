@@ -105,8 +105,8 @@
       "3857": "s3://linz-basemaps/3857/north-island_2023_10m/01GV1YWSQ3V9F2ZQ7KYCT6VR72",
       "name": "north-island_2023_10m",
       "title": "North Island 10m Cyclone Gabrielle Satellite Imagery (2023)",
-      "minZoom": 5,
-      "category": "Satellite Imagery"
+      "minZoom": 32,
+      "category": "Event"
     },
     {
       "2193": "s3://linz-basemaps/2193/tasman_rural_2001-2002_1m_RGB/01F6P1TJ28B0HSRV2MNTBFSMKA",
