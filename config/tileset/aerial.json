@@ -1291,10 +1291,10 @@
       "category": "Event"
     },
     {
-      "2193": "s3://linz-basemaps/2193/north-island-cyclone-gabrielle_2023_10m/01GTDH47C49PXXB4AJR7CXYZZW",
-      "3857": "s3://linz-basemaps/3857/north-island-cyclone-gabrielle_2023_10m/01GTDH4P0C9D2MQNSX3D616QKY",
-      "name": "north-island-cyclone-gabrielle_2023_10m",
-      "title": "North Island 10m Cyclone Gabrielle Satellite Imagery (20 February 2023)",
+      "2193": "s3://linz-basemaps/2193/north-island_2023_10m/01GV1YW3PFVAD8089Q96W69WYT",
+      "3857": "s3://linz-basemaps/3857/north-island_2023_10m/01GV1YWSQ3V9F2ZQ7KYCT6VR72",
+      "name": "north-island_2023_10m",
+      "title": "North Island 10m Cyclone Gabrielle Satellite Imagery (18-21 February 2023)",
       "minZoom": 32,
       "category": "Event"
     },
