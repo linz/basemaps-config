@@ -101,6 +101,14 @@
       "category": "Satellite Imagery"
     },
     {
+      "2193": "s3://linz-basemaps/2193/north-island_2023_10m/01GV1TW21EHSMDJ3680SWC0RAM",
+      "3857": "s3://linz-basemaps/3857/north-island_2023_10m/01GV1TWT93AVFK2J0GVA9HNMGA",
+      "name": "north-island_2023_10m",
+      "title": "North-island 2023 10m",
+      "minZoom": 5,
+      "category": "Satellite Imagery"
+    },
+    {
       "2193": "s3://linz-basemaps/2193/tasman_rural_2001-2002_1m_RGB/01F6P1TJ28B0HSRV2MNTBFSMKA",
       "3857": "s3://linz-basemaps/3857/tasman_rural_2001-2002_1m_RGB/01EE9646WHWA7X46KDRATVWY9Z",
       "name": "tasman_rural_2001-2002_1m_RGB",
