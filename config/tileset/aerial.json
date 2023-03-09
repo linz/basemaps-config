@@ -101,10 +101,10 @@
       "category": "Satellite Imagery"
     },
     {
-      "2193": "s3://linz-basemaps/2193/north-island_2023_10m/01GV1TW21EHSMDJ3680SWC0RAM",
-      "3857": "s3://linz-basemaps/3857/north-island_2023_10m/01GV1TWT93AVFK2J0GVA9HNMGA",
+      "2193": "s3://linz-basemaps/2193/north-island_2023_10m/01GV1W5ZA0SW4QHJKK5PER09J0",
+      "3857": "s3://linz-basemaps/3857/north-island_2023_10m/01GV1W6PVW5D5TQ9RYEYQ9MPAN",
       "name": "north-island_2023_10m",
-      "title": "North-island 2023 10m",
+      "title": "North Island 10m Cyclone Gabrielle Satellite Imagery (2023)",
       "minZoom": 5,
       "category": "Satellite Imagery"
     },
