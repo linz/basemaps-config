@@ -101,14 +101,6 @@
       "category": "Satellite Imagery"
     },
     {
-      "2193": "s3://linz-basemaps/2193/north-island_2023_10m/01GV1YW3PFVAD8089Q96W69WYT",
-      "3857": "s3://linz-basemaps/3857/north-island_2023_10m/01GV1YWSQ3V9F2ZQ7KYCT6VR72",
-      "name": "north-island_2023_10m",
-      "title": "North Island 10m Cyclone Gabrielle Satellite Imagery (2023)",
-      "minZoom": 32,
-      "category": "Event"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/tasman_rural_2001-2002_1m_RGB/01F6P1TJ28B0HSRV2MNTBFSMKA",
       "3857": "s3://linz-basemaps/3857/tasman_rural_2001-2002_1m_RGB/01EE9646WHWA7X46KDRATVWY9Z",
       "name": "tasman_rural_2001-2002_1m_RGB",
@@ -1296,6 +1288,14 @@
       "name": "top-of-the-south_flood_2022_0.15m",
       "minZoom": 32,
       "title": "Top of the South 0.15m Flood Aerial Photos (2022)",
+      "category": "Event"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/north-island_2023_10m/01GV1YW3PFVAD8089Q96W69WYT",
+      "3857": "s3://linz-basemaps/3857/north-island_2023_10m/01GV1YWSQ3V9F2ZQ7KYCT6VR72",
+      "name": "north-island_2023_10m",
+      "title": "North Island 10m Cyclone Gabrielle Satellite Imagery (2023)",
+      "minZoom": 32,
       "category": "Event"
     },
     {
