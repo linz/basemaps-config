@@ -321,8 +321,8 @@
       "3857": "s3://linz-basemaps/3857/kaikoura-post-earthquake_rural_2016-17_0-3m/01ED82F0376F6FJFMTV4JAVJ53",
       "name": "kaikoura-post-earthquake_rural_2016-17_0-3m",
       "minZoom": 13,
-      "title": "Kaikōura 0.3m Rural Aerial Photos (2016-2017)",
-      "category": "Rural Aerial Photos"
+      "title": "Kaikōura Earthquake 0.3m Rural Aerial Photos (2016-2017)",
+      "category": "Event"
     },
     {
       "2193": "s3://linz-basemaps/2193/manawatu-whanganui_rural_2016-17_0-3m/01F6P1BSQ6V27WZK0KM56M4Z1C",
@@ -1287,14 +1287,14 @@
       "3857": "s3://linz-basemaps/3857/top-of-the-south_flood_2022_0.15m/01GGDTSGRK0Z4C70WXBYMEXK4X",
       "name": "top-of-the-south_flood_2022_0.15m",
       "minZoom": 32,
-      "title": "Top of the South 0.15m Flood Aerial Photos (2022)",
+      "title": "Top of the South Flood 0.15m Aerial Photos (2022)",
       "category": "Event"
     },
     {
       "2193": "s3://linz-basemaps/2193/north-island_2023_10m/01GV1YW3PFVAD8089Q96W69WYT",
       "3857": "s3://linz-basemaps/3857/north-island_2023_10m/01GV1YWSQ3V9F2ZQ7KYCT6VR72",
       "name": "north-island_2023_10m",
-      "title": "North Island 10m Cyclone Gabrielle Satellite Imagery (18-21 February 2023)",
+      "title": "Cyclone Gabrielle North Island 10m Satellite Imagery (18-21 February 2023)",
       "minZoom": 32,
       "category": "Event"
     },
@@ -1302,7 +1302,7 @@
       "2193": "s3://linz-basemaps/2193/north-island-pre-cyclone-gabrielle_2022_10m/01GTFV298JMC5EDMA3YVJEPBEX",
       "3857": "s3://linz-basemaps/3857/north-island-pre-cyclone-gabrielle_2022_10m/01GTFV2P4GH36AS9P3AZ88ABYY",
       "name": "north-island-pre-cyclone-gabrielle_2022_10m",
-      "title": "North Island 10m Pre-Cyclone Gabrielle Satellite Imagery (22 November 2022)",
+      "title": "Cyclone Gabrielle [Before] North Island 10m Satellite Imagery (22 November 2022)",
       "minZoom": 32,
       "category": "Event"
     },
@@ -1310,7 +1310,7 @@
       "2193": "s3://linz-basemaps/2193/north-island_2023_0.5m/01GTZRR2GTFD3G1VMM8ARN8DAQ",
       "3857": "s3://linz-basemaps/3857/north-island_2023_0.5m/01GTZRV2465QKJHXXV063CMPK7",
       "name": "north-island_2023_0.5m",
-      "title": "North Island 0.5m Cyclone Gabrielle Satellite Imagery (2023)",
+      "title": "Cyclone Gabrielle North Island 0.5m Satellite Imagery (21 Feburary 2023)",
       "minZoom": 32,
       "category": "Event"
     },
@@ -1318,7 +1318,7 @@
       "2193": "s3://linz-basemaps/2193/hawkes-bay-cyclone-gabrielle_2023_0.1m/01GTF2M1MDGF1WQK198M68HS2N",
       "3857": "s3://linz-basemaps/3857/hawkes-bay-cyclone-gabrielle_2023_0.1m/01GTF2Q6YCZ67HAAAYRTVHGANY",
       "name": "hawkes-bay-cyclone-gabrielle_2023_0.1m",
-      "title": "Hawke's Bay 0.1m Cyclone Gabrielle Aerial Photos (2023)",
+      "title": "Cyclone Gabrielle Hawke's Bay 0.1m Aerial Photos (19-21 February 2023)",
       "minZoom": 32,
       "category": "Event"
     }
