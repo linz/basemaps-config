@@ -1315,6 +1315,14 @@
       "category": "Event"
     },
     {
+      "2193": "s3://linz-basemaps/2193/gisborne-cyclone-gabrielle_2023_0.2m/01GVQDS1V088MMJFSNMWRXAZ7W",
+      "3857": "s3://linz-basemaps/3857/gisborne-cyclone-gabrielle_2023_0.2m/01GVQDT35MYQYM38YDWZQNYG99",
+      "name": "gisborne-cyclone-gabrielle_2023_0.2m",
+      "title": "Cyclone Gabrielle Gisborne 0.2m Aerial Photos (20-21 February 2023)",
+      "minZoom": 32,
+      "category": "Event"
+    },
+    {
       "2193": "s3://linz-basemaps/2193/hawkes-bay-cyclone-gabrielle_2023_0.1m/01GTF2M1MDGF1WQK198M68HS2N",
       "3857": "s3://linz-basemaps/3857/hawkes-bay-cyclone-gabrielle_2023_0.1m/01GTF2Q6YCZ67HAAAYRTVHGANY",
       "name": "hawkes-bay-cyclone-gabrielle_2023_0.1m",
