@@ -101,6 +101,14 @@
       "category": "Satellite Imagery"
     },
     {
+      "2193": "s3://linz-basemaps/2193/north-island_2023_0.5m/01GW39PB2ZMJ5KADZSSP860WRS",
+      "3857": "s3://linz-basemaps/3857/north-island_2023_0.5m/01GW39S72PRNYN6MRRWF83T82E",
+      "name": "north-island_2023_0.5m",
+      "title": "North Island 0.5m Cyclone Gabrielle Satellite Imagery (2023)",
+      "minZoom": 5,
+      "category": "Satellite Imagery"
+    },
+    {
       "2193": "s3://linz-basemaps/2193/tasman_rural_2001-2002_1m_RGB/01F6P1TJ28B0HSRV2MNTBFSMKA",
       "3857": "s3://linz-basemaps/3857/tasman_rural_2001-2002_1m_RGB/01EE9646WHWA7X46KDRATVWY9Z",
       "name": "tasman_rural_2001-2002_1m_RGB",
