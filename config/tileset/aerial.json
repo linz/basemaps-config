@@ -1310,7 +1310,7 @@
       "2193": "s3://linz-basemaps/2193/north-island_2023_0.5m/01GW39PB2ZMJ5KADZSSP860WRS",
       "3857": "s3://linz-basemaps/3857/north-island_2023_0.5m/01GW39S72PRNYN6MRRWF83T82E",
       "name": "north-island_2023_0.5m",
-      "title": "Cyclone Gabrielle North Island 0.5m Satellite Imagery (21 February 2023)",
+      "title": "Cyclone Gabrielle North Island 0.5m Satellite Imagery (21 February 2023 - 8 March 2023)",
       "minZoom": 32,
       "category": "Event"
     },
