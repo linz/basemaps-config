@@ -741,6 +741,14 @@
       "category": "Urban Aerial Photos"
     },
     {
+      "2193": "s3://linz-basemaps/2193/gisborne_2022-2023_0.1m/01GWGH1WFBNG4WFSFVR2XK316S",
+      "3857": "s3://linz-basemaps/3857/gisborne_2022-2023_0.1m/01GWGH2ED4XWY7TB96Q397FBJB",
+      "name": "gisborne_2022-2023_0.1m",
+      "minZoom": 14,
+      "title": "Gisborne 0.1m Urban Aerial Photos (2022-2023)",
+      "category": "Urban Aerial Photos"
+    },
+    {
       "2193": "s3://linz-basemaps/2193/hastings-district_urban_2017-18_0-1m/01F6P17PSJ1SWNYV2V28922WKY",
       "3857": "s3://linz-basemaps/3857/hastings-district_urban_2017-18_0-1m/01ED82A7KFS8RMNPRYDQ60MCQ1",
       "name": "hastings-district_urban_2017-18_0-1m",
