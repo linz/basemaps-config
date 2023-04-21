@@ -549,6 +549,14 @@
       "category": "Rural Aerial Photos"
     },
     {
+      "2193": "s3://linz-basemaps/2193/wellington_2016-2017_0.3m/01GYDZV2M9EBXKZAFW97K4HHMW",
+      "3857": "s3://linz-basemaps/3857/wellington_2016-2017_0.3m/01GYDZW8JYHN2NX0JMTKDEZBY5",
+      "name": "wellington_2016-2017_0.3m",
+      "minZoom": 32,
+      "title": "Wellington 0.3m Rural Aerial Photos (2016-2017)",
+      "category": "Rural Aerial Photos"
+    },
+    {
       "2193": "s3://linz-basemaps/2193/waikato_2021-2023_0.3m/01GR01J88ME71DQHG17PX0KHBJ",
       "3857": "s3://linz-basemaps/3857/waikato_2021-2023_0.3m/01GR01MDBQ033559AM244BZQTY",
       "name": "waikato_2021-2023_0.3m",
