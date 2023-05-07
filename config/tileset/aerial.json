@@ -888,7 +888,7 @@
       "2193": "s3://linz-basemaps/2193/whanganui_urban_2017-18_0-075m/01F6P22D2ENZ889MYXP3WN950N",
       "3857": "s3://linz-basemaps/3857/whanganui_urban_2017-18_0-075m/01ED83XAAFYRNDQFZJRBSH21TF",
       "name": "whanganui_urban_2017-18_0-075m",
-      "minZoom": 14,
+      "minZoom": 32,
       "title": "Whanganui 0.075m Urban Aerial Photos (2017)",
       "category": "Urban Aerial Photos"
     },
