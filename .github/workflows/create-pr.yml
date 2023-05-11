@@ -1,0 +1,27 @@
+name: Pull Request Action
+on:
+  push:
+    branches:
+      - feat/bot-*
+jobs:
+  create-pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Prepare PR
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          if [[ "$BRANCH" == *"vector"* ]]; 
+          then echo "PR_TITLE=$(echo config(vector): Update the layer ${BRANCH##*feat/bot-} into vector rbasemaps.)"; >> $GITHUB_ENV
+          elif [[ "$BRANCH" == *"aerial"* ]]; 
+          then echo "PR_TITLE=$(echo config(aerial): Import imagery ${BRANCH##*feat/bot-} into aerial basemaps.)"; >> $GITHUB_ENV
+          else echo "PR_TITLE=$(echo config: Import ${BRANCH##*feat/bot-} into basemaps.)"; >> $GITHUB_ENV
+          fi
+      - name: pull-request
+        uses: repo-sync/pull-request@v2
+        with:
+          destination_branch: "master"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          pr_title: $PR_TITLE
