@@ -1,0 +1,33 @@
+name: Pull Request Action
+on:
+  push:
+    branches:
+      - feat/bot-*
+jobs:
+  create-pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      - name: Prepare Title
+        id: prepare_title
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          imagery=${BRANCH##*feat/bot-};
+          if [[ "$imagery" == *"vector"* ]]; 
+          then PR_TITLE="config(vector): Update the layer $imagery into vector basemaps.";
+          elif [[ "$imagery" == *"aerial"* ]]; 
+          then PR_TITLE="config(aerial): Import imagery $imagery into aerial basemaps.";
+          else PR_TITLE="config: Import $imagery into basemaps.";
+          fi;
+          echo "PR_TITLE=$PR_TITLE" >> $GITHUB_OUTPUT
+
+      - name: pull-request
+        uses: repo-sync/pull-request@v2
+        with:
+          destination_branch: "master"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          pr_title: ${{ steps.prepare_title.outputs.PR_TITLE }}
+          pr_reviewer: "PROJ-basemaps-dev" 
