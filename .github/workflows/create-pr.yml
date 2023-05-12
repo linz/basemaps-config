@@ -7,19 +7,15 @@ jobs:
   create-pull-request:
     runs-on: ubuntu-latest
     env:
-      BRANCH_NAME: ${{ github.ref_name }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      PR_TITLE: ${{ github.event.head_commit.message }}
-      PR_BODY: ${{ github.event.head_commit.message }}
     
     steps:
       - uses: actions/checkout@v3
 
       - name: pull-request
         run: |
-          gh pr edit ${{ env.BRANCH_NAME }} -t '${{ env.PR_TITLE }}' -b '${{ env.PR_BODY }}' &&
-          gh pr reopen ${{ env.BRANCH_NAME }} ||
-          gh pr create -B master -t '${{ env.PR_TITLE }}' -b '${{ env.PR_BODY  }}'
-
-  build:
-    uses: ./github/workflows/build.yml
+          gh pr edit ${{ github.ref_name }} --title '${{ github.event.head_commit.message }}' --body '${{ github.event.head_commit.message }}' &&
+          gh pr reopen ${{ github.ref_name }} ||
+          gh pr create --base master --title '${{ github.event.head_commit.message }}' --body '${{ github.event.head_commit.message }}'
+      
+      - uses: ./github/workflows/build.yml
