@@ -20,3 +20,6 @@ jobs:
           gh pr edit ${{ env.BRANCH_NAME }} -t '${{ env.PR_TITLE }}' -b '${{ env.PR_BODY }}' &&
           gh pr reopen ${{ env.BRANCH_NAME }} ||
           gh pr create -B master -t '${{ env.PR_TITLE }}' -b '${{ env.PR_BODY  }}'
+
+  build:
+    uses: ./github/workflows/build.yml
