@@ -1,0 +1,22 @@
+name: Pull Request Action
+on:
+  push:
+    branches:
+      - feat/bot-*
+jobs:
+  create-pull-request:
+    runs-on: ubuntu-latest
+    env:
+      BRANCH_NAME: ${{ github.ref_name }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      PR_TITLE: ${{ github.event.head_commit.message }}
+      PR_BODY: ${{ github.event.head_commit.message }}
+    
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: pull-request
+        run: |
+          gh pr edit ${{ env.BRANCH_NAME }} -t '${{ env.PR_TITLE }}' -b '${{ env.PR_BODY }}' &&
+          gh pr reopen ${{ env.BRANCH_NAME }} ||
+          gh pr create -B master -t '${{ env.PR_TITLE }}' -b '${{ env.PR_BODY  }}'
