@@ -19,3 +19,8 @@ jobs:
           gh pr create --base master --title '${{ github.event.head_commit.message }}' --body '${{ github.event.head_commit.message }}'
   build:
     uses: ./.github/workflows/build.yml
+    secrets: 
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      AWS_ROLE_SCREENSHOT: ${{ secrets.AWS_ROLE_SCREENSHOT }}
+      AWS_ROLE_NON_PROD: ${{ secrets.AWS_ROLE_NON_PROD }}
+      AWS_ROLE_PROD: ${{ secrets.AWS_ROLE_PROD }}
