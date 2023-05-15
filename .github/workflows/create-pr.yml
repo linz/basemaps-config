@@ -17,6 +17,5 @@ jobs:
           gh pr edit ${{ github.ref_name }} --title '${{ github.event.head_commit.message }}' --body '${{ github.event.head_commit.message }}' &&
           gh pr reopen ${{ github.ref_name }} ||
           gh pr create --base master --title '${{ github.event.head_commit.message }}' --body '${{ github.event.head_commit.message }}'
-      
   build:
     uses: ./.github/workflows/build.yml
