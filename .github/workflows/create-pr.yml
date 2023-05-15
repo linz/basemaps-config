@@ -18,4 +18,24 @@ jobs:
           gh pr reopen ${{ github.ref_name }} ||
           gh pr create --base master --title '${{ github.event.head_commit.message }}' --body '${{ github.event.head_commit.message }}'
       
-      - uses: ./.github/workflows/build.yml
+
+  build:
+    permissions:
+      id-token: write
+      contents: read
+      issues: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    concurrency: deploy-${{ github.head_ref }}
+    env:
+      BASEMAPS_BUCKET: linz-basemaps
+      BASEMAPS_STAGING_BUCKET: linz-basemaps-staging
+      BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.39.0-39-gdbedf1b1
+      SCREENSHOT_CONTAINER: ghcr.io/linz/basemaps-screenshot/cli:v1
+      DOCKER_AWS_ENV: -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN -e AWS_REGION -e AWS_DEFAULT_REGION
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      PR_NUMBER: ${{ github.event.number }}
+    steps:
+      - name: build
+        if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
+        uses: ./.github/workflows/build.yml
