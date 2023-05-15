@@ -1,6 +1,14 @@
 name: build
 
 on:
+  workflow_call:
+    secrets:
+      AWS_ROLE_SCREENSHOT:
+        required: true
+      AWS_ROLE_NON_PROD:
+          required: true
+      AWS_ROLE_PROD:
+          required: true
   pull_request:
   push:
     branches:
