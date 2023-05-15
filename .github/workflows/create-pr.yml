@@ -26,6 +26,16 @@ jobs:
       pull-requests: write
     runs-on: ubuntu-latest
     concurrency: deploy-${{ github.head_ref }}
+    env:
+      BASEMAPS_BUCKET: linz-basemaps
+      BASEMAPS_STAGING_BUCKET: linz-basemaps-staging
+      BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.39.0-39-gdbedf1b1
+      SCREENSHOT_CONTAINER: ghcr.io/linz/basemaps-screenshot/cli:v1
+      DOCKER_AWS_ENV: -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN -e AWS_REGION -e AWS_DEFAULT_REGION
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      PR_NUMBER: ${{ github.event.number }}
     steps:
+      - uses: actions/checkout@v3
+
       - name: build
         uses: ./.github/workflows/build.yml
