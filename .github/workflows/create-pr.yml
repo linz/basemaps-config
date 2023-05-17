@@ -5,10 +5,7 @@ on:
       - feat/bot-*
 jobs:
   create-pull-request:
-    runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    
+    runs-on: ubuntu-latest  
     steps:
       - uses: actions/checkout@v3
 
@@ -17,9 +14,9 @@ jobs:
           gh pr edit ${{ github.ref_name }} --title '${{ github.event.head_commit.message }}' --body '${{ github.event.head_commit.message }}' &&
           gh pr reopen ${{ github.ref_name }} ||
           gh pr create --base master --title '${{ github.event.head_commit.message }}' --body '${{ github.event.head_commit.message }}'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   build:
+    needs: [create-pull-request]
     uses: ./.github/workflows/build.yml
-    secrets: 
-      AWS_ROLE_SCREENSHOT: ${{ secrets.AWS_ROLE_SCREENSHOT }}
-      AWS_ROLE_NON_PROD: ${{ secrets.AWS_ROLE_NON_PROD }}
-      AWS_ROLE_PROD: ${{ secrets.AWS_ROLE_PROD }}
+    secrets: inherit 
