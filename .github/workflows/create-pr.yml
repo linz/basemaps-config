@@ -4,19 +4,33 @@ on:
     branches:
       - feat/bot-*
 jobs:
+  get-pull-request:
+    runs-on: ubuntu-latest
+    outputs:
+      pr_number: ${{ steps.pr.outputs.pr_number }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Get Pull Request Number
+        id: pr
+        run: echo "::set-output name=pull_request_number::$(gh pr view --json number -q .number || echo "")"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: echo "pr_number=${{ steps.pr.outputs.pull_request_number }}" >> $GITHUB_OUTPUT
   create-pull-request:
-    runs-on: ubuntu-latest  
+    needs: get-pull-request
+    if: ${{needs.get-pull-request.outputs.pr_number}} == null
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
-      - name: pull-request
-        run: |
-          gh pr edit ${{ github.ref_name }} --title '${{ github.event.head_commit.message }}' --body '${{ github.event.head_commit.message }}' &&
-          gh pr reopen ${{ github.ref_name }} ||
-          gh pr create --base master --title '${{ github.event.head_commit.message }}' --body '${{ github.event.head_commit.message }}'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: pull-request
+      #   run: |
+      #     gh pr edit ${{ github.ref_name }} --title '${{ github.event.head_commit.message }}' --body '${{ github.event.head_commit.message }}' &&
+      #     gh pr reopen ${{ github.ref_name }} ||
+      #     gh pr create --base master --title '${{ github.event.head_commit.message }}' --body '${{ github.event.head_commit.message }}'
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   build:
     needs: [create-pull-request]
     uses: ./.github/workflows/build.yml
-    secrets: inherit 
+    secrets: inherit
