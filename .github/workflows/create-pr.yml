@@ -17,8 +17,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: echo "pr_number=${{ steps.pr.outputs.pull_request_number }}" >> $GITHUB_OUTPUT
   create-pull-request:
-    needs: get-pull-request
-    if: ${{needs.get-pull-request.outputs.pr_number}} == null
+    needs: [get-pull-request]
+    if: needs.get-pull-request.outputs.pr_number == 'null'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
