@@ -1,0 +1,14 @@
+{
+  "type": "raster",
+  "id": "ts_bay-of-plenty_rural_2015-17_0-25m",
+  "title": "Bay of Plenty 0.25m Rural Aerial Photos (2015-2017)",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_rural_2015-17_0-25m/01F66E2MGVQY9F4WXRYDRWRGPE",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_rural_2015-17_0-25m/01ED81P0KGVWJP2XHDKJJRYNQM",
+      "name": "bay-of-plenty_rural_2015-17_0-25m",
+      "title": "Bay of Plenty 0.25m Rural Aerial Photos (2015-2017)",
+      "category": "Rural Aerial Photos"
+    }
+  ]
+}

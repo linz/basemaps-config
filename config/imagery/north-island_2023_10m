@@ -1,0 +1,14 @@
+{
+  "type": "raster",
+  "id": "ts_north-island_2023_10m",
+  "title": "Cyclone Gabrielle North Island 10m Satellite Imagery (18-21 February 2023)",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/north-island_2023_10m/01GV1YW3PFVAD8089Q96W69WYT",
+      "3857": "s3://linz-basemaps/3857/north-island_2023_10m/01GV1YWSQ3V9F2ZQ7KYCT6VR72",
+      "name": "north-island_2023_10m",
+      "title": "Cyclone Gabrielle North Island 10m Satellite Imagery (18-21 February 2023)",
+      "category": "Event"
+    }
+  ]
+}

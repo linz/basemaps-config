@@ -1,0 +1,14 @@
+{
+  "type": "raster",
+  "id": "ts_nz_satellite_2020-2021_10m_RGB",
+  "title": "New Zealand 10m Satellite Imagery (2020-2021)",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/nz_satellite_2020-2021_10m_RGB/01FHV9VX322F20JYYZ90ZPPM3R",
+      "3857": "s3://linz-basemaps/3857/nz_satellite_2020-2021_10m_RGB/01FHV461P0C5H79T2VXE4T201J",
+      "name": "nz_satellite_2020-2021_10m_RGB",
+      "title": "New Zealand 10m Satellite Imagery (2020-2021)",
+      "category": "Satellite Imagery"
+    }
+  ]
+}
