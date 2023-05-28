@@ -30,14 +30,6 @@
       "category": "Satellite Imagery"
     },
     {
-      "2193": "s3://linz-basemaps/2193/nz_satellite_2020-2021_10m_RGB/01FHV9VX322F20JYYZ90ZPPM3R",
-      "3857": "s3://linz-basemaps/3857/nz_satellite_2020-2021_10m_RGB/01FHV461P0C5H79T2VXE4T201J",
-      "name": "nz_satellite_2020-2021_10m_RGB",
-      "minZoom": 32,
-      "title": "New Zealand 10m Satellite Imagery (2020-2021)",
-      "category": "Satellite Imagery"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/nz_satellite_2021-2022_10m_RGB/01G73E4AMSQ91TXQ3KC90NNPA0",
       "3857": "s3://linz-basemaps/3857/nz_satellite_2021-2022_10m_RGB/01G73E5DZKE9NSW6E41QQRT28T",
       "name": "nz_satellite_2021-2022_10m_RGB",
@@ -101,14 +93,6 @@
       "category": "Satellite Imagery"
     },
     {
-      "2193": "s3://linz-basemaps/2193/tasman_rural_2001-2002_1m_RGB/01F6P1TJ28B0HSRV2MNTBFSMKA",
-      "3857": "s3://linz-basemaps/3857/tasman_rural_2001-2002_1m_RGB/01EE9646WHWA7X46KDRATVWY9Z",
-      "name": "tasman_rural_2001-2002_1m_RGB",
-      "minZoom": 32,
-      "title": "Tasman 1m Rural Aerial Photos (2001-2002)",
-      "category": "Rural Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/tasman_rural_2004-2005_1m_RGB/01F6P1TQVSC7QRF1R3JAT893ZS",
       "3857": "s3://linz-basemaps/3857/tasman_rural_2004-2005_1m_RGB/01EE962ZB3Z6Y7GVZ28XCWJ9JB",
       "name": "tasman_rural_2004-2005_1m_RGB",
@@ -125,35 +109,11 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/tasman_rural_2009-2010_0-50m_RGBA/01F6P1TWRFSGJ65V9Z0YXX4DHY",
-      "3857": "s3://linz-basemaps/3857/tasman_rural_2009-2010_0-50m_RGBA/01ED83CJ5ZT8SAGQKFT9MM59XR",
-      "name": "tasman_rural_2009-2010_0-50m_RGBA",
-      "minZoom": 32,
-      "title": "Tasman 0.5m Rural Aerial Photos (2009-2010)",
-      "category": "Rural Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/auckland_rural_2010-2012_0-50m_RGBA/01F66DT3ZBYZZM6R0AF9Q2989R",
       "3857": "s3://linz-basemaps/3857/auckland_rural_2010-2012_0-50m_RGBA/01ED81BNAX2ESPMV59YPC3AQ2C",
       "name": "auckland_rural_2010-2012_0-50m_RGBA",
       "minZoom": 13,
       "title": "Auckland 0.5m Rural Aerial Photos (2010-2012)",
-      "category": "Rural Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/bay-of-plenty_rural_2011-2012_0-25m_RGBA/01F66E1BB777Z4GN4PAW44FGFA",
-      "3857": "s3://linz-basemaps/3857/bay-of-plenty_rural_2011-2012_0-25m_RGBA/01EDMTQXYCBANNYTKD4VK6C2GK",
-      "name": "bay-of-plenty_rural_2011-2012_0-25m_RGBA",
-      "minZoom": 32,
-      "title": "Bay of Plenty 0.25m Rural Aerial Photos (2011-2012)",
-      "category": "Rural Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/marlborough_rural_2011-2012_0-40m_RGBA/01F6P1CMT137757Y7M473TP4MG",
-      "3857": "s3://linz-basemaps/3857/marlborough_rural_2011-2012_0-40m_RGBA/01ED82KF10YWWCA59936P87R9B",
-      "name": "marlborough_rural_2011-2012_0-40m_RGBA",
-      "minZoom": 32,
-      "title": "Marlborough 0.4m Rural Aerial Photos (2011-2012)",
       "category": "Rural Aerial Photos"
     },
     {
@@ -165,43 +125,11 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/gisborne_rural_2012-2013_0-40m_RGBA/01F6P153BFK34RSZZWPX9PRKS8",
-      "3857": "s3://linz-basemaps/3857/gisborne_rural_2012-2013_0-40m_RGBA/01EDMTSQF19FQB09MS46ZFWWRM",
-      "name": "gisborne_rural_2012-2013_0-40m_RGBA",
-      "minZoom": 32,
-      "title": "Gisborne 0.4m Rural Aerial Photos (2012-2013)",
-      "category": "Rural Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/waikato_rural_2012-2013_0-50m_RGBA/01F6P1XPDV00F86GA8J626Y3BM",
-      "3857": "s3://linz-basemaps/3857/waikato_rural_2012-2013_0-50m_RGBA/01ED83K3YEJ0FSG0DHCFTVBEF7",
-      "name": "waikato_rural_2012-2013_0-50m_RGBA",
-      "minZoom": 32,
-      "title": "Waikato 0.5m Rural Aerial Photos (2012-2013)",
-      "category": "Rural Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/canterbury_rural_2013-2014_0-40m_RGBA/01F66E9VVX07WFC1C5Y05S4JXM",
       "3857": "s3://linz-basemaps/3857/canterbury_rural_2013-2014_0-40m_RGBA/01ED81YFYF0D76RZRH9FHF7JDN",
       "name": "canterbury_rural_2013-2014_0-40m_RGBA",
       "minZoom": 13,
       "title": "Canterbury 0.4m Rural Aerial Photos (2013-2014)",
-      "category": "Rural Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/dunedin_rural_2013_0-40m_RGBA/01F6P12CMF8AKCDGVCGRB06B0G",
-      "3857": "s3://linz-basemaps/3857/dunedin_rural_2013_0-40m_RGBA/01ED8265AEHZM2DHB43GBFE5BG",
-      "name": "dunedin_rural_2013_0-40m_RGBA",
-      "minZoom": 32,
-      "title": "Dunedin 0.4m Rural Aerial Photos (2013)",
-      "category": "Rural Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/otago_rural_2013-2014_0-40m_RGBA/01F6P1MWWWTB2CE6FSCWPX6AKR",
-      "3857": "s3://linz-basemaps/3857/otago_rural_2013-2014_0-40m_RGBA/01ED8312YJGXG5195GMTGY9MNK",
-      "name": "otago_rural_2013-2014_0-40m_RGBA",
-      "minZoom": 32,
-      "title": "Otago 0.4m Rural Aerial Photos (2013-2014)",
       "category": "Rural Aerial Photos"
     },
     {
@@ -221,35 +149,11 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/hawkes-bay_rural_2014-2015_0-30m_RGBA/01F6P182DFPVC4HCAKPP42PCWN",
-      "3857": "s3://linz-basemaps/3857/hawkes-bay_rural_2014-2015_0-30m_RGBA/01ED82B3R581HMXNDS7HP3ATQ2",
-      "name": "hawkes-bay_rural_2014-2015_0-30m_RGBA",
-      "minZoom": 32,
-      "title": "Hawke's Bay 0.3m Rural Aerial Photos (2014-2015)",
-      "category": "Rural Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/northland_rural_2014-16_0-4m/01F6P1JB8GFYFC08W3AK9KFGJW",
       "3857": "s3://linz-basemaps/3857/northland_rural_2014-16_0-4m/01ED82WK4A955T96RV5NWEN3R6",
       "name": "northland_rural_2014-16_0-4m",
       "minZoom": 13,
       "title": "Northland 0.4m Rural Aerial Photos (2014-2016)",
-      "category": "Rural Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/bay-of-plenty_urban_2014-15_0-125m/01F66E4JBVW1AW4VKGRN95SDGZ",
-      "3857": "s3://linz-basemaps/3857/bay-of-plenty_urban_2014-15_0-125m/01ED81RPD7YEYNTPM2WZZK3X1A",
-      "name": "bay-of-plenty_urban_2014-15_0-125m",
-      "minZoom": 32,
-      "title": "Bay of Plenty 0.125m Urban Aerial Photos (2014-2015)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/bay-of-plenty_rural_2015-17_0-25m/01F66E2MGVQY9F4WXRYDRWRGPE",
-      "3857": "s3://linz-basemaps/3857/bay-of-plenty_rural_2015-17_0-25m/01ED81P0KGVWJP2XHDKJJRYNQM",
-      "name": "bay-of-plenty_rural_2015-17_0-25m",
-      "minZoom": 32,
-      "title": "Bay of Plenty 0.25m Rural Aerial Photos (2015-2017)",
       "category": "Rural Aerial Photos"
     },
     {
@@ -261,22 +165,6 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/manawatu-whanganui_rural_2015-16_0-3m/01F6P1B7SH0X2FETDDT3RWT9Q9",
-      "3857": "s3://linz-basemaps/3857/manawatu-whanganui_rural_2015-16_0-3m/01ED82HKA5T8V6S1KZ4WN9EFNN",
-      "name": "manawatu-whanganui_rural_2015-16_0-3m",
-      "minZoom": 32,
-      "title": "Manawatū-Whanganui 0.3m Rural Aerial Photos (2015-2016)",
-      "category": "Rural Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/marlborough_rural_2015-2016_0-20m_RGBA/01F6P1D8DJGBN4QNAB2Y64DVV3",
-      "3857": "s3://linz-basemaps/3857/marlborough_rural_2015-2016_0-20m_RGBA/01ED82MG0Q6A8VFAJSY7Q543N5",
-      "name": "marlborough_rural_2015-2016_0-20m_RGBA",
-      "minZoom": 32,
-      "title": "Marlborough 0.2m Rural Aerial Photos (2015-2016)",
-      "category": "Rural Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/southland-central-otago_rural_2015-2017_0-40m_RGB/01F6P1RQRT6N94DDKGRCSYKM6R",
       "3857": "s3://linz-basemaps/3857/southland-central-otago_rural_2015-2017_0-40m_RGB/01ED83A271YNKAW0KRH17RPMMV",
       "name": "southland-central-otago_rural_2015-2017_0-40m_RGB",
@@ -285,27 +173,11 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/tasman_rural_2015-16_0-3m/01F6P1V269CD5Z3Z5EC0Q8P7V6",
-      "3857": "s3://linz-basemaps/3857/tasman_rural_2015-16_0-3m/01ED83CXGMGPXTF67SETE7YBWP",
-      "name": "tasman_rural_2015-16_0-3m",
-      "minZoom": 32,
-      "title": "Tasman 0.3m Rural Aerial Photos (2015-2016)",
-      "category": "Rural Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/west-coast_rural_2015-16_0-3m/01F6P21PNQC7D67W5SHQF806Z3",
       "3857": "s3://linz-basemaps/3857/west-coast_rural_2015-16_0-3m/01ED83TT0ZHKXTPFXEGFJHP2M5",
       "name": "west-coast_rural_2015-16_0-3m",
       "minZoom": 13,
       "title": "West Coast 0.3m Rural Aerial Photos (2015-2016)",
-      "category": "Rural Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/bay-of-plenty_rural_2016-17_0-3m/01F66E3G0Z8DNKWXG5M55QNW9G",
-      "3857": "s3://linz-basemaps/3857/bay-of-plenty_rural_2016-17_0-3m/01ED81Q2AS5K0RPNRCRQ33YAYW",
-      "name": "bay-of-plenty_rural_2016-17_0-3m",
-      "minZoom": 32,
-      "title": "Bay of Plenty 0.3m Rural Aerial Photos (2016-2017)",
       "category": "Rural Aerial Photos"
     },
     {
@@ -323,30 +195,6 @@
       "minZoom": 13,
       "title": "Kaikōura Earthquake 0.3m Rural Aerial Photos (2016-2017)",
       "category": "Event"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/manawatu-whanganui_rural_2016-17_0-3m/01F6P1BSQ6V27WZK0KM56M4Z1C",
-      "3857": "s3://linz-basemaps/3857/manawatu-whanganui_rural_2016-17_0-3m/01ED82JQASJDFZ6XEM018RJQN0",
-      "name": "manawatu-whanganui_rural_2016-17_0-3m",
-      "minZoom": 32,
-      "title": "Manawatū-Whanganui 0.3m Rural Aerial Photos (2016-2017)",
-      "category": "Rural Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/taranaki_rural_2016-17_0-3m/01F6P1SZXEN3X5SDKT7XRQHEGY",
-      "3857": "s3://linz-basemaps/3857/taranaki_rural_2016-17_0-3m/01ED83B7TAK5SBKVYFJZMTE9AV",
-      "name": "taranaki_rural_2016-17_0-3m",
-      "minZoom": 32,
-      "title": "Taranaki 0.3m Rural Aerial Photos (2016-2018)",
-      "category": "Rural Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/tasman_rural_2016-17_0-3m/01F6P1V84P2HJ1YB0D5X1CSWJH",
-      "3857": "s3://linz-basemaps/3857/tasman_rural_2016-17_0-3m/01ED83DC7MCMBCRNN45E07HCHH",
-      "name": "tasman_rural_2016-17_0-3m",
-      "minZoom": 32,
-      "title": "Tasman 0.3m Rural Aerial Photos (2016-2017)",
-      "category": "Rural Aerial Photos"
     },
     {
       "2193": "s3://linz-basemaps/2193/wellington_rural_2021_0-3m_RGB/01FB82NZY0ASDQBKT28DSXS8XC",
@@ -397,14 +245,6 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/hawkes-bay_rural_2019-2020_0-3m_RGB/01FC200TCKR7ZTJEN6Q8ZJAET1",
-      "3857": "s3://linz-basemaps/3857/hawkes-bay_rural_2019-2020_0-3m_RGB/01FC1ZY5V4XCEXDSWT3FE3A8VM",
-      "name": "hawkes-bay_rural_2019-2020_0-3m_RGB",
-      "minZoom": 32,
-      "title": "Hawke's Bay 0.3m Rural Aerial Photos (2019-2020)",
-      "category": "Rural Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/nelson_rural_2018-19_0-3m/01F6P1FJNXVVTS7HC3VS3FHEYX",
       "3857": "s3://linz-basemaps/3857/nelson_rural_2018-19_0-3m/01ED82T5HM0H275QJPMDQN0JFJ",
       "name": "nelson_rural_2018-19_0-3m",
@@ -418,14 +258,6 @@
       "name": "tasman_rural_2018-19_0-3m",
       "minZoom": 13,
       "title": "Tasman 0.3m Rural Aerial Photos (2018-2019)",
-      "category": "Rural Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/bay-of-plenty_rural_2019_0-3m/01F66E4BR5XTJENFTSACWB55DM",
-      "3857": "s3://linz-basemaps/3857/bay-of-plenty_rural_2019_0-3m/01ED81R5BX4EB3W7TB3Z8ZE89S",
-      "name": "bay-of-plenty_rural_2019_0-3m",
-      "minZoom": 32,
-      "title": "Bay of Plenty 0.3m Rural Aerial Photos (2019)",
       "category": "Rural Aerial Photos"
     },
     {
@@ -549,30 +381,6 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/wellington_2016-2017_0.3m/01GYDZV2M9EBXKZAFW97K4HHMW",
-      "3857": "s3://linz-basemaps/3857/wellington_2016-2017_0.3m/01GYDZW8JYHN2NX0JMTKDEZBY5",
-      "name": "wellington_2016-2017_0.3m",
-      "minZoom": 32,
-      "title": "Wellington 0.3m Rural Aerial Photos (2016-2017)",
-      "category": "Rural Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/waikato_2021-2023_0.3m/01GR01J88ME71DQHG17PX0KHBJ",
-      "3857": "s3://linz-basemaps/3857/waikato_2021-2023_0.3m/01GR01MDBQ033559AM244BZQTY",
-      "name": "waikato_2021-2023_0.3m",
-      "title": "Waikato 0.3m Rural Aerial Photos (2021-2023) - Draft",
-      "minZoom": 32,
-      "category": "Rural Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/selwyn_urban_2012-2013_0-125m_RGBA/01F6P1Q0MQC2FXNDVZJGT88CC2",
-      "3857": "s3://linz-basemaps/3857/selwyn_urban_2012-2013_0-125m_RGBA/01ED8355C00DRTSNAQ04AHJDDZ",
-      "name": "selwyn_urban_2012-2013_0-125m_RGBA",
-      "minZoom": 32,
-      "title": "Selwyn 0.125m Urban Aerial Photos (2012-2013)",
-      "category": "Urban Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/timaru_urban_2012-2013_0-075m_RGBA/01F6P1XAGNDZVM0DH9JCFSE7QB",
       "3857": "s3://linz-basemaps/3857/timaru_urban_2012-2013_0-075m_RGBA/01ED83HWB82K047N1KYK9A5SKD",
       "name": "timaru_urban_2012-2013_0-075m_RGBA",
@@ -589,75 +397,11 @@
       "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/waimakariri_urban_2013-2014_0-075m_RGBA/01F6P20317FNJJSB1KJFH7Y35Y",
-      "3857": "s3://linz-basemaps/3857/waimakariri_urban_2013-2014_0-075m_RGBA/01ED83PPQFH8Z8HNY1WV7W4SS5",
-      "name": "waimakariri_urban_2013-2014_0-075m_RGBA",
-      "minZoom": 32,
-      "title": "Waimakariri 0.075m Urban Aerial Photos (2013-2014)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/hastings-district_urban_2014-2015_0-10m_RGB/01F6P172EQ3JF930CN3XNVVVJ9",
-      "3857": "s3://linz-basemaps/3857/hastings-district_urban_2014-2015_0-10m_RGB/01EDN0YH2TM1B5NWHR4RHGBMPF",
-      "name": "hastings-district_urban_2014-2015_0-10m_RGB",
-      "minZoom": 32,
-      "title": "Hastings District 0.1m Urban Aerial Photos (2014-2015)",
-      "category": "Urban Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/northland_urban_2014-2015_0-10m_RGBA/01F6P1K57WYSAZVCTP35DVKG4B",
       "3857": "s3://linz-basemaps/3857/northland_urban_2014-2015_0-10m_RGBA/01ED82YEHRRNR3YQC55TJY37E6",
       "name": "northland_urban_2014-2015_0-10m_RGBA",
       "minZoom": 14,
       "title": "Northland 0.1m Urban Aerial Photos (2014-2015)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/palmerston-north-city_urban_2014-15_0-125m/01F6P1P22165F058BN82D3ZY8Q",
-      "3857": "s3://linz-basemaps/3857/palmerston-north-city_urban_2014-15_0-125m/01ED8346J2H15Z24G6P9SZ7S0P",
-      "name": "palmerston-north-city_urban_2014-15_0-125m",
-      "minZoom": 32,
-      "title": "Palmerston North 0.125m Urban Aerial Photos (2015)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/waikato_urban_2014_0-10m_RGBA/01F6P1ZQZ4X5GHHX544CJJ3NNH",
-      "3857": "s3://linz-basemaps/3857/waikato_urban_2014_0-10m_RGBA/01ED83NZS98MYTMWM4D1EVZ07T",
-      "name": "waikato_urban_2014_0-10m_RGBA",
-      "minZoom": 32,
-      "title": "Waikato District 0.1m Urban Aerial Photos (2014)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/wairoa_urban_2014-2015_0-10m_RGBA/01F6P20PT6TN7XVJGPSA7NPQ93",
-      "3857": "s3://linz-basemaps/3857/wairoa_urban_2014-2015_0-10m_RGBA/01ED83R64ZX665P14R805CJVE2",
-      "name": "wairoa_urban_2014-2015_0-10m_RGBA",
-      "minZoom": 32,
-      "title": "Wairoa 0.1m Urban Aerial Photos (2014-2015)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/bay-of-plenty_urban_2015-16_0-125m/01F66E63QY3BR3W3ARXRBPK1NP",
-      "3857": "s3://linz-basemaps/3857/bay-of-plenty_urban_2015-16_0-125m/01ED81TJP9G5Q6VJKG921RT0QS",
-      "name": "bay-of-plenty_urban_2015-16_0-125m",
-      "minZoom": 32,
-      "title": "Bay of Plenty 0.125m Urban Aerial Photos (2015-2016)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/bay-of-plenty_urban_2015-16_0-1m/01F66E757Y78C33NKN50W9PW5C",
-      "3857": "s3://linz-basemaps/3857/bay-of-plenty_urban_2015-16_0-1m/01ED81VN7AJ586W5HK2BSPHAPH",
-      "name": "bay-of-plenty_urban_2015-16_0-1m",
-      "minZoom": 32,
-      "title": "Bay of Plenty 0.1m Urban Aerial Photos (2015-2016)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/christchurch_urban_2015-2016_0-075m_RGBA/01F6P0KPJJK4MJ3JZVS0DJK0Q7",
-      "3857": "s3://linz-basemaps/3857/christchurch_urban_2015-2016_0-075m_RGBA/01EWEQ26HDCMDQKTZ1RHSXPBEW",
-      "name": "christchurch_urban_2015-2016_0-075m_RGBA",
-      "minZoom": 32,
-      "title": "Christchurch 0.075m Urban Aerial Photos (2015-2016)",
       "category": "Urban Aerial Photos"
     },
     {
@@ -669,62 +413,6 @@
       "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/waimakariri_urban_2015-2016_0-075m_RGBA/01F6P20ANWJDXNWCTHBTK3MJNF",
-      "3857": "s3://linz-basemaps/3857/waimakariri_urban_2015-2016_0-075m_RGBA/01ED83QD75BDF3D46932B3ZKZD",
-      "name": "waimakariri_urban_2015-2016_0-075m_RGBA",
-      "minZoom": 32,
-      "title": "Waimakariri 0.075m Urban Aerial Photos (2015-2016)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/whanganui_urban_2015-16_0-1m/01F63WK62MCAAH3Q1RQ21EGHJ1",
-      "3857": "s3://linz-basemaps/3857/whanganui_urban_2015-16_0-1m/01ED83WV5VV20JWAP0MT3D7W4W",
-      "name": "whanganui_urban_2015-16_0-1m",
-      "minZoom": 32,
-      "title": "Whanganui 0.1m Urban Aerial Photos (2015-2016)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/hamilton_urban_2016-17_0-1m/01F6P16P7FMHSDAWX2VM3PKAHS",
-      "3857": "s3://linz-basemaps/3857/hamilton_urban_2016-17_0-1m/01EDAN1CYCXAEMG21PB6VCD0KX",
-      "name": "hamilton_urban_2016-17_0-1m",
-      "minZoom": 32,
-      "title": "Hamilton 0.1m Urban Aerial Photos (2016-2017)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/invercargill_urban_2016_0-1m/01F6P1A7YH7JXE247G85F25WG6",
-      "3857": "s3://linz-basemaps/3857/invercargill_urban_2016_0-1m/01ED82E60KN099T9A8V11KCSK0",
-      "name": "invercargill_urban_2016_0-1m",
-      "minZoom": 32,
-      "title": "Invercargill 0.1m Urban Aerial Photos (2016)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/invercargill_urban_2016_0-05m/01F6P1A2VKHHFQW764DRW93G4Y",
-      "3857": "s3://linz-basemaps/3857/invercargill_urban_2016_0-05m/01ED82DPKVVWA818DY9QQ9GS0J",
-      "name": "invercargill_urban_2016_0-05m",
-      "minZoom": 32,
-      "title": "Invercargill 0.05m Urban Aerial Photos (2016)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/palmerston-north_urban_2016-17_1-125m/01F6P1P8H7KNRQQR0ADDKQRJ6S",
-      "3857": "s3://linz-basemaps/3857/palmerston-north_urban_2016-17_1-125m/01ED833N7FD05YRW6ZR5799SAZ",
-      "name": "palmerston-north_urban_2016-17_1-125m",
-      "minZoom": 32,
-      "title": "Palmerston North 0.125m Urban Aerial Photos (2017)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/porirua_urban_2016_0-075m/01F6P1PP0S3T9HTDTDJW7ADAEH",
-      "3857": "s3://linz-basemaps/3857/porirua_urban_2016_0-075m/01ED834RYVP97AYQVDDQ6MJECY",
-      "name": "porirua_urban_2016_0-075m",
-      "minZoom": 32,
-      "title": "Porirua 0.075m Urban Aerial Photos (2016)",
-      "category": "Urban Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/auckland_urban_2017_0-075m/01F66DXCRR1CFTFQTE5R3525EJ",
       "3857": "s3://linz-basemaps/3857/auckland_urban_2017_0-075m/01ED81HZRR86YBB8A0ZQRABP96",
       "name": "auckland_urban_2017_0-075m",
@@ -733,51 +421,11 @@
       "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/auckland_2015-2016_0.075m/01GYDZV2MH0QVT8XXDMNMYK0DP",
-      "3857": "s3://linz-basemaps/3857/auckland_2015-2016_0.075m/01GYDZYBK72ED9ACTRSZNKS7GP",
-      "name": "auckland_2015-2016_0.075m",
-      "minZoom": 32,
-      "title": "Auckland 0.075m Urban Aerial Photos (2015-2016)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/central-hawkes-bay_urban_2017-18_0-1m/01F66EDQC993D73W17EG40HJ2N",
-      "3857": "s3://linz-basemaps/3857/central-hawkes-bay_urban_2017-18_0-1m/01ED823PTAVX9DQ7GE9WBACX8C",
-      "name": "central-hawkes-bay_urban_2017-18_0-1m",
-      "minZoom": 32,
-      "title": "Central Hawke's Bay 0.1m Urban Aerial Photos (2017-2018)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/gisborne_urban_2017-18_0-1m/01F6P168K626GCA0RY790XHRVY",
-      "3857": "s3://linz-basemaps/3857/gisborne_urban_2017-18_0-1m/01ECTS33A3VYA5A8ZBHCDFYFR8",
-      "name": "gisborne_urban_2017-18_0-1m",
-      "minZoom": 32,
-      "title": "Gisborne 0.1m Urban Aerial Photos (2017-2018)",
-      "category": "Urban Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/gisborne_2022-2023_0.1m/01GWGH1WFBNG4WFSFVR2XK316S",
       "3857": "s3://linz-basemaps/3857/gisborne_2022-2023_0.1m/01GWGH2ED4XWY7TB96Q397FBJB",
       "name": "gisborne_2022-2023_0.1m",
       "minZoom": 14,
       "title": "Gisborne 0.1m Urban Aerial Photos (2022-2023)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/hastings-district_urban_2017-18_0-1m/01F6P17PSJ1SWNYV2V28922WKY",
-      "3857": "s3://linz-basemaps/3857/hastings-district_urban_2017-18_0-1m/01ED82A7KFS8RMNPRYDQ60MCQ1",
-      "name": "hastings-district_urban_2017-18_0-1m",
-      "minZoom": 32,
-      "title": "Hastings 0.1m Urban Aerial Photos (2017-2018)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/hutt-city_urban_2017_0-10m/01F6P19XT96PPWHAABTAGXGV3N",
-      "3857": "s3://linz-basemaps/3857/hutt-city_urban_2017_0-10m/01ED82D0F9NBGVM9WRRT46AV1V",
-      "name": "hutt-city_urban_2017_0-10m",
-      "minZoom": 32,
-      "title": "Hutt City 0.10m Urban Aerial Photos (2017)",
       "category": "Urban Aerial Photos"
     },
     {
@@ -805,46 +453,6 @@
       "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/napier-city_urban_2017-18_0-05m/01F6P1F7BT85M2T5S01FXWAPPD",
-      "3857": "s3://linz-basemaps/3857/napier-city_urban_2017-18_0-05m/01ED82S7R88B0CGQWZKH4V7R2H",
-      "name": "napier-city_urban_2017-18_0-05m",
-      "minZoom": 32,
-      "title": "Napier 0.05m Urban Aerial Photos (2017-2018)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/napier-city_urban_2017-18_0-1m/01F6P1FCJZWD8JY7DJEDEB45K7",
-      "3857": "s3://linz-basemaps/3857/napier-city_urban_2017-18_0-1m/01ED82SKPVV12M4RYHRK08DWG4",
-      "name": "napier-city_urban_2017-18_0-1m",
-      "minZoom": 32,
-      "title": "Napier 0.1m Urban Aerial Photos (2017-2018)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/new-plymouth_urban_2017_0-10m/01F6P1FPAFD6D8SRHZX3GFJFWY",
-      "3857": "s3://linz-basemaps/3857/new-plymouth_urban_2017_0-10m/01ED82VQR8M1STH3EPMF3E8KFQ",
-      "name": "new-plymouth_urban_2017_0-10m",
-      "minZoom": 32,
-      "title": "New Plymouth 0.10m Urban Aerial Photos (2017)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/tasman_urban_2017_0-075m/01F6P1VT8BV5T0DPVSG1VEJX0Y",
-      "3857": "s3://linz-basemaps/3857/tasman_urban_2017_0-075m/01ED83ENCYFX7KFVKH0S7SK92W",
-      "name": "tasman_urban_2017_0-075m",
-      "minZoom": 32,
-      "title": "Tasman 0.075m Urban Aerial Photos (2017)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/tasman_urban_2017_0-1m/01F6P1VW99KC0PEBYPDAZ3RNKK",
-      "3857": "s3://linz-basemaps/3857/tasman_urban_2017_0-1m/01ED83F2SBS02QP80KSQ3GRR92",
-      "name": "tasman_urban_2017_0-1m",
-      "minZoom": 32,
-      "title": "Tasman 0.1m Urban Aerial Photos (2017)",
-      "category": "Urban Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/tasman_urban_2020_0-1m_RGB/01FDQV9ZW9ETAQB2VJG26WGHP3",
       "3857": "s3://linz-basemaps/3857/tasman_urban_2020_0-1m_RGB/01FDQVCGEJA1YQJBT14AVZ3TJC",
       "name": "tasman_urban_2020_0-1m_RGB",
@@ -858,54 +466,6 @@
       "name": "tasman_urban_2020-2021_0-075m_RGB",
       "minZoom": 14,
       "title": "Tasman 0.075m Urban Aerial Photos (2020-2021)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/tauranga_urban_2017_0-1m/01F6P1W5KQ18HM9ZM9N35CXJ91",
-      "3857": "s3://linz-basemaps/3857/tauranga_urban_2017_0-1m/01ED83FS8PC1YC7Y7WKJ90P5TN",
-      "name": "tauranga_urban_2017_0-1m",
-      "minZoom": 32,
-      "title": "Tauranga 0.1m Urban Aerial Photos (2017)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/upper-hutt_urban_2017_0-10m/01F6P1XK2AVYDJ66NY2MKSEXW1",
-      "3857": "s3://linz-basemaps/3857/upper-hutt_urban_2017_0-10m/01ED83JPKMXF5TVKFD4RP91ZRB",
-      "name": "upper-hutt_urban_2017_0-10m",
-      "minZoom": 32,
-      "title": "Upper Hutt 0.1m Urban Aerial Photos (2017)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/wellington_urban_2017_0-10m/01F6P21F387PCQQB757VZ4E6GS",
-      "3857": "s3://linz-basemaps/3857/wellington_urban_2017_0-10m/01ED83SQ85A7B1MJ42BK13EGCQ",
-      "name": "wellington_urban_2017_0-10m",
-      "minZoom": 32,
-      "title": "Wellington 0.1m Urban Aerial Photos (2017)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/whanganui_urban_2017-18_0-075m/01F6P22D2ENZ889MYXP3WN950N",
-      "3857": "s3://linz-basemaps/3857/whanganui_urban_2017-18_0-075m/01ED83XAAFYRNDQFZJRBSH21TF",
-      "name": "whanganui_urban_2017-18_0-075m",
-      "minZoom": 32,
-      "title": "Whanganui 0.075m Urban Aerial Photos (2017)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/christchurch_urban_2018_0-075m/01F6P0NTCAD62YAXJ1DKKK2AY3",
-      "3857": "s3://linz-basemaps/3857/christchurch_urban_2018_0-075m/01ED825VGXM6K9YX52DP7SMXQE",
-      "name": "christchurch_urban_2018_0-075m",
-      "minZoom": 32,
-      "title": "Christchurch 0.075m Urban Aerial Photos (2018)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/christchurch_urban_2018-2019_0-075m_RGB/01F6P0MJKAVT7XTXXPS19FQP81",
-      "3857": "s3://linz-basemaps/3857/christchurch_urban_2018-2019_0-075m_RGB/01EMFHZ28DMWDCJ7VEE15HTYPZ",
-      "name": "christchurch_urban_2018-2019_0-075m_RGB",
-      "minZoom": 32,
-      "title": "Christchurch 0.075m Urban Aerial Photos (2018-2019)",
       "category": "Urban Aerial Photos"
     },
     {
@@ -933,22 +493,6 @@
       "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/palmerston-north_urban_2018-2019_0-125m_RGB/01F6P1PF375AH4BPQ9PTQA7GYD",
-      "3857": "s3://linz-basemaps/3857/palmerston-north_urban_2018-2019_0-125m_RGB/01ESF5MHFP5RCKQW94Z2947CES",
-      "name": "palmerston-north_urban_2018-2019_0-125m_RGB",
-      "minZoom": 32,
-      "title": "Palmerston North 0.125m Urban Aerial Photos (2018)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/bay-of-plenty_urban_2018-19_0-1m/01F66E7K4ESMSWZ1CNMCQ8B700",
-      "3857": "s3://linz-basemaps/3857/bay-of-plenty_urban_2018-19_0-1m/01ED81W4KDQQRW9PEQ9KS7T8DV",
-      "name": "bay-of-plenty_urban_2018-19_0-1m",
-      "minZoom": 32,
-      "title": "Bay of Plenty 0.1m Urban Aerial Photos (2018-2019)",
-      "category": "Urban Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/selwyn_urban_2018-2019_0-075m_RGB/01F6P1Q9FCCZ9EH7HE7X2SK2Q1",
       "3857": "s3://linz-basemaps/3857/selwyn_urban_2018-2019_0-075m_RGB/01ESPVY6HBS1SH79ZH24RW7ZSQ",
       "name": "selwyn_urban_2018-2019_0-075m_RGB",
@@ -973,22 +517,6 @@
       "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/waimate_urban_2018_0-075m_RGB/01F6P20H4Y55WG0SW5RXNP6Y9J",
-      "3857": "s3://linz-basemaps/3857/waimate_urban_2018_0-075m_RGB/01ESF5HA3BXN5E50Z0608KJGTG",
-      "name": "waimate_urban_2018_0-075m_RGB",
-      "minZoom": 32,
-      "title": "Waimate 0.075m Urban Aerial Photos (2018)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/hamilton_urban_2019_0-1m/01F6P16V72XPFJK2X5V68YYM0X",
-      "3857": "s3://linz-basemaps/3857/hamilton_urban_2019_0-1m/01ED8284FFT9RYZ0F7XTKD64D4",
-      "name": "hamilton_urban_2019_0-1m",
-      "minZoom": 32,
-      "title": "Hamilton 0.1m Urban Aerial Photos (2019)",
-      "category": "Urban Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/manawatu_urban_2019_0-125m/01F6P1C55PMBG08K4W549J8EQ8",
       "3857": "s3://linz-basemaps/3857/manawatu_urban_2019_0-125m/01ED82GV8E3DRWQ86D80SN1FPW",
       "name": "manawatu_urban_2019_0-125m",
@@ -997,27 +525,11 @@
       "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/banks-peninsula_urban_2019-2020_0-075m_RGB/01FMK2R7RYJHP0DVXJMZ3M0QDY",
-      "3857": "s3://linz-basemaps/3857/banks-peninsula_urban_2019-2020_0-075m_RGB/01FMK2SN9GVFBEW48N4V5E41ZQ",
-      "name": "banks-peninsula_urban_2019-2020_0-075m_RGB",
-      "minZoom": 32,
-      "title": "Banks Peninsula 0.075m Urban Aerial Photos (2019-2020)",
-      "category": "Urban Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/porirua_urban_2020_0-10m_RGB/01F6P1PTH5SBS82G5VVKYHFR63",
       "3857": "s3://linz-basemaps/3857/porirua_urban_2020_0-10m_RGB/01ESM35CSPVJD54ZMT4T5FVV29",
       "name": "porirua_urban_2020_0-10m_RGB",
       "minZoom": 14,
       "title": "Porirua 0.1m Urban Aerial Photos (2020)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/ashburton_urban_2020_0-075m_RGB/01FPV7HMJN6RQNSANMZ2SRY0BK",
-      "3857": "s3://linz-basemaps/3857/ashburton_urban_2020_0-075m_RGB/01FPV7ABAWS4ZCWN91VR7SDK0A",
-      "name": "ashburton_urban_2020_0-075m_RGB",
-      "minZoom": 32,
-      "title": "Ashburton 0.075m Urban Aerial Photos (2020)",
       "category": "Urban Aerial Photos"
     },
     {
@@ -1106,14 +618,6 @@
       "name": "timaru_urban_2020_0-075m_RGB",
       "minZoom": 14,
       "title": "Timaru 0.075m Urban Aerial Photos (2020)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/waimate_urban_2020_0-075m_RGB/01FJB8FDBCP2R3VT7TJC1NWGFD",
-      "3857": "s3://linz-basemaps/3857/waimate_urban_2020_0-075m_RGB/01FJB8KPXHR48ZVDHE7M9PK6RH",
-      "name": "waimate_urban_2020_0-075m_RGB",
-      "minZoom": 32,
-      "title": "Waimate 0.075m Urban Aerial Photos (2020)",
       "category": "Urban Aerial Photos"
     },
     {
@@ -1253,14 +757,6 @@
       "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/tauranga_winter_2022_0.1m/01GK5GPDK50QX6XXQ44KJEDHAW",
-      "3857": "s3://linz-basemaps/3857/tauranga_winter_2022_0.1m/01GK5GQ48BAXY62JFW6CPAH5XX",
-      "name": "tauranga_winter_2022_0.1m",
-      "minZoom": 32,
-      "title": "Tauranga Winter 0.1m Urban Aerial Photos (2022)",
-      "category": "Urban Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/waimate_2021_0.075m/01GKSQ99D3KZ2NN9H7MWSABMNM",
       "3857": "s3://linz-basemaps/3857/waimate_2021_0.075m/01GKSQ9HMFNF4Z55QXCJ2Y2X0X",
       "name": "waimate_2021_0.075m",
@@ -1309,14 +805,6 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/kapiti-coast_2017_0.10m/01GYDZV2MK43PJNEVXPZSHDZ4F",
-      "3857": "s3://linz-basemaps/3857/kapiti-coast_2017_0.10m/01GYDZVZ557KRJP17670MJZ1T7",
-      "name": "kapiti-coast_2017_0.10m",
-      "title": "Kapiti Coast 0.10m Urban Aerial Photos (2017)",
-      "minZoom": 32,
-      "category": "Urban Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/whanganui_2022_0.075m/01GZMXEKG8QRB3W2TS4EXEGVR7",
       "3857": "s3://linz-basemaps/3857/whanganui_2022_0.075m/01GZMXF18WABTRJ2B3TZ20JPJZ",
       "name": "whanganui_2022_0.075m",
@@ -1345,54 +833,6 @@
       "maxZoom": 14,
       "title": "New Zealand 8m DEM Texture Shade (2012)",
       "category": "Elevation"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/top-of-the-south_flood_2022_0.15m/01GGDTRTDV2BA47P4TQ6CGWMFR",
-      "3857": "s3://linz-basemaps/3857/top-of-the-south_flood_2022_0.15m/01GGDTSGRK0Z4C70WXBYMEXK4X",
-      "name": "top-of-the-south_flood_2022_0.15m",
-      "minZoom": 32,
-      "title": "Top of the South Flood 0.15m Aerial Photos (2022)",
-      "category": "Event"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/north-island_2023_10m/01GV1YW3PFVAD8089Q96W69WYT",
-      "3857": "s3://linz-basemaps/3857/north-island_2023_10m/01GV1YWSQ3V9F2ZQ7KYCT6VR72",
-      "name": "north-island_2023_10m",
-      "title": "Cyclone Gabrielle North Island 10m Satellite Imagery (18-21 February 2023)",
-      "minZoom": 32,
-      "category": "Event"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/north-island-pre-cyclone-gabrielle_2022_10m/01GTFV298JMC5EDMA3YVJEPBEX",
-      "3857": "s3://linz-basemaps/3857/north-island-pre-cyclone-gabrielle_2022_10m/01GTFV2P4GH36AS9P3AZ88ABYY",
-      "name": "north-island-pre-cyclone-gabrielle_2022_10m",
-      "title": "Cyclone Gabrielle [Before] North Island 10m Satellite Imagery (22 November 2022)",
-      "minZoom": 32,
-      "category": "Event"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/north-island_2023_0.5m/01GW39PB2ZMJ5KADZSSP860WRS",
-      "3857": "s3://linz-basemaps/3857/north-island_2023_0.5m/01GW39S72PRNYN6MRRWF83T82E",
-      "name": "north-island_2023_0.5m",
-      "title": "Cyclone Gabrielle North Island 0.5m Satellite Imagery (21 February 2023 - 8 March 2023)",
-      "minZoom": 32,
-      "category": "Event"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/gisborne-cyclone-gabrielle_2023_0.2m/01GY6Q44QCM0YKFV5WBPYTVJA9",
-      "3857": "s3://linz-basemaps/3857/gisborne-cyclone-gabrielle_2023_0.2m/01GY6Q5N4E9AWDQA20QW472PMT",
-      "name": "gisborne-cyclone-gabrielle_2023_0.2m",
-      "title": "Cyclone Gabrielle Gisborne 0.2m Aerial Photos (20 February 2023 - 23 March 2023)",
-      "minZoom": 32,
-      "category": "Event"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/hawkes-bay-cyclone-gabrielle_2023_0.1m/01GTF2M1MDGF1WQK198M68HS2N",
-      "3857": "s3://linz-basemaps/3857/hawkes-bay-cyclone-gabrielle_2023_0.1m/01GTF2Q6YCZ67HAAAYRTVHGANY",
-      "name": "hawkes-bay-cyclone-gabrielle_2023_0.1m",
-      "title": "Cyclone Gabrielle Hawke's Bay 0.1m Aerial Photos (19-21 February 2023)",
-      "minZoom": 32,
-      "category": "Event"
     }
   ]
 }
