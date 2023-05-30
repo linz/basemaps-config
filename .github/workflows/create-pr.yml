@@ -6,27 +6,34 @@ on:
 jobs:
   create-pull-request:
     outputs:
-      pr_view: ${{ steps.check_pr.outputs.pr_view }}
+      pull_request_id: ${{ steps.check_pull_request.outputs.pull_request_id }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
       - name: Check Pull Request
-        id: check_pr
-        run: echo "pr_view=$(gh pr view --json url -q .url || echo "")" >> $GITHUB_OUTPUT
+        id: check_pull_request
+        run: |
+          echo "pull_request_id=$(gh pr view --json id -q .id)" >> $GITHUB_OUTPUT
+          echo "pull_request_state=$(gh pr view --json state -q .state)" >> $GITHUB_OUTPUT
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Pull Request
+        if: ${{ steps.check_pull_request.outputs.pull_request_state != 'OPEN' }}
         run: |
-          gh pr edit ${{ github.ref_name }} --title '${{ github.event.head_commit.message }}' --body '${{ github.event.head_commit.message }}' &&
+          gh pr edit ${{ github.ref_name }} \
+            --title '${{ github.event.head_commit.message }}' \
+            --body '${{ github.event.head_commit.message }}' &&
           gh pr reopen ${{ github.ref_name }} ||
-          gh pr create --base master --title '${{ github.event.head_commit.message }}' --body '${{ github.event.head_commit.message }}'
+          gh pr create --base master \
+            --title '${{ github.event.head_commit.message }}' \
+            --body '${{ github.event.head_commit.message }}'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   build:
     needs: [create-pull-request]
-    if: ${{!contains(needs.create-pull-request.outputs.pr_view, 'https://github.com/linz/basemaps-config/pull/')}}
+    if: ${{ needs.create-pull-request.outputs.pull_request_id != '' }}
     uses: ./.github/workflows/build.yml
     secrets: inherit

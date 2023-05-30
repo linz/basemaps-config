@@ -41,11 +41,11 @@ jobs:
         with:
           source: config/fonts/
           target: assets/fonts/
-          
+
       - name: (Build) Build Sprites
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} sprites --path $PWD/config/sprites/topographic/ --output $PWD/assets/sprites/
-        
+
       - name: (Build) Bundle Assets Into Cotar
         run: |
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle-assets --assets $PWD/assets/ --output $PWD/assets.tar.co
@@ -66,7 +66,7 @@ jobs:
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} bundle --config $PWD/config --output $PWD/config-staging.json --assets ${ASSETS_LOCATION_STAGING}
           CONFIG_HASH_STAGING=$(cat config-staging.json | jq .hash -r)
           echo "CONFIG_LOCATION_STAGING=s3://${BASEMAPS_STAGING_BUCKET}/config/config-${CONFIG_HASH_STAGING}.json.gz" >> $GITHUB_ENV
-      
+
       - name: (NonProd) Upload Hashed Assets
         run: |
           aws s3 cp ${ASSETS_HASH} ${ASSETS_LOCATION_STAGING}
@@ -127,7 +127,7 @@ jobs:
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
           aws s3 cp config.json.gz s3://${BASEMAPS_BUCKET}/config/config-latest.json.gz --content-encoding gzip
-  
+
       - name: (Prod - Config) Compare to DynamoDB
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         run: |
@@ -142,7 +142,7 @@ jobs:
         if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
         run: |
           [ ! -f changes.md ] || gh pr comment ${PR_NUMBER} --body-file changes.md
-        
+
   screenshot:
     permissions:
       id-token: write
@@ -167,7 +167,7 @@ jobs:
       - name: (Screenshot) Screenshot Pull Request Changes
         run: |
           docker run -p 5000:5000 -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} serve --config ${CONFIG_PATH} &
-          
+
           # Wait for the server to start
           timeout 30 bash -c 'while [[ "$(curl -s -o /dev/null -w ''%{http_code}'' http://localhost:5000/v1/version)" !=  "200" ]]; do sleep 0.5; done' || false
 
@@ -201,5 +201,5 @@ jobs:
         id: visual-snapshots-diff
         uses: blacha/action-visual-snapshot@v2
         with:
-          storage-prefix: "s3://linz-basemaps-screenshot"
-          storage-url: "https://d25mfjh9syaxsr.cloudfront.net"
+          storage-prefix: 's3://linz-basemaps-screenshot'
+          storage-url: 'https://d25mfjh9syaxsr.cloudfront.net'
