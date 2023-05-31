@@ -1,0 +1,14 @@
+{
+  "type": "raster",
+  "id": "ts_invercargill-urban-2016-0.1m",
+  "title": "Invercargill 0.1m Urban Aerial Photos (2016)",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/invercargill_urban_2016_0-1m/01F6P1A7YH7JXE247G85F25WG6",
+      "3857": "s3://linz-basemaps/3857/invercargill_urban_2016_0-1m/01ED82E60KN099T9A8V11KCSK0",
+      "name": "invercargill-urban-2016-0.1m",
+      "title": "Invercargill 0.1m Urban Aerial Photos (2016)",
+      "category": "Urban Aerial Photos"
+    }
+  ]
+}
