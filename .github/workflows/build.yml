@@ -55,7 +55,7 @@ jobs:
           echo "ASSETS_LOCATION=s3://${BASEMAPS_BUCKET}/assets/${ASSETS_HASH}" >> $GITHUB_ENV
 
       - name: (Build) AWS Configure
-        uses: aws-actions/configure-aws-credentials@v2.0.0
+        uses: aws-actions/configure-aws-credentials@v2.1.0
         with:
           aws-region: ap-southeast-2
           mask-aws-account-id: true
@@ -82,7 +82,7 @@ jobs:
           echo "config_path=${CONFIG_LOCATION_STAGING}" >> "$GITHUB_OUTPUT"
 
       - name: (NonProd) AWS Configure
-        uses: aws-actions/configure-aws-credentials@v2.0.0
+        uses: aws-actions/configure-aws-credentials@v2.1.0
         with:
           aws-region: ap-southeast-2
           mask-aws-account-id: true
@@ -98,7 +98,7 @@ jobs:
           docker run -v $PWD:$PWD ${DOCKER_AWS_ENV} ${BASEMAPS_CONTAINER} import --config ${CONFIG_LOCATION_STAGING} --commit
 
       - name: (Prod) AWS Configure
-        uses: aws-actions/configure-aws-credentials@v2.0.0
+        uses: aws-actions/configure-aws-credentials@v2.1.0
         if: github.ref == 'refs/heads/master' && github.event_name == 'push'
         with:
           aws-region: ap-southeast-2
@@ -158,7 +158,7 @@ jobs:
 
     steps:
       - name: (Screenshot) AWS Configure
-        uses: aws-actions/configure-aws-credentials@v2.0.0
+        uses: aws-actions/configure-aws-credentials@v2.1.0
         with:
           aws-region: ap-southeast-2
           mask-aws-account-id: true
@@ -191,7 +191,7 @@ jobs:
     timeout-minutes: 20
     steps:
       - name: AWS Configure
-        uses: aws-actions/configure-aws-credentials@v1.6.1
+        uses: aws-actions/configure-aws-credentials@v2.1.0
         with:
           aws-region: ap-southeast-2
           mask-aws-account-id: true
