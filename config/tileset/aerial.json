@@ -429,9 +429,9 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/bay-of-plenty_rural_2021_0-2m_RGB/01FKYB9A75DN79CED9P1YM38K0",
-      "3857": "s3://linz-basemaps/3857/bay-of-plenty_rural_2021_0-2m_RGB/01FKYB6ADZ4YHY340CDV5QAGTX",
-      "name": "bay-of-plenty_rural_2021_0-2m_RGB",
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_rural_2021_0-2m/01H3E4XFK8N1JYJCM8BHDQAJPQ",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_rural_2021_0-2m/01H3E4ZG0MJ0SABSSBW2MJXVNS",
+      "name": "bay-of-plenty_rural_2021_0-2m",
       "minZoom": 13,
       "title": "Bay of Plenty 0.2m Rural Aerial Photos (2021)",
       "category": "Rural Aerial Photos"
