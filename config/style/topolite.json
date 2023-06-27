@@ -930,26 +930,6 @@
       }
     },
     {
-      "id": "Buildings",
-      "type": "fill",
-      "source": "LINZ Basemaps",
-      "source-layer": "building",
-      "minzoom": 16,
-      "layout": { "visibility": "visible" },
-      "paint": {
-        "fill-color": {
-          "stops": [
-            [15, "#DBDBD9"],
-            [17, "#DBDBD9"],
-            [18, "#DBDBD9"],
-            [19, "#DBDBD9"]
-          ]
-        },
-        "fill-opacity": 1,
-        "fill-antialias": true
-      }
-    },
-    {
       "id": "Buildings-Outline",
       "type": "line",
       "source": "LINZ Basemaps",
