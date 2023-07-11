@@ -445,6 +445,14 @@
       "category": "Rural Aerial Photos"
     },
     {
+      "2193": "s3://linz-basemaps/2193/tasman_2022-2023_0.25m/01H4Q84VRY1WFXERB721NJZPED",
+      "3857": "s3://linz-basemaps/3857/tasman_2022-2023_0.25m/01H4Q85QE0ZF7E13DSGGZRR04V",
+      "name": "tasman_2022-2023_0.25m",
+      "minZoom": 13,
+      "title": "Tasman 0.25m Rural Aerial Photos (2022-2023)",
+      "category": "Rural Aerial Photos"
+    },
+    {
       "2193": "s3://linz-basemaps/2193/canterbury_rural_2019_0-3m_RGB/01FJJFP25MYHH34JEV0XM9Z8Q8",
       "3857": "s3://linz-basemaps/3857/canterbury_rural_2019_0-3m_RGB/01FJJFN1H62SA0836CKX2BYE5F",
       "name": "canterbury_rural_2019_0-3m_RGB",
