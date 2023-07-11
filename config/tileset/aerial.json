@@ -1152,8 +1152,16 @@
       "2193": "s3://linz-basemaps/2193/waimakariri_urban_2021_0-05m_RGB/01FKHMHNJ130J9DF3J9CSYZ41V",
       "3857": "s3://linz-basemaps/3857/waimakariri_urban_2021_0-05m_RGB/01FKHMK3VK9GRFB762B8JW33HW",
       "name": "waimakariri_urban_2021_0-05m_RGB",
-      "minZoom": 14,
+      "minZoom": 32,
       "title": "Waimakariri 0.05m Urban Aerial Photos (2021)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/waimakariri_2023_0.1m/01H4Q66MSD5ATAS9QX25FZ385V",
+      "3857": "s3://linz-basemaps/3857/waimakariri_2023_0.1m/01H4Q681F7MWQY303BM8TKAT6K",
+      "name": "waimakariri_2023_0.1m",
+      "minZoom": 14,
+      "title": "Waimakariri 0.1m Urban Aerial Photos (2023)",
       "category": "Urban Aerial Photos"
     },
     {
