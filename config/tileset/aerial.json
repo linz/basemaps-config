@@ -1237,6 +1237,14 @@
       "category": "Urban Aerial Photos"
     },
     {
+      "2193": "s3://linz-basemaps/2193/taranaki_2022-2023_0.1m/01H4Q85VREX8HE76AY26NY2K8G",
+      "3857": "s3://linz-basemaps/3857/taranaki_2022-2023_0.1m/01H4Q867YPZYQ66124QQD5W9KA",
+      "name": "taranaki_2022-2023_0.1m",
+      "minZoom": 14,
+      "title": "Taranaki 0.1m Urban Aerial Photos (2022-2023)",
+      "category": "Urban Aerial Photos"
+    },
+    {
       "2193": "s3://linz-basemaps/2193/taranaki_urban_2022_0.05m_RGB/01GDM781KPM27STN22MDPWC57Y",
       "3857": "s3://linz-basemaps/3857/taranaki_urban_2022_0.05m_RGB/01GDM7896HY2KQG4K3ESSZMPH6",
       "name": "taranaki_urban_2022_0.05m_RGB",
