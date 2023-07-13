@@ -1457,6 +1457,7 @@
       "title": "Cyclone Gabrielle Hawke's Bay 0.1m Aerial Photos (19-21 February 2023)",
       "minZoom": 32,
       "category": "Event"
-    }
+    },
+    { "3857": "s3://linz-basemaps/vector/3857/01H53TB1CKA9HB2Z0TVECM6VVP1/topographic.tar.co", "name": "topographic", "title": "Topographic", "category": "New Aerial Photos" }
   ]
 }
