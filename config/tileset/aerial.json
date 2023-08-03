@@ -1457,6 +1457,14 @@
       "title": "Cyclone Gabrielle Hawke's Bay 0.1m Aerial Photos (19-21 February 2023)",
       "minZoom": 32,
       "category": "Event"
+    },
+    {
+      "2193": "s3://linz-basemaps-staging/2193/southland_urban_2022-2023/01H6W3PA0AW53VPPPMN4YCKYF8",
+      "3857": "s3://linz-basemaps-staging/3857/southland_urban_2022-2023/01H6W3SC5RBNST2S6CCYX2P3WC",
+      "name": "southland-rural-aerial-photos_2023_0.25m",
+      "title": "Southland 0.25m Rural Aerial Photos (2023)",
+      "minZoom": 32,
+      "category": "Rural Aerial Photos"
     }
   ]
 }
