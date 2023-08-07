@@ -517,6 +517,14 @@
       "category": "Rural Aerial Photos"
     },
     {
+      "2193": "s3://linz-basemaps/2193/marlborough_2023_0.25m/01H6WRJWDK9VNKK6HE2PZ63AKG",
+      "3857": "s3://linz-basemaps/3857/marlborough_2023_0.25m/01H6WRKSPQD92366HB8WT35BQK",
+      "name": "marlborough_2023_0.25m",
+      "minZoom": 13,
+      "title": "Marlborough 0.25m Rural Aerial Photos (2023)",
+      "category": "Rural Aerial Photos"
+    },
+    {
       "2193": "s3://linz-basemaps/2193/hawkes-bay_rural_2021-2022_0-3m_RGB/01GBPH2Y0Q4PENH4T22PGJB521",
       "3857": "s3://linz-basemaps/3857/hawkes-bay_rural_2021-2022_0-3m_RGB/01GBPH42RKHGCSHRB3EMZVZD91",
       "name": "hawkes-bay_rural_2021-2022_0-3m_RGB",
