@@ -1125,6 +1125,14 @@
       "category": "Urban Aerial Photos"
     },
     {
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_2022-2023_0.1m/01H6YQNSMZCGX2W9AJB9T4Q27D",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_2022-2023_0.1m/01H6YQQMSYEDF9SYFSGF7AX8X8",
+      "name": "bay-of-plenty_2022-2023_0.1m",
+      "minZoom": 14,
+      "title": "Bay of Plenty 0.1m Urban Aerial Photos (2022-2023)",
+      "category": "Urban Aerial Photos"
+    },
+    {
       "2193": "s3://linz-basemaps/2193/mackenzie_urban_2020_0-075m_RGB/01FPV7GGNZ008JBH25F35KXC71",
       "3857": "s3://linz-basemaps/3857/mackenzie_urban_2020_0-075m_RGB/01FPV7C0KD6R4FD8TTE3S43ETF",
       "name": "mackenzie_urban_2020_0-075m_RGB",
