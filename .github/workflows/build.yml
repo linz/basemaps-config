@@ -29,8 +29,16 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: linz/action-typescript@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
 
+      - name: "Install"
+        run: |
+            yarn install --frozen-lockfile --check-files
+      - run: npm run build --if-present
+      - run: npm run lint --if-present -- --fix=false
       - name: (Build) Prepare path for glyphs and sprites
         run: |
           mkdir -p assets/fonts/

@@ -4,7 +4,7 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "/v1/tiles/topographic/EPSG:3857/tile.json",
+    "url": "/v1/tiles/topographic/EPSG:3857/tile.json",
       "attribution": "© 2022 Toitū Te Whenua © OpenMapTiles - CC BY 4.0"
     }
   },
@@ -13,7 +13,7 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "hsl(205, 56%, 73%)"
+        "background-color": "hsl(205, 56%, 73%)"  
       }
     },
     {
