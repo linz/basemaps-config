@@ -27,18 +27,10 @@ jobs:
       PR_NUMBER: ${{ github.event.number }}
 
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Use Node.js
-        uses: actions/setup-node@v3
+      - uses: linz/action-typescript@v3
         with:
-          node-version: 18.x
+          package-manager: yarn
 
-      - name: "Install"
-        run: |
-            yarn install --frozen-lockfile --check-files
-      - run: npm run build --if-present
-      - run: npm run lint --if-present -- --fix=false
       - name: (Build) Prepare path for glyphs and sprites
         run: |
           mkdir -p assets/fonts/
