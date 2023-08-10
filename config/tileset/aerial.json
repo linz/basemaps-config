@@ -589,6 +589,14 @@
       "category": "Rural Aerial Photos"
     },
     {
+      "2193": "s3://linz-basemaps/2193/gisborne-cyclone-gabrielle_2023_0.2m/01H3K4335ESRYK95NJCRBRHPBA",
+      "3857": "s3://linz-basemaps/3857/gisborne-cyclone-gabrielle_2023_0.2m/01H3K452YF9S5KB9RZPP8JBBAZ",
+      "name": "gisborne-cyclone-gabrielle_2023_0.2m",
+      "title": "Cyclone Gabrielle Gisborne 0.2m Aerial Photos (20 February 2023 - 25 April 2023)",
+      "minZoom": 13,
+      "category": "Event"
+    },
+    {
       "2193": "s3://linz-basemaps/2193/selwyn_urban_2012-2013_0-125m_RGBA/01F6P1Q0MQC2FXNDVZJGT88CC2",
       "3857": "s3://linz-basemaps/3857/selwyn_urban_2012-2013_0-125m_RGBA/01ED8355C00DRTSNAQ04AHJDDZ",
       "name": "selwyn_urban_2012-2013_0-125m_RGBA",
@@ -1471,14 +1479,6 @@
       "3857": "s3://linz-basemaps/3857/north-island_2023_0.5m/01GW39S72PRNYN6MRRWF83T82E",
       "name": "north-island_2023_0.5m",
       "title": "Cyclone Gabrielle North Island 0.5m Satellite Imagery (21 February 2023 - 8 March 2023)",
-      "minZoom": 32,
-      "category": "Event"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/gisborne-cyclone-gabrielle_2023_0.2m/01H3K4335ESRYK95NJCRBRHPBA",
-      "3857": "s3://linz-basemaps/3857/gisborne-cyclone-gabrielle_2023_0.2m/01H3K452YF9S5KB9RZPP8JBBAZ",
-      "name": "gisborne-cyclone-gabrielle_2023_0.2m",
-      "title": "Cyclone Gabrielle Gisborne 0.2m Aerial Photos (20 February 2023 - 25 April 2023)",
       "minZoom": 32,
       "category": "Event"
     },
