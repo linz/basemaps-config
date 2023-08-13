@@ -1,0 +1,14 @@
+{
+  "type": "raster",
+  "id": "ts_waikato-rural-2012-2013-0.5m",
+  "title": "Waikato 0.5m Rural Aerial Photos (2012-2013)",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/waikato_rural_2012-2013_0-50m_RGBA/01F6P1XPDV00F86GA8J626Y3BM",
+      "3857": "s3://linz-basemaps/3857/waikato_rural_2012-2013_0-50m_RGBA/01ED83K3YEJ0FSG0DHCFTVBEF7",
+      "name": "waikato-rural-2012-2013-0.5m",
+      "title": "Waikato 0.5m Rural Aerial Photos (2012-2013)",
+      "category": "Rural Aerial Photos"
+    }
+  ]
+}
