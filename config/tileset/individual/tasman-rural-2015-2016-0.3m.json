@@ -2,13 +2,17 @@
   "type": "raster",
   "id": "ts_tasman-rural-2015-2016-0.3m",
   "title": "Tasman 0.3m Rural Aerial Photos (2015-2016)",
+  "background": "#00000000",
+  "category": "Rural Aerial Photos",
   "layers": [
     {
       "2193": "s3://linz-basemaps/2193/tasman_rural_2015-16_0-3m/01F6P1V269CD5Z3Z5EC0Q8P7V6",
       "3857": "s3://linz-basemaps/3857/tasman_rural_2015-16_0-3m/01ED83CXGMGPXTF67SETE7YBWP",
       "name": "tasman-rural-2015-2016-0.3m",
       "title": "Tasman 0.3m Rural Aerial Photos (2015-2016)",
-      "category": "Rural Aerial Photos"
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
     }
   ]
 }

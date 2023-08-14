@@ -2,13 +2,17 @@
   "type": "raster",
   "id": "ts_dunedin-rural-2013-0.4m",
   "title": "Dunedin 0.4m Rural Aerial Photos (2013)",
+  "background": "#00000000",
+  "category": "Rural Aerial Photos",
   "layers": [
     {
       "2193": "s3://linz-basemaps/2193/dunedin_rural_2013_0-40m_RGBA/01F6P12CMF8AKCDGVCGRB06B0G",
       "3857": "s3://linz-basemaps/3857/dunedin_rural_2013_0-40m_RGBA/01ED8265AEHZM2DHB43GBFE5BG",
       "name": "dunedin-rural-2013-0.4m",
       "title": "Dunedin 0.4m Rural Aerial Photos (2013)",
-      "category": "Rural Aerial Photos"
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
     }
   ]
 }

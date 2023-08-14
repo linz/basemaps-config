@@ -2,13 +2,17 @@
   "type": "raster",
   "id": "ts_christchurch-urban-2018-0.075m",
   "title": "Christchurch 0.075m Urban Aerial Photos (2018)",
+  "background": "#00000000",
+  "category": "Urban Aerial Photos",
   "layers": [
     {
       "2193": "s3://linz-basemaps/2193/christchurch_urban_2018_0-075m/01F6P0NTCAD62YAXJ1DKKK2AY3",
       "3857": "s3://linz-basemaps/3857/christchurch_urban_2018_0-075m/01ED825VGXM6K9YX52DP7SMXQE",
       "name": "christchurch-urban-2018-0.075m",
       "title": "Christchurch 0.075m Urban Aerial Photos (2018)",
-      "category": "Urban Aerial Photos"
+      "category": "Urban Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
     }
   ]
 }

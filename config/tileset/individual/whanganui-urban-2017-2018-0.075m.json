@@ -2,13 +2,17 @@
   "type": "raster",
   "id": "ts_whanganui-urban-2017-2018-0.075m",
   "title": "Whanganui 0.075m Urban Aerial Photos (2017)",
+  "background": "#00000000",
+  "category": "Urban Aerial Photos",
   "layers": [
     {
       "2193": "s3://linz-basemaps/2193/whanganui_urban_2017-18_0-075m/01F6P22D2ENZ889MYXP3WN950N",
       "3857": "s3://linz-basemaps/3857/whanganui_urban_2017-18_0-075m/01ED83XAAFYRNDQFZJRBSH21TF",
       "name": "whanganui-urban-2017-2018-0.075m",
       "title": "Whanganui 0.075m Urban Aerial Photos (2017)",
-      "category": "Urban Aerial Photos"
+      "category": "Urban Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
     }
   ]
 }

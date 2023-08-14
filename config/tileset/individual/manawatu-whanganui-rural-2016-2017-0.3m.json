@@ -2,13 +2,17 @@
   "type": "raster",
   "id": "ts_manawatu-whanganui-rural-2016-2017-0.3m",
   "title": "Manawatū-Whanganui 0.3m Rural Aerial Photos (2016-2017)",
+  "background": "#00000000",
+  "category": "Rural Aerial Photos",
   "layers": [
     {
       "2193": "s3://linz-basemaps/2193/manawatu-whanganui_rural_2016-17_0-3m/01F6P1BSQ6V27WZK0KM56M4Z1C",
       "3857": "s3://linz-basemaps/3857/manawatu-whanganui_rural_2016-17_0-3m/01ED82JQASJDFZ6XEM018RJQN0",
       "name": "manawatu-whanganui-rural-2016-2017-0.3m",
       "title": "Manawatū-Whanganui 0.3m Rural Aerial Photos (2016-2017)",
-      "category": "Rural Aerial Photos"
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
     }
   ]
 }
