@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_hastings-district-urban-2014-2015-0.1m",
+  "title": "Hastings District 0.1m Urban Aerial Photos (2014-2015)",
+  "background": "#00000000",
+  "category": "Urban Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/hastings-district_urban_2014-2015_0-10m_RGB/01F6P172EQ3JF930CN3XNVVVJ9",
+      "3857": "s3://linz-basemaps/3857/hastings-district_urban_2014-2015_0-10m_RGB/01EDN0YH2TM1B5NWHR4RHGBMPF",
+      "name": "hastings-district-urban-2014-2015-0.1m",
+      "title": "Hastings District 0.1m Urban Aerial Photos (2014-2015)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

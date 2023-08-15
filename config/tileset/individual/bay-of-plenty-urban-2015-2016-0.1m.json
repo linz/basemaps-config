@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_bay-of-plenty-urban-2015-2016-0.1m",
+  "title": "Bay of Plenty 0.1m Urban Aerial Photos (2015-2016)",
+  "background": "#00000000",
+  "category": "Urban Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_urban_2015-16_0-1m/01F66E757Y78C33NKN50W9PW5C",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_urban_2015-16_0-1m/01ED81VN7AJ586W5HK2BSPHAPH",
+      "name": "bay-of-plenty-urban-2015-2016-0.1m",
+      "title": "Bay of Plenty 0.1m Urban Aerial Photos (2015-2016)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
