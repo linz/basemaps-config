@@ -7,7 +7,8 @@
     {
       "3857": "s3://linz-basemaps/3857/geographx_nz_texture_shade_2012_8-0m/01FMK5CJHR30YG9A0JDNVXYCKN",
       "name": "geographx_nz_texture_shade_2012_8-0m",
-      "title": "New Zealand 8m DEM Texture Shade (2012)"
+      "title": "New Zealand 8m DEM Texture Shade (2012)",
+      "category": "Elevation"
     }
   ]
 }
