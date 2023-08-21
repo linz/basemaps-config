@@ -28,8 +28,6 @@ jobs:
 
     steps:
       - uses: linz/action-typescript@v3
-        with:
-          package-manager: yarn
 
       - name: (Build) Prepare path for glyphs and sprites
         run: |
