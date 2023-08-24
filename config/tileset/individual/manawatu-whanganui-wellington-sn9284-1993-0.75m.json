@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_manawatu-whanganui-wellington-sn9284-1993-0.75m",
+  "title": "Manawatu-whanganui wellington sn9284 1993 0.75m",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/manawatu-whanganui_wellington_sn9284_1993_0.75m/01H8JGPGS61J0G5TFZFM1TYWRW",
+      "3857": "s3://linz-basemaps/3857/manawatu-whanganui_wellington_sn9284_1993_0.75m/01H8JGPFTVHYD30R3T8X677PKE",
+      "name": "manawatu-whanganui-wellington-sn9284-1993-0.75m",
+      "title": "Manawatu-whanganui wellington sn9284 1993 0.75m",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

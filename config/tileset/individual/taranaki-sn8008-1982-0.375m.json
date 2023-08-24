@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_taranaki-sn8008-1982-0.375m",
+  "title": "Taranaki sn8008 1982 0.375m",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/taranaki_sn8008_1982_0.375m/01H8JMQSK2TF1Y6V4GNTZ21R5W",
+      "3857": "s3://linz-basemaps/3857/taranaki_sn8008_1982_0.375m/01H8JMS0B3DQ31CMCRRHGC2WPJ",
+      "name": "taranaki-sn8008-1982-0.375m",
+      "title": "Taranaki sn8008 1982 0.375m",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

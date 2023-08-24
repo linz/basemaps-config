@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_marlborough-snc30007-2002-0.75m",
+  "title": "Marlborough snc30007 2002 0.75m",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/marlborough_snc30007_2002_0.75m/01H8JHTXZ548BH9330YZ9M2M4R",
+      "3857": "s3://linz-basemaps/3857/marlborough_snc30007_2002_0.75m/01H8JHTXZ16WXY3BVTJJ40DSQX",
+      "name": "marlborough-snc30007-2002-0.75m",
+      "title": "Marlborough snc30007 2002 0.75m",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

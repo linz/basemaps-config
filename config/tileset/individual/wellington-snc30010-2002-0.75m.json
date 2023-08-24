@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_wellington-snc30010-2002-0.75m",
+  "title": "Wellington snc30010 2002 0.75m",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/wellington_snc30010_2002_0.75m/01H8JQDYMM0W853QVFA4GSWKMX",
+      "3857": "s3://linz-basemaps/3857/wellington_snc30010_2002_0.75m/01H8JQE8MGH8AMBD578MDX9W0M",
+      "name": "wellington-snc30010-2002-0.75m",
+      "title": "Wellington snc30010 2002 0.75m",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

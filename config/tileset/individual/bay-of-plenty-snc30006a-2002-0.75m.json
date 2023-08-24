@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_bay-of-plenty-snc30006a-2002-0.75m",
+  "title": "Bay-of-plenty snc30006a 2002 0.75m",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_snc30006a_2002_0.75m/01H8J9Z4YFVG6AZ2NG5WQKWPEK",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_snc30006a_2002_0.75m/01H8J9Z4XG259145C7CVH6BNAA",
+      "name": "bay-of-plenty-snc30006a-2002-0.75m",
+      "title": "Bay-of-plenty snc30006a 2002 0.75m",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

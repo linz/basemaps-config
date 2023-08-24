@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_west-coast-sn5817-1980-0.375m",
+  "title": "West-coast sn5817 1980 0.375m",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/west-coast_sn5817_1980_0.375m/01H8JQFDA1Y8X9XJVM0BXQDBG9",
+      "3857": "s3://linz-basemaps/3857/west-coast_sn5817_1980_0.375m/01H8JQFDA1THJXFWWMFJ0B1YGZ",
+      "name": "west-coast-sn5817-1980-0.375m",
+      "title": "West-coast sn5817 1980 0.375m",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

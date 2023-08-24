@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_marlborough-wellington-snc50451-2004-2005-0.75m",
+  "title": "Marlborough wellington snc50451 2004-2005 0.75m",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/marlborough_wellington_snc50451_2004-2005_0.75m/01H8JJA9FYMW42C4XHW9GZEPRK",
+      "3857": "s3://linz-basemaps/3857/marlborough_wellington_snc50451_2004-2005_0.75m/01H8JJ5NT8WP4ZHH19HHH9PB8S",
+      "name": "marlborough-wellington-snc50451-2004-2005-0.75m",
+      "title": "Marlborough wellington snc50451 2004-2005 0.75m",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
