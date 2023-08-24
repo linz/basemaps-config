@@ -9,7 +9,7 @@
       "2193": "s3://linz-basemaps/2193/canterbury_snc25053_2001_0.75m/01H8JBJ5MQDQMHPQETM02HAEJF",
       "3857": "s3://linz-basemaps/3857/canterbury_snc25053_2001_0.75m/01H8JBJ576DP2TDB96N7GGDGQ9",
       "name": "canterbury-snc25053-2001-0.75m",
-      "title": "Canterbury snc25053 2001 0.75m",
+      "title": "Canterbury 0.75m SNC25053 (2001)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32

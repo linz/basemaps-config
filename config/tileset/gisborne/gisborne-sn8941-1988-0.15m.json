@@ -9,7 +9,7 @@
       "2193": "s3://linz-basemaps/2193/gisborne_sn8941_1988_0.15m/01H8JBKJ08QZFFKDXGHGY0NQXR",
       "3857": "s3://linz-basemaps/3857/gisborne_sn8941_1988_0.15m/01H8JBKDWSGNWMWKD6S0WK6SEW",
       "name": "gisborne-sn8941-1988-0.15m",
-      "title": "Gisborne sn8941 1988 0.15m",
+      "title": "Gisborne 0.15m SN8941 (1988)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32

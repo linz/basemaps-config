@@ -9,7 +9,7 @@
       "2193": "s3://linz-basemaps/2193/tasman_snc25049_2000_0.75m/01H8JN8G6DSJXF71833N0YG5QS",
       "3857": "s3://linz-basemaps/3857/tasman_snc25049_2000_0.75m/01H8JN7ET3W1A8HWPY1814DZQA",
       "name": "tasman-snc25049-2000-0.75m",
-      "title": "Tasman snc25049 2000 0.75m",
+      "title": "Tasman 0.75m SNC25049 (2000)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32

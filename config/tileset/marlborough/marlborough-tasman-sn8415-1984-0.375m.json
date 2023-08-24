@@ -9,7 +9,7 @@
       "2193": "s3://linz-basemaps/2193/marlborough_tasman_sn8415_1984_0.375m/01H8JJ73R2M08BME04C0K304WX",
       "3857": "s3://linz-basemaps/3857/marlborough_tasman_sn8415_1984_0.375m/01H8JJCWKVMYD04XF6WAPWQCFQ",
       "name": "marlborough-tasman-sn8415-1984-0.375m",
-      "title": "Marlborough tasman sn8415 1984 0.375m",
+      "title": "Marlborough / Tasman 0.375m SN8415 (1984)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32

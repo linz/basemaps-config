@@ -9,7 +9,7 @@
       "2193": "s3://linz-basemaps/2193/southland_otago_sn8565_1985-1987_0.8m/01H8JM0PQN5BS9N5EZX1R4Y4TC",
       "3857": "s3://linz-basemaps/3857/southland_otago_sn8565_1985-1987_0.8m/01H8JKYDEQRERJWP9TKNV3BWME",
       "name": "southland-otago-sn8565-1985-1987-0.8m",
-      "title": "Southland otago sn8565 1985-1987 0.8m",
+      "title": "Southland / Otago 0.8m SN8565 (1985-1987)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32

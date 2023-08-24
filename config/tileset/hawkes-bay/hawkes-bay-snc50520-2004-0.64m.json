@@ -9,7 +9,7 @@
       "2193": "s3://linz-basemaps/2193/hawkes-bay_snc50520_2004_0.64m/01H8JBNBRE160A817HZQAPAFHG",
       "3857": "s3://linz-basemaps/3857/hawkes-bay_snc50520_2004_0.64m/01H8JBMG47BG6N1JYB346RABFZ",
       "name": "hawkes-bay-snc50520-2004-0.64m",
-      "title": "Hawkes-bay snc50520 2004 0.64m",
+      "title": "Hawkes Bay 0.64m SNC50520 (2004)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32

@@ -9,7 +9,7 @@
       "2193": "s3://linz-basemaps/2193/taranaki_sn5804_1981_0.375m/01H8JMN29GP081PT3YN6R5D26D",
       "3857": "s3://linz-basemaps/3857/taranaki_sn5804_1981_0.375m/01H8JMN280VKE9154YRPJ0CBVW",
       "name": "taranaki-sn5804-1981-0.375m",
-      "title": "Taranaki sn5804 1981 0.375m",
+      "title": "Taranaki 0.375m SN5804 (1981)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32

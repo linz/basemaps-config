@@ -9,7 +9,7 @@
       "2193": "s3://linz-basemaps/2193/southland_otago_snc30012_2003_0.75m/01H8JM6SQBD1ST5Z50KDE5FQJ2",
       "3857": "s3://linz-basemaps/3857/southland_otago_snc30012_2003_0.75m/01H8JM6SQY8E4ZX321XJ6KK8PB",
       "name": "southland-otago-snc30012-2003-0.75m",
-      "title": "Southland otago snc30012 2003 0.75m",
+      "title": "Southland / Otago 0.75m SNC30012 (2003)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32

@@ -9,7 +9,7 @@
       "2193": "s3://linz-basemaps/2193/waikato_sn9361_1994-1995_0.75m/01H8JPHWWEWBYA3F8Q8TX2TFT3",
       "3857": "s3://linz-basemaps/3857/waikato_sn9361_1994-1995_0.75m/01H8JPH8XQKFXDQHXH295SEZ8Q",
       "name": "waikato-sn9361-1994-1995-0.75m",
-      "title": "Waikato sn9361 1994-1995 0.75m",
+      "title": "Waikato 0.75m SN9361 (1994-1995)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32

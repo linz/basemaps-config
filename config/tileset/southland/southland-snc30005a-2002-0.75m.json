@@ -9,7 +9,7 @@
       "2193": "s3://linz-basemaps/2193/southland_snc30005a_2002_0.75m/01H8JMB9NPBEC3168KZ24DK6QW",
       "3857": "s3://linz-basemaps/3857/southland_snc30005a_2002_0.75m/01H8JMB9R6J1GNCT2D0MB8VYX6",
       "name": "southland-snc30005a-2002-0.75m",
-      "title": "Southland snc30005a 2002 0.75m",
+      "title": "Southland 0.75m SNC30005a (2002)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32

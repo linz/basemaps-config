@@ -9,7 +9,7 @@
       "2193": "s3://linz-basemaps/2193/manawatu-whanganui_snc25045_2001_0.75m/01H8JFW5DY2CMJAHYEV3MN4SQY",
       "3857": "s3://linz-basemaps/3857/manawatu-whanganui_snc25045_2001_0.75m/01H8JFTW8BBZBR3MQA5XZTTP7G",
       "name": "manawatu-whanganui-snc25045-2001-0.75m",
-      "title": "Manawatu-whanganui snc25045 2001 0.75m",
+      "title": "Manawatū-Whanganui 0.75m SNC25045 (2001)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32

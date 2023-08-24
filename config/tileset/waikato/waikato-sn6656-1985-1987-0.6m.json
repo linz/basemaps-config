@@ -9,7 +9,7 @@
       "2193": "s3://linz-basemaps/2193/waikato_sn6656_1985-1987_0.6m/01H8JNP2SJEDAEND31C3SB82Y8",
       "3857": "s3://linz-basemaps/3857/waikato_sn6656_1985-1987_0.6m/01H8JNP1Z1VAQ8BHQ8GFHRGGXY",
       "name": "waikato-sn6656-1985-1987-0.6m",
-      "title": "Waikato sn6656 1985-1987 0.6m",
+      "title": "Waikato 0.6m SN6656 (1985-1987)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32

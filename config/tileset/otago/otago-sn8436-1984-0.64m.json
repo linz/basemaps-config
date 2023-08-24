@@ -9,7 +9,7 @@
       "2193": "s3://linz-basemaps/2193/otago_sn8436_1984_0.64m/01H8JK6KMBVH8XCC5PYQX76Z6Y",
       "3857": "s3://linz-basemaps/3857/otago_sn8436_1984_0.64m/01H8JK6NFQV9DVCDXG4B08JG9R",
       "name": "otago-sn8436-1984-0.64m",
-      "title": "Otago sn8436 1984 0.64m",
+      "title": "Otago 0.64m SN8436 (1984)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32

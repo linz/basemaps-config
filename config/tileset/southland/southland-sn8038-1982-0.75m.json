@@ -9,7 +9,7 @@
       "2193": "s3://linz-basemaps/2193/southland_sn8038_1982_0.75m/01H8JM7RXPPF8XBMREZFZC5M1W",
       "3857": "s3://linz-basemaps/3857/southland_sn8038_1982_0.75m/01H8JM7RXPXBJWVCAE32080MP2",
       "name": "southland-sn8038-1982-0.75m",
-      "title": "Southland sn8038 1982 0.75m",
+      "title": "Southland 0.75m SN8038 (1982)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32

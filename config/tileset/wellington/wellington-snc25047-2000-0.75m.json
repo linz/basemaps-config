@@ -9,7 +9,7 @@
       "2193": "s3://linz-basemaps/2193/wellington_snc25047_2000_0.75m/01H8JPJZZQMY8KWFBSXMKKP8FS",
       "3857": "s3://linz-basemaps/3857/wellington_snc25047_2000_0.75m/01H8JPK000T892DXZPPJSDBB42",
       "name": "wellington-snc25047-2000-0.75m",
-      "title": "Wellington snc25047 2000 0.75m",
+      "title": "Wellington 0.75m SNC25047 (2000)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32

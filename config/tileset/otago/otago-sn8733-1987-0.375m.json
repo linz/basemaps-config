@@ -9,7 +9,7 @@
       "2193": "s3://linz-basemaps/2193/otago_sn8733_1987_0.375m/01H8JKB7660GZ58R761D1YRBV4",
       "3857": "s3://linz-basemaps/3857/otago_sn8733_1987_0.375m/01H8JKCA1S044XJ0K1Q94M76DY",
       "name": "otago-sn8733-1987-0.375m",
-      "title": "Otago sn8733 1987 0.375m",
+      "title": "Otago 0.375m SN8733 (1987)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32

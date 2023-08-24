@@ -9,7 +9,7 @@
       "2193": "s3://linz-basemaps/2193/hawkes-bay_snc8912_1987_0.375m/01H8JBP1T9J9V7Z8KQ00CWKR66",
       "3857": "s3://linz-basemaps/3857/hawkes-bay_snc8912_1987_0.375m/01H8JBP1SY9HKM1NWZJDF0R8NB",
       "name": "hawkes-bay-snc8912-1987-0.375m",
-      "title": "Hawkes-bay snc8912 1987 0.375m",
+      "title": "Hawkes Bay 0.375m SNC8912 (1987)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32

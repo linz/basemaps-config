@@ -9,7 +9,7 @@
       "2193": "s3://linz-basemaps/2193/marlborough_tasman_snc8423_1984_0.375m/01H8JJ90E6NY1RBQ8QF7X2EQRB",
       "3857": "s3://linz-basemaps/3857/marlborough_tasman_snc8423_1984_0.375m/01H8JJBKHYZYP5VP3SV14HMT2G",
       "name": "marlborough-tasman-snc8423-1984-0.375m",
-      "title": "Marlborough tasman snc8423 1984 0.375m",
+      "title": "Marlborough / Tasman 0.375m SNC8423 (1984)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32

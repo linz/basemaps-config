@@ -9,7 +9,7 @@
       "2193": "s3://linz-basemaps/2193/auckland_waikato_sn8772_1987-1988_0.375m/01H8J8R64E4FPBHR3NR913XPDJ",
       "3857": "s3://linz-basemaps/3857/auckland_waikato_sn8772_1987-1988_0.375m/01H8J8R67E85JMKT8V72CB4CYB",
       "name": "auckland-waikato-sn8772-1987-1988-0.375m",
-      "title": "Auckland waikato sn8772 1987-1988 0.375m",
+      "title": "Auckland / Waikato 0.375m SN8772 (1987-1988)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32

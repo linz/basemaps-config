@@ -9,7 +9,7 @@
       "2193": "s3://linz-basemaps/2193/taranaki_sn8298_1984_0.375m/01H8JMRFQSZ38X16N163HR64FJ",
       "3857": "s3://linz-basemaps/3857/taranaki_sn8298_1984_0.375m/01H8JMRJK8W815QVTYE5X7TFT2",
       "name": "taranaki-sn8298-1984-0.375m",
-      "title": "Taranaki sn8298 1984 0.375m",
+      "title": "Taranaki 0.375m SN8298 (1984)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32
