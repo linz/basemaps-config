@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_manawatu-whanganui-waikato-sn8440-1984-1985-0.375m",
+  "title": "Manawatū-Whanganui / Waikato 0.375m SN8440 (1984-1985)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/manawatu-whanganui_waikato_sn8440_1984-1985_0.375m/01H8JG9BFVAQK5P689CDRZJ80R",
+      "3857": "s3://linz-basemaps/3857/manawatu-whanganui_waikato_sn8440_1984-1985_0.375m/01H8JG9BFDNPF1ZPYS43FWSJEB",
+      "name": "manawatu-whanganui-waikato-sn8440-1984-1985-0.375m",
+      "title": "Manawatu-whanganui waikato sn8440 1984-1985 0.375m",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

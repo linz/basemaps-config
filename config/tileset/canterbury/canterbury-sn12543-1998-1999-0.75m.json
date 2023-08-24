@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_canterbury-sn12543-1998-1999-0.75m",
+  "title": "Canterbury 0.75m SN12543 (1998-1999)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/canterbury_sn12543_1998-1999_0.75m/01H8JAGE1S1E8X728ZWQ79QJR8",
+      "3857": "s3://linz-basemaps/3857/canterbury_sn12543_1998-1999_0.75m/01H8JAGE2KESEHDXNQYD96TWW8",
+      "name": "canterbury-sn12543-1998-1999-0.75m",
+      "title": "Canterbury sn12543 1998-1999 0.75m",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

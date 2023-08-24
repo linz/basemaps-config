@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_manawatu-whanganui-taranaki-sn8157-1983-0.8m",
+  "title": "Manawatū-Whanganui / Taranaki 0.8m SN8157 (1983)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/manawatu-whanganui_taranaki_sn8157_1983_0.8m/01H8JG8C43ZJTKJZPCERH1APXT",
+      "3857": "s3://linz-basemaps/3857/manawatu-whanganui_taranaki_sn8157_1983_0.8m/01H8JG8C3D1HMPPEN2CNH73AGR",
+      "name": "manawatu-whanganui-taranaki-sn8157-1983-0.8m",
+      "title": "Manawatu-whanganui taranaki sn8157 1983 0.8m",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

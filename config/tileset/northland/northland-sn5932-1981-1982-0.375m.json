@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_northland-sn5932-1981-1982-0.375m",
+  "title": "Northland 0.375m SN5932 (1981-1982)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/northland_sn5932_1981-1982_0.375m/01H8JJG12FFE9DJAFHQ2VJJG8F",
+      "3857": "s3://linz-basemaps/3857/northland_sn5932_1981-1982_0.375m/01H8JJG12C1T7T7SP1HTVNS4VM",
+      "name": "northland-sn5932-1981-1982-0.375m",
+      "title": "Northland sn5932 1981-1982 0.375m",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

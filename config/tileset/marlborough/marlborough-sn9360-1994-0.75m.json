@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_marlborough-sn9360-1994-0.75m",
+  "title": "Marlborough 0.75m SN9360 (1994)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/marlborough_sn9360_1994_0.75m/01H8JHE63564ZQSWRQHW6V0QZ6",
+      "3857": "s3://linz-basemaps/3857/marlborough_sn9360_1994_0.75m/01H8JHHTYNTQEGETWAQHP0DHTZ",
+      "name": "marlborough-sn9360-1994-0.75m",
+      "title": "Marlborough sn9360 1994 0.75m",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

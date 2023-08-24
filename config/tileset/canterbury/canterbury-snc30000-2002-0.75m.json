@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_canterbury-snc30000-2002-0.75m",
+  "title": "Canterbury 0.75m SNC30000 (2002)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/canterbury_snc30000_2002_0.75m/01H8JBJ99AE6C0S9VPGXCXH4AK",
+      "3857": "s3://linz-basemaps/3857/canterbury_snc30000_2002_0.75m/01H8JBJACQS8BHYCDT6XCVC66S",
+      "name": "canterbury-snc30000-2002-0.75m",
+      "title": "Canterbury snc30000 2002 0.75m",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

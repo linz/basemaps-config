@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_waikato-sn9124-1990-1991-0.48m",
+  "title": "Waikato 0.48m SN9124 (1990-1991)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/waikato_sn9124_1990-1991_0.48m/01H8JP0KG5642BF5PFP2737HD0",
+      "3857": "s3://linz-basemaps/3857/waikato_sn9124_1990-1991_0.48m/01H8JP0KFZ1VN0KF2HKR2G4GTP",
+      "name": "waikato-sn9124-1990-1991-0.48m",
+      "title": "Waikato sn9124 1990-1991 0.48m",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

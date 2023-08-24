@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_otago-southland-west-coast-sn8426-1984-1985-0.75m",
+  "title": "Otago / Southland / West Coast 0.75m SN8426 (1984-1985)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/otago_southland_west-coast_sn8426_1984-1985_0.75m/01H8JKP0SS6Y2PG6W20MB31V0X",
+      "3857": "s3://linz-basemaps/3857/otago_southland_west-coast_sn8426_1984-1985_0.75m/01H8JKP0S9SMM3Z8D540RJTNME",
+      "name": "otago-southland-west-coast-sn8426-1984-1985-0.75m",
+      "title": "Otago southland west-coast sn8426 1984-1985 0.75m",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

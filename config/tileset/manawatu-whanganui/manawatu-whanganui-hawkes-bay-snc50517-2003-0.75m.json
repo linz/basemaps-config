@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_manawatu-whanganui-hawkes-bay-snc50517-2003-0.75m",
+  "title": "Manawatū-Whanganui / Hawkes Bay 0.75m SNC50517 (2003)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/manawatu-whanganui_hawkes-bay_snc50517_2003_0.75m/01H8JBNK0RZDSHW1TABKEM48S8",
+      "3857": "s3://linz-basemaps/3857/manawatu-whanganui_hawkes-bay_snc50517_2003_0.75m/01H8JBPD36YC935ZHJ8S581560",
+      "name": "manawatu-whanganui-hawkes-bay-snc50517-2003-0.75m",
+      "title": "Manawatu-whanganui hawkes-bay snc50517 2003 0.75m",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
