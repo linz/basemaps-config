@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_southland-otago-sn8542-1985-0.375m",
+  "title": "Southland / Otago 0.375m SN8542 (1985)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/southland_otago_sn8542_1985_0.375m/01H8JKYDE3NA50AWVTTTN9R03D",
+      "3857": "s3://linz-basemaps/3857/southland_otago_sn8542_1985_0.375m/01H8JKYDEPJPAFG6TVW2J8F26V",
+      "name": "southland-otago-sn8542-1985-0.375m",
+      "title": "Southland / Otago 0.375m SN8542 (1985)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

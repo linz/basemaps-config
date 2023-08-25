@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_waikato-bay-of-plenty-sn12539-1999-0.75m",
+  "title": "Waikato / Bay of Plenty 0.75m SN12539 (1999)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/waikato_bay-of-plenty_sn12539_1999_0.75m/01H8JNAW9EWM95YX3ARBYB0ZAB",
+      "3857": "s3://linz-basemaps/3857/waikato_bay-of-plenty_sn12539_1999_0.75m/01H8JNC6TC4Y6HQYY6M5ESVFC0",
+      "name": "waikato-bay-of-plenty-sn12539-1999-0.75m",
+      "title": "Waikato / Bay of Plenty 0.75m SN12539 (1999)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_canterbury-otago-sn8568-1985-1987-0.75m",
+  "title": "Canterbury / Otago 0.75m SN8568 (1985-1987)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/canterbury_otago_sn8568_1985-1987_0.75m/01H8JAJVB2C2VV9Z157GDWH162",
+      "3857": "s3://linz-basemaps/3857/canterbury_otago_sn8568_1985-1987_0.75m/01H8JAG92BRXKP81GEVDZG14KW",
+      "name": "canterbury-otago-sn8568-1985-1987-0.75m",
+      "title": "Canterbury / Otago 0.75m SN8568 (1985-1987)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

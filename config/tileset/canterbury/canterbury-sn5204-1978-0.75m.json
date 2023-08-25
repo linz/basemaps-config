@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_canterbury-sn5204-1978-0.75m",
+  "title": "Canterbury 0.75m SN5204 (1978)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/canterbury_sn5204_1978_0.75m/01H8JBHJRQ6KJM3YTQW95M8NCJ",
+      "3857": "s3://linz-basemaps/3857/canterbury_sn5204_1978_0.75m/01H8JBHN4NVTF3THTP6KGMA9AF",
+      "name": "canterbury-sn5204-1978-0.75m",
+      "title": "Canterbury 0.75m SN5204 (1978)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_gisborne-sn12540-1998-0.75m",
+  "title": "Gisborne 0.75m SN12540 (1998)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/gisborne_sn12540_1998_0.75m/01H8JBJHVQAF1HE6R5A04TFFRY",
+      "3857": "s3://linz-basemaps/3857/gisborne_sn12540_1998_0.75m/01H8JBJT1Y4PZRYX8PQ989SVAE",
+      "name": "gisborne-sn12540-1998-0.75m",
+      "title": "Gisborne 0.75m SN12540 (1998)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

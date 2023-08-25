@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_hawkes-bay-sn9585-1996-0.8m",
+  "title": "Hawkes Bay 0.8m SN9585 (1996)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/hawkes-bay_sn9585_1996_0.8m/01H8JBK7T3F25XJKQ5TB701QBZ",
+      "3857": "s3://linz-basemaps/3857/hawkes-bay_sn9585_1996_0.8m/01H8JBKT1MKG1JP8ZBCNZ4C35E",
+      "name": "hawkes-bay-sn9585-1996-0.8m",
+      "title": "Hawkes Bay 0.8m SN9585 (1996)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

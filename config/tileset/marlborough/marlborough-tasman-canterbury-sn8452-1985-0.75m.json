@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_marlborough-tasman-canterbury-sn8452-1985-0.75m",
+  "title": "Marlborough / Tasman / Canterbury 0.75m SN8452 (1985)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/marlborough_tasman_canterbury_sn8452_1985_0.75m/01H8JJ4DD3HYEHEQH2PAAM3DBJ",
+      "3857": "s3://linz-basemaps/3857/marlborough_tasman_canterbury_sn8452_1985_0.75m/01H8JJ4F7HV3E6AQSFEM3Q3G7P",
+      "name": "marlborough-tasman-canterbury-sn8452-1985-0.75m",
+      "title": "Marlborough / Tasman / Canterbury 0.75m SN8452 (1985)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

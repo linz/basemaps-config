@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_hawkes-bay-waikato-sn8260-1983-0.75m",
+  "title": "Hawkes Bay / Waikato 0.75m SN8260 (1983)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/hawkes-bay_waikato_sn8260_1983_0.75m/01H8JBNY5KSE63QJD65AZB08G5",
+      "3857": "s3://linz-basemaps/3857/hawkes-bay_waikato_sn8260_1983_0.75m/01H8JBP6KZTJF747759825FVZF",
+      "name": "hawkes-bay-waikato-sn8260-1983-0.75m",
+      "title": "Hawkes Bay / Waikato 0.75m SN8260 (1983)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

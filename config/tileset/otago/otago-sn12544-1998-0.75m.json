@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_otago-sn12544-1998-0.75m",
+  "title": "Otago 0.75m SN12544 (1998)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/otago_sn12544_1998_0.75m/01H8JJZ2R6CP5FYRY1W173GEG3",
+      "3857": "s3://linz-basemaps/3857/otago_sn12544_1998_0.75m/01H8JJZ2RGQ0V55D9DTJKQESDH",
+      "name": "otago-sn12544-1998-0.75m",
+      "title": "Otago 0.75m SN12544 (1998)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
