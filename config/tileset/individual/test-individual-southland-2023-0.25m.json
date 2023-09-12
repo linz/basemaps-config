@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_test-individual-southland-2023-0.25m",
+  "title": "Test Individual Southland 2023 0.25m",
+  "background": "#00000000",
+  "category": "Urban Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/southland_2023_0.25m/01H9PR2FQ7JRZMQY1NBAAVHPM4",
+      "3857": "s3://linz-basemaps/3857/southland_2023_0.25m/01H9PR5P65ZD4XYM0RN9KHYCZ8",
+      "name": "test-individual-southland-2023-0.25m",
+      "title": "Test Individual Southland 2023 0.25m",
+      "category": "Urban Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
