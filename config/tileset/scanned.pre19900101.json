@@ -1,7 +1,7 @@
 {
   "type": "raster",
   "id": "ts_scanned_aerial_imagery_pre_19900101",
-  "title": "Scanned Aerial Imagery pre 1990-01-01",
+  "title": "Scanned Aerial Imagery pre 1 January 1990",
   "background": "#00000000",
   "category": "Scanned Aerial Imagery",
   "layers": [
