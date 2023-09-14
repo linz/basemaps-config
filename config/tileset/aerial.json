@@ -173,6 +173,14 @@
       "category": "Rural Aerial Photos"
     },
     {
+      "2193": "s3://linz-basemaps/2193/southland_2023_0.25m/01H9S5K5N9BHQEPC9EW207TQ94",
+      "3857": "s3://linz-basemaps/3857/southland_2023_0.25m/01H9S5K5N7Q3WX9F3XB4VHHNQP",
+      "name": "southland-2023-0.25m",
+      "minZoom": 13,
+      "title": "Southland 0.25m Rural Aerial Photos (2023)",
+      "category": "Rural Aerial Photos"
+    },
+    {
       "2193": "s3://linz-basemaps/2193/west-coast_rural_2015-16_0-3m/01F6P21PNQC7D67W5SHQF806Z3",
       "3857": "s3://linz-basemaps/3857/west-coast_rural_2015-16_0-3m/01ED83TT0ZHKXTPFXEGFJHP2M5",
       "name": "west-coast-rural-2015-2016-0.3m",
