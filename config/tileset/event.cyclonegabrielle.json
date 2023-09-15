@@ -29,10 +29,10 @@
       "category": "Event"
     },
     {
-      "2193": "s3://linz-basemaps/2193/gisborne-cyclone-gabrielle_2023_0.2m/01H3K4335ESRYK95NJCRBRHPBA",
-      "3857": "s3://linz-basemaps/3857/gisborne-cyclone-gabrielle_2023_0.2m/01H3K452YF9S5KB9RZPP8JBBAZ",
+      "2193": "s3://linz-basemaps/2193/gisborne-cyclone-gabrielle_2023_0.2m/01HAAYW5PMJ90MGRSQCB9YPX0W",
+      "3857": "s3://linz-basemaps/3857/gisborne-cyclone-gabrielle_2023_0.2m/01HAAYW5NXJMRMBZBHFPCNY71J",
       "name": "gisborne-cyclone-gabrielle_2023_0.2m",
-      "title": "Cyclone Gabrielle Gisborne 0.2m Aerial Photos (20 February 2023 - 25 April 2023)",
+      "title": "Cyclone Gabrielle Gisborne 0.2m Aerial Photos (20 February 2023 - 17 May 2023)",
       "minZoom": 12,
       "category": "Event"
     },
