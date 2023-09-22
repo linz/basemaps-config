@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_thames-coromandel-2021-0.1m",
+  "title": "Thames-Coromandel 0.1m Urban Aerial Photos (2021)",
+  "background": "#00000000",
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps-staging/2193/thames-coromandel_2021_0.1m/01HAX3D18G4BT8EH15ZMJXM17Y/",
+      "3857": "s3://linz-basemaps-staging/3857/thames-coromandel_2021_0.1m/01HAX3D18GG01WW8YVAYEKWQVW/",
+      "name": "thames-coromandel-2021-0.1m",
+      "title": "Thames-Coromandel 0.1m Urban Aerial Photos (2021)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
