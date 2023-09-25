@@ -4,11 +4,5 @@
   "title": "New Zealand Topographic Vector Map",
   "maxZoom": 15,
   "format": "pbf",
-  "layers": [
-    {
-      "3857": "s3://linz-basemaps/vector/3857/01H53TB1CKA9HB2Z0TVECM6VVP/topographic.tar.co",
-      "name": "topographic",
-      "title": "Topographic"
-    }
-  ]
+  "layers": [{ "3857": "s3://linz-basemaps/vector/3857/01HB6Y3XG6K50CQTH0H8K1TPYE/topographic.tar.co", "name": "topographic", "title": "Topographic" }]
 }
