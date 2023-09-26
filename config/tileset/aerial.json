@@ -415,7 +415,7 @@
     {
       "2193": "s3://linz-basemaps/2193/gisborne-cyclone-gabrielle_2023_0.2m/01HB78D84QQPQKZH8V22C754GB",
       "3857": "s3://linz-basemaps/3857/gisborne-cyclone-gabrielle_2023_0.2m/01HB78D862TBKEF4ZQTK6BFS51",
-      "name": "gisborne-cyclone-gabrielle_2023_0.2m",
+      "name": "gisborne-cyclone-gabrielle-2023-0.2m",
       "title": "Cyclone Gabrielle Gisborne 0.2m Aerial Photos (20 February 2023 - 17 May 2023)",
       "minZoom": 13,
       "category": "Event"
