@@ -413,8 +413,8 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/gisborne-cyclone-gabrielle_2023_0.2m/01HBCE6YNM7PQCXN9F9PS2W0VK/",
-      "3857": "s3://linz-basemaps/3857/gisborne-cyclone-gabrielle_2023_0.2m/01HBCE6YKA2J23A1X2EW590SCS/",
+      "2193": "s3://linz-basemaps/2193/gisborne-cyclone-gabrielle_2023_0.2m/01HBCG6GTDZZYGFFXW3KBNXKQW/",
+      "3857": "s3://linz-basemaps/3857/gisborne-cyclone-gabrielle_2023_0.2m/01HBCG6GVD9MMEZDHPSA01KPDQ/",
       "name": "gisborne-cyclone-gabrielle-2023-0.2m",
       "title": "Gisborne 0.2m Cyclone Gabrielle Aerial Photos (2023)",
       "category": "Rural Aerial Photos"
