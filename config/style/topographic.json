@@ -4246,7 +4246,7 @@
         "text-justify": "left",
         "text-anchor": "left",
         "text-field": "{name}",
-        "text-font": ["Roboto Condensed Italic"],
+        "text-font": ["Roboto Light Italic"],
         "icon-anchor": "right",
         "text-size": 12,
         "text-offset": [0.5, 0],
@@ -4425,7 +4425,7 @@
       "filter": ["all", ["==", "class", "wetland"], ["==", "wetland_type", "swamp"], ["has", "name"]],
       "layout": {
         "visibility": "visible",
-        "text-font": ["Open Sans Cond Light Italic"],
+        "text-font": ["Open Sans Light Italic"],
         "text-field": "{name}",
         "text-size": 12,
         "text-justify": "center",
@@ -4447,7 +4447,7 @@
       "layout": {
         "visibility": "visible",
         "icon-image": "swamp_pnt",
-        "text-font": ["Open Sans Cond Light Italic"],
+        "text-font": ["Open Sans Light Italic"],
         "text-field": "{name}",
         "text-size": 12,
         "text-justify": "right",
