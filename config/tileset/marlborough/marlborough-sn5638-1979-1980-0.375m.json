@@ -6,8 +6,8 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/marlborough_sn5638_1979-1980_0.375m/01H8JH0DNT3VKPMHKP4ACYNR72",
-      "3857": "s3://linz-basemaps/3857/marlborough_sn5638_1979-1980_0.375m/01H8JH0DP9TA3E9WDMRF69D71A",
+      "2193": "s3://linz-basemaps/2193/marlborough_sn5638_1979-1980_0.375m/01H8JH0DNT3VKPMHKP4ACYNR72/",
+      "3857": "s3://linz-basemaps/3857/marlborough_sn5638_1979-1980_0.375m/01H8JH0DP9TA3E9WDMRF69D71A/",
       "name": "marlborough-sn5638-1979-1980-0.375m",
       "title": "Marlborough 0.375m SN5638 (1979-1980)",
       "category": "Scanned Aerial Imagery",

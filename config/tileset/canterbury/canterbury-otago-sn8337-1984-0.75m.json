@@ -6,8 +6,8 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/canterbury_otago_sn8337_1984_0.75m/01H8JAC7YY2QVJZ9ZB71B5T30D",
-      "3857": "s3://linz-basemaps/3857/canterbury_otago_sn8337_1984_0.75m/01H8JADH3GEXXY3QR7D8W4EGFA",
+      "2193": "s3://linz-basemaps/2193/canterbury_otago_sn8337_1984_0.75m/01H8JAC7YY2QVJZ9ZB71B5T30D/",
+      "3857": "s3://linz-basemaps/3857/canterbury_otago_sn8337_1984_0.75m/01H8JADH3GEXXY3QR7D8W4EGFA/",
       "name": "canterbury-otago-sn8337-1984-0.75m",
       "title": "Canterbury / Otago 0.75m SN8337 (1984)",
       "category": "Scanned Aerial Imagery",
