@@ -20,7 +20,7 @@ jobs:
     env:
       BASEMAPS_BUCKET: linz-basemaps
       BASEMAPS_STAGING_BUCKET: linz-basemaps-staging
-      BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.44.0-8-g7b293487
+      BASEMAPS_CONTAINER: ghcr.io/linz/basemaps/cli:v6.46
       SCREENSHOT_CONTAINER: ghcr.io/linz/basemaps-screenshot/cli:v1
       DOCKER_AWS_ENV: -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN -e AWS_REGION -e AWS_DEFAULT_REGION
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
