@@ -4241,7 +4241,7 @@
         },
         "text-anchor": "left",
         "text-field": "{name}",
-        "text-font": ["Roboto Light Italic"],
+        "text-font": ["Roboto Italic"],
         "text-justify": "left",
         "text-max-width": 4,
         "text-offset": [0.5, 0],
@@ -4403,7 +4403,17 @@
     {
       "filter": ["all", ["==", "class", "rock_outcrop"]],
       "id": "Landcover_RockOutcrop",
-      "layout": { "icon-allow-overlap": false, "icon-image": "rock_outcrop_large_pnt", "icon-offset": [-3, -6], "visibility": "visible" },
+      "layout": {
+        "icon-allow-overlap": false,
+        "icon-image": "rock_outcrop_large_pnt",
+        "icon-offset": [-3, -6],
+        "text-anchor": "top",
+        "text-field": "{name}",
+        "text-font": ["Open Sans Regular"],
+        "text-size": 12,
+        "visibility": "visible"
+      },
+      "paint": { "text-halo-blur": 0.5, "text-halo-color": "rgb(255,255,255)", "text-halo-width": 1 },
       "source": "LINZ Basemaps",
       "source-layer": "landcover",
       "type": "symbol"
@@ -4550,16 +4560,18 @@
         "text-anchor": "top",
         "text-field": {
           "stops": [
-            [16, ""],
-            [17, "cold spring"]
+            [13, ""],
+            [16, "{name}"],
+            [17, "{name} (cold spring)"]
           ]
         },
         "text-font": ["Open Sans Regular"],
         "text-justify": "center",
+        "text-max-width": 8,
         "text-offset": [0, 0.5],
         "text-size": 12
       },
-      "paint": { "icon-color": "rgba(5, 0, 168, 1)", "text-color": "rgba(20, 125, 228, 1)" },
+      "paint": { "icon-color": "rgba(5, 0, 168, 1)", "text-color": "rgba(20, 125, 228, 1)", "text-halo-blur": 0.5, "text-halo-color": "rgb(255,255,255)", "text-halo-width": 1.5 },
       "source": "LINZ Basemaps",
       "source-layer": "water",
       "type": "symbol"
@@ -4578,16 +4590,18 @@
         "text-anchor": "top",
         "text-field": {
           "stops": [
-            [14, ""],
-            [15, "hot spring"]
+            [13, ""],
+            [14, "{name}"],
+            [16, "{name} (hot spring)"]
           ]
         },
         "text-font": ["Open Sans Regular"],
+        "text-max-width": 8,
         "text-offset": [0, 0.5],
-        "text-size": 10,
+        "text-size": 12,
         "visibility": "visible"
       },
-      "paint": { "text-color": "rgba(141, 0, 3, 1)" },
+      "paint": { "text-color": "rgba(141, 0, 3, 1)", "text-halo-blur": 0.5, "text-halo-color": "rgb(255,255,255)", "text-halo-width": 1.5 },
       "source": "LINZ Basemaps",
       "source-layer": "water",
       "type": "symbol"
@@ -4853,6 +4867,7 @@
         "text-font": ["Open Sans Italic"],
         "text-ignore-placement": true,
         "text-justify": "center",
+        "text-max-angle": 35,
         "text-size": 12,
         "visibility": "visible"
       },
@@ -4877,6 +4892,7 @@
         "text-font": ["Open Sans Italic"],
         "text-ignore-placement": true,
         "text-justify": "center",
+        "text-max-angle": 35,
         "text-size": 12,
         "visibility": "visible"
       },
@@ -4897,6 +4913,7 @@
         "text-field": "{name}",
         "text-font": ["Open Sans Italic"],
         "text-ignore-placement": true,
+        "text-max-angle": 35,
         "text-size": 12
       },
       "minzoom": 12,
@@ -4916,6 +4933,7 @@
         "text-field": "{name}",
         "text-font": ["Open Sans Italic"],
         "text-ignore-placement": true,
+        "text-max-angle": 35,
         "text-size": 12
       },
       "minzoom": 12,
@@ -4935,6 +4953,7 @@
         "text-field": "{name}",
         "text-font": ["Open Sans Italic"],
         "text-ignore-placement": true,
+        "text-max-angle": 35,
         "text-size": 12
       },
       "minzoom": 12,
@@ -5013,7 +5032,167 @@
       "type": "symbol"
     },
     {
-      "id": "Place-Names-13",
+      "filter": ["any", ["==", "water", "bay"], ["==", "water", "lagoon"]],
+      "id": "Place-Names-13-Water",
+      "layout": {
+        "icon-rotation-alignment": "auto",
+        "icon-text-fit": "both",
+        "text-allow-overlap": true,
+        "text-field": "{name}",
+        "text-font": ["Open Sans Italic"],
+        "text-ignore-placement": false,
+        "text-letter-spacing": {
+          "stops": [
+            [10, 0.08],
+            [13, 0.04],
+            [14, 0]
+          ]
+        },
+        "text-max-width": 7,
+        "text-offset": {
+          "stops": [
+            [4, [0, 1.75]],
+            [6, [0, 1.25]]
+          ]
+        },
+        "text-optional": true,
+        "text-pitch-alignment": "viewport",
+        "text-rotation-alignment": "viewport",
+        "text-size": {
+          "stops": [
+            [2, 10],
+            [5, 14],
+            [8, 14],
+            [10, 16],
+            [12, 14],
+            [14, 14]
+          ]
+        },
+        "text-variable-anchor": ["top", "bottom-left"],
+        "visibility": "visible"
+      },
+      "minzoom": 13,
+      "paint": {
+        "icon-color": {
+          "stops": [
+            [6, "rgba(53, 53, 53, 1)"],
+            [10, "rgba(53, 53, 53, 1)"]
+          ]
+        },
+        "icon-halo-blur": {
+          "stops": [
+            [13, 1],
+            [14, 0.5]
+          ]
+        },
+        "icon-halo-color": "rgba(255, 255, 255, 1)",
+        "icon-halo-width": {
+          "stops": [
+            [13, 1],
+            [14, 2]
+          ]
+        },
+        "icon-opacity": 1,
+        "text-color": "rgba(0, 140, 204, 1)",
+        "text-halo-blur": 1,
+        "text-halo-color": "rgba(255, 252, 252, 1)",
+        "text-halo-width": {
+          "stops": [
+            [4, 1.5],
+            [9, 2]
+          ]
+        },
+        "text-translate-anchor": "viewport"
+      },
+      "source": "LINZ Basemaps",
+      "source-layer": "place",
+      "type": "symbol"
+    },
+    {
+      "filter": ["any", ["==", "natural", "cape"], ["==", "natural", "peak"], ["==", "natural", "peninsula"]],
+      "id": "Place-Names-13-Natural",
+      "layout": {
+        "icon-rotation-alignment": "auto",
+        "icon-text-fit": "both",
+        "text-allow-overlap": true,
+        "text-field": "{name}",
+        "text-font": ["Roboto Regular"],
+        "text-ignore-placement": false,
+        "text-letter-spacing": {
+          "stops": [
+            [10, 0.08],
+            [13, 0.04],
+            [14, 0]
+          ]
+        },
+        "text-max-width": 7,
+        "text-offset": {
+          "stops": [
+            [4, [0, 1.75]],
+            [6, [0, 1.25]]
+          ]
+        },
+        "text-optional": true,
+        "text-pitch-alignment": "viewport",
+        "text-rotation-alignment": "viewport",
+        "text-size": {
+          "stops": [
+            [2, 10],
+            [5, 14],
+            [8, 14],
+            [10, 16],
+            [12, 14],
+            [14, 14]
+          ]
+        },
+        "text-variable-anchor": ["top", "bottom-left"],
+        "visibility": "visible"
+      },
+      "minzoom": 13,
+      "paint": {
+        "icon-color": {
+          "stops": [
+            [6, "rgba(53, 53, 53, 1)"],
+            [10, "rgba(53, 53, 53, 1)"]
+          ]
+        },
+        "icon-halo-blur": {
+          "stops": [
+            [13, 1],
+            [14, 0.5]
+          ]
+        },
+        "icon-halo-color": "rgba(255, 255, 255, 1)",
+        "icon-halo-width": {
+          "stops": [
+            [13, 1],
+            [14, 2]
+          ]
+        },
+        "icon-opacity": 1,
+        "text-color": {
+          "stops": [
+            [6, "rgba(35, 34, 34, 1)"],
+            [19, "rgba(111, 111, 111, 1)"]
+          ]
+        },
+        "text-halo-blur": 1,
+        "text-halo-color": "rgba(255, 252, 252, 1)",
+        "text-halo-width": {
+          "stops": [
+            [4, 1.5],
+            [9, 2]
+          ]
+        },
+        "text-translate-anchor": "viewport"
+      },
+      "source": "LINZ Basemaps",
+      "source-layer": "place",
+      "type": "symbol"
+    },
+    {
+      "filter": ["any", ["==", "place", "suburb"], ["==", "place", "island"], ["==", "place", "village"]],
+      "id": "Place-Names-13-Place",
       "layout": {
         "icon-rotation-alignment": "auto",
         "icon-text-fit": "both",
@@ -5094,7 +5273,160 @@
       "type": "symbol"
     },
     {
-      "id": "Place-Names-3-12",
+      "filter": [
+        "any",
+        ["==", "place", "lake"],
+        ["==", "water", "seachannel"],
+        ["==", "water", "sea"],
+        ["==", "water", "bay"],
+        ["==", "water", "lagoon"],
+        ["==", "water", "seacanyon"],
+        ["==", "water", "seamount"],
+        ["==", "water", "searidge"]
+      ],
+      "id": "Place-Names-3-12-Water",
+      "layout": {
+        "icon-pitch-alignment": "auto",
+        "text-field": "{name}",
+        "text-font": ["Open Sans Italic"],
+        "text-ignore-placement": false,
+        "text-letter-spacing": {
+          "stops": [
+            [10, 0.08],
+            [13, 0.04],
+            [14, 0]
+          ]
+        },
+        "text-max-width": 6,
+        "text-offset": [0, 1.75],
+        "text-optional": true,
+        "text-pitch-alignment": "viewport",
+        "text-rotation-alignment": "viewport",
+        "text-size": {
+          "stops": [
+            [2, 10],
+            [5, 12],
+            [8, 14],
+            [10, 15],
+            [12, 16],
+            [14, 16]
+          ]
+        },
+        "text-variable-anchor": ["center"],
+        "visibility": "visible"
+      },
+      "maxzoom": 13,
+      "minzoom": 3,
+      "paint": {
+        "icon-color": "rgba(53, 53, 53, 1)",
+        "icon-halo-blur": {
+          "stops": [
+            [13, 1],
+            [14, 0.5]
+          ]
+        },
+        "icon-halo-color": "rgba(255, 255, 255, 1)",
+        "icon-halo-width": {
+          "stops": [
+            [13, 1],
+            [14, 2]
+          ]
+        },
+        "icon-opacity": 1,
+        "icon-translate-anchor": "viewport",
+        "text-color": "rgba(0, 140, 204, 1)",
+        "text-halo-blur": 1,
+        "text-halo-color": "rgba(255, 252, 252, 1)",
+        "text-halo-width": {
+          "stops": [
+            [4, 1.5],
+            [9, 2]
+          ]
+        }
+      },
+      "source": "LINZ Basemaps",
+      "source-layer": "place",
+      "type": "symbol"
+    },
+    {
+      "filter": ["any", ["==", "natural", "peak"], ["==", "natural", "peninsula"], ["==", "natural", "cape"]],
+      "id": "Place-Names-3-12-Natural",
+      "layout": {
+        "icon-pitch-alignment": "auto",
+        "text-field": "{name}",
+        "text-font": ["Roboto Regular"],
+        "text-ignore-placement": false,
+        "text-letter-spacing": {
+          "stops": [
+            [10, 0.08],
+            [13, 0.04],
+            [14, 0]
+          ]
+        },
+        "text-max-width": 6,
+        "text-offset": {
+          "stops": [
+            [4, [0, 1.75]],
+            [6, [0, 1.25]]
+          ]
+        },
+        "text-optional": true,
+        "text-pitch-alignment": "viewport",
+        "text-rotation-alignment": "viewport",
+        "text-size": {
+          "stops": [
+            [2, 10],
+            [5, 14],
+            [8, 14],
+            [10, 16],
+            [12, 16],
+            [14, 16]
+          ]
+        },
+        "text-variable-anchor": ["top", "bottom-left"],
+        "visibility": "visible"
+      },
+      "maxzoom": 13,
+      "minzoom": 3,
+      "paint": {
+        "icon-color": "rgba(53, 53, 53, 1)",
+        "icon-halo-blur": {
+          "stops": [
+            [13, 1],
+            [14, 0.5]
+          ]
+        },
+        "icon-halo-color": "rgba(255, 255, 255, 1)",
+        "icon-halo-width": {
+          "stops": [
+            [13, 1],
+            [14, 2]
+          ]
+        },
+        "icon-opacity": 1,
+        "icon-translate-anchor": "viewport",
+        "text-color": {
+          "stops": [
+            [6, "rgba(35, 34, 34, 1)"],
+            [19, "rgba(111, 111, 111, 1)"]
+          ]
+        },
+        "text-halo-blur": 1,
+        "text-halo-color": "rgba(255, 252, 252, 1)",
+        "text-halo-width": {
+          "stops": [
+            [4, 1.5],
+            [9, 2]
+          ]
+        }
+      },
+      "source": "LINZ Basemaps",
+      "source-layer": "place",
+      "type": "symbol"
+    },
+    {
+      "filter": ["any", ["==", "place", "city"], ["==", "place", "town"], ["==", "place", "archipalego"], ["==", "place", "island"], ["==", "place", "archipelago"]],
+      "id": "Place-Names-3-12-Place",
       "layout": {
         "icon-pitch-alignment": "auto",
         "text-field": "{name}",
@@ -5133,12 +5465,7 @@
       "maxzoom": 13,
       "minzoom": 3,
       "paint": {
-        "icon-color": {
-          "stops": [
-            [6, "rgba(53, 53, 53, 1)"],
-            [10, "rgba(53, 53, 53, 1)"]
-          ]
-        },
+        "icon-color": "rgba(53, 53, 53, 1)",
         "icon-halo-blur": {
           "stops": [
             [13, 1],
