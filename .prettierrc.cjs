@@ -1,4 +1,4 @@
 module.exports = {
-  ...require('@linzjs/style/.prettierrc.js'),
-  printWidth: 200
+  ...require('@linzjs/style/.prettierrc.cjs'),
+  plugins: ['prettier-plugin-sort-json']
 };
