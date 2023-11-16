@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_selwyn-urban-2020-2021-0.075m",
+  "title": "Selwyn 0.075m Urban Aerial Photos (2020-2021)",
+  "background": "#00000000",
+  "category": "Urban Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/selwyn_urban_2020-2021_0-075m_RGB/01FSWMZ640BA2YD74DDGA1A62X",
+      "3857": "s3://linz-basemaps/3857/selwyn_urban_2020-2021_0-075m_RGB/01FSWN35JY2PC7GMHEBXYART77",
+      "name": "selwyn-urban-2020-2021-0.075m",
+      "title": "Selwyn 0.075m Urban Aerial Photos (2020-2021)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
