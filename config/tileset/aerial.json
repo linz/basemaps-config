@@ -900,7 +900,7 @@
       "category": "Urban Aerial Photos",
       "minZoom": 14
     },
-    }
+    {
       "2193": "s3://linz-basemaps/2193/hurunui_2023_0.075m/01HFAS0PCEY0WBGCPXPHDQ29AE",
       "3857": "s3://linz-basemaps/3857/hurunui_2023_0.075m/01HFAS0PCJPDPBXD5MQFCG13KX",
       "name": "hurunui-2023-0.075m",
