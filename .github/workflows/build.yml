@@ -51,13 +51,13 @@ jobs:
           mask-aws-account-id: true
           role-to-assume: ${{ secrets.AWS_ROLE_SCREENSHOT }}
 
-      - name: (NonProd) Bundle Config File
+      - name: Bundle Config File
         run: |
           ./scripts/bmc.sh bundle --config $PWD/config --output $PWD/config-staging.json --assets ${ASSETS_LOCATION_STAGING}
           CONFIG_HASH_STAGING=$(cat config-staging.json | jq .hash -r)
           echo "CONFIG_LOCATION_STAGING=s3://linz-basemaps-staging/config/config-${CONFIG_HASH_STAGING}.json.gz" >> $GITHUB_ENV
 
-      - name: (NonProd) Upload Config & Assets
+      - name: Upload Config & Assets
         run: |
           aws s3 cp ${ASSETS_HASH} ${ASSETS_LOCATION_STAGING}
           
@@ -75,7 +75,7 @@ jobs:
       - name: Compare To Production
         run: |
           aws s3 cp s3://linz-basemaps/config/config-latest.json.gz .
-          ./scripts/bmc.sh import --config ./config-latest.json.gz --output $PWD/changes.md
+          ./scripts/bmc.sh import --config $PWD/config-latest.json.gz --output $PWD/changes.md
 
       - name: (Pull Request) Update Description
         if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
@@ -151,12 +151,14 @@ jobs:
       - name: Download Config
         run: |
           aws s3 cp ${CONFIG_PATH} config-current.json.gz
-          aws s3 cp ${ASSETS_PATH} assets-current.json.gz
+          aws s3 cp ${ASSETS_PATH} assets-current.tar.co
 
       - name: Update config to production URLs
         run: |
-          echo "ASSETS_LOCATION_STAGING=s3://linz-basemaps-staging/assets/${ASSETS_HASH}" >> "${GITHUB_ENV}"
-          ./scripts/bmc.sh bundle --config $PWD/config-current.json.gz --output $PWD/config-prod.json --assets ${ASSETS_LOCATION_STAGING}
+          echo "ASSETS_LOCATION_PROD=s3://linz-basemaps/assets/${ASSETS_HASH}" >> "${GITHUB_ENV}"
+          aws s3 sync assets-current.tar.co ${ASSETS_LOCATION_PROD}
+
+          ./scripts/bmc.sh bundle --config $PWD/config-current.json.gz --output $PWD/config-prod.json --assets ${ASSETS_LOCATION_PROD}
 
           CONFIG_HASH_PROD=$(cat config-prod | jq .hash -r)
           echo "CONFIG_LOCATION_PROD=s3://linz-basemaps/config/config-${CONFIG_HASH_STAGING}.json.gz" >> $GITHUB_ENV
