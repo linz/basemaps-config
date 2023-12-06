@@ -22,23 +22,22 @@ jobs:
     steps:
       - uses: linz/action-typescript@v3
 
-      - name: Prepare path for glyphs and sprites
+      - name: Prepare path for glyphs
         run: |
           mkdir -p assets/fonts/
-          
 
       - name: Build Glyphs
         uses: linz/action-build-pbf-glyphs@v1
         with:
           source: config/fonts/
           target: assets/fonts/
-          
+
       - name: Build Sprites
         run: |
           npx basemaps-sprites $PWD/config/sprites/topographic/
           mkdir -p assets/sprites/
           cp topographic* assets/sprites
-        
+
       - name: Bundle Assets Into Cotar
         run: |
           ./scripts/bmc.sh bundle-assets --assets $PWD/assets/ --output $PWD/assets.tar.co
@@ -62,7 +61,7 @@ jobs:
       - name: Upload Config & Assets
         run: |
           aws s3 cp ${ASSETS_HASH} ${ASSETS_LOCATION_STAGING}
-          
+
           gzip -9 -k config-staging.json
           aws s3 cp config-staging.json.gz ${CONFIG_LOCATION_STAGING} --content-encoding gzip
 
@@ -81,11 +80,11 @@ jobs:
 
       - name: (Pull Request) Update Description
         if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
-        env: 
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           [ ! -f changes.md ] || gh pr comment ${PR_NUMBER} --body-file changes.md
-  
+
   # Compare and deploy to non-prod
   deploy-nonprod:
     needs: [build]
@@ -101,11 +100,11 @@ jobs:
     permissions:
       id-token: write
       contents: read
-    
+
     environment:
       name: 'nonprod'
 
-    steps: 
+    steps:
       - uses: actions/checkout@v4
 
       - name: AWS Configure
@@ -119,7 +118,6 @@ jobs:
         run: |
           ./scripts/bmc.sh import --config ${CONFIG_PATH}--commit
 
-
   # Compare and deploy to non-prod
   deploy-prod:
     needs: [build, deploy-nonprod]
@@ -132,15 +130,14 @@ jobs:
       CONFIG_PATH: ${{ needs.build.outputs.config_path }}
       ASSETS_PATH: ${{ needs.build.outputs.assets_path }}
 
-
     permissions:
       id-token: write
       contents: read
-    
+
     environment:
       name: 'prod'
 
-    steps: 
+    steps:
       - uses: actions/checkout@v4
 
       - name: AWS Configure
@@ -199,7 +196,7 @@ jobs:
       - name: (Screenshot) Screenshot Pull Request Changes
         run: |
           ./scripts/bmc.sh serve --config ${CONFIG_PATH} &
-          
+
           # Wait for the server to start
           timeout 30 bash -c 'while [[ "$(curl -s -o /dev/null -w ''%{http_code}'' http://localhost:5000/v1/version)" !=  "200" ]]; do sleep 0.5; done' || false
 
@@ -233,5 +230,5 @@ jobs:
         id: visual-snapshots-diff
         uses: blacha/action-visual-snapshot@v2
         with:
-          storage-prefix: "s3://linz-basemaps-screenshot"
-          storage-url: "https://d25mfjh9syaxsr.cloudfront.net"
+          storage-prefix: 's3://linz-basemaps-screenshot'
+          storage-url: 'https://d25mfjh9syaxsr.cloudfront.net'
