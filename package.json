@@ -12,5 +12,8 @@
     "@linzjs/style": "^3.15.0",
     "eslint-plugin-prettier": "^5.0.1",
     "prettier-plugin-sort-json": "^3.1.0"
+  },
+  "dependencies": {
+    "@basemaps/sprites": "^7.0.0"
   }
 }

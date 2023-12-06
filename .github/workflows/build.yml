@@ -25,7 +25,7 @@ jobs:
       - name: Prepare path for glyphs and sprites
         run: |
           mkdir -p assets/fonts/
-          mkdir -p assets/sprites/
+          
 
       - name: Build Glyphs
         uses: linz/action-build-pbf-glyphs@v1
@@ -35,7 +35,9 @@ jobs:
           
       - name: Build Sprites
         run: |
-          ./scripts/bmc.sh sprites --path $PWD/config/sprites/topographic/ --output $PWD/assets/sprites/
+          npx basemaps-sprites $PWD/config/sprites/topographic/
+          mkdir -p assets/sprites/
+          cp topographic* assets/sprites
         
       - name: Bundle Assets Into Cotar
         run: |
