@@ -84,12 +84,12 @@ jobs:
           aws s3 cp s3://linz-basemaps/config/config-latest.json.gz .
           ./scripts/bmc.sh import --config ${CONFIG_LOCATION_STAGING} --output $PWD/changes.md --target $PWD/config-latest.json.gz
 
-      - name: (Pull Request) Update Description
-        if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          [ ! -f changes.md ] || gh pr comment ${{ github.event.number }} --body-file changes.md
+      # - name: (Pull Request) Update Description
+      #   if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: |
+      #     [ ! -f changes.md ] || gh pr comment ${{ github.event.number }} --body-file changes.md
 
   # Compare and deploy to non-prod
   deploy-nonprod:
@@ -97,7 +97,7 @@ jobs:
     concurrency: deploy-nonprod-${{ github.head_ref }}
 
     name: Deploy Nonprod
-    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+    # if: github.ref == 'refs/heads/master' && github.event_name == 'push'
     runs-on: ubuntu-latest
     env:
       CONFIG_PATH: ${{ needs.build.outputs.config_path }}
