@@ -180,7 +180,7 @@ jobs:
 
       - name: Import config
         run: |
-          ./scripts/bmc.sh import --config ${CONFIG_LOCATION_PROD} --commit
+          ./scripts/bmc.sh import --config ${CONFIG_LOCATION_PROD}
 
   screenshot:
     permissions:
