@@ -19,6 +19,8 @@ jobs:
       config_path: ${{ steps.path.outputs.config_path }}
       # location of the output asset file, generally s3://linz-basemaps-staging/config/assets.tar.co
       assets_path: ${{ steps.path.outputs.assets_path }}
+      # Hashed filename of the assets eg "assets-FgL4CU4wTd17Y4P7iEgMdG82Vgzj8nXJq12W9A2oPiVf.tar.co"
+      assets_hash: ${{ steps.path.outputs.assets_hash }}
 
     runs-on: ubuntu-latest
     concurrency: build-${{ github.head_ref }}
@@ -107,6 +109,7 @@ jobs:
 
     environment:
       name: 'nonprod'
+      url: https://dev.basemaps.linz.govt.nz
 
     steps:
       - uses: actions/checkout@v4
@@ -133,6 +136,7 @@ jobs:
     env:
       CONFIG_PATH: ${{ needs.build.outputs.config_path }}
       ASSETS_PATH: ${{ needs.build.outputs.assets_path }}
+      ASSETS_HASH: ${{ needs.build.outputs.assets_hash }}
 
     permissions:
       id-token: write
@@ -140,6 +144,7 @@ jobs:
 
     environment:
       name: 'prod'
+      url: https://basemaps.linz.govt.nz
 
     steps:
       - uses: actions/checkout@v4
@@ -163,8 +168,8 @@ jobs:
 
           ./scripts/bmc.sh bundle --config $PWD/config-current.json.gz --output $PWD/config-prod.json --assets ${ASSETS_LOCATION_PROD}
 
-          CONFIG_HASH_PROD=$(cat config-prod | jq .hash -r)
-          echo "CONFIG_LOCATION_PROD=s3://linz-basemaps/config/config-${CONFIG_HASH_STAGING}.json.gz" >> $GITHUB_ENV
+          CONFIG_HASH_PROD=$(cat config-prod.json | jq .hash -r)
+          echo "CONFIG_LOCATION_PROD=s3://linz-basemaps/config/config-${CONFIG_HASH_PROD}.json.gz" >> $GITHUB_ENV
 
       - name: Upload config
         run: |
