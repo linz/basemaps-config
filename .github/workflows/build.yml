@@ -13,9 +13,13 @@ jobs:
       contents: read
       issues: write # This permission shouldn't needed as there is a bug currently for gh pr edit. https://github.com/cli/cli/issues/4631
       pull-requests: write
+
     outputs:
+      # location of the output configuration generally s3://linz-basemaps-staging/config/config-:hash.json.gz
       config_path: ${{ steps.path.outputs.config_path }}
+      # location of the output asset file, generally s3://linz-basemaps-staging/config/assets.tar.co
       assets_path: ${{ steps.path.outputs.assets_path }}
+
     runs-on: ubuntu-latest
     concurrency: build-${{ github.head_ref }}
 
