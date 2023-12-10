@@ -83,7 +83,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          [ ! -f changes.md ] || gh pr comment ${PR_NUMBER} --body-file changes.md
+          [ ! -f changes.md ] || gh pr comment ${{ github.event.number }} --body-file changes.md
 
   # Compare and deploy to non-prod
   deploy-nonprod:
