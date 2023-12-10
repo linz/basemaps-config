@@ -82,7 +82,7 @@ jobs:
       - name: Compare To Production
         run: |
           aws s3 cp s3://linz-basemaps/config/config-latest.json.gz .
-          ./scripts/bmc.sh import --config $PWD/config-staging.json --output $PWD/changes.md --target $PWD/config-latest.json.gz
+          ./scripts/bmc.sh import --config ${CONFIG_LOCATION_STAGING} --output $PWD/changes.md --target $PWD/config-latest.json.gz
 
       - name: (Pull Request) Update Description
         if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
