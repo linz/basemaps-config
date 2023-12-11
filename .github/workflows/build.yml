@@ -8,6 +8,7 @@ on:
       - master
 jobs:
   build:
+    name: Build
     permissions:
       id-token: write
       contents: read
@@ -177,19 +178,19 @@ jobs:
         run: |
           gzip -9 -k config-prod.json
 
-          # aws s3 cp config-prod.json.gz s3://linz-basemaps/config/config-latest.json.gz --content-encoding gzip
+          aws s3 cp config-prod.json.gz s3://linz-basemaps/config/config-latest.json.gz --content-encoding gzip
           aws s3 cp config-prod.json.gz ${CONFIG_LOCATION_PROD} --content-encoding gzip
 
       - name: Import config
         run: |
-          ./scripts/bmc.sh import --config ${CONFIG_LOCATION_PROD}
+          ./scripts/bmc.sh import --config ${CONFIG_LOCATION_PROD} --commit
 
   screenshot:
     permissions:
       id-token: write
       contents: read
     needs: [build]
-    name: taking screenshots
+    name: Take Screenshots
     runs-on: ubuntu-latest
     env:
       SCREENSHOT_CONTAINER: ghcr.io/linz/basemaps-screenshot/cli:v1
@@ -227,7 +228,7 @@ jobs:
       contents: write
       checks: write
     needs: [build, screenshot]
-    name: validate screenshots
+    name: Validate Screenshots
     if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     timeout-minutes: 20
