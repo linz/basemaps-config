@@ -177,12 +177,12 @@ jobs:
         run: |
           gzip -9 -k config-prod.json
 
-          # aws s3 cp config-prod.json.gz s3://linz-basemaps/config/config-latest.json.gz --content-encoding gzip
+          aws s3 cp config-prod.json.gz s3://linz-basemaps/config/config-latest.json.gz --content-encoding gzip
           aws s3 cp config-prod.json.gz ${CONFIG_LOCATION_PROD} --content-encoding gzip
 
       - name: Import config
         run: |
-          ./scripts/bmc.sh import --config ${CONFIG_LOCATION_PROD}
+          ./scripts/bmc.sh import --config ${CONFIG_LOCATION_PROD} --commit
 
   screenshot:
     permissions:
