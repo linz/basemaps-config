@@ -149,12 +149,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # - name: AWS Configure
-      #   uses: aws-actions/configure-aws-credentials@v2.0.0
-      #   with:
-      #     aws-region: ap-southeast-2
-      #     mask-aws-account-id: true
-      #     role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+      - name: AWS Configure
+        uses: aws-actions/configure-aws-credentials@v2.0.0
+        with:
+          aws-region: ap-southeast-2
+          mask-aws-account-id: true
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
 
       - name: Download Config
         run: |
@@ -174,16 +174,16 @@ jobs:
           CONFIG_HASH_PROD=$(cat config-prod.json | jq .hash -r)
           echo "CONFIG_LOCATION_PROD=s3://linz-basemaps/config/config-${CONFIG_HASH_PROD}.json.gz" >> $GITHUB_ENV
 
-      - name: Upload config
-        run: |
-          gzip -9 -k config-prod.json
+      # - name: Upload config
+      #   run: |
+      #     gzip -9 -k config-prod.json
 
-          aws s3 cp config-prod.json.gz s3://linz-basemaps/config/config-latest.json.gz --content-encoding gzip
-          aws s3 cp config-prod.json.gz ${CONFIG_LOCATION_PROD} --content-encoding gzip
+      #     aws s3 cp config-prod.json.gz s3://linz-basemaps/config/config-latest.json.gz --content-encoding gzip
+      #     aws s3 cp config-prod.json.gz ${CONFIG_LOCATION_PROD} --content-encoding gzip
 
-      - name: Import config
-        run: |
-          ./scripts/bmc.sh import --config ${CONFIG_LOCATION_PROD}
+      # - name: Import config
+      #   run: |
+      #     ./scripts/bmc.sh import --config ${CONFIG_LOCATION_PROD}
 
   screenshot:
     permissions:
