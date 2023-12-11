@@ -8,6 +8,7 @@ on:
       - master
 jobs:
   build:
+    name: Build
     permissions:
       id-token: write
       contents: read
@@ -189,7 +190,7 @@ jobs:
       id-token: write
       contents: read
     needs: [build]
-    name: taking screenshots
+    name: Take Screenshots
     runs-on: ubuntu-latest
     env:
       SCREENSHOT_CONTAINER: ghcr.io/linz/basemaps-screenshot/cli:v1
@@ -227,7 +228,7 @@ jobs:
       contents: write
       checks: write
     needs: [build, screenshot]
-    name: validate screenshots
+    name: Validate Screenshots
     if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     timeout-minutes: 20
