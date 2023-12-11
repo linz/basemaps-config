@@ -78,60 +78,59 @@ jobs:
           echo "assets_path=${ASSETS_LOCATION_STAGING}" >> "$GITHUB_OUTPUT"
           echo "assets_hash=${ASSETS_HASH}" >> "$GITHUB_OUTPUT"
 
-      # TODO just diff the json config files
       - name: Compare To Production
         run: |
           aws s3 cp s3://linz-basemaps/config/config-latest.json.gz .
           ./scripts/bmc.sh import --config ${CONFIG_LOCATION_STAGING} --output $PWD/changes.md --target $PWD/config-latest.json.gz
 
-      # - name: (Pull Request) Update Description
-      #   if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   run: |
-      #     [ ! -f changes.md ] || gh pr comment ${{ github.event.number }} --body-file changes.md
+      - name: (Pull Request) Update Description
+        if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          [ ! -f changes.md ] || gh pr comment ${{ github.event.number }} --body-file changes.md
 
   # Compare and deploy to non-prod
-  # deploy-nonprod:
-  #   needs: [build]
-  #   concurrency: deploy-nonprod-${{ github.head_ref }}
-
-  #   name: Deploy Nonprod
-  #   # if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-  #   runs-on: ubuntu-latest
-  #   env:
-  #     CONFIG_PATH: ${{ needs.build.outputs.config_path }}
-  #     ASSETS_PATH: ${{ needs.build.outputs.assets_path }}
-
-  #   permissions:
-  #     id-token: write
-  #     contents: read
-
-  #   environment:
-  #     name: 'nonprod'
-  #     url: https://dev.basemaps.linz.govt.nz
-
-  #   steps:
-  #     - uses: actions/checkout@v4
-
-  #     - name: AWS Configure
-  #       uses: aws-actions/configure-aws-credentials@v2.0.0
-  #       with:
-  #         aws-region: ap-southeast-2
-  #         mask-aws-account-id: true
-  #         role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
-
-  #     - name: Import config
-  #       run: |
-  #         ./scripts/bmc.sh import --config ${CONFIG_PATH} --commit
-
-  # Compare and deploy to non-prod
-  deploy-prod:
+  deploy-nonprod:
     needs: [build]
+    concurrency: deploy-nonprod-${{ github.head_ref }}
+
+    name: Deploy Nonprod
+    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    env:
+      CONFIG_PATH: ${{ needs.build.outputs.config_path }}
+      ASSETS_PATH: ${{ needs.build.outputs.assets_path }}
+
+    permissions:
+      id-token: write
+      contents: read
+
+    environment:
+      name: 'nonprod'
+      url: https://dev.basemaps.linz.govt.nz
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: AWS Configure
+        uses: aws-actions/configure-aws-credentials@v2.0.0
+        with:
+          aws-region: ap-southeast-2
+          mask-aws-account-id: true
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+
+      - name: Import config
+        run: |
+          ./scripts/bmc.sh import --config ${CONFIG_PATH} --commit
+
+  # Compare and deploy to prod
+  deploy-prod:
+    needs: [build, deploy-nonprod]
     concurrency: deploy-prod-${{ github.head_ref }}
 
     name: Deploy Production
-    # if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
     runs-on: ubuntu-latest
     env:
       CONFIG_PATH: ${{ needs.build.outputs.config_path }}
@@ -174,16 +173,16 @@ jobs:
           CONFIG_HASH_PROD=$(cat config-prod.json | jq .hash -r)
           echo "CONFIG_LOCATION_PROD=s3://linz-basemaps/config/config-${CONFIG_HASH_PROD}.json.gz" >> $GITHUB_ENV
 
-      # - name: Upload config
-      #   run: |
-      #     gzip -9 -k config-prod.json
+      - name: Upload config
+        run: |
+          gzip -9 -k config-prod.json
 
-      #     aws s3 cp config-prod.json.gz s3://linz-basemaps/config/config-latest.json.gz --content-encoding gzip
-      #     aws s3 cp config-prod.json.gz ${CONFIG_LOCATION_PROD} --content-encoding gzip
+          # aws s3 cp config-prod.json.gz s3://linz-basemaps/config/config-latest.json.gz --content-encoding gzip
+          aws s3 cp config-prod.json.gz ${CONFIG_LOCATION_PROD} --content-encoding gzip
 
-      # - name: Import config
-      #   run: |
-      #     ./scripts/bmc.sh import --config ${CONFIG_LOCATION_PROD}
+      - name: Import config
+        run: |
+          ./scripts/bmc.sh import --config ${CONFIG_LOCATION_PROD}
 
   screenshot:
     permissions:
