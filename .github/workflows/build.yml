@@ -163,7 +163,7 @@ jobs:
 
       - name: Update config to production URLs
         run: |
-          echo "ASSETS_LOCATION_PROD=s3://linz-basemaps/assets/${ASSETS_HASH}" >> ${GITHUB_ENV}
+          ASSETS_LOCATION_PROD=s3://linz-basemaps/assets/${ASSETS_HASH}
 
           echo ${ASSETS_LOCATION_PROD}
 
