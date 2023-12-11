@@ -92,42 +92,42 @@ jobs:
       #     [ ! -f changes.md ] || gh pr comment ${{ github.event.number }} --body-file changes.md
 
   # Compare and deploy to non-prod
-  deploy-nonprod:
-    needs: [build]
-    concurrency: deploy-nonprod-${{ github.head_ref }}
+  # deploy-nonprod:
+  #   needs: [build]
+  #   concurrency: deploy-nonprod-${{ github.head_ref }}
 
-    name: Deploy Nonprod
-    # if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-    runs-on: ubuntu-latest
-    env:
-      CONFIG_PATH: ${{ needs.build.outputs.config_path }}
-      ASSETS_PATH: ${{ needs.build.outputs.assets_path }}
+  #   name: Deploy Nonprod
+  #   # if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+  #   runs-on: ubuntu-latest
+  #   env:
+  #     CONFIG_PATH: ${{ needs.build.outputs.config_path }}
+  #     ASSETS_PATH: ${{ needs.build.outputs.assets_path }}
 
-    permissions:
-      id-token: write
-      contents: read
+  #   permissions:
+  #     id-token: write
+  #     contents: read
 
-    environment:
-      name: 'nonprod'
-      url: https://dev.basemaps.linz.govt.nz
+  #   environment:
+  #     name: 'nonprod'
+  #     url: https://dev.basemaps.linz.govt.nz
 
-    steps:
-      - uses: actions/checkout@v4
+  #   steps:
+  #     - uses: actions/checkout@v4
 
-      - name: AWS Configure
-        uses: aws-actions/configure-aws-credentials@v2.0.0
-        with:
-          aws-region: ap-southeast-2
-          mask-aws-account-id: true
-          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+  #     - name: AWS Configure
+  #       uses: aws-actions/configure-aws-credentials@v2.0.0
+  #       with:
+  #         aws-region: ap-southeast-2
+  #         mask-aws-account-id: true
+  #         role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
 
-      - name: Import config
-        run: |
-          ./scripts/bmc.sh import --config ${CONFIG_PATH} --commit
+  #     - name: Import config
+  #       run: |
+  #         ./scripts/bmc.sh import --config ${CONFIG_PATH} --commit
 
   # Compare and deploy to non-prod
   deploy-prod:
-    needs: [build, deploy-nonprod]
+    needs: [build]
     concurrency: deploy-prod-${{ github.head_ref }}
 
     name: Deploy Production
@@ -149,12 +149,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: AWS Configure
-        uses: aws-actions/configure-aws-credentials@v2.0.0
-        with:
-          aws-region: ap-southeast-2
-          mask-aws-account-id: true
-          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+      # - name: AWS Configure
+      #   uses: aws-actions/configure-aws-credentials@v2.0.0
+      #   with:
+      #     aws-region: ap-southeast-2
+      #     mask-aws-account-id: true
+      #     role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
 
       - name: Download Config
         run: |
@@ -164,6 +164,9 @@ jobs:
       - name: Update config to production URLs
         run: |
           echo "ASSETS_LOCATION_PROD=s3://linz-basemaps/assets/${ASSETS_HASH}" >> ${GITHUB_ENV}
+
+          echo ${ASSETS_LOCATION_PROD}
+
           # aws s3 cp assets-current.tar.co ${ASSETS_LOCATION_PROD}
 
           ./scripts/bmc.sh bundle --config $PWD/config-current.json.gz --output $PWD/config-prod.json --assets ${ASSETS_LOCATION_PROD}
