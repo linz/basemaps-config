@@ -1,5 +1,5 @@
 module.exports = {
-  ...require('@linzjs/style/.prettierrc.js'),
+  ...require('@linzjs/style/.prettierrc.cjs'),
   printWidth: 200,
   overrides: [
     {
