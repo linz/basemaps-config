@@ -437,6 +437,14 @@
       "minZoom": 13
     },
     {
+      "2193": "s3://linz-basemaps/2193/waikato_2021-2023_0.3m/01HP03JRATCYR8WTQDYBXCTWYN/",
+      "3857": "s3://linz-basemaps/3857/waikato_2021-2023_0.3m/01HP03JRAR1R0KZNFSK1W79DMJ/",
+      "name": "waikato-2021-2023-0.3m",
+      "title": "Waikato 0.3m Rural Aerial Photos (2021-2023)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 13
+    },
+    {
       "2193": "s3://linz-basemaps/2193/northland_urban_2014-2015_0-10m_RGBA/01F6P1K57WYSAZVCTP35DVKG4B",
       "3857": "s3://linz-basemaps/3857/northland_urban_2014-2015_0-10m_RGBA/01ED82YEHRRNR3YQC55TJY37E6",
       "name": "northland-urban-2014-2015-0.1m",
@@ -827,14 +835,6 @@
       "minZoom": 13,
       "title": "Auckland 0.075m Rural Aerial Photos (2022)",
       "category": "Rural Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/waikato_2021-2023_0.3m/01HNHESVYWD2AC2HE9S5K1MF0A",
-      "3857": "s3://linz-basemaps/3857/waikato_2021-2023_0.3m/01HNHESVYW62WR1S1H063TGNSP",
-      "name": "waikato-2021-2023-0.3m",
-      "title": "Waikato 0.3m Rural Aerial Photos (2021-2023)",
-      "category": "Rural Aerial Photos",
-      "minZoom": 13
     },
     {
       "2193": "s3://linz-basemaps/2193/whanganui_2022_0.075m/01GZMXEKG8QRB3W2TS4EXEGVR7",
