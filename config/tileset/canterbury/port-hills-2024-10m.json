@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_port-hills-2024-10m",
+  "title": "Port Hills 10m Satellite Imagery (2024)",
+  "background": "#00000000",
+  "category": "New Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/port-hills_2024_10m/01HPZQFACPMAS8CTPVDFSEK8NC/",
+      "3857": "s3://linz-basemaps/3857/port-hills_2024_10m/01HPZQFACQT6RW80VXS0055GPG/",
+      "name": "port-hills-2024-10m",
+      "title": "Port Hills 10m Satellite Imagery (2024)",
+      "category": "New Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
