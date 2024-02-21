@@ -93,6 +93,14 @@
       "category": "Satellite Imagery"
     },
     {
+      "2193": "s3://linz-basemaps/2193/new-zealand_2022-2023_10m/01HQ6WJK0DS3V92DNDZNQ9YG6A/",
+      "3857": "s3://linz-basemaps/3857/new-zealand_2022-2023_10m/01HQ6WJK0DWWGRCZQHGGNQDYZM/",
+      "name": "new-zealand-2022-2023-10m",
+      "title": "New Zealand 10m Satellite Imagery (2022-2023)",
+      "category": "Satellite Imagery",
+      "minZoom": 5
+    },
+    {
       "2193": "s3://linz-basemaps/2193/tasman_rural_2004-2005_1m_RGB/01F6P1TQVSC7QRF1R3JAT893ZS",
       "3857": "s3://linz-basemaps/3857/tasman_rural_2004-2005_1m_RGB/01EE962ZB3Z6Y7GVZ28XCWJ9JB",
       "name": "tasman-rural-2004-2005-1m",
