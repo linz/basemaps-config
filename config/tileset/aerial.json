@@ -25,7 +25,7 @@
       "3857": "s3://linz-basemaps/3857/new-zealand_2022-2023_10m/01HQ6WJK0DWWGRCZQHGGNQDYZM/",
       "name": "new-zealand-2022-2023-10m",
       "title": "New Zealand 10m Satellite Imagery (2022-2023)",
-      "category": "Satellite Imagery",
+      "category": "Satellite Imagery"
     },
     {
       "2193": "s3://linz-basemaps/2193/auckland-islands_satellite_2014-2021_0-5m_RGB/01FZYE8BB9EBP892F3JQSSSHQG",
