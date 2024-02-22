@@ -14,8 +14,8 @@
       "category": "Bathymetry"
     },
     {
-      "2193": "s3://linz-basemaps/2193/chatham-islands_digital-globe_2014-2019_0-5m/01F66EE7AETCNNKDJYCRSJ4CED",
-      "3857": "s3://linz-basemaps/3857/chatham-islands_digital-globe_2014-2019_0-5m/01ED849PJ44FA7S612QAXN9P11",
+      "2193": "s3://linz-basemaps/2193/chatham-islands_digital-globe_2014-2019_0-5m/01F66EEHWXVMK4B7E13AVZ8NE7",
+      "3857": "s3://linz-basemaps/3857/chatham-islands_digital-globe_2014-2019_0-5m/01ED84CATGQ1THNG7QEEEZBEBT",
       "name": "chatham-islands-digital-globe-2014-2019-0.5m",
       "title": "Chatham Islands 0.5m Satellite Imagery (2014-2019)",
       "category": "Satellite Imagery"
