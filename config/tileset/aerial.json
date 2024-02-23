@@ -14,26 +14,17 @@
       "category": "Bathymetry"
     },
     {
-      "2193": "s3://linz-basemaps/2193/chatham-islands_digital-globe_2014-2019_0-5m/01F66EE7AETCNNKDJYCRSJ4CED",
-      "3857": "s3://linz-basemaps/3857/chatham-islands_digital-globe_2014-2019_0-5m/01ED849PJ44FA7S612QAXN9P11",
-      "name": "chatham-islands-digital-globe-2014-2019-0.5m",
-      "maxZoom": 12,
-      "title": "Chatham Islands 0.5m Satellite Imagery (2014-2019)",
-      "category": "Satellite Imagery"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/chatham-islands_digital-globe_2014-2019_0-5m/01F66EEHWXVMK4B7E13AVZ8NE7",
       "3857": "s3://linz-basemaps/3857/chatham-islands_digital-globe_2014-2019_0-5m/01ED84CATGQ1THNG7QEEEZBEBT",
       "name": "chatham-islands-digital-globe-2014-2019-0.5m",
-      "minZoom": 13,
       "title": "Chatham Islands 0.5m Satellite Imagery (2014-2019)",
       "category": "Satellite Imagery"
     },
     {
-      "2193": "s3://linz-basemaps/2193/nz_satellite_2021-2022_10m_RGB/01G73E4AMSQ91TXQ3KC90NNPA0",
-      "3857": "s3://linz-basemaps/3857/nz_satellite_2021-2022_10m_RGB/01G73E5DZKE9NSW6E41QQRT28T",
-      "name": "nz-satellite-2021-2022-10m",
-      "title": "New Zealand 10m Satellite Imagery (2021-2022)",
+      "2193": "s3://linz-basemaps/2193/new-zealand_2022-2023_10m/01HQ6WJK0DS3V92DNDZNQ9YG6A/",
+      "3857": "s3://linz-basemaps/3857/new-zealand_2022-2023_10m/01HQ6WJK0DWWGRCZQHGGNQDYZM/",
+      "name": "new-zealand-2022-2023-10m",
+      "title": "New Zealand 10m Satellite Imagery (2022-2023)",
       "category": "Satellite Imagery"
     },
     {
