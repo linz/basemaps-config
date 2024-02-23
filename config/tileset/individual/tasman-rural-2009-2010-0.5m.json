@@ -6,8 +6,8 @@
   "category": "Rural Aerial Photos",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/tasman_rural_2009-2010_0-50m_RGBA/01F6P1TWRFSGJ65V9Z0YXX4DHY",
-      "3857": "s3://linz-basemaps/3857/tasman_rural_2009-2010_0-50m_RGBA/01ED83CJ5ZT8SAGQKFT9MM59XR",
+      "2193": "s3://linz-basemaps/2193/tasman_rural_2009-2010_0-50m_RGBA/01F6P1TWRFSGJ65V9Z0YXX4DHY/",
+      "3857": "s3://linz-basemaps/3857/tasman_rural_2009-2010_0-50m_RGBA/01ED83CJ5ZT8SAGQKFT9MM59XR/",
       "name": "tasman-rural-2009-2010-0.5m",
       "title": "Tasman 0.5m Rural Aerial Photos (2009-2010)",
       "category": "Rural Aerial Photos",

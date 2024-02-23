@@ -6,8 +6,8 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/bay-of-plenty_sn8732_1987_0.15m/01H8J8RHQZJSVZA7TJGKHZE0DQ",
-      "3857": "s3://linz-basemaps/3857/bay-of-plenty_sn8732_1987_0.15m/01H8J8RHN5QZAJ04R4FM2VQ78X",
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_sn8732_1987_0.15m/01H8J8RHQZJSVZA7TJGKHZE0DQ/",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_sn8732_1987_0.15m/01H8J8RHN5QZAJ04R4FM2VQ78X/",
       "name": "bay-of-plenty-sn8732-1987-0.15m",
       "title": "Bay of Plenty 0.15m SN8732 (1987)",
       "category": "Scanned Aerial Imagery",

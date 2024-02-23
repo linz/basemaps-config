@@ -6,8 +6,8 @@
   "category": "Satellite Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/new_zealand_sentinel_2019-2020_10m/01F6P1G0S78XYXAQB7Y375MZ2Q",
-      "3857": "s3://linz-basemaps/3857/new_zealand_sentinel_2019-2020_10m/01ED82TFB1ZE9C75CH5VY3Z92B",
+      "2193": "s3://linz-basemaps/2193/new_zealand_sentinel_2019-2020_10m/01F6P1G0S78XYXAQB7Y375MZ2Q/",
+      "3857": "s3://linz-basemaps/3857/new_zealand_sentinel_2019-2020_10m/01ED82TFB1ZE9C75CH5VY3Z92B/",
       "name": "nz-satellite-2019-2020-10m",
       "title": "New Zealand 10m Satellite Imagery (2019-2020)",
       "category": "Satellite Imagery",
