@@ -6,8 +6,8 @@
   "category": "Rural Aerial Photos",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/taranaki_rural_2016-17_0-3m/01F6P1SZXEN3X5SDKT7XRQHEGY",
-      "3857": "s3://linz-basemaps/3857/taranaki_rural_2016-17_0-3m/01ED83B7TAK5SBKVYFJZMTE9AV",
+      "2193": "s3://linz-basemaps/2193/taranaki_rural_2016-17_0-3m/01F6P1SZXEN3X5SDKT7XRQHEGY/",
+      "3857": "s3://linz-basemaps/3857/taranaki_rural_2016-17_0-3m/01ED83B7TAK5SBKVYFJZMTE9AV/",
       "name": "taranaki-rural-2016-2017-0.3m",
       "title": "Taranaki 0.3m Rural Aerial Photos (2016-2018)",
       "category": "Rural Aerial Photos",

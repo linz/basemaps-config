@@ -6,8 +6,8 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/southland_sn9066_1990-1991_0.75m/01H8JM95ZK08TXGDN9VE4F4F9J",
-      "3857": "s3://linz-basemaps/3857/southland_sn9066_1990-1991_0.75m/01H8JM95Z48FWE603P9FK2XNM4",
+      "2193": "s3://linz-basemaps/2193/southland_sn9066_1990-1991_0.75m/01H8JM95ZK08TXGDN9VE4F4F9J/",
+      "3857": "s3://linz-basemaps/3857/southland_sn9066_1990-1991_0.75m/01H8JM95Z48FWE603P9FK2XNM4/",
       "name": "southland-sn9066-1990-1991-0.75m",
       "title": "Southland 0.75m SN9066 (1990-1991)",
       "category": "Scanned Aerial Imagery",

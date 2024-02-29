@@ -6,8 +6,8 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/tasman_sn8821_1991_0.6m/01H8JN762SRRR460R4K3Z2SRCY",
-      "3857": "s3://linz-basemaps/3857/tasman_sn8821_1991_0.6m/01H8JN763E6QWSZD0DCWJZWQ5N",
+      "2193": "s3://linz-basemaps/2193/tasman_sn8821_1991_0.6m/01H8JN762SRRR460R4K3Z2SRCY/",
+      "3857": "s3://linz-basemaps/3857/tasman_sn8821_1991_0.6m/01H8JN763E6QWSZD0DCWJZWQ5N/",
       "name": "tasman-sn8821-1991-0.6m",
       "title": "Tasman 0.6m SN8821 (1991)",
       "category": "Scanned Aerial Imagery",

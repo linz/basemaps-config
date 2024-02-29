@@ -6,8 +6,8 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/hawkes-bay_snc50519_2004_0.64m/01H8JBR017XD3ARJND2K3RD6V9",
-      "3857": "s3://linz-basemaps/3857/hawkes-bay_snc50519_2004_0.64m/01H8JBR00NGJSXE3DYYMCW821W",
+      "2193": "s3://linz-basemaps/2193/hawkes-bay_snc50519_2004_0.64m/01H8JBR017XD3ARJND2K3RD6V9/",
+      "3857": "s3://linz-basemaps/3857/hawkes-bay_snc50519_2004_0.64m/01H8JBR00NGJSXE3DYYMCW821W/",
       "name": "hawkes-bay-snc50519-2004-0.64m",
       "title": "Hawkes Bay 0.64m SNC50519 (2004)",
       "category": "Scanned Aerial Imagery",

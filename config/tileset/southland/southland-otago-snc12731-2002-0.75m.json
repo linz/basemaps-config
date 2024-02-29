@@ -6,8 +6,8 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/southland_otago_snc12731_2002_0.75m/01H8JM01HJNA5J3P29WH13ZMRP",
-      "3857": "s3://linz-basemaps/3857/southland_otago_snc12731_2002_0.75m/01H8JM01F9KPMJ7B5YKJJK0NJJ",
+      "2193": "s3://linz-basemaps/2193/southland_otago_snc12731_2002_0.75m/01H8JM01HJNA5J3P29WH13ZMRP/",
+      "3857": "s3://linz-basemaps/3857/southland_otago_snc12731_2002_0.75m/01H8JM01F9KPMJ7B5YKJJK0NJJ/",
       "name": "southland-otago-snc12731-2002-0.75m",
       "title": "Southland / Otago 0.75m SNC12731 (2002)",
       "category": "Scanned Aerial Imagery",

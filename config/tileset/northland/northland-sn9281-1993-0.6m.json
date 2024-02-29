@@ -6,8 +6,8 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/northland_sn9281_1993_0.6m/01H8JJWQ2CYGWSVP6P880A516K",
-      "3857": "s3://linz-basemaps/3857/northland_sn9281_1993_0.6m/01H8JJWQFK7RXM19D6CDGMDV3Z",
+      "2193": "s3://linz-basemaps/2193/northland_sn9281_1993_0.6m/01H8JJWQ2CYGWSVP6P880A516K/",
+      "3857": "s3://linz-basemaps/3857/northland_sn9281_1993_0.6m/01H8JJWQFK7RXM19D6CDGMDV3Z/",
       "name": "northland-sn9281-1993-0.6m",
       "title": "Northland 0.6m SN9281 (1993)",
       "category": "Scanned Aerial Imagery",

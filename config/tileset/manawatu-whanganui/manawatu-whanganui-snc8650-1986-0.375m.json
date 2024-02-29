@@ -6,8 +6,8 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/manawatu-whanganui_snc8650_1986_0.375m/01H8JG3AAJ1J6FX57XQ8Y8BR1Q",
-      "3857": "s3://linz-basemaps/3857/manawatu-whanganui_snc8650_1986_0.375m/01H8JG4FBX9EYNTED3FC4R055A",
+      "2193": "s3://linz-basemaps/2193/manawatu-whanganui_snc8650_1986_0.375m/01H8JG3AAJ1J6FX57XQ8Y8BR1Q/",
+      "3857": "s3://linz-basemaps/3857/manawatu-whanganui_snc8650_1986_0.375m/01H8JG4FBX9EYNTED3FC4R055A/",
       "name": "manawatu-whanganui-snc8650-1986-0.375m",
       "title": "Manawatū-Whanganui 0.375m SNC8650 (1986)",
       "category": "Scanned Aerial Imagery",

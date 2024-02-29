@@ -6,8 +6,8 @@
   "category": "Event",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/top-of-the-south_flood_2022_0.15m/01GGDTRTDV2BA47P4TQ6CGWMFR",
-      "3857": "s3://linz-basemaps/3857/top-of-the-south_flood_2022_0.15m/01GGDTSGRK0Z4C70WXBYMEXK4X",
+      "2193": "s3://linz-basemaps/2193/top-of-the-south_flood_2022_0.15m/01GGDTRTDV2BA47P4TQ6CGWMFR/",
+      "3857": "s3://linz-basemaps/3857/top-of-the-south_flood_2022_0.15m/01GGDTSGRK0Z4C70WXBYMEXK4X/",
       "name": "top-of-the-south-flood-2022-0.15m",
       "title": "Top of the South Flood 0.15m Aerial Photos (2022)",
       "category": "Event",

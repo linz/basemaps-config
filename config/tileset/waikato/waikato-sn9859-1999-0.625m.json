@@ -6,8 +6,8 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/waikato_sn9859_1999_0.625m/01H8JPCDS96PH32JZ2ERQ5C2BH",
-      "3857": "s3://linz-basemaps/3857/waikato_sn9859_1999_0.625m/01H8JPCDV33DRXD3TGSTZK98AV",
+      "2193": "s3://linz-basemaps/2193/waikato_sn9859_1999_0.625m/01H8JPCDS96PH32JZ2ERQ5C2BH/",
+      "3857": "s3://linz-basemaps/3857/waikato_sn9859_1999_0.625m/01H8JPCDV33DRXD3TGSTZK98AV/",
       "name": "waikato-sn9859-1999-0.625m",
       "title": "Waikato 0.625m SN9859 (1999)",
       "category": "Scanned Aerial Imagery",
