@@ -3,7 +3,7 @@
   "id": "ts_westport-flood-2021-0.125m",
   "title": "Westport Flood 0.125m Urban Aerial Photos (2021)",
   "background": "#00000000",
-  "category": "New Aerial Photos",
+  "category": "Event",
   "layers": [
     {
       "2193": "s3://linz-basemaps/2193/westport-flood_2021_0.125m/01HQS7SBSYQM47XE4GAP9Y396P/",
