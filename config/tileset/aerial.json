@@ -909,8 +909,8 @@
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/gisborne_2023_0.075m/01HQS79210XRB25W757BG4E46D/",
-      "3857": "s3://linz-basemaps/3857/gisborne_2023_0.075m/01HQS7921XXZ4ZWAHHT721QEZ0/",
+      "2193": "s3://linz-basemaps/2193/gisborne_2023_0.075m/01HQS79210XRB25W757BG4E46D",
+      "3857": "s3://linz-basemaps/3857/gisborne_2023_0.075m/01HQS7921XXZ4ZWAHHT721QEZ0",
       "name": "gisborne-2023-0.075m",
       "title": "Gisborne 0.075m Urban Aerial Photos (2023)",
       "category": "Urban Aerial Photos",
