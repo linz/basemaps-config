@@ -6,8 +6,8 @@
   "category": "Rural Aerial Photos",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/gisborne_2023-2024_0.1m/01HQ4ZCYKY1NQ12SPKAKE7VH6R/",
-      "3857": "s3://linz-basemaps/3857/gisborne_2023-2024_0.1m/01HQ4ZCYKX4BFB1PB1CE06T89V/",
+      "2193": "s3://linz-basemaps/2193/gisborne_2023-2024_0.1m/01HQ4ZCYKY1NQ12SPKAKE7VH6R",
+      "3857": "s3://linz-basemaps/3857/gisborne_2023-2024_0.1m/01HQ4ZCYKX4BFB1PB1CE06T89V",
       "name": "gisborne-2023-2024-0.1m",
       "title": "Gisborne 0.1m Rural Aerial Photos (2023-2024)",
       "category": "Rural Aerial Photos",

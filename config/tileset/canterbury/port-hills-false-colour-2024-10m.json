@@ -6,8 +6,8 @@
   "category": "Event",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/port-hills-false-colour_2024_10m/01HPZS3T0W71YRH3V22V5HM3E9/",
-      "3857": "s3://linz-basemaps/3857/port-hills-false-colour_2024_10m/01HPZS3T0T67MK84FXEGSETR0H/",
+      "2193": "s3://linz-basemaps/2193/port-hills-false-colour_2024_10m/01HPZS3T0W71YRH3V22V5HM3E9",
+      "3857": "s3://linz-basemaps/3857/port-hills-false-colour_2024_10m/01HPZS3T0T67MK84FXEGSETR0H",
       "name": "port-hills-false-colour-2024-10m",
       "title": "Port Hills False Colour 10m Satellite Imagery (18 February 2024)",
       "category": "Event",
