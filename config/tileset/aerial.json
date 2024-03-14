@@ -468,14 +468,6 @@
       "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/tasman_urban_2020-2021_0-075m_RGB/01FDTG4HYDSJ0E4SNV54E3CCJM",
-      "3857": "s3://linz-basemaps/3857/tasman_urban_2020-2021_0-075m_RGB/01FDTG1HG7S4HBR2BQPTE7ZRWJ",
-      "name": "tasman-urban-2020-2021-0.075m",
-      "minZoom": 14,
-      "title": "Tasman 0.075m Urban Aerial Photos (2020-2021)",
-      "category": "Urban Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/dunedin_urban_2018-19_0-1m/01F6P12VGV6BJR4AWJR29V6JQM",
       "3857": "s3://linz-basemaps/3857/dunedin_urban_2018-19_0-1m/01ED826QV4Q60TNS6VM8HE36BV",
       "name": "dunedin-urban-2018-2019-0.1m",
@@ -905,6 +897,14 @@
       "3857": "s3://linz-basemaps/3857/gisborne_2023_0.075m/01HQS7921XXZ4ZWAHHT721QEZ0",
       "name": "gisborne-2023-0.075m",
       "title": "Gisborne 0.075m Urban Aerial Photos (2023)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 14
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/tasman_2023_0.075m/01HRZA2S3FG38VWP919T7BW8H8/",
+      "3857": "s3://linz-basemaps/3857/tasman_2023_0.075m/01HRZA2S3KM6TDTYV79DYZBEES/",
+      "name": "tasman-2023-0.075m",
+      "title": "Tasman 0.075m Urban Aerial Photos (2023)",
       "category": "Urban Aerial Photos",
       "minZoom": 14
     },
