@@ -1,3 +1,5 @@
 * @linz/proj-basemaps-dev
+config/tileset/*/*.json @linz/proj-basemaps-dev @linz/imagery
 config/tileset/aerial.json @linz/proj-basemaps-dev @linz/imagery
 config/tileset/event.*.json @linz/proj-basemaps-dev @linz/imagery
+config/tileset/scanned.*.json @linz/proj-basemaps-dev @linz/imagery
