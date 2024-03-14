@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_tasman-urban-2020-0.1m",
+  "title": "Tasman 0.1m Urban Aerial Photos (2020)",
+  "background": "#00000000",
+  "category": "Urban Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/tasman_urban_2020_0-1m_RGB/01FDQV9ZW9ETAQB2VJG26WGHP3",
+      "3857": "s3://linz-basemaps/3857/tasman_urban_2020_0-1m_RGB/01FDQVCGEJA1YQJBT14AVZ3TJC",
+      "name": "tasman-urban-2020-0.1m",
+      "title": "Tasman 0.1m Urban Aerial Photos (2020)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
