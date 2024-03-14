@@ -901,6 +901,14 @@
       "minZoom": 14
     },
     {
+      "2193": "s3://linz-basemaps/2193/tasman_2023_0.1m/01HRZBFMPVV1YRRGVCZCDGF9V6/",
+      "3857": "s3://linz-basemaps/3857/tasman_2023_0.1m/01HRZBFMQ1ZRF8B44EZ3M0Q8PT/",
+      "name": "tasman-2023-0.1m",
+      "title": "Tasman 0.1m Urban Aerial Photos (2023)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 14
+    },
+    {
       "2193": "s3://linz-basemaps/2193/tasman_2023_0.075m/01HRZA2S3FG38VWP919T7BW8H8/",
       "3857": "s3://linz-basemaps/3857/tasman_2023_0.075m/01HRZA2S3KM6TDTYV79DYZBEES/",
       "name": "tasman-2023-0.075m",
