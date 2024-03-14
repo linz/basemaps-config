@@ -909,6 +909,14 @@
       "minZoom": 14
     },
     {
+      "2193": "s3://linz-basemaps/2193/tasman_2023_0.075m/01HRZA2S3FG38VWP919T7BW8H8/",
+      "3857": "s3://linz-basemaps/3857/tasman_2023_0.075m/01HRZA2S3KM6TDTYV79DYZBEES/",
+      "name": "tasman-2023-0.075m",
+      "title": "Tasman 0.075m Urban Aerial Photos (2023)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 14
+    },
+    {
       "3857": "s3://linz-basemaps/3857/geographx_nz_dem_2012_8-0m/01FM8DEN1XG1QGNT229A4T3KZ6",
       "name": "geographx-nz-dem-2012-8m",
       "maxZoom": 14,
