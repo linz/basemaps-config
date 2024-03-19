@@ -6,7 +6,7 @@
   "format": "pbf",
   "layers": [
     {
-      "3857": "s3://linz-basemaps/vector/3857/01HRSSRBQ341KCZKS825RRB6ZA/topographic.tar.co",
+      "3857": "s3://linz-basemaps/vector/3857/01HSBTKAVSP1EN0ADQKAFKZ6N8/topographic.tar.co",
       "name": "topographic",
       "title": "Topographic"
     }
