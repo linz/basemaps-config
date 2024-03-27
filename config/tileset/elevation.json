@@ -1,0 +1,323 @@
+{
+  "id": "ts_elevation",
+  "name": "elevation",
+  "type": "raster",
+  "description": "elevation_description",
+  "title": "Elevation",
+  "layers": [
+    {
+      "2193": "s3://nz-elevation/auckland/auckland-south_2016-2017/dem_1m/2193/",
+      "title": "auckland-south_2016-2017",
+      "name": "auckland-south_2016-2017"
+    },
+    {
+      "2193": "s3://nz-elevation/bay-of-plenty/bay-of-plenty_2019-2022/dem_1m/2193/",
+      "title": "bay-of-plenty_2019-2022",
+      "name": "bay-of-plenty_2019-2022"
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/banks-peninsula_2018-2019/dem_1m/2193/",
+      "title": "banks-peninsula_2018-2019",
+      "name": "banks-peninsula_2018-2019"
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/banks-peninsula_2023/dem_1m/2193/",
+      "title": "banks-peninsula_2023",
+      "name": "banks-peninsula_2023"
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/canterbury_2016-2017/dem_1m/2193/",
+      "title": "canterbury_2016-2017",
+      "name": "canterbury_2016-2017"
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/canterbury_2018-2019/dem_1m/2193/",
+      "title": "canterbury_2018-2019",
+      "name": "canterbury_2018-2019"
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/christchurch-and-ashley-river_2018-2019/dem_1m/2193/",
+      "title": "christchurch-and-ashley-river_2018-2019",
+      "name": "christchurch-and-ashley-river_2018-2019"
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/christchurch_2020-2021/dem_1m/2193/",
+      "title": "christchurch_2020-2021",
+      "name": "christchurch_2020-2021"
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/kaikoura-and-waimakariri_2022/dem_1m/2193/",
+      "title": "kaikoura-and-waimakariri_2022",
+      "name": "kaikoura-and-waimakariri_2022"
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/kaikoura_2016-2017/dem_1m/2193/",
+      "title": "kaikoura_2016-2017",
+      "name": "kaikoura_2016-2017"
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/mackenzie_2015/dem_1m/2193/",
+      "title": "mackenzie_2015",
+      "name": "mackenzie_2015"
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/selwyn_2023/dem_1m/2193/",
+      "title": "selwyn_2023",
+      "name": "selwyn_2023"
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/waimakariri_2023/dem_1m/2193/",
+      "title": "waimakariri_2023",
+      "name": "waimakariri_2023"
+    },
+    {
+      "2193": "s3://nz-elevation/gisborne/gisborne_2018-2020/dem_1m/2193/",
+      "title": "gisborne_2018-2020",
+      "name": "gisborne_2018-2020"
+    },
+    {
+      "2193": "s3://nz-elevation/gisborne/gisborne_2023/dem_1m/2193/",
+      "title": "gisborne_2023",
+      "name": "gisborne_2023"
+    },
+    {
+      "2193": "s3://nz-elevation/hawkes-bay/gisborne-and-hawkes-bay-cyclone-gabrielle-river-flood_2023/dem_1m/2193/",
+      "title": "gisborne-and-hawkes-bay-cyclone-gabrielle-river-flood_2023",
+      "name": "gisborne-and-hawkes-bay-cyclone-gabrielle-river-flood_2023"
+    },
+    {
+      "2193": "s3://nz-elevation/hawkes-bay/hawkes-bay_2020-2021/dem_1m/2193/",
+      "title": "hawkes-bay_2020-2021",
+      "name": "hawkes-bay_2020-2021"
+    },
+    {
+      "2193": "s3://nz-elevation/manawatu-whanganui/manawatu-whanganui_2015-2016/dem_1m/2193/",
+      "title": "manawatu-whanganui_2015-2016",
+      "name": "manawatu-whanganui_2015-2016"
+    },
+    {
+      "2193": "s3://nz-elevation/manawatu-whanganui/manawatu-whanganui_2022-2023/dem_1m/2193/",
+      "title": "manawatu-whanganui_2022-2023",
+      "name": "manawatu-whanganui_2022-2023"
+    },
+    {
+      "2193": "s3://nz-elevation/manawatu-whanganui/palmerston-north_2018/dem_1m/2193/",
+      "title": "palmerston-north_2018",
+      "name": "palmerston-north_2018"
+    },
+    {
+      "2193": "s3://nz-elevation/manawatu-whanganui/whanganui-urban_2020-2021/dem_1m/2193/",
+      "title": "whanganui-urban_2020-2021",
+      "name": "whanganui-urban_2020-2021"
+    },
+    {
+      "2193": "s3://nz-elevation/marlborough/blenheim_2014/dem_1m/2193/",
+      "title": "blenheim_2014",
+      "name": "blenheim_2014"
+    },
+    {
+      "2193": "s3://nz-elevation/marlborough/marlborough_2018/dem_1m/2193/",
+      "title": "marlborough_2018",
+      "name": "marlborough_2018"
+    },
+    {
+      "2193": "s3://nz-elevation/marlborough/marlborough_2020-2022/dem_1m/2193/",
+      "title": "marlborough_2020-2022",
+      "name": "marlborough_2020-2022"
+    },
+    {
+      "2193": "s3://nz-elevation/nelson/nelson_2021/dem_1m/2193/",
+      "title": "nelson_2021",
+      "name": "nelson_2021"
+    },
+    {
+      "2193": "s3://nz-elevation/nelson/top-of-the-south-flood_2022/dem_1m/2193/",
+      "title": "top-of-the-south-flood_2022",
+      "name": "top-of-the-south-flood_2022"
+    },
+    {
+      "2193": "s3://nz-elevation/northland/marsden-point_2016/dem_1m/2193/",
+      "title": "marsden-point_2016",
+      "name": "marsden-point_2016"
+    },
+    {
+      "2193": "s3://nz-elevation/northland/northland_2018-2020/dem_1m/2193/",
+      "title": "northland_2018-2020",
+      "name": "northland_2018-2020"
+    },
+    {
+      "2193": "s3://nz-elevation/northland/whangarei-heads_2016/dem_1m/2193/",
+      "title": "whangarei-heads_2016",
+      "name": "whangarei-heads_2016"
+    },
+    {
+      "2193": "s3://nz-elevation/otago/balclutha_2020/dem_1m/2193/",
+      "title": "balclutha_2020",
+      "name": "balclutha_2020"
+    },
+    {
+      "2193": "s3://nz-elevation/otago/central-otago_2021/dem_1m/2193/",
+      "title": "central-otago_2021",
+      "name": "central-otago_2021"
+    },
+    {
+      "2193": "s3://nz-elevation/otago/coastal-catchments_2021/dem_1m/2193/",
+      "title": "coastal-catchments_2021",
+      "name": "coastal-catchments_2021"
+    },
+    {
+      "2193": "s3://nz-elevation/otago/dunedin-and-mosgiel_2021/dem_1m/2193/",
+      "title": "dunedin-and-mosgiel_2021",
+      "name": "dunedin-and-mosgiel_2021"
+    },
+    {
+      "2193": "s3://nz-elevation/otago/otago_2016/dem_1m/2193/",
+      "title": "otago_2016",
+      "name": "otago_2016"
+    },
+    {
+      "2193": "s3://nz-elevation/otago/queenstown_2016/dem_1m/2193/",
+      "title": "queenstown_2016",
+      "name": "queenstown_2016"
+    },
+    {
+      "2193": "s3://nz-elevation/otago/queenstown_2021/dem_1m/2193/",
+      "title": "queenstown_2021",
+      "name": "queenstown_2021"
+    },
+    {
+      "2193": "s3://nz-elevation/otago/wanaka_2022-2023/dem_1m/2193/",
+      "title": "wanaka_2022-2023",
+      "name": "wanaka_2022-2023"
+    },
+    {
+      "2193": "s3://nz-elevation/southland/stewart-island-rakiura-oban_2021/dem_1m/2193/",
+      "title": "stewart-island-rakiura-oban_2021",
+      "name": "stewart-island-rakiura-oban_2021"
+    },
+    {
+      "2193": "s3://nz-elevation/taranaki/taranaki_2021/dem_1m/2193/",
+      "title": "taranaki_2021",
+      "name": "taranaki_2021"
+    },
+    {
+      "2193": "s3://nz-elevation/tasman/abel-tasman-and-golden-bay_2016/dem_1m/2193/",
+      "title": "abel-tasman-and-golden-bay_2016",
+      "name": "abel-tasman-and-golden-bay_2016"
+    },
+    {
+      "2193": "s3://nz-elevation/tasman/abel-tasman-and-golden-bay_2023/dem_1m/2193/",
+      "title": "abel-tasman-and-golden-bay_2023",
+      "name": "abel-tasman-and-golden-bay_2023"
+    },
+    {
+      "2193": "s3://nz-elevation/tasman/golden-bay_2017/dem_1m/2193/",
+      "title": "golden-bay_2017",
+      "name": "golden-bay_2017"
+    },
+    {
+      "2193": "s3://nz-elevation/tasman/motueka-river-valley_2018-2019/dem_1m/2193/",
+      "title": "motueka-river-valley_2018-2019",
+      "name": "motueka-river-valley_2018-2019"
+    },
+    {
+      "2193": "s3://nz-elevation/tasman/richmond-and-motueka_2015/dem_1m/2193/",
+      "title": "richmond-and-motueka_2015",
+      "name": "richmond-and-motueka_2015"
+    },
+    {
+      "2193": "s3://nz-elevation/tasman/tasman-bay_2022/dem_1m/2193/",
+      "title": "tasman-bay_2022",
+      "name": "tasman-bay_2022"
+    },
+    {
+      "2193": "s3://nz-elevation/tasman/tasman_2020-2022/dem_1m/2193/",
+      "title": "tasman_2020-2022",
+      "name": "tasman_2020-2022"
+    },
+    {
+      "2193": "s3://nz-elevation/tasman/waimea-dam_2023/dem_1m/2193/",
+      "title": "waimea-dam_2023",
+      "name": "waimea-dam_2023"
+    },
+    {
+      "2193": "s3://nz-elevation/waikato/hamilton_2019/dem_1m/2193/",
+      "title": "hamilton_2019",
+      "name": "hamilton_2019"
+    },
+    {
+      "2193": "s3://nz-elevation/waikato/huntly_2015-2019/dem_1m/2193/",
+      "title": "huntly_2015-2019",
+      "name": "huntly_2015-2019"
+    },
+    {
+      "2193": "s3://nz-elevation/waikato/reporoa-and-upper-piako-river_2019/dem_1m/2193/",
+      "title": "reporoa-and-upper-piako-river_2019",
+      "name": "reporoa-and-upper-piako-river_2019"
+    },
+    {
+      "2193": "s3://nz-elevation/waikato/thames_2017-2019/dem_1m/2193/",
+      "title": "thames_2017-2019",
+      "name": "thames_2017-2019"
+    },
+    {
+      "2193": "s3://nz-elevation/waikato/waikato_2021/dem_1m/2193/",
+      "title": "waikato_2021",
+      "name": "waikato_2021"
+    },
+    {
+      "2193": "s3://nz-elevation/wellington/hutt-city_2021/dem_1m/2193/",
+      "title": "hutt-city_2021",
+      "name": "hutt-city_2021"
+    },
+    {
+      "2193": "s3://nz-elevation/wellington/kapiti-coast_2021/dem_1m/2193/",
+      "title": "kapiti-coast_2021",
+      "name": "kapiti-coast_2021"
+    },
+    {
+      "2193": "s3://nz-elevation/wellington/porirua_2023/dem_1m/2193/",
+      "title": "porirua_2023",
+      "name": "porirua_2023"
+    },
+    {
+      "2193": "s3://nz-elevation/wellington/upper-hutt-city_2021/dem_1m/2193/",
+      "title": "upper-hutt-city_2021",
+      "name": "upper-hutt-city_2021"
+    },
+    {
+      "2193": "s3://nz-elevation/wellington/wellington-city_2019-2020/dem_1m/2193/",
+      "title": "wellington-city_2019-2020",
+      "name": "wellington-city_2019-2020"
+    },
+    {
+      "2193": "s3://nz-elevation/west-coast/west-coast_2020-2022/dem_1m/2193/",
+      "title": "west-coast_2020-2022",
+      "name": "west-coast_2020-2022"
+    }
+  ],
+  "outputs": [
+    {
+      "title": "Terrain RGB",
+      "name": "terrain-rgb",
+      "pipeline": [{ "type": "terrain-rgb" }],
+      "output": {
+        "lossless": true,
+        "background": { "r": 1, "g": 134, "b": 160, "alpha": 1 },
+        "resizeKernel": {
+          "in": "nearest",
+          "out": "nearest"
+        }
+      }
+    },
+    {
+      "title": "Color ramp",
+      "name": "color-ramp",
+      "pipeline": [{ "type": "color-ramp" }],
+      "output": {
+        "lossless": true,
+        "background": { "r": 1, "g": 134, "b": 160, "alpha": 1 }
+      }
+    }
+  ]
+}
