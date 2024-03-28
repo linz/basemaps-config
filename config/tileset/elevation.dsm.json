@@ -61,12 +61,6 @@
     },
     {
       "minZoom": 9,
-      "2193": "s3://nz-elevation/canterbury/kaikoura_2016-2017/dsm_1m/2193/",
-      "title": "kaikoura_2016-2017",
-      "name": "kaikoura_2016-2017"
-    },
-    {
-      "minZoom": 9,
       "2193": "s3://nz-elevation/canterbury/mackenzie_2015/dsm_1m/2193/",
       "title": "mackenzie_2015",
       "name": "mackenzie_2015"
