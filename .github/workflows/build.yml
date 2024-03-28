@@ -61,7 +61,7 @@ jobs:
 
       - name: Bundle Config File
         run: |
-          ./scripts/bmc.sh bundle --config $PWD/config --output $PWD/config-staging.json --assets ${ASSETS_LOCATION_STAGING}
+          ./scripts/bmc.sh bundle --config $PWD/config --output $PWD/config-staging.json --assets ${ASSETS_LOCATION_STAGING} --cache s3://linz-basemaps-staging/basemaps-config/cache/
           CONFIG_HASH_STAGING=$(cat config-staging.json | jq .hash -r)
           echo "CONFIG_LOCATION_STAGING=s3://linz-basemaps-staging/config/config-${CONFIG_HASH_STAGING}.json.gz" >> $GITHUB_ENV
 
