@@ -6,8 +6,8 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/canterbury_snc30009_2003_0.75m/01H8JBJB09Q8VPCJXPC1ZX0SYH",
-      "3857": "s3://linz-basemaps/3857/canterbury_snc30009_2003_0.75m/01H8JBKATD5CER0QS0HJHA8W9C",
+      "2193": "s3://linz-basemaps/2193/canterbury_snc30009_2003_0.75m/01H8JBJB09Q8VPCJXPC1ZX0SYH/",
+      "3857": "s3://linz-basemaps/3857/canterbury_snc30009_2003_0.75m/01H8JBKATD5CER0QS0HJHA8W9C/",
       "name": "canterbury-snc30009-2003-0.75m",
       "title": "Canterbury 0.75m SNC30009 (2003)",
       "category": "Scanned Aerial Imagery",

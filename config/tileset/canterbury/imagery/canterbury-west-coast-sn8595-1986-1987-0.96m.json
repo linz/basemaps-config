@@ -6,8 +6,8 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/canterbury_west-coast_sn8595_1986-1987_0.96m/01H8JBMB6KJ8C6AAHSEZ5RVRC8",
-      "3857": "s3://linz-basemaps/3857/canterbury_west-coast_sn8595_1986-1987_0.96m/01H8JBKR6W92Q8Y7P5WAC5ZXM6",
+      "2193": "s3://linz-basemaps/2193/canterbury_west-coast_sn8595_1986-1987_0.96m/01H8JBMB6KJ8C6AAHSEZ5RVRC8/",
+      "3857": "s3://linz-basemaps/3857/canterbury_west-coast_sn8595_1986-1987_0.96m/01H8JBKR6W92Q8Y7P5WAC5ZXM6/",
       "name": "canterbury-west-coast-sn8595-1986-1987-0.96m",
       "title": "Canterbury / West Coast 0.96m SN8595 (1986-1987)",
       "category": "Scanned Aerial Imagery",

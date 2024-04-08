@@ -6,8 +6,8 @@
   "category": "Rural Aerial Photos",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/bay-of-plenty_rural_2016-17_0-3m/01F66E3G0Z8DNKWXG5M55QNW9G",
-      "3857": "s3://linz-basemaps/3857/bay-of-plenty_rural_2016-17_0-3m/01ED81Q2AS5K0RPNRCRQ33YAYW",
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_rural_2016-17_0-3m/01F66E3G0Z8DNKWXG5M55QNW9G/",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_rural_2016-17_0-3m/01ED81Q2AS5K0RPNRCRQ33YAYW/",
       "name": "bay-of-plenty-rural-2016-2017-0.3m",
       "title": "Bay of Plenty 0.3m Rural Aerial Photos (2016-2017)",
       "category": "Rural Aerial Photos",

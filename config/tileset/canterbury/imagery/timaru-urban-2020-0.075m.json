@@ -6,8 +6,8 @@
   "category": "Urban Aerial Photos",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/timaru_urban_2020_0-075m_RGB/01FPV7FD7SX1JKW7TK25ESMYN1",
-      "3857": "s3://linz-basemaps/3857/timaru_urban_2020_0-075m_RGB/01FPV7DVA9TW7XQCR64SSB12DA",
+      "2193": "s3://linz-basemaps/2193/timaru_urban_2020_0-075m_RGB/01FPV7FD7SX1JKW7TK25ESMYN1/",
+      "3857": "s3://linz-basemaps/3857/timaru_urban_2020_0-075m_RGB/01FPV7DVA9TW7XQCR64SSB12DA/",
       "name": "timaru-urban-2020-0.075m",
       "title": "Timaru 0.075m Urban Aerial Photos (2020)",
       "category": "Urban Aerial Photos",
