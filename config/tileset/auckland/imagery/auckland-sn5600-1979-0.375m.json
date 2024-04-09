@@ -6,8 +6,8 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/auckland_sn5600_1979_0.375m/01H8J7E74WKJYFY8FCST5F90N0",
-      "3857": "s3://linz-basemaps/3857/auckland_sn5600_1979_0.375m/01H8J7E747XFQYM268Y71E0EK1",
+      "2193": "s3://linz-basemaps/2193/auckland_sn5600_1979_0.375m/01H8J7E74WKJYFY8FCST5F90N0/",
+      "3857": "s3://linz-basemaps/3857/auckland_sn5600_1979_0.375m/01H8J7E747XFQYM268Y71E0EK1/",
       "name": "auckland-sn5600-1979-0.375m",
       "title": "Auckland 0.375m SN5600 (1979)",
       "category": "Scanned Aerial Imagery",
