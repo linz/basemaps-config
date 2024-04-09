@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_wellington-sn9448-1995-1997-0.75m",
+  "title": "Wellington 0.75m SN9448 (1995-1997)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/wellington_sn9448_1995-1997_0.75m/01H8JPJPN350V5Z6E6YQ8CJ44T/",
+      "3857": "s3://linz-basemaps/3857/wellington_sn9448_1995-1997_0.75m/01H8JPJPN582A7X99QBWC69RA5/",
+      "name": "wellington-sn9448-1995-1997-0.75m",
+      "title": "Wellington 0.75m SN9448 (1995-1997)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

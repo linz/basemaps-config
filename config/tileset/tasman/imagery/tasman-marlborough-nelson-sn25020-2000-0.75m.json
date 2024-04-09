@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_tasman-marlborough-nelson-sn25020-2000-0.75m",
+  "title": "Tasman / Marlborough / Nelson 0.75m SN25020 (2000)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/tasman_marlborough_nelson_sn25020_2000_0.75m/01H8JN1Y33RDQDQGEDRQJGY8SF/",
+      "3857": "s3://linz-basemaps/3857/tasman_marlborough_nelson_sn25020_2000_0.75m/01H8JN1Y3AHNJSGDEHQAHG85KR/",
+      "name": "tasman-marlborough-nelson-sn25020-2000-0.75m",
+      "title": "Tasman / Marlborough / Nelson 0.75m SN25020 (2000)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

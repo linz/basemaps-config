@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_manawatu-whanganui-snc8914-1988-0.375m",
+  "title": "Manawatū-Whanganui 0.375m SNC8914 (1988)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/manawatu-whanganui_snc8914_1988_0.375m/01H8JG2MP81PQ6HXQNPGY0X1AS/",
+      "3857": "s3://linz-basemaps/3857/manawatu-whanganui_snc8914_1988_0.375m/01H8JG2MPKDEK3VJW32W5Y8HWD/",
+      "name": "manawatu-whanganui-snc8914-1988-0.375m",
+      "title": "Manawatū-Whanganui 0.375m SNC8914 (1988)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
