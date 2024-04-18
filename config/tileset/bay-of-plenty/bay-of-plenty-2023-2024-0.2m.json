@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_bay-of-plenty-2023-2024-0.2m",
+  "title": "Bay of Plenty 0.2m Rural Aerial Photos (2023-2024)",
+  "background": "#00000000",
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_2023-2024_0.2m/01HVQHE5AY0G0GXRABHRX1SC4K/",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_2023-2024_0.2m/01HVQHE5CV8JH5Y1XPFS5PA0N0/",
+      "name": "bay-of-plenty-2023-2024-0.2m",
+      "title": "Bay of Plenty 0.2m Rural Aerial Photos (2023-2024)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
