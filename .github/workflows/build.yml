@@ -187,7 +187,7 @@ jobs:
 
       - name: Import config
         run: |
-          ./scripts/bmc.sh ./index.cjs mport --config ${CONFIG_LOCATION_PROD} --commit
+          ./scripts/bmc.sh ./index.cjs import --config ${CONFIG_LOCATION_PROD} --commit
 
   smoke:
     permissions:
