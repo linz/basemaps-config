@@ -1,0 +1,43 @@
+{
+  "id": "ts_geographic-dem",
+  "name": "Geographic DEM",
+  "type": "raster",
+  "description": "Geographic NZ DEM with Gebco 2023",
+  "title": "Geographic NZ DEM with Gebco 2023",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps-staging/3857/Geographx-NZ-DEM/01HY1VQ6MJ46N3CR691R2ENCBJ/",
+      "title": "Geographic NZ DEM",
+      "name": "geographic_nz_dem"
+    },
+    {
+      "2193": "s3://linz-basemaps-staging/3857/geotiff_output/01HXZQ12FM5C5BEV5K4Q09KF7B/",
+      "title": "Gebco 2023",
+      "name": "gebco_2023"
+    }
+  ],
+  "outputs": [
+    {
+      "title": "Terrain RGB",
+      "name": "terrain-rgb",
+      "pipeline": [{ "type": "terrain-rgb" }],
+      "output": {
+        "lossless": true,
+        "background": { "r": 1, "g": 134, "b": 160, "alpha": 1 },
+        "resizeKernel": {
+          "in": "nearest",
+          "out": "nearest"
+        }
+      }
+    },
+    {
+      "title": "Color ramp",
+      "name": "color-ramp",
+      "pipeline": [{ "type": "color-ramp" }],
+      "output": {
+        "lossless": true,
+        "background": { "r": 1, "g": 134, "b": 160, "alpha": 1 }
+      }
+    }
+  ]
+}
