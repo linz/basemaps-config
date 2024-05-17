@@ -1,5 +1,5 @@
 {
-  "id": "ts_geographic-dem",
+  "id": "ts_geographic",
   "name": "Geographic DEM",
   "type": "raster",
   "description": "Geographic NZ DEM with Gebco 2023",
