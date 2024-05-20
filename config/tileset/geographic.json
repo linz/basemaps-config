@@ -6,15 +6,15 @@
   "title": "Geographic NZ DEM with Gebco 2023",
   "layers": [
     {
-      "2193": "s3://linz-basemaps-staging/3857/Geographx-NZ-DEM/01HY1VQ6MJ46N3CR691R2ENCBJ/",
-      "title": "Geographic NZ DEM",
-      "name": "geographic_nz_dem"
-    },
-    {
-      "2193": "s3://linz-basemaps-staging/3857/geotiff_output/01HXZQ12FM5C5BEV5K4Q09KF7B/",
+      "3857": "s3://linz-basemaps-staging/3857/geotiff_output/01HXZQ12FM5C5BEV5K4Q09KF7B/",
       "title": "Gebco 2023",
-      "name": "gebco_2023"
-    }
+      "name": "gebco-2023"
+    },
+        {
+      "3857": "s3://linz-basemaps-staging/3857/Geographx-NZ-DEM/01HY1VQ6MJ46N3CR691R2ENCBJ/",
+      "title": "Geographic NZ DEM",
+      "name": "geographic-nz_dem"
+    },
   ],
   "outputs": [
     {
