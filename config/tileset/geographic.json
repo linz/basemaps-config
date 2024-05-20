@@ -10,11 +10,11 @@
       "title": "GEBCO 2023",
       "name": "gebco-2023"
     },
-        {
+    {
       "3857": "s3://linz-basemaps-staging/3857/Geographx-NZ-DEM/01HY1VQ6MJ46N3CR691R2ENCBJ/",
-      "title": "Geographic NZ",
-      "name": "geographic-nz"
-    },
+      "title": "NZ 8M DEM",
+      "name": "nz-8m-dem"
+    }
   ],
   "outputs": [
     {
