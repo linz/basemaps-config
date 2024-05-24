@@ -428,6 +428,14 @@
       "minZoom": 13
     },
     {
+      "2193": "s3://linz-basemaps/2193/gisborne_2023-2024_0.2m/01HYM7JSJ6YAE2P3NMZNEXZJA3/",
+      "3857": "s3://linz-basemaps/3857/gisborne_2023-2024_0.2m/01HYM7JENENQ4DXZE8HMCRTB4P/",
+      "name": "gisborne-2023-2024-0.2m",
+      "title": "Gisborne 0.2m Rural Aerial Photos (2023-2024)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 13
+    },
+    {
       "2193": "s3://linz-basemaps/2193/northland_urban_2014-2015_0-10m_RGBA/01F6P1K57WYSAZVCTP35DVKG4B/",
       "3857": "s3://linz-basemaps/3857/northland_urban_2014-2015_0-10m_RGBA/01ED82YEHRRNR3YQC55TJY37E6/",
       "name": "northland-urban-2014-2015-0.1m",
