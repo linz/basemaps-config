@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_wairarapa-sn11640-1989-0.75m",
+  "title": "Wairarapa 0.75m SN11640 (1989)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/wairarapa_sn11640_1989_0.75m/01HYM3FK2S497RAEZSZ2TJ182X/",
+      "3857": "s3://linz-basemaps/3857/wairarapa_sn11640_1989_0.75m/01HYM3FK2GQZNJ0YB8J8KAM5HV/",
+      "name": "wairarapa-sn11640-1989-0.75m",
+      "title": "Wairarapa 0.75m SN11640 (1989)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
