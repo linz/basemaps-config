@@ -212,14 +212,6 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/gisborne_rural_2017-2019_0-3m_RGB/01F6P15VGNRA3N06S2NEY9PFAX/",
-      "3857": "s3://linz-basemaps/3857/gisborne_rural_2017-2019_0-3m_RGB/01EZWZGMW2Q53VNC65X2X4VFRZ/",
-      "name": "gisborne-rural-2017-2019-0.3m",
-      "minZoom": 13,
-      "title": "Gisborne 0.3m Rural Aerial Photos (2017-2019)",
-      "category": "Rural Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/marlborough_rural_2017-18_0-3m/01F6P1E05SRRSMA94E11F1EAFJ/",
       "3857": "s3://linz-basemaps/3857/marlborough_rural_2017-18_0-3m/01EDAMZ587FYSZ9NY8TP40VASS/",
       "name": "marlborough-rural-2017-2018-0.3m",
@@ -401,14 +393,6 @@
       "name": "canterbury-2022-0.3m",
       "minZoom": 13,
       "title": "Canterbury 0.3m Rural Aerial Photos (2022)",
-      "category": "Rural Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/gisborne_rural_2021-2023_0.2m/01H2S2ADDFREPQC2797VEN5RAE/",
-      "3857": "s3://linz-basemaps/3857/gisborne_rural_2021-2023_0.2m/01H2S2CJTQKXXY2NHZ88D4TP2X/",
-      "name": "gisborne-rural-2021-2023-0.2m",
-      "minZoom": 13,
-      "title": "Gisborne 0.2m Rural Aerial Photos (2021-2023)",
       "category": "Rural Aerial Photos"
     },
     {
