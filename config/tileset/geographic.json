@@ -14,6 +14,11 @@
       "3857": "s3://linz-basemaps-staging/3857/Geographx-NZ-DEM/01HY1VQ6MJ46N3CR691R2ENCBJ/",
       "title": "NZ 8M DEM",
       "name": "nz-8m-dem"
+    },
+    {
+      "3857": "s3://linz-basemaps-staging/3857/taranaki_2021/01HYM1DQXKBMMWDS4GC2TMXA30/",
+      "title": "Taranaki LiDAR 1m DEM (2021)",
+      "name": "taranaki-2021-dem-1m"
     }
   ],
   "outputs": [
