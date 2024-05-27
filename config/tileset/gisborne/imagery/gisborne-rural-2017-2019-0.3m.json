@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_gisborne-rural-2017-2019-0.3m",
+  "title": "Gisborne 0.3m Rural Aerial Photos (2017-2019)",
+  "background": "#00000000",
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/gisborne_rural_2017-2019_0-3m_RGB/01F6P15VGNRA3N06S2NEY9PFAX/",
+      "3857": "s3://linz-basemaps/3857/gisborne_rural_2017-2019_0-3m_RGB/01EZWZGMW2Q53VNC65X2X4VFRZ/",
+      "name": "gisborne-rural-2017-2019-0.3m",
+      "title": "Gisborne 0.3m Rural Aerial Photos (2017-2019)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
