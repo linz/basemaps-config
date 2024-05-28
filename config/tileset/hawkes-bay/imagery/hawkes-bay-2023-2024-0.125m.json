@@ -6,8 +6,8 @@
   "category": "Rural Aerial Photos",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/hawkes-bay_2023-2024_0.125m/01HVFYQ7D579BQEPRG1C444MJE/",
-      "3857": "s3://linz-basemaps/3857/hawkes-bay_2023-2024_0.125m/01HVFYQ7DFPMQMTCKHSMP3P5NE/",
+      "2193": "s3://linz-basemaps/2193/hawkes-bay_2023-2024_0.125m/01HYM6K0HGW5A57DWC3XBG0R3V/",
+      "3857": "s3://linz-basemaps/3857/hawkes-bay_2023-2024_0.125m/01HYM6K0HQWV0GG4T51GNF4HX8/",
       "name": "hawkes-bay-2023-2024-0.125m",
       "title": "Hawke's Bay 0.125m Rural Aerial Photos (2023-2024) - Draft",
       "category": "Rural Aerial Photos",
