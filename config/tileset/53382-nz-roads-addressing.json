@@ -1,0 +1,15 @@
+{
+  "type": "vector",
+  "id": "ts_53382-nz-roads-addressing",
+  "name": "53382-nz-roads-addressing",
+  "title": "53382-nz-roads-addressing",
+  "maxZoom": 15,
+  "format": "pbf",
+  "layers": [
+    {
+      "3857": "s3://linz-basemaps/vector/3857/53382-nz-roads-addressing/01HYE5JF0WK7A32R5G7VV6MYNZ/53382-nz-roads-addressing.tar.co",
+      "name": "53382-nz-roads-addressing",
+      "title": "53382-nz-roads-addressing"
+    }
+  ]
+}

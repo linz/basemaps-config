@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_canterbury-sn8569-1985-1986-0.8m",
+  "title": "Canterbury 0.8m SN8569 (1985-1986)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/canterbury_sn8569_1985-1986_0.8m/01H8JBHPBR494DT2ZTZS599BS5/",
+      "3857": "s3://linz-basemaps/3857/canterbury_sn8569_1985-1986_0.8m/01H8JBHRAFNQGF1AMHXFZ9H74P/",
+      "name": "canterbury-sn8569-1985-1986-0.8m",
+      "title": "Canterbury 0.8m SN8569 (1985-1986)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_taranaki-snc25044-2001-0.75m",
+  "title": "Taranaki 0.75m SNC25044 (2001)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/taranaki_snc25044_2001_0.75m/01H8JN1FH0DCS9CADVJNXSVTGH/",
+      "3857": "s3://linz-basemaps/3857/taranaki_snc25044_2001_0.75m/01H8JN1FJHXM99TQ6KZ8FYFDY6/",
+      "name": "taranaki-snc25044-2001-0.75m",
+      "title": "Taranaki 0.75m SNC25044 (2001)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

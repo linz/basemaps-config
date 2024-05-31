@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_taranaki-snc8923-1988-0.375m",
+  "title": "Taranaki 0.375m SNC8923 (1988)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/taranaki_snc8923_1988_0.375m/01H8JN0QTR7B6Y9YRXRREC19X8/",
+      "3857": "s3://linz-basemaps/3857/taranaki_snc8923_1988_0.375m/01H8JN0QVEAY2AF2NMGSVECCDM/",
+      "name": "taranaki-snc8923-1988-0.375m",
+      "title": "Taranaki 0.375m SNC8923 (1988)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

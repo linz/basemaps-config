@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_marlborough-urban-2020-2021-0.1m",
+  "title": "Marlborough 0.1m Urban Aerial Photos (2020-2021)",
+  "background": "#00000000",
+  "category": "Urban Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/marlborough_urban_2020-2021_0-1m_RGB/01FCKSW2KY42Z0HA11BJ4RMZ0S/",
+      "3857": "s3://linz-basemaps/3857/marlborough_urban_2020-2021_0-1m_RGB/01FCKSYT6Y3ZJJ4SAKKB4GEK52/",
+      "name": "marlborough-urban-2020-2021-0.1m",
+      "title": "Marlborough 0.1m Urban Aerial Photos (2020-2021)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

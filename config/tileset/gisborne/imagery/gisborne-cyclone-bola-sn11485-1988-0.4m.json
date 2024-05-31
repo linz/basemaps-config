@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_gisborne-cyclone-bola-sn11485-1988-0.4m",
+  "title": "Gisborne Cyclone Bola 0.4m SN11485 (1988)",
+  "background": "#00000000",
+  "category": "Event",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/gisborne-cyclone-bola_sn11485_1988_0.4m/01HYM133P7MBM9GKHQ0Q4HTRQ3/",
+      "3857": "s3://linz-basemaps/3857/gisborne-cyclone-bola_sn11485_1988_0.4m/01HYM133NXM1YDMP18CND5SR4Q/",
+      "name": "gisborne-cyclone-bola-sn11485-1988-0.4m",
+      "title": "Gisborne Cyclone Bola 0.4m SN11485 (1988)",
+      "category": "Event",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

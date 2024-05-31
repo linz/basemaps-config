@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_waikato-snc9990-2001-2003-0.6m",
+  "title": "Waikato 0.6m SNC9990 (2001-2003)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/waikato_snc9990_2001-2003_0.6m/01H8JPFA86KNXMC1VWKY4TKQPF/",
+      "3857": "s3://linz-basemaps/3857/waikato_snc9990_2001-2003_0.6m/01H8JPGGE02AAR5S5A8M0D7G4N/",
+      "name": "waikato-snc9990-2001-2003-0.6m",
+      "title": "Waikato 0.6m SNC9990 (2001-2003)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

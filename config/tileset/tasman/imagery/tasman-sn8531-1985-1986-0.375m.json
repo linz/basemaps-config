@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_tasman-sn8531-1985-1986-0.375m",
+  "title": "Tasman 0.375m SN8531 (1985-1986)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/tasman_sn8531_1985-1986_0.375m/01H8JN6Y6K2Y3R0Q58MEG8E7HG/",
+      "3857": "s3://linz-basemaps/3857/tasman_sn8531_1985-1986_0.375m/01H8JN6Y5KNVZXEP6K1S5RS0F5/",
+      "name": "tasman-sn8531-1985-1986-0.375m",
+      "title": "Tasman 0.375m SN8531 (1985-1986)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

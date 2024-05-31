@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_northland-auckland-sn9482-1995-1996-0.8m",
+  "title": "Northland / Auckland 0.8m SN9482 (1995-1996)",
+  "background": "#00000000",
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/northland_auckland_sn9482_1995-1996_0.8m/01H8JJ9DPAVP8SJQH0J8WTMQNA/",
+      "3857": "s3://linz-basemaps/3857/northland_auckland_sn9482_1995-1996_0.8m/01H8JJ9DPTXTXQXH27E9ZBP13K/",
+      "name": "northland-auckland-sn9482-1995-1996-0.8m",
+      "title": "Northland / Auckland 0.8m SN9482 (1995-1996)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
