@@ -488,18 +488,18 @@
           "type": "terrain-rgb"
         }
       ],
-      "output": {
-        "lossless": true,
-        "background": {
-          "r": 1,
-          "g": 134,
-          "b": 160,
-          "alpha": 1
-        },
-        "resizeKernel": {
-          "in": "nearest",
-          "out": "nearest"
-        }
+      "format": [
+        "png"
+      ],
+      "background": {
+        "r": 1,
+        "g": 134,
+        "b": 160,
+        "alpha": 1
+      },
+      "resizeKernel": {
+        "in": "nearest",
+        "out": "nearest"
       }
     },
     {
@@ -510,14 +510,11 @@
           "type": "color-ramp"
         }
       ],
-      "output": {
-        "lossless": true,
-        "background": {
-          "r": 1,
-          "g": 134,
-          "b": 160,
-          "alpha": 1
-        }
+      "background": {
+        "r": 172,
+        "g": 204,
+        "b": 226,
+        "alpha": 1
       }
     }
   ]
