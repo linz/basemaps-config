@@ -444,7 +444,7 @@
     },
     {
       "minZoom": 9,
-      "3857": "s3://linz-basemaps/3857/kapiti-coast_2021/01HZ5TT4A96A9ZF8W9SMTHQN36/",
+      "3857": "s3://linz-basemaps/3857/kapiti-coast_2021/01HZ64YZTTT88RFGS0HS5AHRZ1/",
       "title": "Wellington - Kāpiti Coast LiDAR 1m DEM (2021)",
       "name": "kapiti-coast_2021_1m_dem"
     },
