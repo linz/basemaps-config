@@ -488,9 +488,7 @@
           "type": "terrain-rgb"
         }
       ],
-      "format": [
-        "png"
-      ],
+      "format": ["png"],
       "background": {
         "r": 1,
         "g": 134,
