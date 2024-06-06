@@ -4,6 +4,7 @@
   "type": "raster",
   "description": "Elevation Basemap",
   "title": "Elevation",
+  "category": "Elevation",
   "layers": [
     {
       "minZoom": 9,
