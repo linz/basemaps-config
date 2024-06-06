@@ -2,7 +2,7 @@
   "id": "ts_elevation",
   "name": "elevation",
   "type": "raster",
-  "description": "elevation_description",
+  "description": "Elevation Basemap",
   "title": "Elevation",
   "layers": [
     {
