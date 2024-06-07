@@ -7,6 +7,11 @@
   "category": "Elevation",
   "layers": [
     {
+      "3857": "s3://linz-basemaps/elevation/3857/new-zealand_2012_dem_8m/01HZ0YNQPGH5RJ01S5R5T2VAPM/",
+      "title": "New Zealand 8m DEM (2012)",
+      "name": "new-zealand_2012_dem_8m"
+    },
+    {
       "minZoom": 9,
       "3857": "s3://linz-basemaps/elevation/3857/auckland-north_2016-2018_dem_1m/01HZ64YXQVSRF6JK7YMYAQ81BT/",
       "title": "Auckland North LiDAR 1m DEM (2016-2018)",
