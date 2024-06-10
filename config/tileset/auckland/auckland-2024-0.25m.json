@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_auckland-2024-0.25m",
+  "title": "Auckland 0.25m Rural Aerial Photos (2024) - Draft",
+  "background": "#00000000",
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/auckland_2024_0.25m/01HZZXN1RZTVPXEHAJ79RBADE4/",
+      "3857": "s3://linz-basemaps/3857/auckland_2024_0.25m/01HZZXP89EPSFWBW71V93S5EWG/",
+      "name": "auckland-2024-0.25m",
+      "title": "Auckland 0.25m Rural Aerial Photos (2024) - Draft",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
