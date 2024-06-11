@@ -439,6 +439,12 @@
     },
     {
       "minZoom": 9,
+      "3857": "s3://linz-basemaps/elevation/3857/wellington_2013-2014_dem_1m/01HZ67MBQJ8VASM6Z69PMATPHH/",
+      "title": "Wellington LiDAR 1m DEM (2013-2014)",
+      "name": "wellington_2013-2014_dem_1m"
+    },
+    {
+      "minZoom": 9,
       "3857": "s3://linz-basemaps/elevation/3857/hutt-city_2021_dem_1m/01HZ67GF9ZANVBZW5PEM98V0T7/",
       "title": "Wellington - Hutt City LiDAR 1m DEM (2021)",
       "name": "hutt-city_2021_dem_1m"
@@ -466,12 +472,6 @@
       "3857": "s3://linz-basemaps/elevation/3857/wellington-city_2019-2020_dem_1m/01HZ67KCCZYYV6T93H51WPTDMF/",
       "title": "Wellington City LiDAR 1m DEM (2019-2020)",
       "name": "wellington-city_2019-2020_dem_1m"
-    },
-    {
-      "minZoom": 9,
-      "3857": "s3://linz-basemaps/elevation/3857/wellington_2013-2014_dem_1m/01HZ67MBQJ8VASM6Z69PMATPHH/",
-      "title": "Wellington LiDAR 1m DEM (2013-2014)",
-      "name": "wellington_2013-2014_dem_1m"
     },
     {
       "minZoom": 9,
