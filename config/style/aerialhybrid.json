@@ -1395,12 +1395,12 @@
   },
   "name": "aerialhybrid",
   "sources": {
-    "LINZ Basemaps": { "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0", "type": "vector", "url": "/v1/tiles/topographic/EPSG:3857/tile.json" },
+    "LINZ Basemaps": { "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0", "type": "vector", "url": "/v1/tiles/topographic/{tileMatrix}/tile.json" },
     "LINZ-Imagery": {
       "maxzoom": 28,
       "minzoom": 0,
       "tileSize": 256,
-      "tiles": ["/v1/tiles/aerial/EPSG:3857/{z}/{x}/{y}.webp"],
+      "tiles": ["/v1/tiles/aerial/{tileMatrix}/{z}/{x}/{y}.webp"],
       "type": "raster"
     }
   },
