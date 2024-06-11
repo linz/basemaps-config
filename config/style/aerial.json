@@ -1,5 +1,6 @@
 {
   "id": "st_aerial",
+  "name": "aerial",
   "layers": [
     {
       "id": "basemaps-aerial",

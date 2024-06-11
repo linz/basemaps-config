@@ -1395,7 +1395,7 @@
   },
   "name": "aerialhybrid",
   "sources": {
-    "LINZ Basemaps": { "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0", "type": "vector", "url": "/v1/tiles/topographic/{tileMatrix}/tile.json" },
+    "LINZ Basemaps": { "attribution": "© 2024 Toitū Te Whenua - CC BY 4.0", "type": "vector", "url": "/v1/tiles/topographic/{tileMatrix}/tile.json" },
     "LINZ-Imagery": {
       "maxzoom": 28,
       "minzoom": 0,
