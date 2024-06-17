@@ -3,12 +3,7 @@
   "id": "ts_manawatu-whanganui-2023-2024-0.2m",
   "name": "manawatu-whanganui-2023-2024-0.2m",
   "title": "Manawatū-Whanganui 0.2m Rural Aerial Photos (2023-2024) - Draft",
-  "background": {
-    "r": 0,
-    "g": 0,
-    "b": 0,
-    "alpha": 0
-  },
+  "background": "#00000000",
   "category": "Rural Aerial Photos",
   "layers": [
     {
