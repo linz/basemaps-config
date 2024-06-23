@@ -516,6 +516,7 @@
       "name": "wellington_2013-2014_dem_1m"
     },
     {
+      "2193": "s3://nz-elevation/wellington/hutt-city_2021/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/hutt-city_2021_dem_1m/01HZ67GF9ZANVBZW5PEM98V0T7/",
       "minZoom": 9,
       "title": "Wellington - Hutt City LiDAR 1m DEM (2021)",
