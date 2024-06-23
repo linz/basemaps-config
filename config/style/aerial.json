@@ -3,7 +3,7 @@
   "layers": [
     {
       "id": "Aerial-Imagery",
-      "source": "LINZ Basemaps",
+      "source": "LINZ-Basemaps",
       "type": "raster"
     }
   ],
