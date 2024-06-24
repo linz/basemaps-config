@@ -8,7 +8,7 @@ on:
       - master
 
 env: 
-  BASEMAPS_CONTAINER_VERSION: v7.3.0-2-g9396f606
+  BASEMAPS_CONTAINER_VERSION: v7.4.0-7-g25e94af4
 
 jobs:
   build:
