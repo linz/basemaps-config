@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_auckland-coast-2023-0.05m",
+  "name": "auckland-coast-2023-0.05m",
+  "title": "Auckland Coast 0.05m Urban Aerial Photos (2023) - Draft",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Event",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/auckland-coast_2023_0.05m/01J16GT6WKPE7Q3H62NB4PKEQX/",
+      "3857": "s3://linz-basemaps/3857/auckland-coast_2023_0.05m/01J16GT6WMQ9TGW71V7954Y7M2/",
+      "name": "auckland-coast-2023-0.05m",
+      "title": "Auckland Coast 0.05m Urban Aerial Photos (2023) - Draft",
+      "category": "Event",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
