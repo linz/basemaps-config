@@ -5506,7 +5506,7 @@
   "sources": {
     "LINZ Basemaps": { "attribution": "© 2024 Toitū Te Whenua - CC BY 4.0", "type": "vector", "url": "/v1/tiles/topographic/{tileMatrix}/tile.json" },
     "LINZ-Terrain": {
-      "maxZoom": 18,
+      "maxzoom": 18,
       "tileSize": 256,
       "tiles": ["/v1/tiles/elevation/{tileMatrix}/{z}/{x}/{y}.png?pipeline=terrain-rgb"],
       "type": "raster-dem"
