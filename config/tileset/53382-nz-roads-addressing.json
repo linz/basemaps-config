@@ -2,12 +2,12 @@
   "type": "vector",
   "id": "ts_53382-nz-roads-addressing",
   "name": "53382-nz-roads-addressing",
-  "title": "53382-nz-roads-addressing",
+  "title": "NZ Roads (Addressing)",
   "maxZoom": 15,
   "format": "pbf",
   "layers": [
     {
-      "3857": "s3://linz-basemaps/vector/3857/53382-nz-roads-addressing/01J047BVRJZVEE9VM9Z1V1MX9B/53382-nz-roads-addressing.tar.co",
+      "3857": "s3://linz-basemaps/vector/3857/53382-nz-roads-addressing/01J18KKF22SZZKRW30295X505Y/53382-nz-roads-addressing.tar.co",
       "name": "53382-nz-roads-addressing",
       "title": "NZ Roads (Addressing)"
     }
