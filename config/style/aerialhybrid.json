@@ -1402,6 +1402,12 @@
       "tileSize": 256,
       "tiles": ["/v1/tiles/aerial/{tileMatrix}/{z}/{x}/{y}.webp"],
       "type": "raster"
+    },
+    "LINZ-Terrain": {
+      "maxZoom": 18,
+      "tileSize": 256,
+      "tiles": ["/v1/tiles/elevation/{tileMatrix}/{z}/{x}/{y}.png?pipeline=terrain-rgb"],
+      "type": "raster-dem"
     }
   },
   "sprite": "/v1/sprites/topographic",
