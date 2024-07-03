@@ -412,6 +412,14 @@
       "minZoom": 13
     },
     {
+      "2193": "s3://linz-basemaps/2193/waimakariri_2024_0.25m/01J1RESR6CDNEHH4A2DXTP1G0X/",
+      "3857": "s3://linz-basemaps/3857/waimakariri_2024_0.25m/01J1RESR6C1MNR0A8SH34PKHAF/",
+      "name": "waimakariri_2024_0.25m",
+      "title": "Waimakariri 0.25m Rural Aerial Photos (2024)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 13
+    },
+    {
       "2193": "s3://linz-basemaps/2193/northland_urban_2014-2015_0-10m_RGBA/01F6P1K57WYSAZVCTP35DVKG4B/",
       "3857": "s3://linz-basemaps/3857/northland_urban_2014-2015_0-10m_RGBA/01ED82YEHRRNR3YQC55TJY37E6/",
       "name": "northland-urban-2014-2015-0.1m",
