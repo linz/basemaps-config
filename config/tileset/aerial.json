@@ -420,6 +420,14 @@
       "minZoom": 13
     },
     {
+      "2193": "s3://linz-basemaps/2193/waikato_2023-2024_0.3m/01J28AWNAN0S3JS50C4VWC3X1G/",
+      "3857": "s3://linz-basemaps/3857/waikato_2023-2024_0.3m/01J28AWNANR2ME3JY3C61DD37X/",
+      "name": "waikato-2023-2024-0.3m",
+      "title": "Waikato 0.3m Rural Aerial Photos (2023-2024)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 13
+    },
+    {
       "2193": "s3://linz-basemaps/2193/northland_urban_2014-2015_0-10m_RGBA/01F6P1K57WYSAZVCTP35DVKG4B/",
       "3857": "s3://linz-basemaps/3857/northland_urban_2014-2015_0-10m_RGBA/01ED82YEHRRNR3YQC55TJY37E6/",
       "name": "northland-urban-2014-2015-0.1m",
