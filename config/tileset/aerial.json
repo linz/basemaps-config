@@ -164,11 +164,10 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/southland_2023_0.25m/01H9S5K5N9BHQEPC9EW207TQ94/",
-      "3857": "s3://linz-basemaps/3857/southland_2023_0.25m/01H9S5K5N7Q3WX9F3XB4VHHNQP/",
+      "2193": "s3://linz-basemaps/2193/southland_2023_0.25m/01J2CYGDFGE0JBCDGP8K37VHY6/",
+      "3857": "s3://linz-basemaps/3857/southland_2023_0.25m/01J2CYGDFXH71XBHE1HXRXVEQR/",
       "name": "southland-2023-0.25m",
-      "minZoom": 13,
-      "title": "Southland 0.25m Rural Aerial Photos (2023)",
+      "title": "Southland 0.25m Rural Aerial Photos (2023-2024)",
       "category": "Rural Aerial Photos"
     },
     {
