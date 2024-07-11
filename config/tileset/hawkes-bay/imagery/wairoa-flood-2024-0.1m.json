@@ -1,0 +1,23 @@
+{
+  "type": "raster",
+  "id": "ts_wairoa-flood-2024-0.1m",
+  "title": "Wairoa Flood 0.1m Urban Aerial Photos (2024)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Event",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/wairoa-flood_2024_0.1m/01J2HWHG3CMT9GKKP41RQE002V/",
+      "3857": "s3://linz-basemaps/3857/wairoa-flood_2024_0.1m/01J2HWHG3ZPTS71V39N2B83259/",
+      "name": "wairoa-flood-2024-0.1m",
+      "title": "Wairoa Flood 0.1m Urban Aerial Photos (2024)",
+      "category": "Event",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

@@ -164,11 +164,11 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/southland_2023_0.25m/01H9S5K5N9BHQEPC9EW207TQ94/",
-      "3857": "s3://linz-basemaps/3857/southland_2023_0.25m/01H9S5K5N7Q3WX9F3XB4VHHNQP/",
+      "2193": "s3://linz-basemaps/2193/southland_2023_0.25m/01J2CYGDFGE0JBCDGP8K37VHY6/",
+      "3857": "s3://linz-basemaps/3857/southland_2023_0.25m/01J2CYGDFXH71XBHE1HXRXVEQR/",
       "name": "southland-2023-0.25m",
       "minZoom": 13,
-      "title": "Southland 0.25m Rural Aerial Photos (2023)",
+      "title": "Southland 0.25m Rural Aerial Photos (2023-2024)",
       "category": "Rural Aerial Photos"
     },
     {
@@ -408,6 +408,14 @@
       "3857": "s3://linz-basemaps/3857/canterbury_2023_0.3m/01HFART8DDXKKGVM10S859K4WQ/",
       "name": "canterbury-2023-0.3m",
       "title": "Canterbury 0.3m Rural Aerial Photos (2023)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 13
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/waimakariri_2024_0.25m/01J1RESR6CDNEHH4A2DXTP1G0X/",
+      "3857": "s3://linz-basemaps/3857/waimakariri_2024_0.25m/01J1RESR6C1MNR0A8SH34PKHAF/",
+      "name": "waimakariri_2024_0.25m",
+      "title": "Waimakariri 0.25m Rural Aerial Photos (2024)",
       "category": "Rural Aerial Photos",
       "minZoom": 13
     },
@@ -732,6 +740,14 @@
       "category": "Rural Aerial Photos"
     },
     {
+      "2193": "s3://linz-basemaps/2193/auckland_rural_2022_0-075m_RGB/01G6HJ9S4PGK6MTVEZWWHV56QN/",
+      "3857": "s3://linz-basemaps/3857/auckland_rural_2022_0-075m_RGB/01G6HJBFJRBKJ7FQPHVRACKMNQ/",
+      "name": "auckland-rural-2022-0.075m",
+      "minZoom": 13,
+      "title": "Auckland 0.075m Rural Aerial Photos (2022)",
+      "category": "Rural Aerial Photos"
+    },
+    {
       "2193": "s3://linz-basemaps/2193/waikato_2021-2023_0.3m/01HP3A3YX4116CC023JVVXRTW4/",
       "3857": "s3://linz-basemaps/3857/waikato_2021-2023_0.3m/01HP3A3YX4HAYBWEDSJYCJ2XY2/",
       "name": "waikato-2021-2023-0.3m",
@@ -740,12 +756,12 @@
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/auckland_rural_2022_0-075m_RGB/01G6HJ9S4PGK6MTVEZWWHV56QN/",
-      "3857": "s3://linz-basemaps/3857/auckland_rural_2022_0-075m_RGB/01G6HJBFJRBKJ7FQPHVRACKMNQ/",
-      "name": "auckland-rural-2022-0.075m",
-      "minZoom": 13,
-      "title": "Auckland 0.075m Rural Aerial Photos (2022)",
-      "category": "Rural Aerial Photos"
+      "2193": "s3://linz-basemaps/2193/waikato_2023-2024_0.3m/01J28AWNAN0S3JS50C4VWC3X1G/",
+      "3857": "s3://linz-basemaps/3857/waikato_2023-2024_0.3m/01J28AWNANR2ME3JY3C61DD37X/",
+      "name": "waikato-2023-2024-0.3m",
+      "title": "Waikato 0.3m Rural Aerial Photos (2023-2024)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 13
     },
     {
       "2193": "s3://linz-basemaps/2193/ōtorohanga_urban_2021_0-1m_RGB/01FYWKAJ86W9P7RWM1VB62KD0H/",
