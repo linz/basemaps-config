@@ -1,7 +1,6 @@
 {
   "type": "raster",
   "id": "ts_hawkes-bay-2023-2024-0.125m",
-  "name": "hawkes-bay-2023-2024-0.125m",
   "title": "Hawke's Bay 0.125m Rural Aerial Photos (2023-2024) - Draft",
   "background": {
     "r": 0,
