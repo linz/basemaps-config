@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_northland-2023-2024-0.3m",
+  "name": "northland-2023-2024-0.3m",
+  "title": "Northland 0.3m Rural Aerial Photos (2023-2024) - Draft",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/northland_2023-2024_0.3m/01J2J08WQYVJEZ7NEHH3NJ25FF/",
+      "3857": "s3://linz-basemaps/3857/northland_2023-2024_0.3m/01J2J08WQRRQ99TXRMMZQKSTC3/",
+      "name": "northland-2023-2024-0.3m",
+      "title": "Northland 0.3m Rural Aerial Photos (2023-2024) - Draft",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
