@@ -229,7 +229,7 @@ jobs:
     name: Take Screenshots
     runs-on: ubuntu-latest
     env:
-      SCREENSHOT_CONTAINER: ghcr.io/linz/basemaps-screenshot/cli:v1
+      SCREENSHOT_CONTAINER: ghcr.io/linz/basemaps-screenshot/cli:v1.7.0-2-g99b800e
       DOCKER_AWS_ENV: -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN -e AWS_REGION -e AWS_DEFAULT_REGION
       CONFIG_PATH: ${{ needs.build.outputs.config_path }}
       BASEMAPS_HOST: http://localhost:5000
