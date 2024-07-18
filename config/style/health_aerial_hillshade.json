@@ -1,10 +1,16 @@
 {
-  "id": "st_aerial",
+  "id": "st_health_aerial_hillshade",
   "layers": [
     {
       "id": "Aerial-Imagery",
       "source": "LINZ-Basemaps",
       "type": "raster"
+    },
+    {
+      "id": "LINZ-HillShade",
+      "paint": { "hillshade-shadow-color": "#040404" },
+      "source": "LINZ-Terrain",
+      "type": "hillshade"
     }
   ],
   "name": "aerial",
@@ -15,12 +21,6 @@
       "type": "raster"
     },
     "LINZ-Terrain": {
-      "maxzoom": 18,
-      "tileSize": 256,
-      "tiles": ["/v1/tiles/elevation/{tileMatrix}/{z}/{x}/{y}.png?pipeline=terrain-rgb"],
-      "type": "raster-dem"
-    },
-    "__hillshade-LINZ-Terrain": {
       "maxzoom": 18,
       "tileSize": 256,
       "tiles": ["/v1/tiles/elevation/{tileMatrix}/{z}/{x}/{y}.png?pipeline=terrain-rgb"],

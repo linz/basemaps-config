@@ -251,7 +251,7 @@ jobs:
           # Wait for the server to start
           timeout 30 bash -c 'while [[ "$(curl -s -o /dev/null -w ''%{http_code}'' http://localhost:5000/v1/version)" !=  "200" ]]; do sleep 0.5; done' || false
 
-          docker run --rm --network="host" -v $PWD:$PWD ${DOCKER_AWS_ENV} ${SCREENSHOT_CONTAINER} --url http://localhost:5000 --output $PWD/.artifacts/visual-snapshots
+          docker run --rm --network="host" -v $PWD:$PWD ${DOCKER_AWS_ENV} ${SCREENSHOT_CONTAINER} --test $PWD/test.json --url http://localhost:5000 --output $PWD/.artifacts/visual-snapshots
       
       - name: Save snapshots
         uses: getsentry/action-visual-snapshot@v2
