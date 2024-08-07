@@ -612,14 +612,6 @@
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/waitaki_urban_2020-2021_0-075m_RGB/01FSWMVSKCNWK9H4J3JP6RAQ0S/",
-      "3857": "s3://linz-basemaps/3857/waitaki_urban_2020-2021_0-075m_RGB/01FSWMXCT9AF67HW8BQKV9WM0K/",
-      "name": "waitaki-urban-2020-2021-0.075m",
-      "minZoom": 14,
-      "title": "Waitaki 0.075m Urban Aerial Photos (2020-2021)",
-      "category": "Urban Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/nelson_urban_2022_0-075m_RGB/01G87CWVWSG7KWE3DHC6R18BCX/",
       "3857": "s3://linz-basemaps/3857/nelson_urban_2022_0-075m_RGB/01G87CXGF81D5CVT22B038BCM1/",
       "name": "nelson-urban-2022-0.075m",
@@ -937,6 +929,14 @@
       "3857": "s3://linz-basemaps/3857/otago_2023-2024_0.1m/01J4FW00FXF9BPRE5G3Y40EKBK/",
       "name": "otago-2023-2024-0.1m",
       "title": "Otago 0.1m Urban Aerial Photos (2023-2024)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 14
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/waitaki_2023-2024_0.075m/01J4N16YDFWRXKMMRDCEJEB6RD/",
+      "3857": "s3://linz-basemaps/3857/waitaki_2023-2024_0.075m/01J4N16YDHWZPEEEDJ45ERNSSY/",
+      "name": "waitaki-2023-2024-0.075m",
+      "title": "Waitaki 0.075m Urban Aerial Photos (2023-2024)",
       "category": "Urban Aerial Photos",
       "minZoom": 14
     },
