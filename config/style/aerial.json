@@ -1,0 +1,25 @@
+{
+  "id": "st_aerial",
+  "layers": [
+    {
+      "id": "Aerial-Imagery",
+      "source": "LINZ-Basemaps",
+      "type": "raster"
+    }
+  ],
+  "name": "aerial",
+  "sources": {
+    "LINZ-Basemaps": {
+      "tileSize": 256,
+      "tiles": ["/v1/tiles/aerial/{tileMatrix}/{z}/{x}/{y}.webp"],
+      "type": "raster"
+    },
+    "LINZ-Terrain": {
+      "maxzoom": 18,
+      "tileSize": 256,
+      "tiles": ["/v1/tiles/elevation/{tileMatrix}/{z}/{x}/{y}.png?pipeline=terrain-rgb"],
+      "type": "raster-dem"
+    }
+  },
+  "version": 8
+}
