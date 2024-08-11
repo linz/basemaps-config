@@ -54,13 +54,6 @@
       "name": "tauranga_2022_dem_1m"
     },
     {
-      "2193": "s3://nz-elevation/canterbury/amberley_2012/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/amberley_2012_dem_1m/01HZ64YZXJET0K8RGCEV4HK60E/",
-      "minZoom": 9,
-      "title": "Canterbury - Amberley LiDAR 1m DEM (2012)",
-      "name": "amberley_2012_dem_1m"
-    },
-    {
       "2193": "s3://nz-elevation/canterbury/banks-peninsula_2018-2019/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/banks-peninsula_2018-2019_dem_1m/01HZ64YZV1X1EW0K88ZPCQGGMH/",
       "minZoom": 9,
@@ -292,13 +285,6 @@
       "name": "top-of-the-south-flood_2022_dem_1m"
     },
     {
-      "2193": "s3://nz-elevation/northland/marsden-point_2016/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/marsden-point_2016_dem_1m/01HZ66E2Z2E3Y0YAST2JVBVF11/",
-      "minZoom": 9,
-      "title": "Northland - Marsden Point LiDAR 1m DEM (2016)",
-      "name": "marsden-point_2016_dem_1m"
-    },
-    {
       "2193": "s3://nz-elevation/northland/northland_2018-2020/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/northland_2018-2020_dem_1m/01HZ66GGG01VJJDT3WMRSFCADF/",
       "minZoom": 9,
@@ -458,13 +444,6 @@
       "minZoom": 9,
       "title": "Tasman - Waimea Dam LiDAR 1m DEM (2023)",
       "name": "waimea-dam_2023_dem_1m"
-    },
-    {
-      "2193": "s3://nz-elevation/waikato/hamilton_2019/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/hamilton_2019_dem_1m/01HZ67AF6SVAD4SNNMZ28K974V/",
-      "minZoom": 9,
-      "title": "Waikato - Hamilton LiDAR 1m DEM (2019)",
-      "name": "hamilton_2019_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/waikato/hamilton_2023/dem_1m/2193/",
