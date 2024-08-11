@@ -460,13 +460,6 @@
       "name": "waimea-dam_2023_dem_1m"
     },
     {
-      "2193": "s3://nz-elevation/waikato/hamilton_2019/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/hamilton_2019_dem_1m/01HZ67AF6SVAD4SNNMZ28K974V/",
-      "minZoom": 9,
-      "title": "Waikato - Hamilton LiDAR 1m DEM (2019)",
-      "name": "hamilton_2019_dem_1m"
-    },
-    {
       "2193": "s3://nz-elevation/waikato/hamilton_2023/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/hamilton_2023_dem_1m/01HZ67AXVJ9N35PFNBE5HX6KFW/",
       "minZoom": 9,
