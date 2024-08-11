@@ -54,13 +54,6 @@
       "name": "tauranga_2022_dem_1m"
     },
     {
-      "2193": "s3://nz-elevation/canterbury/amberley_2012/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/amberley_2012_dem_1m/01HZ64YZXJET0K8RGCEV4HK60E/",
-      "minZoom": 9,
-      "title": "Canterbury - Amberley LiDAR 1m DEM (2012)",
-      "name": "amberley_2012_dem_1m"
-    },
-    {
       "2193": "s3://nz-elevation/canterbury/banks-peninsula_2018-2019/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/banks-peninsula_2018-2019_dem_1m/01HZ64YZV1X1EW0K88ZPCQGGMH/",
       "minZoom": 9,
