@@ -12,6 +12,13 @@
       "name": "new-zealand_2012_dem_8m"
     },
     {
+      "2193": "s3://nz-elevation/auckland/auckland-south_2016-2017/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/auckland-south_2016-2017_dem_1m/01HZ64YZW62RJVDK4331QAFTHH/",
+      "minZoom": 9,
+      "title": "Auckland South LiDAR 1m DEM (2016-2017)",
+      "name": "auckland-south_2016-2017_dem_1m"
+    },
+    {
       "2193": "s3://nz-elevation/auckland/auckland-north_2016-2018/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/auckland-north_2016-2018_dem_1m/01HZ64YXQVSRF6JK7YMYAQ81BT/",
       "minZoom": 9,
@@ -19,11 +26,11 @@
       "name": "auckland-north_2016-2018_dem_1m"
     },
     {
-      "2193": "s3://nz-elevation/auckland/auckland-south_2016-2017/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/auckland-south_2016-2017_dem_1m/01HZ64YZW62RJVDK4331QAFTHH/",
+      "2193": "s3://nz-elevation/bay-of-plenty/tauranga-and-coast_2015/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/tauranga-and-coast_2015_dem_1m/01HZ64YZTTT88RFGS0HS5AHRZ1/",
       "minZoom": 9,
-      "title": "Auckland South LiDAR 1m DEM (2016-2017)",
-      "name": "auckland-south_2016-2017_dem_1m"
+      "title": "Bay of Plenty - Tauranga and Coast LiDAR 1m DEM (2015)",
+      "name": "tauranga-and-coast_2015_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/bay-of-plenty/bay-of-plenty_2018-2019/dem_1m/2193/",
@@ -40,18 +47,67 @@
       "name": "bay-of-plenty_2019-2022_dem_1m"
     },
     {
-      "2193": "s3://nz-elevation/bay-of-plenty/tauranga-and-coast_2015/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/tauranga-and-coast_2015_dem_1m/01HZ64YZTTT88RFGS0HS5AHRZ1/",
-      "minZoom": 9,
-      "title": "Bay of Plenty - Tauranga and Coast LiDAR 1m DEM (2015)",
-      "name": "tauranga-and-coast_2015_dem_1m"
-    },
-    {
       "2193": "s3://nz-elevation/bay-of-plenty/tauranga_2022/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/tauranga_2022_dem_1m/01HZ64YZV3MEG81CES1ME50H7P/",
       "minZoom": 9,
       "title": "Bay of Plenty - Tauranga LiDAR 1m DEM (2022)",
       "name": "tauranga_2022_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/kaikoura_2012/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/kaikoura_2012_dem_1m/01HZ65G7SXJNQW3RC58XGDF6Q6/",
+      "minZoom": 9,
+      "title": "Canterbury - Kaikōura LiDAR 1m DEM (2012)",
+      "name": "kaikoura_2012_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/hurunui-rivers_2013/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/hurunui-rivers_2013_dem_1m/01HZ65DX33BAHRC5XBJMFKE0Z1/",
+      "minZoom": 9,
+      "title": "Canterbury - Hurunui Rivers LiDAR 1m DEM (2013)",
+      "name": "hurunui-rivers_2013_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/timaru-rivers_2014/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/timaru-rivers_2014_dem_1m/01HZ65Q5X750SSH988C3TYHDVZ/",
+      "minZoom": 9,
+      "title": "Canterbury - Timaru Rivers LiDAR 1m DEM (2014)",
+      "name": "timaru-rivers_2014_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/cheviot_2015/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/cheviot_2015_dem_1m/01HZ65A6ATT6VA7KTJAZHT2GKJ/",
+      "minZoom": 9,
+      "title": "Canterbury - Cheviot LiDAR 1m DEM (2015)",
+      "name": "cheviot_2015_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/christchurch-and-selwyn_2015/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/christchurch-and-selwyn_2015_dem_1m/01HZ65BE94TVDRNGJ9PZB2BTYX/",
+      "minZoom": 9,
+      "title": "Canterbury - Christchurch and Selwyn LiDAR 1m DEM (2015)",
+      "name": "christchurch-and-selwyn_2015_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/hawarden_2015/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/hawarden_2015_dem_1m/01HZ65DJBZ0RT7RV782Z62GZZS/",
+      "minZoom": 9,
+      "title": "Canterbury - Hawarden LiDAR 1m DEM (2015)",
+      "name": "hawarden_2015_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/canterbury_2016-2017/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/canterbury_2016-2017_dem_1m/01HZ64YZT7YJN6K8BDMAMBN4RS/",
+      "minZoom": 9,
+      "title": "Canterbury LiDAR 1m DEM (2016-2017)",
+      "name": "canterbury_2016-2017_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/christchurch-and-ashley-river_2018-2019/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/christchurch-and-ashley-river_2018-2019_dem_1m/01HZ65B3P90PS85WF0SEY7T6KG/",
+      "minZoom": 9,
+      "title": "Canterbury - Christchurch and Ashley River LiDAR 1m DEM (2018-2019)",
+      "name": "christchurch-and-ashley-river_2018-2019_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/banks-peninsula_2018-2019/dem_1m/2193/",
@@ -68,46 +124,11 @@
       "name": "banks-peninsula_2023_dem_1m"
     },
     {
-      "2193": "s3://nz-elevation/canterbury/canterbury_2016-2017/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/canterbury_2016-2017_dem_1m/01HZ64YZT7YJN6K8BDMAMBN4RS/",
-      "minZoom": 9,
-      "title": "Canterbury LiDAR 1m DEM (2016-2017)",
-      "name": "canterbury_2016-2017_dem_1m"
-    },
-    {
       "2193": "s3://nz-elevation/canterbury/canterbury_2018-2019/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/canterbury_2018-2019_dem_1m/01HZ65500HBTB4VS48JRK03SXD/",
       "minZoom": 9,
       "title": "Canterbury LiDAR 1m DEM (2018-2019)",
       "name": "canterbury_2018-2019_dem_1m"
-    },
-    {
-      "2193": "s3://nz-elevation/canterbury/canterbury_2020-2023/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/canterbury_2020-2023_dem_1m/01HZ656J6KSFB7KF6W8PBG8DRE/",
-      "minZoom": 9,
-      "title": "Canterbury LiDAR 1m DEM (2020-2023)",
-      "name": "canterbury_2020-2023_dem_1m"
-    },
-    {
-      "2193": "s3://nz-elevation/canterbury/cheviot_2015/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/cheviot_2015_dem_1m/01HZ65A6ATT6VA7KTJAZHT2GKJ/",
-      "minZoom": 9,
-      "title": "Canterbury - Cheviot LiDAR 1m DEM (2015)",
-      "name": "cheviot_2015_dem_1m"
-    },
-    {
-      "2193": "s3://nz-elevation/canterbury/christchurch-and-ashley-river_2018-2019/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/christchurch-and-ashley-river_2018-2019_dem_1m/01HZ65B3P90PS85WF0SEY7T6KG/",
-      "minZoom": 9,
-      "title": "Canterbury - Christchurch and Ashley River LiDAR 1m DEM (2018-2019)",
-      "name": "christchurch-and-ashley-river_2018-2019_dem_1m"
-    },
-    {
-      "2193": "s3://nz-elevation/canterbury/christchurch-and-selwyn_2015/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/christchurch-and-selwyn_2015_dem_1m/01HZ65BE94TVDRNGJ9PZB2BTYX/",
-      "minZoom": 9,
-      "title": "Canterbury - Christchurch and Selwyn LiDAR 1m DEM (2015)",
-      "name": "christchurch-and-selwyn_2015_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/christchurch_2020-2021/dem_1m/2193/",
@@ -117,18 +138,11 @@
       "name": "christchurch_2020-2021_dem_1m"
     },
     {
-      "2193": "s3://nz-elevation/canterbury/hawarden_2015/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/hawarden_2015_dem_1m/01HZ65DJBZ0RT7RV782Z62GZZS/",
+      "2193": "s3://nz-elevation/canterbury/canterbury_2020-2023/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/canterbury_2020-2023_dem_1m/01HZ656J6KSFB7KF6W8PBG8DRE/",
       "minZoom": 9,
-      "title": "Canterbury - Hawarden LiDAR 1m DEM (2015)",
-      "name": "hawarden_2015_dem_1m"
-    },
-    {
-      "2193": "s3://nz-elevation/canterbury/hurunui-rivers_2013/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/hurunui-rivers_2013_dem_1m/01HZ65DX33BAHRC5XBJMFKE0Z1/",
-      "minZoom": 9,
-      "title": "Canterbury - Hurunui Rivers LiDAR 1m DEM (2013)",
-      "name": "hurunui-rivers_2013_dem_1m"
+      "title": "Canterbury LiDAR 1m DEM (2020-2023)",
+      "name": "canterbury_2020-2023_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/kaikoura-and-waimakariri_2022/dem_1m/2193/",
@@ -136,13 +150,6 @@
       "minZoom": 9,
       "title": "Canterbury - Kaikōura and Waimakariri LiDAR 1m DEM (2022)",
       "name": "kaikoura-and-waimakariri_2022_dem_1m"
-    },
-    {
-      "2193": "s3://nz-elevation/canterbury/kaikoura_2012/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/kaikoura_2012_dem_1m/01HZ65G7SXJNQW3RC58XGDF6Q6/",
-      "minZoom": 9,
-      "title": "Canterbury - Kaikōura LiDAR 1m DEM (2012)",
-      "name": "kaikoura_2012_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/kaikoura_2016-2017/dem_1m/2193/",
@@ -173,13 +180,6 @@
       "name": "selwyn_2023_dem_1m"
     },
     {
-      "2193": "s3://nz-elevation/canterbury/timaru-rivers_2014/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/timaru-rivers_2014_dem_1m/01HZ65Q5X750SSH988C3TYHDVZ/",
-      "minZoom": 9,
-      "title": "Canterbury - Timaru Rivers LiDAR 1m DEM (2014)",
-      "name": "timaru-rivers_2014_dem_1m"
-    },
-    {
       "2193": "s3://nz-elevation/canterbury/waimakariri_2023/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/waimakariri_2023_dem_1m/01HZ65QH9TEZV22HRV8TZS7R1Y/",
       "minZoom": 9,
@@ -194,18 +194,18 @@
       "name": "gisborne_2018-2020_dem_1m"
     },
     {
-      "2193": "s3://nz-elevation/gisborne/gisborne_2023/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/gisborne_2023_dem_1m/01HZ65SHA9XRZP0PRX1GMSMDD0/",
-      "minZoom": 9,
-      "title": "Gisborne LiDAR 1m DEM (2023)",
-      "name": "gisborne_2023_dem_1m"
-    },
-    {
       "2193": "s3://nz-elevation/hawkes-bay/gisborne-and-hawkes-bay-cyclone-gabrielle-river-flood_2023/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/gisborne-and-hawkes-bay-cyclone-gabrielle-river-flood_2023_dem_1m/01HZ65WNN1N3EDCQK6KYVDCGJ2/",
       "minZoom": 9,
       "title": "Gisborne and Hawke's Bay - Cyclone Gabrielle River Flood LiDAR 1m DEM (2023)",
       "name": "gisborne-and-hawkes-bay-cyclone-gabrielle-river-flood_2023_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/gisborne/gisborne_2023/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/gisborne_2023_dem_1m/01HZ65SHA9XRZP0PRX1GMSMDD0/",
+      "minZoom": 9,
+      "title": "Gisborne LiDAR 1m DEM (2023)",
+      "name": "gisborne_2023_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/hawkes-bay/hawkes-bay_2020-2021/dem_1m/2193/",
@@ -229,13 +229,6 @@
       "name": "manawatu-whanganui_2015-2016_dem_1m"
     },
     {
-      "2193": "s3://nz-elevation/manawatu-whanganui/manawatu-whanganui_2022-2023/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/manawatu-whanganui_2022-2023_dem_1m/01HZ66026FD0WJWVWV9V3ABQGZ/",
-      "minZoom": 9,
-      "title": "Manawatū-Whanganui LiDAR 1m DEM (2022-2023)",
-      "name": "manawatu-whanganui_2022-2023_dem_1m"
-    },
-    {
       "2193": "s3://nz-elevation/manawatu-whanganui/palmerston-north_2018/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/palmerston-north_2018_dem_1m/01HZ6645STRC0SK7W50BZ5PG0S/",
       "minZoom": 9,
@@ -248,6 +241,13 @@
       "minZoom": 9,
       "title": "Manawatū-Whanganui - Whanganui Urban LiDAR 1m DEM (2020-2021)",
       "name": "whanganui-urban_2020-2021_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/manawatu-whanganui/manawatu-whanganui_2022-2023/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/manawatu-whanganui_2022-2023_dem_1m/01HZ66026FD0WJWVWV9V3ABQGZ/",
+      "minZoom": 9,
+      "title": "Manawatū-Whanganui LiDAR 1m DEM (2022-2023)",
+      "name": "manawatu-whanganui_2022-2023_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/marlborough/blenheim_2014/dem_1m/2193/",
@@ -285,13 +285,6 @@
       "name": "top-of-the-south-flood_2022_dem_1m"
     },
     {
-      "2193": "s3://nz-elevation/northland/northland_2018-2020/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/northland_2018-2020_dem_1m/01HZ66GGG01VJJDT3WMRSFCADF/",
-      "minZoom": 9,
-      "title": "Northland LiDAR 1m DEM (2018-2020)",
-      "name": "northland_2018-2020_dem_1m"
-    },
-    {
       "2193": "s3://nz-elevation/northland/whangarei-heads_2016/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/whangarei-heads_2016_dem_1m/01HZ66GG9SANTQQACPF9P25JJD/",
       "minZoom": 9,
@@ -299,39 +292,11 @@
       "name": "whangarei-heads_2016_dem_1m"
     },
     {
-      "2193": "s3://nz-elevation/otago/balclutha_2020/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/balclutha_2020_dem_1m/01HZ66HSTHR2N3B3923KX8812H/",
+      "2193": "s3://nz-elevation/northland/northland_2018-2020/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/northland_2018-2020_dem_1m/01HZ66GGG01VJJDT3WMRSFCADF/",
       "minZoom": 9,
-      "title": "Otago - Balclutha LiDAR 1m DEM (2020)",
-      "name": "balclutha_2020_dem_1m"
-    },
-    {
-      "2193": "s3://nz-elevation/otago/central-otago_2021/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/central-otago_2021_dem_1m/01HZ66HVDGKZW2056HPCKXV3ZK/",
-      "minZoom": 9,
-      "title": "Otago - Central Otago LiDAR 1m DEM (2021)",
-      "name": "central-otago_2021_dem_1m"
-    },
-    {
-      "2193": "s3://nz-elevation/otago/central-otago_2022-2023/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/central-otago_2022-2023_dem_1m/01HZ66M5EX3NW8J7569JS3TQKR/",
-      "minZoom": 9,
-      "title": "Otago - Central Otago LiDAR 1m DEM (2022-2023)",
-      "name": "central-otago_2022-2023_dem_1m"
-    },
-    {
-      "2193": "s3://nz-elevation/otago/coastal-catchments_2021/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/coastal-catchments_2021_dem_1m/01HZ66NVDNHCYRB3BPPWC6H9QZ/",
-      "minZoom": 9,
-      "title": "Otago - Coastal Catchments LiDAR 1m DEM (2021)",
-      "name": "coastal-catchments_2021_dem_1m"
-    },
-    {
-      "2193": "s3://nz-elevation/otago/dunedin-and-mosgiel_2021/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/dunedin-and-mosgiel_2021_dem_1m/01HZ66P170J5A368QEY7Z3MA8J/",
-      "minZoom": 9,
-      "title": "Otago - Dunedin and Mosgiel LiDAR 1m DEM (2021)",
-      "name": "dunedin-and-mosgiel_2021_dem_1m"
+      "title": "Northland LiDAR 1m DEM (2018-2020)",
+      "name": "northland_2018-2020_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/otago/otago_2016/dem_1m/2193/",
@@ -348,11 +313,46 @@
       "name": "queenstown_2016_dem_1m"
     },
     {
+      "2193": "s3://nz-elevation/otago/balclutha_2020/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/balclutha_2020_dem_1m/01HZ66HSTHR2N3B3923KX8812H/",
+      "minZoom": 9,
+      "title": "Otago - Balclutha LiDAR 1m DEM (2020)",
+      "name": "balclutha_2020_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/otago/central-otago_2021/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/central-otago_2021_dem_1m/01HZ66HVDGKZW2056HPCKXV3ZK/",
+      "minZoom": 9,
+      "title": "Otago - Central Otago LiDAR 1m DEM (2021)",
+      "name": "central-otago_2021_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/otago/coastal-catchments_2021/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/coastal-catchments_2021_dem_1m/01HZ66NVDNHCYRB3BPPWC6H9QZ/",
+      "minZoom": 9,
+      "title": "Otago - Coastal Catchments LiDAR 1m DEM (2021)",
+      "name": "coastal-catchments_2021_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/otago/dunedin-and-mosgiel_2021/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/dunedin-and-mosgiel_2021_dem_1m/01HZ66P170J5A368QEY7Z3MA8J/",
+      "minZoom": 9,
+      "title": "Otago - Dunedin and Mosgiel LiDAR 1m DEM (2021)",
+      "name": "dunedin-and-mosgiel_2021_dem_1m"
+    },
+    {
       "2193": "s3://nz-elevation/otago/queenstown_2021/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/queenstown_2021_dem_1m/01HZ66T2P6MM12RJWE21Q3Y72J/",
       "minZoom": 9,
       "title": "Otago - Queenstown LiDAR 1m DEM (2021)",
       "name": "queenstown_2021_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/otago/central-otago_2022-2023/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/central-otago_2022-2023_dem_1m/01HZ66M5EX3NW8J7569JS3TQKR/",
+      "minZoom": 9,
+      "title": "Otago - Central Otago LiDAR 1m DEM (2022-2023)",
+      "name": "central-otago_2022-2023_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/otago/wanaka_2022-2023/dem_1m/2193/",
@@ -383,18 +383,25 @@
       "name": "taranaki_2021_dem_1m"
     },
     {
+      "2193": "s3://nz-elevation/tasman/tasman_2008-2015/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/tasman_2008-2015_dem_1m/01HZ676DYQAVNGE6XJ7FVRS8F8/",
+      "minZoom": 9,
+      "title": "Nelson and Tasman LiDAR 1m DEM (2008-2015)",
+      "name": "tasman_2008-2015_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/tasman/richmond-and-motueka_2015/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/richmond-and-motueka_2015_dem_1m/01HZ675GM81HZTFKGZEAREFXZC/",
+      "minZoom": 9,
+      "title": "Tasman - Richmond and Motueka LiDAR 1m DEM (2015)",
+      "name": "richmond-and-motueka_2015_dem_1m"
+    },
+    {
       "2193": "s3://nz-elevation/tasman/abel-tasman-and-golden-bay_2016/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/abel-tasman-and-golden-bay_2016_dem_1m/01HZ66YRH6T1E72EDJH8E2C9WE/",
       "minZoom": 9,
       "title": "Tasman - Abel Tasman and Golden Bay LiDAR 1m DEM (2016)",
       "name": "abel-tasman-and-golden-bay_2016_dem_1m"
-    },
-    {
-      "2193": "s3://nz-elevation/tasman/abel-tasman-and-golden-bay_2023/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/abel-tasman-and-golden-bay_2023_dem_1m/01HZ670G7AJ29YFH2A2AP6EQSS/",
-      "minZoom": 9,
-      "title": "Tasman - Abel Tasman and Golden Bay LiDAR 1m DEM (2023)",
-      "name": "abel-tasman-and-golden-bay_2023_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/tasman/golden-bay_2017/dem_1m/2193/",
@@ -411,11 +418,11 @@
       "name": "motueka-river-valley_2018-2019_dem_1m"
     },
     {
-      "2193": "s3://nz-elevation/tasman/richmond-and-motueka_2015/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/richmond-and-motueka_2015_dem_1m/01HZ675GM81HZTFKGZEAREFXZC/",
+      "2193": "s3://nz-elevation/tasman/tasman_2020-2022/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/tasman_2020-2022_dem_1m/01HZ677D4DM9DQWB4ADK2M3RK8/",
       "minZoom": 9,
-      "title": "Tasman - Richmond and Motueka LiDAR 1m DEM (2015)",
-      "name": "richmond-and-motueka_2015_dem_1m"
+      "title": "Tasman LiDAR 1m DEM (2020-2022)",
+      "name": "tasman_2020-2022_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/tasman/tasman-bay_2022/dem_1m/2193/",
@@ -425,18 +432,11 @@
       "name": "tasman-bay_2022_dem_1m"
     },
     {
-      "2193": "s3://nz-elevation/tasman/tasman_2008-2015/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/tasman_2008-2015_dem_1m/01HZ676DYQAVNGE6XJ7FVRS8F8/",
+      "2193": "s3://nz-elevation/tasman/abel-tasman-and-golden-bay_2023/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/abel-tasman-and-golden-bay_2023_dem_1m/01HZ670G7AJ29YFH2A2AP6EQSS/",
       "minZoom": 9,
-      "title": "Nelson and Tasman LiDAR 1m DEM (2008-2015)",
-      "name": "tasman_2008-2015_dem_1m"
-    },
-    {
-      "2193": "s3://nz-elevation/tasman/tasman_2020-2022/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/tasman_2020-2022_dem_1m/01HZ677D4DM9DQWB4ADK2M3RK8/",
-      "minZoom": 9,
-      "title": "Tasman LiDAR 1m DEM (2020-2022)",
-      "name": "tasman_2020-2022_dem_1m"
+      "title": "Tasman - Abel Tasman and Golden Bay LiDAR 1m DEM (2023)",
+      "name": "abel-tasman-and-golden-bay_2023_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/tasman/waimea-dam_2023/dem_1m/2193/",
@@ -446,11 +446,11 @@
       "name": "waimea-dam_2023_dem_1m"
     },
     {
-      "2193": "s3://nz-elevation/waikato/hamilton_2023/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/hamilton_2023_dem_1m/01HZ67AXVJ9N35PFNBE5HX6KFW/",
+      "2193": "s3://nz-elevation/waikato/west-coast-and-hauraki-plains_2015/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/west-coast-and-hauraki-plains_2015_dem_1m/01HZ67CKSE7VXYT4Q71SAW3PR5/",
       "minZoom": 9,
-      "title": "Waikato - Hamilton LiDAR 1m DEM (2023)",
-      "name": "hamilton_2023_dem_1m"
+      "title": "Waikato - West Coast and Hauraki Plains LiDAR 1m DEM (2015)",
+      "name": "west-coast-and-hauraki-plains_2015_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/waikato/huntly_2015-2019/dem_1m/2193/",
@@ -460,18 +460,18 @@
       "name": "huntly_2015-2019_dem_1m"
     },
     {
-      "2193": "s3://nz-elevation/waikato/reporoa-and-upper-piako-river_2019/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/reporoa-and-upper-piako-river_2019_dem_1m/01HZ67C4MCA93ZQ93RH99DQ872/",
-      "minZoom": 9,
-      "title": "Waikato - Reporoa and Upper Piako River LiDAR 1m DEM (2019)",
-      "name": "reporoa-and-upper-piako-river_2019_dem_1m"
-    },
-    {
       "2193": "s3://nz-elevation/waikato/thames_2017-2019/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/thames_2017-2019_dem_1m/01HZ67CB7CEZX0JYWJ38N3920E/",
       "minZoom": 9,
       "title": "Waikato - Thames LiDAR 1m DEM (2017-2019)",
       "name": "thames_2017-2019_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/waikato/reporoa-and-upper-piako-river_2019/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/reporoa-and-upper-piako-river_2019_dem_1m/01HZ67C4MCA93ZQ93RH99DQ872/",
+      "minZoom": 9,
+      "title": "Waikato - Reporoa and Upper Piako River LiDAR 1m DEM (2019)",
+      "name": "reporoa-and-upper-piako-river_2019_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/waikato/waikato_2021/dem_1m/2193/",
@@ -481,11 +481,11 @@
       "name": "waikato_2021_dem_1m"
     },
     {
-      "2193": "s3://nz-elevation/waikato/west-coast-and-hauraki-plains_2015/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/west-coast-and-hauraki-plains_2015_dem_1m/01HZ67CKSE7VXYT4Q71SAW3PR5/",
+      "2193": "s3://nz-elevation/waikato/hamilton_2023/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/hamilton_2023_dem_1m/01HZ67AXVJ9N35PFNBE5HX6KFW/",
       "minZoom": 9,
-      "title": "Waikato - West Coast and Hauraki Plains LiDAR 1m DEM (2015)",
-      "name": "west-coast-and-hauraki-plains_2015_dem_1m"
+      "title": "Waikato - Hamilton LiDAR 1m DEM (2023)",
+      "name": "hamilton_2023_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/wellington/wellington_2013-2014/dem_1m/2193/",
@@ -493,6 +493,13 @@
       "minZoom": 9,
       "title": "Wellington LiDAR 1m DEM (2013-2014)",
       "name": "wellington_2013-2014_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/wellington/wellington-city_2019-2020/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/wellington-city_2019-2020_dem_1m/01HZ67KCCZYYV6T93H51WPTDMF/",
+      "minZoom": 9,
+      "title": "Wellington City LiDAR 1m DEM (2019-2020)",
+      "name": "wellington-city_2019-2020_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/wellington/hutt-city_2021/dem_1m/2193/",
@@ -509,13 +516,6 @@
       "name": "kapiti-coast_2021_dem_1m"
     },
     {
-      "2193": "s3://nz-elevation/wellington/porirua_2023/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/porirua_2023_dem_1m/01HZ67GXY4ZRC1F1F3GA5BHG8H/",
-      "minZoom": 9,
-      "title": "Wellington - Porirua LiDAR 1m DEM (2023)",
-      "name": "porirua_2023_dem_1m"
-    },
-    {
       "2193": "s3://nz-elevation/wellington/upper-hutt-city_2021/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/upper-hutt-city_2021_dem_1m/01HZ67GZ5R61GX6QTAQT5NMQ7P/",
       "minZoom": 9,
@@ -523,11 +523,11 @@
       "name": "upper-hutt-city_2021_dem_1m"
     },
     {
-      "2193": "s3://nz-elevation/wellington/wellington-city_2019-2020/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/wellington-city_2019-2020_dem_1m/01HZ67KCCZYYV6T93H51WPTDMF/",
+      "2193": "s3://nz-elevation/wellington/porirua_2023/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/porirua_2023_dem_1m/01HZ67GXY4ZRC1F1F3GA5BHG8H/",
       "minZoom": 9,
-      "title": "Wellington City LiDAR 1m DEM (2019-2020)",
-      "name": "wellington-city_2019-2020_dem_1m"
+      "title": "Wellington - Porirua LiDAR 1m DEM (2023)",
+      "name": "porirua_2023_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/west-coast/west-coast_2020-2022/dem_1m/2193/",
