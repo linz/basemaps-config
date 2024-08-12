@@ -75,6 +75,13 @@
       "name": "timaru-rivers_2014_dem_1m"
     },
     {
+      "2193": "s3://nz-elevation/canterbury/rangiora_2014/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/rangiora_2014_dem_1m/01HZ65MQGJCXV05ZM42PWMQM9M/",
+      "minZoom": 9,
+      "title": "Canterbury - Rangiora LiDAR 1m DEM (2014)",
+      "name": "rangiora_2014_dem_1m"
+    },
+    {
       "2193": "s3://nz-elevation/canterbury/cheviot_2015/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/cheviot_2015_dem_1m/01HZ65A6ATT6VA7KTJAZHT2GKJ/",
       "minZoom": 9,
@@ -96,11 +103,25 @@
       "name": "hawarden_2015_dem_1m"
     },
     {
+      "2193": "s3://nz-elevation/canterbury/mackenzie_2015/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/mackenzie_2015_dem_1m/01HZ65MFCV4J3XN39ZDRH4Z22P/",
+      "minZoom": 9,
+      "title": "Canterbury - Mackenzie LiDAR 1m DEM (2015)",
+      "name": "mackenzie_2015_dem_1m"
+    },
+    {
       "2193": "s3://nz-elevation/canterbury/canterbury_2016-2017/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/canterbury_2016-2017_dem_1m/01HZ64YZT7YJN6K8BDMAMBN4RS/",
       "minZoom": 9,
       "title": "Canterbury LiDAR 1m DEM (2016-2017)",
       "name": "canterbury_2016-2017_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/kaikoura_2016-2017/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/kaikoura_2016-2017_dem_1m/01HZ65GD9PHB1WR0JSTFGSMVER/",
+      "minZoom": 9,
+      "title": "Canterbury - Kaikōura LiDAR 1m DEM (2016-2017)",
+      "name": "kaikoura_2016-2017_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/christchurch-and-ashley-river_2018-2019/dem_1m/2193/",
@@ -110,25 +131,18 @@
       "name": "christchurch-and-ashley-river_2018-2019_dem_1m"
     },
     {
-      "2193": "s3://nz-elevation/canterbury/banks-peninsula_2018-2019/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/banks-peninsula_2018-2019_dem_1m/01HZ64YZV1X1EW0K88ZPCQGGMH/",
-      "minZoom": 9,
-      "title": "Canterbury - Banks Peninsula LiDAR 1m DEM (2018-2019)",
-      "name": "banks-peninsula_2018-2019_dem_1m"
-    },
-    {
-      "2193": "s3://nz-elevation/canterbury/banks-peninsula_2023/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/banks-peninsula_2023_dem_1m/01HZ64YZW6ZYDFY5X9NE7SMHW5/",
-      "minZoom": 9,
-      "title": "Canterbury - Banks Peninsula LiDAR 1m DEM (2023)",
-      "name": "banks-peninsula_2023_dem_1m"
-    },
-    {
       "2193": "s3://nz-elevation/canterbury/canterbury_2018-2019/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/canterbury_2018-2019_dem_1m/01HZ65500HBTB4VS48JRK03SXD/",
       "minZoom": 9,
       "title": "Canterbury LiDAR 1m DEM (2018-2019)",
       "name": "canterbury_2018-2019_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/banks-peninsula_2018-2019/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/banks-peninsula_2018-2019_dem_1m/01HZ64YZV1X1EW0K88ZPCQGGMH/",
+      "minZoom": 9,
+      "title": "Canterbury - Banks Peninsula LiDAR 1m DEM (2018-2019)",
+      "name": "banks-peninsula_2018-2019_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/christchurch_2020-2021/dem_1m/2193/",
@@ -152,25 +166,11 @@
       "name": "kaikoura-and-waimakariri_2022_dem_1m"
     },
     {
-      "2193": "s3://nz-elevation/canterbury/kaikoura_2016-2017/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/kaikoura_2016-2017_dem_1m/01HZ65GD9PHB1WR0JSTFGSMVER/",
+      "2193": "s3://nz-elevation/canterbury/banks-peninsula_2023/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/banks-peninsula_2023_dem_1m/01HZ64YZW6ZYDFY5X9NE7SMHW5/",
       "minZoom": 9,
-      "title": "Canterbury - Kaikōura LiDAR 1m DEM (2016-2017)",
-      "name": "kaikoura_2016-2017_dem_1m"
-    },
-    {
-      "2193": "s3://nz-elevation/canterbury/mackenzie_2015/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/mackenzie_2015_dem_1m/01HZ65MFCV4J3XN39ZDRH4Z22P/",
-      "minZoom": 9,
-      "title": "Canterbury - Mackenzie LiDAR 1m DEM (2015)",
-      "name": "mackenzie_2015_dem_1m"
-    },
-    {
-      "2193": "s3://nz-elevation/canterbury/rangiora_2014/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/rangiora_2014_dem_1m/01HZ65MQGJCXV05ZM42PWMQM9M/",
-      "minZoom": 9,
-      "title": "Canterbury - Rangiora LiDAR 1m DEM (2014)",
-      "name": "rangiora_2014_dem_1m"
+      "title": "Canterbury - Banks Peninsula LiDAR 1m DEM (2023)",
+      "name": "banks-peninsula_2023_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/selwyn_2023/dem_1m/2193/",
