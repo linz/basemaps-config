@@ -26,6 +26,13 @@
       "name": "auckland-south_2016-2017_dem_1m"
     },
     {
+      "2193": "s3://nz-elevation/bay-of-plenty/tauranga-and-coast_2015/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/tauranga-and-coast_2015_dem_1m/01HZ64YZTTT88RFGS0HS5AHRZ1/",
+      "minZoom": 9,
+      "title": "Bay of Plenty - Tauranga and Coast LiDAR 1m DEM (2015)",
+      "name": "tauranga-and-coast_2015_dem_1m"
+    },
+    {
       "2193": "s3://nz-elevation/bay-of-plenty/bay-of-plenty_2018-2019/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/bay-of-plenty_2018-2019_dem_1m/01HZ64YZTH3EYABSDPQ2FJHBN8/",
       "minZoom": 9,
@@ -276,13 +283,6 @@
       "minZoom": 9,
       "title": "Nelson and Tasman - Top of the South Flood LiDAR 1m DEM (2022)",
       "name": "top-of-the-south-flood_2022_dem_1m"
-    },
-    {
-      "2193": "s3://nz-elevation/northland/whangarei-heads_2016/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/whangarei-heads_2016_dem_1m/01HZ66GG9SANTQQACPF9P25JJD/",
-      "minZoom": 9,
-      "title": "Northland - Whangarei Heads LiDAR 1m DEM (2016)",
-      "name": "whangarei-heads_2016_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/northland/northland_2018-2020/dem_1m/2193/",
