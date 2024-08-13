@@ -384,7 +384,7 @@
     },
     {
       "2193": "s3://nz-elevation/waikato/waikato_2021/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/waikato_2021_dem_1m/01HZ67GB12GXJDBF92Q4E2T9A2/",
+      "3857": "s3://linz-basemaps/elevation/3857/waikato_2021_dem_1m/01J546JDQCQ0H9735NHN4P903W/",
       "minZoom": 9,
       "title": "Waikato LiDAR 1m DEM (2021)",
       "name": "waikato_2021_dem_1m"
