@@ -1,6 +1,6 @@
 {
   "glyphs": "/v1/fonts/{fontstack}/{range}.pbf",
-  "id": "st_label",
+  "id": "st_labels",
   "layers": [
     {
       "filter": ["none", ["==", "parcel_intent", "Road"], ["==", "parcel_intent", "Hydro"]],
@@ -1382,7 +1382,7 @@
       "type": "symbol"
     }
   ],
-  "name": "label",
+  "name": "labels",
   "sky": {
     "atmosphere-blend": ["interpolate", ["linear"], ["zoom"], 0, 1, 10, 1, 12, 0],
     "fog-color": "#e8e8e8",
