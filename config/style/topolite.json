@@ -626,7 +626,7 @@
     {
       "id": "hillshade",
       "layout": { "visibility": "visible" },
-      "paint": { "hillshade-accent-color": "#dcdcdc", "hillshade-highlight-color": "#acacac", "hillshade-shadow-color": "#0c0c0c" },
+      "paint": { "hillshade-accent-color": "#f8f8f8", "hillshade-highlight-color": "#f0f0f0", "hillshade-shadow-color": "#858585" },
       "source": "LINZ-Elevation-Hillshade",
       "type": "hillshade"
     },
