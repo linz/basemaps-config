@@ -1277,7 +1277,7 @@
     "LINZ Basemaps": {
       "attribution": "© 2022 Toitū Te Whenua © OpenMapTiles - CC BY 4.0",
       "type": "vector",
-      "url": "/v1/tiles/topographic/EPSG:3857/tile.json"
+      "url": "/v1/tiles/topographic/{tileMatrix}/tile.json"
     }
   },
   "sprite": "/v1/sprites/topographic",
