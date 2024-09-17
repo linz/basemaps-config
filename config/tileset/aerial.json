@@ -147,6 +147,14 @@
       "title": "Northland 0.4m Rural Aerial Photos (2014-2016)",
       "category": "Rural Aerial Photos"
     },
+     {
+      "2193": "s3://linz-basemaps/2193/northland_2023-2024_0.3m/01J48H8F1QP0BHEQG271NK0K7S/",
+      "3857": "s3://linz-basemaps/3857/northland_2023-2024_0.3m/01J48H8FZE5WDBCDT0BK2F050V/",
+      "name": "northland-2023-2024-0.3m",
+      "minZoom": 13,
+      "title": "Northland 0.3m Rural Aerial Photos (2023-2024) - Draft",
+      "category": "Rural Aerial Photos"
+    },   
     {
       "2193": "s3://linz-basemaps/2193/canterbury_rural_2015-2016_0-30m_RGBA/01F66EBN9BYJA29NMW96ZJM7ZJ/",
       "3857": "s3://linz-basemaps/3857/canterbury_rural_2015-2016_0-30m_RGBA/01ED82104D376HEF1ZMW8PRX5N/",
