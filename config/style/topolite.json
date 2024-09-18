@@ -624,11 +624,24 @@
       "type": "line"
     },
     {
-      "id": "hillshade",
+      "id": "texture-relief-combined-test",
       "layout": { "visibility": "visible" },
-      "paint": { "hillshade-accent-color": "#f8f8f8", "hillshade-highlight-color": "#f0f0f0", "hillshade-shadow-color": "#858585" },
-      "source": "LINZ-Elevation-Hillshade",
-      "type": "hillshade"
+      "paint": {
+        "raster-brightness-min": 0,
+        "raster-contrast": 0,
+        "raster-opacity": {
+          "stops": [
+            [1, 0.35],
+            [7, 0.35],
+            [8, 0.65],
+            [15, 0.65],
+            [16, 0.3]
+          ]
+        },
+        "raster-resampling": "nearest"
+      },
+      "source": "LINZ-Texture-Relief",
+      "type": "raster"
     },
     {
       "filter": ["all", ["==", "class", "channel"], ["==", "channel_type", "water_race"]],
@@ -2406,18 +2419,9 @@
   ],
   "metadata": { "maputnik:renderer": "mbgljs" },
   "name": "topolite",
-  "sky": {
-    "atmosphere-blend": ["interpolate", ["linear"], ["zoom"], 0, 1, 10, 1, 12, 0],
-    "fog-color": "#e8e8e8",
-    "fog-ground-blend": 0.8,
-    "horizon-color": "#ecffff",
-    "horizon-fog-blend": 0.65,
-    "sky-color": "#77b5fe",
-    "sky-horizon-blend": 0.5
-  },
   "sources": {
-    "LINZ Basemaps": { "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0", "type": "vector", "url": "/v1/tiles/topographic/{tileMatrix}/tile.json" },
-    "LINZ-Elevation-Hillshade": { "maxzoom": 18, "minzoom": 0, "tileSize": 256, "tiles": ["/v1/tiles/elevation/{tileMatrix}/{z}/{x}/{y}.png?pipeline=terrain-rgb"], "type": "raster-dem" }
+    "LINZ Basemaps": { "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0", "type": "vector", "url": "/v1/tiles/topographic/EPSG:3857/tile.json" },
+    "LINZ-Texture-Relief": { "maxzoom": 20, "minzoom": 0, "tileSize": 256, "tiles": ["/v1/tiles/texturereliefshade/EPSG:3857/{z}/{x}/{y}.webp"], "type": "raster" }
   },
   "sprite": "/v1/sprites/topographic",
   "version": 8
