@@ -8,7 +8,8 @@ on:
       - master
 
 env: 
-  BASEMAPS_CONTAINER_VERSION: v7
+  BASEMAPS_CLI_CONTAINER_VERSION: v7
+  BASEMAPS_SERVER_CONTAINER_VERSION: latest
 
 jobs:
   build:
@@ -211,7 +212,7 @@ jobs:
 
       - name: (Smoke) Start Local Server
         run: |
-          ./scripts/bms.sh serve --config ${CONFIG_PATH} &
+          ./scripts/bms.sh --config ${CONFIG_PATH} &
 
           # Wait for the server to start
           timeout 30 bash -c 'while [[ "$(curl -s -o /dev/null -w ''%{http_code}'' ${BASEMAPS_HOST}/v1/version)" !=  "200" ]]; do sleep 0.5; done' || false
@@ -246,7 +247,7 @@ jobs:
 
       - name: (Screenshot) Screenshot Pull Request Changes
         run: |
-          ./scripts/bms.sh serve --config ${CONFIG_PATH} &
+          ./scripts/bms.sh --config ${CONFIG_PATH} &
 
           # Wait for the server to start
           timeout 30 bash -c 'while [[ "$(curl -s -o /dev/null -w ''%{http_code}'' http://localhost:5000/v1/version)" !=  "200" ]]; do sleep 0.5; done' || false
