@@ -1,7 +1,8 @@
 {
   "type": "raster",
   "id": "ts_hawkes-bay-2023-2024-0.125m",
-  "title": "Hawke's Bay 0.125m Rural Aerial Photos (2023-2024) - Draft",
+  "name": "hawkes-bay-2023-2024-0.125m",
+  "title": "Hawke's Bay 0.125m Rural Aerial Photos (2023-2024)",
   "background": {
     "r": 0,
     "g": 0,
@@ -11,10 +12,10 @@
   "category": "Rural Aerial Photos",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/hawkes-bay_2023-2024_0.125m/01J2FS0WKMQR2YA27R8VJKNZSY/",
-      "3857": "s3://linz-basemaps/3857/hawkes-bay_2023-2024_0.125m/01J2FS0WKT851XDFAPCF7BH57P/",
+      "2193": "s3://linz-basemaps/2193/hawkes-bay_2023-2024_0.125m/01J97EV3HTD4MH1SAT40JFG4KE/",
+      "3857": "s3://linz-basemaps/3857/hawkes-bay_2023-2024_0.125m/01J97EWHQ30X5CCNM0AQMT9HJH/",
       "name": "hawkes-bay-2023-2024-0.125m",
-      "title": "Hawke's Bay 0.125m Rural Aerial Photos (2023-2024) - Draft",
+      "title": "Hawke's Bay 0.125m Rural Aerial Photos (2023-2024)",
       "category": "Rural Aerial Photos",
       "minZoom": 0,
       "maxZoom": 32
