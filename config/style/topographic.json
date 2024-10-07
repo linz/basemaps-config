@@ -1012,24 +1012,16 @@
       "type": "line"
     },
     {
-      "id": "texture-relief-combined",
+      "id": "hillshade",
       "layout": { "visibility": "visible" },
       "paint": {
-        "raster-brightness-min": 0,
-        "raster-contrast": 0,
-        "raster-opacity": {
-          "stops": [
-            [1, 0.35],
-            [7, 0.35],
-            [8, 0.65],
-            [15, 0.65],
-            [16, 0.3]
-          ]
-        },
-        "raster-resampling": "nearest"
+        "hillshade-accent-color": "#ededed",
+        "hillshade-exaggeration": 0.35,
+        "hillshade-highlight-color": "#e6e6e6",
+        "hillshade-shadow-color": "#6d6d6d"
       },
-      "source": "LINZ-Texture-Relief",
-      "type": "raster"
+      "source": "LINZ-Elevation-Hillshade",
+      "type": "hillshade"
     },
     {
       "filter": ["all", ["==", "class", "cemetery"]],
@@ -5513,8 +5505,8 @@
     "sky-horizon-blend": 0.5
   },
   "sources": {
-    "LINZ Basemaps": { "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0", "type": "vector", "url": "/v1/tiles/topographic/EPSG:3857/tile.json" },
-    "LINZ-Texture-Relief": { "maxzoom": 20, "minzoom": 0, "tileSize": 256, "tiles": ["/v1/tiles/texturereliefshade/EPSG:3857/{z}/{x}/{y}.webp"], "type": "raster" }
+    "LINZ Basemaps": { "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0", "type": "vector", "url": "/v1/tiles/topographic/{tileMatrix}/tile.json" },
+    "LINZ-Elevation-Hillshade": { "maxzoom": 18, "minzoom": 0, "tileSize": 256, "tiles": ["/v1/tiles/elevation/{tileMatrix}/{z}/{x}/{y}.png?pipeline=terrain-rgb"], "type": "raster-dem" }
   },
   "sprite": "/v1/sprites/topographic",
   "version": 8
