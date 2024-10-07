@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_new-zealand-2022-2023-10m",
+  "title": "New Zealand 10m Satellite Imagery (2022-2023)",
+  "background": "#00000000",
+  "category": "Satellite Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/new-zealand_2022-2023_10m/01HQ6WJK0DS3V92DNDZNQ9YG6A/",
+      "3857": "s3://linz-basemaps/3857/new-zealand_2022-2023_10m/01HQ6WJK0DWWGRCZQHGGNQDYZM/",
+      "name": "new-zealand-2022-2023-10m",
+      "title": "New Zealand 10m Satellite Imagery (2022-2023)",
+      "category": "Satellite Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
