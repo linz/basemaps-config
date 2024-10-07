@@ -2420,8 +2420,14 @@
   "metadata": { "maputnik:renderer": "mbgljs" },
   "name": "topolite",
   "sources": {
-    "LINZ Basemaps": { "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0", "type": "vector", "url": "/v1/tiles/topographic/EPSG:3857/tile.json" },
-    "LINZ-Texture-Relief": { "maxzoom": 20, "minzoom": 0, "tileSize": 256, "tiles": ["/v1/tiles/texturereliefshade/EPSG:3857/{z}/{x}/{y}.webp"], "type": "raster" }
+    "LINZ Basemaps": { "attribution": "© 2024 Toitū Te Whenua - CC BY 4.0", "type": "vector", "url": "/v1/tiles/topographic/{tileMatrix}/tile.json" },
+    "LINZ-Terrain": {
+      "maxzoom": 18,
+      "tileSize": 256,
+      "tiles": ["/v1/tiles/elevation/{tileMatrix}/{z}/{x}/{y}.png?pipeline=terrain-rgb"],
+      "type": "raster-dem"
+    },
+    "LINZ-Texture-Relief": { "maxzoom": 20, "minzoom": 0, "tileSize": 256, "tiles": ["/v1/tiles/texturereliefshade/{tileMatrix}/{z}/{x}/{y}.webp"], "type": "raster" }
   },
   "sprite": "/v1/sprites/topographic",
   "version": 8
