@@ -348,8 +348,8 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/marlborough_2023_0.25m/01H6WRJWDK9VNKK6HE2PZ63AKG/",
-      "3857": "s3://linz-basemaps/3857/marlborough_2023_0.25m/01H6WRKSPQD92366HB8WT35BQK/",
+      "2193": "s3://linz-basemaps/2193/marlborough_2023_0.25m/01J9JDPASA4GCZ6Y6RJMMRD1XH/",
+      "3857": "s3://linz-basemaps/3857/marlborough_2023_0.25m/01J9JDPASBK3P9NSRB6HQN31DQ/",
       "name": "marlborough-2023-0.25m",
       "minZoom": 13,
       "title": "Marlborough 0.25m Rural Aerial Photos (2023) - Draft",
