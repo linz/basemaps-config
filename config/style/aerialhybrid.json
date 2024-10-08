@@ -1488,7 +1488,7 @@
         },
         "text-anchor": "left",
         "text-field": "{name}",
-        "text-font": ["Roboto Condensed Italic"],
+        "text-font": ["Roboto Light Italic"],
         "text-justify": "left",
         "text-max-width": 4,
         "text-offset": [0.5, 0],
