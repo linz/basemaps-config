@@ -451,6 +451,13 @@
       "minZoom": 9,
       "title": "Canterbury LiDAR 1m DEM (2020-2023)",
       "name": "canterbury_2020-2023_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/southland/southland_2020-2023/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/southland_2020-2023_dem_1m/01J9Q42DGRE9P73Y8ZRVJX2J4J/",
+      "minZoom": 9,
+      "title": "Southland LiDAR 1m DEM (2020-2023)",
+      "name": "southland_2020-2023_dem_1m"
     }
   ],
   "outputs": [
