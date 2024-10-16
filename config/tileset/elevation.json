@@ -458,6 +458,13 @@
       "minZoom": 9,
       "title": "Waikato LiDAR 1m DEM (2024)",
       "name": "waikato_2024_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/bay-of-plenty/bay-of-plenty_2024/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/bay-of-plenty_2024_dem_1m/01JA9CJB2TTJ1YGMAFY5DS2D86/",
+      "minZoom": 9,
+      "title": "Bay of Plenty LiDAR 1m DEM (2024)",
+      "name": "bay-of-plenty_2024_dem_1m"
     }
   ],
   "outputs": [
