@@ -1,0 +1,16 @@
+[
+  {
+    "name": "health-aerial-terrain-3857-z5",
+    "tileMatrix": "WebMercatorQuad",
+    "location": { "lat": -41.8899962, "lng": 174.0492437, "z": 12, "p": 58 },
+    "tileSet": "aerial",
+    "style": "health_aerial_terrain"
+  },
+  {
+    "name": "health-aerial-hillshade-3857-z5",
+    "tileMatrix": "WebMercatorQuad",
+    "location": { "lat": -43.1785324, "lng": 171.3611922, "z": 7 },
+    "tileSet": "aerial",
+    "style": "health_aerial_hillshade"
+  }
+]
