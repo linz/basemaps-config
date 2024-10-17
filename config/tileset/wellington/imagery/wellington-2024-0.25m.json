@@ -7,8 +7,8 @@
   "category": "Rural Aerial Photos",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/wellington_2024_0.25m/01J0HQQ3XMX6TD0DP7NDRE18RA/",
-      "3857": "s3://linz-basemaps/3857/wellington_2024_0.25m/01J0HQQ3XT8MF6XH73GR8P6P7P/",
+      "2193": "s3://linz-basemaps/2193/wellington_2024_0.25m/01JABQWBRYWMM9211F787RS63X/",
+      "3857": "s3://linz-basemaps/3857/wellington_2024_0.25m/01JABQWBS2KPMXZBF3GK5RDHCM/",
       "name": "wellington-2024-0.25m",
       "title": "Wellington 0.25m Rural Aerial Photos (2024) - Draft",
       "category": "Rural Aerial Photos",
