@@ -465,6 +465,12 @@
       "minZoom": 9,
       "title": "Bay of Plenty LiDAR 1m DEM (2024)",
       "name": "bay-of-plenty_2024_dem_1m"
+    },
+    {
+      "3857": "s3://linz-basemaps/elevation/3857/canterbury_2020-2023_dsm_1m/01J868RHDSBV20KQWWW1PSW1SE/",
+      "name": "canterbury-2020-2023-dsm-1m",
+      "title": "Canterbury LiDAR 1m DSM (2020-2023) - Draft",
+      "category": "Elevation"
     }
   ],
   "outputs": [
