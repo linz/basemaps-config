@@ -465,6 +465,12 @@
       "minZoom": 9,
       "title": "Bay of Plenty LiDAR 1m DEM (2024)",
       "name": "bay-of-plenty_2024_dem_1m"
+    },
+    {
+      "3857": "s3://linz-basemaps/elevation/3857/hawkes-bay_2023-2024_dem_1m/01JAP9E7ZR748NA30KG1B7WN21/",
+      "name": "hawkes-bay-2023-2024-dem-1m",
+      "title": "Hawke's Bay LiDAR 1m DEM (2023-2024) - Draft",
+      "category": "Elevation"
     }
   ],
   "outputs": [
