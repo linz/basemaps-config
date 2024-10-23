@@ -1,0 +1,19 @@
+    {
+      "type": "raster",
+      "id": "ts_marlborough-2017-2018-0.3m",
+      "title": "Marlborough 0.3m Rural Aerial Photos (2017-2018)",
+      "background": "#00000000",
+      "category": "Rural Aerial Photos",
+      "layers": [
+        {
+          "2193": "s3://linz-basemaps/2193/marlborough_rural_2017-18_0-3m/01F6P1E05SRRSMA94E11F1EAFJ/",
+          "3857": "s3://linz-basemaps/3857/marlborough_rural_2017-18_0-3m/01EDAMZ587FYSZ9NY8TP40VASS/",
+          "name": "marlborough-2017-2018-0.3m",
+          "title": "Marlborough 0.3m Rural Aerial Photos (2017-2018)",
+          "category": "Rural Aerial Photos",
+          "minZoom": 0,
+          "maxZoom": 32
+        }
+      ]
+    }
+    
