@@ -212,14 +212,6 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/marlborough_rural_2017-18_0-3m/01F6P1E05SRRSMA94E11F1EAFJ/",
-      "3857": "s3://linz-basemaps/3857/marlborough_rural_2017-18_0-3m/01EDAMZ587FYSZ9NY8TP40VASS/",
-      "name": "marlborough-rural-2017-2018-0.3m",
-      "minZoom": 13,
-      "title": "Marlborough 0.3m Rural Aerial Photos (2017-2018)",
-      "category": "Rural Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/otago_rural_2017-2019_0-30m_RGB/01F6P1N3TA18Y2GYJ5B4YGGZYC/",
       "3857": "s3://linz-basemaps/3857/otago_rural_2017-2019_0-30m_RGB/01ED831MKK85M1QNCNZV0AYPYC/",
       "name": "otago-rural-2017-2019-0.3m",
