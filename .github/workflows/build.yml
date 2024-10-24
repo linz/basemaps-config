@@ -172,6 +172,7 @@ jobs:
 
           echo ${ASSETS_LOCATION_PROD}
 
+          aws s3 cp assets-current.tar.co s3://linz-basemaps/assets/assets-latest.tar.co
           aws s3 cp assets-current.tar.co ${ASSETS_LOCATION_PROD}
 
           ./scripts/bmc.sh ./index.cjs bundle --config $PWD/config-current.json.gz --output $PWD/config-prod.json --assets ${ASSETS_LOCATION_PROD} --cache s3://linz-basemaps-staging/basemaps-config/cache/
