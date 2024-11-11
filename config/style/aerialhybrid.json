@@ -904,15 +904,7 @@
     {
       "filter": ["all", ["==", "class", "helipad"]],
       "id": "Aeroway-Helipads",
-      "layout": {
-        "icon-image": {
-          "stops": [
-            [10, "heliport_11"],
-            [15, "heliport_15"]
-          ]
-        },
-        "text-font": ["Open Sans Regular"]
-      },
+      "layout": { "icon-image": "helipad_pnt_fill", "icon-size": 1.25, "text-font": ["Open Sans Regular"] },
       "maxzoom": 21,
       "minzoom": 12,
       "source": "LINZ Basemaps",
