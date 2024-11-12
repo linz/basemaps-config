@@ -908,11 +908,11 @@
     {
       "id": "Housenumber",
       "layout": {
+        "symbol-placement": "point",
         "text-allow-overlap": false,
         "text-anchor": "bottom",
         "text-field": "{housenumber}",
         "text-font": ["Roboto Bold Italic"],
-        "symbol-placement": "point",
         "text-size": {
           "stops": [
             [17, 10],
