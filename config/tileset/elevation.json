@@ -458,6 +458,12 @@
       "minZoom": 9,
       "title": "Canterbury LiDAR 1m DEM (2020-2023)",
       "name": "canterbury_2020-2023_dem_1m"
+    },
+    {
+      "3857": "s3://linz-basemaps/elevation/3857/hawkes-bay_2023_dem_1m/01JCKNF77DW0ED89BZNR64A76Q/",
+      "name": "hawkes-bay-2023-dem-1m",
+      "title": "Hawke's Bay LiDAR 1m DEM (2023-2024)",
+      "category": "Elevation"
     }
   ],
   "outputs": [
