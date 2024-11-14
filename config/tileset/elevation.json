@@ -450,7 +450,7 @@
       "3857": "s3://linz-basemaps/elevation/3857/hawkes-bay_2023_dem_1m/01JCKNF77DW0ED89BZNR64A76Q/",
       "minZoom": 9,
       "title": "Hawke's Bay LiDAR 1m DEM (2023-2024)",
-      "name": "hawkes-bay-2023-dem-1m"
+      "name": "hawkes-bay_2023_dem_1m"
     }
   ],
   "outputs": [
