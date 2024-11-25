@@ -457,7 +457,6 @@
       "3857": "s3://linz-basemaps/elevation/3857/manawatu-whanganui_2024_dem_1m/01JDGQZZC30WC5ZBA383G9J0PV/",
       "name": "manawatu-whanganui_2024_dem_1m",
       "title": "Manawatū-Whanganui LiDAR 1m DEM (2024) - Draft",
-      "category": "Elevation",
       "minZoom": 9
     }
   ],
