@@ -451,6 +451,12 @@
       "minZoom": 9,
       "title": "Hawke's Bay LiDAR 1m DEM (2023-2024)",
       "name": "hawkes-bay_2023_dem_1m"
+    },
+    {
+      "3857": "s3://linz-basemaps/elevation/3857/manawatu-whanganui_2024_dem_1m/01JDGN9YP0GZC4FJBF2MNJ7PA3/",
+      "name": "manawatu-whanganui-2024-dem-1m",
+      "title": "Manawatū-Whanganui LiDAR 1m DEM (2024) - Draft",
+      "category": "Elevation"
     }
   ],
   "outputs": [
