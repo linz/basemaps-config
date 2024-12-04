@@ -2,7 +2,7 @@
   "type": "raster",
   "id": "ts_topo-raster",
   "title": "Topographic Raster Basemaps",
-  "background": "dce9edff",
+  "background": "d0e7f5",
   "layers": [
     {
       "2193": "s3://linz-basemaps-staging/2193/topo250-latest/01JE7NBEHVFK5Y8QTNEBN03Q28/",
