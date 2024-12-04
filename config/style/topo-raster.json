@@ -1,0 +1,53 @@
+{
+  "id": "st_topographic_raster",
+  "layers": [
+    {
+      "id": "Aerial-Imagery",
+      "layout": { "visibility": "visible" },
+      "source": "LINZ-Imagery",
+      "type": "raster"
+    },
+    {
+      "filter": ["all", ["==", "class", "dock"]],
+      "id": "Background",
+      "layout": { "visibility": "visible" },
+      "minzoom": 0,
+      "paint": { "background-color": "rgb(208, 231, 244)" },
+      "type": "background"
+    },
+    {
+      "id": "hillshade",
+      "layout": { "visibility": "visible" },
+      "paint": {
+        "hillshade-accent-color": "#ededed",
+        "hillshade-exaggeration": 0.35,
+        "hillshade-highlight-color": "#e6e6e6",
+        "hillshade-shadow-color": "#6d6d6d"
+      },
+      "source": "LINZ-Elevation-Hillshade",
+      "type": "hillshade"
+    }
+  ],
+  "metadata": { "maputnik:renderer": "mbgljs" },
+  "name": "st_topographic_raster",
+  "sky": {
+    "atmosphere-blend": ["interpolate", ["linear"], ["zoom"], 0, 1, 10, 1, 12, 0],
+    "fog-color": "#e8e8e8",
+    "fog-ground-blend": 0.8,
+    "horizon-color": "#ecffff",
+    "horizon-fog-blend": 0.65,
+    "sky-color": "#77b5fe",
+    "sky-horizon-blend": 0.5
+  },
+  "sources": {
+    "LINZ-Elevation-Hillshade": { "maxzoom": 18, "minzoom": 0, "tileSize": 256, "tiles": ["/v1/tiles/elevation/{tileMatrix}/{z}/{x}/{y}.png?pipeline=terrain-rgb"], "type": "raster-dem" },
+    "LINZ-Imagery": {
+      "maxzoom": 28,
+      "minzoom": 0,
+      "tileSize": 256,
+      "tiles": ["/v1/tiles/topo-raster/EPSG:3857/{z}/{x}/{y}.webp"],
+      "type": "raster"
+    }
+  },
+  "version": 8
+}
