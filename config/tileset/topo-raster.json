@@ -5,18 +5,18 @@
   "background": "d0e7f5",
   "layers": [
     {
-      "2193": "s3://linz-basemaps-staging/2193/topo250-latest/01JE7NBEHVFK5Y8QTNEBN03Q28/",
-      "3857": "s3://linz-basemaps-staging/3857/topo250-latest/01JE7NBEJHND65K0WWWB9PWXQZ/",
+      "2193": "s3://linz-basemaps/2193/topo250-latest/01JE7S4DYP9ZVDC5JFF94HAVSG/",
+      "3857": "s3://linz-basemaps/3857/topo250-latest/01JE7S4DYNNP4ZQ7Z8H4XV39W0/",
       "name": "topo_raster_250k",
       "title": "New Zealand 10m Satellite Imagery (2019-2020)",
-      "maxZoom": 9.5
+      "maxZoom": 10.6
     },
     {
-      "2193": "s3://linz-basemaps-staging/2193/topo50-latest/01JE7PGRG2411P5MHWMVC47SJP/",
-      "3857": "s3://linz-basemaps-staging/3857/topo50-latest/01JE7PGRG2AHNAN80CVCBK5JS1/",
+      "2193": "s3://linz-basemaps-staging/2193/topo50-latest/01JE7S4DYHEKFJAQADNZ50SKB5/",
+      "3857": "s3://linz-basemaps-staging/3857/topo50-latest/01JE7S4DYNMPCBW1Y80172EXNX/",
       "name": "topo_raster_50k",
       "title": "Topographic Raster Basemaps 50k",
-      "minZoom": 9.5
+      "minZoom": 10.6
     }
   ]
 }
