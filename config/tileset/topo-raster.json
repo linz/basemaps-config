@@ -10,7 +10,7 @@
       "3857": "s3://linz-basemaps-staging/3857/topo250-latest/01JECCWKBPCA2WSY7FHKA5JDFM/",
       "name": "topo_raster_250k",
       "title": "New Zealand 10m Satellite Imagery (2019-2020)",
-      "maxZoom": 12
+      "maxZoom": 11
     },
     {
       "2193": "s3://linz-basemaps-staging/2193/topo50-latest/01JE7S4DYHEKFJAQADNZ50SKB5/",

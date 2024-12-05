@@ -1,5 +1,5 @@
 {
-  "id": "st_topographic_raster",
+  "id": "st_topo-raster",
   "layers": [
     {
       "filter": ["all", ["==", "class", "dock"]],
