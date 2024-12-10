@@ -108,14 +108,6 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/canterbury_rural_2012-2013_0-40m_RGBA/01F66E9294YKPYAJP7SXTVY2EM/",
-      "3857": "s3://linz-basemaps/3857/canterbury_rural_2012-2013_0-40m_RGBA/01ED81XK539QM497AYHM1X70JQ/",
-      "name": "canterbury-rural-2012-2013-0.4m",
-      "minZoom": 13,
-      "title": "Canterbury 0.4m Rural Aerial Photos (2012-2013)",
-      "category": "Rural Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/canterbury_rural_2013-2014_0-40m_RGBA/01F66E9VVX07WFC1C5Y05S4JXM/",
       "3857": "s3://linz-basemaps/3857/canterbury_rural_2013-2014_0-40m_RGBA/01ED81YFYF0D76RZRH9FHF7JDN/",
       "name": "canterbury-rural-2013-2014-0.4m",
@@ -500,14 +492,6 @@
       "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/selwyn_2022-2023_0.075m/01HFART1HWA37AQDR2X88AS7AZ/",
-      "3857": "s3://linz-basemaps/3857/selwyn_2022-2023_0.075m/01HFART8HS45C7T38K6G5K3XF1/",
-      "name": "selwyn-2022-2023-0.075m",
-      "title": "Selwyn 0.075m Urban Aerial Photos (2022-2023)",
-      "category": "Urban Aerial Photos",
-      "minZoom": 14
-    },
-    {
       "2193": "s3://linz-basemaps/2193/manawatu_2022-2023_0.1m/01H4Q66MQ16RH0A8VMSTEDG6W4/",
       "3857": "s3://linz-basemaps/3857/manawatu_2022-2023_0.1m/01H4Q67HMMFNPJ9GEA6XYS1XDG/",
       "name": "manawatu-2022-2023-0.1m",
@@ -857,14 +841,6 @@
       "3857": "s3://linz-basemaps/3857/hurunui_2023_0.075m/01HFAS0PCJPDPBXD5MQFCG13KX/",
       "name": "hurunui-2023-0.075m",
       "title": "Hurunui 0.075m Urban Aerial Photos (2023)",
-      "category": "Urban Aerial Photos",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/timaru_2022-2023_0.1m/01HFASBR6S6H0PKSGJYDF5EN3Z/",
-      "3857": "s3://linz-basemaps/3857/timaru_2022-2023_0.1m/01HFART8EK8PX5B5HYFRXR0G92/",
-      "name": "timaru-2022-2023-0.1m",
-      "title": "Timaru 0.075m Urban Aerial Photos (2022-2023)",
       "category": "Urban Aerial Photos",
       "minZoom": 14
     },
