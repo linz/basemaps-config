@@ -6,17 +6,32 @@
   "resizeKernel": { "in": "lanczos3", "out": "mitchell" },
   "layers": [
     {
-      "2193": "s3://linz-basemaps-staging/2193/topo250-latest/01JECCWKBQKHE6ESSRNWZYB7KD/",
-      "3857": "s3://linz-basemaps-staging/3857/topo250-latest/01JECCWKBPCA2WSY7FHKA5JDFM/",
-      "name": "topo_raster_250k",
-      "title": "New Zealand 10m Satellite Imagery (2019-2020)",
+      "2193": "s3://linz-basemaps-staging/2193/gridless_600dpi/01JESKHDH2MD5VB2N2PHKTAM06/",
+      "3857": "s3://linz-basemaps-staging/3857/gridless_600dpi/01JESKHDJA10S2DDM1WE6MMRJ3/",
+      "name": "topo_raster_250k_nz",
+      "title": "Topographic Raster Basemaps 250k New Zealand",
       "maxZoom": 11
     },
     {
-      "2193": "s3://linz-basemaps-staging/2193/topo50-latest/01JE7S4DYHEKFJAQADNZ50SKB5/",
-      "3857": "s3://linz-basemaps-staging/3857/topo50-latest/01JE7S4DYNMPCBW1Y80172EXNX/",
-      "name": "topo_raster_50k",
-      "title": "Topographic Raster Basemaps 50k",
+      "2193": "s3://linz-basemaps-staging/2193/3793/01JESKHDHN65NMWM3A3GFV8QA5/",
+      "3857": "s3://linz-basemaps-staging/3857/3793/01JESKHDHVW31CGZFB6P65EK2N/",
+      "name": "topo_raster_250k_chatham_islands",
+      "title": "Topographic Raster Basemaps 250k Chatham Islands",
+      "maxZoom": 11
+    },
+    {
+      "2193": "s3://linz-basemaps-staging/2193/gridless_600dpi/01JESJ42NZ1XZ11HC9T4ECTXTC/",
+      "3857": "s3://linz-basemaps-staging/3857/gridless_600dpi/01JESJ42P6BB22G1AQJE415868/",
+      "name": "topo_raster_50k_nz",
+      "title": "Topographic Raster Basemaps 50k New Zealand",
+      "minZoom": 12
+    }
+    ,
+    {
+      "2193": "s3://linz-basemaps-staging/2193/3793/01JESJ3R14PEMZJBYXN83GQE1X/",
+      "3857": "s3://linz-basemaps-staging/3857/3793/01JESJ3R16C131WHNANQ6V3Z2E/",
+      "name": "topo_raster_50k_chatham_islands",
+      "title": "Topographic Raster Basemaps 50k Chatham Islands",
       "minZoom": 12
     }
   ]
