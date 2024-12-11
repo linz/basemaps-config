@@ -45,7 +45,7 @@
       "maxzoom": 28,
       "minzoom": 0,
       "tileSize": 256,
-      "tiles": ["/v1/tiles/topo-raster/EPSG:3857/{z}/{x}/{y}.webp"],
+      "tiles": ["/v1/tiles/topo-raster/{tileMatrix}/{z}/{x}/{y}.webp"],
       "type": "raster"
     }
   },
