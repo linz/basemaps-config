@@ -7,6 +7,7 @@
   "category": "Elevation",
   "layers": [
     {
+      "2193": "s3://nz-elevation/new-zealand/new-zealand-contour/dem_8m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/new-zealand_2012_dem_8m/01HZ0YNQPGH5RJ01S5R5T2VAPM/",
       "title": "New Zealand 8m DEM (2012)",
       "name": "new-zealand_2012_dem_8m"
