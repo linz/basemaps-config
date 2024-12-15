@@ -2,7 +2,7 @@
   "type": "raster",
   "id": "ts_topo-raster",
   "title": "NZ Topo Gridless Maps",
-  "background": "d0e7f4",
+  "background": { "r": 208, "g": 231, "b": 244, "alpha": 255 },
   "resizeKernel": { "in": "lanczos3", "out": "mitchell" },
   "category": "Basemaps",
   "layers": [
