@@ -1,37 +1,42 @@
 {
   "type": "raster",
   "id": "ts_topo-raster",
-  "title": "Topographic Raster Basemaps",
+  "title": "NZ Topo Gridless Maps",
   "background": "d0e7f4",
   "resizeKernel": { "in": "lanczos3", "out": "mitchell" },
+  "category": "Basemaps",
   "layers": [
     {
-      "2193": "s3://linz-basemaps-staging/2193/gridless_600dpi/01JESKHDH2MD5VB2N2PHKTAM06/",
-      "3857": "s3://linz-basemaps-staging/3857/gridless_600dpi/01JESKHDJA10S2DDM1WE6MMRJ3/",
-      "name": "topo_raster_250k_nz",
-      "title": "Topographic Raster Basemaps 250k New Zealand",
-      "maxZoom": 11
+      "2193": "s3://linz-basemaps/3857/topo250-new-zealand-mainland/01JF62JA1VSR50XQC9P4X78X9W/",
+      "3857": "s3://linz-basemaps/2193/topo250-new-zealand-mainland/01JF62JAEWE6G5HG61T7W21FC9/",
+      "name": "topo250-new-zealand-mainland",
+      "title": "NZ Mainland Topo250 Gridless Maps",
+      "maxZoom": 11,
+      "category": "Topographic"
     },
     {
-      "2193": "s3://linz-basemaps-staging/2193/3793/01JESKHDHN65NMWM3A3GFV8QA5/",
-      "3857": "s3://linz-basemaps-staging/3857/3793/01JESKHDHVW31CGZFB6P65EK2N/",
-      "name": "topo_raster_250k_chatham_islands",
-      "title": "Topographic Raster Basemaps 250k Chatham Islands",
-      "maxZoom": 11
+      "2193": "s3://linz-basemaps/2193/topo250-chatham-island/01JF629F2CMVM0XR728VEH54ZG/",
+      "3857": "s3://linz-basemaps/3857/topo250-chatham-island/01JF629F2C5MDX093XXWD2NW71/",
+      "name": "topo250-chatham-island",
+      "title": "Chatham Island Topo250 Gridless Maps",
+      "maxZoom": 11,
+      "category": "Topographic"
     },
     {
-      "2193": "s3://linz-basemaps-staging/2193/gridless_600dpi/01JESJ42NZ1XZ11HC9T4ECTXTC/",
-      "3857": "s3://linz-basemaps-staging/3857/gridless_600dpi/01JESJ42P6BB22G1AQJE415868/",
-      "name": "topo_raster_50k_nz",
-      "title": "Topographic Raster Basemaps 50k New Zealand",
-      "minZoom": 12
+      "2193": "s3://linz-basemaps/2193/topo50-new-zealand-mainland/01JF62DGS6157A44S0P4DCHWS1/",
+      "3857": "s3://linz-basemaps/3857/topo50-new-zealand-mainland/01JF62DGS5H679Q8JPWFXYXKHV/",
+      "name": "topo50-new-zealand-mainland",
+      "title": "NZ Mainland Topo50 Gridless Maps",
+      "minZoom": 12,
+      "category": "Topographic"
     },
     {
-      "2193": "s3://linz-basemaps-staging/2193/3793/01JESJ3R14PEMZJBYXN83GQE1X/",
-      "3857": "s3://linz-basemaps-staging/3857/3793/01JESJ3R16C131WHNANQ6V3Z2E/",
-      "name": "topo_raster_50k_chatham_islands",
-      "title": "Topographic Raster Basemaps 50k Chatham Islands",
-      "minZoom": 12
+      "2193": "s3://linz-basemaps/2193/topo50-chatham-island/01JF62G92ZYDXDYZRHPHSDD6TC/",
+      "3857": "s3://linz-basemaps/3857/topo50-chatham-island/01JF62G939Z6W58QBNXCSM9MD0/",
+      "name": "topo50-chatham-island",
+      "title": "Chatham Island Topo50 Gridless Maps",
+      "minZoom": 12,
+      "category": "Topographic"
     }
   ]
 }
