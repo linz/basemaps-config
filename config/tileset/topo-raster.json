@@ -7,8 +7,8 @@
   "category": "Basemaps",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/3857/topo250-new-zealand-mainland/01JF62JA1VSR50XQC9P4X78X9W/",
-      "3857": "s3://linz-basemaps/2193/topo250-new-zealand-mainland/01JF62JAEWE6G5HG61T7W21FC9/",
+      "2193": "s3://linz-basemaps/2193/topo250-new-zealand-mainland/01JF62JAEWE6G5HG61T7W21FC9/",
+      "3857": "s3://linz-basemaps/3857/topo250-new-zealand-mainland/01JF62JA1VSR50XQC9P4X78X9W/",
       "name": "topo250-new-zealand-mainland",
       "title": "NZ Mainland Topo250 Gridless Maps",
       "maxZoom": 11,
