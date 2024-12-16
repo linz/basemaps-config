@@ -10,13 +10,13 @@
       "type": "background"
     },
     {
-      "id": "TOPO-RASTER",
+      "id": "Topo-Raster",
       "layout": { "visibility": "visible" },
       "source": "LINZ-TOPO-RASTER",
       "type": "raster"
     },
     {
-      "id": "hillshade",
+      "id": "Hillshade",
       "layout": { "visibility": "visible" },
       "paint": {
         "hillshade-accent-color": ["interpolate", ["linear"], ["zoom"], 0, "#64646400", 3, "#64646466", 10, "#64646455", 11, "#64646444"],
