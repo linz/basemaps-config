@@ -4,7 +4,6 @@
   "title": "NZ Topo Gridless Maps",
   "category": "Basemaps",
   "background": { "r": 208, "g": 231, "b": 244, "alpha": 255 },
-  "resizeKernel": { "in": "lanczos3", "out": "mitchell" },
   "layers": [
     {
       "2193": "s3://linz-basemaps/2193/topo250-new-zealand-mainland/01JF69Q9CYWT56GZTP4JJH05VT/",
