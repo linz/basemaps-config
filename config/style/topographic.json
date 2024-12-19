@@ -1015,10 +1015,12 @@
       "id": "hillshade",
       "layout": { "visibility": "visible" },
       "paint": {
-        "hillshade-accent-color": "#ededed",
-        "hillshade-exaggeration": 0.35,
-        "hillshade-highlight-color": "#e6e6e6",
-        "hillshade-shadow-color": "#6d6d6d"
+        "hillshade-accent-color": ["interpolate", ["linear"], ["zoom"], 0, "#64646466", 3, "#64646466", 9, "#64646455", 11, "#64646444", 14, "#64646466", 17, "#64646499"],
+        "hillshade-exaggeration": 0.4,
+        "hillshade-highlight-color": ["interpolate", ["linear"], ["zoom"], 0, "#e1e5e0cc", 3, "#e1e5e0cc", 9, "#e1e5e055", 11, "#e1e5e011", 14, "#e1e5e011", 17, "#e1e5e044"],
+        "hillshade-illumination-anchor": "map",
+        "hillshade-illumination-direction": 315,
+        "hillshade-shadow-color": ["interpolate", ["linear"], ["zoom"], 0, "#0c0c0cff", 3, "#0c0c0ccc", 9, "#0c0c0caa", 11, "#0c0c0c88", 14, "#0c0c0c66", 17, "#0c0c0c99"]
       },
       "source": "LINZ-Elevation-Hillshade",
       "type": "hillshade"
