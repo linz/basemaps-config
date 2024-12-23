@@ -2,14 +2,6 @@
   "id": "st_topo-raster",
   "layers": [
     {
-      "filter": ["all", ["==", "class", "dock"]],
-      "id": "Background",
-      "layout": { "visibility": "visible" },
-      "minzoom": 0,
-      "paint": { "background-color": "rgb(208, 231, 244)" },
-      "type": "background"
-    },
-    {
       "id": "Topo-Raster",
       "layout": { "visibility": "visible" },
       "source": "LINZ-TOPO-RASTER",
@@ -31,7 +23,7 @@
     }
   ],
   "metadata": { "maputnik:renderer": "mbgljs" },
-  "name": "st_topographic_raster",
+  "name": "st_topo-raster",
   "sky": {
     "atmosphere-blend": ["interpolate", ["linear"], ["zoom"], 0, 1, 10, 1, 12, 0],
     "fog-color": "#e8e8e8",
@@ -47,7 +39,7 @@
       "attribution": "© 2024 Toitū Te Whenua - CC BY 4.0",
       "maxzoom": 28,
       "minzoom": 0,
-      "tileSize": 256,
+      "tileSize": 192,
       "tiles": ["/v1/tiles/topo-raster/{tileMatrix}/{z}/{x}/{y}.webp"],
       "type": "raster"
     }
