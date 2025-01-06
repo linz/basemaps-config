@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_taranaki-2011-2012-0.4m",
+  "name": "taranaki-2011-2012-0.4m",
+  "title": "Taranaki 0.4m Rural Aerial Photos (2011-2012)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/taranaki_2011-2012_0.4m/01JGWMH2Q7F1M1ME5RDRB52H3D/",
+      "3857": "s3://linz-basemaps/3857/taranaki_2011-2012_0.4m/01JGWMH2Q43C4SP449T0GXX93G/",
+      "name": "taranaki-2011-2012-0.4m",
+      "title": "Taranaki 0.4m Rural Aerial Photos (2011-2012)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
