@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_hawkes-bay-coast-2024-0.1m",
+  "name": "hawkes-bay-coast-2024-0.1m",
+  "title": "Hawke's Bay Coast 0.1m Rural Aerial Photos (2024)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/hawkes-bay-coast_2024_0.1m/01JGWMKRE6595AW3JB0MDJHZB9/",
+      "3857": "s3://linz-basemaps/3857/hawkes-bay-coast_2024_0.1m/01JGWMMEXD34XN5X8X7XTA62X2/",
+      "name": "hawkes-bay-coast-2024-0.1m",
+      "title": "Hawke's Bay Coast 0.1m Rural Aerial Photos (2024)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
