@@ -10,7 +10,7 @@
       "3857": "s3://linz-basemaps/3857/topo250-new-zealand-mainland/01JF69Q9HAP47K9ZQ16540067M/",
       "name": "topo250-new-zealand-mainland",
       "title": "Topo250 NZ Mainland Gridless Maps",
-      "maxZoom": 11,
+      "maxZoom": 12,
       "category": "Topographic"
     },
     {
@@ -18,7 +18,7 @@
       "3857": "s3://linz-basemaps/3857/topo250-chatham-island/01JF69P0M5C3E7TDKY7GVF3VMZ/",
       "name": "topo250-chatham-island",
       "title": "Topo250 Chatham Islands Gridless Maps",
-      "maxZoom": 11,
+      "maxZoom": 12,
       "category": "Topographic"
     },
     {
@@ -26,7 +26,7 @@
       "3857": "s3://linz-basemaps/3857/topo50-new-zealand-mainland/01JF62DGS5H679Q8JPWFXYXKHV/",
       "name": "topo50-new-zealand-mainland",
       "title": "Topo50 NZ Mainland Gridless Maps",
-      "minZoom": 12,
+      "minZoom": 13,
       "category": "Topographic"
     },
     {
@@ -34,7 +34,7 @@
       "3857": "s3://linz-basemaps/3857/topo50-chatham-island/01JF62G939Z6W58QBNXCSM9MD0/",
       "name": "topo50-chatham-island",
       "title": "Topo50 Chatham Islands Gridless Maps",
-      "minZoom": 12,
+      "minZoom": 13,
       "category": "Topographic"
     }
   ]
