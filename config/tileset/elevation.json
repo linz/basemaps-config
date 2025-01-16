@@ -223,11 +223,25 @@
       "name": "hawarden_2015_dem_1m"
     },
     {
+      "2193": "s3://nz-elevation/canterbury/christchurch-and-selwyn_2015/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/christchurch-and-selwyn_2015_dem_1m/01HZ65BE94TVDRNGJ9PZB2BTYX/",
+      "minZoom": 9,
+      "title": "Canterbury - Christchurch and Selwyn LiDAR 1m DEM (2015)",
+      "name": "christchurch-and-selwyn_2015_dem_1m"
+    },
+    {
       "2193": "s3://nz-elevation/canterbury/mackenzie_2015/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/mackenzie_2015_dem_1m/01HZ65MFCV4J3XN39ZDRH4Z22P/",
       "minZoom": 9,
       "title": "Canterbury - Mackenzie LiDAR 1m DEM (2015)",
       "name": "mackenzie_2015_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/tasman/abel-tasman-and-golden-bay_2016/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/abel-tasman-and-golden-bay_2016_dem_1m/01HZ66YRH6T1E72EDJH8E2C9WE/",
+      "minZoom": 9,
+      "title": "Tasman - Abel Tasman and Golden Bay LiDAR 1m DEM (2016)",
+      "name": "abel-tasman-and-golden-bay_2016_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/otago/otago_2016/dem_1m/2193/",
@@ -277,6 +291,13 @@
       "minZoom": 9,
       "title": "Tasman - Motueka River Valley LiDAR 1m DEM (2018-2019)",
       "name": "motueka-river-valley_2018-2019_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/christchurch-and-ashley-river_2018-2019/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/christchurch-and-ashley-river_2018-2019_dem_1m/01HZ65B3P90PS85WF0SEY7T6KG/",
+      "minZoom": 9,
+      "title": "Canterbury - Christchurch and Ashley River LiDAR 1m DEM (2018-2019)",
+      "name": "christchurch-and-ashley-river_2018-2019_dem_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/canterbury_2018-2019/dem_1m/2193/",
