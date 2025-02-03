@@ -1,16 +1,12 @@
 {
   "version": 8,
+  "id": "st_colorful",
   "name": "st_colorful",
   "metadata": {
     "license": "https://creativecommons.org/publicdomain/zero/1.0/"
   },
   "glyphs": "https://tiles.versatiles.org/assets/glyphs/{fontstack}/{range}.pbf",
-  "sprite": [
-    {
-      "id": "basics",
-      "url": "https://tiles.versatiles.org/assets/sprites/basics/sprites"
-    }
-  ],
+  "sprite": "https://tiles.versatiles.org/assets/sprites/basics/sprites",
   "sources": {
     "versatiles-shortbread": {
       "attribution": "© 2022 Toitū Te Whenua © OpenMapTiles - CC BY 4.0",
