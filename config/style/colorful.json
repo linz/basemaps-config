@@ -7627,7 +7627,7 @@
     "versatiles-shortbread": {
       "attribution": "© 2022 Toitū Te Whenua © OpenMapTiles - CC BY 4.0",
       "type": "vector",
-      "url": "/v1/tiles/topographic/EPSG:3857/tile.json"
+      "url": "/v1/tiles/topographic-shortbread/EPSG:3857/tile.json"
     }
   },
   "sprite": "https://tiles.versatiles.org/assets/sprites/basics/sprites",
