@@ -5,9 +5,22 @@
     {
       "id": "background",
       "paint": {
-        "background-color": "rgb(246,240,246)"
+        "background-color": "rgb(203,210,223)"
       },
       "type": "background"
+    },
+    {
+      "filter": ["all", ["==", "natural", "coastline"]],
+      "id": "Coastline",
+      "layout": { "visibility": "visible" },
+      "minzoom": 0,
+      "paint": {
+        "fill-antialias": true,
+        "fill-color": "rgb(246,240,246)"
+      },
+      "source": "versatiles-shortbread",
+      "source-layer": "boundaries",
+      "type": "fill"
     },
     {
       "id": "water-ocean",

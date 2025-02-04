@@ -5,9 +5,22 @@
     {
       "id": "background",
       "paint": {
-        "background-color": "hsl(33,0%,95%)"
+        "background-color": "hsl(205,0%,85%)"
       },
       "type": "background"
+    },
+    {
+      "filter": ["all", ["==", "natural", "coastline"]],
+      "id": "Coastline",
+      "layout": { "visibility": "visible" },
+      "minzoom": 0,
+      "paint": {
+        "fill-antialias": true,
+        "fill-color": "hsl(33,0%,95%)"
+      },
+      "source": "versatiles-shortbread",
+      "source-layer": "boundaries",
+      "type": "fill"
     },
     {
       "id": "water-ocean",
