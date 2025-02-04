@@ -255,7 +255,7 @@ jobs:
           docker run --rm --network="host" -v $PWD:$PWD ${DOCKER_AWS_ENV} ${SCREENSHOT_CONTAINER} --url http://localhost:5000 --output $PWD/.artifacts/visual-snapshots
       
       - name: Save snapshots
-        uses: blacha/action-visual-snapshot@main
+        uses: blacha/action-visual-snapshot@19bcf5e44c8a691f28c89219b1e0d7b9a3889c4e
         with:
           save-only: true
           snapshot-path: .artifacts/visual-snapshots
@@ -283,7 +283,7 @@ jobs:
 
       - name: Diff snapshots
         id: visual-snapshots-diff
-        uses: blacha/action-visual-snapshot@main
+        uses: blacha/action-visual-snapshot@19bcf5e44c8a691f28c89219b1e0d7b9a3889c4e
         with:
           storage-prefix: 's3://linz-basemaps-screenshot'
           storage-url: 'https://d25mfjh9syaxsr.cloudfront.net'
