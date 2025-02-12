@@ -1871,7 +1871,7 @@
       "type": "symbol"
     },
     {
-      "filter": ["all", ["==", "kind", "stream"], ["==", "stream_feature", "rapid_cl"], ["has", "name"]],
+      "filter": ["all", ["==", "kind", "stream"], ["has", "name"]],
       "id": "Waterway-Rapid-Names",
       "layout": {
         "icon-anchor": "center",
