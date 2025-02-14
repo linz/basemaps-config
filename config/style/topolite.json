@@ -1,6 +1,6 @@
 {
   "glyphs": "/v1/fonts/{fontstack}/{range}.pbf",
-  "id": "st_topolite",
+  "id": "st_topolite-v1",
   "layers": [
     {
       "filter": ["all", ["==", "class", "dock"]],
