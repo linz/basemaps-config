@@ -2054,7 +2054,7 @@
       "layout": {
         "symbol-placement": "line",
         "symbol-spacing": 180,
-        "text-field": "{brunnel}",
+        "text-field": "tunnel",
         "text-font": ["Roboto Black"],
         "text-offset": {
           "stops": [

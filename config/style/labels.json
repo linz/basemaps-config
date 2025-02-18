@@ -63,7 +63,7 @@
       "type": "line"
     },
     {
-      "filter": ["all", ["==", "class", "track"], ["==", "track_use", "foot"]],
+      "filter": ["all", ["==", "kind", "track"], ["==", "track_use", "foot"]],
       "id": "Transport-FootTracks-Shadow",
       "layout": {
         "line-cap": "butt",
@@ -93,11 +93,11 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "line"
     },
     {
-      "filter": ["all", ["==", "class", "track"], ["==", "track_use", "foot"]],
+      "filter": ["all", ["==", "kind", "track"], ["==", "track_use", "foot"]],
       "id": "Transport-FootTracks",
       "layout": {
         "line-cap": "butt",
@@ -124,11 +124,11 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "line"
     },
     {
-      "filter": ["all", ["==", "class", "track"], ["==", "track_use", "vehicle"]],
+      "filter": ["all", ["==", "kind", "track"], ["==", "track_use", "vehicle"]],
       "id": "Transport-VehicleTracks-Shadow",
       "layout": {
         "line-cap": "butt",
@@ -162,11 +162,11 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "line"
     },
     {
-      "filter": ["all", ["==", "class", "track"], ["==", "track_use", "vehicle"]],
+      "filter": ["all", ["==", "kind", "track"], ["==", "track_use", "vehicle"]],
       "id": "Transport-VehicleTracks",
       "layout": {
         "line-cap": "butt",
@@ -196,11 +196,11 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "line"
     },
     {
-      "filter": ["all", ["==", "lane_count", 1], ["!=", "class", "motorway"]],
+      "filter": ["all", ["==", "lane_count", 1], ["!=", "kind", "motorway"]],
       "id": "Transport-1Casing",
       "layout": {
         "line-cap": "butt",
@@ -226,11 +226,11 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "line"
     },
     {
-      "filter": ["all", ["in", "lane_count", 2, 3, 4, 5, 6, 7, 8], ["!=", "class", "motorway"]],
+      "filter": ["all", ["in", "lane_count", 2, 3, 4, 5, 6, 7, 8], ["!=", "kind", "motorway"]],
       "id": "Transport-2Casing",
       "layout": {
         "line-cap": "butt",
@@ -256,7 +256,7 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "line"
     },
     {
@@ -288,7 +288,7 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "line"
     },
     {
@@ -320,7 +320,7 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "line"
     },
     {
@@ -352,7 +352,7 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "line"
     },
     {
@@ -384,11 +384,11 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "line"
     },
     {
-      "filter": ["all", ["==", "surface", "sealed"], ["==", "lane_count", 1], ["!=", "class", "motorway"]],
+      "filter": ["all", ["==", "surface", "sealed"], ["==", "lane_count", 1], ["!=", "kind", "motorway"]],
       "id": "Transport-1Sealed",
       "layout": {
         "line-cap": "butt",
@@ -416,11 +416,11 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "line"
     },
     {
-      "filter": ["all", ["==", "surface", "sealed"], ["in", "lane_count", 2, 3, 4, 5, 6, 7], ["!=", "class", "motorway"]],
+      "filter": ["all", ["==", "surface", "sealed"], ["in", "lane_count", 2, 3, 4, 5, 6, 7], ["!=", "kind", "motorway"]],
       "id": "Transport-2+Sealed",
       "layout": {
         "line-cap": "butt",
@@ -448,11 +448,11 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "line"
     },
     {
-      "filter": ["all", ["==", "class", "motorway"], ["in", "lane_count", 1]],
+      "filter": ["all", ["==", "kind", "motorway"], ["in", "lane_count", 1]],
       "id": "Transport-1HWY-Casing",
       "layout": {
         "line-cap": "round",
@@ -479,11 +479,11 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "line"
     },
     {
-      "filter": ["all", ["==", "class", "motorway"], ["in", "lane_count", 2, 3]],
+      "filter": ["all", ["==", "kind", "motorway"], ["in", "lane_count", 2, 3]],
       "id": "Transport-2HWY-Casing",
       "layout": {
         "line-cap": "round",
@@ -510,11 +510,11 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "line"
     },
     {
-      "filter": ["all", ["==", "class", "motorway"], ["in", "lane_count", 4, 5, 6, 7]],
+      "filter": ["all", ["==", "kind", "motorway"], ["in", "lane_count", 4, 5, 6, 7]],
       "id": "Transport-HWY-Casing",
       "layout": {
         "line-cap": "round",
@@ -541,11 +541,11 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "line"
     },
     {
-      "filter": ["all", ["==", "class", "motorway"], ["==", "lane_count", 1]],
+      "filter": ["all", ["==", "kind", "motorway"], ["==", "lane_count", 1]],
       "id": "Transport-1HWY",
       "layout": {
         "line-cap": "round",
@@ -578,11 +578,11 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "line"
     },
     {
-      "filter": ["all", ["==", "class", "motorway"], ["in", "lane_count", 2, 3]],
+      "filter": ["all", ["==", "kind", "motorway"], ["in", "lane_count", 2, 3]],
       "id": "Transport-2HWY",
       "layout": {
         "line-cap": "round",
@@ -615,11 +615,11 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "line"
     },
     {
-      "filter": ["all", ["==", "class", "motorway"], ["in", "lane_count", 4, 5, 6, 7]],
+      "filter": ["all", ["==", "kind", "motorway"], ["in", "lane_count", 4, 5, 6, 7]],
       "id": "Transport-HWY",
       "layout": {
         "line-cap": "round",
@@ -651,11 +651,11 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "line"
     },
     {
-      "filter": ["all", ["==", "class", "motorway"]],
+      "filter": ["all", ["==", "kind", "motorway"]],
       "id": "Transport-Roads-8-Casing",
       "layout": { "visibility": "visible" },
       "maxzoom": 8,
@@ -670,11 +670,11 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "line"
     },
     {
-      "filter": ["all", ["==", "class", "motorway"]],
+      "filter": ["all", ["==", "kind", "motorway"]],
       "id": "Transport-Roads-8",
       "layout": { "visibility": "visible" },
       "maxzoom": 8,
@@ -694,11 +694,11 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "line"
     },
     {
-      "filter": ["all", ["==", "class", "ferry"]],
+      "filter": ["all", ["==", "kind", "ferry"]],
       "id": "Transport-FerryCrossing",
       "minzoom": 11.5,
       "paint": {
@@ -707,10 +707,11 @@
         "line-width": 1
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "ferries",
       "type": "line"
     },
     {
+      "filter": ["all", ["==", "kind", "aerodrome"]],
       "id": "Airport-Label",
       "layout": {
         "icon-anchor": "bottom",
@@ -743,7 +744,7 @@
         "text-halo-width": 1
       },
       "source": "LINZ Basemaps",
-      "source-layer": "aerodrome_label",
+      "source-layer": "public_transport",
       "type": "symbol"
     },
     {
@@ -796,7 +797,7 @@
         "text-translate-anchor": "map"
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "symbol"
     },
     {
@@ -849,7 +850,7 @@
         "text-translate-anchor": "map"
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "symbol"
     },
     {
@@ -892,17 +893,17 @@
         "text-opacity": 1
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "symbol"
     },
     {
-      "filter": ["all", ["==", "class", "helipad"]],
+      "filter": ["all", ["==", "kind", "helipad"]],
       "id": "Aeroway-Helipads",
       "layout": { "icon-image": "helipad_pnt_fill", "icon-size": 1.25, "text-font": ["Open Sans Regular"] },
       "maxzoom": 21,
       "minzoom": 12,
       "source": "LINZ Basemaps",
-      "source-layer": "aeroway",
+      "source-layer": "public_transport",
       "type": "symbol"
     },
     {
@@ -927,7 +928,7 @@
         "text-halo-width": 1
       },
       "source": "LINZ Basemaps",
-      "source-layer": "housenumber",
+      "source-layer": "addresses",
       "type": "symbol"
     },
     {
@@ -1004,7 +1005,7 @@
         "text-translate-anchor": "viewport"
       },
       "source": "LINZ Basemaps",
-      "source-layer": "place",
+      "source-layer": "place_labels",
       "type": "symbol"
     },
     {
@@ -1081,7 +1082,7 @@
         "text-translate-anchor": "viewport"
       },
       "source": "LINZ Basemaps",
-      "source-layer": "place",
+      "source-layer": "place_labels",
       "type": "symbol"
     },
     {
@@ -1158,7 +1159,7 @@
         "text-translate-anchor": "viewport"
       },
       "source": "LINZ Basemaps",
-      "source-layer": "place",
+      "source-layer": "place_labels",
       "type": "symbol"
     },
     {
@@ -1234,7 +1235,7 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "place",
+      "source-layer": "place_labels",
       "type": "symbol"
     },
     {
@@ -1305,7 +1306,7 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "place",
+      "source-layer": "place_labels",
       "type": "symbol"
     },
     {
@@ -1376,11 +1377,11 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "place",
+      "source-layer": "place_labels",
       "type": "symbol"
     },
     {
-      "filter": ["all", ["has", "name"], ["==", "class", "track"], ["==", "track_use", "foot"]],
+      "filter": ["all", ["has", "name"], ["==", "kind", "track"], ["==", "track_use", "foot"]],
       "id": "All-FootTrack-Labels",
       "layout": {
         "icon-allow-overlap": false,
@@ -1428,11 +1429,11 @@
         "text-opacity": 1
       },
       "source": "LINZ Basemaps",
-      "source-layer": "transportation",
+      "source-layer": "streets",
       "type": "symbol"
     },
     {
-      "filter": ["all", ["==", "class", "grass"], ["==", "grass_type", "golf_course"]],
+      "filter": ["all", ["==", "kind", "golf_course"]],
       "id": "Landcover-GolfCourse-Symbol",
       "layout": {
         "icon-anchor": "right",
@@ -1457,11 +1458,11 @@
         "text-halo-width": 0.8
       },
       "source": "LINZ Basemaps",
-      "source-layer": "landcover",
+      "source-layer": "land",
       "type": "symbol"
     },
     {
-      "filter": ["all", ["==", "class", "landfill"]],
+      "filter": ["all", ["==", "kind", "landfill"]],
       "id": "Landuse-Landfill-Symbol",
       "layout": {
         "icon-anchor": "right",
@@ -1489,11 +1490,11 @@
         "text-halo-width": 1.5
       },
       "source": "LINZ Basemaps",
-      "source-layer": "landuse",
+      "source-layer": "land",
       "type": "symbol"
     },
     {
-      "filter": ["all", ["==", "class", "beacon"], ["==", "type", "lighthouse"]],
+      "filter": ["all", ["==", "man_made", "beacon"], ["==", "type", "lighthouse"]],
       "id": "Poi-Beacon-Lighthouse",
       "layout": {
         "icon-allow-overlap": true,
@@ -1516,11 +1517,11 @@
         "text-translate": [15, 0]
       },
       "source": "LINZ Basemaps",
-      "source-layer": "poi",
+      "source-layer": "pois",
       "type": "symbol"
     },
     {
-      "filter": ["any", ["==", "class", "hut"]],
+      "filter": ["any", ["==", "kind", "hut"]],
       "id": "Poi-Hut-Label",
       "layout": {
         "icon-allow-overlap": true,
@@ -1548,11 +1549,11 @@
         "text-halo-width": 1.5
       },
       "source": "LINZ Basemaps",
-      "source-layer": "poi",
+      "source-layer": "pois",
       "type": "symbol"
     },
     {
-      "filter": ["all", ["==", "class", "monument"]],
+      "filter": ["all", ["==", "historic", "monument"]],
       "id": "Poi-Monument",
       "layout": {
         "icon-allow-overlap": true,
@@ -1584,11 +1585,11 @@
         "text-halo-width": 0.8
       },
       "source": "LINZ Basemaps",
-      "source-layer": "poi",
+      "source-layer": "pois",
       "type": "symbol"
     },
     {
-      "filter": ["all", ["==", "class", "railway"]],
+      "filter": ["all", ["==", "kind", "railway"]],
       "id": "Poi-Railway-Symbol",
       "layout": {
         "icon-allow-overlap": true,
@@ -1633,11 +1634,11 @@
         "text-translate": [0, -15]
       },
       "source": "LINZ Basemaps",
-      "source-layer": "poi",
+      "source-layer": "public_transport",
       "type": "symbol"
     },
     {
-      "filter": ["all", ["==", "class", "rifle_range"]],
+      "filter": ["all", ["==", "leisure", "shooting_ground"]],
       "id": "Poi-RifleRange-Label",
       "layout": {
         "icon-image": "rifle_range_pnt",
@@ -1661,11 +1662,11 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "poi",
+      "source-layer": "pois",
       "type": "symbol"
     },
     {
-      "filter": ["all", ["==", "class", "showground"]],
+      "filter": ["all", ["==", "kind", "showground"]],
       "id": "Poi-Showground-Symbol",
       "layout": {
         "icon-image": "showground_pnt",
@@ -1685,11 +1686,11 @@
         "text-halo-color": "rgba(255, 255, 255, 1)"
       },
       "source": "LINZ Basemaps",
-      "source-layer": "poi",
+      "source-layer": "sites",
       "type": "symbol"
     },
     {
-      "filter": ["all", ["==", "class", "sports_field"]],
+      "filter": ["all", ["==", "kind", "sports_field"]],
       "id": "Poi-SportsField-Label",
       "layout": {
         "text-field": "{name}",
@@ -1703,7 +1704,7 @@
         "text-halo-width": 1
       },
       "source": "LINZ Basemaps",
-      "source-layer": "poi",
+      "source-layer": "sites",
       "type": "symbol"
     }
   ],
@@ -1718,7 +1719,7 @@
     "sky-horizon-blend": 0.5
   },
   "sources": {
-    "LINZ Basemaps": { "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0", "type": "vector", "url": "/v1/tiles/topographic/EPSG:3857/tile.json" }
+    "LINZ Basemaps": { "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0", "type": "vector", "url": "/v1/tiles/topographic-v2/EPSG:3857/tile.json" }
   },
   "sprite": "/v1/sprites/topographic",
   "version": 8
