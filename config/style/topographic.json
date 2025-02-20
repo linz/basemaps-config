@@ -3234,7 +3234,7 @@
       "type": "symbol"
     },
     {
-      "filter": ["all", ["==", "class", "gas_valve"]],
+      "filter": ["all", ["==", "class", "gas_value"]],
       "id": "Poi-GasValve",
       "layout": {
         "icon-image": "circle_pnt_line",

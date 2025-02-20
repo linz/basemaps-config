@@ -20,7 +20,7 @@
       "type": "fill"
     },
     {
-      "filter": ["all", ["==", "kind", "rock"]],
+      "filter": ["all", ["==", "kind", "bare_rock"]],
       "id": "Landcover-Rock-Ln",
       "layout": { "line-cap": "round", "line-join": "round", "visibility": "visible" },
       "minzoom": 14,
@@ -201,7 +201,7 @@
       "type": "fill"
     },
     {
-      "filter": ["all", ["==", "kind", "glacier"]],
+      "filter": ["all", ["==", "kind", "ice"]],
       "id": "Landcover-Ice",
       "layout": { "visibility": "visible" },
       "paint": {
@@ -215,7 +215,7 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "water_polygons",
+      "source-layer": "land",
       "type": "fill"
     },
     {
@@ -1456,7 +1456,7 @@
       "source-layer": "buildings",
       "type": "fill"
     },
-    { "filter": ["all", ["==", "waterway", "siphon"]], "id": "Poi-Siphon", "minzoom": 12, "source": "LINZ Basemaps", "source-layer": "water_polygons", "type": "fill" },
+    { "filter": ["all", ["==", "kind", "siphon"]], "id": "Poi-Siphon", "minzoom": 12, "source": "LINZ Basemaps", "source-layer": "water_polygons", "type": "fill" },
     {
       "filter": ["all", ["==", "building", "storage_tank"]],
       "id": "Poi-Tank-Pt-Background",
@@ -2438,7 +2438,7 @@
       "type": "line"
     },
     {
-      "filter": ["all", ["==", "kind", "cable_car"], ["==", "feature_type", "people"]],
+      "filter": ["all", ["==", "kind", "cable_car"], ["==", "feature", "people"]],
       "id": "Transport-Cable-Car-People",
       "paint": { "line-color": "rgba(24, 23, 23, 0.80)", "line-width": 1.25 },
       "source": "LINZ Basemaps",
@@ -2446,7 +2446,7 @@
       "type": "line"
     },
     {
-      "filter": ["all", ["==", "kind", "cable_car"], ["==", "feature_type", "industrial"]],
+      "filter": ["all", ["==", "kind", "cable_car"], ["==", "feature", "industrial"]],
       "id": "Transport-Cable-Car-Industrial",
       "paint": { "line-color": "rgba(24, 23, 23, 0.80)", "line-width": 2.5 },
       "source": "LINZ Basemaps",
@@ -2962,7 +2962,7 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "land",
+      "source-layer": "water_lines",
       "type": "line"
     },
     {
@@ -3092,7 +3092,7 @@
       "type": "symbol"
     },
     {
-      "filter": ["all", ["==", "buoy", "buoy"]],
+      "filter": ["all", ["==", "seamark", "buoy"]],
       "id": "Poi-Buoy",
       "layout": { "icon-image": "circle_pnt_line", "icon-size": 0.7, "text-field": "Buoy", "text-font": ["Open Sans Regular"], "text-offset": [1.5, -1], "text-size": 12 },
       "minzoom": 12,
@@ -3249,7 +3249,7 @@
       "id": "Poi-GasValve",
       "layout": {
         "icon-image": "circle_pnt_line",
-        "text-field": "{pipeline}",
+        "text-field": "gas_value",
         "text-font": ["Open Sans Regular"],
         "text-offset": [0, 1],
         "text-size": {
@@ -3367,7 +3367,7 @@
       "type": "symbol"
     },
     {
-      "filter": ["any", ["==", "kind", "hut"]],
+      "filter": ["any", ["==", "building", "hut"]],
       "id": "Poi-Hut-Label",
       "layout": {
         "icon-allow-overlap": true,
@@ -3475,7 +3475,7 @@
       "minzoom": 13,
       "paint": { "icon-opacity": 0.8, "text-halo-blur": 0.75, "text-halo-color": "rgba(255, 255, 255, 1)", "text-halo-width": 0.75, "text-opacity": 0.9 },
       "source": "LINZ Basemaps",
-      "source-layer": "pois",
+      "source-layer": "land",
       "type": "symbol"
     },
     {
@@ -4423,7 +4423,7 @@
       "type": "symbol"
     },
     {
-      "filter": ["all", ["==", "nature", "rock"], ["==", "geological", "outcrop"]],
+      "filter": ["all", ["==", "natural", "rock"], ["==", "geological", "outcrop"]],
       "id": "Landcover_RockOutcrop",
       "layout": {
         "icon-allow-overlap": false,
