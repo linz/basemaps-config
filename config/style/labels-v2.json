@@ -1521,7 +1521,7 @@
       "type": "symbol"
     },
     {
-      "filter": ["any", ["==", "kind", "hut"]],
+      "filter": ["any", ["==", "building", "hut"]],
       "id": "Poi-Hut-Label",
       "layout": {
         "icon-allow-overlap": true,

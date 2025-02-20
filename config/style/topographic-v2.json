@@ -3630,7 +3630,7 @@
         "text-translate-anchor": "viewport"
       },
       "source": "LINZ Basemaps",
-      "source-layer": "pois",
+      "source-layer": "streets",
       "type": "symbol"
     },
     {
@@ -4774,7 +4774,7 @@
       "type": "symbol"
     },
     {
-      "filter": ["all", ["has", "name"], ["!=", "subclass", "foot_route_closed"], ["!=", "subclass", "foot_closed"], ["!=", "kind", "aerodrome"]],
+      "filter": ["all", ["has", "name"], ["!=", "subclass", "foot_route_closed"], ["!=", "subclass", "foot_closed"], ["!=", "kind", "aerodrome"], ["!=", "kind", "raceway"]],
       "id": "All-Road-Labels",
       "layout": {
         "icon-ignore-placement": false,
