@@ -1,6 +1,6 @@
 {
   "glyphs": "/v1/fonts/{fontstack}/{range}.pbf",
-  "id": "st_topographic",
+  "id": "st_topographic-v2",
   "layers": [
     {
       "id": "Background",
@@ -4774,7 +4774,7 @@
       "type": "symbol"
     },
     {
-      "filter": ["all", ["has", "name"], ["!=", "subclass", "foot_route_closed"], ["!=", "subclass", "foot_closed"]],
+      "filter": ["all", ["has", "name"], ["!=", "subclass", "foot_route_closed"], ["!=", "subclass", "foot_closed"], ["!=", "kind", "aerodrome"]],
       "id": "All-Road-Labels",
       "layout": {
         "icon-ignore-placement": false,
