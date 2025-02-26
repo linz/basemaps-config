@@ -388,10 +388,18 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/gisborne_2023-2024_0.2m/01HYM7JSJ6YAE2P3NMZNEXZJA3/",
-      "3857": "s3://linz-basemaps/3857/gisborne_2023-2024_0.2m/01HYM7JENENQ4DXZE8HMCRTB4P/",
-      "name": "gisborne-2023-2024-0.2m",
-      "title": "Gisborne 0.2m Rural Aerial Photos (2023-2024)",
+      "2193": "s3://linz-basemaps/2193/gisborne_2024-2025_0.2m/01JMXGT2HRMWKVE7XRDB8D4ADW/",
+      "3857": "s3://linz-basemaps/3857/gisborne_2024-2025_0.2m/01JMXGT7FJ5FWVC1KBJ66K7SCW/",
+      "name": "gisborne-2024-2025-0.2m",
+      "title": "Gisborne 0.2m Rural Aerial Photos (2024-2025)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 13
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/gisborne_2024-2025_0.1m/01JMZTRKMPGSKWR7BAFMGGYQ6B/",
+      "3857": "s3://linz-basemaps/3857/gisborne_2024-2025_0.1m/01JMZTRKMN73SPM4944051KDCT/",
+      "name": "gisborne-2024-2025-0.1m",
+      "title": "Gisborne 0.1m Rural Aerial Photos (2024-2025)",
       "category": "Rural Aerial Photos",
       "minZoom": 13
     },
@@ -424,14 +432,6 @@
       "3857": "s3://linz-basemaps/3857/canterbury_2024_0.2m/01JEQ87YCSEARXMX25HQSA1KQ9/",
       "name": "canterbury-2024-0.2m",
       "title": "Canterbury 0.2m Rural Aerial Photos (2024)",
-      "category": "Rural Aerial Photos",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/gisborne_2024-2025_0.2m/01JMXGT2HRMWKVE7XRDB8D4ADW/",
-      "3857": "s3://linz-basemaps/3857/gisborne_2024-2025_0.2m/01JMXGT7FJ5FWVC1KBJ66K7SCW/",
-      "name": "gisborne-2024-2025-0.2m",
-      "title": "Gisborne 0.2m Rural Aerial Photos (2024-2025)",
       "category": "Rural Aerial Photos",
       "minZoom": 13
     },
@@ -865,14 +865,6 @@
       "3857": "s3://linz-basemaps/3857/buller_2020_0.2m/01HKP2QVP16PYWSKR50WFVVZM1/",
       "name": "buller-2020-0.2m",
       "title": "Buller 0.2m Urban Aerial Photos (2020)",
-      "category": "Urban Aerial Photos",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/gisborne_2023_0.075m/01HQS79210XRB25W757BG4E46D/",
-      "3857": "s3://linz-basemaps/3857/gisborne_2023_0.075m/01HQS7921XXZ4ZWAHHT721QEZ0/",
-      "name": "gisborne-2023-0.075m",
-      "title": "Gisborne 0.075m Urban Aerial Photos (2023)",
       "category": "Urban Aerial Photos",
       "minZoom": 14
     },
