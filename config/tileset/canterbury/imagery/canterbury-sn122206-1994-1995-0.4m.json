@@ -12,8 +12,8 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/canterbury_sn122206_1994-1995_0.4m/01JMZTZKRKN1GSVX0EWGHDM4MS/",
-      "3857": "s3://linz-basemaps/3857/canterbury_sn122206_1994-1995_0.4m/01JMZTZKBCD18606XSXTMYE2W0/",
+      "2193": "s3://linz-basemaps/2193/canterbury_sn122206_1994-1995_0.4m/01JMZTZC45PF0F7T4A7CE13X79/",
+      "3857": "s3://linz-basemaps/3857/canterbury_sn122206_1994-1995_0.4m/01JMZTZCNZ8GA7YQBX1YHDFAEV/",
       "name": "canterbury-sn122206-1994-1995-0.4m",
       "title": "Canterbury 0.4m SN122206 (1994-1995)",
       "category": "Scanned Aerial Imagery",
