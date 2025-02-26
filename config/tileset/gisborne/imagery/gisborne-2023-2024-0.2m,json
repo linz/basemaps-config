@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_gisborne-2023-2024-0.2m",
+  "title": "Gisborne 0.2m Rural Aerial Photos (2023-2024)",
+  "background": "#00000000",
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/gisborne_2023-2024_0.2m/01HYM7JSJ6YAE2P3NMZNEXZJA3/",
+      "3857": "s3://linz-basemaps/3857/gisborne_2023-2024_0.2m/01HYM7JENENQ4DXZE8HMCRTB4P/",
+      "name": "gisborne-2023-2024-0.2m",
+      "title": "Gisborne 0.2m Rural Aerial Photos (2023-2024)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
