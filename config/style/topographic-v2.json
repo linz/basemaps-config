@@ -3613,7 +3613,7 @@
         "text-translate-anchor": "viewport"
       },
       "source": "LINZ Basemaps",
-      "source-layer": "streets",
+      "source-layer": "sites",
       "type": "symbol"
     },
     {
