@@ -551,7 +551,7 @@
       "type": "line"
     },
     {
-      "filter": ["all", ["==", "kind", "dock"]],
+      "filter": ["all", ["==", "kind", "dry_dock"]],
       "id": "Water-Dry-Dock-ln",
       "layout": { "visibility": "visible" },
       "minzoom": 12,
@@ -566,7 +566,7 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "water_polygons",
+      "source-layer": "land",
       "type": "line"
     },
     {
@@ -819,7 +819,7 @@
       "id": "Poi-Siphon",
       "minzoom": 12,
       "source": "LINZ Basemaps",
-      "source-layer": "water_polygons",
+      "source-layer": "land",
       "type": "fill"
     },
     {

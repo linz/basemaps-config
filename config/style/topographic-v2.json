@@ -864,7 +864,7 @@
       "type": "line"
     },
     {
-      "filter": ["all", ["==", "kind", "dock"]],
+      "filter": ["all", ["==", "kind", "dry_dock"]],
       "id": "Water-Dry-Dock-ln",
       "layout": { "visibility": "visible" },
       "minzoom": 12,
@@ -879,7 +879,7 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "water_polygons",
+      "source-layer": "land",
       "type": "line"
     },
     {
@@ -1456,7 +1456,7 @@
       "source-layer": "buildings",
       "type": "fill"
     },
-    { "filter": ["all", ["==", "kind", "siphon"]], "id": "Poi-Siphon", "minzoom": 12, "source": "LINZ Basemaps", "source-layer": "water_polygons", "type": "fill" },
+    { "filter": ["all", ["==", "kind", "siphon"]], "id": "Poi-Siphon", "minzoom": 12, "source": "LINZ Basemaps", "source-layer": "land", "type": "fill" },
     {
       "filter": ["all", ["==", "building", "storage_tank"]],
       "id": "Poi-Tank-Pt-Background",
