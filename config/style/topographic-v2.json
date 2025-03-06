@@ -4774,7 +4774,7 @@
       "type": "symbol"
     },
     {
-      "filter": ["all", ["has", "name"], ["!=", "subclass", "foot_route_closed"], ["!=", "subclass", "foot_closed"], ["!=", "kind", "aerodrome"], ["!=", "kind", "raceway"], ["!=", "kind", "rail"]],
+      "filter": ["all", ["has", "name"], ["!=", "subclass", "foot_route_closed"], ["!=", "subclass", "foot_closed"], ["!=", "kind", "aerodrome"], ["!=", "kind", "raceway"]],
       "id": "All-Road-Labels",
       "layout": {
         "icon-ignore-placement": false,
@@ -4800,42 +4800,6 @@
       },
       "minzoom": 13,
       "paint": { "text-halo-color": "rgba(243, 243, 242, 0.9)", "text-halo-width": 2.5, "text-opacity": 0.9 },
-      "source": "LINZ Basemaps",
-      "source-layer": "streets",
-      "type": "symbol"
-    },
-    {
-      "filter": ["all", ["has", "name"], ["==", "kind", "rail"]],
-      "id": "RailWay-Labels",
-      "layout": {
-        "icon-ignore-placement": false,
-        "icon-pitch-alignment": "auto",
-        "icon-text-fit": "both",
-        "symbol-placement": "line",
-        "symbol-spacing": 250,
-        "text-anchor": "center",
-        "text-field": "{name}",
-        "text-font": ["Open Sans Regular"],
-        "text-justify": "center",
-        "text-size": {
-          "stops": [
-            [13, 8],
-            [15, 8],
-            [18, 10],
-            [19, 10],
-            [22, 60]
-          ]
-        },
-        "text-transform": "none",
-        "visibility": "visible"
-      },
-      "minzoom": 13,
-      "paint": {
-        "text-color": "rgba(51, 51, 51, 1)",
-        "text-halo-color": "rgba(243, 243, 242, 0.9)",
-        "text-halo-width": 2.5,
-        "text-opacity": 0.9
-      },
       "source": "LINZ Basemaps",
       "source-layer": "streets",
       "type": "symbol"
