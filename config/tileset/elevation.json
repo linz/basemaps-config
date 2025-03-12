@@ -378,10 +378,10 @@
     },
     {
       "2193": "s3://nz-elevation/west-coast/west-coast_2020-2022/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/west-coast_2020-2022_dem_1m/01HZ67MBE87WF9VN3N2M4Z8S1N/",
-      "minZoom": 9,
-      "title": "West Coast LiDAR 1m DEM (2020-2022)",
-      "name": "west-coast_2020-2022_dem_1m"
+      "3857": "s3://linz-basemaps/elevation/3857/west-coast_2020-2022_dem_1m/01JMXGBCN11AXVEE0C6J188EGC/",
+      "name": "west-coast_2020-2022_dem_1m",
+      "title": "West Coast LiDAR 1m DEM (2020-2024) - Draft",
+      "minZoom": 9
     },
     {
       "2193": "s3://nz-elevation/tasman/tasman-bay_2022/dem_1m/2193/",
@@ -469,10 +469,10 @@
     },
     {
       "2193": "s3://nz-elevation/hawkes-bay/hawkes-bay_2023/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/hawkes-bay_2023_dem_1m/01JCKNF77DW0ED89BZNR64A76Q/",
-      "minZoom": 9,
+      "3857": "s3://linz-basemaps/elevation/3857/hawkes-bay_2023_dem_1m/01JK6K2ZK57J6X21N12PWFARQS/",
+      "name": "hawkes-bay_2023_dem_1m",
       "title": "Hawke's Bay LiDAR 1m DEM (2023-2024)",
-      "name": "hawkes-bay_2023_dem_1m"
+      "minZoom": 9
     },
     {
       "2193": "s3://nz-elevation/manawatu-whanganui/manawatu-whanganui_2024/dem_1m/2193/",
