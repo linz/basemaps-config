@@ -3249,7 +3249,7 @@
       "id": "Poi-GasValve",
       "layout": {
         "icon-image": "circle_pnt_line",
-        "text-field": "gas_valve",
+        "text-field": "Gas valve",
         "text-font": ["Open Sans Regular"],
         "text-offset": [0, 1],
         "text-size": {
