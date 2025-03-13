@@ -420,8 +420,8 @@
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/otago_2023-2024_0.2m/01J48G1HPGZK1THTCM9W3KBTQD/",
-      "3857": "s3://linz-basemaps/3857/otago_2023-2024_0.2m/01J48G1HJGREKXE1AP69TB8AX2/",
+      "2193": "s3://linz-basemaps/2193/otago_2023-2024_0.2m/01JP40WDHHB1KZZ3BPFDPGW9WA/",
+      "3857": "s3://linz-basemaps/3857/otago_2023-2024_0.2m/01JP40WVR4XX21ZXJ4FYHJ47AN/",
       "name": "otago-2023-2024-0.2m",
       "title": "Otago 0.2m Rural Aerial Photos (2023-2024)",
       "category": "Rural Aerial Photos",
@@ -925,8 +925,8 @@
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/auckland_2024_0.075m/01JP3YX9FQ2R2RK62KTSZCR8B9/",
-      "3857": "s3://linz-basemaps/3857/auckland_2024_0.075m/01JP3Z7GXSCCW273PEHZDHX010/",
+      "2193": "s3://linz-basemaps/2193/auckland_2024_0.075m/01JP68072VCX0V1S7FK14D5VN8/",
+      "3857": "s3://linz-basemaps/3857/auckland_2024_0.075m/01JP6EK940W2BGMBER6QSTWMG6/",
       "name": "auckland-2024-0.075m",
       "title": "Auckland 0.075m Urban Aerial Photos (2024) - Draft",
       "category": "Urban Aerial Photos",
