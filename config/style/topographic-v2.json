@@ -6,7 +6,7 @@
       "id": "Background",
       "layout": { "visibility": "visible" },
       "minzoom": 0,
-      "paint": { "fill-color": "rgba(232, 232, 232, 1)" },
+      "paint": { "background-color": "rgba(232, 232, 232, 1)" },
       "type": "background"
     },
     {
