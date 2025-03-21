@@ -487,6 +487,13 @@
       "name": "northland_2024_dem_1m",
       "title": "Northland LiDAR 1m DEM (2024)",
       "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/canterbury_2010/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/canterbury_2010_dem_1m/01JPV4GSY8MSYVAMSJP6F1NDX5/",
+      "name": "canterbury_2010_dem_1m",
+      "title": "Canterbury LiDAR 1m DEM (2010)",
+      "minZoom": 9
     }
   ],
   "outputs": [
