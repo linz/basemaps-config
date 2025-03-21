@@ -494,7 +494,7 @@
       "name": "northland_2024_dem_1m",
       "title": "Northland LiDAR 1m DEM (2024)",
       "minZoom": 9
-    },
+    }
   ],
   "outputs": [
     {
