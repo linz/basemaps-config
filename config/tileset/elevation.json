@@ -13,6 +13,13 @@
       "name": "new-zealand_2012_dem_8m"
     },
     {
+      "2193": "s3://nz-elevation/canterbury/canterbury_2010/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/canterbury_2010_dem_1m/01JPV4GSY8MSYVAMSJP6F1NDX5/",
+      "name": "canterbury_2010_dem_1m",
+      "title": "Canterbury LiDAR 1m DEM (2010)",
+      "minZoom": 9
+    },
+    {
       "2193": "s3://nz-elevation/wellington/wellington_2013-2014/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/wellington_2013-2014_dem_1m/01HZ67MBQJ8VASM6Z69PMATPHH/",
       "minZoom": 9,
