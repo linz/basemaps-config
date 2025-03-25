@@ -13,13 +13,6 @@
       "name": "new-zealand_2012_dem_8m"
     },
     {
-      "2193": "s3://nz-elevation/canterbury/canterbury_2010/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/canterbury_2010_dem_1m/01JPV4GSY8MSYVAMSJP6F1NDX5/",
-      "name": "canterbury_2010_dem_1m",
-      "title": "Canterbury LiDAR 1m DEM (2010)",
-      "minZoom": 9
-    },
-    {
       "2193": "s3://nz-elevation/wellington/wellington_2013-2014/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/wellington_2013-2014_dem_1m/01HZ67MBQJ8VASM6Z69PMATPHH/",
       "minZoom": 9,
@@ -174,6 +167,13 @@
       "name": "gisborne_2023_dem_1m"
     },
     {
+      "2193": "s3://nz-elevation/hawkes-bay/hawkes-bay_2023/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/hawkes-bay_2023_dem_1m/01JK6K2ZK57J6X21N12PWFARQS/",
+      "name": "hawkes-bay_2023_dem_1m",
+      "title": "Hawke's Bay LiDAR 1m DEM (2023-2024)",
+      "minZoom": 9
+    },
+    {
       "2193": "s3://nz-elevation/waikato/waikato_2024/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/waikato_2024_dem_1m/01JJ8FRZXPE1DT6PNVJWRM6ZQR/",
       "name": "waikato_2024_dem_1m",
@@ -188,11 +188,32 @@
       "name": "bay-of-plenty_2024_dem_1m"
     },
     {
+      "2193": "s3://nz-elevation/manawatu-whanganui/manawatu-whanganui_2024/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/manawatu-whanganui_2024_dem_1m/01JJ81FDZ60YG91ZE5HTRGJBAE/",
+      "name": "manawatu-whanganui_2024_dem_1m",
+      "title": "Manawatū-Whanganui LiDAR 1m DEM (2024)",
+      "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/northland/northland_2024/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/northland_2024_dem_1m/01JJ8FQ7VZRD53W17E4X79WC08/",
+      "name": "northland_2024_dem_1m",
+      "title": "Northland LiDAR 1m DEM (2024)",
+      "minZoom": 9
+    }
+    {
       "2193": "s3://nz-elevation/tasman/tasman_2008-2015/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/tasman_2008-2015_dem_1m/01HZ676DYQAVNGE6XJ7FVRS8F8/",
       "minZoom": 9,
       "title": "Nelson and Tasman LiDAR 1m DEM (2008-2015)",
       "name": "tasman_2008-2015_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/canterbury_2010/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/canterbury_2010_dem_1m/01JPV4GSY8MSYVAMSJP6F1NDX5/",
+      "name": "canterbury_2010_dem_1m",
+      "title": "Canterbury LiDAR 1m DEM (2010)",
+      "minZoom": 9
     },
     {
       "2193": "s3://nz-elevation/canterbury/hurunui-rivers_2013/dem_1m/2193/",
@@ -474,27 +495,6 @@
       "title": "Canterbury LiDAR 1m DEM (2020-2023)",
       "name": "canterbury_2020-2023_dem_1m"
     },
-    {
-      "2193": "s3://nz-elevation/hawkes-bay/hawkes-bay_2023/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/hawkes-bay_2023_dem_1m/01JK6K2ZK57J6X21N12PWFARQS/",
-      "name": "hawkes-bay_2023_dem_1m",
-      "title": "Hawke's Bay LiDAR 1m DEM (2023-2024)",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://nz-elevation/manawatu-whanganui/manawatu-whanganui_2024/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/manawatu-whanganui_2024_dem_1m/01JJ81FDZ60YG91ZE5HTRGJBAE/",
-      "name": "manawatu-whanganui_2024_dem_1m",
-      "title": "Manawatū-Whanganui LiDAR 1m DEM (2024)",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://nz-elevation/northland/northland_2024/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/northland_2024_dem_1m/01JJ8FQ7VZRD53W17E4X79WC08/",
-      "name": "northland_2024_dem_1m",
-      "title": "Northland LiDAR 1m DEM (2024)",
-      "minZoom": 9
-    }
   ],
   "outputs": [
     {
