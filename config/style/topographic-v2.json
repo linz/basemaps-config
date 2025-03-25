@@ -45,7 +45,7 @@
       "layout": { "visibility": "visible" },
       "minzoom": 0,
       "paint": { "fill-color": "rgba(184, 220, 242, 1)" },
-      "source": "LINZ Basemaps",
+      "source": "Natural-Earth-Ocean",
       "source-layer": "ocean",
       "type": "fill"
     },
@@ -5528,6 +5528,7 @@
   },
   "sources": {
     "LINZ Basemaps": { "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0", "type": "vector", "url": "/v1/tiles/topographic-v2/{tileMatrix}/tile.json" },
+    "Natural-Earth-Ocean": { "type": "vector", "url": "/v1/tiles/ocean/{tileMatrix}/tile.json", "maxzoom": 15 },
     "LINZ-Elevation-Hillshade": { "maxzoom": 18, "minzoom": 0, "tileSize": 256, "tiles": ["/v1/tiles/elevation/{tileMatrix}/{z}/{x}/{y}.png?pipeline=terrain-rgb"], "type": "raster-dem" }
   },
   "sprite": "/v1/sprites/topographic",
