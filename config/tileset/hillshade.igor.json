@@ -1,0 +1,19 @@
+{
+  "id": "ts_hillshade-igor",
+  "name": "hillshade-igor",
+  "type": "raster",
+  "description": "Elevation Hillshade",
+  "title": "New Zealand DEM Hillshade - Igor",
+  "category": "Elevation",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/new-zealand/01JQAMJ71MPV1S3PEQNC5H57NH/",
+      "3857": "s3://linz-basemaps/3857/new-zealand/01JQAMJ718RYY8NWW44V9YD5ZC/",
+      "name": "new-zealand",
+      "title": "New Zealand DEM Hillshade - Igor",
+      "category": "Elevation",
+      "minZoom": 9
+    }
+  ],
+  "outputs": [{ "title": "Color ramp", "name": "color-ramp", "pipeline": [{ "type": "color-ramp" }], "background": { "r": 255, "g": 255, "b": 255, "alpha": 1 } }]
+}
