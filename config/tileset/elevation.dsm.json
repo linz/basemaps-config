@@ -7,11 +7,6 @@
   "category": "Elevation",
   "layers": [
     {
-      "2193": "s3://nz-elevation/new-zealand/new-zealand-contour/dsm_8m/2193/",
-      "title": "New Zealand 8m DSM (2012)",
-      "name": "new-zealand_2012_dsm_8m"
-    },
-    {
       "2193": "s3://nz-elevation/canterbury/canterbury_2010/dsm_1m/2193/",
       "name": "canterbury_2010_dsm_1m",
       "title": "Canterbury LiDAR 1m DSM (2010)",
@@ -120,12 +115,6 @@
       "name": "bay-of-plenty_2019-2022_dsm_1m"
     },
     {
-      "2193": "s3://nz-elevation/bay-of-plenty/tauranga_2022/dsm_1m/2193/",
-      "minZoom": 9,
-      "title": "Bay of Plenty - Tauranga LiDAR 1m DSM (2022)",
-      "name": "tauranga_2022_dsm_1m"
-    },
-    {
       "2193": "s3://nz-elevation/manawatu-whanganui/manawatu-whanganui_2022-2023/dsm_1m/2193/",
       "minZoom": 9,
       "title": "Manawatū-Whanganui LiDAR 1m DSM (2022-2023)",
@@ -160,12 +149,6 @@
       "minZoom": 9,
       "title": "Bay of Plenty LiDAR 1m DSM (2024)",
       "name": "bay-of-plenty_2024_dsm_1m"
-    },
-    {
-      "2193": "s3://nz-elevation/tasman/tasman_2008-2015/dsm_1m/2193/",
-      "minZoom": 9,
-      "title": "Nelson and Tasman LiDAR 1m DSM (2008-2015)",
-      "name": "tasman_2008-2015_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/hurunui-rivers_2013/dsm_1m/2193/",
@@ -226,12 +209,6 @@
       "minZoom": 9,
       "title": "Otago - Queenstown LiDAR 1m DSM (2016)",
       "name": "queenstown_2016_dsm_1m"
-    },
-    {
-      "2193": "s3://nz-elevation/canterbury/kaikoura_2016-2017/dsm_1m/2193/",
-      "minZoom": 9,
-      "title": "Canterbury - Kaikōura LiDAR 1m DSM (2016-2017)",
-      "name": "kaikoura_2016-2017_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/canterbury_2016-2017/dsm_1m/2193/",
