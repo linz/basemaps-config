@@ -11,152 +11,152 @@
       "3857": "s3://linz-basemaps/elevation/3857/canterbury_2010_dsm_1m/01JQN0HWF74P22K917SJRAV1SB/",
       "name": "canterbury_2010_dsm_1m",
       "title": "Canterbury LiDAR 1m DSM (2010)",
-      "minZoom": 9
+      "minZoom": 5
     },
     {
       "2193": "s3://nz-elevation/wellington/wellington_2013-2014/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/wellington_2013-2014_dsm_1m/01JQN0HWFQVA617NQ27GGNAKJD/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Wellington LiDAR 1m DSM (2013-2014)",
       "name": "wellington_2013-2014_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/manawatu-whanganui/manawatu-whanganui_2015-2016/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/manawatu-whanganui_2015-2016_dsm_1m/01JQN0HWJ4GKEZXWN56MRF8G23/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Manawatū-Whanganui LiDAR 1m DSM (2015-2016)",
       "name": "manawatu-whanganui_2015-2016_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/auckland/auckland-south_2016-2017/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/auckland-south_2016-2017_dsm_1m/01JQN0HWCWT5MG7CRVKWCHJ3NY/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Auckland South LiDAR 1m DSM (2016-2017)",
       "name": "auckland-south_2016-2017_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/auckland/auckland-north_2016-2018/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/auckland-north_2016-2018_dsm_1m/01JQN0HWE60P7KGVRWBG78VHQ3/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Auckland North LiDAR 1m DSM (2016-2018)",
       "name": "auckland-north_2016-2018_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/manawatu-whanganui/palmerston-north_2018/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/palmerston-north_2018_dsm_1m/01JQN0HWHXH84CM4SS8CW9SFTN/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Manawatū-Whanganui - Palmerston North LiDAR 1m DSM (2018)",
       "name": "palmerston-north_2018_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/waikato/huntly_2015-2019/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/huntly_2015-2019_dsm_1m/01JQN0HWHK35N16YHADQWZHTC3/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Waikato - Huntly LiDAR 1m DSM (2015-2019)",
       "name": "huntly_2015-2019_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/waikato/thames_2017-2019/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/thames_2017-2019_dsm_1m/01JQN0HWERF6QA34JA2W4C1TRW/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Waikato - Thames LiDAR 1m DSM (2017-2019)",
       "name": "thames_2017-2019_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/waikato/reporoa-and-upper-piako-river_2019/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/reporoa-and-upper-piako-river_2019_dsm_1m/01JQN0HWFRNKM89E2NG08MJDJR/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Waikato - Reporoa and Upper Piako River LiDAR 1m DSM (2019)",
       "name": "reporoa-and-upper-piako-river_2019_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/northland/northland_2018-2020/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/northland_2018-2020_dsm_1m/01JQN0HWEAKEH7JAK8SJC9C1BF/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Northland LiDAR 1m DSM (2018-2020)",
       "name": "northland_2018-2020_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/wellington/wellington-city_2019-2020/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/wellington-city_2019-2020_dsm_1m/01JQN19CVDNGJ27QDJ79M9K6PD/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Wellington City LiDAR 1m DSM (2019-2020)",
       "name": "wellington-city_2019-2020_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/manawatu-whanganui/whanganui-urban_2020-2021/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/whanganui-urban_2020-2021_dsm_1m/01JQN19G8CKT9JJ7DPAM0D7QT9/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Manawatū-Whanganui - Whanganui Urban LiDAR 1m DSM (2020-2021)",
       "name": "whanganui-urban_2020-2021_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/waikato/waikato_2021/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/waikato_2021_dsm_1m/01JQN19GZHVF0ZNPJ084HPR53E/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Waikato LiDAR 1m DSM (2021)",
       "name": "waikato_2021_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/taranaki/taranaki_2021/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/taranaki_2021_dsm_1m/01JQN19M6FSDE0BMNP8P69A0QB/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Taranaki LiDAR 1m DSM (2021)",
       "name": "taranaki_2021_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/wellington/hutt-city_2021/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/hutt-city_2021_dsm_1m/01JQN19QFXEHR05VTHV4H19QNA/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Wellington - Hutt City LiDAR 1m DSM (2021)",
       "name": "hutt-city_2021_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/wellington/kapiti-coast_2021/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/kapiti-coast_2021_dsm_1m/01JQN19SSYEJ07X9S6SJVAWYCC/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Wellington - Kāpiti Coast LiDAR 1m DSM (2021)",
       "name": "kapiti-coast_2021_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/wellington/upper-hutt-city_2021/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/upper-hutt-city_2021_dsm_1m/01JQN19V67XXSA1HM61JN0HP4K/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Wellington - Upper Hutt City LiDAR 1m DSM (2021)",
       "name": "upper-hutt-city_2021_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/bay-of-plenty/bay-of-plenty_2019-2022/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/bay-of-plenty_2019-2022_dsm_1m/01JQN19ZC4KZZVTWRZRVPH2134/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Bay of Plenty LiDAR 1m DSM (2019-2022)",
       "name": "bay-of-plenty_2019-2022_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/manawatu-whanganui/manawatu-whanganui_2022-2023/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/manawatu-whanganui_2022-2023_dsm_1m/01JQN1E9WEYXDFEWW5V9VPKAHZ/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Manawatū-Whanganui LiDAR 1m DSM (2022-2023)",
       "name": "manawatu-whanganui_2022-2023_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/wellington/porirua_2023/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/porirua_2023_dsm_1m/01JQN1EA4YR01QSNS39GYBNKYV/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Wellington - Porirua LiDAR 1m DSM (2023)",
       "name": "porirua_2023_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/waikato/hamilton_2023/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/hamilton_2023_dsm_1m/01JQN1F6FPVY226BRZQDXM28B0/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Waikato - Hamilton LiDAR 1m DSM (2023)",
       "name": "hamilton_2023_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/gisborne/gisborne_2023/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/gisborne_2023_dsm_1m/01JQN1HAH2YEPB9NBHDA1BJDVD/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Gisborne LiDAR 1m DSM (2023)",
       "name": "gisborne_2023_dsm_1m"
     },
@@ -165,194 +165,194 @@
       "3857": "s3://linz-basemaps/elevation/3857/waikato_2024_dsm_1m/01JQN1HYF1JAWM5P88YE1MJ1S4/",
       "name": "waikato_2024_dsm_1m",
       "title": "Waikato LiDAR 1m DSM (2024)",
-      "minZoom": 9
+      "minZoom": 5
     },
     {
       "2193": "s3://nz-elevation/bay-of-plenty/bay-of-plenty_2024/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/bay-of-plenty_2024_dsm_1m/01JQN1KGBYM9MJ69P451J39RSK/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Bay of Plenty LiDAR 1m DSM (2024)",
       "name": "bay-of-plenty_2024_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/hurunui-rivers_2013/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/hurunui-rivers_2013_dsm_1m/01JQN1KGMBJ07CS7BCCST85XF1/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Canterbury - Hurunui Rivers LiDAR 1m DSM (2013)",
       "name": "hurunui-rivers_2013_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/timaru-rivers_2014/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/timaru-rivers_2014_dsm_1m/01JQN1P1C4RWV7WV6BT0YX0BFF/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Canterbury - Timaru Rivers LiDAR 1m DSM (2014)",
       "name": "timaru-rivers_2014_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/marlborough/blenheim_2014/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/blenheim_2014_dsm_1m/01JQN1QXKMKCJTP24RBS0XSNE6/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Marlborough - Blenheim LiDAR 1m DSM (2014)",
       "name": "blenheim_2014_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/tasman/richmond-and-motueka_2015/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/richmond-and-motueka_2015_dsm_1m/01JQN1TJX3J57MP6ZKTRCYEHJJ/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Tasman - Richmond and Motueka LiDAR 1m DSM (2015)",
       "name": "richmond-and-motueka_2015_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/hawarden_2015/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/hawarden_2015_dsm_1m/01JQN20FGEAYZ61RM2277DAQJV/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Canterbury - Hawarden LiDAR 1m DSM (2015)",
       "name": "hawarden_2015_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/christchurch-and-selwyn_2015/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/christchurch-and-selwyn_2015_dsm_1m/01JQN212B574AW85B0MFJ42SZK/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Canterbury - Christchurch and Selwyn LiDAR 1m DSM (2015)",
       "name": "christchurch-and-selwyn_2015_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/mackenzie_2015/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/mackenzie_2015_dsm_1m/01JQN21YXK33HH05KX63T815N4/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Canterbury - Mackenzie LiDAR 1m DSM (2015)",
       "name": "mackenzie_2015_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/tasman/abel-tasman-and-golden-bay_2016/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/abel-tasman-and-golden-bay_2016_dsm_1m/01JQN2308MTSBJBQB5C3E24J6C/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Tasman - Abel Tasman and Golden Bay LiDAR 1m DSM (2016)",
       "name": "abel-tasman-and-golden-bay_2016_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/otago/otago_2016/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/otago_2016_dsm_1m/01JQN23F6VC30N7TB95SBRP2QM/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Otago LiDAR 1m DSM (2016)",
       "name": "otago_2016_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/otago/queenstown_2016/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/queenstown_2016_dsm_1m/01JQN23QKWB6P3EB64PPNZ8SFH/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Otago - Queenstown LiDAR 1m DSM (2016)",
       "name": "queenstown_2016_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/canterbury_2016-2017/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/canterbury_2016-2017_dsm_1m/01JQN262Q5ZJXNT30DNJ7795YN/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Canterbury LiDAR 1m DSM (2016-2017)",
       "name": "canterbury_2016-2017_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/tasman/golden-bay_2017/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/golden-bay_2017_dsm_1m/01JQN2AGSCWTS4Q2CT268SC3HB/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Tasman - Golden Bay LiDAR 1m DSM (2017)",
       "name": "golden-bay_2017_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/marlborough/marlborough_2018/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/marlborough_2018_dsm_1m/01JQN2B1ABX6G1QTMNRDF44WB3/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Marlborough LiDAR 1m DSM (2018)",
       "name": "marlborough_2018_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/tasman/motueka-river-valley_2018-2019/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/motueka-river-valley_2018-2019_dsm_1m/01JQN2CP2ZTNBKR3CCFQDZVBCH/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Tasman - Motueka River Valley LiDAR 1m DSM (2018-2019)",
       "name": "motueka-river-valley_2018-2019_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/christchurch-and-ashley-river_2018-2019/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/christchurch-and-ashley-river_2018-2019_dsm_1m/01JQN2DJN233FFY9ZW5Y322FW9/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Canterbury - Christchurch and Ashley River LiDAR 1m DSM (2018-2019)",
       "name": "christchurch-and-ashley-river_2018-2019_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/canterbury_2018-2019/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/canterbury_2018-2019_dsm_1m/01JQN2F7S0AVG6CQB5XSX7SYJF/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Canterbury LiDAR 1m DSM (2018-2019)",
       "name": "canterbury_2018-2019_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/otago/balclutha_2020/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/balclutha_2020_dsm_1m/01JQN2F9016HAV0TWYWJDG6P5B/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Otago - Balclutha LiDAR 1m DSM (2020)",
       "name": "balclutha_2020_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/christchurch_2020-2021/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/christchurch_2020-2021_dsm_1m/01JQN2H6X1MEM1D2H4SBZYWG29/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Canterbury - Christchurch LiDAR 1m DSM (2020-2021)",
       "name": "christchurch_2020-2021_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/nelson/nelson_2021/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/nelson_2021_dsm_1m/01JQN2HB3FQNS6PXNFTXJXVSPZ/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Nelson LiDAR 1m DSM (2021)",
       "name": "nelson_2021_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/otago/central-otago_2021/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/central-otago_2021_dsm_1m/01JQN2J3GNJ5ZT4X0TQBAVAW2R/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Otago - Central Otago LiDAR 1m DSM (2021)",
       "name": "central-otago_2021_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/otago/coastal-catchments_2021/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/coastal-catchments_2021_dsm_1m/01JQN2JJCHBGHPMBC94HYR3KNR/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Otago - Coastal Catchments LiDAR 1m DSM (2021)",
       "name": "coastal-catchments_2021_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/otago/dunedin-and-mosgiel_2021/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/dunedin-and-mosgiel_2021_dsm_1m/01JQN2K5SN5M1XS138400AAWRM/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Otago - Dunedin and Mosgiel LiDAR 1m DSM (2021)",
       "name": "dunedin-and-mosgiel_2021_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/otago/queenstown_2021/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/queenstown_2021_dsm_1m/01JQN2NYZD1SW8TPKJCA380A14/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Otago - Queenstown LiDAR 1m DSM (2021)",
       "name": "queenstown_2021_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/southland/stewart-island-rakiura-oban_2021/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/stewart-island-rakiura-oban_2021_dsm_1m/01JQN2PNFNJ8M4TMTMVX8B412E/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Stewart Island / Rakiura - Oban LiDAR 1m DSM (2021)",
       "name": "stewart-island-rakiura-oban_2021_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/tasman/tasman_2020-2022/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/tasman_2020-2022_dsm_1m/01JQN2QJKC1MJQ57S4VFMTGF9F/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Tasman LiDAR 1m DSM (2020-2022)",
       "name": "tasman_2020-2022_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/marlborough/marlborough_2020-2022/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/marlborough_2020-2022_dsm_1m/01JQN2RTAS51N8KWTTARRA0KC8/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Marlborough LiDAR 1m DSM (2020-2022)",
       "name": "marlborough_2020-2022_dsm_1m"
     },
@@ -361,89 +361,89 @@
       "3857": "s3://linz-basemaps/elevation/3857/west-coast_2020-2022_dsm_1m/01JQN2SFHQA0K3KAF3X8YYWJ87/",
       "name": "west-coast_2020-2022_dsm_1m",
       "title": "West Coast LiDAR 1m DSM (2020-2024) - Draft",
-      "minZoom": 9
+      "minZoom": 5
     },
     {
       "2193": "s3://nz-elevation/tasman/tasman-bay_2022/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/tasman-bay_2022_dsm_1m/01JQN2SGZ49XKX1B1DG3RG4X6M/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Tasman - Tasman Bay LiDAR 1m DSM (2022)",
       "name": "tasman-bay_2022_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/nelson/top-of-the-south-flood_2022/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/top-of-the-south-flood_2022_dsm_1m/01JQN2SJSFV2JABW19FDB9X01J/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Nelson and Tasman - Top of the South Flood LiDAR 1m DSM (2022)",
       "name": "top-of-the-south-flood_2022_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/kaikoura-and-waimakariri_2022/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/kaikoura-and-waimakariri_2022_dsm_1m/01JQN2V1ME1BQ8QKRA7H16TS1E/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Canterbury - Kaikōura and Waimakariri LiDAR 1m DSM (2022)",
       "name": "kaikoura-and-waimakariri_2022_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/otago/central-otago_2022-2023/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/central-otago_2022-2023_dsm_1m/01JQN2XAAARKJQNHZD133S30XY/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Otago - Central Otago LiDAR 1m DSM (2022-2023)",
       "name": "central-otago_2022-2023_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/otago/wanaka_2022-2023/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/wanaka_2022-2023_dsm_1m/01JQN2ZE0TS4XDDEENJH12Z2SB/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Otago - Wanaka LiDAR 1m DSM (2022-2023)",
       "name": "wanaka_2022-2023_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/tasman/abel-tasman-and-golden-bay_2023/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/abel-tasman-and-golden-bay_2023_dsm_1m/01JQN33CXVTSJ8DA94YKXSKWYD/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Tasman - Abel Tasman and Golden Bay LiDAR 1m DSM (2023)",
       "name": "abel-tasman-and-golden-bay_2023_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/tasman/waimea-dam_2023/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/waimea-dam_2023_dsm_1m/01JQN33K07HNGVVXJJS9RSPY1A/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Tasman - Waimea Dam LiDAR 1m DSM (2023)",
       "name": "waimea-dam_2023_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/banks-peninsula_2023/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/banks-peninsula_2023_dsm_1m/01JQN356PAVN6S6NS54VBK1DW8/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Canterbury - Banks Peninsula LiDAR 1m DSM (2023)",
       "name": "banks-peninsula_2023_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/selwyn_2023/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/selwyn_2023_dsm_1m/01JQN35QE0VNK99E2YT2P3ZGPG/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Canterbury - Selwyn LiDAR 1m DSM (2023)",
       "name": "selwyn_2023_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/waimakariri_2023/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/waimakariri_2023_dsm_1m/01JQN38JJ0W9JEBJNYNM38V3HR/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Canterbury - Waimakariri LiDAR 1m DSM (2023)",
       "name": "waimakariri_2023_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/southland/southland_2020-2023/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/southland_2020-2023_dsm_1m/01JQN38N6SGSGC95PSKEZKBFJN/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Southland LiDAR 1m DSM (2020-2023)",
       "name": "southland_2020-2023_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/canterbury/canterbury_2020-2023/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/canterbury_2020-2023_dsm_1m/01JQN3D2K1M5DNSJ6EEDBJ5D2X/",
-      "minZoom": 9,
+      "minZoom": 5,
       "title": "Canterbury LiDAR 1m DSM (2020-2023)",
       "name": "canterbury_2020-2023_dsm_1m"
     },
@@ -452,21 +452,21 @@
       "3857": "s3://linz-basemaps/elevation/3857/hawkes-bay_2023_dsm_1m/01JQN3FZT3X11GAKB45T2XQ6Q6/",
       "name": "hawkes-bay_2023_dsm_1m",
       "title": "Hawke's Bay LiDAR 1m DSM (2023-2024)",
-      "minZoom": 9
+      "minZoom": 5
     },
     {
       "2193": "s3://nz-elevation/manawatu-whanganui/manawatu-whanganui_2024/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/manawatu-whanganui_2024_dsm_1m/01JQN3FASTV70PYS2PW309T7X7/",
       "name": "manawatu-whanganui_2024_dsm_1m",
       "title": "Manawatū-Whanganui LiDAR 1m DSM (2024)",
-      "minZoom": 9
+      "minZoom": 5
     },
     {
       "2193": "s3://nz-elevation/northland/northland_2024/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/northland_2024_dsm_1m/01JQN3MVFCYHEAFCQSRDTG4HET/",
       "name": "northland_2024_dsm_1m",
       "title": "Northland LiDAR 1m DSM (2024)",
-      "minZoom": 9
+      "minZoom": 5
     }
   ],
   "outputs": [
