@@ -7,7 +7,7 @@
   "format": "pbf",
   "layers": [
     {
-      "3857": "s3://linz-basemaps/vector/3857/53382-nz-roads-addressing/01JQ740E3HVECPAG3N6N99PTK8/53382-nz-roads-addressing.tar.co",
+      "3857": "s3://linz-basemaps/vector/3857/53382-nz-roads-addressing/01JQS4SFB9MYZVW872TZZ907RT/53382-nz-roads-addressing.tar.co",
       "name": "53382-nz-roads-addressing",
       "title": "NZ Roads (Addressing)"
     }
