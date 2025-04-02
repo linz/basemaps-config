@@ -2,8 +2,8 @@
   "id": "ts_elevation-dsm",
   "name": "elevation-dsm",
   "type": "raster",
-  "description": "Elevation Basemap",
-  "title": "Elevation",
+  "description": "Elevation DSM Basemap",
+  "title": "Elevation DSM",
   "category": "Elevation",
   "layers": [
     {
