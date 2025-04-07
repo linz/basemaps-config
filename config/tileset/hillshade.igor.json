@@ -15,26 +15,6 @@
   ],
   "outputs": [
     {
-      "title": "Terrain RGB",
-      "name": "terrain-rgb",
-      "pipeline": [
-        {
-          "type": "terrain-rgb"
-        }
-      ],
-      "format": ["png"],
-      "background": {
-        "r": 50,
-        "g": 144,
-        "b": 150,
-        "alpha": 1
-      },
-      "resizeKernel": {
-        "in": "nearest",
-        "out": "nearest"
-      }
-    },
-    {
       "title": "Color ramp",
       "name": "color-ramp",
       "pipeline": [
