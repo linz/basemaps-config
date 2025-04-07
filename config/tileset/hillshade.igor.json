@@ -1,0 +1,53 @@
+{
+  "id": "ts_hillshade-igor",
+  "name": "hillshade-igor",
+  "type": "raster",
+  "description": "New Zealand Dem Hillshade Igor",
+  "title": "Dem Hillshade Igor",
+  "category": "Elevation",
+  "layers": [
+    {
+      "2193": "s3://nz-elevation/new-zealand/new-zealand/dem-hillshade-igor/2193/",
+      "3857": "s3://linz-basemaps/3857/new-zealand/01JR74TJTWJ6TQZW9R6AVB1QY3/",
+      "title": "New Zealand DEM Hillshade Igor",
+      "name": "new-zealand_dem_hillshade_igor"
+    }
+  ],
+  "outputs": [
+    {
+      "title": "Terrain RGB",
+      "name": "terrain-rgb",
+      "pipeline": [
+        {
+          "type": "terrain-rgb"
+        }
+      ],
+      "format": ["png"],
+      "background": {
+        "r": 1,
+        "g": 134,
+        "b": 160,
+        "alpha": 1
+      },
+      "resizeKernel": {
+        "in": "nearest",
+        "out": "nearest"
+      }
+    },
+    {
+      "title": "Color ramp",
+      "name": "color-ramp",
+      "pipeline": [
+        {
+          "type": "color-ramp"
+        }
+      ],
+      "background": {
+        "r": 172,
+        "g": 204,
+        "b": 226,
+        "alpha": 1
+      }
+    }
+  ]
+}
