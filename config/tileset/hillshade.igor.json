@@ -7,10 +7,18 @@
   "category": "Elevation",
   "layers": [
     {
+      "2193": "s3://linz-basemaps/2193/new-zealand/01JR928SH74F2E8BFASAWM4TDX/",
+      "3857": "s3://linz-basemaps/3857/new-zealand/01JR928SHB08FN91QF4NSA28CG/",
+      "title": "New Zealand DEM Hillshade Igor",
+      "name": "new-zealand_dem_hillshade_igor",
+      "maxZoom": 10
+    },
+    {
       "2193": "s3://nz-elevation/new-zealand/new-zealand/dem-hillshade-igor/2193/",
       "3857": "s3://linz-basemaps/3857/new-zealand/01JR74TJTWJ6TQZW9R6AVB1QY3/",
       "title": "New Zealand DEM Hillshade Igor",
-      "name": "new-zealand_dem_hillshade_igor"
+      "name": "new-zealand_dem_hillshade_igor",
+      "minZoom": 11
     }
   ],
   "outputs": [
