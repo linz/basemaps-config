@@ -5,6 +5,7 @@
   "description": "New Zealand Dem Hillshade",
   "title": "Dem Hillshade",
   "category": "Elevation",
+  "background": { "r": 182, "g": 182, "b": 182, "alpha": 1 },
   "layers": [
     {
       "2193": "s3://nz-elevation/new-zealand/new-zealand/dem-hillshade/2193/",
