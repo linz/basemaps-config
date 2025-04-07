@@ -2,8 +2,8 @@
   "id": "ts_hillshade",
   "name": "hillshade",
   "type": "raster",
-  "description": "New Zealand Dem Hillshade Multidirectional",
-  "title": "Hillshade Multidirectional",
+  "description": "New Zealand Dem Hillshade Standard",
+  "title": "Hillshade Standard",
   "category": "Elevation",
   "layers": [
     {
