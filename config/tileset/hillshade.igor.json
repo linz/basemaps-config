@@ -5,7 +5,6 @@
   "description": "New Zealand Dem Hillshade Igor",
   "title": "Dem Hillshade Igor",
   "category": "Elevation",
-  "background": { "r": 255, "g": 255, "b": 255, "alpha": 1 },
   "layers": [
     {
       "2193": "s3://nz-elevation/new-zealand/new-zealand/dem-hillshade-igor/2193/",
