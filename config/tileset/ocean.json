@@ -1,0 +1,14 @@
+{
+  "type": "vector",
+  "id": "ts_ocean",
+  "title": "Natural Earth Ocean Vector Map",
+  "maxZoom": 15,
+  "format": "pbf",
+  "layers": [
+    {
+      "3857": "s3://linz-basemaps-staging/vector/3857/01JQ5KAP9F9XSSTM3GW5S64WHZ/ocean.tar.co",
+      "name": "ocean",
+      "title": "Ocean"
+    }
+  ]
+}
