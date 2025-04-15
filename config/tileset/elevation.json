@@ -202,6 +202,13 @@
       "minZoom": 9
     },
     {
+      "2193": "s3://nz-elevation/auckland/auckland-part-1_2024/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/auckland-part-1_2024_dem_1m/01JRVM0Y6F002XK2VCF971C5AB/",
+      "name": "auckland-part-1_2024_dem_1m",
+      "title": "Auckland Part 1 LiDAR 1m DEM (2024)",
+      "minZoom": 9
+    },
+    {
       "2193": "s3://nz-elevation/tasman/tasman_2008-2015/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/tasman_2008-2015_dem_1m/01HZ676DYQAVNGE6XJ7FVRS8F8/",
       "minZoom": 9,
@@ -494,13 +501,6 @@
       "minZoom": 9,
       "title": "Canterbury LiDAR 1m DEM (2020-2023)",
       "name": "canterbury_2020-2023_dem_1m"
-    },
-    {
-      "2193": "s3://nz-elevation/auckland/auckland-part-1_2024/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/auckland-part-1_2024_dem_1m/01JRVM0Y6F002XK2VCF971C5AB/",
-      "name": "auckland-part-1_2024_dem_1m",
-      "title": "Auckland Part 1 LiDAR 1m DEM (2024)",
-      "minZoom": 9
     }
   ],
   "outputs": [
