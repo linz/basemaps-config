@@ -474,6 +474,13 @@
       "name": "northland_2024_dsm_1m",
       "title": "Northland LiDAR 1m DSM (2024)",
       "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/auckland/auckland-part-1_2024/dsm_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/auckland-part-1_2024_dsm_1m/01JRVR9ZC0K71V5JYPC9DCQ8FK/",
+      "name": "auckland-part-1_2024_dsm_1m",
+      "title": "Auckland Part 1 LiDAR 1m DSM (2024)",
+      "minZoom": 9
     }
   ],
   "outputs": [
