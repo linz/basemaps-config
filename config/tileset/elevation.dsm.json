@@ -182,6 +182,34 @@
       "name": "bay-of-plenty_2024_dsm_1m"
     },
     {
+      "2193": "s3://nz-elevation/hawkes-bay/hawkes-bay_2023/dsm_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/hawkes-bay_2023_dsm_1m/01JQN3FZT3X11GAKB45T2XQ6Q6/",
+      "name": "hawkes-bay_2023_dsm_1m",
+      "title": "Hawke's Bay LiDAR 1m DSM (2023-2024)",
+      "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/manawatu-whanganui/manawatu-whanganui_2024/dsm_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/manawatu-whanganui_2024_dsm_1m/01JQN3FASTV70PYS2PW309T7X7/",
+      "name": "manawatu-whanganui_2024_dsm_1m",
+      "title": "Manawatū-Whanganui LiDAR 1m DSM (2024)",
+      "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/northland/northland_2024/dsm_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/northland_2024_dsm_1m/01JQN3MVFCYHEAFCQSRDTG4HET/",
+      "name": "northland_2024_dsm_1m",
+      "title": "Northland LiDAR 1m DSM (2024)",
+      "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/auckland/auckland-part-1_2024/dsm_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/auckland-part-1_2024_dsm_1m/01JRVR9ZC0K71V5JYPC9DCQ8FK/",
+      "name": "auckland-part-1_2024_dsm_1m",
+      "title": "Auckland Part 1 LiDAR 1m DSM (2024)",
+      "minZoom": 9
+    },
+    {
       "2193": "s3://nz-elevation/canterbury/hurunui-rivers_2013/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/hurunui-rivers_2013_dsm_1m/01JQN1KGMBJ07CS7BCCST85XF1/",
       "minZoom": 9,
@@ -453,34 +481,6 @@
       "minZoom": 9,
       "title": "Canterbury LiDAR 1m DSM (2020-2023)",
       "name": "canterbury_2020-2023_dsm_1m"
-    },
-    {
-      "2193": "s3://nz-elevation/hawkes-bay/hawkes-bay_2023/dsm_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/hawkes-bay_2023_dsm_1m/01JQN3FZT3X11GAKB45T2XQ6Q6/",
-      "name": "hawkes-bay_2023_dsm_1m",
-      "title": "Hawke's Bay LiDAR 1m DSM (2023-2024)",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://nz-elevation/manawatu-whanganui/manawatu-whanganui_2024/dsm_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/manawatu-whanganui_2024_dsm_1m/01JQN3FASTV70PYS2PW309T7X7/",
-      "name": "manawatu-whanganui_2024_dsm_1m",
-      "title": "Manawatū-Whanganui LiDAR 1m DSM (2024)",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://nz-elevation/northland/northland_2024/dsm_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/northland_2024_dsm_1m/01JQN3MVFCYHEAFCQSRDTG4HET/",
-      "name": "northland_2024_dsm_1m",
-      "title": "Northland LiDAR 1m DSM (2024)",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://nz-elevation/auckland/auckland-part-1_2024/dsm_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/auckland-part-1_2024_dsm_1m/01JRVR9ZC0K71V5JYPC9DCQ8FK/",
-      "name": "auckland-part-1_2024_dsm_1m",
-      "title": "Auckland Part 1 LiDAR 1m DSM (2024)",
-      "minZoom": 9
     }
   ],
   "outputs": [
