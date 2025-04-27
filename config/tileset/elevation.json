@@ -501,6 +501,13 @@
       "minZoom": 9,
       "title": "Canterbury LiDAR 1m DEM (2020-2023)",
       "name": "canterbury_2020-2023_dem_1m"
+    },
+    {
+      "2193": "s3://nz-elevation/manawatu-whanganui/rangitikei-river_2021/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/rangitikei-river_2021_dem_1m/01JSWNRDH5THK2TQD4JVWR29VE/",
+      "name": "rangitikei-river_2021_dem_1m",
+      "title": "Manawatū-Whanganui - Rangitīkei River LiDAR 1m DEM (2021)",
+      "minZoom": 9
     }
   ],
   "outputs": [
