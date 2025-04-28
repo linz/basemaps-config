@@ -329,6 +329,13 @@
       "name": "balclutha_2020_dsm_1m"
     },
     {
+      "2193": "s3://nz-elevation/manawatu-whanganui/rangitikei-river_2021/dsm_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/rangitikei-river_2021_dsm_1m/01JSWZWH6P24KXP97F4XRT9B74/",
+      "name": "rangitikei-river_2021_dsm_1m",
+      "title": "Manawatū-Whanganui - Rangitīkei River LiDAR 1m DSM (2021)",
+      "minZoom": 9
+    },
+    {
       "2193": "s3://nz-elevation/canterbury/christchurch_2020-2021/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/christchurch_2020-2021_dsm_1m/01JQN2H6X1MEM1D2H4SBZYWG29/",
       "minZoom": 9,
@@ -481,13 +488,6 @@
       "minZoom": 9,
       "title": "Canterbury LiDAR 1m DSM (2020-2023)",
       "name": "canterbury_2020-2023_dsm_1m"
-    },
-    {
-      "2193": "s3://nz-elevation/manawatu-whanganui/rangitikei-river_2021/dsm_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/rangitikei-river_2021_dsm_1m/01JSWZWH6P24KXP97F4XRT9B74/",
-      "name": "rangitikei-river_2021_dsm_1m",
-      "title": "Manawatū-Whanganui - Rangitīkei River LiDAR 1m DSM (2021)",
-      "minZoom": 9
     }
   ],
   "outputs": [
