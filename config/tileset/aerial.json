@@ -444,8 +444,8 @@
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/bay-of-plenty-east_2024-2025_0.2m/01JT20BN3XE4KTADW13N755CCF/",
-      "3857": "s3://linz-basemaps/3857/bay-of-plenty-east_2024-2025_0.2m/01JT20BN3WJR80BKECWKA8NWCC/",
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty-east_2024-2025_0.2m/01JT49TJZNAE7C7NHAM69WHGW1/",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty-east_2024-2025_0.2m/01JT49TJZS11F1GESPRCQNMSF7/",
       "name": "bay-of-plenty-east-2024-2025-0.2m",
       "title": "Bay of Plenty East 0.2m Rural Aerial Photos (2024-2025)",
       "category": "Rural Aerial Photos",
