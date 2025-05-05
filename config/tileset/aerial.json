@@ -740,6 +740,14 @@
       "minZoom": 13
     },
     {
+      "2193": "s3://linz-basemaps/2193/hawkes-bay_2023-2024_0.25m/01JTFAX5FPW6YH12FDSV44PKS7/",
+      "3857": "s3://linz-basemaps/3857/hawkes-bay_2023-2024_0.25m/01JTFAX6GGXHRVNA7YD5M8BYPT/",
+      "name": "hawkes-bay-2023-2024-0.25m",
+      "minZoom": 13,
+      "title": "Hawke's Bay 0.25m Rural Aerial Photos (2023-2025)",
+      "category": "Rural Aerial Photos"
+    },
+    {
       "2193": "s3://linz-basemaps/2193/taupo_2019_0.1m/01H4EY7Y0YNZWDBQPPH5DN90E1/",
       "3857": "s3://linz-basemaps/3857/taupo_2019_0.1m/01H4EY825250VGCTG7ZJ0BPAY4/",
       "name": "taupo-2019-0.1m",
