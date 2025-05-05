@@ -444,6 +444,14 @@
       "minZoom": 13
     },
     {
+      "2193": "s3://linz-basemaps/2193/hawkes-bay_2023-2024_0.25m/01JTFAX5FPW6YH12FDSV44PKS7/",
+      "3857": "s3://linz-basemaps/3857/hawkes-bay_2023-2024_0.25m/01JTFAX6GGXHRVNA7YD5M8BYPT/",
+      "name": "hawkes-bay-2023-2024-0.25m",
+      "minZoom": 13,
+      "title": "Hawke's Bay 0.25m Rural Aerial Photos (2023-2025)",
+      "category": "Rural Aerial Photos"
+    },
+    {
       "2193": "s3://linz-basemaps/2193/bay-of-plenty-east_2024-2025_0.2m/01JT49TJZNAE7C7NHAM69WHGW1/",
       "3857": "s3://linz-basemaps/3857/bay-of-plenty-east_2024-2025_0.2m/01JT49TJZS11F1GESPRCQNMSF7/",
       "name": "bay-of-plenty-east-2024-2025-0.2m",
