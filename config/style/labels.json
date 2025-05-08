@@ -908,6 +908,7 @@
     {
       "id": "Housenumber",
       "layout": {
+        "symbol-placement": "point",
         "text-allow-overlap": false,
         "text-anchor": "bottom",
         "text-field": "{housenumber}",
