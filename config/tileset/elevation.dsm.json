@@ -484,10 +484,10 @@
     },
     {
       "2193": "s3://nz-elevation/canterbury/canterbury_2020-2023/dsm_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/canterbury_2020-2023_dsm_1m/01JQN3D2K1M5DNSJ6EEDBJ5D2X/",
-      "minZoom": 9,
-      "title": "Canterbury LiDAR 1m DSM (2020-2023)",
-      "name": "canterbury_2020-2023_dsm_1m"
+      "3857": "s3://linz-basemaps/elevation/3857/canterbury_2020-2023_dsm_1m/01JTPXAA50JS62VHC7Z47QS4GD/",
+      "name": "canterbury_2020-2023_dsm_1m",
+      "title": "Canterbury LiDAR 1m DSM (2020-2025)",
+      "minZoom": 9
     }
   ],
   "outputs": [
