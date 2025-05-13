@@ -7,9 +7,9 @@ on:
     branches:
       - master
 
-env: 
-  BASEMAPS_CLI_CONTAINER_VERSION: v7
-  BASEMAPS_SERVER_CONTAINER_VERSION: v7
+env:
+  BASEMAPS_CLI_CONTAINER_VERSION: v8
+  BASEMAPS_SERVER_CONTAINER_VERSION: v8
 
 jobs:
   build:
@@ -52,7 +52,7 @@ jobs:
 
       - name: Bundle Assets Into Cotar
         run: |
-          ./scripts/bmc.sh ./index.cjs bundle-assets --assets $PWD/assets/ --output $PWD/assets.tar.co
+          ./scripts/bmc.sh ./index.cjs config bundle-assets --assets $PWD/assets/ --output $PWD/assets.tar.co
           ASSETS_HASH=$(ls assets*.tar.co)
           echo "ASSETS_HASH=${ASSETS_HASH}" >> $GITHUB_ENV
           echo "ASSETS_LOCATION_STAGING=s3://linz-basemaps-staging/assets/${ASSETS_HASH}" >> $GITHUB_ENV
@@ -66,7 +66,7 @@ jobs:
 
       - name: Bundle Config File
         run: |
-          ./scripts/bmc.sh ./index.cjs bundle --config $PWD/config --output $PWD/config-staging.json --assets ${ASSETS_LOCATION_STAGING} --cache s3://linz-basemaps-staging/basemaps-config/cache/
+          ./scripts/bmc.sh ./index.cjs config bundle --config $PWD/config --output $PWD/config-staging.json --assets ${ASSETS_LOCATION_STAGING} --cache s3://linz-basemaps-staging/basemaps-config/cache/
           CONFIG_HASH_STAGING=$(cat config-staging.json | jq .hash -r)
           echo "CONFIG_LOCATION_STAGING=s3://linz-basemaps-staging/config/config-${CONFIG_HASH_STAGING}.json.gz" >> $GITHUB_ENV
 
@@ -87,7 +87,7 @@ jobs:
       - name: Compare To Production
         run: |
           aws s3 cp s3://linz-basemaps/config/config-latest.json.gz .
-          ./scripts/bmc.sh ./index.cjs import --config ${CONFIG_LOCATION_STAGING} --output $PWD/changes.md --target $PWD/config-latest.json.gz
+          ./scripts/bmc.sh ./index.cjs config import --config ${CONFIG_LOCATION_STAGING} --output $PWD/changes.md --target $PWD/config-latest.json.gz
 
       - name: (Pull Request) Update Description
         if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
@@ -128,7 +128,7 @@ jobs:
 
       - name: Import config
         run: |
-          ./scripts/bmc.sh ./index.cjs import --config ${CONFIG_PATH} --commit
+          ./scripts/bmc.sh ./index.cjs config import --config ${CONFIG_PATH} --commit
 
   # Compare and deploy to prod
   deploy-prod:
@@ -175,7 +175,7 @@ jobs:
           aws s3 cp assets-current.tar.co s3://linz-basemaps/assets/assets-latest.tar.co
           aws s3 cp assets-current.tar.co ${ASSETS_LOCATION_PROD}
 
-          ./scripts/bmc.sh ./index.cjs bundle --config $PWD/config-current.json.gz --output $PWD/config-prod.json --assets ${ASSETS_LOCATION_PROD} --cache s3://linz-basemaps-staging/basemaps-config/cache/
+          ./scripts/bmc.sh ./index.cjs config bundle --config $PWD/config-current.json.gz --output $PWD/config-prod.json --assets ${ASSETS_LOCATION_PROD} --cache s3://linz-basemaps-staging/basemaps-config/cache/
 
           CONFIG_HASH_PROD=$(cat config-prod.json | jq .hash -r)
           echo "CONFIG_LOCATION_PROD=s3://linz-basemaps/config/config-${CONFIG_HASH_PROD}.json.gz" >> $GITHUB_ENV
@@ -189,7 +189,7 @@ jobs:
 
       - name: Import config
         run: |
-          ./scripts/bmc.sh ./index.cjs import --config ${CONFIG_LOCATION_PROD} --commit
+          ./scripts/bmc.sh ./index.cjs config import --config ${CONFIG_LOCATION_PROD} --commit
 
   smoke:
     permissions:
@@ -201,7 +201,7 @@ jobs:
     env:
       CONFIG_PATH: ${{ needs.build.outputs.config_path }}
       BASEMAPS_HOST: http://localhost:5000
-    steps: 
+    steps:
       - uses: actions/checkout@v4
 
       - name: (Smoke) AWS Configure
@@ -254,7 +254,7 @@ jobs:
           timeout 30 bash -c 'while [[ "$(curl -s -o /dev/null -w ''%{http_code}'' http://localhost:5000/v1/version)" !=  "200" ]]; do sleep 0.5; done' || false
 
           docker run --rm --network="host" -v $PWD:$PWD ${DOCKER_AWS_ENV} ${SCREENSHOT_CONTAINER} --url http://localhost:5000 --output $PWD/.artifacts/visual-snapshots
-      
+
       - name: Save snapshots
         uses: blacha/action-visual-snapshot@v2-next
         with:
