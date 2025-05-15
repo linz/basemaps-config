@@ -128,7 +128,10 @@ jobs:
 
       - name: Import config
         run: |
-          ./scripts/bmc.sh ./index.cjs import --config ${CONFIG_PATH} --commit
+          ./scripts/update-lambda-config.sh
+        env:
+          BASEMAPS_LAMBDA_ARN: ${{ secrets.BASEMAPS_LAMBDA_ARN }}
+          BASEMAPS_CONFIG_LOCATION: ${CONFIG_PATH}
 
   # Compare and deploy to prod
   deploy-prod:
@@ -189,7 +192,11 @@ jobs:
 
       - name: Import config
         run: |
-          ./scripts/bmc.sh ./index.cjs import --config ${CONFIG_LOCATION_PROD} --commit
+          ./scripts/update-lambda-config.sh
+        env:
+          BASEMAPS_LAMBDA_ARN: ${{ secrets.BASEMAPS_LAMBDA_ARN }}
+          BASEMAPS_CONFIG_LOCATION: ${CONFIG_LOCATION_PROD}
+
 
   smoke:
     permissions:
