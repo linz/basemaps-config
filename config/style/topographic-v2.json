@@ -6,7 +6,7 @@
       "id": "Background",
       "layout": { "visibility": "visible" },
       "minzoom": 0,
-      "paint": { "background-color": "rgba(184, 220, 242, 1)" },
+      "paint": { "background-color": "rgba(232, 232, 232, 1)" },
       "type": "background"
     },
     {
@@ -41,21 +41,12 @@
     },
     {
       "filter": ["all"],
-      "id": "Coastline2",
+      "id": "Ocean",
       "layout": { "visibility": "visible" },
       "minzoom": 0,
-      "paint": {
-        "fill-antialias": true,
-        "fill-color": {
-          "stops": [
-            [1, "rgba(228, 234, 228, 1)"],
-            [10, "rgba(232, 232, 232, 1)"],
-            [20, "rgba(232, 232, 232, 1)"]
-          ]
-        }
-      },
-      "source": "LINZ Basemaps",
-      "source-layer": "boundaries",
+      "paint": { "fill-color": "rgba(184, 220, 242, 1)" },
+      "source": "Natural-Earth-Ocean",
+      "source-layer": "ocean",
       "type": "fill"
     },
     {
@@ -5537,7 +5528,8 @@
   },
   "sources": {
     "LINZ Basemaps": { "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0", "type": "vector", "url": "/v1/tiles/topographic-v2/{tileMatrix}/tile.json" },
-    "LINZ-Elevation-Hillshade": { "maxzoom": 18, "minzoom": 0, "tileSize": 256, "tiles": ["/v1/tiles/elevation/{tileMatrix}/{z}/{x}/{y}.png?pipeline=terrain-rgb"], "type": "raster-dem" }
+    "LINZ-Elevation-Hillshade": { "maxzoom": 18, "minzoom": 0, "tileSize": 256, "tiles": ["/v1/tiles/elevation/{tileMatrix}/{z}/{x}/{y}.png?pipeline=terrain-rgb"], "type": "raster-dem" },
+    "Natural-Earth-Ocean": { "maxzoom": 15, "type": "vector", "url": "/v1/tiles/ocean/{tileMatrix}/tile.json" }
   },
   "sprite": "/v1/sprites/topographic",
   "version": 8
