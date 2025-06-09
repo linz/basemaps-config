@@ -1,0 +1,59 @@
+{
+  "id": "ts_elevation-coastal",
+  "name": "elevation-coastal",
+  "type": "raster",
+  "description": "Coastal Elevation Basemap",
+  "title": "Coastal Elevation",
+  "category": "Elevation",
+  "layers": [
+    {
+      "2193": "s3://nz-coastal/bay-of-plenty/tauranga_2024/dem_1m/2193/",
+      "title": "Bay of Plenty - Tauranga Coastal Mapping Trial LiDAR 1m DEM (2024)",
+      "name": "tauranga_2024_dem_1m",
+      "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-coastal/southland/invercargill_2024/dem_1m/2193/",
+      "title": "Southland - Invercargill Coastal Mapping Trial LiDAR 1m DEM (2024)",
+      "name": "invercargill_2024_dem_1m",
+      "minZoom": 9
+    }
+  ],
+  "outputs": [
+    {
+      "title": "Terrain RGB",
+      "name": "terrain-rgb",
+      "pipeline": [
+        {
+          "type": "terrain-rgb"
+        }
+      ],
+      "format": ["png"],
+      "background": {
+        "r": 1,
+        "g": 134,
+        "b": 160,
+        "alpha": 1
+      },
+      "resizeKernel": {
+        "in": "nearest",
+        "out": "nearest"
+      }
+    },
+    {
+      "title": "Color ramp",
+      "name": "color-ramp",
+      "pipeline": [
+        {
+          "type": "color-ramp"
+        }
+      ],
+      "background": {
+        "r": 172,
+        "g": 204,
+        "b": 226,
+        "alpha": 1
+      }
+    }
+  ]
+}
