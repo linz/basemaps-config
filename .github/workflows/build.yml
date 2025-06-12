@@ -218,7 +218,7 @@ jobs:
           # Wait for the server to start
           timeout 30 bash -c 'while [[ "$(curl -s -o /dev/null -w ''%{http_code}'' ${BASEMAPS_HOST}/v1/version)" !=  "200" ]]; do sleep 0.5; done' || false
 
-          ./scripts/bmc.sh --test /app/node_modules/@basemaps/smoke/build/
+          ./scripts/bmc.sh --test /app/node_modules/@basemaps/smoke/build/*.test.js
 
       - name: (Smoke) Stop Server
         run: docker stop bms
