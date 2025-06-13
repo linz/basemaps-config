@@ -12,8 +12,8 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/auckland_sn146_1940_0.24m/01JXKBDMB9B7W452PZJBFXCHTA/",
-      "3857": "s3://linz-basemaps/3857/auckland_sn146_1940_0.24m/01JXKBDMB9DBM42H107GS98YBF/",
+      "2193": "s3://linz-basemaps/2193/auckland_sn146_1940_0.24m/01JXKGDFS4VSW8BWKYMBTHQ1YR/",
+      "3857": "s3://linz-basemaps/3857/auckland_sn146_1940_0.24m/01JXKGDXCJBEPMM63Y4GEBNDRR/",
       "name": "auckland-sn146-1940-0.24m",
       "title": "Auckland 0.24m SN146 (1940)",
       "category": "Scanned Aerial Imagery",
