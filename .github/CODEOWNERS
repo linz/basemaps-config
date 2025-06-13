@@ -1,9 +1,12 @@
 * @linz/proj-basemaps-dev
-config/tileset/*/imagery/*.json @linz/proj-basemaps-dev @linz/imagery
-config/tileset/aerial.json @linz/proj-basemaps-dev @linz/imagery
-config/tileset/event.*.json @linz/proj-basemaps-dev @linz/imagery
-config/tileset/scanned.*.json @linz/proj-basemaps-dev @linz/imagery
-config/tileset/elevation.json @linz/proj-basemaps-dev @linz/elevation
-config/tileset/elevation.*.json @linz/proj-basemaps-dev @linz/elevation
-config/tileset/hillshade.json @linz/proj-basemaps-dev @linz/elevation
-config/tileset/hillshade.*.json @linz/proj-basemaps-dev @linz/elevation
+config/tileset/*/imagery/*.json @linz/proj-basemaps @linz/imagery
+config/tileset/aerial.json @linz/proj-basemaps @linz/imagery
+config/tileset/event.*.json @linz/proj-basemaps @linz/imagery
+config/tileset/scanned.*.json @linz/proj-basemaps @linz/imagery
+config/tileset/elevation.json @linz/proj-basemaps @linz/elevation
+config/tileset/elevation.*.json @linz/proj-basemaps @linz/elevation
+config/tileset/hillshade.json @linz/proj-basemaps @linz/elevation
+config/tileset/hillshade.*.json @linz/proj-basemaps @linz/elevation
+config/tileset/topo-raster.json @linz/proj-basemaps
+config/tileset/topographic-v2.json @linz/proj-basemaps
+config/tileset/topographic.json @linz/proj-basemaps
