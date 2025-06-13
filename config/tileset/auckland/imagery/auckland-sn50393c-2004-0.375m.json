@@ -12,8 +12,8 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/auckland_sn50393c_2004_0.375m/01JXHAFP0TKCD77R9G0BBV18EN/",
-      "3857": "s3://linz-basemaps/3857/auckland_sn50393c_2004_0.375m/01JXHAFP0G89A236E5YZYN7020/",
+      "2193": "s3://linz-basemaps/2193/auckland_sn50393c_2004_0.375m/01JXKEG1W8NJXKRYRGA0E3J0JK/",
+      "3857": "s3://linz-basemaps/3857/auckland_sn50393c_2004_0.375m/01JXKEG1VZ45BYSDKVZ94XXE10/",
       "name": "auckland-sn50393c-2004-0.375m",
       "title": "Auckland 0.375m SN50393C (2004)",
       "category": "Scanned Aerial Imagery",
