@@ -12,8 +12,8 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/marlborough_sn12080_sn122206_1994-1996_0.4m/01JXHBBAS8SG4HJXF5VMKYZXFH/",
-      "3857": "s3://linz-basemaps/3857/marlborough_sn12080_sn122206_1994-1996_0.4m/01JXHBBAAPR2GVMW4VM3ZK4026/",
+      "2193": "s3://linz-basemaps/2193/marlborough_sn12080_sn122206_1994-1996_0.4m/01JXKDJNXS349A69FE2DWYW5EV/",
+      "3857": "s3://linz-basemaps/3857/marlborough_sn12080_sn122206_1994-1996_0.4m/01JXKDJNXJ8TXYVFE2FN474BQG/",
       "name": "marlborough-sn12080-sn122206-1994-1996-0.4m",
       "title": "Marlborough 0.4m SN12080 / SN122206 (1994-1996)",
       "category": "Scanned Aerial Imagery",
