@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_auckland-sn2714-1974-0.04m",
+  "name": "auckland-sn2714-1974-0.04m",
+  "title": "Auckland 0.04m SN2714 (1974)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/auckland_sn2714_1974_0.04m/01JXKJDP94MQ80J94E9NYMBD2G/",
+      "3857": "s3://linz-basemaps/3857/auckland_sn2714_1974_0.04m/01JXKJDSBYK1MZ180ZVWRVJ9VD/",
+      "name": "auckland-sn2714-1974-0.04m",
+      "title": "Auckland 0.04m SN2714 (1974)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
