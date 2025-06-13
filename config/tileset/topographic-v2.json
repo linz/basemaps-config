@@ -6,8 +6,8 @@
   "format": "pbf",
   "layers": [
     {
-      "2193": "s3://linz-basemaps-staging/vector/2193/topographic/01JXGNGJ8PMKQE2K96SY9JD0DK/topographic-v2.tar.co",
-      "3857": "s3://linz-basemaps-staging/vector/3857/topographic/01JXGNQP7CMQET3MWN977PKXQG/topographic-v2.tar.co",
+      "2193": "s3://linz-basemaps-staging/vector/2193/topographic/01JXKGS6226A77TKWVN1JQSZN6/topographic-v2.tar.co",
+      "3857": "s3://linz-basemaps-staging/vector/3857/topographic/01JXKGSFQR11MGJ997ZRXHNVCY/topographic-v2.tar.co",
       "name": "topographic-v2",
       "title": "Topographic V2"
     }
