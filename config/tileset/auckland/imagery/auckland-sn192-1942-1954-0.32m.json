@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_auckland-sn192-1942-1954-0.32m",
+  "name": "auckland-sn192-1942-1954-0.32m",
+  "title": "Auckland 0.32m SN192 (1942-1954)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/auckland_sn192_1942-1954_0.32m/01JXKGDRF1REHKHC2502RN50P6/",
+      "3857": "s3://linz-basemaps/3857/auckland_sn192_1942-1954_0.32m/01JXKGDSFBQW15GFC98GTRFKCH/",
+      "name": "auckland-sn192-1942-1954-0.32m",
+      "title": "Auckland 0.32m SN192 (1942-1954)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
