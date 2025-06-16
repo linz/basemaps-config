@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_auckland-sn139-1939-1940-0.4m",
+  "name": "auckland-sn139-1939-1940-0.4m",
+  "title": "Auckland 0.4m SN139 (1939-1940)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/auckland_sn139_1939-1940_0.4m/01JXKGDXCM130207DAAPZTMY7B/",
+      "3857": "s3://linz-basemaps/3857/auckland_sn139_1939-1940_0.4m/01JXKGDXCFSP9KRSCRDBF99E4P/",
+      "name": "auckland-sn139-1939-1940-0.4m",
+      "title": "Auckland 0.4m SN139 (1939-1940)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
