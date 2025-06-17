@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_auckland-waikato-sn348-1944-0.375m",
+  "name": "auckland-waikato-sn348-1944-0.375m",
+  "title": "Auckland / Waikato 0.375m SN348 (1944)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/auckland_waikato_sn348_1944_0.375m/01JXY059V6886EKX7YHWHM81F9/",
+      "3857": "s3://linz-basemaps/3857/auckland_waikato_sn348_1944_0.375m/01JXY059VAXVNQ6E15VE2KPM29/",
+      "name": "auckland-waikato-sn348-1944-0.375m",
+      "title": "Auckland / Waikato 0.375m SN348 (1944)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
