@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_auckland-sn9150-1991-0.4m",
+  "name": "auckland-sn9150-1991-0.4m",
+  "title": "Auckland 0.4m SN9150 (1991)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/auckland_sn9150_1991_0.4m/01JXKSR121KN9S9HYKTWS1S0MJ/",
+      "3857": "s3://linz-basemaps/3857/auckland_sn9150_1991_0.4m/01JXKSRGGHGSK79GRYX402SKWC/",
+      "name": "auckland-sn9150-1991-0.4m",
+      "title": "Auckland 0.4m SN9150 (1991)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
