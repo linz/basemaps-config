@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_auckland-sn8772-1987-1988-0.4m",
+  "name": "auckland-sn8772-1987-1988-0.4m",
+  "title": "Auckland 0.4m SN8772 (1987-1988)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/auckland_sn8772_1987-1988_0.4m/01JXKSP7GYGFVTCTVWYJSB3HAG/",
+      "3857": "s3://linz-basemaps/3857/auckland_sn8772_1987-1988_0.4m/01JXKSP6TQ17Z5S8HTB5ZCQXYA/",
+      "name": "auckland-sn8772-1987-1988-0.4m",
+      "title": "Auckland 0.4m SN8772 (1987-1988)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
