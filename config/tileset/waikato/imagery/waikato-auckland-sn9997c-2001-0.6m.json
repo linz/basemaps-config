@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_waikato-auckland-sn9997c-2001-0.6m",
+  "name": "waikato-auckland-sn9997c-2001-0.6m",
+  "title": "Waikato / Auckland 0.6m SN9997C (2001)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/waikato_auckland_sn9997c_2001_0.6m/01JXY531SE3F7DCVKE91ZYJW7R/",
+      "3857": "s3://linz-basemaps/3857/waikato_auckland_sn9997c_2001_0.6m/01JXY531SADS2FA851WZC4X8WC/",
+      "name": "waikato-auckland-sn9997c-2001-0.6m",
+      "title": "Waikato / Auckland 0.6m SN9997C (2001)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
