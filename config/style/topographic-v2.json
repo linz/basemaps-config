@@ -3340,7 +3340,7 @@
       "type": "symbol"
     },
     {
-      "filter": ["all", ["==", "historic", "yes"]],
+      "filter": ["all", ["==", "historic", "site"]],
       "id": "Poi-Historic-Site",
       "layout": { "icon-image": "historic_site_pnt", "text-anchor": "left", "text-field": "{ref}", "text-font": ["Open Sans Regular"], "text-justify": "left", "text-offset": [1, 0], "text-size": 10 },
       "minzoom": 12,
