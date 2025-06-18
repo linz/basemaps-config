@@ -3419,7 +3419,7 @@
       "type": "symbol"
     },
     {
-      "filter": ["all", ["==", "ladder", "yes"]],
+      "filter": ["all", ["==", "man_made", "ladder"]],
       "id": "Poi-Ladder-Pt",
       "layout": {
         "icon-image": "circle_pnt_fill",
