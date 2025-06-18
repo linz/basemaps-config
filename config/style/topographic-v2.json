@@ -1359,19 +1359,19 @@
       "type": "fill"
     },
     {
-      "filter": ["all", ["==", "leisure", "shooting_ground"]],
+      "filter": ["all", ["==", "kind", "rifle_range"]],
       "id": "Poi-RifleRange-Fill",
       "paint": { "fill-color": "rgba(208, 208, 208, 0.85)" },
       "source": "LINZ Basemaps",
-      "source-layer": "pois",
+      "source-layer": "sites",
       "type": "fill"
     },
     {
-      "filter": ["all", ["==", "leisure", "shooting_ground"]],
+      "filter": ["all", ["==", "kind", "rifle_range"]],
       "id": "Poi-RifleRange-Outline",
       "paint": { "line-color": "rgba(55, 54, 54, 0.85)", "line-dasharray": [5, 3], "line-width": 1.5 },
       "source": "LINZ Basemaps",
-      "source-layer": "pois",
+      "source-layer": "sites",
       "type": "line"
     },
     {
@@ -3699,7 +3699,7 @@
       "type": "symbol"
     },
     {
-      "filter": ["all", ["==", "leisure", "shooting_ground"]],
+      "filter": ["all", ["==", "kind", "rifle_range"]],
       "id": "Poi-RifleRange-Label",
       "layout": {
         "icon-image": "rifle_range_pnt",
@@ -3722,7 +3722,7 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "pois",
+      "source-layer": "sites",
       "type": "symbol"
     },
     {
