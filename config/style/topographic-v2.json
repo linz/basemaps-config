@@ -2758,7 +2758,7 @@
       "type": "line"
     },
     {
-      "filter": ["all", ["==", "ford", true]],
+      "filter": ["all", ["==", "waterway", "ford"]],
       "id": "Transport-Fords",
       "minzoom": 12,
       "paint": {
@@ -2774,7 +2774,7 @@
         "circle-translate-anchor": "map"
       },
       "source": "LINZ Basemaps",
-      "source-layer": "streets",
+      "source-layer": "pois",
       "type": "circle"
     },
     {
