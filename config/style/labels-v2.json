@@ -1638,7 +1638,7 @@
       "type": "symbol"
     },
     {
-      "filter": ["all", ["==", "leisure", "shooting_ground"]],
+      "filter": ["all", ["==", "kind", "rifle_range"]],
       "id": "Poi-RifleRange-Label",
       "layout": {
         "icon-image": "rifle_range_pnt",
@@ -1662,7 +1662,7 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "pois",
+      "source-layer": "sites",
       "type": "symbol"
     },
     {
