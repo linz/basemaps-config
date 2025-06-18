@@ -6,7 +6,7 @@
       "id": "Background",
       "layout": { "visibility": "visible" },
       "minzoom": 0,
-      "paint": { "background-color": "rgba(184, 220, 242, 1)" },
+      "paint": { "background-color": "rgba(234, 233, 229, 1)" },
       "type": "background"
     },
     {
@@ -31,21 +31,12 @@
     },
     {
       "filter": ["all"],
-      "id": "Coastline2",
+      "id": "Ocean",
       "layout": { "visibility": "visible" },
       "minzoom": 0,
-      "paint": {
-        "fill-antialias": true,
-        "fill-color": {
-          "stops": [
-            [1, "rgba(234, 233, 229, 1)"],
-            [10, "#FCFBF7"]
-          ]
-        },
-        "fill-translate-anchor": "map"
-      },
+      "paint": { "fill-color": "rgba(184, 220, 242, 1)" },
       "source": "LINZ Basemaps",
-      "source-layer": "boundaries",
+      "source-layer": "ocean",
       "type": "fill"
     },
     {
