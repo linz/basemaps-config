@@ -6,6 +6,8 @@ on:
 jobs:
   check-vector-update:
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.check_diff.outputs.changed }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -25,7 +27,7 @@ jobs:
 
   publish-odr:
     needs: check-vector-update
-    if: needs.check-vector-update.outputs.changed == true
+    if: needs.check-vector-update.outputs.changed == 'true'
     # if: needs.check-vector-update.outputs.changed == 'true' && github.ref == 'refs/heads/master' && github.event_name == 'push'
     name: Publish ODR
     runs-on: ubuntu-latest
