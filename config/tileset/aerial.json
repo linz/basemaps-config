@@ -228,14 +228,6 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/tasman_rural_2018-19_0-3m/01F6P1VDEYFR0XB5XJMN9X6V1C/",
-      "3857": "s3://linz-basemaps/3857/tasman_rural_2018-19_0-3m/01ED83DSMR8N1FQFVXM8JASBV2/",
-      "name": "tasman-rural-2018-2019-0.3m",
-      "minZoom": 13,
-      "title": "Tasman 0.3m Rural Aerial Photos (2018-2019)",
-      "category": "Rural Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/bay-of-plenty_rural_2016-17_0-3m/01F66E3G0Z8DNKWXG5M55QNW9G/",
       "3857": "s3://linz-basemaps/3857/bay-of-plenty_rural_2016-17_0-3m/01ED81Q2AS5K0RPNRCRQ33YAYW/",
       "name": "bay-of-plenty-rural-2016-2017-0.3m",
@@ -305,14 +297,6 @@
       "name": "canterbury-mackenzie-rural-2021-0.3m",
       "minZoom": 13,
       "title": "Canterbury - Mackenzie 0.3m Rural Aerial Photos (2021)",
-      "category": "Rural Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/tasman_rural_2022_0-3m_RGB/01G75YD43EBA980HFWVF6ZFV6B/",
-      "3857": "s3://linz-basemaps/3857/tasman_rural_2022_0-3m_RGB/01G75YDG4KFEZ5BAGTPHMEAPP7/",
-      "name": "tasman-rural-2022-0.3m",
-      "minZoom": 13,
-      "title": "Tasman 0.3m Rural Aerial Photos (2022)",
       "category": "Rural Aerial Photos"
     },
     {
