@@ -436,8 +436,8 @@
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/otago_2025_0.2m/01JSX94VF7NDMJYBD3CW06HQHN/",
-      "3857": "s3://linz-basemaps/3857/otago_2025_0.2m/01JSX94VGPDR1PFJT5Q921VT4P/",
+      "2193": "s3://linz-basemaps/2193/otago_2025_0.2m/01JYDESC3604H3G0NMMAC7RGB9/",
+      "3857": "s3://linz-basemaps/3857/otago_2025_0.2m/01JYDESC3CDX83A7K6HBW3PKM8/",
       "name": "otago-2025-0.2m",
       "title": "Otago 0.2m Rural Aerial Photos (2025) - Draft",
       "category": "Rural Aerial Photos",
