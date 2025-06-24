@@ -1,0 +1,102 @@
+name: Publish
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  check-vector-update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2 
+
+      - name: Check if topographic-v2.json changed
+        id: check_diff
+        run: |
+          if git diff --name-only HEAD^ HEAD | grep -q "^config/tileset/topographic.json$"; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+  publish-odr:
+    needs: check-vector-update
+    if: needs.check-vector-update.outputs.changed == 'true'
+    # if: needs.check-vector-update.outputs.changed == 'true' && github.ref == 'refs/heads/master' && github.event_name == 'push'
+    name: Publish ODR
+    runs-on: ubuntu-latest
+
+    environment:
+      name: prod
+
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - uses: linz/action-typescript@v3
+        with:
+          node-version: 20.x
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check if topographic-v2.json changed
+        id: check_diff
+        run: |
+          if git diff --name-only HEAD^ HEAD | grep -q "^config/tileset/topographic-v2.json$"; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
+
+      - name: Setup kubectl
+        uses: azure/setup-kubectl@v4
+        with:
+          version: 'latest'
+
+      - name: AWS Configure
+        uses: aws-actions/configure-aws-credentials@v4.0.1 # v4
+        with:
+          aws-region: ap-southeast-2
+          mask-aws-account-id: true
+          role-to-assume: ${{ secrets.AWS_ROLE_CI_TOPO_PROD }}
+
+      - name: Login to EKS
+        run: |
+          aws eks update-kubeconfig --name Workflows --region ap-southeast-2
+
+      - name: Check EKS connection
+        run: |
+          kubectl get nodes
+
+      - name: Install Argo
+        run: |
+          curl -sLO https://github.com/argoproj/argo-workflows/releases/download/v3.4.11/argo-linux-amd64.gz
+          gunzip argo-linux-amd64.gz
+          chmod +x argo-linux-amd64
+          ./argo-linux-amd64 version
+
+      - name: Submit Copy Workflow
+        run: |
+          mapfile -t modified_parameter_files < <(
+            jq -r '.layers[0] | to_entries[] 
+              | select(.key == "2193" or .key == "3857") 
+              | .value 
+              | sub("/topographic-v2.tar.co$"; "")' config/tileset/topographic-v2.json
+          )
+
+          for file in "${modified_parameter_files[@]}"; do
+            echo "File changed: $file"
+          done
+          
+          # for file in "${modified_parameter_files[@]}"; do
+          #   ./argo-linux-amd64 submit --wait --from wftmpl/copy -n argo -f "$file" -p aws_role_config_path="s3://linz-bucket-config/config-write.open-data-registry.json" -p exclude="collection.json$" --generate-name "publish-odr-file-copy-"
+          # done
