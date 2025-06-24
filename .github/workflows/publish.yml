@@ -27,13 +27,12 @@ jobs:
 
   publish-odr:
     needs: check-vector-update
-    if: needs.check-vector-update.outputs.changed == 'true'
-    # if: needs.check-vector-update.outputs.changed == 'true' && github.ref == 'refs/heads/master' && github.event_name == 'push'
+    if: needs.check-vector-update.outputs.changed == 'true' && github.ref == 'refs/heads/master' && github.event_name == 'push'
     name: Publish ODR
     runs-on: ubuntu-latest
 
     environment:
-      name: 'nonprod'
+      name: 'prod'
 
     permissions:
       id-token: write
@@ -101,9 +100,9 @@ jobs:
           for file in "${modified_parameter_files[@]}"; do
             # Set the target path based on the source file
             # i.e. source s3://linz-basemaps/vector/2193/topographic/01JYDG2VFBM0H057D3S4TB8GFP/ to target s3://nz-topography/vector/2193/
-            target=$(echo "$file" | sed -E 's|^s3://linz-basemaps/vector/|s3://linz-basemaps-staging/vector/|' | sed -E 's|/topographic/[^/]+/?$|/|')
+            target=$(echo "$file" | sed -E 's|^s3://linz-basemaps/vector/|s3://nz-topography/vector/|' | sed -E 's|/topographic/[^/]+/?$|/|')
             echo "Submitting Argo job: source=$file target=$target"
             
             # Submit the Argo workflow for each projection
-            ./argo-linux-amd64 submit --wait --from wftmpl/copy -n argo -p source="$file" -p target="$target" -p aws_role_config_path="s3://linz-bucket-config/config.basemaps.json" -p include="\.mbtiles?$|\.json$" --generate-name "publish-odr-file-copy-"
+            ./argo-linux-amd64 submit --wait --from wftmpl/copy -n argo -p source="$file" -p target="$target" -p aws_role_config_path="s3://linz-bucket-config/config-write.open-data-registry.json" -p include="\.mbtiles?$|\.json$" -p copy_option="--force" --generate-name "publish-odr-mbtiles-copy-"
           done
