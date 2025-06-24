@@ -11,18 +11,21 @@ jobs:
         with:
           fetch-depth: 2 
 
+      - name: Fetch master branch
+        run: git fetch origin master
+
       - name: Check if topographic-v2.json changed
         id: check_diff
         run: |
-          if git diff --name-only HEAD^ HEAD | grep -q "^config/tileset/topographic.json$"; then
-            echo "changed=true" >> $GITHUB_OUTPUT
+          if git diff --name-only origin/master HEAD | grep -F "config/tileset/topographic-v2.json"; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           else
-            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
 
   publish-odr:
     needs: check-vector-update
-    if: needs.check-vector-update.outputs.changed == 'true'
+    if: needs.check-vector-update.outputs.changed == true
     # if: needs.check-vector-update.outputs.changed == 'true' && github.ref == 'refs/heads/master' && github.event_name == 'push'
     name: Publish ODR
     runs-on: ubuntu-latest
@@ -47,9 +50,9 @@ jobs:
         id: check_diff
         run: |
           if git diff --name-only HEAD^ HEAD | grep -q "^config/tileset/topographic-v2.json$"; then
-            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           else
-            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Use Node.js 18.x
