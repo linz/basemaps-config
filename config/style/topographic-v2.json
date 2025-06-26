@@ -1359,19 +1359,19 @@
       "type": "fill"
     },
     {
-      "filter": ["all", ["==", "leisure", "shooting_ground"]],
+      "filter": ["all", ["==", "kind", "rifle_range"]],
       "id": "Poi-RifleRange-Fill",
       "paint": { "fill-color": "rgba(208, 208, 208, 0.85)" },
       "source": "LINZ Basemaps",
-      "source-layer": "pois",
+      "source-layer": "sites",
       "type": "fill"
     },
     {
-      "filter": ["all", ["==", "leisure", "shooting_ground"]],
+      "filter": ["all", ["==", "kind", "rifle_range"]],
       "id": "Poi-RifleRange-Outline",
       "paint": { "line-color": "rgba(55, 54, 54, 0.85)", "line-dasharray": [5, 3], "line-width": 1.5 },
       "source": "LINZ Basemaps",
-      "source-layer": "pois",
+      "source-layer": "sites",
       "type": "line"
     },
     {
@@ -2758,7 +2758,7 @@
       "type": "line"
     },
     {
-      "filter": ["all", ["==", "ford", true]],
+      "filter": ["all", ["==", "waterway", "ford"]],
       "id": "Transport-Fords",
       "minzoom": 12,
       "paint": {
@@ -2774,7 +2774,7 @@
         "circle-translate-anchor": "map"
       },
       "source": "LINZ Basemaps",
-      "source-layer": "streets",
+      "source-layer": "pois",
       "type": "circle"
     },
     {
@@ -3340,7 +3340,7 @@
       "type": "symbol"
     },
     {
-      "filter": ["all", ["==", "historic", "yes"]],
+      "filter": ["all", ["==", "historic", "site"]],
       "id": "Poi-Historic-Site",
       "layout": { "icon-image": "historic_site_pnt", "text-anchor": "left", "text-field": "{ref}", "text-font": ["Open Sans Regular"], "text-justify": "left", "text-offset": [1, 0], "text-size": 10 },
       "minzoom": 12,
@@ -3419,7 +3419,7 @@
       "type": "symbol"
     },
     {
-      "filter": ["all", ["==", "ladder", "yes"]],
+      "filter": ["all", ["==", "man_made", "ladder"]],
       "id": "Poi-Ladder-Pt",
       "layout": {
         "icon-image": "circle_pnt_fill",
@@ -3699,7 +3699,7 @@
       "type": "symbol"
     },
     {
-      "filter": ["all", ["==", "leisure", "shooting_ground"]],
+      "filter": ["all", ["==", "kind", "rifle_range"]],
       "id": "Poi-RifleRange-Label",
       "layout": {
         "icon-image": "rifle_range_pnt",
@@ -3722,7 +3722,7 @@
         }
       },
       "source": "LINZ Basemaps",
-      "source-layer": "pois",
+      "source-layer": "sites",
       "type": "symbol"
     },
     {
