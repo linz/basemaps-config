@@ -6,32 +6,32 @@
   "background": { "r": 208, "g": 231, "b": 244, "alpha": 255 },
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/topo250-new-zealand-mainland/01JF69Q9CYWT56GZTP4JJH05VT/",
-      "3857": "s3://linz-basemaps/3857/topo250-new-zealand-mainland/01JF69Q9HAP47K9ZQ16540067M/",
+      "2193": "s3://linz-basemaps/2193/topo250-new-zealand-mainland/01JYQM33JN8KC1BHBQJQ3KPHTA/",
+      "3857": "s3://linz-basemaps/3857/topo250-new-zealand-mainland/01JYQM33JNRP437FHNXJFVMKB3/",
       "name": "topo250-new-zealand-mainland",
       "title": "Topo250 NZ Mainland Gridless Maps",
       "maxZoom": 12,
       "category": "Topographic"
     },
     {
-      "2193": "s3://linz-basemaps/2193/topo250-chatham-island/01JF69NGMQ4Z0MC8EZ3SGGW7K6/",
-      "3857": "s3://linz-basemaps/3857/topo250-chatham-island/01JF69P0M5C3E7TDKY7GVF3VMZ/",
+      "2193": "s3://linz-basemaps/2193/topo250-chatham-islands/01JYQM3GFBNZPAP6HQ4W89JK49/",
+      "3857": "s3://linz-basemaps/3857/topo250-chatham-islands/01JYQM3GBZG1V36B7M9NYVJ594/",
       "name": "topo250-chatham-island",
       "title": "Topo250 Chatham Islands Gridless Maps",
       "maxZoom": 12,
       "category": "Topographic"
     },
     {
-      "2193": "s3://linz-basemaps/2193/topo50-new-zealand-mainland/01JF62DGS6157A44S0P4DCHWS1/",
-      "3857": "s3://linz-basemaps/3857/topo50-new-zealand-mainland/01JF62DGS5H679Q8JPWFXYXKHV/",
+      "2193": "s3://linz-basemaps/2193/topo50-new-zealand-mainland/01JYN5YPMQN00X5FW0X09NCTWB/",
+      "3857": "s3://linz-basemaps/3857/topo50-new-zealand-mainland/01JYN5YPMSNXNGTMEN8DWQ2FE8/",
       "name": "topo50-new-zealand-mainland",
       "title": "Topo50 NZ Mainland Gridless Maps",
       "minZoom": 13,
       "category": "Topographic"
     },
     {
-      "2193": "s3://linz-basemaps/2193/topo50-chatham-island/01JF62G92ZYDXDYZRHPHSDD6TC/",
-      "3857": "s3://linz-basemaps/3857/topo50-chatham-island/01JF62G939Z6W58QBNXCSM9MD0/",
+      "2193": "s3://linz-basemaps/2193/topo50-chatham-islands/01JYQFXWMY3YPVRZPYDR96W19J/",
+      "3857": "s3://linz-basemaps/3857/topo50-chatham-islands/01JYQFXWMVN3D8J6P73NFP1RRS/",
       "name": "topo50-chatham-island",
       "title": "Topo50 Chatham Islands Gridless Maps",
       "minZoom": 13,
