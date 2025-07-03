@@ -508,6 +508,13 @@
       "name": "canterbury_2020-2023_dem_1m",
       "title": "Canterbury LiDAR 1m DEM (2020-2025)",
       "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/auckland/auckland-part-2_2024/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/auckland-part-2_2024_dem_1m/01JZ6M3QG5A72HS1R6HJ20QHD0/",
+      "name": "auckland-part-2_2024_dem_1m",
+      "title": "Auckland Part 2 LiDAR 1m DEM (2024)",
+      "minZoom": 9
     }
   ],
   "outputs": [
