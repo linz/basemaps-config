@@ -276,14 +276,6 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/otago_rural_2019-2021_0-3m_RGB/01FKP9RXGA4EXSFWBGKHKVTPMT/",
-      "3857": "s3://linz-basemaps/3857/otago_rural_2019-2021_0-3m_RGB/01FKP9PAF9VNHC4FYGQRGHF593/",
-      "name": "otago-rural-2019-2021-0.3m",
-      "minZoom": 13,
-      "title": "Otago 0.3m Rural Aerial Photos (2019-2021)",
-      "category": "Rural Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/canterbury-waitaki_rural_2021_0-3m_RGB/01FQ07ZVQYC3M57D8N84WFM4F5/",
       "3857": "s3://linz-basemaps/3857/canterbury-waitaki_rural_2021_0-3m_RGB/01FQ07XS8GHPFS913PGY5P9010/",
       "name": "canterbury-waitaki-rural-2021-0.3m",
@@ -420,10 +412,10 @@
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/otago_2025_0.2m/01JYDESC3604H3G0NMMAC7RGB9/",
-      "3857": "s3://linz-basemaps/3857/otago_2025_0.2m/01JYDESC3CDX83A7K6HBW3PKM8/",
+      "2193": "s3://linz-basemaps/2193/otago_2025_0.2m/01JZ709B5XJ2H79FEM23KVVZY7/",
+      "3857": "s3://linz-basemaps/3857/otago_2025_0.2m/01JZ709B5SPG0N9QNGM3MRH416/",
       "name": "otago-2025-0.2m",
-      "title": "Otago 0.2m Rural Aerial Photos (2025) - Draft",
+      "title": "Otago 0.2m Rural Aerial Photos (2025)",
       "category": "Rural Aerial Photos",
       "minZoom": 13
     },
