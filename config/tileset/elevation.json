@@ -515,6 +515,13 @@
       "name": "auckland-part-2_2024_dem_1m",
       "title": "Auckland Part 2 LiDAR 1m DEM (2024)",
       "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/tasman/motueka-river-valley_2024/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/motueka-river-valley_2024_dem_1m/01JZH81FK0Z4BJ7EC7F3GGAYP4/",
+      "name": "motueka-river-valley_2024_dem_1m",
+      "title": "Tasman - Motueka River Valley LiDAR 1m DEM (2024)",
+      "minZoom": 9
     }
   ],
   "outputs": [
