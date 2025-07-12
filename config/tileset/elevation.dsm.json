@@ -502,6 +502,13 @@
       "name": "motueka-river-valley_2024_dsm_1m",
       "title": "Tasman - Motueka River Valley LiDAR 1m DSM (2024)",
       "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/bay-of-plenty/tauranga_2025/dsm_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/tauranga_2025_dsm_1m/01JZS60N7T7EARA5C0YA9NBY80/",
+      "name": "tauranga_2025_dsm_1m",
+      "title": "Bay of Plenty - Tauranga LiDAR 1m DSM (2025)",
+      "minZoom": 9
     }
   ],
   "outputs": [
