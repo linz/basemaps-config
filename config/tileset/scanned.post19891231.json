@@ -798,10 +798,10 @@
       "maxZoom": 32
     },
     {
-      "2193": "s3://linz-basemaps/2193/marlborough_sn12080_sn122206_1994-1996_0.4m/01JYG04W4TZ9WESXHGHM2F334F/",
-      "3857": "s3://linz-basemaps/3857/marlborough_sn12080_sn122206_1994-1996_0.4m/01JYG04W4SH2DHZMFKH6P9MQJ4/",
-      "name": "marlborough-sn12080-sn122206-1994-1996-0.4m",
-      "title": "Marlborough 0.4m SN12080 / SN122206 (1994-1996)",
+      "2193": "s3://linz-basemaps/2193/marlborough_sn12080_sn12265_1994-1996_0.4m/01JZ4J95DB8V4HZ0Q4N7P3NVPX/",
+      "3857": "s3://linz-basemaps/3857/marlborough_sn12080_sn12265_1994-1996_0.4m/01JZ4J95DBHQ3E7R7B7Z0SQPQ2/",
+      "name": "marlborough-sn12080-sn12265-1994-1996-0.4m",
+      "title": "Marlborough 0.4m SN12080 / SN12265 (1994-1996)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32
