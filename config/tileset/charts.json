@@ -7,6 +7,12 @@
       "3857": "s3://linz-basemaps-staging/3857/NZ14600-1/01K08KKD8B50XC4YHW2QQFMQC6/",
       "name": "NZ14600-1",
       "title": "NZ14600-1"
+    },
+    {
+      "3857": "s3://linz-basemaps-staging/3857/NZ64-1/01K08NXQ5GZHY6Q5DXXBSPWEBE/",
+      "name": "NZ64-1",
+      "title": "NZ64-1",
+      "minZoom": 7
     }
   ]
 }
