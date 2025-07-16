@@ -1,0 +1,12 @@
+{
+  "type": "raster",
+  "id": "ts_charts",
+  "title": "Charts",
+  "layers": [
+    {
+      "3857": "s3://linz-basemaps-staging/3857/NZ14600-1/01K08KKD8B50XC4YHW2QQFMQC6/",
+      "name": "NZ14600-1",
+      "title": "NZ14600-1"
+    }
+]
+}
