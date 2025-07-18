@@ -2,7 +2,12 @@
   "type": "raster",
   "id": "ts_auckland-2020-0.075m",
   "title": "Auckland 0.075m Rural Aerial Photos (2020)",
-  "background": "#00000000",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
   "category": "Rural Aerial Photos",
   "layers": [
     {
