@@ -100,14 +100,6 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/auckland_rural_2010-2012_0-50m_RGBA/01F66DT3ZBYZZM6R0AF9Q2989R/",
-      "3857": "s3://linz-basemaps/3857/auckland_rural_2010-2012_0-50m_RGBA/01ED81BNAX2ESPMV59YPC3AQ2C/",
-      "name": "auckland-rural-2010-2012-0.5m",
-      "minZoom": 13,
-      "title": "Auckland 0.5m Rural Aerial Photos (2010-2012)",
-      "category": "Rural Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/canterbury_rural_2013-2014_0-40m_RGBA/01F66E9VVX07WFC1C5Y05S4JXM/",
       "3857": "s3://linz-basemaps/3857/canterbury_rural_2013-2014_0-40m_RGBA/01ED81YFYF0D76RZRH9FHF7JDN/",
       "name": "canterbury-rural-2013-2014-0.4m",
@@ -468,14 +460,6 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/auckland_urban_2017_0-075m/01F66DXCRR1CFTFQTE5R3525EJ/",
-      "3857": "s3://linz-basemaps/3857/auckland_urban_2017_0-075m/01ED81HZRR86YBB8A0ZQRABP96/",
-      "name": "auckland-urban-2017-0.075m",
-      "minZoom": 14,
-      "title": "Auckland 0.075m Urban Aerial Photos (2017)",
-      "category": "Urban Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/kapiti-coast_urban_2021_0-075m_RGB/01FC1XYXHBADGNDYM36SH8D1XY/",
       "3857": "s3://linz-basemaps/3857/kapiti-coast_urban_2021_0-075m_RGB/01FC1Y20KQZQDJESGSR97G9SSW/",
       "name": "kapiti-coast-urban-2021-0.075m",
@@ -690,22 +674,6 @@
       "title": "Queenstown Lakes 0.1m Urban Aerial Photos (2022-2023)",
       "minZoom": 14,
       "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/auckland_rural_2020_0-075m_RGB/01G4XPNP9JTGGPABCFRWC4N21E/",
-      "3857": "s3://linz-basemaps/3857/auckland_rural_2020_0-075m_RGB/01G4XPQKF6VB9SXCQ93R2XC1W8/",
-      "name": "auckland-rural-2020-0.075m",
-      "minZoom": 13,
-      "title": "Auckland 0.075m Rural Aerial Photos (2020)",
-      "category": "Rural Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/auckland_rural_2022_0-075m_RGB/01G6HJ9S4PGK6MTVEZWWHV56QN/",
-      "3857": "s3://linz-basemaps/3857/auckland_rural_2022_0-075m_RGB/01G6HJBFJRBKJ7FQPHVRACKMNQ/",
-      "name": "auckland-rural-2022-0.075m",
-      "minZoom": 13,
-      "title": "Auckland 0.075m Rural Aerial Photos (2022)",
-      "category": "Rural Aerial Photos"
     },
     {
       "2193": "s3://linz-basemaps/2193/waikato_2021-2023_0.3m/01J72H91TQJSWDZ3SH6BZNH72X/",
