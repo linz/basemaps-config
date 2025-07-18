@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_auckland_2010-2012_0.50m",
+  "title": "Auckland 0.5m Rural Aerial Photos (2010-2012)",
+  "background": "#00000000",
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/auckland_rural_2010-2012_0-50m_RGBA/01F66DT3ZBYZZM6R0AF9Q2989R/",
+      "3857": "s3://linz-basemaps/3857/auckland_rural_2010-2012_0-50m_RGBA/01ED81BNAX2ESPMV59YPC3AQ2C/",
+      "name": "auckland_2010-2012_0.50m",
+      "title": "Auckland 0.5m Rural Aerial Photos (2010-2012)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
