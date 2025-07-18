@@ -2,7 +2,12 @@
   "type": "raster",
   "id": "ts_auckland_2010-2012_0.50m",
   "title": "Auckland 0.5m Rural Aerial Photos (2010-2012)",
-  "background": "#00000000",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
   "category": "Rural Aerial Photos",
   "layers": [
     {
