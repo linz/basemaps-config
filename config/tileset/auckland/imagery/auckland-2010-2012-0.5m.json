@@ -1,6 +1,6 @@
 {
   "type": "raster",
-  "id": "ts-auckland-2010-2012-0.5m",
+  "id": "ts_auckland-2010-2012-0.5m",
   "title": "Auckland 0.5m Rural Aerial Photos (2010-2012)",
   "background": {
     "r": 0,
