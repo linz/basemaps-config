@@ -3,6 +3,12 @@
   "id": "st_labels-v2",
   "layers": [
     {
+      "id": "Aerial-Imagery",
+      "layout": { "visibility": "visible" },
+      "source": "LINZ-Imagery",
+      "type": "raster"
+    },
+    {
       "filter": ["none", ["==", "parcel_intent", "Road"], ["==", "parcel_intent", "Hydro"]],
       "id": "Parcels-Ln-Shadow",
       "layout": { "visibility": "visible" },
@@ -1544,7 +1550,14 @@
     "sky-horizon-blend": 0.5
   },
   "sources": {
-    "LINZ Basemaps": { "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0", "type": "vector", "url": "/v1/tiles/topographic-v2/{tileMatrix}/tile.json" }
+    "LINZ Basemaps": { "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0", "type": "vector", "url": "/v1/tiles/topographic-v2/{tileMatrix}/tile.json" },
+    "LINZ-Imagery": {
+      "maxzoom": 28,
+      "minzoom": 0,
+      "tileSize": 256,
+      "tiles": ["/v1/tiles/aerial/{tileMatrix}/{z}/{x}/{y}.webp"],
+      "type": "raster"
+    }
   },
   "sprite": "/v1/sprites/topographic",
   "version": 8
