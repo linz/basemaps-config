@@ -2,8 +2,8 @@
   "id": "ts_hillshade_dsm",
   "name": "hillshade-dsm",
   "type": "raster",
-  "description": "New Zealand Dsm Hillshade Standard",
-  "title": "Hillshade Standard Dsm",
+  "description": "New Zealand DSM Hillshade Standard",
+  "title": "Hillshade Standard DSM",
   "category": "Elevation",
   "layers": [
     {

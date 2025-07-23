@@ -2,8 +2,8 @@
   "id": "ts_hillshade-igor-dsm",
   "name": "hillshade-igor-dsm",
   "type": "raster",
-  "description": "New Zealand Dsm Hillshade Igor",
-  "title": "Hillshade Igor Dsm",
+  "description": "New Zealand DSM Hillshade Igor",
+  "title": "Hillshade Igor DSM",
   "category": "Elevation",
   "layers": [
     {
