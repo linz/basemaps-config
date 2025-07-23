@@ -15,7 +15,7 @@
     },
     {
       "2193": "s3://nz-elevation/new-zealand/new-zealand/dem-hillshade/2193/",
-      "3857": "s3://linz-basemaps/3857/new-zealand/01K0R2M5VDTDZYPQH2EZNTERMR/",
+      "3857": "s3://linz-basemaps/3857/new-zealand/01K0TGPNGGKMR733S08AGVQ1J5/",
       "title": "New Zealand DEM Hillshade",
       "name": "new-zealand_dem_hillshade",
       "minZoom": 11
