@@ -540,14 +540,6 @@
       "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/masterton_urban_2021_0-075m_RGB/01FCYQ2P6RB18BWV5B8WTDGX4R/",
-      "3857": "s3://linz-basemaps/3857/masterton_urban_2021_0-075m_RGB/01FCYQ5JV710MS355E84P574DV/",
-      "name": "masterton-urban-2021-0.075m",
-      "minZoom": 14,
-      "title": "Masterton 0.075m Urban Aerial Photos (2021)",
-      "category": "Urban Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/rangitikei_urban_2021_0-125m_RGB/01FGT7KFSVPEX2RPW5PKN3XCAE/",
       "3857": "s3://linz-basemaps/3857/rangitikei_urban_2021_0-125m_RGB/01FGT7MAMPX1EPKW678BP3YWGQ/",
       "name": "rangitikei-urban-2021-0.125m",
@@ -945,6 +937,14 @@
       "3857": "s3://linz-basemaps/3857/upper-hutt_2025_0.075m/01K0TGPNGH0C105PQTEFQG4QH6/",
       "name": "upper-hutt-2025-0.075m",
       "title": "Upper Hutt 0.075m Urban Aerial Photos (2025)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 14
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/masterton_2025_0.075m/01K0XA50T2GFPNTG1PANZJ3R8B/",
+      "3857": "s3://linz-basemaps/3857/masterton_2025_0.075m/01K0XA50T2MC43751EX6M8QDXK/",
+      "name": "masterton-2025-0.075m",
+      "title": "Masterton 0.075m Urban Aerial Photos (2025)",
       "category": "Urban Aerial Photos",
       "minZoom": 14
     },
