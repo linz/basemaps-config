@@ -364,14 +364,6 @@
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/canterbury_2023_0.3m/01HFASC66T0ARNZK91N4XNM42Z/",
-      "3857": "s3://linz-basemaps/3857/canterbury_2023_0.3m/01HFART8DDXKKGVM10S859K4WQ/",
-      "name": "canterbury-2023-0.3m",
-      "title": "Canterbury 0.3m Rural Aerial Photos (2023)",
-      "category": "Rural Aerial Photos",
-      "minZoom": 13
-    },
-    {
       "2193": "s3://linz-basemaps/2193/waimakariri_2024_0.25m/01J1RESR6CDNEHH4A2DXTP1G0X/",
       "3857": "s3://linz-basemaps/3857/waimakariri_2024_0.25m/01J1RESR6C1MNR0A8SH34PKHAF/",
       "name": "waimakariri_2024_0.25m",
