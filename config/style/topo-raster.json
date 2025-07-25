@@ -11,12 +11,24 @@
       "id": "Hillshade",
       "layout": { "visibility": "visible" },
       "paint": {
-        "hillshade-accent-color": ["interpolate", ["linear"], ["zoom"], 0, "#64646400", 3, "#64646466", 10, "#64646455", 11, "#64646444"],
+        "hillshade-accent-color": ["interpolate", ["linear"], ["zoom"], 0, "rgb(100, 100, 100)", 3, "rgba(100, 100, 100, 0.400)", 10, "rgba(100, 100, 100, 0.333)", 11, "rgba(100, 100, 100, 0.267)"],
         "hillshade-exaggeration": 0.4,
-        "hillshade-highlight-color": ["interpolate", ["linear"], ["zoom"], 0, "#e1e5e000", 3, "#e1e5e066", 10, "#e1e5e055", 11, "#e1e5e011"],
+        "hillshade-highlight-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "rgb(225, 229, 224)",
+          3,
+          "rgba(225, 229, 224, 0.400)",
+          10,
+          "rgba(225, 229, 224, 0.333)",
+          11,
+          "rgba(225, 229, 224, 0.0667)"
+        ],
         "hillshade-illumination-anchor": "map",
         "hillshade-illumination-direction": 315,
-        "hillshade-shadow-color": ["interpolate", ["linear"], ["zoom"], 0, "#0c0c0c00", 3, "#0c0c0c66", 10, "#0c0c0c66", 16, "#0c0c0cff"]
+        "hillshade-shadow-color": ["interpolate", ["linear"], ["zoom"], 0, "rgb(12, 12, 12)", 3, "rgba(12, 12, 12, 0.400)", 10, "rgba(12, 12, 12, 0.400)", 16, "rgba(12, 12, 12, 1.00)"]
       },
       "source": "LINZ-Elevation-Hillshade",
       "type": "hillshade"
