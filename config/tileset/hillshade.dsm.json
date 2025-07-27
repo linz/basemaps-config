@@ -1,5 +1,5 @@
 {
-  "id": "ts_hillshade_dsm",
+  "id": "ts_hillshade-dsm",
   "name": "hillshade-dsm",
   "type": "raster",
   "description": "New Zealand DSM Hillshade Standard",
