@@ -7,8 +7,8 @@
   "category": "Elevation",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/3857/new-zealand/01K0N5VVCN4YW6R7R8QSASPCSB/",
-      "3857": "s3://linz-basemaps/2193/new-zealand/01K0N5W9YGX6P1X1KG1BRF4014/",
+      "2193": "s3://linz-basemaps/2193/new-zealand/01K0N5W9YGX6P1X1KG1BRF4014/",
+      "3857": "s3://linz-basemaps/3857/new-zealand/01K0N5VVCN4YW6R7R8QSASPCSB/",
       "title": "New Zealand DSM Hillshade Igor Overview",
       "name": "new-zealand_dsm_hillshade_igor_overview",
       "maxZoom": 10
