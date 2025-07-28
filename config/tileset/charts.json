@@ -4,13 +4,13 @@
   "title": "Charts",
   "layers": [
     {
-      "2193": "s3://linz-basemaps-staging/2193/NZ14065-1/01K0R22VRE39XXZEGSEJPN1JY7/",
+      "2193": "s3://linz-basemaps-staging/2193/NZ14065-1/01K19F3QTJW70KFSWRMVM68PR5/",
       "3857": "s3://linz-basemaps-staging/3857/NZ14065-1/01K19CK254CEKYEH3VW3YGXW7H/",
       "name": "NZ14065-1",
       "title": "NZ14065-1"
     },
     {
-      "2193": "s3://linz-basemaps-staging/2193/NZ14600-1/01K0R27G05MTZV8215MC6QMEV1/",
+      "2193": "s3://linz-basemaps-staging/2193/NZ14600-1/01K19F40ASHKTB4D2BQSNZKCAH/",
       "3857": "s3://linz-basemaps-staging/3857/NZ14600-1/01K19CHNW4V9AMRNJCEZFN089F/",
       "name": "NZ14600-1",
       "title": "NZ14600-1",
