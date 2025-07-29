@@ -1,0 +1,41 @@
+{
+  "id": "ts_hillshade-igor-dsm",
+  "name": "hillshade-igor-dsm",
+  "type": "raster",
+  "description": "New Zealand DSM Hillshade Igor",
+  "title": "Hillshade Igor DSM",
+  "category": "Elevation",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/new-zealand/01K0N5W9YGX6P1X1KG1BRF4014/",
+      "3857": "s3://linz-basemaps/3857/new-zealand/01K0N5VVCN4YW6R7R8QSASPCSB/",
+      "title": "New Zealand DSM Hillshade Igor Overview",
+      "name": "new-zealand_dsm_hillshade_igor_overview",
+      "maxZoom": 10
+    },
+    {
+      "2193": "s3://nz-elevation/new-zealand/new-zealand/dsm-hillshade-igor/2193/",
+      "3857": "s3://linz-basemaps/3857/new-zealand/01K0QB7KHJZB0QA4G5A6C4057N/",
+      "title": "New Zealand DSM Hillshade Igor",
+      "name": "new-zealand_dsm_hillshade_igor",
+      "minZoom": 11
+    }
+  ],
+  "outputs": [
+    {
+      "title": "Color ramp",
+      "name": "color-ramp",
+      "pipeline": [
+        {
+          "type": "color-ramp"
+        }
+      ],
+      "background": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "alpha": 1
+      }
+    }
+  ]
+}
