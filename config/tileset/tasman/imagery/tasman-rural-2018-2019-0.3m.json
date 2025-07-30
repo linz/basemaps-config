@@ -14,7 +14,7 @@
     {
       "2193": "s3://linz-basemaps/2193/tasman_rural_2018-19_0-3m/01F6P1VDEYFR0XB5XJMN9X6V1C/",
       "3857": "s3://linz-basemaps/3857/tasman_rural_2018-19_0-3m/01ED83DSMR8N1FQFVXM8JASBV2/",
-      "name": "tasman-2018-2019-0.3m",
+      "name": "tasman-rural-2018-2019-0.3m",
       "title": "Tasman 0.3m Rural Aerial Photos (2018-2019)",
       "category": "Rural Aerial Photos",
       "minZoom": 0,
