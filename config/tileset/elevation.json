@@ -420,9 +420,9 @@
     },
     {
       "2193": "s3://nz-elevation/west-coast/west-coast_2020-2022/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/west-coast_2020-2022_dem_1m/01JMXGBCN11AXVEE0C6J188EGC/",
+      "3857": "s3://linz-basemaps/elevation/3857/west-coast_2020-2022_dem_1m/01K1H4QT6DMA8HTZSQTNR8ANPR/",
       "name": "west-coast_2020-2022_dem_1m",
-      "title": "West Coast LiDAR 1m DEM (2020-2024) - Draft",
+      "title": "West Coast LiDAR 1m DEM (2020-2024)",
       "minZoom": 9
     },
     {
