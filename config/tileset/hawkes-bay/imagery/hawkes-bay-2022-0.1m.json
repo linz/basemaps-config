@@ -8,7 +8,7 @@
     {
       "2193": "s3://linz-basemaps/2193/hawkes-bay_urban_2022_0.1m_RGB/01GD1TW8AFTNCGHNG97P9MDFYZ/",
       "3857": "s3://linz-basemaps/3857/hawkes-bay_urban_2022_0.1m_RGB/01GD1TXCTKWJ2TKJR8ZVKNA546/",
-      "name": "hawkes-bay-2022-0.1m",
+      "name": "hawkes-bay-urban-2022-0.1m",
       "title": "Hawke's Bay 0.1m Urban Aerial Photos (2022)",
       "category": "Urban Aerial Photos",
       "minZoom": 0,
