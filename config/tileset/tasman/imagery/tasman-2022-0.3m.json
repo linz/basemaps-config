@@ -10,11 +10,12 @@
     "alpha": 0
   },
   "category": "Rural Aerial Photos",
+  "aliases": ["tasman-rural-2022-0.3m"],
   "layers": [
     {
       "2193": "s3://linz-basemaps/2193/tasman_rural_2022_0-3m_RGB/01G75YD43EBA980HFWVF6ZFV6B/",
       "3857": "s3://linz-basemaps/3857/tasman_rural_2022_0-3m_RGB/01G75YDG4KFEZ5BAGTPHMEAPP7/",
-      "name": "tasman-rural-2022-0.3m",
+      "name": "tasman-2022-0.3m",
       "title": "Tasman 0.3m Rural Aerial Photos (2022)",
       "category": "Rural Aerial Photos",
       "minZoom": 0,

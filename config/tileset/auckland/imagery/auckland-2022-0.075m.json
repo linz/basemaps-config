@@ -10,11 +10,12 @@
     "alpha": 0
   },
   "category": "Rural Aerial Photos",
+  "aliases": ["auckland-rural-2022-0.075m"],
   "layers": [
     {
       "2193": "s3://linz-basemaps/2193/auckland_rural_2022_0-075m_RGB/01G6HJ9S4PGK6MTVEZWWHV56QN/",
       "3857": "s3://linz-basemaps/3857/auckland_rural_2022_0-075m_RGB/01G6HJBFJRBKJ7FQPHVRACKMNQ/",
-      "name": "auckland-rural-2022-0.075m",
+      "name": "auckland-2022-0.075m",
       "title": "Auckland 0.075m Rural Aerial Photos (2022)",
       "category": "Rural Aerial Photos",
       "minZoom": 0,
