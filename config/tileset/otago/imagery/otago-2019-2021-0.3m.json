@@ -4,6 +4,7 @@
   "title": "Otago 0.3m Rural Aerial Photos (2019-2021)",
   "background": "#00000000",
   "category": "Rural Aerial Photos",
+  "aliases": ["otago-rural-2019-2021-0.3m"],
   "layers": [
     {
       "2193": "s3://linz-basemaps/2193/otago_rural_2019-2021_0-3m_RGB/01FKP9RXGA4EXSFWBGKHKVTPMT/",
