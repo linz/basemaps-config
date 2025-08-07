@@ -5059,7 +5059,7 @@
       "id": "Place-Label-Lake",
       "layout": {
         "text-field": "{label}",
-        "text-font": ["Open Sans Regular"],
+        "text-font": ["Open Sans Bold Italic"],
         "text-max-width": 4,
         "text-size": 10,
         "visibility": "visible"
@@ -5067,7 +5067,7 @@
       "minzoom": 7,
       "paint": {
         "text-color": "rgba(0, 140, 204, 1)",
-        "text-halo-color": "rgba(255, 252, 252, 0.5)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
         "text-halo-width": 1
       },
       "source": "LINZ Basemaps",
@@ -5079,13 +5079,41 @@
       "id": "Place-Label-Bay",
       "layout": {
         "text-field": "{label}",
-        "text-font": ["Open Sans Regular"],
+        "text-font": ["Open Sans Medium"],
         "text-max-width": 4,
         "text-size": 10,
         "visibility": "visible"
       },
+      "minzoom": 10,
       "paint": {
         "text-color": "rgba(0, 140, 204, 1)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
+        "text-halo-width": 1
+      },
+      "source": "LINZ Basemaps",
+      "source-layer": "place_labels",
+      "type": "symbol"
+    },
+    {
+      "filter": ["all", ["in", "natural", "peak", "cape", "peninsula"], ["in", "admin_level", 6, 7, 8, 9, 10, 11, 12]],
+      "id": "Place-Symbol-Peak-12",
+      "layout": {
+        "icon-image": "triangle_pnt_fill",
+        "icon-size": 0.35,
+        "text-anchor": "left",
+        "text-field": "",
+        "text-font": ["Open Sans Bold"],
+        "text-justify": "left",
+        "text-max-width": 4,
+        "text-offset": [0.5, 0],
+        "text-size": 10,
+        "visibility": "visible"
+      },
+      "maxzoom": 12,
+      "minzoom": 10,
+      "paint": {
+        "icon-color": "rgba(61, 162, 86, 1)",
+        "text-color": "rgba(41, 90, 55, 1)",
         "text-halo-color": "rgba(255, 252, 252, 0.5)",
         "text-halo-width": 1
       },
@@ -5099,21 +5127,23 @@
       "layout": {
         "icon-image": "triangle_pnt_fill",
         "icon-size": 0.5,
+        "text-allow-overlap": false,
         "text-anchor": "left",
         "text-field": "{label}",
-        "text-font": ["Open Sans Bold"],
+        "text-font": ["Open Sans Medium"],
         "text-justify": "left",
         "text-max-width": 4,
         "text-offset": [0.5, 0],
+        "text-optional": true,
         "text-size": 11,
         "visibility": "visible"
       },
       "maxzoom": 16,
-      "minzoom": 8,
+      "minzoom": 12,
       "paint": {
         "icon-color": "rgba(61, 162, 86, 1)",
         "text-color": "rgba(41, 90, 55, 1)",
-        "text-halo-color": "rgba(255, 252, 252, 0.5)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
         "text-halo-width": 1
       },
       "source": "LINZ Basemaps",
@@ -5133,8 +5163,8 @@
       "minzoom": 11,
       "paint": {
         "text-color": "rgba(0, 0, 0, 1)",
-        "text-halo-color": "rgba(255, 252, 252, 0.5)",
-        "text-halo-width": 3
+        "text-halo-color": "rgba(255, 252, 252, 1)",
+        "text-halo-width": 2
       },
       "source": "LINZ Basemaps",
       "source-layer": "place_labels",
@@ -5145,16 +5175,17 @@
       "id": "Place-Label-Locality",
       "layout": {
         "text-field": "{label}",
-        "text-font": ["Open Sans Regular"],
+        "text-font": ["Open Sans Medium"],
         "text-max-width": 4,
         "text-size": 11,
         "visibility": "visible"
       },
       "maxzoom": 15,
+      "minzoom": 9,
       "paint": {
         "text-color": "rgba(0, 0, 0, 1)",
-        "text-halo-color": "rgba(255, 252, 252, .5)",
-        "text-halo-width": 3
+        "text-halo-color": "rgba(255, 252, 252, 1)",
+        "text-halo-width": 2
       },
       "source": "LINZ Basemaps",
       "source-layer": "place_labels",
@@ -5165,7 +5196,7 @@
       "id": "Place-Label-Town",
       "layout": {
         "text-field": "{label}",
-        "text-font": ["Open Sans Regular"],
+        "text-font": ["Open Sans Medium"],
         "text-max-width": 4,
         "text-size": 12,
         "visibility": "visible"
@@ -5174,7 +5205,7 @@
       "minzoom": 7,
       "paint": {
         "text-color": "rgba(0, 0, 0, 1)",
-        "text-halo-color": "rgba(255, 252, 252, 0.75)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
         "text-halo-width": 1.5
       },
       "source": "LINZ Basemaps",
@@ -5224,7 +5255,7 @@
       "type": "symbol"
     },
     {
-      "filter": ["any", ["in", "natural", "bay"], ["in", "water", "bay", "lagoon", "seamount", "sea", "searidge", "seachannel", "seacanyon"]],
+      "filter": ["any", ["in", "water", "seamount", "sea", "searidge", "seachannel", "seacanyon"]],
       "id": "Place-Label-Sea",
       "layout": {
         "text-field": "{label}",
@@ -5235,8 +5266,8 @@
       },
       "paint": {
         "text-color": "rgba(0, 140, 204, 1)",
-        "text-halo-color": "rgba(255, 252, 252, 0.5)",
-        "text-halo-width": 1
+        "text-halo-color": "rgba(255, 252, 252, 1)",
+        "text-halo-width": 1.5
       },
       "source": "LINZ Basemaps",
       "source-layer": "place_labels",
@@ -5253,10 +5284,11 @@
         "visibility": "visible"
       },
       "maxzoom": 7,
+      "minzoom": 6,
       "paint": {
         "text-color": "rgba(0, 140, 204, 1)",
-        "text-halo-color": "rgba(255, 252, 252, 0.5)",
-        "text-halo-width": 1
+        "text-halo-color": "rgba(255, 252, 252, 1)",
+        "text-halo-width": 1.5
       },
       "source": "LINZ Basemaps",
       "source-layer": "place_labels",
@@ -5266,6 +5298,7 @@
       "filter": ["all", ["==", "place", "city"], ["in", "admin_level", 6]],
       "id": "Place-Label-City-7",
       "layout": {
+        "text-allow-overlap": false,
         "text-field": "{label}",
         "text-font": ["Open Sans Bold"],
         "text-max-width": 4,
@@ -5283,7 +5316,7 @@
       "type": "symbol"
     },
     {
-      "filter": ["all", ["in", "place", "island", "archipelago"], ["in", "admin_level", 2, 3, 4]],
+      "filter": ["all", ["in", "place", "island", "archipelago"], ["in", "admin_level", 3, 4]],
       "id": "Place-Label-Island-8",
       "layout": {
         "text-field": "{label}",
@@ -5293,6 +5326,28 @@
         "visibility": "visible"
       },
       "maxzoom": 8,
+      "minzoom": 6,
+      "paint": {
+        "text-color": "rgba(0, 0, 0, 1)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
+        "text-halo-width": 2
+      },
+      "source": "LINZ Basemaps",
+      "source-layer": "place_labels",
+      "type": "symbol"
+    },
+    {
+      "filter": ["all", ["in", "place", "island", "archipelago"], ["in", "admin_level", 2, 3, 4]],
+      "id": "Place-Label-Island-6",
+      "layout": {
+        "text-field": "{label}",
+        "text-font": ["Open Sans Bold"],
+        "text-max-width": 7,
+        "text-size": 14,
+        "visibility": "visible"
+      },
+      "maxzoom": 6,
+      "minzoom": 4,
       "paint": {
         "text-color": "rgba(0, 0, 0, 1)",
         "text-halo-color": "rgba(255, 252, 252, 1)",
@@ -5304,25 +5359,47 @@
     },
     {
       "filter": ["all", ["in", "natural", "peak", "cape", "peninsula"], ["in", "admin_level", 6, 8]],
-      "id": "Place-Label-Peak-10",
+      "id": "Place-Label-Peak-11",
       "layout": {
         "icon-image": "triangle_pnt_fill",
         "icon-size": 0.5,
+        "text-allow-overlap": true,
         "text-anchor": "left",
         "text-field": "{label}",
-        "text-font": ["Open Sans Medium"],
+        "text-font": ["Open Sans Bold"],
         "text-justify": "left",
         "text-max-width": 4,
         "text-offset": [0.5, 0],
         "text-size": 11,
         "visibility": "visible"
       },
-      "maxzoom": 10,
+      "maxzoom": 14,
       "paint": {
         "icon-color": "rgba(61, 162, 86, 1)",
         "text-color": "rgba(41, 90, 55, 1)",
-        "text-halo-color": "rgba(255, 252, 252, 0.5)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
         "text-halo-width": 1
+      },
+      "source": "LINZ Basemaps",
+      "source-layer": "place_labels",
+      "type": "symbol"
+    },
+    {
+      "filter": ["all", ["in", "place", "archipelago"], ["in", "admin_level", 2]],
+      "id": "Place-Label-Island-4",
+      "layout": {
+        "text-field": "{label}",
+        "text-font": ["Open Sans Bold"],
+        "text-max-width": 4,
+        "text-size": 14,
+        "visibility": "visible"
+      },
+      "maxzoom": 4,
+      "minzoom": 0,
+      "paint": {
+        "text-color": "rgba(0, 0, 0, 1)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
+        "text-halo-width": 2
       },
       "source": "LINZ Basemaps",
       "source-layer": "place_labels",
