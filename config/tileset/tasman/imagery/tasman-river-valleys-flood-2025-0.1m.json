@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_tasman-river-valleys-flood-2025-0.1m",
+  "name": "tasman-river-valleys-flood-2025-0.1m",
+  "title": "Tasman River Valleys Flood 0.1m Aerial Photos (2025)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Event",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/tasman-river-valleys-flood_2025_0.1m/01K1H4WD43G4AG2PBQQMR5ZM4J/",
+      "3857": "s3://linz-basemaps/3857/tasman-river-valleys-flood_2025_0.1m/01K1H4WXMGJPWRB4H3F3GXEKBF/",
+      "name": "tasman-river-valleys-flood-2025-0.1m",
+      "title": "Tasman River Valleys Flood 0.1m Aerial Photos (2025)",
+      "category": "Event",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

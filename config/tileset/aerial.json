@@ -364,14 +364,6 @@
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/canterbury_2023_0.3m/01HFASC66T0ARNZK91N4XNM42Z/",
-      "3857": "s3://linz-basemaps/3857/canterbury_2023_0.3m/01HFART8DDXKKGVM10S859K4WQ/",
-      "name": "canterbury-2023-0.3m",
-      "title": "Canterbury 0.3m Rural Aerial Photos (2023)",
-      "category": "Rural Aerial Photos",
-      "minZoom": 13
-    },
-    {
       "2193": "s3://linz-basemaps/2193/waimakariri_2024_0.25m/01J1RESR6CDNEHH4A2DXTP1G0X/",
       "3857": "s3://linz-basemaps/3857/waimakariri_2024_0.25m/01J1RESR6C1MNR0A8SH34PKHAF/",
       "name": "waimakariri_2024_0.25m",
@@ -440,6 +432,14 @@
       "3857": "s3://linz-basemaps/3857/tasman_2024-2025_0.25m/01JXZX6A838F5MQ2RWF9NJFPKM/",
       "name": "tasman-2024-2025-0.25m",
       "title": "Tasman 0.25m Rural Aerial Photos (2024-2025)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 13
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/canterbury_2025_0.25m/01K0Z8EFGEDT8KT0YCW26DRKTW/",
+      "3857": "s3://linz-basemaps/3857/canterbury_2025_0.25m/01K0Z8EFGNE9GE64BEFYYN6SPT/",
+      "name": "canterbury-2025-0.25m",
+      "title": "Canterbury 0.25m Rural Aerial Photos (2025) - Draft",
       "category": "Rural Aerial Photos",
       "minZoom": 13
     },
@@ -537,30 +537,6 @@
       "name": "south-wairarapa-urban-2021-0.075m",
       "minZoom": 14,
       "title": "South Wairarapa 0.075m Urban Aerial Photos (2021)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/masterton_urban_2021_0-075m_RGB/01FCYQ2P6RB18BWV5B8WTDGX4R/",
-      "3857": "s3://linz-basemaps/3857/masterton_urban_2021_0-075m_RGB/01FCYQ5JV710MS355E84P574DV/",
-      "name": "masterton-urban-2021-0.075m",
-      "minZoom": 14,
-      "title": "Masterton 0.075m Urban Aerial Photos (2021)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/hutt-city_urban_2021_0-075m_RGB/01FFGK6PT74ZGK3VFX3PY50S0S/",
-      "3857": "s3://linz-basemaps/3857/hutt-city_urban_2021_0-075m_RGB/01FFGK7ZHHJ4SCYWMET8J4K3J1/",
-      "name": "hutt-city-urban-2021-0.075m",
-      "minZoom": 14,
-      "title": "Hutt City 0.075m Urban Aerial Photos (2021)",
-      "category": "Urban Aerial Photos"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/upper-hutt_urban_2021_0-075m_RGB/01FFH545V69N2SC5K4PSH7VZCV/",
-      "3857": "s3://linz-basemaps/3857/upper-hutt_urban_2021_0-075m_RGB/01FFH51T317TVK35J75ZRZV0PN/",
-      "name": "upper-hutt-urban-2021-0.075m",
-      "minZoom": 14,
-      "title": "Upper Hutt 0.075m Urban Aerial Photos (2021)",
       "category": "Urban Aerial Photos"
     },
     {
@@ -945,6 +921,30 @@
       "3857": "s3://linz-basemaps/3857/grey_2025_0.075m/01JZVMA8FQV0MPPVBNBNZC6G3M/",
       "name": "grey-2025-0.075m",
       "title": "Grey 0.075m Urban Aerial Photos (2025) - Draft",
+      "category": "Urban Aerial Photos",
+      "minZoom": 14
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/hutt-city_2025_0.075m/01K0NJPBRWFS8APGA652RQWRPB/",
+      "3857": "s3://linz-basemaps/3857/hutt-city_2025_0.075m/01K0NJPC6103C1ZBPKMH0Q3YMB/",
+      "name": "hutt-city-2025-0.075m",
+      "title": "Hutt City 0.075m Urban Aerial Photos (2025)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 14
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/upper-hutt_2025_0.075m/01K0TGPNGH1R7F8G5EYWHHSGD1/",
+      "3857": "s3://linz-basemaps/3857/upper-hutt_2025_0.075m/01K0TGPNGH0C105PQTEFQG4QH6/",
+      "name": "upper-hutt-2025-0.075m",
+      "title": "Upper Hutt 0.075m Urban Aerial Photos (2025)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 14
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/masterton_2025_0.075m/01K0XA50T2GFPNTG1PANZJ3R8B/",
+      "3857": "s3://linz-basemaps/3857/masterton_2025_0.075m/01K0XA50T2MC43751EX6M8QDXK/",
+      "name": "masterton-2025-0.075m",
+      "title": "Masterton 0.075m Urban Aerial Photos (2025)",
       "category": "Urban Aerial Photos",
       "minZoom": 14
     },

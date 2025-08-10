@@ -9,6 +9,7 @@
     "alpha": 0
   },
   "category": "Urban Aerial Photos",
+  "aliases": ["auckland-urban-2017-0.075m"],
   "layers": [
     {
       "2193": "s3://linz-basemaps/2193/auckland_urban_2017_0-075m/01F66DXCRR1CFTFQTE5R3525EJ/",

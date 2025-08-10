@@ -10,6 +10,7 @@
     "alpha": 0
   },
   "category": "Rural Aerial Photos",
+  "aliases": ["bay-of-plenty-rural-2021-0.2m"],
   "layers": [
     {
       "2193": "s3://linz-basemaps/2193/bay-of-plenty_rural_2021_0-2m/01H3E4XFK8N1JYJCM8BHDQAJPQ/",

@@ -1,0 +1,41 @@
+{
+  "id": "ts_hillshade-dsm",
+  "name": "hillshade-dsm",
+  "type": "raster",
+  "description": "New Zealand DSM Hillshade Standard",
+  "title": "Hillshade Standard DSM",
+  "category": "Elevation",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/new-zealand/01K23F7477YF3JQGNWG4CCH5C2/",
+      "3857": "s3://linz-basemaps/3857/new-zealand/01K23F747RXE5WAYGN948SSPMS/",
+      "title": "New Zealand DSM Hillshade Overview",
+      "name": "new-zealand_dsm_hillshade_overview",
+      "maxZoom": 10
+    },
+    {
+      "2193": "s3://nz-elevation/new-zealand/new-zealand/dsm-hillshade/2193/",
+      "3857": "s3://linz-basemaps/3857/new-zealand/01K21742EEKDCGPDZ7TPHF8NQX/",
+      "title": "New Zealand DSM Hillshade",
+      "name": "new-zealand_dsm_hillshade",
+      "minZoom": 11
+    }
+  ],
+  "outputs": [
+    {
+      "title": "Color ramp",
+      "name": "color-ramp",
+      "pipeline": [
+        {
+          "type": "color-ramp"
+        }
+      ],
+      "background": {
+        "r": 182,
+        "g": 182,
+        "b": 182,
+        "alpha": 1
+      }
+    }
+  ]
+}
