@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_bay-of-plenty-2010-2012-0.4m",
+  "name": "bay-of-plenty-2010-2012-0.4m",
+  "title": "Bay of Plenty 0.4m Rural Aerial Photos (2010-2012)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_2010-2012_0.4m/01K2G79VWCTS0X6ZM5KJHCX5B6/",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_2010-2012_0.4m/01K2G79VDWW5MJHVEP59D8K3F0/",
+      "name": "bay-of-plenty-2010-2012-0.4m",
+      "title": "Bay of Plenty 0.4m Rural Aerial Photos (2010-2012)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
