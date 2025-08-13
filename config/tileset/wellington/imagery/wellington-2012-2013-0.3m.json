@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_wellington-2012-2013-0.3m",
+  "name": "wellington-2012-2013-0.3m",
+  "title": "Wellington 0.3m Rural Aerial Photos (2012-2013)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/wellington_2012-2013_0.3m/01K2GDR7ZFVNN0BWQ1BFVEK4R5/",
+      "3857": "s3://linz-basemaps/3857/wellington_2012-2013_0.3m/01K2GDRC5W663K0JZ7SZ1A68N7/",
+      "name": "wellington-2012-2013-0.3m",
+      "title": "Wellington 0.3m Rural Aerial Photos (2012-2013)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
