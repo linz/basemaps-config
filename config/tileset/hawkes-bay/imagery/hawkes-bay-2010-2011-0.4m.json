@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_hawkes-bay-2010-2011-0.4m",
+  "name": "hawkes-bay-2010-2011-0.4m",
+  "title": "Hawke's Bay 0.4m Rural Aerial Photos (2010-2011)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/hawkes-bay_2010-2011_0.4m/01K2GDDPWHXSMP8HDEKRABAS11/",
+      "3857": "s3://linz-basemaps/3857/hawkes-bay_2010-2011_0.4m/01K2GDDPWHZEDTPG3SEZXJY1G6/",
+      "name": "hawkes-bay-2010-2011-0.4m",
+      "title": "Hawke's Bay 0.4m Rural Aerial Photos (2010-2011)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
