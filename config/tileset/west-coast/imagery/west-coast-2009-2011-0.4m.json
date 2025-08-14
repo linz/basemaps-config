@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_west-coast-2009-2011-0.4m",
+  "name": "west-coast-2009-2011-0.4m",
+  "title": "West Coast 0.4m Rural Aerial Photos (2009-2011)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/west-coast_2009-2011_0.4m/01K2JY9CG2GHK4W4YP9ET2X6C2/",
+      "3857": "s3://linz-basemaps/3857/west-coast_2009-2011_0.4m/01K2JY8WVCXFNN5BZBDAG8FNCY/",
+      "name": "west-coast-2009-2011-0.4m",
+      "title": "West Coast 0.4m Rural Aerial Photos (2009-2011)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
