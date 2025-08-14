@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_northland-2006-1m",
+  "name": "northland-2006-1m",
+  "title": "Northland 1m Rural Aerial Photos (2006)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/northland_2006_1m/01K2JXRG3AAXQ0JQBFF31KAGMS/",
+      "3857": "s3://linz-basemaps/3857/northland_2006_1m/01K2JXRG3903F1BN47CTHE16X3/",
+      "name": "northland-2006-1m",
+      "title": "Northland 1m Rural Aerial Photos (2006)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
