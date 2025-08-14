@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_otago-2005-2011-0.75m",
+  "name": "otago-2005-2011-0.75m",
+  "title": "Otago 0.75m Rural Aerial Photos (2005-2011)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/otago_2005-2011_0.75m/01K2JXWPM4C1QG8VTVMCPTCJJR/",
+      "3857": "s3://linz-basemaps/3857/otago_2005-2011_0.75m/01K2JXWQCJF7K9RS28K5ZADMKM/",
+      "name": "otago-2005-2011-0.75m",
+      "title": "Otago 0.75m Rural Aerial Photos (2005-2011)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
