@@ -436,10 +436,10 @@
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/canterbury_2025_0.25m/01K0Z8EFGEDT8KT0YCW26DRKTW/",
-      "3857": "s3://linz-basemaps/3857/canterbury_2025_0.25m/01K0Z8EFGNE9GE64BEFYYN6SPT/",
+      "2193": "s3://linz-basemaps/2193/canterbury_2025_0.25m/01K2NE1PJW887AHCA11YPQWNYB/",
+      "3857": "s3://linz-basemaps/3857/canterbury_2025_0.25m/01K2NE1RT6520YVM4Y6VAXV2R1/",
       "name": "canterbury-2025-0.25m",
-      "title": "Canterbury 0.25m Rural Aerial Photos (2025) - Draft",
+      "title": "Canterbury 0.25m Rural Aerial Photos (2025)",
       "category": "Rural Aerial Photos",
       "minZoom": 13
     },
