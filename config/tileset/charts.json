@@ -191,35 +191,35 @@
       "3857": "s3://linz-basemaps/3857/NZ14051-1/01K2NTT6Y883908CM3FTJMZF0G/",
       "name": "NZ14051-1",
       "title": "NZ14051-1",
-      "minZoom": 4
+      "minZoom": 0
     },
     {
       "2193": "s3://linz-basemaps/2193/NZ14052-1/01K2NW4QQVKMPQ1KHE3TETBZRH/",
       "3857": "s3://linz-basemaps/3857/NZ14052-1/01K2NTZ93BN1XVA773EPHHG71N/",
       "name": "NZ14052-1",
       "title": "NZ14052-1",
-      "minZoom": 4
+      "minZoom": 0
     },
     {
       "2193": "s3://linz-basemaps/2193/NZ14060-1/01K2NWDFPKRJM6X76WH1YAFBVP/",
       "3857": "s3://linz-basemaps/3857/NZ14060-1/01K2NTXCX556954P7D8TTTK6FM/",
       "name": "NZ14060-1",
       "title": "NZ14060-1",
-      "minZoom": 4
+      "minZoom": 0
     },
     {
       "2193": "s3://linz-basemaps/2193/NZ14061-1/01K2NXXG8TMZG3WZH5CNXK6ZV3/",
       "3857": "s3://linz-basemaps/3857/NZ14061-1/01K2NV0VDFYKB324YT5ANZFHTD/",
       "name": "NZ14061-1",
       "title": "NZ14061-1",
-      "minZoom": 4
+      "minZoom": 0
     },
     {
       "2193": "s3://linz-basemaps/2193/NZ14065-1/01K2NXYSGV5R2S1S5YPYWWMWE4/",
       "3857": "s3://linz-basemaps/3857/NZ14065-1/01K2NVBPHW2GAVVBQCP6SC912H/",
       "name": "NZ14065-1",
       "title": "NZ14065-1",
-      "minZoom": 4
+      "minZoom": 0
     },
     {
       "2193": "s3://linz-basemaps/2193/NZ14600-1/01K2NVMR7YDJAGV80M2FCA7P80/",
