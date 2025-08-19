@@ -103,9 +103,17 @@ jobs:
         run: |
           if [ -f changes.md ]; then
             if [ $(wc -c < changes.md) -gt 65000 ]; then
-              echo "⚠️ The changes.md file is too large to post as a comment." > pr_comment.md
-              echo "" >> pr_comment.md
-              echo "📎 It has been uploaded as a workflow artifact named **changes**." >> pr_comment.md
+              {
+                echo "⚠️ The \`changes.md\` file is too large to include directly in this PR comment."
+                echo ""
+                echo "📎 It has been uploaded as a workflow artifact named **changes**."
+                echo ""
+                echo "👉 [Download artifact here](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+                echo ""
+                echo "🗺️ Previews:"
+                echo "- [WebMercator](https://basemaps.linz.govt.nz/?config=${CONFIG_LOCATION_STAGING})"
+                echo "- [NZTM](https://basemaps.linz.govt.nz/?config=${CONFIG_LOCATION_STAGING}&p=NZTM2000Quad)"
+              } > pr_comment.md
               gh pr comment ${{ github.event.number }} --body-file pr_comment.md
             else
               gh pr comment ${{ github.event.number }} --body-file changes.md
