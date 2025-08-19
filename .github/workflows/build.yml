@@ -89,18 +89,24 @@ jobs:
           aws s3 cp s3://linz-basemaps/config/config-latest.json.gz .
           ./scripts/bmc.sh ./index.cjs config import --config ${CONFIG_LOCATION_STAGING} --output $PWD/changes.md --target $PWD/config-latest.json.gz
 
+      - name: Upload changes.md as artifact (if oversized)
+        if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request' && (hashFiles('changes.md') != '')
+        uses: actions/upload-artifact@v4
+        with:
+          name: changes
+          path: changes.md
+
       - name: (Pull Request) Update Description
         if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if [ -f changes.md ]; then
-            # If file size > 65000 bytes, split it into chunks
             if [ $(wc -c < changes.md) -gt 65000 ]; then
-              split -b 60000 changes.md changes_part_
-              for f in changes_part_*; do
-                gh pr comment ${{ github.event.number }} --body-file "$f"
-              done
+              echo "⚠️ The changes.md file is too large to post as a comment." > pr_comment.md
+              echo "" >> pr_comment.md
+              echo "📎 It has been uploaded as a workflow artifact named **changes**." >> pr_comment.md
+              gh pr comment ${{ github.event.number }} --body-file pr_comment.md
             else
               gh pr comment ${{ github.event.number }} --body-file changes.md
             fi
