@@ -94,7 +94,17 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          [ ! -f changes.md ] || gh pr comment ${{ github.event.number }} --body-file changes.md
+          if [ -f changes.md ]; then
+            # If file size > 65000 bytes, split it into chunks
+            if [ $(wc -c < changes.md) -gt 65000 ]; then
+              split -b 60000 changes.md changes_part_
+              for f in changes_part_*; do
+                gh pr comment ${{ github.event.number }} --body-file "$f"
+              done
+            else
+              gh pr comment ${{ github.event.number }} --body-file changes.md
+            fi
+          fi
 
   # Compare and deploy to non-prod
   deploy-nonprod:
