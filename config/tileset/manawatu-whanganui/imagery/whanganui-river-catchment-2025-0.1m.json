@@ -2,7 +2,7 @@
   "type": "raster",
   "id": "ts_whanganui-river-catchment-2025-0.1m",
   "name": "whanganui-river-catchment-2025-0.1m",
-  "title": "Manawatū-Whanganui - Whanganui River Catchment 0.1m Rural Aerial Photos (2025)",
+  "title": "Whanganui River Catchment 0.1m Rural Aerial Photos (2025)",
   "background": {
     "r": 0,
     "g": 0,
@@ -12,10 +12,10 @@
   "category": "Rural Aerial Photos",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/whanganui-river-catchment_2025_0.1m/01JZ1TRY73ZKS5X5GCFFD7ZZH8/",
-      "3857": "s3://linz-basemaps/3857/whanganui-river-catchment_2025_0.1m/01JZ1TRXN3DNH1Z0BA0KJHNC2Q/",
+      "2193": "s3://linz-basemaps/2193/whanganui-river-catchment_2025_0.1m/01K2ZJPSX92KZ5CFGSCES8ZQCH/",
+      "3857": "s3://linz-basemaps/3857/whanganui-river-catchment_2025_0.1m/01K2ZJPT1GXKTD2RM1Q5EXKP83/",
       "name": "whanganui-river-catchment-2025-0.1m",
-      "title": "Manawatū-Whanganui - Whanganui River Catchment 0.1m Rural Aerial Photos (2025)",
+      "title": "Whanganui River Catchment 0.1m Rural Aerial Photos (2025)",
       "category": "Rural Aerial Photos",
       "minZoom": 0,
       "maxZoom": 32
