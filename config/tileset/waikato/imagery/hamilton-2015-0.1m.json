@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_hamilton-2015-0.1m",
+  "name": "hamilton-2015-0.1m",
+  "title": "Hamilton 0.1m Urban Aerial Photos (2015)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Urban Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/hamilton_2015_0.1m/01K2G7V4ZRM6R4NTFP5MJXKW2B/",
+      "3857": "s3://linz-basemaps/3857/hamilton_2015_0.1m/01K2G7V4ZRMAS62SQYSWNDB1AX/",
+      "name": "hamilton-2015-0.1m",
+      "title": "Hamilton 0.1m Urban Aerial Photos (2015)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

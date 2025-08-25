@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_nelson-2014-0.4m",
+  "name": "nelson-2014-0.4m",
+  "title": "Nelson 0.4m Rural Aerial Photos (2014)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/nelson_2014_0.4m/01K2GDJ4ATT5R19ZX6S2GKSCNJ/",
+      "3857": "s3://linz-basemaps/3857/nelson_2014_0.4m/01K2GDJ7ST4S6D3TYK6KB84S9J/",
+      "name": "nelson-2014-0.4m",
+      "title": "Nelson 0.4m Rural Aerial Photos (2014)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
