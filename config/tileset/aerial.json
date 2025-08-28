@@ -1,2311 +1,998 @@
 {
   "type": "raster",
-  "id": "ts_charts",
-  "name": "LINZ Charts",
-  "title": "LINZ Paper charts maps",
+  "id": "ts_aerial",
+  "title": "Aerial Imagery Basemap",
+  "category": "Basemaps",
+  "background": "dce9edff",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/NZ14060-1/01K2NWDFPKRJM6X76WH1YAFBVP/",
-      "3857": "s3://linz-basemaps/3857/NZ14060-1/01K2NTXCX556954P7D8TTTK6FM/",
-      "name": "NZ14060-1",
-      "title": "NZ14060-1",
-      "minZoom": 0
+      "2193": "s3://linz-basemaps/2193/gebco_2020_Nztm2000Quad_305-75m/01F1BFJN8R8P7BXN3XTHC5MT5G/",
+      "3857": "s3://linz-basemaps/3857/gebco_2020_305-75m/01EDMTM3P563P06TWYQAZRA9F6/",
+      "name": "gebco-2020-305.75m",
+      "maxZoom": 15,
+      "title": "GEBCO Gridded Bathymetry (2020)",
+      "category": "Bathymetry"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/chatham-islands_digital-globe_2014-2019_0-5m/01F66EEHWXVMK4B7E13AVZ8NE7/",
+      "3857": "s3://linz-basemaps/3857/chatham-islands_digital-globe_2014-2019_0-5m/01ED84CATGQ1THNG7QEEEZBEBT/",
+      "name": "chatham-islands-digital-globe-2014-2019-0.5m",
+      "title": "Chatham Islands 0.5m Satellite Imagery (2014-2019)",
+      "category": "Satellite Imagery"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/new-zealand_2023-2024_10m/01J97KSMGPF00B086ZVGHC617J/",
+      "3857": "s3://linz-basemaps/3857/new-zealand_2023-2024_10m/01J97KSKJSF0S3HVS17FG5XBHD/",
+      "name": "new-zealand-2023-2024-10m",
+      "title": "New Zealand 10m Satellite Imagery (2023-2024)",
+      "category": "Satellite Imagery"
     },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14061-1/01K2NXXG8TMZG3WZH5CNXK6ZV3/",
-      "3857": "s3://linz-basemaps/3857/NZ14061-1/01K2NV0VDFYKB324YT5ANZFHTD/",
-      "name": "NZ14061-1",
-      "title": "NZ14061-1",
-      "minZoom": 0
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14065-1/01K2NXYSGV5R2S1S5YPYWWMWE4/",
-      "3857": "s3://linz-basemaps/3857/NZ14065-1/01K2NVBPHW2GAVVBQCP6SC912H/",
-      "name": "NZ14065-1",
-      "title": "NZ14065-1",
-      "minZoom": 0
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14600-1/01K2NVMR7YDJAGV80M2FCA7P80/",
-      "3857": "s3://linz-basemaps/3857/NZ14600-1/01K2NVJQEC0S8MC3S7J3J06N0Q/",
-      "name": "NZ14600-1",
-      "title": "NZ14600-1",
-      "minZoom": 5
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14601-1/01K2NVD1SD98ET7WY0AR9CYDYW/",
-      "3857": "s3://linz-basemaps/3857/NZ14601-1/01K2NTQ1ZVXPRVRGNCWG3KZSJA/",
-      "name": "NZ14601-1",
-      "title": "NZ14601-1",
-      "minZoom": 5
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14602-1/01K2NVAMK9TPQJWZPTDCAX6ZZ4/",
-      "3857": "s3://linz-basemaps/3857/NZ14602-1/01K2NTRZMAW2GPHYAED0AHJ5W8/",
-      "name": "NZ14602-1",
-      "title": "NZ14602-1",
-      "minZoom": 5
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14604-1/01K2NTXDVT9W9ZJW3BAS0SDC55/",
-      "3857": "s3://linz-basemaps/3857/NZ14604-1/01K2NTM66VFXY3GKWT58HCPXZX/",
-      "name": "NZ14604-1",
-      "title": "NZ14604-1",
-      "minZoom": 5
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14605-1/01K2NVD6CRWJF5MEHHVJKMZV1M/",
-      "3857": "s3://linz-basemaps/3857/NZ14605-1/01K2NVGRTQVYS7YVY57ZTKTM94/",
-      "name": "NZ14605-1",
-      "title": "NZ14605-1",
-      "minZoom": 5
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14606-1/01K2NWR8XWVPKBVZQVXMGRDQQG/",
-      "3857": "s3://linz-basemaps/3857/NZ14606-1/01K2NW15FAPCMMJ6ZHP01SMQK4/",
-      "name": "NZ14606-1",
-      "title": "NZ14606-1",
-      "minZoom": 5
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14607-1/01K2NXVGGJ7VWCA0QGS0DCYKEX/",
-      "3857": "s3://linz-basemaps/3857/NZ14607-1/01K2NWD3XZAYRGC5D8K5W9ZW0T/",
-      "name": "NZ14607-1",
-      "title": "NZ14607-1",
-      "minZoom": 5
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14612-1/01K2NXAAY52CK334RZ1J1APNYY/",
-      "3857": "s3://linz-basemaps/3857/NZ14612-1/01K2NWC9HT0V4AGT8KQBYWT2HY/",
-      "name": "NZ14612-1",
-      "title": "NZ14612-1",
-      "minZoom": 5
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14613-1/01K2NXZHMZ34J84HMZXAQ6EZBH/",
-      "3857": "s3://linz-basemaps/3857/NZ14613-1/01K2NWR0ZJRR92XS974JQ7N704/",
-      "name": "NZ14613-1",
-      "title": "NZ14613-1",
-      "minZoom": 5
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14900-1/01K2P05HR5VKJYVDEN5ZGW0TEN/",
-      "3857": "s3://linz-basemaps/3857/NZ14900-1/01K2NZ4HVC3DSXTJ1XG4DZSQXS/",
-      "name": "NZ14900-1",
-      "title": "NZ14900-1",
-      "minZoom": 6
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14628-1/01K2NXAAW926TMASAAGGMH1K4S/",
-      "3857": "s3://linz-basemaps/3857/NZ14628-1/01K2NWW93RDAV697KRFRHPV7BF/",
-      "name": "NZ14628-1",
-      "title": "NZ14628-1",
-      "minZoom": 8
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14629-1/01K2NXA6MN75CK1K1DR1TBHN37/",
-      "3857": "s3://linz-basemaps/3857/NZ14629-1/01K2NXDJGWERQSEHC5EXS1Z0CF/",
-      "name": "NZ14629-1",
-      "title": "NZ14629-1",
-      "minZoom": 8
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14631-1/01K2NY1S44CW0FG40XX9KKGG1R/",
-      "3857": "s3://linz-basemaps/3857/NZ14631-1/01K2NXP68T3YB8FMJHK6Q8SEBV/",
-      "name": "NZ14631-1",
-      "title": "NZ14631-1",
-      "minZoom": 8
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14638-1/01K2NYGW0Q6EDN0P09DXS6DXV5/",
-      "3857": "s3://linz-basemaps/3857/NZ14638-1/01K2NZECXZTNW96Q0DNSV33X3K/",
-      "name": "NZ14638-1",
-      "title": "NZ14638-1",
-      "minZoom": 8
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14909-1/01K2X3TXE5FH9X1DN0H0VMD16H/",
-      "3857": "s3://linz-basemaps/3857/NZ14909-1/01K2X3DTXWZEJVGMQ33398K4YH/",
-      "name": "NZ14909-1",
-      "title": "NZ14909-1",
-      "minZoom": 8
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/TK121-1/01K3024C148BZVHNF92D9B22ZX/",
-      "3857": "s3://linz-basemaps/3857/TK121-1/01K301ZN72TBSCMVBTWDMA845J/",
-      "name": "TK121-1",
-      "title": "TK121-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/TO101-1/01K302W97W68WBE1H9RXBKJE7R/",
-      "3857": "s3://linz-basemaps/3857/TO101-1/01K302KW9MDTEJ770ACPTQB5ZS/",
-      "name": "TO101-1",
-      "title": "TO101-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/WS111-1/01K3040R28B3DX05XCH6RG5T5R/",
-      "3857": "s3://linz-basemaps/3857/WS111-1/01K303KCRBXC16EPWD2J5Q2MW1/",
-      "name": "WS111-1",
-      "title": "WS111-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14912-1/01K2X48DF7MS8H0GKGTTWSRQGY/",
-      "3857": "s3://linz-basemaps/3857/NZ14912-1/01K2X3QKJX1YFDQ0X46BTKG5FC/",
-      "name": "NZ14912-1",
-      "title": "NZ14912-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14912-2/01K2X30C8KS27GN28Q2BW1Q3G9/",
-      "3857": "s3://linz-basemaps/3857/NZ14912-2/01K2X2ZF0YTZS4PZ2EHVKG3QAD/",
-      "name": "NZ14912-2",
-      "title": "NZ14912-2",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ222-1/01K2X3T2S9D2437B7838K7M8CT/",
-      "3857": "s3://linz-basemaps/3857/NZ222-1/01K2X3J70J364EC6R88NHV8E8N/",
-      "name": "NZ222-1",
-      "title": "NZ222-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ42-1/01K2X7BJXN7YXEJZHVKQSFM7MA/",
-      "3857": "s3://linz-basemaps/3857/NZ42-1/01K2X7BH6YSBVKM9F93D5CF8WB/",
-      "name": "NZ42-1",
-      "title": "NZ42-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ43-1/01K2X7JTPWMVA4H97CA4DAMGYW/",
-      "3857": "s3://linz-basemaps/3857/NZ43-1/01K2X7M2VBR1TDNQGK84R480D2/",
-      "name": "NZ43-1",
-      "title": "NZ43-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ48-1/01K2XCJKDRCK78ZY8XEKNW6CMT/",
-      "3857": "s3://linz-basemaps/3857/NZ48-1/01K2XCF61NC780ZXJQ103XYZY4/",
-      "name": "NZ48-1",
-      "title": "NZ48-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ54-1/01K2ZJFFTMT0J6RVK25NP71BWR/",
-      "3857": "s3://linz-basemaps/3857/NZ54-1/01K2ZJ8G1PYKDN2N0Z5QAVFXN3/",
-      "name": "NZ54-1",
-      "title": "NZ54-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ64-1/01K2ZR9B0EB7P62QE4CWPNJC5A/",
-      "3857": "s3://linz-basemaps/3857/NZ64-1/01K2ZR7376K6TBPEH7T84VT07N/",
-      "name": "NZ64-1",
-      "title": "NZ64-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ72-1/01K3012G6JEFHZZD58YEX76JQP/",
-      "3857": "s3://linz-basemaps/3857/NZ72-1/01K300X4GXKASP3X5ECCNQRG1C/",
-      "name": "NZ72-1",
-      "title": "NZ72-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ73-1/01K3014PDFYTMGH1TQWTRPC8B2/",
-      "3857": "s3://linz-basemaps/3857/NZ73-1/01K300XRT7MS96FBFEPQ4SJQ93/",
-      "name": "NZ73-1",
-      "title": "NZ73-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ76-1/01K301C2F1JPCK3NC6WHNTRZP0/",
-      "3857": "s3://linz-basemaps/3857/NZ76-1/01K30121NF3EPXEZB63E032AK1/",
-      "name": "NZ76-1",
-      "title": "NZ76-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NU131-1/01K2NHSNRVR9AHAXWRG3A95HQ2/",
-      "3857": "s3://linz-basemaps/3857/NU131-1/01K2NHQ71ZH49A3GRR40GZ6KPG/",
-      "name": "NU131-1",
-      "title": "NU131-1",
-      "minZoom": 10
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14908-1/01K2X3Q71F018F04JZ4B540PS3/",
-      "3857": "s3://linz-basemaps/3857/NZ14908-1/01K2X3DW7Y6ZMGSTC4RH019VXE/",
-      "name": "NZ14908-1",
-      "title": "NZ14908-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ268-1/01K2X62VH4XDYWFY0WAT2MC5PR/",
-      "3857": "s3://linz-basemaps/3857/NZ268-1/01K2X5RT9WASENJSRC9P0GNSAB/",
-      "name": "NZ268-1",
-      "title": "NZ268-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ286-1/01K2X6YNDN2E5BYVRQZS1FFCVG/",
-      "3857": "s3://linz-basemaps/3857/NZ286-1/01K2X6MDJP73C1Q7K8M5CMJHKP/",
-      "name": "NZ286-1",
-      "title": "NZ286-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ3111-1/01K2X66V2RQT7PTC5T59QHM2YY/",
-      "3857": "s3://linz-basemaps/3857/NZ3111-1/01K2X62CG1G8YC8F8AN1KR401E/",
-      "name": "NZ3111-1",
-      "title": "NZ3111-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ41-1/01K2X73K8HM3MZBCEAE7TAK7H3/",
-      "3857": "s3://linz-basemaps/3857/NZ41-1/01K2X75K8H0W2XAFK9JHM332BE/",
-      "name": "NZ41-1",
-      "title": "NZ41-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ443-1/01K2X8J4DXA3EYK90NF0H1QAGX/",
-      "3857": "s3://linz-basemaps/3857/NZ443-1/01K2X8Z54RYE7F3TSVYRAG7J0M/",
-      "name": "NZ443-1",
-      "title": "NZ443-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ45-1/01K2X8X61XX03VGTY504B86H24/",
-      "3857": "s3://linz-basemaps/3857/NZ45-1/01K2X8RWV21H9XX0JT125JCG6E/",
-      "name": "NZ45-1",
-      "title": "NZ45-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ46-1/01K2X9B11BZN8HJ8B7S8B62P91/",
-      "3857": "s3://linz-basemaps/3857/NZ46-1/01K2X95V8RSSZQRHY79YJB3E0C/",
-      "name": "NZ46-1",
-      "title": "NZ46-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ51-1/01K2XCFD2ZMF832094QA07SPYX/",
-      "3857": "s3://linz-basemaps/3857/NZ51-1/01K2XCEF9BF7H21GPJD5T8TG85/",
-      "name": "NZ51-1",
-      "title": "NZ51-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ52-1/01K2XHNGWZFP0ZTGGQMP2ZKYBS/",
-      "3857": "s3://linz-basemaps/3857/NZ52-1/01K2XHGEQHG80WRHPPQNH2XSAW/",
-      "name": "NZ52-1",
-      "title": "NZ52-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ53-1/01K2XJX53RE4VA761W3W1M42NN/",
-      "3857": "s3://linz-basemaps/3857/NZ53-1/01K2XJQSJPKM7GRXV26A4MKCRD/",
-      "name": "NZ53-1",
-      "title": "NZ53-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ55-1/01K2ZM3WT60J51WRW444J71C7X/",
-      "3857": "s3://linz-basemaps/3857/NZ55-1/01K2ZKWWNSFBPJ1988TRXXTDKF/",
-      "name": "NZ55-1",
-      "title": "NZ55-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ56-1/01K2ZMK1RZAY1M3XRSQG3Z4DXM/",
-      "3857": "s3://linz-basemaps/3857/NZ56-1/01K2ZM5YTQSX7N8YKYDK65XE7H/",
-      "name": "NZ56-1",
-      "title": "NZ56-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ57-1/01K2ZN2ZP9KW0EC4GY43YF1KAD/",
-      "3857": "s3://linz-basemaps/3857/NZ57-1/01K2ZMVSJ4NC6SZCHPQVPX08VP/",
-      "name": "NZ57-1",
-      "title": "NZ57-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ58-1/01K2ZN79EEFA62TWEE3ZRR7CQX/",
-      "3857": "s3://linz-basemaps/3857/NZ58-1/01K2ZN0MC2J994W0MKC8K6E6YR/",
-      "name": "NZ58-1",
-      "title": "NZ58-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ61-1/01K2ZN852VVGW34BSD8P7WDEYF/",
-      "3857": "s3://linz-basemaps/3857/NZ61-1/01K2ZN6XPYPC1QYQ5MXN1ZM606/",
-      "name": "NZ61-1",
-      "title": "NZ61-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ62-1/01K2ZRAT0HGA8QM7D64X068MF1/",
-      "3857": "s3://linz-basemaps/3857/NZ62-1/01K2ZR6Q5VQNRFJJP9QY8PRCQW/",
-      "name": "NZ62-1",
-      "title": "NZ62-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ63-1/01K2ZR92HF4NVC59MRHJ951SY0/",
-      "3857": "s3://linz-basemaps/3857/NZ63-1/01K2ZR85WTZPQAE46REC943KX2/",
-      "name": "NZ63-1",
-      "title": "NZ63-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ66-1/01K2ZS3J3E6KY06V6TCRNAVXQ0/",
-      "3857": "s3://linz-basemaps/3857/NZ66-1/01K2ZRXNWBMTNC7HTT4EM8Q1G2/",
-      "name": "NZ66-1",
-      "title": "NZ66-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ68-1/01K2ZSJ4WTC3FDP0ZW0NW1AP36/",
-      "3857": "s3://linz-basemaps/3857/NZ68-1/01K2ZS4N0QDBNEZGQXT1XRSC1C/",
-      "name": "NZ68-1",
-      "title": "NZ68-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ69-1/01K2ZSYH4QVK4FVG6YSS68NEPW/",
-      "3857": "s3://linz-basemaps/3857/NZ69-1/01K2ZSF79X2SWTAHNQE4KAWFVS/",
-      "name": "NZ69-1",
-      "title": "NZ69-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ71-1/01K2ZST3CFCWMP8XJDETBQX43C/",
-      "3857": "s3://linz-basemaps/3857/NZ71-1/01K2ZSQ00T98BSRFR4SKDM4BA3/",
-      "name": "NZ71-1",
-      "title": "NZ71-1",
-      "minZoom": 9
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/CK141-1/01K2NG1NB3BHS7K8X5CDWHBG8X/",
-      "3857": "s3://linz-basemaps/3857/CK141-1/01K2NG0W2W0ZRDDVTAB53AFXM5/",
-      "name": "CK141-1",
-      "title": "CK141-1",
-      "minZoom": 10
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/CK141-2/01K2NG1RWBFZCEJWBQJWQF6DT8/",
-      "3857": "s3://linz-basemaps/3857/CK141-2/01K2NG257NWXZZ0DRAABY3MJ9A/",
-      "name": "CK141-2",
-      "title": "CK141-2",
-      "minZoom": 10
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/CK141-3/01K2NG1XQ97TE5MBZ7HA9S06DG/",
-      "3857": "s3://linz-basemaps/3857/CK141-3/01K2NG1RCCV3GRXDFTWA9MT80M/",
-      "name": "CK141-3",
-      "title": "CK141-3",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/CK141-4/01K2NG3PFRXKBH96SG933X80QW/",
-      "3857": "s3://linz-basemaps/3857/CK141-4/01K2NG2WJ07NMVMSJSJEXA7705/",
-      "name": "CK141-4",
-      "title": "CK141-4",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/CK141-5/01K2NG91DGQF2DH3S9FN6PS639/",
-      "3857": "s3://linz-basemaps/3857/CK141-5/01K2NGCKG5P44FC4YVD414RT5Z/",
-      "name": "CK141-5",
-      "title": "CK141-5",
-      "minZoom": 11
+    {
+      "2193": "s3://linz-basemaps/2193/auckland-islands_satellite_2014-2021_0-5m_RGB/01FZYE8BB9EBP892F3JQSSSHQG/",
+      "3857": "s3://linz-basemaps/3857/auckland-islands_satellite_2014-2021_0-5m_RGB/01FZYE8NX9DE6ZA3Y5VK1QAHNK/",
+      "name": "auckland-islands-satellite-2014-2021-0.5m",
+      "minZoom": 2,
+      "title": "Auckland Islands 0.5m Satellite Imagery (2014-2021)",
+      "category": "Satellite Imagery"
     },
-    {
-      "2193": "s3://linz-basemaps/2193/CK142-1/01K2NG7A90S2NPRAC16NS8FCNB/",
-      "3857": "s3://linz-basemaps/3857/CK142-1/01K2NG71522BK05R0QK2RN3BEG/",
-      "name": "CK142-1",
-      "title": "CK142-1",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/CK142-2/01K2NHD1R41DQW8ER9KJM4PERF/",
-      "3857": "s3://linz-basemaps/3857/CK142-2/01K2NHCE9KPZG546P9QKCVBMCA/",
-      "name": "CK142-2",
-      "title": "CK142-2",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/CK142-3/01K2NHFXNYN95B7JM5T0H9JW4K/",
-      "3857": "s3://linz-basemaps/3857/CK142-3/01K2NHDP3H0FWFJT0BNRQ42XNH/",
-      "name": "CK142-3",
-      "title": "CK142-3",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/CK142-4/01K2NHCHB11YG31F77D89KJA77/",
-      "3857": "s3://linz-basemaps/3857/CK142-4/01K2NHBVH6BP7FSFHSJ13CAZ6T/",
-      "name": "CK142-4",
-      "title": "CK142-4",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/CK142-5/01K2NHD7RN9PB7S3JJYJ9KV4HQ/",
-      "3857": "s3://linz-basemaps/3857/CK142-5/01K2NHDGEQ6BA00H3Z8HB6W6CC/",
-      "name": "CK142-5",
-      "title": "CK142-5",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/CK142-6/01K2NHETXCXDBWJPVVP3457BQP/",
-      "3857": "s3://linz-basemaps/3857/CK142-6/01K2NHCV1M33M1C150PRBAV3J9/",
-      "name": "CK142-6",
-      "title": "CK142-6",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/CK142-7/01K2NHDPN791XRX0PMK7VYZHY0/",
-      "3857": "s3://linz-basemaps/3857/CK142-7/01K2NHCP887CP8N4K2QP8MRH4F/",
-      "name": "CK142-7",
-      "title": "CK142-7",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/CK142-8/01K2NHM1ARB0HBSN7VMP4PQXPV/",
-      "3857": "s3://linz-basemaps/3857/CK142-8/01K2NHG9Q3ZC5MSSS29Q6ERREJ/",
-      "name": "CK142-8",
-      "title": "CK142-8",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14901-1/01K2NYP2HQ075QND35BDCNR3EV/",
-      "3857": "s3://linz-basemaps/3857/NZ14901-1/01K2NYCZYNERE1VKDG2BXNE1Q0/",
-      "name": "NZ14901-1",
-      "title": "NZ14901-1",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14903-1/01K2X4A0GZKGAG36G2HSTRY1BK/",
-      "3857": "s3://linz-basemaps/3857/NZ14903-1/01K324K33DNGS9PPYD9096EB88/",
-      "name": "NZ14903-1",
-      "title": "NZ14903-1",
-      "minZoom": 10
+    {
+      "2193": "s3://linz-basemaps/2193/antipodes-islands_satellite_2019-2020_0-5m_RGB/01FZY5MYGMYCH5WPDCP1DMYHZ8/",
+      "3857": "s3://linz-basemaps/3857/antipodes-islands_satellite_2019-2020_0-5m_RGB/01FZY5N4E6Q4P2TV3MP94BKTMB/",
+      "name": "antipodes-islands-satellite-2019-2020-0.5m",
+      "minZoom": 5,
+      "title": "Antipodes Islands 0.5m Satellite Imagery (2019-2020)",
+      "category": "Satellite Imagery"
     },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14907-1/01K2X351XNQVZ0ZMKVHJ83VQ91/",
-      "3857": "s3://linz-basemaps/3857/NZ14907-1/01K2X31XDYNV89Y4AGYYVAJ28F/",
-      "name": "NZ14907-1",
-      "title": "NZ14907-1",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ232-1/01K2X3T044CAW918BS31NGGQZ6/",
-      "3857": "s3://linz-basemaps/3857/NZ232-1/01K2X3PG1YKGC6AYH91JD8MSHP/",
-      "name": "NZ232-1",
-      "title": "NZ232-1",
-      "minZoom": 10
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ252-1/01K2X5QMEXS527QFVBMB1FC9KF/",
-      "3857": "s3://linz-basemaps/3857/NZ252-1/01K2X5J0DGM6S8QGWF1B5Z6MM9/",
-      "name": "NZ252-1",
-      "title": "NZ252-1",
-      "minZoom": 10
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ3111-2/01K2X66E9EEQRJEHQNA9V6AN5V/",
-      "3857": "s3://linz-basemaps/3857/NZ3111-2/01K2X66E0T6JKNHFMWE7TYSM9R/",
-      "name": "NZ3111-2",
-      "title": "NZ3111-2",
-      "minZoom": 10
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ3111-3/01K2X697XGAXSD6D4M38VGNGCG/",
-      "3857": "s3://linz-basemaps/3857/NZ3111-3/01K2X66G57440XF84YX6Y3X6ZZ/",
-      "name": "NZ3111-3",
-      "title": "NZ3111-3",
-      "minZoom": 10
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4265-1/01K2X7NB7BKCZWFHEJ9ECJR5VX/",
-      "3857": "s3://linz-basemaps/3857/NZ4265-1/01K2X7H9NKHKT4QG7DNPYCRZK4/",
-      "name": "NZ4265-1",
-      "title": "NZ4265-1",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4265-2/01K2X6WCYQD1EJQ5KAW4XJVQAF/",
-      "3857": "s3://linz-basemaps/3857/NZ4265-2/01K2X6VBA46XTNVGQXZ51WEFVN/",
-      "name": "NZ4265-2",
-      "title": "NZ4265-2",
-      "minZoom": 11
+    {
+      "2193": "s3://linz-basemaps/2193/bounty-islands_satellite_2020_0-5m_RGB/01FZYK75PS5DM0BKGZ885RZ94D/",
+      "3857": "s3://linz-basemaps/3857/bounty-islands_satellite_2020_0-5m_RGB/01FZYK7C7Y9GHSPRKM4B4C5RSY/",
+      "name": "bounty-islands-satellite-2020-0.5m",
+      "minZoom": 5,
+      "title": "Bounty Islands 0.5m Satellite Imagery (2020)",
+      "category": "Satellite Imagery"
     },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ463-1/01K2X9G581CT6VWGENG4D5AZG7/",
-      "3857": "s3://linz-basemaps/3857/NZ463-1/01K2X99SWDBHPPBP7V6R5D3XGP/",
-      "name": "NZ463-1",
-      "title": "NZ463-1",
-      "minZoom": 10
+    {
+      "2193": "s3://linz-basemaps/2193/campbell-island-motu-ihupuku_satellite_2015-2020_0-5m_RGB/01G00E8Y3HSN66NDDKP89H2VTT/",
+      "3857": "s3://linz-basemaps/3857/campbell-island-motu-ihupuku_satellite_2015-2020_0-5m_RGB/01G00E9728953QMD6NY7BVDGSN/",
+      "name": "campbell-island-motu-ihupuku-satellite-2015-2020-0.5m",
+      "minZoom": 2,
+      "title": "Campbell Island/Motu Ihupuku 0.5m Satellite Imagery (2015-2020)",
+      "category": "Satellite Imagery"
     },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ512-1/01K2XCQ220Y7PY1BDG75W584P0/",
-      "3857": "s3://linz-basemaps/3857/NZ512-1/01K2XCRG4PYT5N8V2BXMFQ8HEK/",
-      "name": "NZ512-1",
-      "title": "NZ512-1",
-      "minZoom": 10
+    {
+      "2193": "s3://linz-basemaps/2193/kermadec-islands_satellite_2020-2021_0-5m_RGB/01G00S1WQ72T0PCN9T7QNE81V0/",
+      "3857": "s3://linz-basemaps/3857/kermadec-islands_satellite_2020-2021_0-5m_RGB/01G00S25RMGY8FEHWFRYNPFDFJ/",
+      "name": "kermadec-islands-satellite-2020-2021-0.5m",
+      "minZoom": 5,
+      "title": "Kermadec Islands 0.5m Satellite Imagery (2020-2021)",
+      "category": "Satellite Imagery"
     },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ521-1/01K2XHP80TDJBRP1K5TRTMHJQQ/",
-      "3857": "s3://linz-basemaps/3857/NZ521-1/01K2XHHMAR1CRM00MA78RSJE0E/",
-      "name": "NZ521-1",
-      "title": "NZ521-1",
-      "minZoom": 10
+    {
+      "2193": "s3://linz-basemaps/2193/nz-nearshore-islands_satellite_2010-2021_0-5m_RGB/01G00XY0TVJJ4QVJ7988TCKGWS/",
+      "3857": "s3://linz-basemaps/3857/nz-nearshore-islands_satellite_2010-2021_0-5m_RGB/01G00XYQ8YKAZC7P5QJ4BPCX22/",
+      "name": "nz-nearshore-islands-satellite-2010-2021-0.5m",
+      "minZoom": 13,
+      "title": "New Zealand Nearshore Islands 0.5m Satellite Imagery (2010-2021)",
+      "category": "Satellite Imagery"
     },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ522-1/01K2XHZJFT7V9K4WD8D0VXRBJM/",
-      "3857": "s3://linz-basemaps/3857/NZ522-1/01K2XHT8PGY3DJPPYGVF1XKB84/",
-      "name": "NZ522-1",
-      "title": "NZ522-1",
-      "minZoom": 10
+    {
+      "2193": "s3://linz-basemaps/2193/snares-islands-tini-heke_satellite_2019-2020_0-5m_RGB/01G011MVHNRWAMSQSPBKXVAEC3/",
+      "3857": "s3://linz-basemaps/3857/snares-islands-tini-heke_satellite_2019-2020_0-5m_RGB/01G011N3MVQVYP0Q1025R45219/",
+      "name": "snares-islands-tini-heke-satellite-2019-2020-0.5m",
+      "minZoom": 5,
+      "title": "Snares Islands/Tini Heke 0.5m Satellite Imagery (2019-2020)",
+      "category": "Satellite Imagery"
     },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ531-1/01K2XJXBR8BN38YTTGBZM5MZWS/",
-      "3857": "s3://linz-basemaps/3857/NZ531-1/01K2XJQK9Y1PW4HDF451DAWBTR/",
-      "name": "NZ531-1",
-      "title": "NZ531-1",
-      "minZoom": 10
+    {
+      "2193": "s3://linz-basemaps/2193/tasman_rural_2004-2005_1m_RGB/01F6P1TQVSC7QRF1R3JAT893ZS/",
+      "3857": "s3://linz-basemaps/3857/tasman_rural_2004-2005_1m_RGB/01EE962ZB3Z6Y7GVZ28XCWJ9JB/",
+      "name": "tasman-rural-2004-2005-1m",
+      "minZoom": 13,
+      "title": "Tasman 1m Rural Aerial Photos (2004-2005)",
+      "category": "Rural Aerial Photos"
     },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ532-1/01K2XKX1CX8ABCA4TX5C38Q128/",
-      "3857": "s3://linz-basemaps/3857/NZ532-1/01K2XKQVBZZ4AK2Z0ZBCD1RVC0/",
-      "name": "NZ532-1",
-      "title": "NZ532-1",
-      "minZoom": 10
+    {
+      "2193": "s3://linz-basemaps/2193/southland_rural_2005-2011_0-75m_RGBA/01F6P1S7DSP4N5DCBGCTZCMJ27/",
+      "3857": "s3://linz-basemaps/3857/southland_rural_2005-2011_0-75m_RGBA/01ED835ZSP0MQ3W55QEMVZKNR1/",
+      "name": "southland-rural-2005-2011-0.75m",
+      "minZoom": 13,
+      "title": "Southland 0.75m Rural Aerial Photos (2005-2011)",
+      "category": "Rural Aerial Photos"
     },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ533-1/01K2ZHY64K36N1FNYZCX5X0GQG/",
-      "3857": "s3://linz-basemaps/3857/NZ533-1/01K2ZHVJS7AR2M9JWWJHJKX3W1/",
-      "name": "NZ533-1",
-      "title": "NZ533-1",
-      "minZoom": 10
+    {
+      "2193": "s3://linz-basemaps/2193/auckland_rural_2010-2012_0-50m_RGBA/01F66DT3ZBYZZM6R0AF9Q2989R/",
+      "3857": "s3://linz-basemaps/3857/auckland_rural_2010-2012_0-50m_RGBA/01ED81BNAX2ESPMV59YPC3AQ2C/",
+      "name": "auckland-rural-2010-2012-0.5m",
+      "minZoom": 13,
+      "title": "Auckland 0.5m Rural Aerial Photos (2010-2012)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ534-1/01K2ZJDSYAW7XY1FCXV8AJ2PBX/",
-      "3857": "s3://linz-basemaps/3857/NZ534-1/01K2ZJ81AYSFXW2RPPAAS3XEMD/",
-      "name": "NZ534-1",
-      "title": "NZ534-1",
-      "minZoom": 10
+      "2193": "s3://linz-basemaps/2193/canterbury_rural_2013-2014_0-40m_RGBA/01F66E9VVX07WFC1C5Y05S4JXM/",
+      "3857": "s3://linz-basemaps/3857/canterbury_rural_2013-2014_0-40m_RGBA/01ED81YFYF0D76RZRH9FHF7JDN/",
+      "name": "canterbury-rural-2013-2014-0.4m",
+      "minZoom": 13,
+      "title": "Canterbury 0.4m Rural Aerial Photos (2013-2014)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ541-1/01K2ZJCHS12QS7G8DXFE1KBCQV/",
-      "3857": "s3://linz-basemaps/3857/NZ541-1/01K2ZJ77X6SN0FMX36T3ED9W85/",
-      "name": "NZ541-1",
-      "title": "NZ541-1",
-      "minZoom": 10
+      "2193": "s3://linz-basemaps/2193/southland-central-otago_rural_2013-2014_0-40m_RGBA/01F6P1R136F2BHRHRJ961SC7CH/",
+      "3857": "s3://linz-basemaps/3857/southland-central-otago_rural_2013-2014_0-40m_RGBA/01ED83886J46GSSZP6GKCCYGH1/",
+      "name": "southland-central-otago-rural-2013-2014-0.4m",
+      "minZoom": 13,
+      "title": "Southland & Central Otago 0.4m Rural Aerial Photos (2013-2014)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ542-1/01K2ZME16DSWZZPWASY0V2AMWA/",
-      "3857": "s3://linz-basemaps/3857/NZ542-1/01K2ZMAM8MA2PGWP64ZHNZKTJC/",
-      "name": "NZ542-1",
-      "title": "NZ542-1",
-      "minZoom": 10
+      "2193": "s3://linz-basemaps/2193/canterbury_rural_2014-2015_0-30m_RGBA/01F66EATPYCJF8R9WZRRE481ZP/",
+      "3857": "s3://linz-basemaps/3857/canterbury_rural_2014-2015_0-30m_RGBA/01ED81ZMNH3PM5Q3E2MWRFD22B/",
+      "name": "canterbury-rural-2014-2015-0.3m",
+      "minZoom": 13,
+      "title": "Canterbury 0.3m Rural Aerial Photos (2014-2015)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ55-2/01K2ZK727YCKNY2GM9DGA8E22G/",
-      "3857": "s3://linz-basemaps/3857/NZ55-2/01K2ZK72JH7J9Q3F2JERBBFNHB/",
-      "name": "NZ55-2",
-      "title": "NZ55-2",
-      "minZoom": 11
+      "2193": "s3://linz-basemaps/2193/northland_rural_2014-16_0-4m/01F6P1JB8GFYFC08W3AK9KFGJW/",
+      "3857": "s3://linz-basemaps/3857/northland_rural_2014-16_0-4m/01ED82WK4A955T96RV5NWEN3R6/",
+      "name": "northland-rural-2014-2016-0.4m",
+      "minZoom": 13,
+      "title": "Northland 0.4m Rural Aerial Photos (2014-2016)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ561-1/01K2ZM4SZCYMCD0ZTCHZC7T17M/",
-      "3857": "s3://linz-basemaps/3857/NZ561-1/01K2ZKZ6C6FSKM7HB03W1EHNPQ/",
-      "name": "NZ561-1",
-      "title": "NZ561-1",
-      "minZoom": 10
+      "2193": "s3://linz-basemaps/2193/canterbury_rural_2015-2016_0-30m_RGBA/01F66EBN9BYJA29NMW96ZJM7ZJ/",
+      "3857": "s3://linz-basemaps/3857/canterbury_rural_2015-2016_0-30m_RGBA/01ED82104D376HEF1ZMW8PRX5N/",
+      "name": "canterbury-rural-2015-2016-0.3m",
+      "minZoom": 13,
+      "title": "Canterbury 0.3m Rural Aerial Photos (2015-2016)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ614-1/01K2ZP78B3E10ZWXGRYWCCMAHM/",
-      "3857": "s3://linz-basemaps/3857/NZ614-1/01K2ZP6XXFQ8HYJKW6NFAFF4VG/",
-      "name": "NZ614-1",
-      "title": "NZ614-1",
-      "minZoom": 10
+      "2193": "s3://linz-basemaps/2193/southland-central-otago_rural_2015-2017_0-40m_RGB/01F6P1RQRT6N94DDKGRCSYKM6R/",
+      "3857": "s3://linz-basemaps/3857/southland-central-otago_rural_2015-2017_0-40m_RGB/01ED83A271YNKAW0KRH17RPMMV/",
+      "name": "southland-central-otago-rural-2015-2017-0.4m",
+      "minZoom": 13,
+      "title": "Southland & Central Otago 0.4m Rural Aerial Photos (2015-2017)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ615-1/01K2ZPC5W6D1V35TS9E81MN1WE/",
-      "3857": "s3://linz-basemaps/3857/NZ615-1/01K2ZPA3BHQQEDQ2AH76KSTS2Z/",
-      "name": "NZ615-1",
-      "title": "NZ615-1",
-      "minZoom": 10
+      "2193": "s3://linz-basemaps/2193/southland_2023_0.25m/01J2CYGDFGE0JBCDGP8K37VHY6/",
+      "3857": "s3://linz-basemaps/3857/southland_2023_0.25m/01J2CYGDFXH71XBHE1HXRXVEQR/",
+      "name": "southland-2023-0.25m",
+      "minZoom": 13,
+      "title": "Southland 0.25m Rural Aerial Photos (2023-2024)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ632-1/01K2ZR2431W0WGSZW57JRM6RYM/",
-      "3857": "s3://linz-basemaps/3857/NZ632-1/01K2ZR23ZYES3W18K49AXJWKEA/",
-      "name": "NZ632-1",
-      "title": "NZ632-1",
-      "minZoom": 10
+      "2193": "s3://linz-basemaps/2193/west-coast_rural_2015-16_0-3m/01F6P21PNQC7D67W5SHQF806Z3/",
+      "3857": "s3://linz-basemaps/3857/west-coast_rural_2015-16_0-3m/01ED83TT0ZHKXTPFXEGFJHP2M5/",
+      "name": "west-coast-rural-2015-2016-0.3m",
+      "minZoom": 13,
+      "title": "West Coast 0.3m Rural Aerial Photos (2015-2016)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ661-1/01K2ZRKKDAA2CGPY3X0BABKNZJ/",
-      "3857": "s3://linz-basemaps/3857/NZ661-1/01K2ZRHBAYJRXG7JF51GGE831N/",
-      "name": "NZ661-1",
-      "title": "NZ661-1",
-      "minZoom": 10
+      "2193": "s3://linz-basemaps/2193/canterbury_rural_2016-18_0-3m/01F66ECJGT5PGYPVK9MW7TYHPZ/",
+      "3857": "s3://linz-basemaps/3857/canterbury_rural_2016-18_0-3m/01ED8225A94WY3GQ4CNZ9E1PZN/",
+      "name": "canterbury-rural-2016-2018-0.3m",
+      "minZoom": 13,
+      "title": "Canterbury 0.3m Rural Aerial Photos (2017-2018)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ681-1/01K2ZSTTQF4FX04HHMSPDEDZC0/",
-      "3857": "s3://linz-basemaps/3857/NZ681-1/01K2ZS8EAMJ3RT78KM5TSV8EPT/",
-      "name": "NZ681-1",
-      "title": "NZ681-1",
-      "minZoom": 10
+      "2193": "s3://linz-basemaps/2193/kaikoura-post-earthquake_rural_2016-17_0-3m/01F6P1AGSRJG1VKND6PD8BXH2Q/",
+      "3857": "s3://linz-basemaps/3857/kaikoura-post-earthquake_rural_2016-17_0-3m/01ED82F0376F6FJFMTV4JAVJ53/",
+      "name": "kaikoura-post-earthquake-rural-2016-2017-0.3m",
+      "minZoom": 13,
+      "title": "Kaikōura Earthquake 0.3m Rural Aerial Photos (2016-2017)",
+      "category": "Event"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ7622-1/01K300V84JBBKN297RXWQ6S2V1/",
-      "3857": "s3://linz-basemaps/3857/NZ7622-1/01K300P27V56S32GG5JMNAJGYN/",
-      "name": "NZ7622-1",
-      "title": "NZ7622-1",
-      "minZoom": 11
+      "2193": "s3://linz-basemaps/2193/wellington_rural_2021_0-3m_RGB/01FB82NZY0ASDQBKT28DSXS8XC/",
+      "3857": "s3://linz-basemaps/3857/wellington_rural_2021_0-3m_RGB/01FB82QKPWEHV0FWN7KBXM6NDM/",
+      "name": "wellington-rural-2021-0.3m",
+      "minZoom": 13,
+      "title": "Wellington 0.3m Rural Aerial Photos (2021)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ7623-1/01K300VHXCXSHN7N0NE8ZQ4C6S/",
-      "3857": "s3://linz-basemaps/3857/NZ7623-1/01K30100W6BH0BH71XVV2H3YQB/",
-      "name": "NZ7623-1",
-      "title": "NZ7623-1",
-      "minZoom": 11
+      "2193": "s3://linz-basemaps/2193/west-coast_rural_2016-17_0-3m/01F6P220GYWC836YQ4RRZGSV73/",
+      "3857": "s3://linz-basemaps/3857/west-coast_rural_2016-17_0-3m/01ED83VT2T06B1FVXF9P6CCV8C/",
+      "name": "west-coast-rural-2016-2017-0.3m",
+      "minZoom": 13,
+      "title": "West Coast 0.3m Rural Aerial Photos (2016-2017)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ7624-1/01K302JC9PEGY5ZZ3BE4TNT6V6/",
-      "3857": "s3://linz-basemaps/3857/NZ7624-1/01K30108JRG0363MM6R8BW7B4B/",
-      "name": "NZ7624-1",
-      "title": "NZ7624-1",
-      "minZoom": 11
+      "2193": "s3://linz-basemaps/2193/otago_rural_2017-2019_0-30m_RGB/01F6P1N3TA18Y2GYJ5B4YGGZYC/",
+      "3857": "s3://linz-basemaps/3857/otago_rural_2017-2019_0-30m_RGB/01ED831MKK85M1QNCNZV0AYPYC/",
+      "name": "otago-rural-2017-2019-0.3m",
+      "minZoom": 13,
+      "title": "Otago 0.3m Rural Aerial Photos (2017-2019)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ7653-1/01K301D03N96Y0Y8T5QD2APFMZ/",
-      "3857": "s3://linz-basemaps/3857/NZ7653-1/01K3015HT864J0YMVV7AZ6DD60/",
-      "name": "NZ7653-1",
-      "title": "NZ7653-1",
-      "minZoom": 11
+      "2193": "s3://linz-basemaps/2193/waikato_rural_2017-19_0-3m/01F6P1YQNFECBE6S3TESNSPA2X/",
+      "3857": "s3://linz-basemaps/3857/waikato_rural_2017-19_0-3m/01EDAN2JJVFCS9WZWMB9105XFH/",
+      "name": "waikato-rural-2017-2019-0.3m",
+      "minZoom": 13,
+      "title": "Waikato 0.3m Rural Aerial Photos (2016-2019)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ7654-1/01K301M1WAZRX8BQMWDE5SQ8Y8/",
-      "3857": "s3://linz-basemaps/3857/NZ7654-1/01K3013QDPGX4GP8XN395WTMK4/",
-      "name": "NZ7654-1",
-      "title": "NZ7654-1",
-      "minZoom": 11
+      "2193": "s3://linz-basemaps/2193/nelson_rural_2018-19_0-3m/01F6P1FJNXVVTS7HC3VS3FHEYX/",
+      "3857": "s3://linz-basemaps/3857/nelson_rural_2018-19_0-3m/01ED82T5HM0H275QJPMDQN0JFJ/",
+      "name": "nelson-rural-2018-2019-0.3m",
+      "minZoom": 13,
+      "title": "Nelson 0.3m Rural Aerial Photos (2018-2019)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/TK121-2/01K301P1SET3W6HEJ5KS7JEYA8/",
-      "3857": "s3://linz-basemaps/3857/TK121-2/01K301NEKY4GZCG71T0KVJ1878/",
-      "name": "TK121-2",
-      "title": "TK121-2",
-      "minZoom": 10
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_rural_2016-17_0-3m/01F66E3G0Z8DNKWXG5M55QNW9G/",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_rural_2016-17_0-3m/01ED81Q2AS5K0RPNRCRQ33YAYW/",
+      "name": "bay-of-plenty-rural-2016-2017-0.3m",
+      "title": "Bay of Plenty 0.3m Rural Aerial Photos (2016-2017)",
+      "minZoom": 13,
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/TK121-3/01K301R4J9WGF52QZEVX873XJP/",
-      "3857": "s3://linz-basemaps/3857/TK121-3/01K301PJBR5GGY8GJR5NAYKAXA/",
-      "name": "TK121-3",
-      "title": "TK121-3",
-      "minZoom": 10
+      "2193": "s3://linz-basemaps/2193/tasman_rural_2020_0-3m_RGB/01FBGB1QN859XRGNNWT6ZBHEN8/",
+      "3857": "s3://linz-basemaps/3857/tasman_rural_2020_0-3m_RGB/01FBGB0T73562VAZBEBHZ7E84T/",
+      "name": "tasman-rural-2020-0.3m",
+      "minZoom": 13,
+      "title": "Tasman 0.3m Rural Aerial Photos (2020)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/TK121-4/01K301PRXXGCP9G20R12BGEFKT/",
-      "3857": "s3://linz-basemaps/3857/TK121-4/01K301RFFF81R2RY565TQ1M1R1/",
-      "name": "TK121-4",
-      "title": "TK121-4",
-      "minZoom": 10
+      "2193": "s3://linz-basemaps/2193/tasman_2022-2023_0.25m/01H4Q84VRY1WFXERB721NJZPED/",
+      "3857": "s3://linz-basemaps/3857/tasman_2022-2023_0.25m/01H4Q85QE0ZF7E13DSGGZRR04V/",
+      "name": "tasman-2022-2023-0.25m",
+      "minZoom": 13,
+      "title": "Tasman 0.25m Rural Aerial Photos (2022-2023)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/TO201-1/01K30258RK813WFQ86SHWFC58J/",
-      "3857": "s3://linz-basemaps/3857/TO201-1/01K3024H0CH1SP3FR1FFNS7NG8/",
-      "name": "TO201-1",
-      "title": "TO201-1",
-      "minZoom": 11
+      "2193": "s3://linz-basemaps/2193/canterbury_rural_2019_0-3m_RGB/01FJJFP25MYHH34JEV0XM9Z8Q8/",
+      "3857": "s3://linz-basemaps/3857/canterbury_rural_2019_0-3m_RGB/01FJJFN1H62SA0836CKX2BYE5F/",
+      "name": "canterbury-rural-2019-0.3m",
+      "minZoom": 13,
+      "title": "Canterbury 0.3m Rural Aerial Photos (2018-2019)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/TO201-2/01K30259SRK64A12BRMZ2XYSYZ/",
-      "3857": "s3://linz-basemaps/3857/TO201-2/01K30250KCM2Q6G86MX7GNB76Q/",
-      "name": "TO201-2",
-      "title": "TO201-2",
-      "minZoom": 11
+      "2193": "s3://linz-basemaps/2193/canterbury_rural_2020_0-3m_RGB/01FHRTDFP4DDQD4X1G63SDF0AX/",
+      "3857": "s3://linz-basemaps/3857/canterbury_rural_2020_0-3m_RGB/01FHRTF5GHTZD5SEXP3MS7E911/",
+      "name": "canterbury-rural-2020-0.3m",
+      "minZoom": 13,
+      "title": "Canterbury 0.3m Rural Aerial Photos (2020)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/TO401-1/01K30347N02HG71BTYGN65CREE/",
-      "3857": "s3://linz-basemaps/3857/TO401-1/01K302X1DFPKQDMF6P8FBAHSW9/",
-      "name": "TO401-1",
-      "title": "TO401-1",
-      "minZoom": 11
+      "2193": "s3://linz-basemaps/2193/canterbury_rural_2020-2021_0-2m_RGB/01FHV1ZNDNT9256J13H89BRKWT/",
+      "3857": "s3://linz-basemaps/3857/canterbury_rural_2020-2021_0-2m_RGB/01FHV1VPTBM52WH81ZT7XAX93W/",
+      "name": "canterbury-rural-2020-2021-0.2m",
+      "minZoom": 13,
+      "title": "Canterbury 0.2m Rural Aerial Photos (2020-2021)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/TO402-1/01K3038XVAEKBKKNT0X9EAN8FY/",
-      "3857": "s3://linz-basemaps/3857/TO402-1/01K302T1YDF4ZFH7TVF5F74M65/",
-      "name": "TO402-1",
-      "title": "TO402-1",
-      "minZoom": 11
+      "2193": "s3://linz-basemaps/2193/canterbury-waitaki_rural_2021_0-3m_RGB/01FQ07ZVQYC3M57D8N84WFM4F5/",
+      "3857": "s3://linz-basemaps/3857/canterbury-waitaki_rural_2021_0-3m_RGB/01FQ07XS8GHPFS913PGY5P9010/",
+      "name": "canterbury-waitaki-rural-2021-0.3m",
+      "minZoom": 13,
+      "title": "Canterbury - Waitaki 0.3m Rural Aerial Photos (2021)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/TO501-1/01K303NPXYXA2RHP1G2ES2ERDQ/",
-      "3857": "s3://linz-basemaps/3857/TO501-1/01K303EEGE8TB6W4ACADWPYBQ2/",
-      "name": "TO501-1",
-      "title": "TO501-1",
-      "minZoom": 11
+      "2193": "s3://linz-basemaps/2193/canterbury-mackenzie_rural_2021_0-3m_RGB/01FQ081YGQNSSB120WPZ3N70W0/",
+      "3857": "s3://linz-basemaps/3857/canterbury-mackenzie_rural_2021_0-3m_RGB/01FQ080VWM2VAMT9G2BYPWZTKB/",
+      "name": "canterbury-mackenzie-rural-2021-0.3m",
+      "minZoom": 13,
+      "title": "Canterbury - Mackenzie 0.3m Rural Aerial Photos (2021)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/CK141-6/01K2NG2NBJC7ZD4S7M8PRHCFPX/",
-      "3857": "s3://linz-basemaps/3857/CK141-6/01K2NG2DQ1G5JSZRRNSS0XAGBE/",
-      "name": "CK141-6",
-      "title": "CK141-6",
-      "minZoom": 11
+      "2193": "s3://linz-basemaps/2193/marlborough_rural_2021-2022_0-25m_RGB/01GAMZ84DPHCND4PG6BD0W999A/",
+      "3857": "s3://linz-basemaps/3857/marlborough_rural_2021-2022_0-25m_RGB/01GAMZ9988GKX5JF0F0EW2R9Q3/",
+      "name": "marlborough-rural-2021-2022-0.25m",
+      "minZoom": 13,
+      "title": "Marlborough 0.25m Rural Aerial Photos (2021-2022)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/CK242-1/01K2NHT9W2X59381ZXP4B5DKBP/",
-      "3857": "s3://linz-basemaps/3857/CK242-1/01K2NHMG9WN8F2H2MS3PMKB5BD/",
-      "name": "CK242-1",
-      "title": "CK242-1",
-      "minZoom": 12
+      "2193": "s3://linz-basemaps/2193/marlborough_2023_0.25m/01J9JDPASA4GCZ6Y6RJMMRD1XH/",
+      "3857": "s3://linz-basemaps/3857/marlborough_2023_0.25m/01J9JDPASBK3P9NSRB6HQN31DQ/",
+      "name": "marlborough-2023-0.25m",
+      "minZoom": 13,
+      "title": "Marlborough 0.25m Rural Aerial Photos (2023-2024)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NU131-2/01K2NHS9B1X2YMGS4D8GVS506E/",
-      "3857": "s3://linz-basemaps/3857/NU131-2/01K2NHPPFBZBRTJ9MNGDCGPN6K/",
-      "name": "NU131-2",
-      "title": "NU131-2",
-      "minZoom": 11
+      "2193": "s3://linz-basemaps/2193/hawkes-bay_rural_2021-2022_0-3m_RGB/01GBPH2Y0Q4PENH4T22PGJB521/",
+      "3857": "s3://linz-basemaps/3857/hawkes-bay_rural_2021-2022_0-3m_RGB/01GBPH42RKHGCSHRB3EMZVZD91/",
+      "name": "hawkes-bay-rural-2021-2022-0.3m",
+      "minZoom": 13,
+      "title": "Hawke's Bay 0.3m Rural Aerial Photos (2021-2022)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ14906-1/01K2X3560D8PN9BF8XEYF1V5PS/",
-      "3857": "s3://linz-basemaps/3857/NZ14906-1/01K2X32CE2R7TE51M6C6AFQBV5/",
-      "name": "NZ14906-1",
-      "title": "NZ14906-1",
-      "minZoom": 11
+      "2193": "s3://linz-basemaps/2193/taranaki_rural_2021-2022_0.25m_RGB/01GDKFTY5BPAHMSKKVC336J9Y2/",
+      "3857": "s3://linz-basemaps/3857/taranaki_rural_2021-2022_0.25m_RGB/01GDKFVY7VZ7CVYGYG02FXSEMJ/",
+      "name": "taranaki-rural-2021-2022-0.25m",
+      "minZoom": 13,
+      "title": "Taranaki 0.25m Rural Aerial Photos (2021-2022)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ14906-2/01K2X35TC142C52N5PZ549XNCD/",
-      "3857": "s3://linz-basemaps/3857/NZ14906-2/01K2X3355M65A7ZRCYRWPS0XBN/",
-      "name": "NZ14906-2",
-      "title": "NZ14906-2",
-      "minZoom": 11
+      "2193": "s3://linz-basemaps/2193/manawatu-whanganui_rural_2021-2022_0.3m/01GVCD2Y9RTQ57TWG4MPTHJ84R/",
+      "3857": "s3://linz-basemaps/3857/manawatu-whanganui_rural_2021-2022_0.3m/01GVCDBNDH2Z9JEHDHJSD1EJ79/",
+      "name": "manawatu-whanganui-rural-2021-2022-0.3m",
+      "minZoom": 13,
+      "title": "Manawatū-Whanganui 0.3m Rural Aerial Photos (2021-2022)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ2225-1/01K2X3ERGJCH6S02SGYV44MFKW/",
-      "3857": "s3://linz-basemaps/3857/NZ2225-1/01K2X3BSA4FF9XYDW062RKDJNR/",
-      "name": "NZ2225-1",
-      "title": "NZ2225-1",
-      "minZoom": 12
+      "2193": "s3://linz-basemaps/2193/manawatu-whanganui_2023-2024_0.2m/01J0HT395T9SHD4WPQ909PEREZ/",
+      "3857": "s3://linz-basemaps/3857/manawatu-whanganui_2023-2024_0.2m/01J0HT3961293FJM2HBKN9NC79/",
+      "name": "manawatu-whanganui-2023-2024-0.2m",
+      "minZoom": 13,
+      "title": "Manawatū-Whanganui 0.2m Rural Aerial Photos (2023-2024)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ2225-2/01K2X3ESMQ0S7NRECE812V9GAB/",
-      "3857": "s3://linz-basemaps/3857/NZ2225-2/01K2X3D8902334QY0XMWWT0GJ8/",
-      "name": "NZ2225-2",
-      "title": "NZ2225-2",
-      "minZoom": 12
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_2021-2022_0.2m/01GHW1Y474AHB191P8SRKENK7Y/",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_2021-2022_0.2m/01GHW1ZWNS4N0GP9TAM09WHPBC/",
+      "name": "bay-of-plenty-2021-2022-0.2m",
+      "minZoom": 13,
+      "title": "Bay of Plenty 0.2m Rural Aerial Photos (2021-2022)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ2225-3/01K2X3HH7ERZEJEFT4XJ1NC0YT/",
-      "3857": "s3://linz-basemaps/3857/NZ2225-3/01K2X3FYQGN48THEQ3ET0EB39N/",
-      "name": "NZ2225-3",
-      "title": "NZ2225-3",
-      "minZoom": 12
+      "2193": "s3://linz-basemaps/2193/canterbury_2022_0.3m/01GPEXMRQCA525WF8B0XBV5575/",
+      "3857": "s3://linz-basemaps/3857/canterbury_2022_0.3m/01GPEXPBHG2XJZK0JPGKNAVD6A/",
+      "name": "canterbury-2022-0.3m",
+      "minZoom": 13,
+      "title": "Canterbury 0.3m Rural Aerial Photos (2022)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ232-4/01K2X3Q02XMA4ZXVA2Y4ZDW0XD/",
-      "3857": "s3://linz-basemaps/3857/NZ232-4/01K2X3PQMXPJPRMNP1KP1KP1Y0/",
-      "name": "NZ232-4",
-      "title": "NZ232-4",
+      "2193": "s3://linz-basemaps/2193/gisborne_2024-2025_0.2m/01JMXGT2HRMWKVE7XRDB8D4ADW/",
+      "3857": "s3://linz-basemaps/3857/gisborne_2024-2025_0.2m/01JMXGT7FJ5FWVC1KBJ66K7SCW/",
+      "name": "gisborne-2024-2025-0.2m",
+      "title": "Gisborne 0.2m Rural Aerial Photos (2024-2025)",
+      "category": "Rural Aerial Photos",
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ2325-1/01K2X56S1GJYDE2FPMHYSRX263/",
-      "3857": "s3://linz-basemaps/3857/NZ2325-1/01K2X54JAK88ANJHPW50AWGV3P/",
-      "name": "NZ2325-1",
-      "title": "NZ2325-1",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ2411-1/01K2X5621RPBR4DKH6KQKG298W/",
-      "3857": "s3://linz-basemaps/3857/NZ2411-1/01K2X53QS1H36CA37SJKDTAASE/",
-      "name": "NZ2411-1",
-      "title": "NZ2411-1",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ2411-2/01K2X58XRDYXGF2CK6QRTMNFJS/",
-      "3857": "s3://linz-basemaps/3857/NZ2411-2/01K2X55MD0KS94CJQ8T9RSB8WA/",
-      "name": "NZ2411-2",
-      "title": "NZ2411-2",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ252-2/01K2X50K3V8QH84M2F9NKDHM8V/",
-      "3857": "s3://linz-basemaps/3857/NZ252-2/01K2X50P5AZWK6V8ZF0H8W5M5Q/",
-      "name": "NZ252-2",
-      "title": "NZ252-2",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ2683-1/01K2X5S5WDVXNMTW5EF40A2A4Z/",
-      "3857": "s3://linz-basemaps/3857/NZ2683-1/01K2X5NM6GVAGPNBKS7ZY4ZE5J/",
-      "name": "NZ2683-1",
-      "title": "NZ2683-1",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ2687-1/01K2X62GR1CHZG86DDF1X0XSNH/",
-      "3857": "s3://linz-basemaps/3857/NZ2687-1/01K2X5TRHDGKTQMHKC140TKDFH/",
-      "name": "NZ2687-1",
-      "title": "NZ2687-1",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ2862-1/01K2X6HA4GJVDR1BK2GR6XSEEJ/",
-      "3857": "s3://linz-basemaps/3857/NZ2862-1/01K2X6C8VYWKE28YHS6WZXJFB9/",
-      "name": "NZ2862-1",
-      "title": "NZ2862-1",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ2862-2/01K2X687D6XJKRVQNS4XG40JNV/",
-      "3857": "s3://linz-basemaps/3857/NZ2862-2/01K2X641RXMZ3Q831KQGDHM573/",
-      "name": "NZ2862-2",
-      "title": "NZ2862-2",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ3111-4/01K2X695DND2XC54JWTD73AFFG/",
-      "3857": "s3://linz-basemaps/3857/NZ3111-4/01K2X6934J4CP8W2TWG0KNY9CR/",
-      "name": "NZ3111-4",
-      "title": "NZ3111-4",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4111-1/01K2X7DWFEC9MZRBBNX6PPG5VW/",
-      "3857": "s3://linz-basemaps/3857/NZ4111-1/01K2X7C9N748SAK71HHJRTQP1J/",
-      "name": "NZ4111-1",
-      "title": "NZ4111-1",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4212-1/01K2X6WJX63KQQVMVMYWBB43RW/",
-      "3857": "s3://linz-basemaps/3857/NZ4212-1/01K2X6WM9N3KKFDWAED4RHNXRM/",
-      "name": "NZ4212-1",
-      "title": "NZ4212-1",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4212-2/01K2X6X2B046SMV9ZBSK179YH0/",
-      "3857": "s3://linz-basemaps/3857/NZ4212-2/01K2X6ZN718CTMH2B2GQN1W5FG/",
-      "name": "NZ4212-2",
-      "title": "NZ4212-2",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4314-1/01K2X86BXXSQTG19WWHN1RQS19/",
-      "3857": "s3://linz-basemaps/3857/NZ4314-1/01K2X7WS3QDB04512K6GMNEEZT/",
-      "name": "NZ4314-1",
-      "title": "NZ4314-1",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5111-2/01K2XBW5NWVCYQ4GJE41317RXS/",
-      "3857": "s3://linz-basemaps/3857/NZ5111-2/01K2XBW5EAVKMMRBRQKZJYGEYD/",
-      "name": "NZ5111-2",
-      "title": "NZ5111-2",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5113-2/01K2XC60HK85PYX7DGWEM19K62/",
-      "3857": "s3://linz-basemaps/3857/NZ5113-2/01K2XC77D4S88CX15AKBWQBGRZ/",
-      "name": "NZ5113-2",
-      "title": "NZ5113-2",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5114-1/01K2XC7K6H4NEJ16JYX5T055HK/",
-      "3857": "s3://linz-basemaps/3857/NZ5114-1/01K2XC7JXD0Z0YW07DSEVB5MPT/",
-      "name": "NZ5114-1",
-      "title": "NZ5114-1",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5219-1/01K2XHZWQ6AGGP07Q5A1DD3GRF/",
-      "3857": "s3://linz-basemaps/3857/NZ5219-1/01K2XHTV9FFP9RQSBA1K47KW0B/",
-      "name": "NZ5219-1",
-      "title": "NZ5219-1",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5221-1/01K2XJ2WE1TEB2R04X7N4ENH3E/",
-      "3857": "s3://linz-basemaps/3857/NZ5221-1/01K2XHY5CR25XXKJMNTYE1V01B/",
-      "name": "NZ5221-1",
-      "title": "NZ5221-1",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5222-1/01K2XJ3NCQ8M9CA1B7MXBBXNVM/",
-      "3857": "s3://linz-basemaps/3857/NZ5222-1/01K2XHYRXH7JC0C5E7XFCZQGD6/",
-      "name": "NZ5222-1",
-      "title": "NZ5222-1",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5227-1/01K2XJYNFTSGF5NB19Z0GPZTW8/",
-      "3857": "s3://linz-basemaps/3857/NZ5227-1/01K2XJS3ZV012TXHW9EMB2RVM3/",
-      "name": "NZ5227-1",
-      "title": "NZ5227-1",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5312-1/01K2XKD0FY0QMD0N4GT0F50TQX/",
-      "3857": "s3://linz-basemaps/3857/NZ5312-1/01K2XK7DT3C13R77M4QVH6CGMS/",
-      "name": "NZ5312-1",
-      "title": "NZ5312-1",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5312-2/01K2XJFCQ6DZJ8MNNF3AQEBBH8/",
-      "3857": "s3://linz-basemaps/3857/NZ5312-2/01K2XJF1BG5EP57BPGTJSTBMDN/",
-      "name": "NZ5312-2",
-      "title": "NZ5312-2",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5318-1/01K2XKWJTZ5T6DFQZZ6J6HE9D9/",
-      "3857": "s3://linz-basemaps/3857/NZ5318-1/01K2XKQEJX1X3KTJ041F62NPMK/",
-      "name": "NZ5318-1",
-      "title": "NZ5318-1",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5321-1/01K2XM3XWB7TT13X8Y41BHX8E1/",
-      "3857": "s3://linz-basemaps/3857/NZ5321-1/01K2XKZ2W84060ASBXTNM6YEKG/",
-      "name": "NZ5321-1",
-      "title": "NZ5321-1",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5324-1/01K2ZJ9KTVMAAZFAZJ4PARDAKW/",
-      "3857": "s3://linz-basemaps/3857/NZ5324-1/01K2ZJ511PR65RC3ZYQE69NYW5/",
-      "name": "NZ5324-1",
-      "title": "NZ5324-1",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5327-1/01K2ZJAWJF4KYMY0Y11SJR4G9S/",
-      "3857": "s3://linz-basemaps/3857/NZ5327-1/01K2ZJNGET179EGMYC23CV296E/",
-      "name": "NZ5327-1",
-      "title": "NZ5327-1",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5411-1/01K2ZJ0BDWG2V0FVYP35ZVPTDE/",
-      "3857": "s3://linz-basemaps/3857/NZ5411-1/01K2ZHXSJQRNV9BXJ2027C56E4/",
-      "name": "NZ5411-1",
-      "title": "NZ5411-1",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5411-2/01K2ZJGVN9M29MBWXB6MV7T7D6/",
-      "3857": "s3://linz-basemaps/3857/NZ5411-2/01K2ZJE3KZXSGFEN7G46CNTFGW/",
-      "name": "NZ5411-2",
-      "title": "NZ5411-2",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5413-1/01K2ZM8A0MCHKEYV1A78NQ9G7D/",
-      "3857": "s3://linz-basemaps/3857/NZ5413-1/01K2ZK6XBTRPQ2A8TPD7964C2B/",
-      "name": "NZ5413-1",
-      "title": "NZ5413-1",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5423-1/01K2ZKQVKP057FT81ZR8X9KJG5/",
-      "3857": "s3://linz-basemaps/3857/NZ5423-1/01K2ZKSHYRSVTK3KAVP4Q2ZV6A/",
-      "name": "NZ5423-1",
-      "title": "NZ5423-1",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5551-1/01K2ZN3EE0H97RQA8FCWY7HWSB/",
-      "3857": "s3://linz-basemaps/3857/NZ5551-1/01K2ZN2GX16683Y9P158FC3MQZ/",
-      "name": "NZ5551-1",
-      "title": "NZ5551-1",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5551-2/01K2ZKAP2TMD478JNBKPFVJCQA/",
-      "3857": "s3://linz-basemaps/3857/NZ5551-2/01K2ZKEMYJP7MBQKHMC6TK7B9X/",
-      "name": "NZ5551-2",
-      "title": "NZ5551-2",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5551-3/01K2ZKAEEXJQWNKJRW6R2KASPH/",
-      "3857": "s3://linz-basemaps/3857/NZ5551-3/01K2ZKDGVKX2TPXK2A1XW8S9DH/",
-      "name": "NZ5551-3",
-      "title": "NZ5551-3",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5551-4/01K2ZKBF5A8885Z3Y9QJW8YA98/",
-      "3857": "s3://linz-basemaps/3857/NZ5551-4/01K2ZKBERHJ97GP9HNQ1QJ3VZE/",
-      "name": "NZ5551-4",
-      "title": "NZ5551-4",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5551-5/01K2ZKJC2KQECM3CN7TFKZEP6R/",
-      "3857": "s3://linz-basemaps/3857/NZ5551-5/01K2ZKKA95VQJGMSD3K330RREK/",
-      "name": "NZ5551-5",
-      "title": "NZ5551-5",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6142-1/01K2ZNS55WTZ1EZA921CW75NMK/",
-      "3857": "s3://linz-basemaps/3857/NZ6142-1/01K2ZNS59SV9F8SCB73RQTFX03/",
-      "name": "NZ6142-1",
-      "title": "NZ6142-1",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6144-1/01K2ZP878PKTSA139NX94V4WXT/",
-      "3857": "s3://linz-basemaps/3857/NZ6144-1/01K2ZP8H6Q20KD8MM6TEFETAGF/",
-      "name": "NZ6144-1",
-      "title": "NZ6144-1",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6151-1/01K2ZNS3F44F7KSAR5E1KZHQ63/",
-      "3857": "s3://linz-basemaps/3857/NZ6151-1/01K2ZNS3185ZPT8KWWQSWQXX2Q/",
-      "name": "NZ6151-1",
-      "title": "NZ6151-1",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6151-2/01K2ZP0J5ZZH5XE3424RQZ92AA/",
-      "3857": "s3://linz-basemaps/3857/NZ6151-2/01K2ZP0HNKZXX8M4BH5JAB0CTP/",
-      "name": "NZ6151-2",
-      "title": "NZ6151-2",
+      "2193": "s3://linz-basemaps/2193/gisborne_2024-2025_0.1m/01JMZTRKMPGSKWR7BAFMGGYQ6B/",
+      "3857": "s3://linz-basemaps/3857/gisborne_2024-2025_0.1m/01JMZTRKMN73SPM4944051KDCT/",
+      "name": "gisborne-2024-2025-0.1m",
+      "title": "Gisborne 0.1m Rural Aerial Photos (2024-2025)",
+      "category": "Rural Aerial Photos",
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ6151-3/01K2ZNP319WQAENGJNF3KRGWDM/",
-      "3857": "s3://linz-basemaps/3857/NZ6151-3/01K2ZNPMG0354FNPAD5FHJQ881/",
-      "name": "NZ6151-3",
-      "title": "NZ6151-3",
+      "2193": "s3://linz-basemaps/2193/canterbury_2023_0.3m/01HFASC66T0ARNZK91N4XNM42Z/",
+      "3857": "s3://linz-basemaps/3857/canterbury_2023_0.3m/01HFART8DDXKKGVM10S859K4WQ/",
+      "name": "canterbury-2023-0.3m",
+      "title": "Canterbury 0.3m Rural Aerial Photos (2023)",
+      "category": "Rural Aerial Photos",
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ6151-4/01K2ZNPQ5WAXQ9V4YXS3ZE2HV2/",
-      "3857": "s3://linz-basemaps/3857/NZ6151-4/01K2ZNPR3RNBHR2YS45JD6F535/",
-      "name": "NZ6151-4",
-      "title": "NZ6151-4",
+      "2193": "s3://linz-basemaps/2193/waimakariri_2024_0.25m/01J1RESR6CDNEHH4A2DXTP1G0X/",
+      "3857": "s3://linz-basemaps/3857/waimakariri_2024_0.25m/01J1RESR6C1MNR0A8SH34PKHAF/",
+      "name": "waimakariri_2024_0.25m",
+      "title": "Waimakariri 0.25m Rural Aerial Photos (2024)",
+      "category": "Rural Aerial Photos",
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ6152-1/01K2ZPRSW3Z68GZW16NSRDF2AF/",
-      "3857": "s3://linz-basemaps/3857/NZ6152-1/01K2ZPRT5F3RN5DRE9G8V3T6B9/",
-      "name": "NZ6152-1",
-      "title": "NZ6152-1",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6153-1/01K2ZQ1KQC0BGRE2KNBP5W21XD/",
-      "3857": "s3://linz-basemaps/3857/NZ6153-1/01K2ZPWSD0RKJDHH2381J3PE99/",
-      "name": "NZ6153-1",
-      "title": "NZ6153-1",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6153-2/01K2ZP1V0AMC08MEM2F9G31NNA/",
-      "3857": "s3://linz-basemaps/3857/NZ6153-2/01K2ZP1TNBZKDKR06KSY47TKQJ/",
-      "name": "NZ6153-2",
-      "title": "NZ6153-2",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6155-1/01K2ZRC7H3SZ0SQXMM2Z4SAA3N/",
-      "3857": "s3://linz-basemaps/3857/NZ6155-1/01K2ZR7J3AG4XP27KV5H2RDPXW/",
-      "name": "NZ6155-1",
-      "title": "NZ6155-1",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6212-1/01K2ZQPAWN1J51WF7T2MADQ0VP/",
-      "3857": "s3://linz-basemaps/3857/NZ6212-1/01K2ZQN3NYKD6SVSYJ9RQXSWC1/",
-      "name": "NZ6212-1",
-      "title": "NZ6212-1",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6212-2/01K2ZR1E0SBE379DJE8SVJF7DW/",
-      "3857": "s3://linz-basemaps/3857/NZ6212-2/01K2ZR1EAYP4A6RCCHNHR5HVPP/",
-      "name": "NZ6212-2",
-      "title": "NZ6212-2",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6324-1/01K2ZR2N8VR149CMBZXS929687/",
-      "3857": "s3://linz-basemaps/3857/NZ6324-1/01K2ZR0Y74DVZK5KVXWBGT7F9H/",
-      "name": "NZ6324-1",
-      "title": "NZ6324-1",
+      "2193": "s3://linz-basemaps/2193/otago_2023-2024_0.2m/01JP40WDHHB1KZZ3BPFDPGW9WA/",
+      "3857": "s3://linz-basemaps/3857/otago_2023-2024_0.2m/01JP40WVR4XX21ZXJ4FYHJ47AN/",
+      "name": "otago-2023-2024-0.2m",
+      "title": "Otago 0.2m Rural Aerial Photos (2023-2024)",
+      "category": "Rural Aerial Photos",
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ6422-1/01K2ZR2WWQXR8NYHM8HE8GKTQS/",
-      "3857": "s3://linz-basemaps/3857/NZ6422-1/01K2ZR0TS84CA8T6DWACYB5PZ6/",
-      "name": "NZ6422-1",
-      "title": "NZ6422-1",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6433-1/01K2ZRJWHP17D19TJHG19R6BCA/",
-      "3857": "s3://linz-basemaps/3857/NZ6433-1/01K2ZRGCMNAA3PYWM7PV1PWA4C/",
-      "name": "NZ6433-1",
-      "title": "NZ6433-1",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ681-2/01K2ZRR5JF60HV330S2312BVZE/",
-      "3857": "s3://linz-basemaps/3857/NZ681-2/01K2ZRQVW9096DP5Y6J3BZ9BGG/",
-      "name": "NZ681-2",
-      "title": "NZ681-2",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6825-1/01K2ZS2EG11DJ6WJYJQB4VG4W4/",
-      "3857": "s3://linz-basemaps/3857/NZ6825-1/01K2ZRXW0ZC9AW2JE5V74ZSKCZ/",
-      "name": "NZ6825-1",
-      "title": "NZ6825-1",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6912-1/01K2ZS89PPQJ1H3G7WTYKQD14X/",
-      "3857": "s3://linz-basemaps/3857/NZ6912-1/01K2ZS5X0Z0AY107W1SVPQ7YGC/",
-      "name": "NZ6912-1",
-      "title": "NZ6912-1",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6912-2/01K2ZSFTXP12TQJK1J635G8BRS/",
-      "3857": "s3://linz-basemaps/3857/NZ6912-2/01K2ZS9EXQPFEJ6Q0XRSDZ830H/",
-      "name": "NZ6912-2",
-      "title": "NZ6912-2",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6912-3/01K2ZS9764MGX1R81G44H82MHB/",
-      "3857": "s3://linz-basemaps/3857/NZ6912-3/01K2ZS8XAGT9VVHFQH8N30A4WG/",
-      "name": "NZ6912-3",
-      "title": "NZ6912-3",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ7132-1/01K2ZSR97W3D1T3F2CE27NGPX2/",
-      "3857": "s3://linz-basemaps/3857/NZ7132-1/01K2ZSNVQ6AXP1BTEMFVYZV5VV/",
-      "name": "NZ7132-1",
-      "title": "NZ7132-1",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ7142-1/01K2ZSSXPCWR4BRN1RYF5R8D3S/",
-      "3857": "s3://linz-basemaps/3857/NZ7142-1/01K2ZSQQCME2XDMKGR2J5QVYJF/",
-      "name": "NZ7142-1",
-      "title": "NZ7142-1",
+      "2193": "s3://linz-basemaps/2193/canterbury_2024_0.2m/01JEQ87YCWJG5GSV4R20D2ZV00/",
+      "3857": "s3://linz-basemaps/3857/canterbury_2024_0.2m/01JEQ87YCSEARXMX25HQSA1KQ9/",
+      "name": "canterbury-2024-0.2m",
+      "title": "Canterbury 0.2m Rural Aerial Photos (2024)",
+      "category": "Rural Aerial Photos",
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ73-2/01K3008XGK39R0NQEV80NQZ6HE/",
-      "3857": "s3://linz-basemaps/3857/NZ73-2/01K3008WWKK9G611CRW9JJYKYC/",
-      "name": "NZ73-2",
-      "title": "NZ73-2",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/TO302-1/01K3033BP1KBTRN5FKYS8A13YB/",
-      "3857": "s3://linz-basemaps/3857/TO302-1/01K302PFSVJYS5E545GB5X6ENS/",
-      "name": "TO302-1",
-      "title": "TO302-1",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/TO405-1/01K302X01C2XPKFKC6T41EZVE0/",
-      "3857": "s3://linz-basemaps/3857/TO405-1/01K302WPZTMHBMSZB1BTRT42F3/",
-      "name": "TO405-1",
-      "title": "TO405-1",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/TO502-1/01K303R1CX5EZX202MH123MXVD/",
-      "3857": "s3://linz-basemaps/3857/TO502-1/01K303HZ2XGPEHF8DSHARF5HVT/",
-      "name": "TO502-1",
-      "title": "TO502-1",
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_2024_0.2m/01JQ2KWH2B22RCENE76QNHK719/",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_2024_0.2m/01JQ2KWH2CQB8MYJXKWVD34C5M/",
+      "name": "bay-of-plenty-2024-0.2m",
+      "title": "Bay of Plenty West 0.2m Rural Aerial Photos (2024-2025)",
+      "category": "Rural Aerial Photos",
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/TO503-1/01K3033Z9BJASBW11E5VMRVSXS/",
-      "3857": "s3://linz-basemaps/3857/TO503-1/01K3032DY65GZX1Q0DP2TV38VX/",
-      "name": "TO503-1",
-      "title": "TO503-1",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/WS211-1/01K30448ZEP71XX1Q4H2ZMGSPY/",
-      "3857": "s3://linz-basemaps/3857/WS211-1/01K303QDCHY0GSB2QTNWP7G8C6/",
-      "name": "WS211-1",
-      "title": "WS211-1",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/WS211-2/01K303DAJKXVT6MAWA2XKXCYXA/",
-      "3857": "s3://linz-basemaps/3857/WS211-2/01K303DAQ6CJVFS9WH6DXNQN91/",
-      "name": "WS211-2",
-      "title": "WS211-2",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/WS311-1/01K304BCYAG83HQGHEE4C2RTMQ/",
-      "3857": "s3://linz-basemaps/3857/WS311-1/01K3045X218VXBFTTTK68VTJ67/",
-      "name": "WS311-1",
-      "title": "WS311-1",
-      "minZoom": 11
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/CK141-7/01K2NG2GVYSV8S9A09ZK5WGTYR/",
-      "3857": "s3://linz-basemaps/3857/CK141-7/01K2NG269JDBPA3JQKR4N2G3XX/",
-      "name": "CK141-7",
-      "title": "CK141-7",
+      "2193": "s3://linz-basemaps/2193/otago_2025_0.2m/01JZ709B5XJ2H79FEM23KVVZY7/",
+      "3857": "s3://linz-basemaps/3857/otago_2025_0.2m/01JZ709B5SPG0N9QNGM3MRH416/",
+      "name": "otago-2025-0.2m",
+      "title": "Otago 0.2m Rural Aerial Photos (2025)",
+      "category": "Rural Aerial Photos",
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/CK142-9/01K2NHE13J9PEQ39VMCZ5YCNCP/",
-      "3857": "s3://linz-basemaps/3857/CK142-9/01K2NHD6V6CV4EE93GC0XHS23F/",
-      "name": "CK142-9",
-      "title": "CK142-9",
-      "minZoom": 14
+      "2193": "s3://linz-basemaps/2193/hawkes-bay_2023-2024_0.25m/01JTFAX5FPW6YH12FDSV44PKS7/",
+      "3857": "s3://linz-basemaps/3857/hawkes-bay_2023-2024_0.25m/01JTFAX6GGXHRVNA7YD5M8BYPT/",
+      "name": "hawkes-bay-2023-2024-0.25m",
+      "minZoom": 13,
+      "title": "Hawke's Bay 0.25m Rural Aerial Photos (2023-2025)",
+      "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NU131-4/01K2NHP484HG0KGJBX3ZSBM8YZ/",
-      "3857": "s3://linz-basemaps/3857/NU131-4/01K2NHP484WM2727BHRFF1MHRG/",
-      "name": "NU131-4",
-      "title": "NU131-4",
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty-east_2024-2025_0.2m/01JT49TJZNAE7C7NHAM69WHGW1/",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty-east_2024-2025_0.2m/01JT49TJZS11F1GESPRCQNMSF7/",
+      "name": "bay-of-plenty-east-2024-2025-0.2m",
+      "title": "Bay of Plenty East 0.2m Rural Aerial Photos (2024-2025)",
+      "category": "Rural Aerial Photos",
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ14903-2/01K2X2TRP1WXD2S8A7HHMJ48YS/",
-      "3857": "s3://linz-basemaps/3857/NZ14903-2/01K2X2T540ZP3KADT8F0M8A8NN/",
-      "name": "NZ14903-2",
-      "title": "NZ14903-2",
+      "2193": "s3://linz-basemaps/2193/wellington_2024_0.25m/01JTHWE8VE2GFABX6W6QBSWHW5/",
+      "3857": "s3://linz-basemaps/3857/wellington_2024_0.25m/01JTHWE8V6Q4PAYQ2SA09PV8ZH/",
+      "name": "wellington-2024-0.25m",
+      "title": "Wellington 0.25m Rural Aerial Photos (2024-2025)",
+      "category": "Rural Aerial Photos",
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ14906-3/01K2X2TDW9592P36S4RMD5BWNM/",
-      "3857": "s3://linz-basemaps/3857/NZ14906-3/01K2X2T3QSXXG1QDK6SZKMV3YA/",
-      "name": "NZ14906-3",
-      "title": "NZ14906-3",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14906-4/01K2X2T7MQ6CFMYYK0GEJYAKR0/",
-      "3857": "s3://linz-basemaps/3857/NZ14906-4/01K2X2SX7VDSVK51W6EGF525CN/",
-      "name": "NZ14906-4",
-      "title": "NZ14906-4",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ232-2/01K2X3T47DMBBE6MS7TW7R9HR8/",
-      "3857": "s3://linz-basemaps/3857/NZ232-2/01K2X3RBPNG3KSXTXQ33GW8QJ5/",
-      "name": "NZ232-2",
-      "title": "NZ232-2",
+      "2193": "s3://linz-basemaps/2193/tasman_2024-2025_0.25m/01JXZX6A83ACTAZHHN2716YS8B/",
+      "3857": "s3://linz-basemaps/3857/tasman_2024-2025_0.25m/01JXZX6A838F5MQ2RWF9NJFPKM/",
+      "name": "tasman-2024-2025-0.25m",
+      "title": "Tasman 0.25m Rural Aerial Photos (2024-2025)",
+      "category": "Rural Aerial Photos",
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ2325-2/01K2X4ZPAH2FANRWSA7C5H1DC1/",
-      "3857": "s3://linz-basemaps/3857/NZ2325-2/01K2X4ZAGBVEHBVQZV24BFA8ZW/",
-      "name": "NZ2325-2",
-      "title": "NZ2325-2",
+      "2193": "s3://linz-basemaps/2193/northland_urban_2014-2015_0-10m_RGBA/01F6P1K57WYSAZVCTP35DVKG4B/",
+      "3857": "s3://linz-basemaps/3857/northland_urban_2014-2015_0-10m_RGBA/01ED82YEHRRNR3YQC55TJY37E6/",
+      "name": "northland-urban-2014-2015-0.1m",
+      "minZoom": 14,
+      "title": "Northland 0.1m Urban Aerial Photos (2014-2015)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/northland_2023-2024_0.3m/01JWF8J253DE7MFA35R6V7427W/",
+      "3857": "s3://linz-basemaps/3857/northland_2023-2024_0.3m/01JWF8J250C74PBPNYFY90WFQG/",
+      "name": "northland-2023-2024-0.3m",
+      "minZoom": 13,
+      "title": "Northland 0.3m Rural Aerial Photos (2023-2025)",
+      "category": "Rural Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/auckland_urban_2017_0-075m/01F66DXCRR1CFTFQTE5R3525EJ/",
+      "3857": "s3://linz-basemaps/3857/auckland_urban_2017_0-075m/01ED81HZRR86YBB8A0ZQRABP96/",
+      "name": "auckland-urban-2017-0.075m",
+      "minZoom": 14,
+      "title": "Auckland 0.075m Urban Aerial Photos (2017)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/kapiti-coast_urban_2021_0-075m_RGB/01FC1XYXHBADGNDYM36SH8D1XY/",
+      "3857": "s3://linz-basemaps/3857/kapiti-coast_urban_2021_0-075m_RGB/01FC1Y20KQZQDJESGSR97G9SSW/",
+      "name": "kapiti-coast-urban-2021-0.075m",
+      "minZoom": 14,
+      "title": "Kapiti Coast 0.075m Urban Aerial Photos (2021)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/marlborough_2023_0.075m/01HKX50M6A5XHFFB5K2YCWE9Q1/",
+      "3857": "s3://linz-basemaps/3857/marlborough_2023_0.075m/01HKX50M6BTZBAN5DXDMZG6HF6/",
+      "name": "marlborough-2023-0.075m",
+      "title": "Marlborough 0.075m Urban Aerial Photos (2023)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 14
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/dunedin_urban_2018-19_0-1m/01F6P12VGV6BJR4AWJR29V6JQM/",
+      "3857": "s3://linz-basemaps/3857/dunedin_urban_2018-19_0-1m/01ED826QV4Q60TNS6VM8HE36BV/",
+      "name": "dunedin-urban-2018-2019-0.1m",
+      "minZoom": 14,
+      "title": "Dunedin 0.1m Urban Aerial Photos (2018-2019)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/hurunui_urban_2018-2019_0-075m_RGB/01F6P19APSPMW8GM4XZYQTCGES/",
+      "3857": "s3://linz-basemaps/3857/hurunui_urban_2018-2019_0-075m_RGB/01ESPMPK1H0CH2G5K839WN1BT9/",
+      "name": "hurunui-urban-2018-2019-0.075m",
+      "minZoom": 14,
+      "title": "Hurunui 0.075m Urban Aerial Photos (2018-2019)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/otago_urban_2018_0-1m/01F6P1NRHYW2SVKHBMRZ0NXYQA/",
+      "3857": "s3://linz-basemaps/3857/otago_urban_2018_0-1m/01ED832ZRP7TDQEX5WMVHCP3VM/",
+      "name": "otago-urban-2018-0.1m",
+      "minZoom": 14,
+      "title": "Otago 0.1m Urban Aerial Photos (2018)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/manawatu_2022-2023_0.1m/01H4Q66MQ16RH0A8VMSTEDG6W4/",
+      "3857": "s3://linz-basemaps/3857/manawatu_2022-2023_0.1m/01H4Q67HMMFNPJ9GEA6XYS1XDG/",
+      "name": "manawatu-2022-2023-0.1m",
+      "minZoom": 14,
+      "title": "Manawatu 0.1m Urban Aerial Photos (2022-2023)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/wellington-city_urban_2021_0-075m_RGB/01GBRRFSNR0V1N50WP0H1E7SDP/",
+      "3857": "s3://linz-basemaps/3857/wellington-city_urban_2021_0-075m_RGB/01GBRRG6Z6Q8SJNECE7K49M88R/",
+      "name": "wellington-city-urban-2021-0.075m",
+      "minZoom": 14,
+      "title": "Wellington City 0.075m Urban Aerial Photos (2021)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/porirua_2024_0.1m/01HTNPVG06QM0ZV770928G3XKX/",
+      "3857": "s3://linz-basemaps/3857/porirua_2024_0.1m/01HTNPVHJ5BVD0K7W6QARED9GQ/",
+      "name": "porirua-2024-0.1m",
+      "title": "Porirua 0.1m Urban Aerial Photos (2024)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 14
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/south-wairarapa_urban_2021_0-075m/01FCVP124PSVRSW7JCEC4KS2K1/",
+      "3857": "s3://linz-basemaps/3857/south-wairarapa_urban_2021_0-075m/01FCVP30VG02HSFH1VVRM97RXP/",
+      "name": "south-wairarapa-urban-2021-0.075m",
+      "minZoom": 14,
+      "title": "South Wairarapa 0.075m Urban Aerial Photos (2021)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/masterton_urban_2021_0-075m_RGB/01FCYQ2P6RB18BWV5B8WTDGX4R/",
+      "3857": "s3://linz-basemaps/3857/masterton_urban_2021_0-075m_RGB/01FCYQ5JV710MS355E84P574DV/",
+      "name": "masterton-urban-2021-0.075m",
+      "minZoom": 14,
+      "title": "Masterton 0.075m Urban Aerial Photos (2021)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/hutt-city_urban_2021_0-075m_RGB/01FFGK6PT74ZGK3VFX3PY50S0S/",
+      "3857": "s3://linz-basemaps/3857/hutt-city_urban_2021_0-075m_RGB/01FFGK7ZHHJ4SCYWMET8J4K3J1/",
+      "name": "hutt-city-urban-2021-0.075m",
+      "minZoom": 14,
+      "title": "Hutt City 0.075m Urban Aerial Photos (2021)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/upper-hutt_urban_2021_0-075m_RGB/01FFH545V69N2SC5K4PSH7VZCV/",
+      "3857": "s3://linz-basemaps/3857/upper-hutt_urban_2021_0-075m_RGB/01FFH51T317TVK35J75ZRZV0PN/",
+      "name": "upper-hutt-urban-2021-0.075m",
+      "minZoom": 14,
+      "title": "Upper Hutt 0.075m Urban Aerial Photos (2021)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/rangitikei_urban_2021_0-125m_RGB/01FGT7KFSVPEX2RPW5PKN3XCAE/",
+      "3857": "s3://linz-basemaps/3857/rangitikei_urban_2021_0-125m_RGB/01FGT7MAMPX1EPKW678BP3YWGQ/",
+      "name": "rangitikei-urban-2021-0.125m",
+      "minZoom": 14,
+      "title": "Rangitīkei 0.125m Urban Aerial Photos (2021)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/northland_urban_2016_0-1m_RGB/01FH4G3JZ5NSF7MTXB5291SRN9/",
+      "3857": "s3://linz-basemaps/3857/northland_urban_2016_0-1m_RGB/01FH4G1K9A0YHZVCDE5B0J501A/",
+      "name": "northland-urban-2016-0.1m",
+      "minZoom": 14,
+      "title": "Northland 0.1m Urban Aerial Photos (2016)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_2023_0.1m/01H7BSV0VASQPKX47EQD4JWYDM/",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_2023_0.1m/01H7BSWXXHTC8581TSPJS1QTM1/",
+      "name": "bay-of-plenty-2023-0.1m",
+      "minZoom": 14,
+      "title": "Bay of Plenty 0.1m Urban Aerial Photos (2023)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/christchurch_2023_0.075m/01HFART7KYYR9XX5RNHPMNRBJH/",
+      "3857": "s3://linz-basemaps/3857/christchurch_2023_0.075m/01HFART7QPK7Y2TC7PY4XHHNNJ/",
+      "name": "christchurch-2023-0.075m",
+      "title": "Christchurch 0.075m Urban Aerial Photos (2023)",
+      "category": "Urban Aerial Photos",
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ252-3/01K2X56R505T2ABSH7N869A1RW/",
-      "3857": "s3://linz-basemaps/3857/NZ252-3/01K2X55SS3JJFC91Q6WFXCQTK2/",
-      "name": "NZ252-3",
-      "title": "NZ252-3",
+      "2193": "s3://linz-basemaps/2193/nelson_urban_2022_0-075m_RGB/01G87CWVWSG7KWE3DHC6R18BCX/",
+      "3857": "s3://linz-basemaps/3857/nelson_urban_2022_0-075m_RGB/01G87CXGF81D5CVT22B038BCM1/",
+      "name": "nelson-urban-2022-0.075m",
+      "minZoom": 14,
+      "title": "Nelson 0.075m Urban Aerial Photos (2022)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/taranaki_urban_2022_0.1m_RGB/01GDM79KSKKCZ4FQCX5S2Q4BDQ/",
+      "3857": "s3://linz-basemaps/3857/taranaki_urban_2022_0.1m_RGB/01GDM7ACWGP9QZP7V3MF4MPKH8/",
+      "name": "taranaki-urban-2022-0.1m",
+      "minZoom": 14,
+      "title": "Taranaki 0.1m Urban Aerial Photos (2022)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/taranaki_2022-2023_0.1m/01H4Q85VREX8HE76AY26NY2K8G/",
+      "3857": "s3://linz-basemaps/3857/taranaki_2022-2023_0.1m/01H4Q867YPZYQ66124QQD5W9KA/",
+      "name": "taranaki-2022-2023-0.1m",
+      "minZoom": 14,
+      "title": "Taranaki 0.1m Urban Aerial Photos (2022-2023)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/taranaki_urban_2022_0.05m_RGB/01GDM781KPM27STN22MDPWC57Y/",
+      "3857": "s3://linz-basemaps/3857/taranaki_urban_2022_0.05m_RGB/01GDM7896HY2KQG4K3ESSZMPH6/",
+      "name": "taranaki-urban-2022-0.05m",
+      "minZoom": 14,
+      "title": "Taranaki 0.05m Urban Aerial Photos (2022)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/taranaki_2022-2023_0.05m/01H4Q85E2DHHDYDSEQGB80WA6F/",
+      "3857": "s3://linz-basemaps/3857/taranaki_2022-2023_0.05m/01H4Q85VW9QY89WFKEQFZDRW56/",
+      "name": "taranaki-2022-2023-0.05m",
+      "minZoom": 14,
+      "title": "Taranaki 0.05m Urban Aerial Photos (2022-2023)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/invercargill_2022_0.1m/01GG8G03K4N284BJ7Q0DFTRW6P/",
+      "3857": "s3://linz-basemaps/3857/invercargill_2022_0.1m/01GG8G0NQDH4F6XPCMQS312DRK/",
+      "name": "invercargill-urban-2022-0.1m",
+      "minZoom": 14,
+      "title": "Invercargill 0.1m Urban Aerial Photos (2022)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/invercargill_2022_0.05m/01GJ3WD5DCSRF0QN7JKN82GPCF/",
+      "3857": "s3://linz-basemaps/3857/invercargill_2022_0.05m/01GJ3WDN7PTMGZ14AH56GPX39G/",
+      "name": "invercargill-2022-0.05m",
+      "minZoom": 14,
+      "title": "Invercargill 0.05m Urban Aerial Photos (2022)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/southland_2023_0.1m/01H795QH5JXYH5AYFKE7DG9H82/",
+      "3857": "s3://linz-basemaps/3857/southland_2023_0.1m/01H795RNWP5JPF23FGWJFTNPC9/",
+      "name": "southland-2023-0.1m",
+      "minZoom": 14,
+      "title": "Southland 0.1m Urban Aerial Photos (2023)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/waimate_2021_0.075m/01GKSQ99D3KZ2NN9H7MWSABMNM/",
+      "3857": "s3://linz-basemaps/3857/waimate_2021_0.075m/01GKSQ9HMFNF4Z55QXCJ2Y2X0X/",
+      "name": "waimate-2021-0.075m",
+      "minZoom": 14,
+      "title": "Waimate 0.075m Urban Aerial Photos (2021)",
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/palmerston-north_2024_0.1m/01J0VVWVCJEQVZ0VTFHENTC8H3/",
+      "3857": "s3://linz-basemaps/3857/palmerston-north_2024_0.1m/01J0VVWTAYX82VYAZQRMP0C53Q/",
+      "name": "palmerston-north-2024-0.1m",
+      "title": "Palmerston North 0.1m Urban Aerial Photos (2024)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 14
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/queenstown-lakes_2022-2023_0.1m/01GTFDQVAACPYQXCPBVH51RBYK/",
+      "3857": "s3://linz-basemaps/3857/queenstown-lakes_2022-2023_0.1m/01GTFDR0FZYRAMMGZN24RR5XY4/",
+      "name": "queenstown-lakes-2022-2023-0.1m",
+      "title": "Queenstown Lakes 0.1m Urban Aerial Photos (2022-2023)",
+      "minZoom": 14,
+      "category": "Urban Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/auckland_rural_2020_0-075m_RGB/01G4XPNP9JTGGPABCFRWC4N21E/",
+      "3857": "s3://linz-basemaps/3857/auckland_rural_2020_0-075m_RGB/01G4XPQKF6VB9SXCQ93R2XC1W8/",
+      "name": "auckland-rural-2020-0.075m",
+      "minZoom": 13,
+      "title": "Auckland 0.075m Rural Aerial Photos (2020)",
+      "category": "Rural Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/auckland_rural_2022_0-075m_RGB/01G6HJ9S4PGK6MTVEZWWHV56QN/",
+      "3857": "s3://linz-basemaps/3857/auckland_rural_2022_0-075m_RGB/01G6HJBFJRBKJ7FQPHVRACKMNQ/",
+      "name": "auckland-rural-2022-0.075m",
+      "minZoom": 13,
+      "title": "Auckland 0.075m Rural Aerial Photos (2022)",
+      "category": "Rural Aerial Photos"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/waikato_2021-2023_0.3m/01J72H91TQJSWDZ3SH6BZNH72X/",
+      "3857": "s3://linz-basemaps/3857/waikato_2021-2023_0.3m/01J72H91TPK03ZPT1EBFA6FY9P/",
+      "name": "waikato-2021-2023-0.3m",
+      "title": "Waikato 0.3m Rural Aerial Photos (2021-2024)",
+      "category": "Rural Aerial Photos",
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ3111-5/01K2X6DV8W086RE85R4BDCBRHP/",
-      "3857": "s3://linz-basemaps/3857/NZ3111-5/01K2X6CY3SESH0DHD068JRTZ7D/",
-      "name": "NZ3111-5",
-      "title": "NZ3111-5",
+      "2193": "s3://linz-basemaps/2193/waikato_2023-2024_0.3m/01J28AWNAN0S3JS50C4VWC3X1G/",
+      "3857": "s3://linz-basemaps/3857/waikato_2023-2024_0.3m/01J28AWNANR2ME3JY3C61DD37X/",
+      "name": "waikato-2023-2024-0.3m",
+      "title": "Waikato 0.3m Rural Aerial Photos (2023-2024)",
+      "category": "Rural Aerial Photos",
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ3111-6/01K2X6FS7JBVMTFY5R6KZ0YQNN/",
-      "3857": "s3://linz-basemaps/3857/NZ3111-6/01K2X6F4Q3Y64REY1PQ7FRPBGS/",
-      "name": "NZ3111-6",
-      "title": "NZ3111-6",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4212-3/01K2X6QC1H38JTYMX2Q2RYNZFT/",
-      "3857": "s3://linz-basemaps/3857/NZ4212-3/01K2X6Q2R9HJKWVHYAPD4RQE74/",
-      "name": "NZ4212-3",
-      "title": "NZ4212-3",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4315-1/01K2X8AQHZQEBZGC0SRZYB47RG/",
-      "3857": "s3://linz-basemaps/3857/NZ4315-1/01K2X86161GCC7JYSAFT8FCPN4/",
-      "name": "NZ4315-1",
-      "title": "NZ4315-1",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4423-1/01K2X7R0KWZMGCBT9NKYD0S0NA/",
-      "3857": "s3://linz-basemaps/3857/NZ4423-1/01K2X7QZV2CNH9NGF87JBFX2M5/",
-      "name": "NZ4423-1",
-      "title": "NZ4423-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4424-1/01K2X7X9GA1H2A3706EZW61RG9/",
-      "3857": "s3://linz-basemaps/3857/NZ4424-1/01K2X7V33M4P0W7ZZ6RD48E883/",
-      "name": "NZ4424-1",
-      "title": "NZ4424-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4432-1/01K2X81RQCW11NK954KRKR89YQ/",
-      "3857": "s3://linz-basemaps/3857/NZ4432-1/01K2X81QYXD65RYFH4B4XKTNYG/",
-      "name": "NZ4432-1",
-      "title": "NZ4432-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4541-1/01K2X8RWT3M2GS714XCJXFZERK/",
-      "3857": "s3://linz-basemaps/3857/NZ4541-1/01K2X8GK3S9E0SKRMBWA5SPWYG/",
-      "name": "NZ4541-1",
-      "title": "NZ4541-1",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4631-1/01K2X8SV2QS9WMH8H0BC8YY7PZ/",
-      "3857": "s3://linz-basemaps/3857/NZ4631-1/01K2X8QH21PZ5AHZNP2DN9K33X/",
-      "name": "NZ4631-1",
-      "title": "NZ4631-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4632-1/01K2X8Z104TBHY8HQ5G395TTFX/",
-      "3857": "s3://linz-basemaps/3857/NZ4632-1/01K2X8YM16NJXV5B7BPG6RCXSY/",
-      "name": "NZ4632-1",
-      "title": "NZ4632-1",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4633-1/01K2X9JHE1Z2DMBXTVWSE7EZ6W/",
-      "3857": "s3://linz-basemaps/3857/NZ4633-1/01K2X9DGHCM9E69AS91W1AWSK4/",
-      "name": "NZ4633-1",
-      "title": "NZ4633-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5111-1/01K2XC0BH9DPR9YW85N7X3NKQJ/",
-      "3857": "s3://linz-basemaps/3857/NZ5111-1/01K2XBZ4KQAH0YBF13VA5CF8KV/",
-      "name": "NZ5111-1",
-      "title": "NZ5111-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5113-1/01K2XBZNYNCC719FF3JZQZNTG3/",
-      "3857": "s3://linz-basemaps/3857/NZ5113-1/01K2XBYRWK7ME7W2XTEKC85YDR/",
-      "name": "NZ5113-1",
-      "title": "NZ5113-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5113-3/01K2XBZHKRKBDJ7AP8SKX60E6E/",
-      "3857": "s3://linz-basemaps/3857/NZ5113-3/01K2XBZJQH7NJBXGV6KQAF9YBB/",
-      "name": "NZ5113-3",
-      "title": "NZ5113-3",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5114-2/01K2XC9P97A3FGRTNQKME03HWF/",
-      "3857": "s3://linz-basemaps/3857/NZ5114-2/01K2XC9P97GJ9BTPPAZR605M2S/",
-      "name": "NZ5114-2",
-      "title": "NZ5114-2",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5121-1/01K2XCR4B7SGN9AC4TSQW2ZKF1/",
-      "3857": "s3://linz-basemaps/3857/NZ5121-1/01K2XCR4B0BAJCTK4TMGJ2HPNX/",
-      "name": "NZ5121-1",
-      "title": "NZ5121-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5124-1/01K2XCMCMP9DZ8V1AKKHDHWZW5/",
-      "3857": "s3://linz-basemaps/3857/NZ5124-1/01K2XCWXYEC0HBHRNW8AN132GV/",
-      "name": "NZ5124-1",
-      "title": "NZ5124-1",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5124-2/01K2XCKSNDWWKDCNVZFBWYBS28/",
-      "3857": "s3://linz-basemaps/3857/NZ5124-2/01K2XCKSH9MEDVEARTN3KDQ995/",
-      "name": "NZ5124-2",
-      "title": "NZ5124-2",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5125-1/01K2XDABR5WBZGGWQYC3B723JY/",
-      "3857": "s3://linz-basemaps/3857/NZ5125-1/01K2XDA1TFPED9A2N2BN7J2YZ7/",
-      "name": "NZ5125-1",
-      "title": "NZ5125-1",
-      "minZoom": 12
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5214-1/01K2XHMFDN25M2RZNEHVNJ46HH/",
-      "3857": "s3://linz-basemaps/3857/NZ5214-1/01K2XHFZZB5F31RPY4EQ0F850C/",
-      "name": "NZ5214-1",
-      "title": "NZ5214-1",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5215-1/01K2XHTCHMXJSHJWSGDMV4V4KD/",
-      "3857": "s3://linz-basemaps/3857/NZ5215-1/01K2XHNQAF63RSY7PZTZX30W20/",
-      "name": "NZ5215-1",
-      "title": "NZ5215-1",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5215-2/01K2XGWKBQKZQFN9X5FGGRYHPG/",
-      "3857": "s3://linz-basemaps/3857/NZ5215-2/01K2XGWAAAVK8FG8G106ZVWBA5/",
-      "name": "NZ5215-2",
-      "title": "NZ5215-2",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5216-1/01K2XHMTW94DEQQ9JMQDC7YP95/",
-      "3857": "s3://linz-basemaps/3857/NZ5216-1/01K2XHFX1B78RYYG5TGHG41BE3/",
-      "name": "NZ5216-1",
-      "title": "NZ5216-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5223-1/01K2XJPP9AZR2W3YHTAX4459SJ/",
-      "3857": "s3://linz-basemaps/3857/NZ5223-1/01K2XJHS7GX5NHYZBXE833QBVC/",
-      "name": "NZ5223-1",
-      "title": "NZ5223-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5224-1/01K2XJPZVA0612EM6DZQJGSSAT/",
-      "3857": "s3://linz-basemaps/3857/NZ5224-1/01K2XJK0P5BQ8MQFC0G4VKVXSD/",
-      "name": "NZ5224-1",
-      "title": "NZ5224-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5314-1/01K2XK7NPZPJNCTJW1QSNJG8FR/",
-      "3857": "s3://linz-basemaps/3857/NZ5314-1/01K2XK2NQE23MQ3G7VPXD1NZ7S/",
-      "name": "NZ5314-1",
-      "title": "NZ5314-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5315-1/01K2XKBA92EPN87FJQ7P4QT79V/",
-      "3857": "s3://linz-basemaps/3857/NZ5315-1/01K2XK6PQDCW3F736NZEPYXNZT/",
-      "name": "NZ5315-1",
-      "title": "NZ5315-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5322-1/01K2XM0MGRD85ZNHV5RMMRYTZ2/",
-      "3857": "s3://linz-basemaps/3857/NZ5322-1/01K2XKWAA5K2JPZ87646SWE2C7/",
-      "name": "NZ5322-1",
-      "title": "NZ5322-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5323-1/01K2ZJH6EDG2PV5YS4AP3BDXJ9/",
-      "3857": "s3://linz-basemaps/3857/NZ5323-1/01K2ZJCT4BTG1K3YKKHJ041HX7/",
-      "name": "NZ5323-1",
-      "title": "NZ5323-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5328-1/01K2ZJ8DD883JB81541YY4CXC5/",
-      "3857": "s3://linz-basemaps/3857/NZ5328-1/01K2ZJ2XPY2ESRFBPA5PWSH8XN/",
-      "name": "NZ5328-1",
-      "title": "NZ5328-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5412-2/01K2ZJK93FNXPXH6BH0NWWZ2R7/",
-      "3857": "s3://linz-basemaps/3857/NZ5412-2/01K2ZJJNHQC6CYZ6ZP2GWJ0V61/",
-      "name": "NZ5412-2",
-      "title": "NZ5412-2",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ542-2/01K2ZK436VVXH7G3QZ1BCYQ13Y/",
-      "3857": "s3://linz-basemaps/3857/NZ542-2/01K2ZK51J9PXN59NH7HKFFW2VM/",
-      "name": "NZ542-2",
-      "title": "NZ542-2",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5571-1/01K2ZKWSFEKXTRDYJ65CNGYFHR/",
-      "3857": "s3://linz-basemaps/3857/NZ5571-1/01K2ZKWSYWMNWG52VPG6WXYTNY/",
-      "name": "NZ5571-1",
-      "title": "NZ5571-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5612-1/01K2ZM9MN7ZTX5NKRWGAY02FAS/",
-      "3857": "s3://linz-basemaps/3857/NZ5612-1/01K2ZM7DD1QM77BSEVZSKM8145/",
-      "name": "NZ5612-1",
-      "title": "NZ5612-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ57-2/01K2ZMAEJBRK5NJ954JMX42HHA/",
-      "3857": "s3://linz-basemaps/3857/NZ57-2/01K2ZM9V51YH9E5FNGJXYFNMQH/",
-      "name": "NZ57-2",
-      "title": "NZ57-2",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ614-2/01K2ZNGTWQ4HNMYKK0W6SWBB22/",
-      "3857": "s3://linz-basemaps/3857/NZ614-2/01K2ZNGT39WW63ZEXBSQGEAF5B/",
-      "name": "NZ614-2",
-      "title": "NZ614-2",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ614-3/01K2ZNGXXTC9YN55A3ZGZ9W9A4/",
-      "3857": "s3://linz-basemaps/3857/NZ614-3/01K2ZNGYE4BNTYSVKGAGAA6SE3/",
-      "name": "NZ614-3",
-      "title": "NZ614-3",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6152-2/01K2ZNZ0JGSSNVTW2P0Z4G6K9J/",
-      "3857": "s3://linz-basemaps/3857/NZ6152-2/01K2ZNYZY0QRBFXAS77QDG66GG/",
-      "name": "NZ6152-2",
-      "title": "NZ6152-2",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6321-1/01K2ZRDKJKZCFDJZ7NGQY77J0G/",
-      "3857": "s3://linz-basemaps/3857/NZ6321-1/01K2ZR3WZWD9M15S1MNYNSPA6H/",
-      "name": "NZ6321-1",
-      "title": "NZ6321-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6324-2/01K2ZQQJ9ZSRXKBRX8MZSXDQGP/",
-      "3857": "s3://linz-basemaps/3857/NZ6324-2/01K2ZQQHX4MM5SA6MQB32DJSXD/",
-      "name": "NZ6324-2",
-      "title": "NZ6324-2",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6612-1/01K2ZSC6X9JWTJTA23PK1ZS6PK/",
-      "3857": "s3://linz-basemaps/3857/NZ6612-1/01K2ZS7TQ3Y2QM12VRTZ4SZNJH/",
-      "name": "NZ6612-1",
-      "title": "NZ6612-1",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6612-2/01K2ZRYTDSE5HNRY4DXVPJQBW4/",
-      "3857": "s3://linz-basemaps/3857/NZ6612-2/01K2ZRWW1AR267XT0WFD341QVZ/",
-      "name": "NZ6612-2",
-      "title": "NZ6612-2",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6825-2/01K2ZS3X4VCZ641693GFB7596A/",
-      "3857": "s3://linz-basemaps/3857/NZ6825-2/01K2ZS1KE9P8N7QVW6TNJVXC5B/",
-      "name": "NZ6825-2",
-      "title": "NZ6825-2",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6825-3/01K2ZRWMMQY9NDB5TXGNSVS9SS/",
-      "3857": "s3://linz-basemaps/3857/NZ6825-3/01K2ZRWMTSP1H68N8H5VCM5QB3/",
-      "name": "NZ6825-3",
-      "title": "NZ6825-3",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ7621-1/01K301AS435NXM41FS975FF45V/",
-      "3857": "s3://linz-basemaps/3857/NZ7621-1/01K3013KT9RF3FZ7W4JRW0EFBN/",
-      "name": "NZ7621-1",
-      "title": "NZ7621-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ7625-1/01K301H51APX13S6Z1VHFMWJDB/",
-      "3857": "s3://linz-basemaps/3857/NZ7625-1/01K301995NP3TBB4BMERNM2KD1/",
-      "name": "NZ7625-1",
-      "title": "NZ7625-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ7654-2/01K301CB0RS0EASAE3YATRWHDJ/",
-      "3857": "s3://linz-basemaps/3857/NZ7654-2/01K3017PKQQGZPZG6XA77Z9KM9/",
-      "name": "NZ7654-2",
-      "title": "NZ7654-2",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ7654-3/01K3018FQKZHNJY56Q12D7Q6JS/",
-      "3857": "s3://linz-basemaps/3857/NZ7654-3/01K30185RDY2XJ5MJ4BY99WTX7/",
-      "name": "NZ7654-3",
-      "title": "NZ7654-3",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ7655-1/01K302AHSQ3VPFPMMH13XKBJG3/",
-      "3857": "s3://linz-basemaps/3857/NZ7655-1/01K3024DFM6ZGANH071Y75DD18/",
-      "name": "NZ7655-1",
-      "title": "NZ7655-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ7656-1/01K302EMVPP227XQMD4M0EREW5/",
-      "3857": "s3://linz-basemaps/3857/NZ7656-1/01K3026YBN2RT54F0EQ3F5MYJC/",
-      "name": "NZ7656-1",
-      "title": "NZ7656-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ7656-2/01K301G6RPS5JV7X30KTC7A2B0/",
-      "3857": "s3://linz-basemaps/3857/NZ7656-2/01K301G6VJ33VY01GD0PCCC9T2/",
-      "name": "NZ7656-2",
-      "title": "NZ7656-2",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/TO403-1/01K302J3DQB55H02C9QA1VG24Y/",
-      "3857": "s3://linz-basemaps/3857/TO403-1/01K302HFS9YEDASFQWJGWFC9AX/",
-      "name": "TO403-1",
-      "title": "TO403-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/TO403-2/01K302FACVKPMFMRXXMXADK8X6/",
-      "3857": "s3://linz-basemaps/3857/TO403-2/01K302E184RWCDHNJENV900XGT/",
-      "name": "TO403-2",
-      "title": "TO403-2",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/TO404-1/01K303HG5TPJY0D9DWR2V457JV/",
-      "3857": "s3://linz-basemaps/3857/TO404-1/01K303ASE5K3R2B37EDQCBGVW4/",
-      "name": "TO404-1",
-      "title": "TO404-1",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/WS412-1/01K303S3XJD8KS77ZXZ1SE2TN8/",
-      "3857": "s3://linz-basemaps/3857/WS412-1/01K303RTE49BV6EWP6Z6MGW8GQ/",
-      "name": "WS412-1",
-      "title": "WS412-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/WS412-2/01K303WKC2XVKD1XS77P7YG12V/",
-      "3857": "s3://linz-basemaps/3857/WS412-2/01K303W9JXDXSTZ5XYZJFCAS94/",
-      "name": "WS412-2",
-      "title": "WS412-2",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/WS412-3/01K30400821WV95JB5J30P8YF5/",
-      "3857": "s3://linz-basemaps/3857/WS412-3/01K303ZPJF5AA2SMH4WF93P64M/",
-      "name": "WS412-3",
-      "title": "WS412-3",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/WS412-4/01K3041B6J7APAADABZA70VJZ2/",
-      "3857": "s3://linz-basemaps/3857/WS412-4/01K3040PSBSFNZK5091TJ37J0S/",
-      "name": "WS412-4",
-      "title": "WS412-4",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/CK141-8/01K2NG4028B7ZADCD6YQQPECJ9/",
-      "3857": "s3://linz-basemaps/3857/CK141-8/01K2NG3BQAM3KFKJ6127NSMFB0/",
-      "name": "CK141-8",
-      "title": "CK141-8",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/CK242-2/01K2NJ0N902MZZMKBFV17V824D/",
-      "3857": "s3://linz-basemaps/3857/CK242-2/01K2NHVWHP3PVS2CB0P1SWFGHS/",
-      "name": "CK242-2",
-      "title": "CK242-2",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ2325-3/01K2X4ZPF3F50Q6680KDVK6AMQ/",
-      "3857": "s3://linz-basemaps/3857/NZ2325-3/01K2X4ZADE0DFAKVR13XCZP6DG/",
-      "name": "NZ2325-3",
-      "title": "NZ2325-3",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ2411-3/01K2X4ZAGBF66TM6ZTXW71ANCC/",
-      "3857": "s3://linz-basemaps/3857/NZ2411-3/01K2X4Z1N8DGE2KRVR4HVJ94EV/",
-      "name": "NZ2411-3",
-      "title": "NZ2411-3",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ2683-2/01K2X5902T3S62SBKCCDTQJMKR/",
-      "3857": "s3://linz-basemaps/3857/NZ2683-2/01K2X58NMNVRFJDBVPSCNWX6C0/",
-      "name": "NZ2683-2",
-      "title": "NZ2683-2",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ2683-3/01K2X5CKWT55JW36TNN8NH7WB4/",
-      "3857": "s3://linz-basemaps/3857/NZ2683-3/01K2X5BZA48S23HQ40F46BVC3K/",
-      "name": "NZ2683-3",
-      "title": "NZ2683-3",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ2685-1/01K2X5HETCPZDKX3JXRWREQQPS/",
-      "3857": "s3://linz-basemaps/3857/NZ2685-1/01K2X5F1TE00XC36M0XWAEVN21/",
-      "name": "NZ2685-1",
-      "title": "NZ2685-1",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ2685-3/01K2X5FP6H4GVQZZRB7WQNQZFK/",
-      "3857": "s3://linz-basemaps/3857/NZ2685-3/01K2X5FGV2ESZBWM1EMA5C9VSD/",
-      "name": "NZ2685-3",
-      "title": "NZ2685-3",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ2687-2/01K2X5M2QWR05HRQN7TNDWZ3BW/",
-      "3857": "s3://linz-basemaps/3857/NZ2687-2/01K2X5K3P9MQDH0A8W51204807/",
-      "name": "NZ2687-2",
-      "title": "NZ2687-2",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ2687-3/01K2X60K5XEC5JHVGQXS4P7Y3Q/",
-      "3857": "s3://linz-basemaps/3857/NZ2687-3/01K2X5ZQ7374VM49CJ9YBADE0B/",
-      "name": "NZ2687-3",
-      "title": "NZ2687-3",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4421-1/01K2X7NG8VGH8BECA3921K83GD/",
-      "3857": "s3://linz-basemaps/3857/NZ4421-1/01K2X7K6A8AK6P9ZMFS76FX9PG/",
-      "name": "NZ4421-1",
-      "title": "NZ4421-1",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4432-2/01K2X8FW5MY185JFT1R1M3NFHF/",
-      "3857": "s3://linz-basemaps/3857/NZ4432-2/01K2X8E4VC91EJKN0SXK9WNXT5/",
-      "name": "NZ4432-2",
-      "title": "NZ4432-2",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4541-2/01K2X8478EVB096G6JBJCZFC50/",
-      "3857": "s3://linz-basemaps/3857/NZ4541-2/01K2X8532XXRCVP17FRF3CJ0NK/",
-      "name": "NZ4541-2",
-      "title": "NZ4541-2",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4634-1/01K2X9640C0CNFEQDVQPAH5EXM/",
-      "3857": "s3://linz-basemaps/3857/NZ4634-1/01K2X917STMXYW01GMZXYA87H3/",
-      "name": "NZ4634-1",
-      "title": "NZ4634-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5111-3/01K2XBW12S2XTR7JC2DEQB3MMS/",
-      "3857": "s3://linz-basemaps/3857/NZ5111-3/01K2XBW2C7CMHD333SA3KYQDWW/",
-      "name": "NZ5111-3",
-      "title": "NZ5111-3",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5212-2/01K2XGWSB6XSG24HPGSGM1S1MK/",
-      "3857": "s3://linz-basemaps/3857/NZ5212-2/01K2XGWRZ5AVK0607CK4ED8N3M/",
-      "name": "NZ5212-2",
-      "title": "NZ5212-2",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5212-3/01K2XGWN5NGP8DVBCS3XB98SZW/",
-      "3857": "s3://linz-basemaps/3857/NZ5212-3/01K2XGWBTP95HDEJ2MBD4FPMR8/",
-      "name": "NZ5212-3",
-      "title": "NZ5212-3",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5217-2/01K2XH59TPTY4R6MVCE85QF63A/",
-      "3857": "s3://linz-basemaps/3857/NZ5217-2/01K2XH4D4BN35REYE8M1W566P7/",
-      "name": "NZ5217-2",
-      "title": "NZ5217-2",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5217-3/01K2XH201VM05B97DN5K4PMN4S/",
-      "3857": "s3://linz-basemaps/3857/NZ5217-3/01K2XH1PM6N0SHT94G6Z68DFYZ/",
-      "name": "NZ5217-3",
-      "title": "NZ5217-3",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5316-1/01K2XK2GY8WJGJZ0DTCGCAWR6Z/",
-      "3857": "s3://linz-basemaps/3857/NZ5316-1/01K2XJZYXV4QBR7GV8Y31HSWH2/",
-      "name": "NZ5316-1",
-      "title": "NZ5316-1",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5322-2/01K2ZHG1ZKWZ3AMTX1RMRBWVMC/",
-      "3857": "s3://linz-basemaps/3857/NZ5322-2/01K2ZHFQEDM5KWSEBMB110YW8B/",
-      "name": "NZ5322-2",
-      "title": "NZ5322-2",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5323-2/01K2ZHFSAS2BHEBRXT5MH8GGA2/",
-      "3857": "s3://linz-basemaps/3857/NZ5323-2/01K2ZHFFJ8Y39PCX7T65AF0NSV/",
-      "name": "NZ5323-2",
-      "title": "NZ5323-2",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5323-3/01K2ZHFKTXHC92Z3B8MARZZ7AE/",
-      "3857": "s3://linz-basemaps/3857/NZ5323-3/01K2ZHFM3951QWR1YPXHR85H7N/",
-      "name": "NZ5323-3",
-      "title": "NZ5323-3",
-      "minZoom": 14
+      "2193": "s3://linz-basemaps/2193/taupo_2019_0.1m/01H4EY7Y0YNZWDBQPPH5DN90E1/",
+      "3857": "s3://linz-basemaps/3857/taupo_2019_0.1m/01H4EY825250VGCTG7ZJ0BPAY4/",
+      "name": "taupo-2019-0.1m",
+      "title": "Taupō 0.1m Urban Aerial Photos (2019)",
+      "minZoom": 14,
+      "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ5325-1/01K2ZJF2YMKD2ESBM6RCMMCRZZ/",
-      "3857": "s3://linz-basemaps/3857/NZ5325-1/01K2ZJ9R0ZKH7K1BFSFGS1TDDT/",
-      "name": "NZ5325-1",
-      "title": "NZ5325-1",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5325-2/01K2ZHGGDN5QSF60T123V4J12B/",
-      "3857": "s3://linz-basemaps/3857/NZ5325-2/01K2ZHG6BJ41ZQSJ47DZ01JWY3/",
-      "name": "NZ5325-2",
-      "title": "NZ5325-2",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5412-1/01K2ZKBTK54H44V86V1PP1146V/",
-      "3857": "s3://linz-basemaps/3857/NZ5412-1/01K2ZK5EE84KMDKZEVF3JR186D/",
-      "name": "NZ5412-1",
-      "title": "NZ5412-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5612-2/01K2ZMD0T8DCWWFSXNRSX55N2B/",
-      "3857": "s3://linz-basemaps/3857/NZ5612-2/01K2ZMAJPCY9TFPC1PCKBMN9HJ/",
-      "name": "NZ5612-2",
-      "title": "NZ5612-2",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6144-2/01K2ZNGT353Y0ZTBYKGEDXKQDX/",
-      "3857": "s3://linz-basemaps/3857/NZ6144-2/01K2ZNGTWN8M39MW7K0FN0BADT/",
-      "name": "NZ6144-2",
-      "title": "NZ6144-2",
-      "minZoom": 14
+      "2193": "s3://linz-basemaps/2193/taupo_2021_0.15m/01GX7WPF56PRH3N4NHV06BBF73/",
+      "3857": "s3://linz-basemaps/3857/taupo_2021_0.15m/01GX7WPPSD1RZK0JCSYTYW3DJ2/",
+      "name": "taupo-2021-0.15m",
+      "title": "Taupō 0.15m Urban Aerial Photos (2021)",
+      "minZoom": 14,
+      "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ6151-5/01K2ZNVNZ112SR8VW1158XGE0R/",
-      "3857": "s3://linz-basemaps/3857/NZ6151-5/01K2ZNVPPXMYPBT0NEDH4SMR2C/",
-      "name": "NZ6151-5",
-      "title": "NZ6151-5",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6154-1/01K2ZP2W54XV99212RCETS4MPS/",
-      "3857": "s3://linz-basemaps/3857/NZ6154-1/01K2ZP2X0C74GWHNT10D02QP7V/",
-      "name": "NZ6154-1",
-      "title": "NZ6154-1",
-      "minZoom": 14
+      "2193": "s3://linz-basemaps/2193/ōtorohanga_urban_2021_0-1m_RGB/01FYWKAJ86W9P7RWM1VB62KD0H/",
+      "3857": "s3://linz-basemaps/3857/ōtorohanga_urban_2021_0-1m_RGB/01FYWKATAEK2ZTJQ2PX44Y0XNT/",
+      "name": "ōtorohanga-urban-2021-0.1m",
+      "minZoom": 14,
+      "title": "Ōtorohanga 0.1m Urban Aerial Photos (2021)",
+      "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ6154-3/01K2ZPNS421A6K9S6VD8H89Y5B/",
-      "3857": "s3://linz-basemaps/3857/NZ6154-3/01K2ZPJ1KN58GV7GX2735QAHBH/",
-      "name": "NZ6154-3",
-      "title": "NZ6154-3",
-      "minZoom": 13
+      "2193": "s3://linz-basemaps/2193/waipa_urban_2021_0-1m_RGB/01G28WB9GKP01A8DPYWG9CBMN1/",
+      "3857": "s3://linz-basemaps/3857/waipa_urban_2021_0-1m_RGB/01G28WC5349Y0J3CGWGTZ796DD/",
+      "name": "waipa-urban-2021-0.1m",
+      "minZoom": 14,
+      "title": "Waipa 0.1m Urban Aerial Photos (2021)",
+      "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ6212-3/01K2ZQKCXRF3BSXR106VCHB8ZZ/",
-      "3857": "s3://linz-basemaps/3857/NZ6212-3/01K2ZQKDW4NH8G0Y7B5JJF5KR6/",
-      "name": "NZ6212-3",
-      "title": "NZ6212-3",
-      "minZoom": 14
+      "2193": "s3://linz-basemaps/2193/waikato_urban_2021_0-1m_RGB/01G75YF8RQTNWDSTJ9618EGGSH/",
+      "3857": "s3://linz-basemaps/3857/waikato_urban_2021_0-1m_RGB/01G75YFYNRYPFF9H8P4CR4HDAJ/",
+      "name": "waikato-urban-2021-0.1m",
+      "minZoom": 14,
+      "title": "Waikato District 0.1m Urban Aerial Photos (2021)",
+      "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ6212-4/01K2ZQKB93STX3F05MCQ067E8H/",
-      "3857": "s3://linz-basemaps/3857/NZ6212-4/01K2ZQKAR3M3VGF8SHVHPBBWH5/",
-      "name": "NZ6212-4",
-      "title": "NZ6212-4",
-      "minZoom": 14
+      "2193": "s3://linz-basemaps/2193/thames-coromandel_2021_0.1m/01HAK2FBK5CBCCM2S6XHCWK9VP/",
+      "3857": "s3://linz-basemaps/3857/thames-coromandel_2021_0.1m/01HAK2FBGQ7MH75YWFSDT41QR3/",
+      "name": "thames-coromandel-2021-0.1m",
+      "minZoom": 14,
+      "title": "Thames-Coromandel 0.1m Urban Aerial Photos (2021)",
+      "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ6433-2/01K2ZRFZEG551MV9JDDJ9YHX3W/",
-      "3857": "s3://linz-basemaps/3857/NZ6433-2/01K2ZRDKFYJM9GKACHJ0ZSSDB7/",
-      "name": "NZ6433-2",
-      "title": "NZ6433-2",
-      "minZoom": 14
+      "2193": "s3://linz-basemaps/2193/hamilton_2023_0.05m/01H6YT6HDGMQ0DA04Q4YKTN6KS/",
+      "3857": "s3://linz-basemaps/3857/hamilton_2023_0.05m/01H6YT8M3R6BN6V2869HA33NQ1/",
+      "name": "hamilton-2023-0.05m",
+      "minZoom": 14,
+      "title": "Hamilton 0.05m Urban Aerial Photos (2023)",
+      "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ6612-3/01K2ZRMHXQZ5XA8KHZ6M9XRZZM/",
-      "3857": "s3://linz-basemaps/3857/NZ6612-3/01K2ZRM832HZT7RMDBWE01AJY0/",
-      "name": "NZ6612-3",
-      "title": "NZ6612-3",
-      "minZoom": 14
+      "2193": "s3://linz-basemaps/2193/whanganui_2022_0.075m/01GZMXEKG8QRB3W2TS4EXEGVR7/",
+      "3857": "s3://linz-basemaps/3857/whanganui_2022_0.075m/01GZMXF18WABTRJ2B3TZ20JPJZ/",
+      "name": "whanganui-2022-0.075m",
+      "minZoom": 14,
+      "title": "Whanganui 0.075m Urban Aerial Photos (2022)",
+      "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ6821-1/01K2ZSJ3SNZV416504D888Q6XX/",
-      "3857": "s3://linz-basemaps/3857/NZ6821-1/01K2ZS51QN058G9635W0EP8ADN/",
-      "name": "NZ6821-1",
-      "title": "NZ6821-1",
-      "minZoom": 14
+      "2193": "s3://linz-basemaps/2193/taupo_2023_0.075m/01H0RX2PWKENR1D1S7E6GYNH1E/",
+      "3857": "s3://linz-basemaps/3857/taupo_2023_0.075m/01H0RX3235SBMQJ5T3DF8FQTJN/",
+      "name": "taupo-2023-0.075m",
+      "minZoom": 14,
+      "title": "Taupō 0.075m Urban Aerial Photos (2023)",
+      "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ7142-2/01K2ZSX5GK6RF4KH1RRFZ9TZ0M/",
-      "3857": "s3://linz-basemaps/3857/NZ7142-2/01K2ZSV54TPD1R2FW9XPKW6KKW/",
-      "name": "NZ7142-2",
-      "title": "NZ7142-2",
-      "minZoom": 14
+      "2193": "s3://linz-basemaps/2193/queenstown_2021_0.1m/01HBW70P7CTXRZ45HGECZM14YS/",
+      "3857": "s3://linz-basemaps/3857/queenstown_2021_0.1m/01HBW70P7CX6TVTNMY0ZJBPMZX/",
+      "name": "queenstown-2021-0.1m",
+      "minZoom": 14,
+      "title": "Queenstown 0.1m Urban Aerial Photos (2021)",
+      "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ7621-2/01K300ANXD7BHS1R95C1GR3NFP/",
-      "3857": "s3://linz-basemaps/3857/NZ7621-2/01K3009HVBWJDRH21NBQWHC8SM/",
-      "name": "NZ7621-2",
-      "title": "NZ7621-2",
-      "minZoom": 14
+      "2193": "s3://linz-basemaps/2193/canterbury_2023_0.3m/01HFASC66T0ARNZK91N4XNM42Z/",
+      "3857": "s3://linz-basemaps/3857/canterbury_2023_0.3m/01HFART8DDXKKGVM10S859K4WQ/",
+      "name": "canterbury-2023-0.3m",
+      "title": "Canterbury 0.3m Rural Aerial Photos (2023)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 13,
+      "maxZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ7624-2/01K30094JDX1K5PWJ5AGE2YXC8/",
-      "3857": "s3://linz-basemaps/3857/NZ7624-2/01K3008TTB3BFV9H5EG1YR8SJ5/",
-      "name": "NZ7624-2",
-      "title": "NZ7624-2",
+      "2193": "s3://linz-basemaps/2193/mackenzie_2023_0.075m/01HFAS3KHGJ416HZ83RAD06806/",
+      "3857": "s3://linz-basemaps/3857/mackenzie_2023_0.075m/01HFASC646P7KCY8Z34H65WWJA/",
+      "name": "mackenzie-2023-0.075m",
+      "title": "Mackenzie 0.075m Urban Aerial Photos (2023)",
+      "category": "Urban Aerial Photos",
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ7625-2/01K300E4BHNPSH8KDTPPC2FHCS/",
-      "3857": "s3://linz-basemaps/3857/NZ7625-2/01K300DGVD84YPB9HMY5X32159/",
-      "name": "NZ7625-2",
-      "title": "NZ7625-2",
+      "2193": "s3://linz-basemaps/2193/hurunui_2023_0.075m/01HFAS0PCEY0WBGCPXPHDQ29AE/",
+      "3857": "s3://linz-basemaps/3857/hurunui_2023_0.075m/01HFAS0PCJPDPBXD5MQFCG13KX/",
+      "name": "hurunui-2023-0.075m",
+      "title": "Hurunui 0.075m Urban Aerial Photos (2023)",
+      "category": "Urban Aerial Photos",
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ7625-3/01K300G1S613Y52371G38K4KDC/",
-      "3857": "s3://linz-basemaps/3857/NZ7625-3/01K300FE7VDKFM8PX6HCMNZH66/",
-      "name": "NZ7625-3",
-      "title": "NZ7625-3",
+      "2193": "s3://linz-basemaps/2193/west-coast_2016_0.1m/01HKNRHN9R9BA7WGTAWYFP925B/",
+      "3857": "s3://linz-basemaps/3857/west-coast_2016_0.1m/01HKNRHN9F6JNR0V3G7E2MA5W2/",
+      "name": "west-coast-2016-0.1m",
+      "title": "West Coast 0.1m Urban Aerial Photos (2016)",
+      "category": "Urban Aerial Photos",
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/TO201-3/01K3026GX73VGPFG72YVSFEGVC/",
-      "3857": "s3://linz-basemaps/3857/TO201-3/01K3025XAWKFZC4XHTDDX92YXX/",
-      "name": "TO201-3",
-      "title": "TO201-3",
+      "2193": "s3://linz-basemaps/2193/buller_2020_0.2m/01HKP2QVP1KWJN49YX2HSVC9X0/",
+      "3857": "s3://linz-basemaps/3857/buller_2020_0.2m/01HKP2QVP16PYWSKR50WFVVZM1/",
+      "name": "buller-2020-0.2m",
+      "title": "Buller 0.2m Urban Aerial Photos (2020)",
+      "category": "Urban Aerial Photos",
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/TO301-1/01K302GX5XVM3TZYD4QRW7ZWV9/",
-      "3857": "s3://linz-basemaps/3857/TO301-1/01K302DEQ1EWP8CM819DT5267D/",
-      "name": "TO301-1",
-      "title": "TO301-1",
+      "2193": "s3://linz-basemaps/2193/tasman_2023_0.1m/01HRZBFMPVV1YRRGVCZCDGF9V6/",
+      "3857": "s3://linz-basemaps/3857/tasman_2023_0.1m/01HRZBFMQ1ZRF8B44EZ3M0Q8PT/",
+      "name": "tasman-2023-0.1m",
+      "title": "Tasman 0.1m Urban Aerial Photos (2023)",
+      "category": "Urban Aerial Photos",
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/TO404-2/01K302SXZV1BDCX45CV77Y8174/",
-      "3857": "s3://linz-basemaps/3857/TO404-2/01K302S9T95YZ9G0SF4NTMN3BH/",
-      "name": "TO404-2",
-      "title": "TO404-2",
+      "2193": "s3://linz-basemaps/2193/tasman_2023_0.075m/01HRZA2S3FG38VWP919T7BW8H8/",
+      "3857": "s3://linz-basemaps/3857/tasman_2023_0.075m/01HRZA2S3KM6TDTYV79DYZBEES/",
+      "name": "tasman-2023-0.075m",
+      "title": "Tasman 0.075m Urban Aerial Photos (2023)",
+      "category": "Urban Aerial Photos",
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/TO503-2/01K3031BXTFGX6YJCC19B6NEBK/",
-      "3857": "s3://linz-basemaps/3857/TO503-2/01K3030F8B1G3MFEGMYSKQ3SZC/",
-      "name": "TO503-2",
-      "title": "TO503-2",
+      "2193": "s3://linz-basemaps/2193/tararua_2024_0.1m/01HTGAG58ZF9SC73N09NEYGQM8/",
+      "3857": "s3://linz-basemaps/3857/tararua_2024_0.1m/01HTGAG592HJA5HB3PX5D0KATC/",
+      "name": "tararua-2024-0.1m",
+      "title": "Tararua 0.1m Urban Aerial Photos (2024)",
+      "category": "Urban Aerial Photos",
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/TO504-1/01K303E2Q1DXN0KB5F105GYMZB/",
-      "3857": "s3://linz-basemaps/3857/TO504-1/01K3038C02T6QBA15CZ7ME982N/",
-      "name": "TO504-1",
-      "title": "TO504-1",
+      "2193": "s3://linz-basemaps/2193/otago_2023-2024_0.1m/01J4FW00FXH0D8A22K366G7FDQ/",
+      "3857": "s3://linz-basemaps/3857/otago_2023-2024_0.1m/01J4FW00FXF9BPRE5G3Y40EKBK/",
+      "name": "otago-2023-2024-0.1m",
+      "title": "Otago 0.1m Urban Aerial Photos (2023-2024)",
+      "category": "Urban Aerial Photos",
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/WS212-1/01K303RZR53S327P18HYBMFAZP/",
-      "3857": "s3://linz-basemaps/3857/WS212-1/01K303NZ8BBBXARV02M9CBNT3V/",
-      "name": "WS212-1",
-      "title": "WS212-1",
+      "2193": "s3://linz-basemaps/2193/waitaki_2023-2024_0.075m/01J4N16YDFWRXKMMRDCEJEB6RD/",
+      "3857": "s3://linz-basemaps/3857/waitaki_2023-2024_0.075m/01J4N16YDHWZPEEEDJ45ERNSSY/",
+      "name": "waitaki-2023-2024-0.075m",
+      "title": "Waitaki 0.075m Urban Aerial Photos (2023-2024)",
+      "category": "Urban Aerial Photos",
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/WS213-1/01K303VPBSGCBG64WVMQ7DTSFJ/",
-      "3857": "s3://linz-basemaps/3857/WS213-1/01K303RBNX5R1V97YY0GZRT09W/",
-      "name": "WS213-1",
-      "title": "WS213-1",
+      "2193": "s3://linz-basemaps/2193/ashburton_2023-2024_0.075m/01J4NERR82QWDHS5E31XR4MEJW/",
+      "3857": "s3://linz-basemaps/3857/ashburton_2023-2024_0.075m/01J4NERR7YA2BEHTEGWZQBMJNA/",
+      "name": "ashburton-2023-2024-0.075m",
+      "title": "Ashburton 0.075m Urban Aerial Photos (2023-2024)",
+      "category": "Urban Aerial Photos",
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/WS213-2/01K303TZTSRHY2368AYQ5R1BZD/",
-      "3857": "s3://linz-basemaps/3857/WS213-2/01K303NPGFATXZ5R5P0AV2CFNW/",
-      "name": "WS213-2",
-      "title": "WS213-2",
+      "2193": "s3://linz-basemaps/2193/kaikoura_2023_0.05m/01J4TKQZQ14XWT5T2EYKQCHX6D/",
+      "3857": "s3://linz-basemaps/3857/kaikoura_2023_0.05m/01J4TKQZPZ83D8QKPC5SN1ERQY/",
+      "name": "kaikoura-2023-0.05m",
+      "title": "Kaikoura 0.05m Urban Aerial Photos (2023)",
+      "category": "Urban Aerial Photos",
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/WS312-1/01K303WX1DF2T1GVV1V888TRH7/",
-      "3857": "s3://linz-basemaps/3857/WS312-1/01K303VZ566YHKV49A27E76NDE/",
-      "name": "WS312-1",
-      "title": "WS312-1",
+      "2193": "s3://linz-basemaps/2193/auckland_2024_0.075m/01JP68072VCX0V1S7FK14D5VN8/",
+      "3857": "s3://linz-basemaps/3857/auckland_2024_0.075m/01JP6EK940W2BGMBER6QSTWMG6/",
+      "name": "auckland-2024-0.075m",
+      "title": "Auckland 0.075m Urban Aerial Photos (2024) - Draft",
+      "category": "Urban Aerial Photos",
       "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/CK141-9/01K2NG6GRQ321X09ME6NVEKFDR/",
-      "3857": "s3://linz-basemaps/3857/CK141-9/01K2NG5X4C9B1RJ3RKREAQ3G5S/",
-      "name": "CK141-9",
-      "title": "CK141-9",
-      "minZoom": 15
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NU131-3/01K2NHPY8W2R7GKZWW8C8853JV/",
-      "3857": "s3://linz-basemaps/3857/NU131-3/01K2NHPCM90KPG02VNN0N8YVSC/",
-      "name": "NU131-3",
-      "title": "NU131-3",
-      "minZoom": 15
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14902-1/01K2X3KR66PMK80WZBH91DGAM9/",
-      "3857": "s3://linz-basemaps/3857/NZ14902-1/01K2X3CPHJDHRZYVV9Y3GPKYXH/",
-      "name": "NZ14902-1",
-      "title": "NZ14902-1",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ232-3/01K2X3R0HFH34WKR19RH5ZDS7N/",
-      "3857": "s3://linz-basemaps/3857/NZ232-3/01K2X3Q3AEM9R53JGJWR0VACGW/",
-      "name": "NZ232-3",
-      "title": "NZ232-3",
-      "minZoom": 15
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ2325-4/01K2X4Z4YVARN3Q0TCJE2WGABD/",
-      "3857": "s3://linz-basemaps/3857/NZ2325-4/01K2X4Z5BACC60YBJTD0F1NQEN/",
-      "name": "NZ2325-4",
-      "title": "NZ2325-4",
-      "minZoom": 15
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ252-4/01K2X55VQ7MVNE0QTEXE1JEP7F/",
-      "3857": "s3://linz-basemaps/3857/NZ252-4/01K2X557PZFFEQ57T70SEBSG53/",
-      "name": "NZ252-4",
-      "title": "NZ252-4",
-      "minZoom": 15
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ2685-2/01K2X5DXMNRD60AYG1PX0Z51XX/",
-      "3857": "s3://linz-basemaps/3857/NZ2685-2/01K2X5D9FFWE3R0BS2XTW170PF/",
-      "name": "NZ2685-2",
-      "title": "NZ2685-2",
-      "minZoom": 15
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4111-2/01K2X6FVGXMZ9FPMWTQ0M1S6GN/",
-      "3857": "s3://linz-basemaps/3857/NZ4111-2/01K2X6GTEHRR8GEC5XJ9EAPQ4A/",
-      "name": "NZ4111-2",
-      "title": "NZ4111-2",
-      "minZoom": 15
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4111-3/01K2X6FQXB5CV529N2VMPX5E1M/",
-      "3857": "s3://linz-basemaps/3857/NZ4111-3/01K2X6G0H3QDM94BWT7BGBV9X6/",
-      "name": "NZ4111-3",
-      "title": "NZ4111-3",
-      "minZoom": 15
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4634-2/01K2XBWC0ESYX9BWDSSNHYNRDM/",
-      "3857": "s3://linz-basemaps/3857/NZ4634-2/01K2XBVERM55QKEPJ2WENGWGAA/",
-      "name": "NZ4634-2",
-      "title": "NZ4634-2",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4634-3/01K2XBTS0N80PHN39FV73YF4K6/",
-      "3857": "s3://linz-basemaps/3857/NZ4634-3/01K2XBTF5TAW85H8D8KM3E318E/",
-      "name": "NZ4634-3",
-      "title": "NZ4634-3",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4634-4/01K2XC282DZPANMNTPT2QWD54N/",
-      "3857": "s3://linz-basemaps/3857/NZ4634-4/01K2XC09BEBP2WEJMZ4MAFFBP8/",
-      "name": "NZ4634-4",
-      "title": "NZ4634-4",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5124-3/01K2XCEHBZ38645EP1TP176411/",
-      "3857": "s3://linz-basemaps/3857/NZ5124-3/01K2XCEHC04BHF1BNZ80C7RHH6/",
-      "name": "NZ5124-3",
-      "title": "NZ5124-3",
-      "minZoom": 15
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ5125-2/01K2XCJPQEAM4ANTMZ0P7ZSW3Y/",
-      "3857": "s3://linz-basemaps/3857/NZ5125-2/01K2XCJP6Y52W1TY2MAFGACZ94/",
-      "name": "NZ5125-2",
-      "title": "NZ5125-2",
+      "2193": "s3://linz-basemaps/2193/south-wairarapa_2025_0.075m/01JSZEBDX16RNX0SKNSGM478FR/",
+      "3857": "s3://linz-basemaps/3857/south-wairarapa_2025_0.075m/01JSZEBDX1G984Q4DSR1FPGR30/",
+      "name": "south-wairarapa-2025-0.075m",
+      "title": "South Wairarapa 0.075m Urban Aerial Photos (2025)",
+      "category": "Urban Aerial Photos",
       "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ5212-1/01K2XH0DAMP8YTB86NQS7FGGBG/",
-      "3857": "s3://linz-basemaps/3857/NZ5212-1/01K2XGZ5F567FXD01V9S81R7PR/",
-      "name": "NZ5212-1",
-      "title": "NZ5212-1",
-      "minZoom": 15
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ5217-1/01K2XH2VSTPFTJSXTYRADY0XJ7/",
-      "3857": "s3://linz-basemaps/3857/NZ5217-1/01K2XH286SXAGQ58BMYKVYYJFM/",
-      "name": "NZ5217-1",
-      "title": "NZ5217-1",
+      "2193": "s3://linz-basemaps/2193/napier_2024-2025_0.05m/01JT7N65EFPQ4K50PKSA34181J/",
+      "3857": "s3://linz-basemaps/3857/napier_2024-2025_0.05m/01JT7N65EEZESG631E59NSXVBF/",
+      "name": "napier-2024-2025-0.05m",
+      "title": "Napier 0.05m Urban Aerial Photos (2024-2025)",
+      "category": "Urban Aerial Photos",
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ5322-3/01K2ZHFVWAATQMATJT9YMPC9AE/",
-      "3857": "s3://linz-basemaps/3857/NZ5322-3/01K2ZHFH332NCF972096VJ51ET/",
-      "name": "NZ5322-3",
-      "title": "NZ5322-3",
+      "2193": "s3://linz-basemaps/2193/hawkes-bay_2024-2025_0.1m/01JTF4MHW4F4WDE7DYZ9ASSR5Q/",
+      "3857": "s3://linz-basemaps/3857/hawkes-bay_2024-2025_0.1m/01JTF4MHW5Z1YSH3R10K7WH526/",
+      "name": "hawkes-bay-2024-2025-0.1m",
+      "title": "Hawke's Bay 0.1m Urban Aerial Photos (2024-2025)",
+      "category": "Urban Aerial Photos",
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ542-3/01K2ZK68TTT9YQBMRRVCPSZWTX/",
-      "3857": "s3://linz-basemaps/3857/NZ542-3/01K2ZK5ZAKFCHMZH5WT31Z72TQ/",
-      "name": "NZ542-3",
-      "title": "NZ542-3",
+      "2193": "s3://linz-basemaps/2193/tauranga_2025_0.1m/01JVXKRH02PPQBMKRMG6S9N8RZ/",
+      "3857": "s3://linz-basemaps/3857/tauranga_2025_0.1m/01JVXKRH01Z0TSHZ8DKN37STFF/",
+      "name": "tauranga-2025-0.1m",
+      "title": "Tauranga 0.1m Urban Aerial Photos (2025)",
+      "category": "Urban Aerial Photos",
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ5571-2/01K2ZM134YCAEEHW8F0FDE5JKB/",
-      "3857": "s3://linz-basemaps/3857/NZ5571-2/01K2ZKY647FXSH3GBQ5HE9SCE0/",
-      "name": "NZ5571-2",
-      "title": "NZ5571-2",
+      "2193": "s3://linz-basemaps/2193/buller_2024-2025_0.075m/01JYMK94WX7EQCTC21K4R3WR2B/",
+      "3857": "s3://linz-basemaps/3857/buller_2024-2025_0.075m/01JYMK94WB8R1Y4XZVAXAPY6N8/",
+      "name": "buller-2024-2025-0.075m",
+      "title": "Buller 0.075m Urban Aerial Photos (2024-2025) - Draft",
+      "category": "Urban Aerial Photos",
       "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6142-2/01K2ZNRGGXF43S3NGDQC66QHM7/",
-      "3857": "s3://linz-basemaps/3857/NZ6142-2/01K2ZNRGXNPXGDQAK4RJ6YF9VN/",
-      "name": "NZ6142-2",
-      "title": "NZ6142-2",
-      "minZoom": 15
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ6422-2/01K2ZR4NH2SGY8JNYBCZN4BZQW/",
-      "3857": "s3://linz-basemaps/3857/NZ6422-2/01K2ZR422Z66K49QFE0MAFZ18P/",
-      "name": "NZ6422-2",
-      "title": "NZ6422-2",
+      "2193": "s3://linz-basemaps/2193/carterton_2025_0.075m/01JZ4TZ56P1MGFPNNJ5QB7VWT2/",
+      "3857": "s3://linz-basemaps/3857/carterton_2025_0.075m/01JZ4TZ56PHXQD4YZ6X09ERNSW/",
+      "name": "carterton-2025-0.075m",
+      "title": "Carterton 0.075m Urban Aerial Photos (2025)",
+      "category": "Urban Aerial Photos",
       "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ6612-4/01K2ZRMGDW38P87V76CWB4P1TW/",
-      "3857": "s3://linz-basemaps/3857/NZ6612-4/01K2ZRM6XP54QY0H9GSVFXB6RQ/",
-      "name": "NZ6612-4",
-      "title": "NZ6612-4",
-      "minZoom": 15
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ6821-2/01K2ZRTJH242A8W4D2ZB4YQRJA/",
-      "3857": "s3://linz-basemaps/3857/NZ6821-2/01K2ZRT26AHEN921KVN34SGC3C/",
-      "name": "NZ6821-2",
-      "title": "NZ6821-2",
+      "2193": "s3://linz-basemaps/2193/waimakariri_2025_0.04m/01JZ78P694XDGGKB1Q7H0S8XCM/",
+      "3857": "s3://linz-basemaps/3857/waimakariri_2025_0.04m/01JZ78P694G0EBMEVPAF8X8P0T/",
+      "name": "waimakariri-2025-0.04m",
+      "title": "Waimakariri 0.04m Urban Aerial Photos (2025)",
+      "category": "Urban Aerial Photos",
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ7132-2/01K2ZSK736199RXZSZWAHN9QEB/",
-      "3857": "s3://linz-basemaps/3857/NZ7132-2/01K2ZSGG2FPCVK1HD0F4Q1R34Q/",
-      "name": "NZ7132-2",
-      "title": "NZ7132-2",
+      "2193": "s3://linz-basemaps/2193/westland_2024_0.075m/01JZS88HFQ4CQMA8BY0KZ62DM6/",
+      "3857": "s3://linz-basemaps/3857/westland_2024_0.075m/01JZS88HFJR1BP1CGWRNXXBBTE/",
+      "name": "westland-2024-0.075m",
+      "title": "Westland 0.075m Urban Aerial Photos (2024) - Draft",
+      "category": "Urban Aerial Photos",
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ7132-3/01K2ZSN2V2FQBEX5TMN3B2JT6T/",
-      "3857": "s3://linz-basemaps/3857/NZ7132-3/01K2ZSJBP25BDWVBSH0RPR5DK8/",
-      "name": "NZ7132-3",
-      "title": "NZ7132-3",
+      "2193": "s3://linz-basemaps/2193/grey_2025_0.075m/01JZVMA8FPS6QJGHAR4VY968FY/",
+      "3857": "s3://linz-basemaps/3857/grey_2025_0.075m/01JZVMA8FQV0MPPVBNBNZC6G3M/",
+      "name": "grey-2025-0.075m",
+      "title": "Grey 0.075m Urban Aerial Photos (2025) - Draft",
+      "category": "Urban Aerial Photos",
       "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/CK242-3/01K2NHJESK6V41WHEFSGZHHAZR/",
-      "3857": "s3://linz-basemaps/3857/CK242-3/01K2NHJ6BV7RDRSQT5H6C61KDM/",
-      "name": "CK242-3",
-      "title": "CK242-3",
-      "minZoom": 16
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/CK242-4/01K2NHJ364SMK8Q4DMYGWNVWF2/",
-      "3857": "s3://linz-basemaps/3857/CK242-4/01K2NHJ367ETB183TZ3XZQWQ5T/",
-      "name": "CK242-4",
-      "title": "CK242-4",
-      "minZoom": 16
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4314-2/01K2X77EPHTC942F74VHC1AQTS/",
-      "3857": "s3://linz-basemaps/3857/NZ4314-2/01K2X77S2CG8E30FEGCHAXF11R/",
-      "name": "NZ4314-2",
-      "title": "NZ4314-2",
-      "minZoom": 16
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ4315-2/01K2X79ERB8SS436CE6WG671EH/",
-      "3857": "s3://linz-basemaps/3857/NZ4315-2/01K2X79ERA17FHJK7B2Z7C2QHP/",
-      "name": "NZ4315-2",
-      "title": "NZ4315-2",
-      "minZoom": 16
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ6154-2/01K2ZP2VST3K2NHFMRRSAMZSFT/",
-      "3857": "s3://linz-basemaps/3857/NZ6154-2/01K2ZP2V51J3AH61SE5XSBFPGN/",
-      "name": "NZ6154-2",
-      "title": "NZ6154-2",
-      "minZoom": 14
+      "3857": "s3://linz-basemaps/3857/geographx_nz_dem_2012_8-0m/01FM8DEN1XG1QGNT229A4T3KZ6/",
+      "name": "geographx-nz-dem-2012-8m",
+      "maxZoom": 14,
+      "title": "New Zealand 8m DEM Hillshade (2012)",
+      "category": "Elevation"
     },
     {
-      "2193": "s3://linz-basemaps/2193/TO201-4/01K3026KZKZRP1GBV5799H3A17/",
-      "3857": "s3://linz-basemaps/3857/TO201-4/01K3026FPEBFF60DDAS5R7T1FR/",
-      "name": "TO201-4",
-      "title": "TO201-4",
-      "minZoom": 16
+      "3857": "s3://linz-basemaps/3857/geographx_nz_texture_shade_2012_8-0m/01FMK5CJHR30YG9A0JDNVXYCKN/",
+      "name": "geographx-nz-texture-shade-2012-8m",
+      "maxZoom": 14,
+      "title": "New Zealand 8m DEM Texture Shade (2012)",
+      "category": "Elevation"
     }
   ]
 }
