@@ -5,13 +5,6 @@
   "title": "LINZ Paper charts maps",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/NZ14060-1/01K2NWDFPKRJM6X76WH1YAFBVP/",
-      "3857": "s3://linz-basemaps/3857/NZ14060-1/01K2NTXCX556954P7D8TTTK6FM/",
-      "name": "NZ14060-1",
-      "title": "NZ14060-1",
-      "minZoom": 0
-    },
-    {
       "2193": "s3://linz-basemaps/2193/NZ14061-1/01K2NXXG8TMZG3WZH5CNXK6ZV3/",
       "3857": "s3://linz-basemaps/3857/NZ14061-1/01K2NV0VDFYKB324YT5ANZFHTD/",
       "name": "NZ14061-1",
@@ -40,13 +33,6 @@
       "minZoom": 5
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ14604-1/01K2NTXDVT9W9ZJW3BAS0SDC55/",
-      "3857": "s3://linz-basemaps/3857/NZ14604-1/01K2NTM66VFXY3GKWT58HCPXZX/",
-      "name": "NZ14604-1",
-      "title": "NZ14604-1",
-      "minZoom": 5
-    },
-    {
       "2193": "s3://linz-basemaps/2193/NZ14605-1/01K2NVD6CRWJF5MEHHVJKMZV1M/",
       "3857": "s3://linz-basemaps/3857/NZ14605-1/01K2NVGRTQVYS7YVY57ZTKTM94/",
       "name": "NZ14605-1",
@@ -58,13 +44,6 @@
       "3857": "s3://linz-basemaps/3857/NZ14606-1/01K2NW15FAPCMMJ6ZHP01SMQK4/",
       "name": "NZ14606-1",
       "title": "NZ14606-1",
-      "minZoom": 5
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/NZ14607-1/01K2NXVGGJ7VWCA0QGS0DCYKEX/",
-      "3857": "s3://linz-basemaps/3857/NZ14607-1/01K2NWD3XZAYRGC5D8K5W9ZW0T/",
-      "name": "NZ14607-1",
-      "title": "NZ14607-1",
       "minZoom": 5
     },
     {
@@ -86,7 +65,7 @@
       "3857": "s3://linz-basemaps/3857/NZ14600-1/01K2NVJQEC0S8MC3S7J3J06N0Q/",
       "name": "NZ14600-1",
       "title": "NZ14600-1",
-      "minZoom": 5
+      "minZoom": 0
     },
     {
       "2193": "s3://linz-basemaps/2193/NZ14900-1/01K2P05HR5VKJYVDEN5ZGW0TEN/",
