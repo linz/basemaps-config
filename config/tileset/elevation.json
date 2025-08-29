@@ -532,9 +532,9 @@
     },
     {
       "2193": "s3://nz-elevation/manawatu-whanganui/whanganui-river-catchment_2025/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/whanganui-river-catchment_2025_dem_1m/01K0392MBSWKQENS6Y4F9Q4W2B/",
+      "3857": "s3://linz-basemaps/elevation/3857/whanganui-river-catchment_2025_dem_1m/01K3STEWMHG4QB1T7ZQ2WFS1WP/",
       "name": "whanganui-river-catchment_2025_dem_1m",
-      "title": "Manawatū-Whanganui - Whanganui River Catchment LiDAR 1m DEM (2025) - Draft",
+      "title": "Manawatū-Whanganui - Whanganui River Catchment LiDAR 1m DEM (2025)",
       "minZoom": 9
     }
   ],
