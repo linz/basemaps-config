@@ -949,6 +949,14 @@
       "minZoom": 14
     },
     {
+      "2193": "s3://linz-basemaps/2193/banks-peninsula_2025_0.075m/01K3SX67G782MQVESQE61VPGZP/",
+      "3857": "s3://linz-basemaps/3857/banks-peninsula_2025_0.075m/01K3SX68HEW0RF8G3Z6HDKA7A5/",
+      "name": "banks-peninsula-2025-0.075m",
+      "title": "Banks Peninsula 0.075m Urban Aerial Photos (2025)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 14
+    },
+    {
       "3857": "s3://linz-basemaps/3857/geographx_nz_dem_2012_8-0m/01FM8DEN1XG1QGNT229A4T3KZ6/",
       "name": "geographx-nz-dem-2012-8m",
       "maxZoom": 14,
