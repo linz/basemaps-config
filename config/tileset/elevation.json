@@ -536,6 +536,13 @@
       "name": "whanganui-river-catchment_2025_dem_1m",
       "title": "Manawatū-Whanganui - Whanganui River Catchment LiDAR 1m DEM (2025)",
       "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/nelson/nelson_2025/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/nelson_2025_dem_1m/01K3SP7D348V0D81AC5NHYTVVF/",
+      "name": "nelson_2025_dem_1m",
+      "title": "Nelson LiDAR 1m DEM (2025)",
+      "minZoom": 9
     }
   ],
   "outputs": [
