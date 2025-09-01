@@ -949,8 +949,16 @@
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/waimate_2025_0.075m/01K3ST3N1XW3GVPV1Z93VQ4FHQ/",
-      "3857": "s3://linz-basemaps/3857/waimate_2025_0.075m/01K3ST3N1T07QF27KTBZ19PC1C/",
+      "2193": "s3://linz-basemaps/2193/banks-peninsula_2025_0.075m/01K3SX67G782MQVESQE61VPGZP/",
+      "3857": "s3://linz-basemaps/3857/banks-peninsula_2025_0.075m/01K3SX68HEW0RF8G3Z6HDKA7A5/",
+      "name": "banks-peninsula-2025-0.075m",
+      "title": "Banks Peninsula 0.075m Urban Aerial Photos (2025)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 14
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/waimate_2025_0.075m/01K41J95V2JY71SV1D1YSJ1XP5/",
+      "3857": "s3://linz-basemaps/3857/waimate_2025_0.075m/01K41J95QZSXC3N418G2KF3DHZ/",
       "name": "waimate-2025-0.075m",
       "title": "Waimate 0.075m Urban Aerial Photos (2025)",
       "category": "Urban Aerial Photos",
