@@ -636,14 +636,6 @@
       "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/waimate_2021_0.075m/01GKSQ99D3KZ2NN9H7MWSABMNM/",
-      "3857": "s3://linz-basemaps/3857/waimate_2021_0.075m/01GKSQ9HMFNF4Z55QXCJ2Y2X0X/",
-      "name": "waimate-2021-0.075m",
-      "minZoom": 14,
-      "title": "Waimate 0.075m Urban Aerial Photos (2021)",
-      "category": "Urban Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/palmerston-north_2024_0.1m/01J0VVWVCJEQVZ0VTFHENTC8H3/",
       "3857": "s3://linz-basemaps/3857/palmerston-north_2024_0.1m/01J0VVWTAYX82VYAZQRMP0C53Q/",
       "name": "palmerston-north-2024-0.1m",
