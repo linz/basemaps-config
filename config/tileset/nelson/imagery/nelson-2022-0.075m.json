@@ -10,6 +10,7 @@
     "alpha": 0
   },
   "category": "Urban Aerial Photos",
+  "aliases": ["nelson-urban-2022-0.075m"],
   "layers": [
     {
       "2193": "s3://linz-basemaps/2193/nelson_urban_2022_0-075m_RGB/01G87CWVWSG7KWE3DHC6R18BCX/",
