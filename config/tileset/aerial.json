@@ -957,6 +957,14 @@
       "minZoom": 14
     },
     {
+      "2193": "s3://linz-basemaps/2193/hamilton_2024_0.05m/01K49FN4PAC6ERM0GJJ7YQPRKR/",
+      "3857": "s3://linz-basemaps/3857/hamilton_2024_0.05m/01K49FN4PA72C9T22F5F38PA18/",
+      "name": "hamilton-2024-0.05m",
+      "title": "Hamilton 0.05m Urban Aerial Photos (2024)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 14
+    },
+    {
       "3857": "s3://linz-basemaps/3857/geographx_nz_dem_2012_8-0m/01FM8DEN1XG1QGNT229A4T3KZ6/",
       "name": "geographx-nz-dem-2012-8m",
       "maxZoom": 14,
