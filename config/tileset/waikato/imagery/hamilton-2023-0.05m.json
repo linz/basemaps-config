@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_hamilton-2023-0.05m",
+  "name": "hamilton-2023-0.05m",
+  "title": "Hamilton 0.05m Urban Aerial Photos (2023)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Urban Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/hamilton_2023_0.05m/01H6YT6HDGMQ0DA04Q4YKTN6KS/",
+      "3857": "s3://linz-basemaps/3857/hamilton_2023_0.05m/01H6YT8M3R6BN6V2869HA33NQ1/",
+      "name": "hamilton-2023-0.05m",
+      "title": "Hamilton 0.05m Urban Aerial Photos (2023)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
