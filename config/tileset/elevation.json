@@ -543,6 +543,13 @@
       "name": "nelson_2025_dem_1m",
       "title": "Nelson LiDAR 1m DEM (2025)",
       "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/manawatu-whanganui/dannevirke_2022/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/dannevirke_2022_dem_1m/01K55DCGAZ1N7KJ49V8807PPDT/",
+      "name": "dannevirke_2022_dem_1m",
+      "title": "Manawatū-Whanganui - Dannevirke LiDAR 1m DEM (2022)",
+      "minZoom": 9
     }
   ],
   "outputs": [
