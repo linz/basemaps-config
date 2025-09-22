@@ -406,10 +406,10 @@
     },
     {
       "2193": "s3://nz-elevation/tasman/tasman_2020-2022/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/tasman_2020-2022_dem_1m/01HZ677D4DM9DQWB4ADK2M3RK8/",
-      "minZoom": 9,
+      "3857": "s3://linz-basemaps/elevation/3857/tasman_2020-2022_dem_1m/01K5QH9E6KS6VFNXF3P0BV558A/",
+      "name": "tasman_2020-2022_dem_1m",
       "title": "Tasman LiDAR 1m DEM (2020-2022)",
-      "name": "tasman_2020-2022_dem_1m"
+      "minZoom": 9
     },
     {
       "2193": "s3://nz-elevation/marlborough/marlborough_2020-2022/dem_1m/2193/",
