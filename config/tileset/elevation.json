@@ -406,10 +406,10 @@
     },
     {
       "2193": "s3://nz-elevation/tasman/tasman_2020-2022/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/tasman_2020-2022_dem_1m/01HZ677D4DM9DQWB4ADK2M3RK8/",
-      "minZoom": 9,
+      "3857": "s3://linz-basemaps/elevation/3857/tasman_2020-2022_dem_1m/01K5QH9E6KS6VFNXF3P0BV558A/",
+      "name": "tasman_2020-2022_dem_1m",
       "title": "Tasman LiDAR 1m DEM (2020-2022)",
-      "name": "tasman_2020-2022_dem_1m"
+      "minZoom": 9
     },
     {
       "2193": "s3://nz-elevation/marlborough/marlborough_2020-2022/dem_1m/2193/",
@@ -532,9 +532,23 @@
     },
     {
       "2193": "s3://nz-elevation/manawatu-whanganui/whanganui-river-catchment_2025/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/whanganui-river-catchment_2025_dem_1m/01K0392MBSWKQENS6Y4F9Q4W2B/",
+      "3857": "s3://linz-basemaps/elevation/3857/whanganui-river-catchment_2025_dem_1m/01K3STEWMHG4QB1T7ZQ2WFS1WP/",
       "name": "whanganui-river-catchment_2025_dem_1m",
-      "title": "Manawatū-Whanganui - Whanganui River Catchment LiDAR 1m DEM (2025) - Draft",
+      "title": "Manawatū-Whanganui - Whanganui River Catchment LiDAR 1m DEM (2025)",
+      "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/nelson/nelson_2025/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/nelson_2025_dem_1m/01K3SP7D348V0D81AC5NHYTVVF/",
+      "name": "nelson_2025_dem_1m",
+      "title": "Nelson LiDAR 1m DEM (2025)",
+      "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/manawatu-whanganui/dannevirke_2022/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/dannevirke_2022_dem_1m/01K55DCGAZ1N7KJ49V8807PPDT/",
+      "name": "dannevirke_2022_dem_1m",
+      "title": "Manawatū-Whanganui - Dannevirke LiDAR 1m DEM (2022)",
       "minZoom": 9
     }
   ],
