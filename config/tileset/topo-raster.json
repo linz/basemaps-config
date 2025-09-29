@@ -20,7 +20,7 @@
       "category": "Topographic"
     },
     {
-      "2193": "ss3://linz-basemaps/2193/topo25-kermadec-islands/01K6B7R1X5SP1FRAPSJ5VA6CVG/",
+      "2193": "s3://linz-basemaps/2193/topo25-kermadec-islands/01K6B7R1X5SP1FRAPSJ5VA6CVG/",
       "3857": "s3://linz-basemaps/3857/topo25-kermadec-islands/01K6B7R08VR44DSE510R2KPTSM/",
       "name": "nzoi-topo25-kermadec-islands",
       "title": "NZOI Topo25 - Kermadec Islands (Gridless)",
