@@ -6,35 +6,98 @@
   "background": { "r": 208, "g": 231, "b": 244, "alpha": 255 },
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/topo250-new-zealand-mainland/01JZ1RKXX58R4J10PERT45S1MT/",
-      "3857": "s3://linz-basemaps/3857/topo250-new-zealand-mainland/01JZ1RKXX6YT4PYCH29GATTT38/",
-      "name": "topo250-new-zealand-mainland",
-      "title": "Topo250 NZ Mainland Gridless Maps",
+      "2193": "s3://linz-basemaps/2193/topo25-antipodes-islands/01K6B7R0ATZHPRX2J05P05P5VF/",
+      "3857": "s3://linz-basemaps/3857/topo25-antipodes-islands/01K6B7RPX3H8C8VW771F5VC3MP/",
+      "name": "nzoi-topo25-antipodes-islands",
+      "title": "NZOI Topo25 - Antipodes Islands (Gridless)",
+      "category": "Topographic"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/topo25-snares-islands/01K6B7R16X4S8PX3ZKVXZX6XMR/",
+      "3857": "s3://linz-basemaps/3857/topo25-snares-islands/01K6B7RPX3CDYTEJ99E6V2W4VX/",
+      "name": "nzoi-topo25-snares-islands",
+      "title": "NZOI Topo25 - Snares Islands (Gridless)",
+      "category": "Topographic"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/topo50-auckland-islands/01K6B7NHHJB3343G7PBJ475MXB/",
+      "3857": "s3://linz-basemaps/3857/topo50-auckland-islands/01K6B7NG4BP61E0QF9R16HTWM8/",
+      "name": "nzoi-topo50-auckland-islands",
+      "title": "NZOI Topo50 - Auckland Islands (Gridless)",
+      "category": "Topographic"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/topo250-chatham-islands/01K6B8GYY1PT6XGM66E2WRVYNV/",
+      "3857": "s3://linz-basemaps/3857/topo250-chatham-islands/01K6B8GZCR1HZTQGK79T8T2XT8/",
+      "name": "nz-topo250-chatham-islands",
+      "title": "NZ Topo250 - Chatham Islands (Gridless)",
       "maxZoom": 12,
       "category": "Topographic"
     },
     {
-      "2193": "s3://linz-basemaps/2193/topo250-chatham-islands/01JZ1RXGY5MZX9NW66964D0RPC/",
-      "3857": "s3://linz-basemaps/3857/topo250-chatham-islands/01JZ1RXH3E9HTTW0MG6YGT0AJW/",
-      "name": "topo250-chatham-island",
-      "title": "Topo250 Chatham Islands Gridless Maps",
+      "2193": "s3://linz-basemaps/2193/topo250-new-zealand-mainland/01K6B8GY3CNVEA6PPEJ6HSREE8/",
+      "3857": "s3://linz-basemaps/3857/topo250-new-zealand-mainland/01K6B8GZ2NH6K7TN3EKYKQ9WBN/",
+      "name": "nz-topo250-new-zealand-mainland",
+      "title": "NZ Topo250 - New Zealand Mainland (Gridless)",
       "maxZoom": 12,
       "category": "Topographic"
     },
     {
-      "2193": "s3://linz-basemaps/2193/topo50-new-zealand-mainland/01JYN5YPMQN00X5FW0X09NCTWB/",
-      "3857": "s3://linz-basemaps/3857/topo50-new-zealand-mainland/01JYN5YPMSNXNGTMEN8DWQ2FE8/",
-      "name": "topo50-new-zealand-mainland",
-      "title": "Topo50 NZ Mainland Gridless Maps",
+      "2193": "s3://linz-basemaps/2193/topo50-chatham-islands/01K6B8W6XYJZ20HJXDENZ57XFJ/",
+      "3857": "s3://linz-basemaps/3857/topo50-chatham-islands/01K6B8W7VXRR8FVJ6F9BP66GYV/",
+      "name": "nz-topo50-chatham-islands",
+      "title": "NZ Topo50 - Chatham Islands (Gridless)",
       "minZoom": 13,
       "category": "Topographic"
     },
     {
-      "2193": "s3://linz-basemaps/2193/topo50-chatham-islands/01JYQFXWMY3YPVRZPYDR96W19J/",
-      "3857": "s3://linz-basemaps/3857/topo50-chatham-islands/01JYQFXWMVN3D8J6P73NFP1RRS/",
-      "name": "topo50-chatham-island",
-      "title": "Topo50 Chatham Islands Gridless Maps",
+      "2193": "s3://linz-basemaps/2193/topo50-new-zealand-mainland/01K6B8W70JRW2SSTYXAR4BP5N1/",
+      "3857": "s3://linz-basemaps/3857/topo50-new-zealand-mainland/01K6B8W6BPSPZBBJF7S6S171AY/",
+      "name": "nz-topo50-new-zealand-mainland",
+      "title": "NZ Topo50 - New Zealand Mainland (Gridless)",
       "minZoom": 13,
+      "category": "Topographic"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/topo25-cook-islands-zone3/01K6B80F497WC9RD3KA8XCSRAK/",
+      "3857": "s3://linz-basemaps/3857/topo25-cook-islands-zone3/01K6B80EYJSYP3Y6QCT1B0H6N4/",
+      "name": "pi-topo25-cook-islands-zone3",
+      "title": "PI Topo25 - Cook Islands Zone 3 (Gridless)",
+      "category": "Topographic"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/topo25-cook-islands-zone4/01K6B80F1QH5NSKS6P4N15DAT4/",
+      "3857": "s3://linz-basemaps/3857/topo25-cook-islands-zone4/01K6B80FWZSHTSSFKZD592WSS1/",
+      "name": "pi-topo25-cook-islands-zone4",
+      "title": "PI Topo25 - Cook Islands Zone 4 (Gridless)",
+      "category": "Topographic"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/topo25-tokelau-islands/01K6B80F7NQ72VYM11TJWHMP31/",
+      "3857": "s3://linz-basemaps/3857/topo25-tokelau-islands/01K6B80E33VTWMFGD6NWKKVGWQ/",
+      "name": "pi-topo25-tokelau-islands",
+      "title": "PI Topo25 - Tokelau Islands (Gridless)",
+      "category": "Topographic"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/topo50-niue/01K6B7RK1VJVC4BMA1ZWHTVCTA/",
+      "3857": "s3://linz-basemaps/3857/topo50-niue/01K6B7R9XR5GGXC2QPG77D8NM9/",
+      "name": "pi-topo50-niue",
+      "title": "PI Topo50 - Niue (Gridless)",
+      "category": "Topographic"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/topo50-penryn/01K6B7RRDC3JA5T1NKXEC2MC0J/",
+      "3857": "s3://linz-basemaps/3857/topo50-penryn/01K6B7RAT9HJTSPJRFFS19YEDG/",
+      "name": "pi-topo50-penryn",
+      "title": "PI Topo50 - Penryn (Gridless)",
+      "category": "Topographic"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/topo50-suwarrow/01K6B7R9XT9BXAYDFANVJD1NVA/",
+      "3857": "s3://linz-basemaps/3857/topo50-suwarrow/01K6B7RCRWPJD0GD74GKKXJ1EY/",
+      "name": "pi-topo50-suwarrow",
+      "title": "PI Topo50 - Suwarrow (Gridless)",
       "category": "Topographic"
     }
   ]
