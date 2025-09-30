@@ -5,8 +5,8 @@
   "title": "LINZ Paper charts maps",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/NZ14065-1/01K2NXYSGV5R2S1S5YPYWWMWE4/",
-      "3857": "s3://linz-basemaps/3857/NZ14065-1/01K2NVBPHW2GAVVBQCP6SC912H/",
+      "2193": "s3://linz-basemaps/2193/NZ14065-1/01K5YVWBF7A6DBBKEHW3HD04WG/",
+      "3857": "s3://linz-basemaps/3857/NZ14065-1/01K5YVWBYT6RVXTZ6AK8CQRRWC/",
       "name": "NZ14065-1",
       "title": "NZ14065-1",
       "minZoom": 0
@@ -33,8 +33,8 @@
       "minZoom": 0
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ14606-1/01K2NWR8XWVPKBVZQVXMGRDQQG/",
-      "3857": "s3://linz-basemaps/3857/NZ14606-1/01K2NW15FAPCMMJ6ZHP01SMQK4/",
+      "2193": "s3://linz-basemaps/2193/NZ14606-1/01K5WRWTCMRNACJYG6J73XMCJR/",
+      "3857": "s3://linz-basemaps/3857/NZ14606-1/01K5WRWTCM710TSBKVR0ZJZWPB/",
       "name": "NZ14606-1",
       "title": "NZ14606-1",
       "minZoom": 0
@@ -82,8 +82,8 @@
       "minZoom": 8
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ14631-1/01K2NY1S44CW0FG40XX9KKGG1R/",
-      "3857": "s3://linz-basemaps/3857/NZ14631-1/01K2NXP68T3YB8FMJHK6Q8SEBV/",
+      "2193": "s3://linz-basemaps/2193/NZ14631-1/01K6EA9CFWDD8B6KKA3AAW3PSV/",
+      "3857": "s3://linz-basemaps/3857/NZ14631-1/01K6EA9CBP0K5N82AX1CJD8WTH/",
       "name": "NZ14631-1",
       "title": "NZ14631-1",
       "minZoom": 8
@@ -96,8 +96,8 @@
       "minZoom": 8
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ14909-1/01K2X3TXE5FH9X1DN0H0VMD16H/",
-      "3857": "s3://linz-basemaps/3857/NZ14909-1/01K2X3DTXWZEJVGMQ33398K4YH/",
+      "2193": "s3://linz-basemaps/2193/NZ14909-1/01K5YXD1QW58XB0GESZT26GZK7/",
+      "3857": "s3://linz-basemaps/3857/NZ14909-1/01K5YXD2G3FBVJE766ENG01F7J/",
       "name": "NZ14909-1",
       "title": "NZ14909-1",
       "minZoom": 8
@@ -124,15 +124,15 @@
       "minZoom": 9
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ14912-1/01K2X48DF7MS8H0GKGTTWSRQGY/",
-      "3857": "s3://linz-basemaps/3857/NZ14912-1/01K2X3QKJX1YFDQ0X46BTKG5FC/",
+      "2193": "s3://linz-basemaps/2193/NZ14912-1/01K5YXFE9SM4FF7RGP6NAPF26T/",
+      "3857": "s3://linz-basemaps/3857/NZ14912-1/01K5YXFF68SYM7DDDXF37GJR7V/",
       "name": "NZ14912-1",
       "title": "NZ14912-1",
       "minZoom": 9
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ14912-2/01K2X30C8KS27GN28Q2BW1Q3G9/",
-      "3857": "s3://linz-basemaps/3857/NZ14912-2/01K2X2ZF0YTZS4PZ2EHVKG3QAD/",
+      "2193": "s3://linz-basemaps/2193/NZ14912-2/01K5YX6B0SZ737M7Y52K37DVBG/",
+      "3857": "s3://linz-basemaps/3857/NZ14912-2/01K5YX6B3H8SQNKRWBBGYGBBSQ/",
       "name": "NZ14912-2",
       "title": "NZ14912-2",
       "minZoom": 9
@@ -208,8 +208,8 @@
       "minZoom": 10
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ14908-1/01K2X3Q71F018F04JZ4B540PS3/",
-      "3857": "s3://linz-basemaps/3857/NZ14908-1/01K2X3DW7Y6ZMGSTC4RH019VXE/",
+      "2193": "s3://linz-basemaps/2193/NZ14908-1/01K5YXEQYNW5HKY7WYZ5Q2DPFA/",
+      "3857": "s3://linz-basemaps/3857/NZ14908-1/01K5YXEQ2X6E20YQCXE90YSAHH/",
       "name": "NZ14908-1",
       "title": "NZ14908-1",
       "minZoom": 9
@@ -285,8 +285,8 @@
       "minZoom": 9
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ55-1/01K2ZM3WT60J51WRW444J71C7X/",
-      "3857": "s3://linz-basemaps/3857/NZ55-1/01K2ZKWWNSFBPJ1988TRXXTDKF/",
+      "2193": "s3://linz-basemaps/2193/NZ55-1/01K6E9A5T90BK7493EZKP0W5WB/",
+      "3857": "s3://linz-basemaps/3857/NZ55-1/01K6E9A649BYZXP03Z3M56RB5V/",
       "name": "NZ55-1",
       "title": "NZ55-1",
       "minZoom": 9
@@ -355,8 +355,8 @@
       "minZoom": 9
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ71-1/01K5SRQ2D02A18SACPXZNAQPBJ/",
-      "3857": "s3://linz-basemaps/3857/NZ71-1/01K5SRQ303DNT0M94F994ZP9Z9/",
+      "2193": "s3://linz-basemaps/2193/NZ71-1/01K6E9CC4Q362Z0TZWHF7AD5QG/",
+      "3857": "s3://linz-basemaps/3857/NZ71-1/01K6E9CBR5M2EVGAYCAEC1KWAG/",
       "name": "NZ71-1",
       "title": "NZ71-1",
       "minZoom": 9
@@ -453,8 +453,8 @@
       "minZoom": 11
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ14901-1/01K2NYP2HQ075QND35BDCNR3EV/",
-      "3857": "s3://linz-basemaps/3857/NZ14901-1/01K2NYCZYNERE1VKDG2BXNE1Q0/",
+      "2193": "s3://linz-basemaps/2193/NZ14901-1/01K5YVTYHVYNFQ96Z4B8DDSYSR/",
+      "3857": "s3://linz-basemaps/3857/NZ14901-1/01K5YVTXMXQ597JVA1VJ8NCM07/",
       "name": "NZ14901-1",
       "title": "NZ14901-1",
       "minZoom": 11
@@ -467,8 +467,8 @@
       "minZoom": 10
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ14907-1/01K2X351XNQVZ0ZMKVHJ83VQ91/",
-      "3857": "s3://linz-basemaps/3857/NZ14907-1/01K2X31XDYNV89Y4AGYYVAJ28F/",
+      "2193": "s3://linz-basemaps/2193/NZ14907-1/01K5YX7A0K1MNTTZ6DVEQC2Z7M/",
+      "3857": "s3://linz-basemaps/3857/NZ14907-1/01K5YX79X0A7M7TCBYB7BMEA9P/",
       "name": "NZ14907-1",
       "title": "NZ14907-1",
       "minZoom": 11
@@ -481,8 +481,8 @@
       "minZoom": 10
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ252-1/01K2X5QMEXS527QFVBMB1FC9KF/",
-      "3857": "s3://linz-basemaps/3857/NZ252-1/01K2X5J0DGM6S8QGWF1B5Z6MM9/",
+      "2193": "s3://linz-basemaps/2193/NZ252-1/01K5YY89RDXACC8J3S3KVHQ7ZW/",
+      "3857": "s3://linz-basemaps/3857/NZ252-1/01K5YY89RGVNYMGKPY0JGFE45A/",
       "name": "NZ252-1",
       "title": "NZ252-1",
       "minZoom": 10
@@ -502,8 +502,8 @@
       "minZoom": 10
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ4265-1/01K2X7NB7BKCZWFHEJ9ECJR5VX/",
-      "3857": "s3://linz-basemaps/3857/NZ4265-1/01K2X7H9NKHKT4QG7DNPYCRZK4/",
+      "2193": "s3://linz-basemaps/2193/NZ4265-1/01K5YYE80F5V1EYMDTN6EE7712/",
+      "3857": "s3://linz-basemaps/3857/NZ4265-1/01K5YYE7J0CHRQ43NH8VQWG657/",
       "name": "NZ4265-1",
       "title": "NZ4265-1",
       "minZoom": 11
@@ -600,8 +600,8 @@
       "minZoom": 10
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ614-1/01K2ZP78B3E10ZWXGRYWCCMAHM/",
-      "3857": "s3://linz-basemaps/3857/NZ614-1/01K2ZP6XXFQ8HYJKW6NFAFF4VG/",
+      "2193": "s3://linz-basemaps/2193/NZ614-1/01K5Z2FKKJFMPQPQHYS6DMWQ22/",
+      "3857": "s3://linz-basemaps/3857/NZ614-1/01K5Z2FKYC2K3RKCYCMQPY0H86/",
       "name": "NZ614-1",
       "title": "NZ614-1",
       "minZoom": 10
@@ -614,8 +614,8 @@
       "minZoom": 10
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ632-1/01K2ZR2431W0WGSZW57JRM6RYM/",
-      "3857": "s3://linz-basemaps/3857/NZ632-1/01K2ZR23ZYES3W18K49AXJWKEA/",
+      "2193": "s3://linz-basemaps/2193/NZ632-1/01K5Z4JXNXHYAVTM1C41JSQ7YS/",
+      "3857": "s3://linz-basemaps/3857/NZ632-1/01K5Z4JXAXZTV55D8WJYBWEJ7M/",
       "name": "NZ632-1",
       "title": "NZ632-1",
       "minZoom": 10
@@ -852,8 +852,8 @@
       "minZoom": 11
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ4111-1/01K2X7DWFEC9MZRBBNX6PPG5VW/",
-      "3857": "s3://linz-basemaps/3857/NZ4111-1/01K2X7C9N748SAK71HHJRTQP1J/",
+      "2193": "s3://linz-basemaps/2193/NZ4111-1/01K5YYDPCR4CX7V6PQG6DB3C6J/",
+      "3857": "s3://linz-basemaps/3857/NZ4111-1/01K5YYDPQ5M9T6A85A9BXC21AB/",
       "name": "NZ4111-1",
       "title": "NZ4111-1",
       "minZoom": 12
@@ -866,8 +866,8 @@
       "minZoom": 12
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ4212-2/01K2X6X2B046SMV9ZBSK179YH0/",
-      "3857": "s3://linz-basemaps/3857/NZ4212-2/01K2X6ZN718CTMH2B2GQN1W5FG/",
+      "2193": "s3://linz-basemaps/2193/NZ4212-2/01K5YY704VV36GH1W4K2AVKWXR/",
+      "3857": "s3://linz-basemaps/3857/NZ4212-2/01K5YY70EH5Y482GBNWF5E2Q1E/",
       "name": "NZ4212-2",
       "title": "NZ4212-2",
       "minZoom": 12
@@ -1104,8 +1104,8 @@
       "minZoom": 12
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ6212-1/01K2ZQPAWN1J51WF7T2MADQ0VP/",
-      "3857": "s3://linz-basemaps/3857/NZ6212-1/01K2ZQN3NYKD6SVSYJ9RQXSWC1/",
+      "2193": "s3://linz-basemaps/2193/NZ6212-1/01K5Z2AS92H1Z6NFBV3AJYSE90/",
+      "3857": "s3://linz-basemaps/3857/NZ6212-1/01K5Z2ASBR1W30BF63H139R5J1/",
       "name": "NZ6212-1",
       "title": "NZ6212-1",
       "minZoom": 12
@@ -1160,8 +1160,8 @@
       "minZoom": 12
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ6912-2/01K2ZSFTXP12TQJK1J635G8BRS/",
-      "3857": "s3://linz-basemaps/3857/NZ6912-2/01K2ZS9EXQPFEJ6Q0XRSDZ830H/",
+      "2193": "s3://linz-basemaps/2193/NZ6912-2/01K5Z4FXS9Z4VG1PGFF091GMH5/",
+      "3857": "s3://linz-basemaps/3857/NZ6912-2/01K5Z4FXS8JSMASH5GFGRVTN42/",
       "name": "NZ6912-2",
       "title": "NZ6912-2",
       "minZoom": 12
@@ -1272,15 +1272,15 @@
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ14906-3/01K2X2TDW9592P36S4RMD5BWNM/",
-      "3857": "s3://linz-basemaps/3857/NZ14906-3/01K2X2T3QSXXG1QDK6SZKMV3YA/",
+      "2193": "s3://linz-basemaps/2193/NZ14906-3/01K5YX1P1QAQ8KBH9R3J0RSAW0/",
+      "3857": "s3://linz-basemaps/3857/NZ14906-3/01K5YX1NSYGAZMEQW70F1HWJEZ/",
       "name": "NZ14906-3",
       "title": "NZ14906-3",
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ14906-4/01K2X2T7MQ6CFMYYK0GEJYAKR0/",
-      "3857": "s3://linz-basemaps/3857/NZ14906-4/01K2X2SX7VDSVK51W6EGF525CN/",
+      "2193": "s3://linz-basemaps/2193/NZ14906-4/01K5YX2FC16GJA6DGPJ78D2V20/",
+      "3857": "s3://linz-basemaps/3857/NZ14906-4/01K5YX2EACXJWZ9P5TZ6G84M6V/",
       "name": "NZ14906-4",
       "title": "NZ14906-4",
       "minZoom": 14
@@ -1328,8 +1328,8 @@
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ4315-1/01K2X8AQHZQEBZGC0SRZYB47RG/",
-      "3857": "s3://linz-basemaps/3857/NZ4315-1/01K2X86161GCC7JYSAFT8FCPN4/",
+      "2193": "s3://linz-basemaps/2193/NZ4315-1/01K5Z2242J16GK6RHQHXNVP2DA/",
+      "3857": "s3://linz-basemaps/3857/NZ4315-1/01K5Z223R00WF9C69FTWVGRWWY/",
       "name": "NZ4315-1",
       "title": "NZ4315-1",
       "minZoom": 14
@@ -1419,8 +1419,8 @@
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ5124-1/01K2XCMCMP9DZ8V1AKKHDHWZW5/",
-      "3857": "s3://linz-basemaps/3857/NZ5124-1/01K2XCWXYEC0HBHRNW8AN132GV/",
+      "2193": "s3://linz-basemaps/2193/NZ5124-1/01K5Z1Z4YSTFQH81SH3KW0RT2K/",
+      "3857": "s3://linz-basemaps/3857/NZ5124-1/01K5Z1Z54CJVRET7634FST6MWY/",
       "name": "NZ5124-1",
       "title": "NZ5124-1",
       "minZoom": 14
@@ -1489,15 +1489,15 @@
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ5315-1/01K2XKBA92EPN87FJQ7P4QT79V/",
-      "3857": "s3://linz-basemaps/3857/NZ5315-1/01K2XK6PQDCW3F736NZEPYXNZT/",
+      "2193": "s3://linz-basemaps/2193/NZ5315-1/01K5Z23YST7N9DY1ATDN6QT4FY/",
+      "3857": "s3://linz-basemaps/3857/NZ5315-1/01K5Z23YA1FDFYMKD654WESNGF/",
       "name": "NZ5315-1",
       "title": "NZ5315-1",
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ5322-1/01K2XM0MGRD85ZNHV5RMMRYTZ2/",
-      "3857": "s3://linz-basemaps/3857/NZ5322-1/01K2XKWAA5K2JPZ87646SWE2C7/",
+      "2193": "s3://linz-basemaps/2193/NZ5322-1/01K5Z22FSHDQH87HY6DZ3BXXVD/",
+      "3857": "s3://linz-basemaps/3857/NZ5322-1/01K5Z22GGV0T9PYHEXK5MW93A7/",
       "name": "NZ5322-1",
       "title": "NZ5322-1",
       "minZoom": 13
@@ -1545,8 +1545,8 @@
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ57-2/01K2ZMAEJBRK5NJ954JMX42HHA/",
-      "3857": "s3://linz-basemaps/3857/NZ57-2/01K2ZM9V51YH9E5FNGJXYFNMQH/",
+      "2193": "s3://linz-basemaps/2193/NZ57-2/01K5Z28G29SRRRKCC4ECYGQ6FJ/",
+      "3857": "s3://linz-basemaps/3857/NZ57-2/01K5Z28G33VB0KXK8S3C1YKK68/",
       "name": "NZ57-2",
       "title": "NZ57-2",
       "minZoom": 14
@@ -1594,8 +1594,8 @@
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ6612-2/01K2ZRYTDSE5HNRY4DXVPJQBW4/",
-      "3857": "s3://linz-basemaps/3857/NZ6612-2/01K2ZRWW1AR267XT0WFD341QVZ/",
+      "2193": "s3://linz-basemaps/2193/NZ6612-2/01K5Z4J623JK56SA5T8GEA7VDR/",
+      "3857": "s3://linz-basemaps/3857/NZ6612-2/01K5Z4J61AT2W27EVVEVC4KBP9/",
       "name": "NZ6612-2",
       "title": "NZ6612-2",
       "minZoom": 14
@@ -1797,15 +1797,15 @@
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ4541-2/01K2X8478EVB096G6JBJCZFC50/",
-      "3857": "s3://linz-basemaps/3857/NZ4541-2/01K2X8532XXRCVP17FRF3CJ0NK/",
+      "2193": "s3://linz-basemaps/2193/NZ4541-2/01K5Z1Q9RNFNBRVFWQ8XF8N0BX/",
+      "3857": "s3://linz-basemaps/3857/NZ4541-2/01K5Z1QAKR88D9QDGTX3MYQ0CJ/",
       "name": "NZ4541-2",
       "title": "NZ4541-2",
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ4634-1/01K2X9640C0CNFEQDVQPAH5EXM/",
-      "3857": "s3://linz-basemaps/3857/NZ4634-1/01K2X917STMXYW01GMZXYA87H3/",
+      "2193": "s3://linz-basemaps/2193/NZ4634-1/01K6E96EE38ECEK2Z7V9NYZ2WP/",
+      "3857": "s3://linz-basemaps/3857/NZ4634-1/01K6E96DM9VRQRZAMAG1E0J09P/",
       "name": "NZ4634-1",
       "title": "NZ4634-1",
       "minZoom": 13
@@ -1825,8 +1825,8 @@
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ5212-3/01K2XGWN5NGP8DVBCS3XB98SZW/",
-      "3857": "s3://linz-basemaps/3857/NZ5212-3/01K2XGWBTP95HDEJ2MBD4FPMR8/",
+      "2193": "s3://linz-basemaps/2193/NZ5212-3/01K5Z1RZZPPZWTZTWBHEMN3JX1/",
+      "3857": "s3://linz-basemaps/3857/NZ5212-3/01K5Z1RZZJT0TJ4V15SAKPRB6N/",
       "name": "NZ5212-3",
       "title": "NZ5212-3",
       "minZoom": 14
@@ -1853,8 +1853,8 @@
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ5322-2/01K2ZHG1ZKWZ3AMTX1RMRBWVMC/",
-      "3857": "s3://linz-basemaps/3857/NZ5322-2/01K2ZHFQEDM5KWSEBMB110YW8B/",
+      "2193": "s3://linz-basemaps/2193/NZ5322-2/01K5Z1VCHE2HTXDXDGYTAWKVEP/",
+      "3857": "s3://linz-basemaps/3857/NZ5322-2/01K5Z1VCHEC311T90HP1VXS7ZY/",
       "name": "NZ5322-2",
       "title": "NZ5322-2",
       "minZoom": 14
@@ -1923,15 +1923,15 @@
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ6154-3/01K2ZPNS421A6K9S6VD8H89Y5B/",
-      "3857": "s3://linz-basemaps/3857/NZ6154-3/01K2ZPJ1KN58GV7GX2735QAHBH/",
+      "2193": "s3://linz-basemaps/2193/NZ6154-3/01K5Z2EDTCH0A6D0PN1GYXK4PK/",
+      "3857": "s3://linz-basemaps/3857/NZ6154-3/01K5Z2EDXH06QRGABERYVRVNB3/",
       "name": "NZ6154-3",
       "title": "NZ6154-3",
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ6212-3/01K2ZQKCXRF3BSXR106VCHB8ZZ/",
-      "3857": "s3://linz-basemaps/3857/NZ6212-3/01K2ZQKDW4NH8G0Y7B5JJF5KR6/",
+      "2193": "s3://linz-basemaps/2193/NZ6212-3/01K5Z2A3YSKJ8JPGTG8AMWS5P1/",
+      "3857": "s3://linz-basemaps/3857/NZ6212-3/01K5Z2A357SKAJJD353172D1T6/",
       "name": "NZ6212-3",
       "title": "NZ6212-3",
       "minZoom": 14
@@ -1944,8 +1944,8 @@
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ6433-2/01K2ZRFZEG551MV9JDDJ9YHX3W/",
-      "3857": "s3://linz-basemaps/3857/NZ6433-2/01K2ZRDKFYJM9GKACHJ0ZSSDB7/",
+      "2193": "s3://linz-basemaps/2193/NZ6433-2/01K5Z4EFPWADRCB5V2D2S1QZZ6/",
+      "3857": "s3://linz-basemaps/3857/NZ6433-2/01K5Z4EFRXAWWAMQ37W49NY297/",
       "name": "NZ6433-2",
       "title": "NZ6433-2",
       "minZoom": 14
@@ -2077,8 +2077,8 @@
       "minZoom": 15
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ14902-1/01K2X3KR66PMK80WZBH91DGAM9/",
-      "3857": "s3://linz-basemaps/3857/NZ14902-1/01K2X3CPHJDHRZYVV9Y3GPKYXH/",
+      "2193": "s3://linz-basemaps/2193/NZ14902-1/01K5YVVK3X2PXVXYD553GF29MK/",
+      "3857": "s3://linz-basemaps/3857/NZ14902-1/01K5YVVJZACXKHHQ0H1GRYZB72/",
       "name": "NZ14902-1",
       "title": "NZ14902-1",
       "minZoom": 13
@@ -2091,8 +2091,8 @@
       "minZoom": 15
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ2325-4/01K2X4Z4YVARN3Q0TCJE2WGABD/",
-      "3857": "s3://linz-basemaps/3857/NZ2325-4/01K2X4Z5BACC60YBJTD0F1NQEN/",
+      "2193": "s3://linz-basemaps/2193/NZ2325-4/01K5YY01NFBTGNBK87NS0RSBPB/",
+      "3857": "s3://linz-basemaps/3857/NZ2325-4/01K5YY00VN71F94330WYREWXH0/",
       "name": "NZ2325-4",
       "title": "NZ2325-4",
       "minZoom": 15
@@ -2217,8 +2217,8 @@
       "minZoom": 15
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ6821-2/01K2ZRTJH242A8W4D2ZB4YQRJA/",
-      "3857": "s3://linz-basemaps/3857/NZ6821-2/01K2ZRT26AHEN921KVN34SGC3C/",
+      "2193": "s3://linz-basemaps/2193/NZ6821-2/01K5Z4D90GYH129CWXHB5C779Q/",
+      "3857": "s3://linz-basemaps/3857/NZ6821-2/01K5Z4D9T50C1RS48KCE2M1EJS/",
       "name": "NZ6821-2",
       "title": "NZ6821-2",
       "minZoom": 14
