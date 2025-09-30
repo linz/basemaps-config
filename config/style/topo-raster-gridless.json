@@ -1,10 +1,10 @@
 {
-  "id": "st_topo-raster-gridded",
+  "id": "st_topo-raster-gridless",
   "layers": [
     {
-      "id": "Topo-Raster-Gridded",
+      "id": "Topo-Raster-Gridless",
       "layout": { "visibility": "visible" },
-      "source": "LINZ-Topo-Raster-Gridded",
+      "source": "LINZ-Topo-Raster-Gridless",
       "type": "raster"
     },
     {
@@ -35,7 +35,7 @@
     }
   ],
   "metadata": { "maputnik:renderer": "mbgljs" },
-  "name": "st_topo-raster-gridded",
+  "name": "st_topo-raster-gridless",
   "sky": {
     "atmosphere-blend": ["interpolate", ["linear"], ["zoom"], 0, 1, 10, 1, 12, 0],
     "fog-color": "#e8e8e8",
@@ -47,12 +47,12 @@
   },
   "sources": {
     "LINZ-Elevation-Hillshade": { "maxzoom": 18, "minzoom": 0, "tileSize": 256, "tiles": ["/v1/tiles/elevation/{tileMatrix}/{z}/{x}/{y}.png?pipeline=terrain-rgb"], "type": "raster-dem" },
-    "LINZ-Topo-Raster-Gridded": {
+    "LINZ-Topo-Raster-Gridless": {
       "attribution": "© 2024 Toitū Te Whenua - CC BY 4.0",
       "maxzoom": 28,
       "minzoom": 0,
       "tileSize": 192,
-      "tiles": ["/v1/tiles/topo-raster-gridded/{tileMatrix}/{z}/{x}/{y}.webp"],
+      "tiles": ["/v1/tiles/topo-raster-gridless/{tileMatrix}/{z}/{x}/{y}.webp"],
       "type": "raster"
     }
   },
