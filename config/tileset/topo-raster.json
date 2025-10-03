@@ -1,40 +1,117 @@
 {
   "type": "raster",
   "id": "ts_topo-raster",
-  "title": "NZ Topo Gridless Maps",
+  "title": "Topo Maps",
   "category": "Basemaps",
   "background": { "r": 208, "g": 231, "b": 244, "alpha": 255 },
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/topo250-new-zealand-mainland/01JZ1RKXX58R4J10PERT45S1MT/",
-      "3857": "s3://linz-basemaps/3857/topo250-new-zealand-mainland/01JZ1RKXX6YT4PYCH29GATTT38/",
-      "name": "topo250-new-zealand-mainland",
-      "title": "Topo250 NZ Mainland Gridless Maps",
+      "2193": "s3://linz-basemaps/2193/topo25-antipodes-islands/01K69QBZYSJVDXJMR019W4TVJ9/",
+      "3857": "s3://linz-basemaps/3857/topo25-antipodes-islands/01K69QC00H5SWMA6SXJCWZ3QYC/",
+      "name": "nzoi-topo25-antipodes-islands",
+      "title": "NZOI Topo25 Antipodes Islands",
+      "category": "Topographic"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/topo25-campbell-island/01K69QBZY4SN55NTCYPPWKTN9T/",
+      "3857": "s3://linz-basemaps/3857/topo25-campbell-island/01K69QBRT2V10G9XM1TRKF6GEY/",
+      "name": "nzoi-topo25-campbell-island",
+      "title": "NZOI Topo25 Campbell Island",
+      "category": "Topographic"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/topo25-kermadec-islands/01K69QC008J5QYKCA3D24MF58R/",
+      "3857": "s3://linz-basemaps/3857/topo25-kermadec-islands/01K69QBZX0YSTDA54RVXT5GTXQ/",
+      "name": "nzoi-topo25-kermadec-islands",
+      "title": "NZOI Topo25 Kermadec Islands",
+      "category": "Topographic"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/topo25-snares-islands/01K69QC00QB40K494G88VTSCCN/",
+      "3857": "s3://linz-basemaps/3857/topo25-snares-islands/01K69QC00QRZZRX5415R74V2B0/",
+      "name": "nzoi-topo25-snares-islands",
+      "title": "NZOI Topo25 Snares Islands",
+      "category": "Topographic"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/topo50-auckland-islands/01K69QFM37HX6FJQHM9Y4438EE/",
+      "3857": "s3://linz-basemaps/3857/topo50-auckland-islands/01K69QG6JKTRMEW0RPYKF2HRKH/",
+      "name": "nzoi-topo50-auckland-islands",
+      "title": "NZOI Topo50 Auckland Islands",
+      "category": "Topographic"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/topo250-chatham-islands/01K69R3YBTGCSS1S0QE385AP6X/",
+      "3857": "s3://linz-basemaps/3857/topo250-chatham-islands/01K69R3YJ6Y1P5V5NRQY4N3XXD/",
+      "name": "nz-topo250-chatham-islands",
+      "title": "NZ Topo250 Chatham Islands",
       "maxZoom": 12,
       "category": "Topographic"
     },
     {
-      "2193": "s3://linz-basemaps/2193/topo250-chatham-islands/01JZ1RXGY5MZX9NW66964D0RPC/",
-      "3857": "s3://linz-basemaps/3857/topo250-chatham-islands/01JZ1RXH3E9HTTW0MG6YGT0AJW/",
-      "name": "topo250-chatham-island",
-      "title": "Topo250 Chatham Islands Gridless Maps",
+      "2193": "s3://linz-basemaps/2193/topo250-new-zealand-mainland/01K6HBNE1CTPBAAJQY02VCMF4B/",
+      "3857": "s3://linz-basemaps/3857/topo250-new-zealand-mainland/01K6HBNE1HQV5Q8TJ5JB57T0ZA/",
+      "name": "nz-topo250-new-zealand-mainland",
+      "title": "NZ Topo250 New Zealand Mainland",
       "maxZoom": 12,
       "category": "Topographic"
     },
     {
-      "2193": "s3://linz-basemaps/2193/topo50-new-zealand-mainland/01JYN5YPMQN00X5FW0X09NCTWB/",
-      "3857": "s3://linz-basemaps/3857/topo50-new-zealand-mainland/01JYN5YPMSNXNGTMEN8DWQ2FE8/",
-      "name": "topo50-new-zealand-mainland",
-      "title": "Topo50 NZ Mainland Gridless Maps",
+      "2193": "s3://linz-basemaps/2193/topo50-chatham-islands/01K69RKK7CFDEQRM33E224R99X/",
+      "3857": "s3://linz-basemaps/3857/topo50-chatham-islands/01K69RKKAHD0EPDWMF3G4QEV91/",
+      "name": "nz-topo50-chatham-islands",
+      "title": "NZ Topo50 Chatham Islands",
       "minZoom": 13,
       "category": "Topographic"
     },
     {
-      "2193": "s3://linz-basemaps/2193/topo50-chatham-islands/01JYQFXWMY3YPVRZPYDR96W19J/",
-      "3857": "s3://linz-basemaps/3857/topo50-chatham-islands/01JYQFXWMVN3D8J6P73NFP1RRS/",
-      "name": "topo50-chatham-island",
-      "title": "Topo50 Chatham Islands Gridless Maps",
+      "2193": "s3://linz-basemaps/2193/topo50-new-zealand-mainland/01K69RKJBW3MV9Q3WDSE0JVND3/",
+      "3857": "s3://linz-basemaps/3857/topo50-new-zealand-mainland/01K69RKJZ58K5DDASRJEVRM1QJ/",
+      "name": "nz-topo50-new-zealand-mainland",
+      "title": "NZ Topo50 New Zealand Mainland",
       "minZoom": 13,
+      "category": "Topographic"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/topo25-cook-islands-zone3/01K69QTMSV2F0X4WT7BJ362NC3/",
+      "3857": "s3://linz-basemaps/3857/topo25-cook-islands-zone3/01K69QTMPQPEKG7JEWJSRK1W5E/",
+      "name": "pi-topo25-cook-islands-zone3",
+      "title": "PI Topo25 Cook Islands Zone 3",
+      "category": "Topographic"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/topo25-cook-islands-zone4/01K69QTMYAKT7CVT7S1HTGMVQD/",
+      "3857": "s3://linz-basemaps/3857/topo25-cook-islands-zone4/01K69QTN3142TAAV2YK7GR4XQF/",
+      "name": "pi-topo25-cook-islands-zone4",
+      "title": "PI Topo25 Cook Islands Zone 4",
+      "category": "Topographic"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/topo25-tokelau-islands/01K69QTMYF95BF5KC3AGZNWSN4/",
+      "3857": "s3://linz-basemaps/3857/topo25-tokelau-islands/01K69QTMKKJR5Z0NZ5FB97VQTS/",
+      "name": "pi-topo25-tokelau-islands",
+      "title": "PI Topo25 Tokelau Islands",
+      "category": "Topographic"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/topo50-niue/01K69QJA7QDHCAMT8AG8XH6H3S/",
+      "3857": "s3://linz-basemaps/3857/topo50-niue/01K69QJ7EE8HB6RHPK121118GR/",
+      "name": "pi-topo50-niue",
+      "title": "PI Topo50 Niue",
+      "category": "Topographic"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/topo50-penryn/01K69QJA7J0FXG5TKQ395267KC/",
+      "3857": "s3://linz-basemaps/3857/topo50-penryn/01K69QJ7E834QP60GP3VDPTKZT/",
+      "name": "pi-topo50-penryn",
+      "title": "PI Topo50 Penryn",
+      "category": "Topographic"
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/topo50-suwarrow/01K69QJ840MSH7HW6SGM58KWAK/",
+      "3857": "s3://linz-basemaps/3857/topo50-suwarrow/01K69QJA7T0K1KY3S1Y9N1X77G/",
+      "name": "pi-topo50-suwarrow",
+      "title": "PI Topo50 Suwarrow",
       "category": "Topographic"
     }
   ]

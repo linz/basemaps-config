@@ -1,0 +1,60 @@
+{
+  "id": "st_topo-raster-gridless",
+  "layers": [
+    {
+      "id": "Topo-Raster-Gridless",
+      "layout": { "visibility": "visible" },
+      "source": "LINZ-Topo-Raster-Gridless",
+      "type": "raster"
+    },
+    {
+      "id": "Hillshade",
+      "layout": { "visibility": "visible" },
+      "paint": {
+        "hillshade-accent-color": ["interpolate", ["linear"], ["zoom"], 0, "rgb(100, 100, 100)", 3, "rgba(100, 100, 100, 0.400)", 10, "rgba(100, 100, 100, 0.333)", 11, "rgba(100, 100, 100, 0.267)"],
+        "hillshade-exaggeration": 0.4,
+        "hillshade-highlight-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "rgb(225, 229, 224)",
+          3,
+          "rgba(225, 229, 224, 0.400)",
+          10,
+          "rgba(225, 229, 224, 0.333)",
+          11,
+          "rgba(225, 229, 224, 0.0667)"
+        ],
+        "hillshade-illumination-anchor": "map",
+        "hillshade-illumination-direction": 315,
+        "hillshade-shadow-color": ["interpolate", ["linear"], ["zoom"], 0, "rgb(12, 12, 12)", 3, "rgba(12, 12, 12, 0.400)", 10, "rgba(12, 12, 12, 0.400)", 16, "rgba(12, 12, 12, 1.00)"]
+      },
+      "source": "LINZ-Elevation-Hillshade",
+      "type": "hillshade"
+    }
+  ],
+  "metadata": { "maputnik:renderer": "mbgljs" },
+  "name": "st_topo-raster-gridless",
+  "sky": {
+    "atmosphere-blend": ["interpolate", ["linear"], ["zoom"], 0, 1, 10, 1, 12, 0],
+    "fog-color": "#e8e8e8",
+    "fog-ground-blend": 0.8,
+    "horizon-color": "#ecffff",
+    "horizon-fog-blend": 0.65,
+    "sky-color": "#77b5fe",
+    "sky-horizon-blend": 0.5
+  },
+  "sources": {
+    "LINZ-Elevation-Hillshade": { "maxzoom": 18, "minzoom": 0, "tileSize": 256, "tiles": ["/v1/tiles/elevation/{tileMatrix}/{z}/{x}/{y}.png?pipeline=terrain-rgb"], "type": "raster-dem" },
+    "LINZ-Topo-Raster-Gridless": {
+      "attribution": "© 2024 Toitū Te Whenua - CC BY 4.0",
+      "maxzoom": 28,
+      "minzoom": 0,
+      "tileSize": 192,
+      "tiles": ["/v1/tiles/topo-raster-gridless/{tileMatrix}/{z}/{x}/{y}.webp"],
+      "type": "raster"
+    }
+  },
+  "version": 8
+}
