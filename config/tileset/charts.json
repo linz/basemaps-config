@@ -3,6 +3,7 @@
   "id": "ts_charts",
   "name": "LINZ Charts",
   "title": "LINZ Paper charts maps",
+  "category": "Charts",
   "layers": [
     {
       "2193": "s3://linz-basemaps/2193/NZ14065-1/01K6GV6XNCWVCTBEN91QXEH4P8/",
