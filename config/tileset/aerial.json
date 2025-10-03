@@ -444,6 +444,14 @@
       "minZoom": 13
     },
     {
+      "2193": "s3://linz-basemaps/2193/selwyn_2025_0.2m/01K6M05C3M7CETXY9E27PCE6X4/",
+      "3857": "s3://linz-basemaps/3857/selwyn_2025_0.2m/01K6M05C3XMRTF0CYDHG5DNRYT/",
+      "name": "selwyn-2025-0.2m",
+      "title": "Selwyn 0.2m Rural Aerial Photos (2025)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 13
+    },
+    {
       "2193": "s3://linz-basemaps/2193/auckland_2024_0.075m/01K0DKF5JG9YEB2479X5TH7ZB7/",
       "3857": "s3://linz-basemaps/3857/auckland_2024_0.075m/01K0DGBBAR0GMS3JWS7Z66MVRK/",
       "name": "auckland-2024-0.075m",
