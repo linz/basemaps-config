@@ -4,7 +4,6 @@
   "title": "Topo Maps",
   "category": "Basemaps",
   "background": { "r": 208, "g": 231, "b": 244, "alpha": 255 },
-
   "layers": [
     {
       "2193": "s3://linz-basemaps/2193/topo25-antipodes-islands/01K69QBZYSJVDXJMR019W4TVJ9/",
