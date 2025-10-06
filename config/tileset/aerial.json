@@ -444,8 +444,8 @@
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/selwyn_2025_0.2m/01K6M05C3M7CETXY9E27PCE6X4/",
-      "3857": "s3://linz-basemaps/3857/selwyn_2025_0.2m/01K6M05C3XMRTF0CYDHG5DNRYT/",
+      "2193": "s3://linz-basemaps/2193/selwyn_2025_0.2m/01K6VHM1ZNC674V33GM52RTY5R/",
+      "3857": "s3://linz-basemaps/3857/selwyn_2025_0.2m/01K6VHM3762WMH6VW3C2JDD67B/",
       "name": "selwyn-2025-0.2m",
       "title": "Selwyn 0.2m Rural Aerial Photos (2025)",
       "category": "Rural Aerial Photos",
