@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_christchurch-earthquake-2011-0.1m",
+  "name": "christchurch-earthquake-2011-0.1m",
+  "title": "Christchurch Post-Earthquake 0.1m Urban Aerial Photos (24 February 2011)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Event",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/christchurch-earthquake_2011_0.1m/01K6VGABEQVH2BEC1F4TWMRFT8/",
+      "3857": "s3://linz-basemaps/3857/christchurch-earthquake_2011_0.1m/01K6VGABER2DDXME6MCRE204YK/",
+      "name": "christchurch-earthquake-2011-0.1m",
+      "title": "Christchurch Post-Earthquake 0.1m Urban Aerial Photos (24 February 2011)",
+      "category": "Event",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
