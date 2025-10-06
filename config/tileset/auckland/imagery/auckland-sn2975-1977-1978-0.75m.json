@@ -13,7 +13,7 @@
   "layers": [
     {
       "2193": "s3://linz-basemaps/2193/auckland_sn2975_1977-1978_0.75m/01K6VP3PHWYTB92FCZ6WWH8B54/",
-      "3857": "s3://linz-basemaps/3857/auckland_sn2975_1977-1978_0.75m/01K6VP3PHK6E33A5NNE24ED6P1/"
+      "3857": "s3://linz-basemaps/3857/auckland_sn2975_1977-1978_0.75m/01K6VP3PHK6E33A5NNE24ED6P1/",
       "name": "auckland-sn2975-1977-1978-0.75m",
       "title": "Auckland 0.75m SN2975 (1977-1978)",
       "category": "Scanned Aerial Imagery",
