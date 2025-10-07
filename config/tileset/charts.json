@@ -1378,8 +1378,8 @@
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ4633-1/01K6H8MEY0G311JBVM53ADKVBV/",
-      "3857": "s3://linz-basemaps/3857/NZ4633-1/01K2X9DGHCM9E69AS91W1AWSK4/",
+      "2193": "s3://linz-basemaps/2193/NZ4633-1/01K704G4JRQQJMC9283Y4ADW29/",
+      "3857": "s3://linz-basemaps/3857/NZ4633-1/01K704G44XF9XN6KWB5DJFM84W/",
       "name": "NZ4633-1",
       "title": "NZ4633-1",
       "minZoom": 13
