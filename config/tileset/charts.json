@@ -286,8 +286,8 @@
       "minZoom": 9
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ55-1/01K6E9A5T90BK7493EZKP0W5WB/",
-      "3857": "s3://linz-basemaps/3857/NZ55-1/01K6E9A649BYZXP03Z3M56RB5V/",
+      "2193": "s3://linz-basemaps/2193/NZ55-1/01K72V20EQCSAFT669PA86XYGK/",
+      "3857": "s3://linz-basemaps/3857/NZ55-1/01K72V20EK3AAY4VXAS3WRRRSK/",
       "name": "NZ55-1",
       "title": "NZ55-1",
       "minZoom": 9
