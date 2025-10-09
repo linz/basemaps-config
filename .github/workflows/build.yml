@@ -89,12 +89,36 @@ jobs:
           aws s3 cp s3://linz-basemaps/config/config-latest.json.gz .
           ./scripts/bmc.sh ./index.cjs config import --config ${CONFIG_LOCATION_STAGING} --output $PWD/changes.md --target $PWD/config-latest.json.gz
 
+      - name: Upload changes.md as artifact (if oversized)
+        if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request' && (hashFiles('changes.md') != '')
+        uses: actions/upload-artifact@v4
+        with:
+          name: changes
+          path: changes.md
+
       - name: (Pull Request) Update Description
         if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          [ ! -f changes.md ] || gh pr comment ${{ github.event.number }} --body-file changes.md
+          if [ -f changes.md ]; then
+            if [ $(wc -c < changes.md) -gt 65000 ]; then
+              {
+                echo "⚠️ The \`changes.md\` file is too large to include directly in this PR comment."
+                echo ""
+                echo "📎 It has been uploaded as a workflow artifact named **changes**."
+                echo ""
+                echo "👉 [Download artifact here](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+                echo ""
+                echo "🗺️ Previews:"
+                echo "- [WebMercator](https://basemaps.linz.govt.nz/?config=${CONFIG_LOCATION_STAGING})"
+                echo "- [NZTM](https://basemaps.linz.govt.nz/?config=${CONFIG_LOCATION_STAGING}&p=NZTM2000Quad)"
+              } > pr_comment.md
+              gh pr comment ${{ github.event.number }} --body-file pr_comment.md
+            else
+              gh pr comment ${{ github.event.number }} --body-file changes.md
+            fi
+          fi
 
   # Compare and deploy to non-prod
   deploy-nonprod:
