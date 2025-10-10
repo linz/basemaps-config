@@ -4,6 +4,7 @@
   "name": "LINZ Charts",
   "title": "LINZ Paper charts maps",
   "category": "Charts",
+  "background": { "r": 255, "g": 255, "b": 255, "alpha": 255 },
   "layers": [
     {
       "2193": "s3://linz-basemaps/2193/NZ14065-1/01K6GV6XNCWVCTBEN91QXEH4P8/",
@@ -55,7 +56,7 @@
       "minZoom": 0
     },
     {
-      "2193": "s3://linz-basemaps/2193/NZ14600-1/01K2NVMR7YDJAGV80M2FCA7P80/",
+      "2193": "s3://linz-basemaps/2193/NZ14600-1/01K75WQK5QXJJYQTF80R5Y7ZH2/",
       "3857": "s3://linz-basemaps/3857/NZ14600-1/01K2NVJQEC0S8MC3S7J3J06N0Q/",
       "name": "NZ14600-1",
       "title": "NZ14600-1",
