@@ -37,7 +37,7 @@
         "alpha": 1
       }
     },
-     {
+    {
       "title": "Color ramp (Opacity)",
       "name": "color-ramp-opacity",
       "pipeline": [
