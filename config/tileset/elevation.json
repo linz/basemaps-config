@@ -550,6 +550,13 @@
       "name": "dannevirke_2022_dem_1m",
       "title": "Manawatū-Whanganui - Dannevirke LiDAR 1m DEM (2022)",
       "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/christchurch_2024-2025/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/christchurch_2024-2025_dem_1m/01K7D7MZYY7QV2TCQFK5AC153S/",
+      "name": "christchurch_2024-2025_dem_1m",
+      "title": "Canterbury - Christchurch LiDAR 1m DEM (2024-2025)",
+      "minZoom": 9
     }
   ],
   "outputs": [
