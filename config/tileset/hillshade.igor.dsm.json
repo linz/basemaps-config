@@ -36,6 +36,22 @@
         "b": 255,
         "alpha": 1
       }
+    },
+     {
+      "title": "Color ramp (Opacity)",
+      "name": "color-ramp-opacity",
+      "pipeline": [
+        {
+          "type": "color-ramp",
+          "ramp": "0 0 0 0 0\n170 0 0 0 128\n255 0 0 0 0"
+        }
+      ],
+      "background": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "alpha": 0
+      }
     }
   ]
 }
