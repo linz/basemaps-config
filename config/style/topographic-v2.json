@@ -1472,7 +1472,7 @@
       "paint": {
         "line-opacity": 0.7,
         "line-pattern": "cliff_edge",
-        "line-width": 20
+        "line-width": 9
       },
       "source": "LINZ Basemaps",
       "source-layer": "land",
@@ -1529,7 +1529,7 @@
         "line-color": "rgba(81, 79, 79, 1)",
         "line-offset": 0,
         "line-pattern": "cliff_edge",
-        "line-width": 15
+        "line-width": 9
       },
       "source": "LINZ Basemaps",
       "source-layer": "land",
