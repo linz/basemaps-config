@@ -1470,10 +1470,9 @@
       "layout": { "visibility": "visible" },
       "minzoom": 13,
       "paint": {
-        "line-offset": -4,
         "line-opacity": 0.7,
         "line-pattern": "cliff_edge",
-        "line-width": 10
+        "line-width": 20
       },
       "source": "LINZ Basemaps",
       "source-layer": "land",
@@ -1528,9 +1527,8 @@
       "minzoom": 13,
       "paint": {
         "line-color": "rgba(81, 79, 79, 1)",
-        "line-offset": -4,
         "line-pattern": "cliff_edge",
-        "line-width": 10
+        "line-width": 15
       },
       "source": "LINZ Basemaps",
       "source-layer": "land",
