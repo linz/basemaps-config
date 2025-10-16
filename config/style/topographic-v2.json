@@ -1470,7 +1470,7 @@
       "layout": { "visibility": "visible" },
       "minzoom": 13,
       "paint": {
-        "line-offset": -5,
+        "line-offset": -4,
         "line-opacity": 0.7,
         "line-pattern": "cliff_edge",
         "line-width": 10
@@ -1528,7 +1528,7 @@
       "minzoom": 13,
       "paint": {
         "line-color": "rgba(81, 79, 79, 1)",
-        "line-offset": -5,
+        "line-offset": -4,
         "line-pattern": "cliff_edge",
         "line-width": 10
       },
