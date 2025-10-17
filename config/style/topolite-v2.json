@@ -2864,6 +2864,6 @@
       "type": "raster-dem"
     }
   },
-  "sprite": "/v1/sprites/topographic",
+  "sprite": "/v1/sprites/topographic@2x",
   "version": 8
 }

@@ -1738,6 +1738,6 @@
       "type": "raster"
     }
   },
-  "sprite": "/v1/sprites/topographic",
+  "sprite": "/v1/sprites/topographic@2x",
   "version": 8
 }

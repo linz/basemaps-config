@@ -1720,6 +1720,6 @@
   "sources": {
     "LINZ Basemaps": { "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0", "type": "vector", "url": "/v1/tiles/topographic/EPSG:3857/tile.json" }
   },
-  "sprite": "/v1/sprites/topographic",
+  "sprite": "/v1/sprites/topographic@2x",
   "version": 8
 }

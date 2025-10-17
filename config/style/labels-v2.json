@@ -1663,6 +1663,6 @@
       "url": "/v1/tiles/topographic-v2/{tileMatrix}/tile.json"
     }
   },
-  "sprite": "/v1/sprites/topographic",
+  "sprite": "/v1/sprites/topographic@2x",
   "version": 8
 }

@@ -2423,6 +2423,6 @@
     "LINZ Basemaps": { "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0", "type": "vector", "url": "/v1/tiles/topographic/EPSG:3857/tile.json" },
     "LINZ-Texture-Relief": { "maxzoom": 20, "minzoom": 0, "tileSize": 256, "tiles": ["/v1/tiles/texturereliefshade/EPSG:3857/{z}/{x}/{y}.webp"], "type": "raster" }
   },
-  "sprite": "/v1/sprites/topographic",
+  "sprite": "/v1/sprites/topographic@2x",
   "version": 8
 }
