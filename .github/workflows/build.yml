@@ -46,9 +46,11 @@ jobs:
 
       - name: Build Sprites
         run: |
-          npx basemaps-sprites $PWD/config/sprites/topographic/
+          npx basemaps-sprites $PWD/config/sprites/topographic/ --ratio 2
           mkdir -p assets/sprites/
           cp topographic* assets/sprites
+          cp topographic@2x.json assets/sprites/topographic.json
+          cp topographic@2x.png assets/sprites/topographic.png
 
       - name: Bundle Assets Into Cotar
         run: |
