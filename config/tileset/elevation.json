@@ -70,10 +70,10 @@
     },
     {
       "2193": "s3://nz-elevation/northland/northland_2018-2020/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/northland_2018-2020_dem_1m/01HZ66GGG01VJJDT3WMRSFCADF/",
-      "minZoom": 9,
+      "3857": "s3://linz-basemaps/elevation/3857/northland_2018-2020_dem_1m/01K6HE516QBZHRMZDCTWMF8MH6/",
+      "name": "northland_2018-2020_dem_1m",
       "title": "Northland LiDAR 1m DEM (2018-2020)",
-      "name": "northland_2018-2020_dem_1m"
+      "minZoom": 9
     },
     {
       "2193": "s3://nz-elevation/wellington/wellington-city_2019-2020/dem_1m/2193/",
