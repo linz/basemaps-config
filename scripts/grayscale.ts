@@ -8,8 +8,9 @@ import path from 'node:path';
 
 const grayScaleSheets = new Set(['topolite-v2']);
 type Rgba = { r: number; g: number; b: number; alpha: number };
+type Hsla = { h: number; s: number; l: number; alpha: number };
 
-function rgbaToHsla(color: Partial<Rgba>): { h: number; s: number; l: number } {
+function rgbaToHsla(color: Partial<Rgba>): Hsla {
   console.log(color);
   if (color.r == null || color.g == null || color.b == null || color.alpha == null) throw new Error('Invalid RGBa color');
   const r = (color.r % 255) / 255;
@@ -36,7 +37,7 @@ function rgbaToHsla(color: Partial<Rgba>): { h: number; s: number; l: number } {
     }
     h /= 6;
   }
-  return { h: h * 360, s, l, a: color.alpha };
+  return { h: h * 360, s, l, alpha: color.alpha };
 }
 
 for (const file of fs.readdirSync('./config/style/', { withFileTypes: true })) {
