@@ -10,9 +10,7 @@ const grayScaleSheets = new Set(['topolite-v2']);
 type Rgba = { r: number; g: number; b: number; alpha: number };
 type Hsla = { h: number; s: number; l: number; alpha: number };
 
-function rgbaToHsla(color: Partial<Rgba>): Hsla {
-  console.log(color);
-  if (color.r == null || color.g == null || color.b == null || color.alpha == null) throw new Error('Invalid RGBa color');
+function rgbaToHsla(color: Rgba): Hsla {
   const r = (color.r % 255) / 255;
   const g = (color.g % 255) / 255;
   const b = (color.b % 255) / 255;
@@ -53,8 +51,10 @@ for (const file of fs.readdirSync('./config/style/', { withFileTypes: true })) {
       .slice(5, -1)
       .split(',')
       .map((s) => Number(s.trim()));
+    if (r == null || g == null || b == null || alpha == null) return match;
     if (r === g && r === b) return match; // already grayscale
-    console.log(r, g, b, alpha);
+    if (r > 250 && g > 250 && b > 250) return match; // near white
+    // console.log(r, g, b, alpha);
     const hsla = rgbaToHsla({ r, g, b, alpha });
     // Grayscale hsla saturation is 0
     // which makes r=g=b = l * 255;
@@ -62,6 +62,7 @@ for (const file of fs.readdirSync('./config/style/', { withFileTypes: true })) {
     const color = Math.round(hsla.l * 255);
     const rgba = `rgba(${color}, ${color}, ${color}, ${alpha})`;
     if (rgba === match) return match;
+    console.log(rgba, match);
     hasChanges = true;
     return rgba;
   });

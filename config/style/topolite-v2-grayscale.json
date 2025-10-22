@@ -1267,7 +1267,7 @@
       },
       "minzoom": 11,
       "paint": {
-        "line-color": "rgba(127, 127, 127, 1)",
+        "line-color": "rgba(255, 254, 252, 1)",
         "line-gap-width": 0,
         "line-translate-anchor": "map",
         "line-width": {
@@ -1296,7 +1296,7 @@
       },
       "minzoom": 10,
       "paint": {
-        "line-color": "rgba(127, 127, 127, 1)",
+        "line-color": "rgba(255, 254, 252, 1)",
         "line-gap-width": 0,
         "line-translate-anchor": "map",
         "line-width": {
@@ -2440,7 +2440,7 @@
       "minzoom": 7,
       "paint": {
         "text-color": "rgba(102, 102, 102, 1)",
-        "text-halo-color": "rgba(126, 126, 126, 1)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
         "text-halo-width": 1
       },
       "source": "LINZ Basemaps",
@@ -2460,7 +2460,7 @@
       "minzoom": 10,
       "paint": {
         "text-color": "rgba(102, 102, 102, 1)",
-        "text-halo-color": "rgba(126, 126, 126, 1)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
         "text-halo-width": 1
       },
       "source": "LINZ Basemaps",
@@ -2487,7 +2487,7 @@
       "paint": {
         "icon-color": "rgba(112, 112, 112, 1)",
         "text-color": "rgba(66, 66, 66, 1)",
-        "text-halo-color": "rgba(126, 126, 126, 1)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
         "text-halo-width": 1
       },
       "source": "LINZ Basemaps",
@@ -2516,7 +2516,7 @@
       "paint": {
         "icon-color": "rgba(112, 112, 112, 1)",
         "text-color": "rgba(66, 66, 66, 1)",
-        "text-halo-color": "rgba(126, 126, 126, 1)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
         "text-halo-width": 1
       },
       "source": "LINZ Basemaps",
@@ -2541,7 +2541,7 @@
             [19, "rgba(111, 111, 111, 1)"]
           ]
         },
-        "text-halo-color": "rgba(126, 126, 126, 1)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
         "text-halo-width": 2
       },
       "source": "LINZ Basemaps",
@@ -2567,7 +2567,7 @@
             [19, "rgba(111, 111, 111, 1)"]
           ]
         },
-        "text-halo-color": "rgba(126, 126, 126, 1)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
         "text-halo-width": 2
       },
       "source": "LINZ Basemaps",
@@ -2593,7 +2593,7 @@
             [19, "rgba(111, 111, 111, 1)"]
           ]
         },
-        "text-halo-color": "rgba(126, 126, 126, 1)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
         "text-halo-width": 1.5
       },
       "source": "LINZ Basemaps",
@@ -2620,7 +2620,7 @@
             [19, "rgba(111, 111, 111, 1)"]
           ]
         },
-        "text-halo-color": "rgba(126, 126, 126, 1)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
         "text-halo-width": 2
       },
       "source": "LINZ Basemaps",
@@ -2646,7 +2646,7 @@
             [19, "rgba(111, 111, 111, 1)"]
           ]
         },
-        "text-halo-color": "rgba(126, 126, 126, 1)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
         "text-halo-width": 2
       },
       "source": "LINZ Basemaps",
@@ -2666,7 +2666,7 @@
       "maxzoom": 6,
       "paint": {
         "text-color": "rgba(102, 102, 102, 1)",
-        "text-halo-color": "rgba(126, 126, 126, 1)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
         "text-halo-width": 0.8
       },
       "source": "LINZ Basemaps",
@@ -2686,7 +2686,7 @@
       "minzoom": 5,
       "paint": {
         "text-color": "rgba(102, 102, 102, 1)",
-        "text-halo-color": "rgba(126, 126, 126, 1)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
         "text-halo-width": 0.8
       },
       "source": "LINZ Basemaps",
@@ -2707,7 +2707,7 @@
       "minzoom": 6,
       "paint": {
         "text-color": "rgba(102, 102, 102, 1)",
-        "text-halo-color": "rgba(126, 126, 126, 1)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
         "text-halo-width": 1
       },
       "source": "LINZ Basemaps",
@@ -2733,7 +2733,7 @@
             [19, "rgba(111, 111, 111, 1)"]
           ]
         },
-        "text-halo-color": "rgba(126, 126, 126, 1)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
         "text-halo-width": 2
       },
       "source": "LINZ Basemaps",
@@ -2759,7 +2759,7 @@
             [19, "rgba(111, 111, 111, 1)"]
           ]
         },
-        "text-halo-color": "rgba(126, 126, 126, 1)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
         "text-halo-width": 2
       },
       "source": "LINZ Basemaps",
@@ -2785,7 +2785,7 @@
             [19, "rgba(111, 111, 111, 1)"]
           ]
         },
-        "text-halo-color": "rgba(126, 126, 126, 1)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
         "text-halo-width": 2
       },
       "source": "LINZ Basemaps",
@@ -2812,7 +2812,7 @@
       "paint": {
         "icon-color": "rgba(112, 112, 112, 1)",
         "text-color": "rgba(66, 66, 66, 1)",
-        "text-halo-color": "rgba(126, 126, 126, 1)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
         "text-halo-width": 1
       },
       "source": "LINZ Basemaps",
@@ -2838,7 +2838,7 @@
             [19, "rgba(111, 111, 111, 1)"]
           ]
         },
-        "text-halo-color": "rgba(126, 126, 126, 1)",
+        "text-halo-color": "rgba(255, 252, 252, 1)",
         "text-halo-width": 2
       },
       "source": "LINZ Basemaps",
