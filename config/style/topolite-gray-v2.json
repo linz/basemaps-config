@@ -1,6 +1,6 @@
 {
   "glyphs": "/v1/fonts/{fontstack}/{range}.pbf",
-  "id": "st_topolite-v2",
+  "id": "st_topolite-gray-v2",
   "layers": [
     {
       "id": "Background",
@@ -2849,7 +2849,7 @@
   "metadata": {
     "maputnik:renderer": "mbgljs"
   },
-  "name": "topolite-v2",
+  "name": "topolite-gray-v2",
   "sources": {
     "LINZ Basemaps": {
       "attribution": "© 2022 Toitū Te Whenua - CC BY 4.0",
