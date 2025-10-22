@@ -6,7 +6,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-const grayScaleSheets = new Set(['topolite-v2']);
+const GrayScaleSheets = new Map([['topolite-v2', 'topolite-gray-v2']]);
 type Rgba = { r: number; g: number; b: number; alpha: number };
 type Hsla = { h: number; s: number; l: number; alpha: number };
 
@@ -40,8 +40,8 @@ function rgbaToHsla(color: Rgba): Hsla {
 
 for (const file of fs.readdirSync('./config/style/', { withFileTypes: true })) {
   if (!file.name.endsWith('.json')) continue;
-  if (!grayScaleSheets.has(file.name.replace('.json', ''))) continue;
-  const targetName = file.name.replace('.json', '-grayscale.json');
+  const targetName = GrayScaleSheets.get(file.name.replace('.json', ''));
+  if (targetName == null) continue;
 
   const style = fs.readFileSync(path.join(file.parentPath, file.name), 'utf-8');
 
@@ -68,7 +68,7 @@ for (const file of fs.readdirSync('./config/style/', { withFileTypes: true })) {
   });
 
   if (hasChanges) {
-    const target = path.join(file.parentPath, targetName);
+    const target = path.join(file.parentPath, targetName + '.json');
 
     console.log('Converting grayscale', targetName);
     fs.writeFileSync(target, outputStyle);
