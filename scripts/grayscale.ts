@@ -48,11 +48,12 @@ for (const file of fs.readdirSync('./config/style/', { withFileTypes: true })) {
   const style = fs.readFileSync(path.join(file.parentPath, file.name), 'utf-8');
 
   let hasChanges = false;
-  const outputStyle = style.replace(/rgba\([\s\d,]+\)/g, (match) => {
+  const outputStyle = style.replace(/rgba\([\s\d,\.]+\)/g, (match) => {
     const [r, g, b, alpha] = match
       .slice(5, -1)
       .split(',')
       .map((s) => Number(s.trim()));
+    if (r === g && r === b) return match; // already grayscale
     console.log(r, g, b, alpha);
     const hsla = rgbaToHsla({ r, g, b, alpha });
     // Grayscale hsla saturation is 0
