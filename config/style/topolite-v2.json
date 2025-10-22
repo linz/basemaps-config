@@ -53,7 +53,7 @@
         "fill-color": {
           "stops": [
             [1, "rgba(234, 233, 229, 1)"],
-            [10, "#FCFBF7"]
+            [10, "rgba(252, 251, 247, 1)"]
           ]
         },
         "fill-translate-anchor": "map"
@@ -919,7 +919,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "rgb(112,172,242)"
+        "fill-color": "rgba(112,172,242,1)"
       },
       "source": "LINZ Basemaps",
       "source-layer": "sites",
@@ -1085,10 +1085,10 @@
         "fill-antialias": true,
         "fill-color": {
           "stops": [
-            [15, "#DBDBD9"],
-            [17, "#DBDBD9"],
-            [18, "#DBDBD9"],
-            [19, "#DBDBD9"]
+            [15, "rgba(219, 219, 217, 1)"],
+            [17, "rgba(219, 219, 217, 1)"],
+            [18, "rgba(219, 219, 217, 1)"],
+            [19, "rgba(219, 219, 217, 1)"]
           ]
         },
         "fill-opacity": 1
@@ -1355,9 +1355,9 @@
       "paint": {
         "line-color": {
           "stops": [
-            [10, "#fff"],
-            [17, "#fff"],
-            [19, "#fff"]
+            [10, "rgba(255,255,255,1)"],
+            [17, "rgba(255,255,255,1)"],
+            [19, "rgba(255,255,255,1)"]
           ]
         },
         "line-gap-width": 0,
