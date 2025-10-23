@@ -713,7 +713,7 @@
         "raster-opacity": 0.67
       },
       "source": "LINZ-Hillshade-Igor",
-      "type": "hillshade"
+      "type": "raster"
     },
     {
       "filter": ["all", ["==", "kind", "water_race"]],

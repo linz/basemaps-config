@@ -10,8 +10,7 @@
       "2193": "s3://nz-elevation/new-zealand/new-zealand/dem-hillshade-igor/2193/",
       "3857": "s3://linz-basemaps/3857/new-zealand/01K41FQ81AYPYN2CNFWNW1JMAQ/",
       "title": "New Zealand DEM Hillshade Igor",
-      "name": "new-zealand_dem_hillshade_igor",
-      "minZoom": 11
+      "name": "new-zealand_dem_hillshade_igor"
     }
   ],
   "outputs": [
