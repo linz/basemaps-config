@@ -710,7 +710,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "raster-opacity": 0.67
+        "raster-opacity": 0.47
       },
       "source": "LINZ-Hillshade-Igor",
       "type": "raster"
