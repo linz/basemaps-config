@@ -2814,7 +2814,7 @@
       "maxzoom": 22,
       "minzoom": 0,
       "tileSize": 256,
-      "tiles": ["https://basemaps.linz.govt.nz/v1/tiles/hillshade-igor/WebMercatorQuad/{z}/{x}/{y}.webp?pipeline=color-ramp-opacity"],
+      "tiles": ["/v1/tiles/hillshade-igor/{tileMatrix}/{z}/{x}/{y}.webp?pipeline=color-ramp-opacity"],
       "type": "raster"
     }
   },
