@@ -43,7 +43,7 @@
       "pipeline": [
         {
           "type": "color-ramp",
-          "ramp": "0 0 0 0 0\n170 0 0 0 128\n255 0 0 0 0"
+          "ramp": "0 0 0 0 255\n255 0 0 0 0"
         }
       ],
       "background": {
