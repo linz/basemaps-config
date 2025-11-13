@@ -560,7 +560,7 @@
     },
     {
       "2193": "s3://nz-elevation/manawatu-whanganui/levin_2024/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/levin_2024_dem_1m/01K9X85KZ0Q5S8QQ6NAQ4CHZ5G/",
+      "3857": "s3://linz-basemaps/elevation/3857/levin_2024_dem_1m/01K9XB5YBNW6JG79XBCZE8J4FP/",
       "name": "levin_2024_dem_1m",
       "title": "Manawatū-Whanganui - Levin LiDAR 1m DEM (2024)",
       "minZoom": 9
