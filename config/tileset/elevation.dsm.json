@@ -551,6 +551,13 @@
       "name": "cardrona_2025_dsm_1m",
       "title": "Otago - Cardrona LiDAR 1m DSM (2025)",
       "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/otago/kingston_2025/dsm_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/kingston_2025_dsm_1m/01KA9S8634W5YCXZHGRDSQFM9R/",
+      "name": "kingston_2025_dsm_1m",
+      "title": "Otago - Kingston LiDAR 1m DSM (2025)",
+      "minZoom": 9
     }
   ],
   "outputs": [
