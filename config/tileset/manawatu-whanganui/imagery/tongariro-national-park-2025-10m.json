@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_tongariro-national-park-2025-10m",
+  "name": "tongariro-national-park-2025-10m",
+  "title": "Tongariro National Park 10m Satellite Imagery (2025)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Satellite Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/tongariro-national-park_2025_10m/01KACRYN6XR21SM8M6G0BZP3J9/",
+      "3857": "s3://linz-basemaps/3857/tongariro-national-park_2025_10m/01KACRYN6XKZ1KP50RWM2NVEWP/",
+      "name": "tongariro-national-park-2025-10m",
+      "title": "Tongariro National Park 10m Satellite Imagery (2025)",
+      "category": "Satellite Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
