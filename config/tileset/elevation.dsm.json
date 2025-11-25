@@ -558,6 +558,13 @@
       "name": "kingston_2025_dsm_1m",
       "title": "Otago - Kingston LiDAR 1m DSM (2025)",
       "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/manawatu-whanganui/oroua_2025/dsm_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/oroua_2025_dsm_1m/01KAWGR3DY42TNT47Z6D88YADP/",
+      "name": "oroua_2025_dsm_1m",
+      "title": "Manawatū-Whanganui - Oroua LiDAR 1m DSM (2025)",
+      "minZoom": 9
     }
   ],
   "outputs": [
