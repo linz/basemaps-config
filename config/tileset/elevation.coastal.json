@@ -35,6 +35,12 @@
       "title": "Nelson - Pepin Island and Rotokura/Cable Bay Coastal LiDAR 1m DEM (2025)",
       "name": "pepin-island-and-rotokura-cable-bay_2025_dem_1m",
       "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-coastal/southland/bluff_2025/dem_1m/2193/",
+      "title": "Southland - Bluff Coastal LiDAR 1m DEM (2025)",
+      "name": "bluff_2025_dem_1m",
+      "minZoom": 9
     }
   ],
   "outputs": [
