@@ -14,10 +14,10 @@
     },
     {
       "2193": "s3://nz-elevation/wellington/wellington_2013-2014/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/wellington_2013-2014_dem_1m/01HZ67MBQJ8VASM6Z69PMATPHH/",
-      "minZoom": 9,
+      "3857": "s3://linz-basemaps/elevation/3857/wellington_2013-2014_dem_1m/01K6HE3YMW7YXM48DJTMX0A5FN/",
+      "name": "wellington_2013-2014_dem_1m",
       "title": "Wellington LiDAR 1m DEM (2013-2014)",
-      "name": "wellington_2013-2014_dem_1m"
+      "minZoom": 9
     },
     {
       "2193": "s3://nz-elevation/manawatu-whanganui/manawatu-whanganui_2015-2016/dem_1m/2193/",
