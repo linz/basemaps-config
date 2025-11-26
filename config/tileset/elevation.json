@@ -566,6 +566,13 @@
       "minZoom": 9
     },
     {
+      "2193": "s3://nz-elevation/otago/cardrona_2025/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/cardrona_2025_dem_1m/01K9ZP9CDQ8TJVRT6YN4516PFG/",
+      "name": "cardrona_2025_dem_1m",
+      "title": "Otago - Cardrona LiDAR 1m DEM (2025)",
+      "minZoom": 9
+    },
+    {
       "2193": "s3://nz-elevation/otago/kingston_2025/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/kingston_2025_dem_1m/01KA9S1FKGP1G5P3ZQ4JCEMCWB/",
       "name": "kingston_2025_dem_1m",
