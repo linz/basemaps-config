@@ -816,6 +816,15 @@
       "maxZoom": 32
     },
     {
+      "2193": "s3://linz-basemaps/2193/taranaki_sn12106_1993-1994_0.4m/01K9X4Q5NJW1ZCGECXXPYC0PHM/",
+      "3857": "s3://linz-basemaps/3857/taranaki_sn12106_1993-1994_0.4m/01K9X4Q5NJZJKRAFNFAT6XWXTE/",
+      "name": "taranaki-sn12106-1993-1994-0.4m",
+      "title": "Taranaki 0.4m SN12106 (1993-1994)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
       "2193": "s3://linz-basemaps/2193/manawatu-whanganui_wellington_sn9284_1993_0.75m/01H8JGPGS61J0G5TFZFM1TYWRW/",
       "3857": "s3://linz-basemaps/3857/manawatu-whanganui_wellington_sn9284_1993_0.75m/01H8JGPFTVHYD30R3T8X677PKE/",
       "name": "manawatu-whanganui-wellington-sn9284-1993-0.75m",

@@ -14,10 +14,10 @@
     },
     {
       "2193": "s3://nz-elevation/wellington/wellington_2013-2014/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/wellington_2013-2014_dem_1m/01HZ67MBQJ8VASM6Z69PMATPHH/",
-      "minZoom": 9,
+      "3857": "s3://linz-basemaps/elevation/3857/wellington_2013-2014_dem_1m/01K6HE3YMW7YXM48DJTMX0A5FN/",
+      "name": "wellington_2013-2014_dem_1m",
       "title": "Wellington LiDAR 1m DEM (2013-2014)",
-      "name": "wellington_2013-2014_dem_1m"
+      "minZoom": 9
     },
     {
       "2193": "s3://nz-elevation/manawatu-whanganui/manawatu-whanganui_2015-2016/dem_1m/2193/",
@@ -70,10 +70,10 @@
     },
     {
       "2193": "s3://nz-elevation/northland/northland_2018-2020/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/northland_2018-2020_dem_1m/01HZ66GGG01VJJDT3WMRSFCADF/",
-      "minZoom": 9,
+      "3857": "s3://linz-basemaps/elevation/3857/northland_2018-2020_dem_1m/01K6HE516QBZHRMZDCTWMF8MH6/",
+      "name": "northland_2018-2020_dem_1m",
       "title": "Northland LiDAR 1m DEM (2018-2020)",
-      "name": "northland_2018-2020_dem_1m"
+      "minZoom": 9
     },
     {
       "2193": "s3://nz-elevation/wellington/wellington-city_2019-2020/dem_1m/2193/",
@@ -497,10 +497,10 @@
     },
     {
       "2193": "s3://nz-elevation/southland/southland_2020-2023/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/southland_2020-2023_dem_1m/01J9Q42DGRE9P73Y8ZRVJX2J4J/",
-      "minZoom": 9,
-      "title": "Southland LiDAR 1m DEM (2020-2023)",
-      "name": "southland_2020-2023_dem_1m"
+      "3857": "s3://linz-basemaps/elevation/3857/southland_2020-2023_dem_1m/01K5Z0SWWXY09P9TKWQZXAP1Z4/",
+      "name": "southland_2020-2023_dem_1m",
+      "title": "Southland LiDAR 1m DEM (2020-2024)",
+      "minZoom": 9
     },
     {
       "2193": "s3://nz-elevation/canterbury/canterbury_2020-2023/dem_1m/2193/",
@@ -570,6 +570,20 @@
       "3857": "s3://linz-basemaps/elevation/3857/cardrona_2025_dem_1m/01K9ZP9CDQ8TJVRT6YN4516PFG/",
       "name": "cardrona_2025_dem_1m",
       "title": "Otago - Cardrona LiDAR 1m DEM (2025)",
+       "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/otago/kingston_2025/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/kingston_2025_dem_1m/01KA9S1FKGP1G5P3ZQ4JCEMCWB/",
+      "name": "kingston_2025_dem_1m",
+      "title": "Otago - Kingston LiDAR 1m DEM (2025)",
+      "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/manawatu-whanganui/oroua_2025/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/oroua_2025_dem_1m/01KAWGR3DY3EWSZNXBPX3JDSJE/",
+      "name": "oroua_2025_dem_1m",
+      "title": "Manawatū-Whanganui - Oroua LiDAR 1m DEM (2025)",
       "minZoom": 9
     }
   ],

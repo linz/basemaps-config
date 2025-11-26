@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_tongariro-national-park-false-colour-2025-10m",
+  "name": "tongariro-national-park-false-colour-2025-10m",
+  "title": "Tongariro National Park False Colour 10m Satellite Imagery (16 November 2025)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Event",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/tongariro-national-park-false-colour_2025_10m/01KACAE0E2JGFJYD9P16X2P4K1/",
+      "3857": "s3://linz-basemaps/3857/tongariro-national-park-false-colour_2025_10m/01KACAE0E2GWY77S66ASDNWWR6/",
+      "name": "tongariro-national-park-false-colour-2025-10m",
+      "title": "Tongariro National Park False Colour 10m Satellite Imagery (16 November 2025)",
+      "category": "Event",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
