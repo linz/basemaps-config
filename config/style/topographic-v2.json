@@ -1527,7 +1527,6 @@
       "minzoom": 13,
       "paint": {
         "line-color": "rgba(81, 79, 79, 1)",
-        "line-offset": 0,
         "line-pattern": "cliff_edge",
         "line-width": 15
       },
