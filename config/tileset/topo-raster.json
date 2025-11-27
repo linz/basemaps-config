@@ -106,13 +106,6 @@
       "name": "pi-topo50-penryn-gridless",
       "title": "PI Topo50 Penryn Gridless",
       "category": "Topographic"
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/topo50-suwarrow/01K6B7R9XT9BXAYDFANVJD1NVA/",
-      "3857": "s3://linz-basemaps/3857/topo50-suwarrow/01K6B7RCRWPJD0GD74GKKXJ1EY/",
-      "name": "pi-topo50-suwarrow-gridless",
-      "title": "PI Topo50 Suwarrow Gridless",
-      "category": "Topographic"
     }
   ]
 }
