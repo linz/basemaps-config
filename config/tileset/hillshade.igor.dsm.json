@@ -7,15 +7,15 @@
   "category": "Elevation",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/new-zealand/01K41FTCYBXP1PG03D4JVV3QK3/",
-      "3857": "s3://linz-basemaps/3857/new-zealand/01K41FTCY4PRKMYD9EC84ZH1WB/",
+      "2193": "s3://linz-basemaps/2193/new-zealand/01KB3J7Q92JGW5WBDQ0TP7897V/",
+      "3857": "s3://linz-basemaps/3857/new-zealand/01KB3J7R93HEN0FVS00CRY0BSS/",
       "title": "New Zealand DSM Hillshade Igor Overview",
       "name": "new-zealand_dsm_hillshade_igor_overview",
       "maxZoom": 10
     },
     {
       "2193": "s3://nz-elevation/new-zealand/new-zealand/dsm-hillshade-igor/2193/",
-      "3857": "s3://linz-basemaps/3857/new-zealand/01K41FQ101AN2M1TBZMZRA8V27/",
+      "3857": "s3://linz-basemaps/3857/new-zealand/01KB3J3ZRYKCZ9VAHDQ9T4S0ZC/",
       "title": "New Zealand DSM Hillshade Igor",
       "name": "new-zealand_dsm_hillshade_igor",
       "minZoom": 11
