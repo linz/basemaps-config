@@ -93,7 +93,7 @@ jobs:
 
       - name: Upload changes.md as artifact (if oversized)
         if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request' && (hashFiles('changes.md') != '')
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: changes
           path: changes.md
