@@ -1,0 +1,15 @@
+{
+  "type": "vector",
+  "id": "ts_test-topographic-v2",
+  "title": "New Zealand Topographic Vector Map",
+  "maxZoom": 15,
+  "format": "pbf",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/vector/2193/topographic/01KABZXTBJEVK8DC40ES4TRBGQ/topographic-v2.tar.co",
+      "3857": "s3://linz-basemaps/vector/3857/topographic/01KABZPBPZ1FC1X1RGSKKXWB8Z/topographic-v2.tar.co",
+      "name": "test-topographic-v2",
+      "title": "Test Topographic V2"
+    }
+  ]
+}
