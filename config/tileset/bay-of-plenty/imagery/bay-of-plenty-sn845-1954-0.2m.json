@@ -12,8 +12,8 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/bay-of-plenty_sn845_1954_0.2m/01KBP7ASG3K4M6CT11J40G8DCH/",
-      "3857": "s3://linz-basemaps/3857/bay-of-plenty_sn845_1954_0.2m/01KBP7ATBYV23QHSC0C3CYP2AT/",
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_sn845_1954_0.2m/01KBP82DF8GKKT1H3SCMTTG2E1/",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_sn845_1954_0.2m/01KBP82DF5R1AR7AH06QK1CHH2/",
       "name": "bay-of-plenty-sn845-1954-0.2m",
       "title": "Bay of Plenty 0.2m SN845 (1954)",
       "category": "Scanned Aerial Imagery",
