@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_gisborne-bay-of-plenty-sn3298-1970-1972-0.375m",
+  "name": "gisborne-bay-of-plenty-sn3298-1970-1972-0.375m",
+  "title": "Gisborne / Bay of Plenty 0.375m SN3298 (1970-1972)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/gisborne_bay-of-plenty_sn3298_1970-1972_0.375m/01KBXHWBJ172QDEGEQ36P2CX4Y/",
+      "3857": "s3://linz-basemaps/3857/gisborne_bay-of-plenty_sn3298_1970-1972_0.375m/01KBXHWBKR6Z8FSZJ6YE292NM9/",
+      "name": "gisborne-bay-of-plenty-sn3298-1970-1972-0.375m",
+      "title": "Gisborne / Bay of Plenty 0.375m SN3298 (1970-1972)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
