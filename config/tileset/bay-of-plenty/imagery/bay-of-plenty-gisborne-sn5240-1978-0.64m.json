@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_bay-of-plenty-gisborne-sn5240-1978-0.64m",
+  "name": "bay-of-plenty-gisborne-sn5240-1978-0.64m",
+  "title": "Bay of Plenty / Gisborne 0.64m SN5240 (1978)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_gisborne_sn5240_1978_0.64m/01KBXHTBD188G827CCFWCKJM5R/",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_gisborne_sn5240_1978_0.64m/01KBXHTBCZGYYEMZA1HRP9527E/",
+      "name": "bay-of-plenty-gisborne-sn5240-1978-0.64m",
+      "title": "Bay of Plenty / Gisborne 0.64m SN5240 (1978)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
