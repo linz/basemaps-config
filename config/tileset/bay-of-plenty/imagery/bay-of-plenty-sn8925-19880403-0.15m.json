@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_bay-of-plenty-sn8925-19880403-0.15m",
+  "name": "bay-of-plenty-sn8925-19880403-0.15m",
+  "title": "Bay of Plenty 0.15m SN8925 (3 April 1988)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_sn8925_19880403_0.15m/01KBXMKDY0JESS6075XSZYEW22/",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_sn8925_19880403_0.15m/01KBXMKDXY177WZ2SBXXP95YFX/",
+      "name": "bay-of-plenty-sn8925-19880403-0.15m",
+      "title": "Bay of Plenty 0.15m SN8925 (3 April 1988)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
