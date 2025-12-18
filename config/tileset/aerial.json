@@ -452,8 +452,8 @@
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/waimakariri_2025_0.25m/01KCMZDDJ7J29Z8Z8Y84K9KYR7/",
-      "3857": "s3://linz-basemaps/3857/waimakariri_2025_0.25m/01KCMZDDJ802PQPQ6XKJ4XW6KZ/",
+      "2193": "s3://linz-basemaps/2193/waimakariri_2025_0.25m/01KCSQFXV4FEQ58JZ0DKSNHEYH/",
+      "3857": "s3://linz-basemaps/3857/waimakariri_2025_0.25m/01KCSQFXV1ZFAAC8PXBAH77CM8/",
       "name": "waimakariri-2025-0.25m",
       "title": "Waimakariri 0.25m Rural Aerial Photos (2025)",
       "category": "Rural Aerial Photos",
