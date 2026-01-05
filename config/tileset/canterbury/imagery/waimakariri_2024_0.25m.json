@@ -1,0 +1,18 @@
+{
+  "type": "raster",
+  "id": "ts_waimakariri_2024_0.25m",
+  "title": "Waimakariri 0.25m Rural Aerial Photos (2024)",
+  "background": "#00000000",
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/waimakariri_2024_0.25m/01J1RESR6CDNEHH4A2DXTP1G0X/",
+      "3857": "s3://linz-basemaps/3857/waimakariri_2024_0.25m/01J1RESR6C1MNR0A8SH34PKHAF/",
+      "name": "waimakariri_2024_0.25m",
+      "title": "Waimakariri 0.25m Rural Aerial Photos (2024)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
