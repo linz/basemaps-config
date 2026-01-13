@@ -363,14 +363,7 @@
       "category": "Rural Aerial Photos",
       "minZoom": 13
     },
-    {
-      "2193": "s3://linz-basemaps/2193/waimakariri_2024_0.25m/01J1RESR6CDNEHH4A2DXTP1G0X/",
-      "3857": "s3://linz-basemaps/3857/waimakariri_2024_0.25m/01J1RESR6C1MNR0A8SH34PKHAF/",
-      "name": "waimakariri_2024_0.25m",
-      "title": "Waimakariri 0.25m Rural Aerial Photos (2024)",
-      "category": "Rural Aerial Photos",
-      "minZoom": 13
-    },
+
     {
       "2193": "s3://linz-basemaps/2193/otago_2023-2024_0.2m/01JP40WDHHB1KZZ3BPFDPGW9WA/",
       "3857": "s3://linz-basemaps/3857/otago_2023-2024_0.2m/01JP40WVR4XX21ZXJ4FYHJ47AN/",
@@ -448,6 +441,14 @@
       "3857": "s3://linz-basemaps/3857/selwyn_2025_0.2m/01K6VHM3762WMH6VW3C2JDD67B/",
       "name": "selwyn-2025-0.2m",
       "title": "Selwyn 0.2m Rural Aerial Photos (2025)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 13
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/waimakariri_2025_0.25m/01KCSQFXV4FEQ58JZ0DKSNHEYH/",
+      "3857": "s3://linz-basemaps/3857/waimakariri_2025_0.25m/01KCSQFXV1ZFAAC8PXBAH77CM8/",
+      "name": "waimakariri-2025-0.25m",
+      "title": "Waimakariri 0.25m Rural Aerial Photos (2025)",
       "category": "Rural Aerial Photos",
       "minZoom": 13
     },
