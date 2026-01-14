@@ -12,8 +12,8 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/taranaki_sn12106_1993-1994_0.4m/01K9X4Q5NJW1ZCGECXXPYC0PHM/",
-      "3857": "s3://linz-basemaps/3857/taranaki_sn12106_1993-1994_0.4m/01K9X4Q5NJZJKRAFNFAT6XWXTE/",
+      "2193": "s3://linz-basemaps/2193/taranaki_sn12106_1993-1994_0.4m/01KEWT5FW4BXF6KGV5R5GE8K0J/",
+      "3857": "s3://linz-basemaps/3857/taranaki_sn12106_1993-1994_0.4m/01KEWT5FSB4XBSCKMDHRQ8E1XE/",
       "name": "taranaki-sn12106-1993-1994-0.4m",
       "title": "Taranaki 0.4m SN12106 (1993-1994)",
       "category": "Scanned Aerial Imagery",
