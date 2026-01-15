@@ -363,7 +363,6 @@
       "category": "Rural Aerial Photos",
       "minZoom": 13
     },
-
     {
       "2193": "s3://linz-basemaps/2193/otago_2023-2024_0.2m/01JP40WDHHB1KZZ3BPFDPGW9WA/",
       "3857": "s3://linz-basemaps/3857/otago_2023-2024_0.2m/01JP40WVR4XX21ZXJ4FYHJ47AN/",
@@ -994,6 +993,14 @@
       "3857": "s3://linz-basemaps/3857/levin_2024_0.05m/01KAYHY8XB4E6G89ENC3M6WFNH/",
       "name": "levin-2024-0.05m",
       "title": "Levin 0.05m Urban Aerial Photos (2024)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 14
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/porirua_2025_0.075m/01KEZPPD3V0CDRQHJJ56V2B169/",
+      "3857": "s3://linz-basemaps/3857/porirua_2025_0.075m/01KEZPPD3NJK8ZNS5TE4YBMD05/",
+      "name": "porirua-2025-0.075m",
+      "title": "Porirua 0.075m Urban Aerial Photos (2025)",
       "category": "Urban Aerial Photos",
       "minZoom": 14
     },
