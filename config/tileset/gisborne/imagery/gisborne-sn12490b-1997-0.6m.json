@@ -12,8 +12,8 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/gisborne_sn12490b_1997_0.6m/01KCQSXR5MH1KF0N0K28NJCKB4/",
-      "3857": "s3://linz-basemaps/3857/gisborne_sn12490b_1997_0.6m/01KCQSXR5M3KDM4GT6FZ8Y68CN/",
+      "2193": "s3://linz-basemaps/2193/gisborne_sn12490b_1997_0.6m/01KF20BEHJKMQJJK59C63QFG3G/",
+      "3857": "s3://linz-basemaps/3857/gisborne_sn12490b_1997_0.6m/01KF20BEHMPZ50B3K209NRAW53/",
       "name": "gisborne-sn12490b-1997-0.6m",
       "title": "Gisborne 0.6m SN12490B (1997)",
       "category": "Scanned Aerial Imagery",
