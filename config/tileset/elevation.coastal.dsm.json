@@ -13,9 +13,21 @@
       "minZoom": 9
     },
     {
+      "2193": "s3://nz-coastal/northland/whangarei-to-bream-bay_2025/dsm_1m/2193/",
+      "title": "Northland - Whangārei to Bream Bay Coastal LiDAR 1m DSM (2025)",
+      "name": "whangarei-to-bream-bay_2025_dsm_1m",
+      "minZoom": 9
+    },
+    {
       "2193": "s3://nz-coastal/bay-of-plenty/waihi-beach-and-tauranga_2025/dsm_1m/2193/",
       "title": "Bay of Plenty - Waihi Beach and Tauranga Coastal LiDAR 1m DSM (2025)",
       "name": "waihi-beach-and-tauranga_2025_dsm_1m",
+      "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-coastal/bay-of-plenty/opotiki-to-torere_2025/dsm_1m/2193/",
+      "title": "Bay of Plenty - Ōpōtiki to Tōrere Coastal LiDAR 1m DSM (2025)",
+      "name": "opotiki-to-torere_2025_dsm_1m",
       "minZoom": 9
     },
     {
