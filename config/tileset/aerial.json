@@ -1005,6 +1005,14 @@
       "minZoom": 14
     },
     {
+      "2193": "s3://linz-basemaps/2193/timaru_2025_0.075m/01KF2625E05SQ0CTND6NTEC9SZ/",
+      "3857": "s3://linz-basemaps/3857/timaru_2025_0.075m/01KF2625E0N7DC9FXW8T4DA1WM/",
+      "name": "timaru-2025-0.075m",
+      "title": "Timaru 0.075m Urban Aerial Photos (2025)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 14
+    },
+    {
       "3857": "s3://linz-basemaps/3857/geographx_nz_dem_2012_8-0m/01FM8DEN1XG1QGNT229A4T3KZ6/",
       "name": "geographx-nz-dem-2012-8m",
       "maxZoom": 14,
