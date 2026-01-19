@@ -210,7 +210,7 @@
     },
     {
       "2193": "s3://nz-elevation/auckland/auckland-part-1_2024/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/auckland-part-1_2024_dem_1m/01JRVM0Y6F002XK2VCF971C5AB/",
+      "3857": "s3://linz-basemaps/elevation/3857/auckland-part-1_2024_dem_1m/01KFC1AQFFBKC7FKT81DYZSWWG/",
       "name": "auckland-part-1_2024_dem_1m",
       "title": "Auckland Part 1 LiDAR 1m DEM (2024)",
       "minZoom": 9
