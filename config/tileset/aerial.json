@@ -21,10 +21,10 @@
       "category": "Satellite Imagery"
     },
     {
-      "2193": "s3://linz-basemaps/2193/new-zealand_2023-2024_10m/01J97KSMGPF00B086ZVGHC617J/",
-      "3857": "s3://linz-basemaps/3857/new-zealand_2023-2024_10m/01J97KSKJSF0S3HVS17FG5XBHD/",
-      "name": "new-zealand-2023-2024-10m",
-      "title": "New Zealand 10m Satellite Imagery (2023-2024)",
+      "2193": "s3://linz-basemaps/2193/new-zealand_2024-2025_10m/01K5Q8CYCZ4PS1ZJNP6FJ58QEB/",
+      "3857": "s3://linz-basemaps/3857/new-zealand_2024-2025_10m/01K5Q8D0796M9039JWXS661DQR/",
+      "name": "new-zealand-2024-2025-10m",
+      "title": "New Zealand 10m Satellite Imagery (2024-2025)",
       "category": "Satellite Imagery"
     },
     {
@@ -364,14 +364,6 @@
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/waimakariri_2024_0.25m/01J1RESR6CDNEHH4A2DXTP1G0X/",
-      "3857": "s3://linz-basemaps/3857/waimakariri_2024_0.25m/01J1RESR6C1MNR0A8SH34PKHAF/",
-      "name": "waimakariri_2024_0.25m",
-      "title": "Waimakariri 0.25m Rural Aerial Photos (2024)",
-      "category": "Rural Aerial Photos",
-      "minZoom": 13
-    },
-    {
       "2193": "s3://linz-basemaps/2193/otago_2023-2024_0.2m/01JP40WDHHB1KZZ3BPFDPGW9WA/",
       "3857": "s3://linz-basemaps/3857/otago_2023-2024_0.2m/01JP40WVR4XX21ZXJ4FYHJ47AN/",
       "name": "otago-2023-2024-0.2m",
@@ -440,6 +432,22 @@
       "3857": "s3://linz-basemaps/3857/canterbury_2025_0.25m/01K2NE1RT6520YVM4Y6VAXV2R1/",
       "name": "canterbury-2025-0.25m",
       "title": "Canterbury 0.25m Rural Aerial Photos (2025)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 13
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/selwyn_2025_0.2m/01K6VHM1ZNC674V33GM52RTY5R/",
+      "3857": "s3://linz-basemaps/3857/selwyn_2025_0.2m/01K6VHM3762WMH6VW3C2JDD67B/",
+      "name": "selwyn-2025-0.2m",
+      "title": "Selwyn 0.2m Rural Aerial Photos (2025)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 13
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/waimakariri_2025_0.25m/01KCSQFXV4FEQ58JZ0DKSNHEYH/",
+      "3857": "s3://linz-basemaps/3857/waimakariri_2025_0.25m/01KCSQFXV1ZFAAC8PXBAH77CM8/",
+      "name": "waimakariri-2025-0.25m",
+      "title": "Waimakariri 0.25m Rural Aerial Photos (2025)",
       "category": "Rural Aerial Photos",
       "minZoom": 13
     },
@@ -861,10 +869,10 @@
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/buller_2024-2025_0.075m/01JYMK94WX7EQCTC21K4R3WR2B/",
-      "3857": "s3://linz-basemaps/3857/buller_2024-2025_0.075m/01JYMK94WB8R1Y4XZVAXAPY6N8/",
+      "2193": "s3://linz-basemaps/2193/buller_2024-2025_0.075m/01K6KQ12X4NHR5WV7R15DQ8GVF/",
+      "3857": "s3://linz-basemaps/3857/buller_2024-2025_0.075m/01K6KQ12X4WAF81G9ACHXMGTN1/",
       "name": "buller-2024-2025-0.075m",
-      "title": "Buller 0.075m Urban Aerial Photos (2024-2025) - Draft",
+      "title": "Buller 0.075m Urban Aerial Photos (2024-2025)",
       "category": "Urban Aerial Photos",
       "minZoom": 14
     },
@@ -961,6 +969,38 @@
       "3857": "s3://linz-basemaps/3857/christchurch_2025_0.075m/01K5WYS3T6646RB471HRT007VB/",
       "name": "christchurch-2025-0.075m",
       "title": "Christchurch 0.075m Urban Aerial Photos (2025)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 14
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/christchurch_2025_0.05m/01K5WWX7NYMT0AH5RQ0QRJ7BFF/",
+      "3857": "s3://linz-basemaps/3857/christchurch_2025_0.05m/01K5WWXM60KSJF62QZWSGB57QY/",
+      "name": "christchurch-2025-0.05m",
+      "title": "Christchurch 0.05m Urban Aerial Photos (2025)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 14
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/cardrona_2025_0.05m/01KACKG64YAZ3V31A5NZCSTTNX/",
+      "3857": "s3://linz-basemaps/3857/cardrona_2025_0.05m/01KACKG64W22EV99RG4B76HT3R/",
+      "name": "cardrona-2025-0.05m",
+      "title": "Cardrona 0.05m Urban Aerial Photos (2025)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 14
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/levin_2024_0.05m/01KAYHY8XAKJQQ9947VTT0MQDZ/",
+      "3857": "s3://linz-basemaps/3857/levin_2024_0.05m/01KAYHY8XB4E6G89ENC3M6WFNH/",
+      "name": "levin-2024-0.05m",
+      "title": "Levin 0.05m Urban Aerial Photos (2024)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 14
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/porirua_2025_0.075m/01KEZPPD3V0CDRQHJJ56V2B169/",
+      "3857": "s3://linz-basemaps/3857/porirua_2025_0.075m/01KEZPPD3NJK8ZNS5TE4YBMD05/",
+      "name": "porirua-2025-0.075m",
+      "title": "Porirua 0.075m Urban Aerial Photos (2025)",
       "category": "Urban Aerial Photos",
       "minZoom": 14
     },
