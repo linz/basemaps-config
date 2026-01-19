@@ -89,7 +89,7 @@ jobs:
       - name: Compare To Production
         run: |
           aws s3 cp s3://linz-basemaps/config/config-latest.json.gz .
-          ./scripts/bmc.sh ./index.cjs config import --config ${CONFIG_LOCATION_STAGING} --output $PWD/changes.md --target $PWD/config-latest.json.gz
+          ./scripts/bmc.sh ./index.cjs config diff --before $PWD/config-latest.json.gz --after ${CONFIG_LOCATION_STAGING} --output $PWD/changes.md
 
       - name: Upload changes.md as artifact (if oversized)
         if: github.ref != 'refs/heads/master' && github.event_name == 'pull_request' && (hashFiles('changes.md') != '')
