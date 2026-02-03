@@ -1129,6 +1129,33 @@
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/auckland_sn11624_1989_0.625m/01KCMGPRZ1C2BP8PT8GZF3JRFQ/",
+      "3857": "s3://linz-basemaps/3857/auckland_sn11624_1989_0.625m/01KCMGPRZ3GKKV2A69D063W1RM/",
+      "name": "auckland-sn11624-1989-0.625m",
+      "title": "Auckland 0.625m SN11624 (1989)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/waikato_sn11528_1989_0.625m/01KG0WAJB30N90Y0W20W0BJVMN/",
+      "3857": "s3://linz-basemaps/3857/waikato_sn11528_1989_0.625m/01KG0WE30JPJ2E2THRJYF6WZ04/",
+      "name": "waikato-sn11528-1989-0.625m",
+      "title": "Waikato 0.625m SN11528 (1989)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/waikato_sn11654_1989_0.625m/01KG0W4ANPVZFMWGNYA9QSS9VT/",
+      "3857": "s3://linz-basemaps/3857/waikato_sn11654_1989_0.625m/01KG0WA1FSEP5WCA0DGESRW8GM/",
+      "name": "waikato-sn11654-1989-0.625m",
+      "title": "Waikato 0.625m SN11654 (1989)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
     }
   ]
 }
