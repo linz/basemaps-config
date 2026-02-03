@@ -609,6 +609,15 @@
       "maxZoom": 32
     },
     {
+      "2193": "s3://linz-basemaps/2193/gisborne_sn12490b_1997_0.6m/01KF20BEHJKMQJJK59C63QFG3G/",
+      "3857": "s3://linz-basemaps/3857/gisborne_sn12490b_1997_0.6m/01KF20BEHMPZ50B3K209NRAW53/",
+      "name": "gisborne-sn12490b-1997-0.6m",
+      "title": "Gisborne 0.6m SN12490B (1997)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
       "2193": "s3://linz-basemaps/2193/marlborough_sn9586_1996_0.32m/01H8JHGBMH29KDA07NRS7VFS2K/",
       "3857": "s3://linz-basemaps/3857/marlborough_sn9586_1996_0.32m/01H8JHGBKW6SQN9346F1MHJW89/",
       "name": "marlborough-sn9586-1996-0.32m",
@@ -865,6 +874,15 @@
       "3857": "s3://linz-basemaps/3857/tasman_sn8821_1991_0.6m/01H8JN763E6QWSZD0DCWJZWQ5N/",
       "name": "tasman-sn8821-1991-0.6m",
       "title": "Tasman 0.6m SN8821 (1991)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/otago_sn11827a_sn11828_1991_0.4m/01KG0W7693Q51BEH2DDGTH7QKJ/",
+      "3857": "s3://linz-basemaps/3857/otago_sn11827a_sn11828_1991_0.4m/01KG0W50R97WCMH3F20VY362CV/",
+      "name": "otago-sn11827a-sn11828-1991-0.4m",
+      "title": "Otago 0.4m SN11827A / SN11828 (1991)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32
