@@ -1146,7 +1146,7 @@
       "title": "Waikato 0.625m SN11528 (1989)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
-      "maxZoom": 32   
+      "maxZoom": 32
     },
     {
       "2193": "s3://linz-basemaps/2193/waikato_sn11654_1989_0.625m/01KG0W4ANPVZFMWGNYA9QSS9VT/",
@@ -1156,6 +1156,6 @@
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32
-    }  
+    }
   ]
 }
