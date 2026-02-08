@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_hicks-bay-2026-0.06m",
+  "name": "hicks-bay-2026-0.06m",
+  "title": "Hicks Bay 0.06m Aerial Photos (2026) - Draft",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Event",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/hicks-bay_2026_0.06m/01KGZPEBM7EP004EJAQ4D88G6H/",
+      "3857": "s3://linz-basemaps/3857/hicks-bay_2026_0.06m/01KGZPEBM72ZVJBVKH514V5HR8/",
+      "name": "hicks-bay-2026-0.06m",
+      "title": "Hicks Bay 0.06m Aerial Photos (2026) - Draft",
+      "category": "Event",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
