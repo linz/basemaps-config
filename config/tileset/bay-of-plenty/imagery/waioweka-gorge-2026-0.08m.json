@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_waioweka-gorge-2026-0.08m",
+  "name": "waioweka-gorge-2026-0.08m",
+  "title": "Waioweka Gorge 0.08m Aerial Photos (2026) - Draft",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Event",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/waioweka-gorge_2026_0.08m/01KH29RJYNBTRSPJPVWGTPC7PR/",
+      "3857": "s3://linz-basemaps/3857/waioweka-gorge_2026_0.08m/01KH29RJYNJFHPF2YW9Q9TDQ4T/",
+      "name": "waioweka-gorge-2026-0.08m",
+      "title": "Waioweka Gorge 0.08m Aerial Photos (2026) - Draft",
+      "category": "Event",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
