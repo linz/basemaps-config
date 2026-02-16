@@ -567,6 +567,13 @@
       "minZoom": 9
     },
     {
+      "2193": "s3://nz-elevation/wellington/kapiti-coast_2024-2025/dsm_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/kapiti-coast_2024-2025_dsm_1m/01KHJ3ZX3BCGXAVEM2P555TJX0/",
+      "name": "kapiti-coast_2024-2025_dsm_1m",
+      "title": "Wellington - Kāpiti Coast LiDAR 1m DSM (2024-2025)",
+      "minZoom": 9
+    },
+    {
       "2193": "s3://nz-elevation/wellington/wellington-city_2025/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/wellington-city_2025_dsm_1m/01KHJ2P19NES8255BM38W5ERA6/",
       "name": "wellington-city_2025_dsm_1m",
