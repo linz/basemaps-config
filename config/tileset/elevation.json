@@ -585,6 +585,13 @@
       "name": "oroua_2025_dem_1m",
       "title": "Manawatū-Whanganui - Oroua LiDAR 1m DEM (2025)",
       "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/wellington/kapiti-coast_2024-2025/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/kapiti-coast_2024-2025_dem_1m/01KHJ41D2PWF1DZDSFYBG9JGBR/",
+      "name": "kapiti-coast_2024-2025_dem_1m",
+      "title": "Wellington - Kāpiti Coast LiDAR 1m DEM (2024-2025)",
+      "minZoom": 9
     }
   ],
   "outputs": [
