@@ -593,6 +593,13 @@
       "title": "Wellington - Kāpiti Coast LiDAR 1m DEM (2024-2025)",
       "minZoom": 9
     }
+    {
+      "2193": "s3://nz-elevation/wellington/wellington-city_2025/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/wellington-city_2025_dem_1m/01KHJ2FH9VN6YY6S6KJN1191GD/",
+      "name": "wellington-city_2025_dem_1m",
+      "title": "Wellington - Wellington City LiDAR 1m DEM (2025)",
+      "minZoom": 9
+    }
   ],
   "outputs": [
     {
