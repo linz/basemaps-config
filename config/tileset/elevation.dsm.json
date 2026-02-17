@@ -84,13 +84,6 @@
       "name": "northland_2018-2020_dsm_1m"
     },
     {
-      "2193": "s3://nz-elevation/wellington/wellington-city_2019-2020/dsm_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/wellington-city_2019-2020_dsm_1m/01JQN19CVDNGJ27QDJ79M9K6PD/",
-      "minZoom": 9,
-      "title": "Wellington City LiDAR 1m DSM (2019-2020)",
-      "name": "wellington-city_2019-2020_dsm_1m"
-    },
-    {
       "2193": "s3://nz-elevation/manawatu-whanganui/rangitikei-river_2021/dsm_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/rangitikei-river_2021_dsm_1m/01JSWZWH6P24KXP97F4XRT9B74/",
       "name": "rangitikei-river_2021_dsm_1m",
@@ -124,13 +117,6 @@
       "minZoom": 9,
       "title": "Wellington - Hutt City LiDAR 1m DSM (2021)",
       "name": "hutt-city_2021_dsm_1m"
-    },
-    {
-      "2193": "s3://nz-elevation/wellington/kapiti-coast_2021/dsm_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/kapiti-coast_2021_dsm_1m/01JQN19SSYEJ07X9S6SJVAWYCC/",
-      "minZoom": 9,
-      "title": "Wellington - Kāpiti Coast LiDAR 1m DSM (2021)",
-      "name": "kapiti-coast_2021_dsm_1m"
     },
     {
       "2193": "s3://nz-elevation/wellington/upper-hutt-city_2021/dsm_1m/2193/",
