@@ -49,6 +49,12 @@
       "minZoom": 9
     },
     {
+      "2193": "s3://nz-coastal/waikato/matarangi-to-whitianga_2025/dem_1m/2193/",
+      "title": "Waikato - Matarangi to Whitianga Coastal LiDAR 1m DEM (2025)",
+      "name": "matarangi-to-whitianga_2025_dem_1m",
+      "minZoom": 9
+    },
+    {
       "2193": "s3://nz-coastal/nelson/pepin-island-and-rotokura-cable-bay_2025/dem_1m/2193/",
       "title": "Nelson - Pepin Island and Rotokura/Cable Bay Coastal LiDAR 1m DEM (2025)",
       "name": "pepin-island-and-rotokura-cable-bay_2025_dem_1m",
