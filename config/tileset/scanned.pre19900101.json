@@ -5,6 +5,15 @@
   "background": "#00000000",
   "category": "Scanned Aerial Imagery",
   "layers": [
+  {
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_sn1883_1966_0.1m/01KGZQNC6Y3A3PGT67YR627S7J/",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_sn1883_1966_0.1m/01KGZQNCEHDHZ5N2F79AQW25DR/",
+      "name": "bay-of-plenty-sn1883-1966-0.1m",
+      "title": "Bay of Plenty 0.1m SN1883 (1966)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
     {
       "2193": "s3://linz-basemaps/2193/otago_sn3806_1975_0.375m/01H8JJZ4PQ7SFDZ21DQR9GJ8AZ/",
       "3857": "s3://linz-basemaps/3857/otago_sn3806_1975_0.375m/01H8JJZ4M9C83EJDJCMQB4ED8B/",
