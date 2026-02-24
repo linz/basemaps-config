@@ -1021,8 +1021,8 @@
       "minZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/bay-of-plenty_2025_0.1m/01KFY3HPQWNMM1S97CSDHM2661/",
-      "3857": "s3://linz-basemaps/3857/bay-of-plenty_2025_0.1m/01KFY3HPQWJ2CV4PKFEQ03NHR3/",
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_2025_0.1m/01KJ6PSVPVFMB9WDE04Y94ST43/",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_2025_0.1m/01KJ6PSVS9CZG8GR2ZHYJA8EFH/",
       "name": "bay-of-plenty-2025-0.1m",
       "title": "Bay of Plenty 0.1m Urban Aerial Photos (2025) - Draft",
       "category": "Urban Aerial Photos",
