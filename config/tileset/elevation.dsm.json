@@ -572,6 +572,13 @@
       "name": "south-wairarapa_2025_dsm_1m",
       "title": "Wellington - South Wairarapa LiDAR 1m DSM (2025)",
       "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/wellington/upper-hutt-city_2025/dsm_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/upper-hutt-city_2025_dsm_1m/01KK0CH3WKQPCJ6CMH0P33G6PQ/",
+      "name": "upper-hutt-city_2025_dsm_1m",
+      "title": "Wellington - Upper Hutt City LiDAR 1m DSM (2025)",
+      "minZoom": 9
     }
   ],
   "outputs": [
