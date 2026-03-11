@@ -14,7 +14,7 @@
     },
     {
       "2193": "s3://nz-elevation/wellington/wellington_2013-2014/dem_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/wellington_2013-2014_dem_1m/01K6HE3YMW7YXM48DJTMX0A5FN/",
+      "3857": "s3://linz-basemaps/elevation/3857/wellington_2013-2014_dem_1m/01KKFGRCA3P24D8KAFVQ76Z7XQ/",
       "name": "wellington_2013-2014_dem_1m",
       "title": "Wellington LiDAR 1m DEM (2013-2014)",
       "minZoom": 9
