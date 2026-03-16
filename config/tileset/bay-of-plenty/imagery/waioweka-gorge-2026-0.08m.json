@@ -12,8 +12,8 @@
   "category": "Event",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/waioweka-gorge_2026_0.08m/01KKSVVTP7QBXG09KAF9CN7NMV/",
-      "3857": "s3://linz-basemaps/3857/waioweka-gorge_2026_0.08m/01KKSVVTP94PVQ7CC121HBHRST/",
+      "2193": "s3://linz-basemaps/2193/waioweka-gorge_2026_0.08m/01KKT1KA3JJ1FYBCAHZNR1GMKT/",
+      "3857": "s3://linz-basemaps/3857/waioweka-gorge_2026_0.08m/01KKT1KAPMYDYTDQASFFT8GBXG/",
       "name": "waioweka-gorge-2026-0.08m",
       "title": "Waioweka Gorge 0.08m Aerial Photos (2026)",
       "category": "Event",
