@@ -156,6 +156,15 @@
       "category": "Rural Aerial Photos"
     },
     {
+      "2193": "s3://linz-basemaps/2193/wimakariri_2023_0.05m/01KKYXD0NQ5CFTAJ4GZZQ0E7X2/",
+      "3857": "s3://linz-basemaps/3857/wimakariri_2023_0.05m/01KKYXCZJD3S6ECV0SPVNVJNQD/",
+      "name": "wimakariri-2023-0.05m",
+      "title": "Waimakariri 0.05m Urban Aerial Photos (2023)",
+      "category": "Urban Aerial Photos",
+      "aliases": ["waimakariri-2023-0.1m"],
+      "minZoom": 14
+    },
+    {
       "2193": "s3://linz-basemaps/2193/west-coast_rural_2015-16_0-3m/01F6P21PNQC7D67W5SHQF806Z3/",
       "3857": "s3://linz-basemaps/3857/west-coast_rural_2015-16_0-3m/01ED83TT0ZHKXTPFXEGFJHP2M5/",
       "name": "west-coast-rural-2015-2016-0.3m",
@@ -1025,14 +1034,6 @@
       "3857": "s3://linz-basemaps/3857/bay-of-plenty_2025_0.1m/01KKAHEM4FCG4JG1YBRTDHHRK9/",
       "name": "bay-of-plenty-2025-0.1m",
       "title": "Bay of Plenty 0.1m Urban Aerial Photos (2025)",
-      "category": "Urban Aerial Photos",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/wimakariri_2023_0.05m/01KKYXD0NQ5CFTAJ4GZZQ0E7X2/",
-      "3857": "s3://linz-basemaps/3857/wimakariri_2023_0.05m/01KKYXCZJD3S6ECV0SPVNVJNQD/",
-      "name": "wimakariri-2023-0.05m",
-      "title": "Waimakariri 0.05m Urban Aerial Photos (2023)",
       "category": "Urban Aerial Photos",
       "minZoom": 14
     },
