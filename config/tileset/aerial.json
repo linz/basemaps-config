@@ -156,9 +156,9 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/wimakariri_2023_0.05m/01KKYXD0NQ5CFTAJ4GZZQ0E7X2/",
-      "3857": "s3://linz-basemaps/3857/wimakariri_2023_0.05m/01KKYXCZJD3S6ECV0SPVNVJNQD/",
-      "name": "wimakariri-2023-0.05m",
+      "2193": "s3://linz-basemaps/2193/waimakariri_2023_0.05m/01KKYXD0NQ5CFTAJ4GZZQ0E7X2/",
+      "3857": "s3://linz-basemaps/3857/waimakariri_2023_0.05m/01KKYXCZJD3S6ECV0SPVNVJNQD/",
+      "name": "waimakariri-2023-0.05m",
       "title": "Waimakariri 0.05m Urban Aerial Photos (2023)",
       "category": "Urban Aerial Photos",
       "aliases": ["waimakariri-2023-0.1m"],
