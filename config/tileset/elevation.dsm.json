@@ -568,7 +568,7 @@
     },
     {
       "2193": "s3://nz-elevation/wellington/south-wairarapa_2025/dsm_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/south-wairarapa_2025_dsm_1m/01KJP1K9HPPYVFEPF3CJ9GH2VW/",
+      "3857": "s3://linz-basemaps/elevation/3857/south-wairarapa_2025_dsm_1m/01KM3YN39R7DABZATPXWQAJHMF/",
       "name": "south-wairarapa_2025_dsm_1m",
       "title": "Wellington - South Wairarapa LiDAR 1m DSM (2025)",
       "minZoom": 9
