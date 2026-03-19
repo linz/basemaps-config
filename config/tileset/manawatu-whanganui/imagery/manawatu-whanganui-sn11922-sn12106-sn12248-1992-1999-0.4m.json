@@ -12,8 +12,8 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/manawatu-whanganui_sn11922_sn12106_sn12248_1992-1999_0.4m/01KJ9F2PB4HJX3M2RS92DVQYAY/",
-      "3857": "s3://linz-basemaps/3857/manawatu-whanganui_sn11922_sn12106_sn12248_1992-1999_0.4m/01KJ9F2PB31H31XBTK96GGAXJV/",
+      "2193": "s3://linz-basemaps/2193/manawatu-whanganui_sn11922_sn12106_sn12248_1992-1999_0.4m/01KM20RJX0HBZ1B1BZ7TS8PCXX/",
+      "3857": "s3://linz-basemaps/3857/manawatu-whanganui_sn11922_sn12106_sn12248_1992-1999_0.4m/01KM20RJWZT12ABH9HSZC8QXS4/",
       "name": "manawatu-whanganui-sn11922-sn12106-sn12248-1992-1999-0.4m",
       "title": "Manawatū-Whanganui 0.4m SN11922 / SN12106 / SN12248 (1992-1999)",
       "category": "Scanned Aerial Imagery",
