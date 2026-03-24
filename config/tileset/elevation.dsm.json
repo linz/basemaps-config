@@ -579,6 +579,13 @@
       "name": "upper-hutt-city_2025_dsm_1m",
       "title": "Wellington - Upper Hutt City LiDAR 1m DSM (2025)",
       "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/wellington/hutt-city_2025/dsm_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/hutt-city_2025_dsm_1m/01KMEK11ZFZ3XN3S66X74GWC6H/",
+      "name": "hutt-city_2025_dsm_1m",
+      "title": "Wellington - Hutt City LiDAR 1m DSM (2025)",
+      "minZoom": 9
     }
   ],
   "outputs": [
