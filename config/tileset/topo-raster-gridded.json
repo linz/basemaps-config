@@ -65,8 +65,8 @@
       "category": "Topographic"
     },
     {
-      "2193": "s3://linz-basemaps/2193/topo50-new-zealand-mainland/01K69RKJBW3MV9Q3WDSE0JVND3/",
-      "3857": "s3://linz-basemaps/3857/topo50-new-zealand-mainland/01K69RKJZ58K5DDASRJEVRM1QJ/",
+      "2193": "s3://linz-basemaps/2193/topo50-new-zealand-mainland/01KMENAST1Q58XWJS4XZ4GX9SM/",
+      "3857": "s3://linz-basemaps/3857/topo50-new-zealand-mainland/01KMENARXF59J0F085JZKRZ1FF/",
       "name": "nz-topo50-new-zealand-mainland",
       "title": "NZ Topo50 New Zealand Mainland",
       "minZoom": 13,
