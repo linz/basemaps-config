@@ -12,8 +12,8 @@
   "category": "Event",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/hicks-bay_2026_0.085m/01KP1X6X0PVD9WZNEQ3YHT7MXC/",
-      "3857": "s3://linz-basemaps/3857/hicks-bay_2026_0.085m/01KP1X6X0N202Y6M21V88FF575/",
+      "2193": "s3://linz-basemaps/2193/hicks-bay_2026_0.085m/01KP24VS6DH31XZ3X3BE22DD10/",
+      "3857": "s3://linz-basemaps/3857/hicks-bay_2026_0.085m/01KP24WCSHAKC4WG2A7CC53J9M/",
       "name": "hicks-bay-2026-0.085m",
       "title": "Hicks Bay 0.085m Aerial Photos (2026)",
       "category": "Event",
