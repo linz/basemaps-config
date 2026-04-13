@@ -676,12 +676,12 @@
       "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/taupo_2021_0.1m/01KNTK6J48B7ZV786EFQ1H1KV6/",
-      "3857": "s3://linz-basemaps/3857/taupo_2021_0.1m/01KNTK6J4DPEXR8W7RCGAY81EY/",
-      "name": "taupo-2021-0.1m",
-      "title": "Taupō 0.1m Urban Aerial Photos (2021)",
-      "category": "Urban Aerial Photos",
-      "minZoom": 14
+      "2193": "s3://linz-basemaps/2193/taupo_2021_0.15m/01GX7WPF56PRH3N4NHV06BBF73/",
+      "3857": "s3://linz-basemaps/3857/taupo_2021_0.15m/01GX7WPPSD1RZK0JCSYTYW3DJ2/",
+      "name": "taupo-2021-0.15m",
+      "title": "Taupō 0.15m Urban Aerial Photos (2021)",
+      "minZoom": 14,
+      "category": "Urban Aerial Photos"
     },
     {
       "2193": "s3://linz-basemaps/2193/ōtorohanga_urban_2021_0-1m_RGB/01FYWKAJ86W9P7RWM1VB62KD0H/",
@@ -1041,6 +1041,14 @@
       "3857": "s3://linz-basemaps/3857/taupo_2025_0.1m/01KN3262QY75C02PQ815A4ZRFT/",
       "name": "taupo-2025-0.1m",
       "title": "Taupō 0.1m Urban Aerial Photos (2025)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 14
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/taupo_2021_0.1m/01KP2EKQRF7HA55QZMKQ20MWHA/",
+      "3857": "s3://linz-basemaps/3857/taupo_2021_0.1m/01KP2EJVYBAN11HYH2CJTQPK4Y/",
+      "name": "taupo-2021-0.1m",
+      "title": "Taupō 0.1m Urban Aerial Photos (2021)",
       "category": "Urban Aerial Photos",
       "minZoom": 14
     },
