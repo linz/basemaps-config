@@ -741,10 +741,10 @@
       "maxZoom": 14
     },
     {
-      "2193": "s3://linz-basemaps/2193/mackenzie_2023_0.075m/01HFAS3KHGJ416HZ83RAD06806/",
-      "3857": "s3://linz-basemaps/3857/mackenzie_2023_0.075m/01HFASC646P7KCY8Z34H65WWJA/",
-      "name": "mackenzie-2023-0.075m",
-      "title": "Mackenzie 0.075m Urban Aerial Photos (2023)",
+      "2193": "s3://linz-basemaps/2193/mackenzie_2025-2026_0.075m/01KPPK43114ZKJ7CHCE052RB6Q/",
+      "3857": "s3://linz-basemaps/3857/mackenzie_2025-2026_0.075m/01KPPK42ZDK64JVNFT73WR83NZ/",
+      "name": "mackenzie-2025-2026-0.075m",
+      "title": "Mackenzie 0.075m Urban Aerial Photos (2025-2026)",
       "category": "Urban Aerial Photos",
       "minZoom": 14
     },
@@ -1041,14 +1041,6 @@
       "3857": "s3://linz-basemaps/3857/kapiti-coast_2025_0.075m/01KP9JXQCQBKHCVG288NGYW1JQ/",
       "name": "kapiti-coast-2025-0.075m",
       "title": "Kapiti Coast 0.075m Urban Aerial Photos (2025)",
-      "category": "Urban Aerial Photos",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/mackenzie_2025-2026_0.075m/01KPPK43114ZKJ7CHCE052RB6Q/",
-      "3857": "s3://linz-basemaps/3857/mackenzie_2025-2026_0.075m/01KPPK42ZDK64JVNFT73WR83NZ/",
-      "name": "mackenzie-2025-2026-0.075m",
-      "title": "Mackenzie 0.075m Urban Aerial Photos (2025-2026)",
       "category": "Urban Aerial Photos",
       "minZoom": 14
     },
