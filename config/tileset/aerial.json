@@ -180,14 +180,6 @@
       "category": "Event"
     },
     {
-      "2193": "s3://linz-basemaps/2193/wellington_rural_2021_0-3m_RGB/01FB82NZY0ASDQBKT28DSXS8XC/",
-      "3857": "s3://linz-basemaps/3857/wellington_rural_2021_0-3m_RGB/01FB82QKPWEHV0FWN7KBXM6NDM/",
-      "name": "wellington-rural-2021-0.3m",
-      "minZoom": 13,
-      "title": "Wellington 0.3m Rural Aerial Photos (2021)",
-      "category": "Rural Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/west-coast_rural_2016-17_0-3m/01F6P220GYWC836YQ4RRZGSV73/",
       "3857": "s3://linz-basemaps/3857/west-coast_rural_2016-17_0-3m/01ED83VT2T06B1FVXF9P6CCV8C/",
       "name": "west-coast-rural-2016-2017-0.3m",
@@ -408,14 +400,6 @@
       "3857": "s3://linz-basemaps/3857/bay-of-plenty-east_2024-2025_0.2m/01JT49TJZS11F1GESPRCQNMSF7/",
       "name": "bay-of-plenty-east-2024-2025-0.2m",
       "title": "Bay of Plenty East 0.2m Rural Aerial Photos (2024-2025)",
-      "category": "Rural Aerial Photos",
-      "minZoom": 13
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/wellington_2024_0.25m/01JTHWE8VE2GFABX6W6QBSWHW5/",
-      "3857": "s3://linz-basemaps/3857/wellington_2024_0.25m/01JTHWE8V6Q4PAYQ2SA09PV8ZH/",
-      "name": "wellington-2024-0.25m",
-      "title": "Wellington 0.25m Rural Aerial Photos (2024-2025)",
       "category": "Rural Aerial Photos",
       "minZoom": 13
     },
