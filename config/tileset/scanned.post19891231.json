@@ -6,6 +6,33 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
+      "2193": "s3://linz-basemaps/2193/canterbury_sn50584c_2007_0.3m/01KPSMEVN0C556MXCXQS96WC0V/",
+      "3857": "s3://linz-basemaps/3857/canterbury_sn50584c_2007_0.3m/01KPSMK5ZPQ3ZMTWDZX9SCRTQG/",
+      "name": "canterbury-sn50584c-2007-0.3m",
+      "title": "Canterbury 0.3m SN50584c (2007)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/hawkes-bay_sn50529c_2006_0.6m/01KPSMMX9AN3Q290N7SXQ7BCAP/",
+      "3857": "s3://linz-basemaps/3857/hawkes-bay_sn50529c_2006_0.6m/01KPSMJ2T3VMZ8G1SQASHTCQTD/",
+      "name": "hawkes-bay-sn50529c-2006-0.6m",
+      "title": "Hawke's Bay 0.6m SN50529c (2006)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/waikato_sn50496c_2005_0.4m/01KPSMGV6YD7WCBZCA3VQBH77R/",
+      "3857": "s3://linz-basemaps/3857/waikato_sn50496c_2005_0.4m/01KPSMFJM3Y0VMVHRTXA4X8SD3/",
+      "name": "waikato-sn50496c-2005-0.4m",
+      "title": "Waikato 0.4m SN50496c (2005)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
       "2193": "s3://linz-basemaps/2193/northland_snc12835_2005_0.64m/01H8JJWV76DJ7PD2HB3CTCTF20/",
       "3857": "s3://linz-basemaps/3857/northland_snc12835_2005_0.64m/01H8JJWV61MGZN6Y6WM3DDK2FE/",
       "name": "northland-snc12835-2005-0.64m",
@@ -87,6 +114,15 @@
       "maxZoom": 32
     },
     {
+      "2193": "s3://linz-basemaps/2193/manawatu-whanganui_sn50421c_2004_0.6m/01KQ8VCTA74FMZRGNG19EHWSXZ/",
+      "3857": "s3://linz-basemaps/3857/manawatu-whanganui_sn50421c_2004_0.6m/01KQ8VCT9QY5EQ0KTY2DDZGF0D/",
+      "name": "manawatu-whanganui-sn50421c-2004-0.6m",
+      "title": "Manawatū-Whanganui 0.6m SN50421c (2004)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
       "2193": "s3://linz-basemaps/2193/bay-of-plenty_snc50515_2003_0.625m/01H8JA1X42E6644NF8VVXKBV4B/",
       "3857": "s3://linz-basemaps/3857/bay-of-plenty_snc50515_2003_0.625m/01H8JA1QH0SHD8CDB0VG97EM6H/",
       "name": "bay-of-plenty-snc50515-2003-0.625m",
@@ -127,6 +163,15 @@
       "3857": "s3://linz-basemaps/3857/manawatu-whanganui_snc12781_2003_0.75m/01H8JFS8AZJB4Z7F6MBQEC46TG/",
       "name": "manawatu-whanganui-snc12781-2003-0.75m",
       "title": "Manawatū-Whanganui 0.75m SNC12781 (2003)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/manawatu-whanganui_sn50216c_2003_0.6m/01KQ8VCTA9WNNEKJAZFMWEB6M9/",
+      "3857": "s3://linz-basemaps/3857/manawatu-whanganui_sn50216c_2003_0.6m/01KQ8VCTAA70JG6QE9ASP1E1WJ/",
+      "name": "manawatu-whanganui-sn50216c-2003-0.6m",
+      "title": "Manawatū-Whanganui 0.6m SN50216c (2003)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32
