@@ -1,0 +1,19 @@
+{
+  "type": "raster",
+  "id": "ts_wellington-2021-0.3m",
+  "title": "Wellington 0.3m Rural Aerial Photos (2021)",
+  "background": "#00000000",
+  "category": "Rural Aerial Photos",
+  "aliases": ["wellington-2021-0.3m"],
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/wellington_rural_2021_0-3m_RGB/01FB82NZY0ASDQBKT28DSXS8XC/",
+      "3857": "s3://linz-basemaps/3857/wellington_rural_2021_0-3m_RGB/01FB82QKPWEHV0FWN7KBXM6NDM/",
+      "name": "wellington-rural-2021-0.3m",
+      "title": "Wellington 0.3m Rural Aerial Photos (2021)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+	  "maxZoom": 32
+    }
+  ]
+}
