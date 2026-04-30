@@ -897,6 +897,15 @@
       "maxZoom": 32
     },
     {
+      "2193": "s3://linz-basemaps/2193/northland_sn12082_1993_0.4m/01KQDQQC9XX5E5XKXCT9DSAN45/",
+      "3857": "s3://linz-basemaps/3857/northland_sn12082_1993_0.4m/01KQDQQBD3EH2F3SD4BXGS3PQH/",
+      "name": "northland-sn12082-1993-0.4m",
+      "title": "Northland 0.4m SN12082 (1993)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
       "2193": "s3://linz-basemaps/2193/auckland_sn9211_1992_0.4m/01H8J8R1ES1F2Y7X460FEVK1TN/",
       "3857": "s3://linz-basemaps/3857/auckland_sn9211_1992_0.4m/01H8J8R16Y4MG3M3PQZSCZ3C60/",
       "name": "auckland-sn9211-1992-0.4m",
