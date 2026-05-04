@@ -83,7 +83,7 @@
       "title": "Otago - Dunedin Coastal LiDAR 1m DEM (2025)",
       "name": "dunedin_2025_dem_1m",
       "minZoom": 9
-    }
+    },
   ],
   "outputs": [
     {
