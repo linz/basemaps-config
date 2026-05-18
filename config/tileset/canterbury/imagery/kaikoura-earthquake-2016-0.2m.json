@@ -12,8 +12,8 @@
   "category": "Event",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/kaikoura-earthquake_2016_0.2m/01KRM9ZSCBYJG0PXGBW36ASSCN/",
-      "3857": "s3://linz-basemaps/3857/kaikoura-earthquake_2016_0.2m/01KRM9Z7YA5XJNMQKXE5E4B3VT/",
+      "2193": "s3://linz-basemaps/2193/kaikoura-earthquake_2016_0.2m/01KRWFADPQ837G7841D3HZA0CF/",
+      "3857": "s3://linz-basemaps/3857/kaikoura-earthquake_2016_0.2m/01KRWFAWD3P6DAEJSRJA9EXY60/",
       "name": "kaikoura-earthquake-2016-0.2m",
       "title": "Kaikōura Earthquake 0.2m Aerial Photos (2016)",
       "category": "Event",
