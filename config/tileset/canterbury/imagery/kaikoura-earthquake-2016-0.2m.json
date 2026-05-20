@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_kaikoura-earthquake-2016-0.2m",
+  "name": "kaikoura-earthquake-2016-0.2m",
+  "title": "Kaikōura Earthquake 0.2m Aerial Photos (2016)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Event",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/kaikoura-earthquake_2016_0.2m/01KRWFADPQ837G7841D3HZA0CF/",
+      "3857": "s3://linz-basemaps/3857/kaikoura-earthquake_2016_0.2m/01KRWFAWD3P6DAEJSRJA9EXY60/",
+      "name": "kaikoura-earthquake-2016-0.2m",
+      "title": "Kaikōura Earthquake 0.2m Aerial Photos (2016)",
+      "category": "Event",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
