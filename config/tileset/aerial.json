@@ -436,8 +436,8 @@
       "minZoom": 13
     },
     {
-      "2193": "s3://linz-basemaps/2193/wellington_2025_0.2m/01KQ8HXAD0WRY422184AGGAF5R/",
-      "3857": "s3://linz-basemaps/3857/wellington_2025_0.2m/01KQ8HXACWTBSZ1SYGXS8K1X98/",
+      "2193": "s3://linz-basemaps/2193/wellington_2025_0.2m/01KT8FZSHSE1EPR67XDDPX756S/",
+      "3857": "s3://linz-basemaps/3857/wellington_2025_0.2m/01KT8FZSGDPVP31XAEWWA4R0D7/",
       "name": "wellington-2025-0.2m",
       "title": "Wellington 0.2m Rural Aerial Photos (2025-2026)",
       "category": "Rural Aerial Photos",
