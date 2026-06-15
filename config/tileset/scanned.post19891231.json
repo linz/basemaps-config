@@ -663,6 +663,15 @@
       "maxZoom": 32
     },
     {
+      "2193": "s3://linz-basemaps/2193/tasman_sn12391a_1996-2000_0.4m/01KV4HYPV2KEF7FW9RQJKFMD7A/",
+      "3857": "s3://linz-basemaps/3857/tasman_sn12391a_1996-2000_0.4m/01KV4HYNY8RQR9ZT4F4YEPADWA/",
+      "name": "tasman-sn12391a-1996-2000-0.4m",
+      "title": "Tasman 0.4m SN12391A (1996-2000)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },  
+    {
       "2193": "s3://linz-basemaps/2193/marlborough_sn9586_1996_0.32m/01H8JHGBMH29KDA07NRS7VFS2K/",
       "3857": "s3://linz-basemaps/3857/marlborough_sn9586_1996_0.32m/01H8JHGBKW6SQN9346F1MHJW89/",
       "name": "marlborough-sn9586-1996-0.32m",
