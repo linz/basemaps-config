@@ -12,8 +12,8 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/northland_sn50189c_2003-2004_0.48m/01KV4T1NHD2VZ6114P5CGTT0FN/",
-      "3857": "s3://linz-basemaps/3857/northland_sn50189c_2003-2004_0.48m/01KV4T1NHBXJBNSM13MFH2V9G4/",
+      "2193": "s3://linz-basemaps/2193/northland_sn50189c_2003-2004_0.48m/01KV7BJNC4V9N0AFFCZKPTVJA5/",
+      "3857": "s3://linz-basemaps/3857/northland_sn50189c_2003-2004_0.48m/01KV7BJNC8H5H8398PB4ZY5ZDB/",
       "name": "northland-sn50189c-2003-2004-0.48m",
       "title": "Northland 0.48m SN50189c (2003-2004)",
       "category": "Scanned Aerial Imagery",
