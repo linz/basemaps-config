@@ -670,7 +670,7 @@
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32
-    },  
+    },
     {
       "2193": "s3://linz-basemaps/2193/marlborough_sn9586_1996_0.32m/01H8JHGBMH29KDA07NRS7VFS2K/",
       "3857": "s3://linz-basemaps/3857/marlborough_sn9586_1996_0.32m/01H8JHGBKW6SQN9346F1MHJW89/",
