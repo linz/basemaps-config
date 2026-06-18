@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_waipa-2026-0.1m",
+  "name": "waipa-2026-0.1m",
+  "title": "Waipa 0.1m Urban Aerial Photos (2026) - Draft",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Urban Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/waipa_2026_0.1m/01KVC8303Y45BA9PG4WP23NGT3/",
+      "3857": "s3://linz-basemaps/3857/waipa_2026_0.1m/01KVC8303YXJAVDMYAHTKJACGF/",
+      "name": "waipa-2026-0.1m",
+      "title": "Waipa 0.1m Urban Aerial Photos (2026) - Draft",
+      "category": "Urban Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
