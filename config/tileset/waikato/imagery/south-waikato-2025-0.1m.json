@@ -12,8 +12,8 @@
   "category": "Urban Aerial Photos",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/south-waikato_2025_0.1m/01KTMZBT05AYAYPZ4HTM9BM4YK/",
-      "3857": "s3://linz-basemaps/3857/south-waikato_2025_0.1m/01KTMZBR04XN4MYG8CS76Z0CPY/",
+      "2193": "s3://linz-basemaps/2193/south-waikato_2025_0.1m/01KVYDG6EA4YK78MVPEH3CFNYM/",
+      "3857": "s3://linz-basemaps/3857/south-waikato_2025_0.1m/01KVYDG6FJ9EH5H7ZTEYY9V2CP/",
       "name": "south-waikato-2025-0.1m",
       "title": "South Waikato 0.1m Urban Aerial Photos (2025) - Draft",
       "category": "Urban Aerial Photos",
