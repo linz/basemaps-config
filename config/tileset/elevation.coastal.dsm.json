@@ -89,6 +89,12 @@
       "title": "Tasman - Golden Bay Coastal LiDAR 1m DSM (2025)",
       "name": "golden-bay_2025_dsm_1m",
       "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-coastal/west-coast/okuru_2026/dsm_1m/2193/",
+      "title": "West Coast - Okuru Coastal LiDAR 1m DSM (2026)",
+      "name": "okuru_2026_dsm_1m",
+      "minZoom": 9
     }
   ],
   "outputs": [
