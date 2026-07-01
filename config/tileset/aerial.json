@@ -444,6 +444,14 @@
       "minZoom": 13
     },
     {
+      "2193": "s3://linz-basemaps/2193/west-coast_2024-2026_0.2m/01KWB88RN1J6NVJVBXYF4G9HBP/",
+      "3857": "s3://linz-basemaps/3857/west-coast_2024-2026_0.2m/01KWB88RN2MC28183H6FBGRYZJ/",
+      "name": "west-coast-2024-2026-0.2m",
+      "title": "West Coast 0.2m Rural Aerial Photos (2024-2026)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 13
+    },
+    {
       "2193": "s3://linz-basemaps/2193/auckland_2024_0.075m/01K0DKF5JG9YEB2479X5TH7ZB7/",
       "3857": "s3://linz-basemaps/3857/auckland_2024_0.075m/01K0DGBBAR0GMS3JWS7Z66MVRK/",
       "name": "auckland-2024-0.075m",
@@ -737,22 +745,6 @@
       "3857": "s3://linz-basemaps/3857/hurunui_2023_0.075m/01HFAS0PCJPDPBXD5MQFCG13KX/",
       "name": "hurunui-2023-0.075m",
       "title": "Hurunui 0.075m Urban Aerial Photos (2023)",
-      "category": "Urban Aerial Photos",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/west-coast_2016_0.1m/01HKNRHN9R9BA7WGTAWYFP925B/",
-      "3857": "s3://linz-basemaps/3857/west-coast_2016_0.1m/01HKNRHN9F6JNR0V3G7E2MA5W2/",
-      "name": "west-coast-2016-0.1m",
-      "title": "West Coast 0.1m Urban Aerial Photos (2016)",
-      "category": "Urban Aerial Photos",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/buller_2020_0.2m/01HKP2QVP1KWJN49YX2HSVC9X0/",
-      "3857": "s3://linz-basemaps/3857/buller_2020_0.2m/01HKP2QVP16PYWSKR50WFVVZM1/",
-      "name": "buller-2020-0.2m",
-      "title": "Buller 0.2m Urban Aerial Photos (2020)",
       "category": "Urban Aerial Photos",
       "minZoom": 14
     },
