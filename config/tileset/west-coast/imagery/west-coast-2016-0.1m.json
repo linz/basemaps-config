@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_west-coast-2016-0.1m",
+  "name": "west-coast-2016-0.1m",
+  "title": "West Coast 0.1m Urban Aerial Photos (2016)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Urban Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/west-coast_2016_0.1m/01HKNRHN9R9BA7WGTAWYFP925B/",
+      "3857": "s3://linz-basemaps/3857/west-coast_2016_0.1m/01HKNRHN9F6JNR0V3G7E2MA5W2/",
+      "name": "west-coast-2016-0.1m",
+      "title": "West Coast 0.1m Urban Aerial Photos (2016)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
