@@ -346,7 +346,7 @@
       "title": "Waikato 0.3m Rural Aerial Photos (2023-2024)",
       "category": "Rural Aerial Photos",
       "minZoom": 13
-    },  
+    },
     {
       "2193": "s3://linz-basemaps/2193/gisborne_2024-2025_0.2m/01JMXGT2HRMWKVE7XRDB8D4ADW/",
       "3857": "s3://linz-basemaps/3857/gisborne_2024-2025_0.2m/01JMXGT7FJ5FWVC1KBJ66K7SCW/",
@@ -394,7 +394,7 @@
       "title": "Otago 0.2m Rural Aerial Photos (2025)",
       "category": "Rural Aerial Photos",
       "minZoom": 13
-    },  
+    },
     {
       "2193": "s3://linz-basemaps/2193/bay-of-plenty-east_2024-2025_0.2m/01JT49TJZNAE7C7NHAM69WHGW1/",
       "3857": "s3://linz-basemaps/3857/bay-of-plenty-east_2024-2025_0.2m/01JT49TJZS11F1GESPRCQNMSF7/",
