@@ -1,0 +1,25 @@
+{
+  "type": "raster",
+  "id": "ts_hawkes-bay-rural-2021-2022-0.3m",
+  "name": "hawkes-bay-rural-2021-2022-0.3m",
+  "title": "Hawke's Bay 0.3m Rural Aerial Photos (2021-2022)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "aliases": ["hawkes-bay-2021-2022-0.3m"],
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/hawkes-bay_rural_2021-2022_0-3m_RGB/01GBPH2Y0Q4PENH4T22PGJB521/",
+      "3857": "s3://linz-basemaps/3857/hawkes-bay_rural_2021-2022_0-3m_RGB/01GBPH42RKHGCSHRB3EMZVZD91/",
+      "name": "hawkes-bay-rural-2021-2022-0.3m",
+      "title": "Hawke's Bay 0.3m Rural Aerial Photos (2021-2022)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
