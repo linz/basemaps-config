@@ -67,6 +67,18 @@
       "minZoom": 9
     },
     {
+      "2193": "s3://nz-coastal/gisborne/pariokonini-point-to-young-nicks_2025/dsm_1m/2193/",
+      "title": "Gisborne - Pariokonini Point to Young Nicks Coastal LiDAR 1m DSM (2025)",
+      "name": "pariokonini-point-to-young-nicks_2025_dsm_1m",
+      "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-coastal/gisborne/anaura-bay-to-tolaga-bay_2025/dsm_1m/2193/",
+      "title": "Gisborne - Anaura Bay to Tolaga Bay Coastal LiDAR 1m DSM (2025)",
+      "name": "anaura-bay-to-tolaga-bay_2025_dsm_1m",
+      "minZoom": 9
+    },
+    {
       "2193": "s3://nz-coastal/nelson/pepin-island-and-rotokura-cable-bay_2025/dsm_1m/2193/",
       "title": "Nelson - Pepin Island and Rotokura/Cable Bay Coastal LiDAR 1m DSM (2025)",
       "name": "pepin-island-and-rotokura-cable-bay_2025_dsm_1m",
