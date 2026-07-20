@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_waikato-sn192-1941-1954-0.4m",
+  "name": "waikato-sn192-1941-1954-0.4m",
+  "title": "Waikato 0.4m SN192 (1941-1954)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/waikato_sn192_1941-1954_0.4m/01KXCFDPBMMB727C3ZRFRHJPWJ/",
+      "3857": "s3://linz-basemaps/3857/waikato_sn192_1941-1954_0.4m/01KXCFDP1E7RHRR2KV7CMB2E7A/",
+      "name": "waikato-sn192-1941-1954-0.4m",
+      "title": "Waikato 0.4m SN192 (1941-1954)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
