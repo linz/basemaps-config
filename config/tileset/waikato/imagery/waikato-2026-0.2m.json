@@ -2,7 +2,7 @@
   "type": "raster",
   "id": "ts_waikato-2026-0.2m",
   "name": "waikato-2026-0.2m",
-  "title": "Waikato 0.2m Rural Aerial Photos (2026) - Draft",
+  "title": "Waikato 0.2m Rural Aerial Photos (2025-2026) - Draft",
   "background": {
     "r": 0,
     "g": 0,
@@ -12,10 +12,10 @@
   "category": "Rural Aerial Photos",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/waikato_2026_0.2m/01KTQ9MNR1P7T7Z3EH2APKM8NZ/",
-      "3857": "s3://linz-basemaps/3857/waikato_2026_0.2m/01KTQ9MNR143F44S82MNVGM9R5/",
+      "2193": "s3://linz-basemaps/2193/waikato_2026_0.2m/01KY15DRPPWQJAJ2Q2TE7QRPXN/",
+      "3857": "s3://linz-basemaps/3857/waikato_2026_0.2m/01KY15DPZM3GE2Q8EZG1785QDN/",
       "name": "waikato-2026-0.2m",
-      "title": "Waikato 0.2m Rural Aerial Photos (2026) - Draft",
+      "title": "Waikato 0.2m Rural Aerial Photos (2025-2026) - Draft",
       "category": "Rural Aerial Photos",
       "minZoom": 0,
       "maxZoom": 32
