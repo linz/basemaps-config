@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_southland-sn11887a-1991-0.15m",
+  "name": "southland-sn11887a-1991-0.15m",
+  "title": "Southland 0.15m SN11887A (1991)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/southland_sn11887a_1991_0.15m/01KZ2QYSYSBVTR6WWP2R31V5BA/",
+      "3857": "s3://linz-basemaps/3857/southland_sn11887a_1991_0.15m/01KZ2QYV4SNHT4F7T4WMQZ8Y9G/",
+      "name": "southland-sn11887a-1991-0.15m",
+      "title": "Southland 0.15m SN11887A (1991)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
