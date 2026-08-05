@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_whangaruru-2026-0.1m",
+  "name": "whangaruru-2026-0.1m",
+  "title": "Whangaruru Upper North Island Severe Weather 0.1m Aerial Photos (2026)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Event",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/whangaruru_2026_0.1m/01KZ7HV3C3C9WY1AYRT206XD8H/",
+      "3857": "s3://linz-basemaps/3857/whangaruru_2026_0.1m/01KZ7HV1NH4KJPPWF51ATES9TY/",
+      "name": "whangaruru-2026-0.1m",
+      "title": "Whangaruru Upper North Island Severe Weather 0.1m Aerial Photos (2026)",
+      "category": "Event",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
