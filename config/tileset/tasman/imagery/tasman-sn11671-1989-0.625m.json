@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_tasman-sn11671-1989-0.625m",
+  "name": "tasman-sn11671-1989-0.625m",
+  "title": "Tasman 0.625m SN11671 (1989)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/tasman_sn11671_1989_0.625m/01KZA0W66RZRXHY13M0J8XSRGS/",
+      "3857": "s3://linz-basemaps/3857/tasman_sn11671_1989_0.625m/01KZA0W66HG74JFYZNSK05DJ3Q/",
+      "name": "tasman-sn11671-1989-0.625m",
+      "title": "Tasman 0.625m SN11671 (1989)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
