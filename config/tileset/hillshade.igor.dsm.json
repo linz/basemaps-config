@@ -7,15 +7,15 @@
   "category": "Elevation",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/new-zealand/01KB3J7Q92JGW5WBDQ0TP7897V/",
-      "3857": "s3://linz-basemaps/3857/new-zealand/01KB3J7R93HEN0FVS00CRY0BSS/",
+      "2193": "s3://linz-basemaps/2193/new-zealand/01KGDTKX1VN1EZES5D3MWYZ5KT/",
+      "3857": "s3://linz-basemaps/3857/new-zealand/01KGDTKXCA47KP2VZ9C2RZMY4P/",
       "title": "New Zealand DSM Hillshade Igor Overview",
       "name": "new-zealand_dsm_hillshade_igor_overview",
       "maxZoom": 10
     },
     {
-      "2193": "s3://nz-elevation/new-zealand/new-zealand/dsm-hillshade-igor/2193/",
-      "3857": "s3://linz-basemaps/3857/new-zealand/01KB3J3ZRYKCZ9VAHDQ9T4S0ZC/",
+      "2193": "s3://linz-basemaps/2193/new-zealand/01KGDTJV2GCYW0FR6ZSG433873/",
+      "3857": "s3://linz-basemaps/3857/new-zealand/01KGDTJT9WD6Z71FRA845S5D4C/",
       "title": "New Zealand DSM Hillshade Igor",
       "name": "new-zealand_dsm_hillshade_igor",
       "minZoom": 11
@@ -35,6 +35,23 @@
         "g": 255,
         "b": 255,
         "alpha": 1
+      },
+      "default": true
+    },
+    {
+      "title": "Color ramp (Opacity)",
+      "name": "color-ramp-opacity",
+      "pipeline": [
+        {
+          "type": "color-ramp",
+          "ramp": "0 0 0 0 255\n255 0 0 0 0"
+        }
+      ],
+      "background": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "alpha": 0
       }
     }
   ]

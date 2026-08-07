@@ -7,15 +7,15 @@
   "category": "Elevation",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/new-zealand/01KB3J6F0WWXK118JN1FZ2EA9R/",
-      "3857": "s3://linz-basemaps/3857/new-zealand/01KB3J6EM3GZXG25B81SPA9Y0G/",
+      "2193": "s3://linz-basemaps/2193/new-zealand/01KGDTNMAD5Y2Z8ZTDBGQHPCF6/",
+      "3857": "s3://linz-basemaps/3857/new-zealand/01KGDTNMA9W3559386XVHPQC5H/",
       "title": "New Zealand DEM Hillshade Overview",
       "name": "new-zealand_dem_hillshade_overview",
       "maxZoom": 10
     },
     {
-      "2193": "s3://nz-elevation/new-zealand/new-zealand/dem-hillshade/2193/",
-      "3857": "s3://linz-basemaps/3857/new-zealand/01KB3J4H9TGEQMT527T0K3FG7F/",
+      "2193": "s3://linz-basemaps/2193/new-zealand/01KGDTGXT7E0MSA1YF93KVCTKW/",
+      "3857": "s3://linz-basemaps/3857/new-zealand/01KGDTGXT7QTC2W91QVEV7SNJA/",
       "title": "New Zealand DEM Hillshade",
       "name": "new-zealand_dem_hillshade",
       "minZoom": 11
@@ -35,6 +35,23 @@
         "g": 182,
         "b": 182,
         "alpha": 1
+      },
+      "default": true
+    },
+    {
+      "title": "Color ramp (Opacity)",
+      "name": "color-ramp-opacity",
+      "pipeline": [
+        {
+          "type": "color-ramp",
+          "ramp": "0 0 0 0 255\n255 0 0 0 0"
+        }
+      ],
+      "background": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "alpha": 0
       }
     }
   ]
