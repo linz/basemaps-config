@@ -924,6 +924,15 @@
       "maxZoom": 32
     },
     {
+      "2193": "s3://linz-basemaps/2193/marlborough_sn12077_1993_0.6m/01KZ8492VEF3N18RJKK1TRMJE9/",
+      "3857": "s3://linz-basemaps/3857/marlborough_sn12077_1993_0.6m/01KZ8492GTGA116W5WJPYVMB8J/",
+      "name": "marlborough-sn12077-1993-0.6m",
+      "title": "Marlborough 0.6m SN12077 (1993)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
       "2193": "s3://linz-basemaps/2193/auckland_sn9211_1992_0.4m/01H8J8R1ES1F2Y7X460FEVK1TN/",
       "3857": "s3://linz-basemaps/3857/auckland_sn9211_1992_0.4m/01H8J8R16Y4MG3M3PQZSCZ3C60/",
       "name": "auckland-sn9211-1992-0.4m",
@@ -968,6 +977,33 @@
       "minZoom": 0,
       "maxZoom": 32
     },
+    {
+      "2193": "s3://linz-basemaps/2193/manawatu-whanganui_sn11895_1991_0.3m/01KZ4X70S6PJXTFXP88KCRYZPS/",
+      "3857": "s3://linz-basemaps/3857/manawatu-whanganui_sn11895_1991_0.3m/01KZ4X70S764BK8TWFJ4GFK3R1/",
+      "name": "manawatu-whanganui-sn11895-1991-0.3m",
+      "title": "Manawatū-Whanganui 0.3m SN11895 (1991)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/southland_sn11887b_1991_0.3m/01KZ2TR6K5YKG96ZV9N3FH5YEB/",
+      "3857": "s3://linz-basemaps/3857/southland_sn11887b_1991_0.3m/01KZ2TR6KMWTS0X50E0XH0MMEJ/",
+      "name": "southland-sn11887b-1991-0.3m",
+      "title": "Southland 0.3m SN11887B (1991)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/southland_sn11887a_1991_0.15m/01KZ2QYSYSBVTR6WWP2R31V5BA/",
+      "3857": "s3://linz-basemaps/3857/southland_sn11887a_1991_0.15m/01KZ2QYV4SNHT4F7T4WMQZ8Y9G/",
+      "name": "southland-sn11887a-1991-0.15m",
+      "title": "Southland 0.15m SN11887A (1991)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },    
     {
       "2193": "s3://linz-basemaps/2193/waikato_sn9124_1990-1991_0.48m/01H8JP0KG5642BF5PFP2737HD0/",
       "3857": "s3://linz-basemaps/3857/waikato_sn9124_1990-1991_0.48m/01H8JP0KFZ1VN0KF2HKR2G4GTP/",
