@@ -1032,6 +1032,15 @@
       "maxZoom": 32
     },
     {
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_sn8736_1987_0.2m/01KBX9N8K0E6D4H3T5SF0JT0GM/",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_sn8736_1987_0.2m/01KBX9N8JR1KNDVSG7HSTB97BR/",
+      "name": "bay-of-plenty-sn8736-1987-0.2m",
+      "title": "Bay of Plenty 0.2m SN8736 (1987)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
       "2193": "s3://linz-basemaps/2193/auckland_waikato_sn8772_1987-1988_0.375m/01H8J8R64E4FPBHR3NR913XPDJ/",
       "3857": "s3://linz-basemaps/3857/auckland_waikato_sn8772_1987-1988_0.375m/01H8J8R67E85JMKT8V72CB4CYB/",
       "name": "auckland-waikato-sn8772-1987-1988-0.375m",
