@@ -375,6 +375,15 @@
       "maxZoom": 32
     },
     {
+      "2193": "s3://linz-basemaps/2193/otago_sn8040_1982_0.375m/01KZ83H70A8TH8SFHEMJZYGSR3/",
+      "3857": "s3://linz-basemaps/3857/otago_sn8040_1982_0.375m/01KZ83H78PP8SYWH1MKJ68A7DM/",
+      "name": "otago-sn8040-1982-0.375m",
+      "title": "Otago 0.375m SN8040 (1982)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
       "2193": "s3://linz-basemaps/2193/northland_auckland_sn8104_1982-1983_0.4m/01H8JJ5ETCC5DM0HZGBWPNT0RW/",
       "3857": "s3://linz-basemaps/3857/northland_auckland_sn8104_1982-1983_0.4m/01H8JJEGJ98ZNQFT973TRRZHV0/",
       "name": "northland-auckland-sn8104-1982-1983-0.4m",
@@ -1023,6 +1032,15 @@
       "maxZoom": 32
     },
     {
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_sn8736_1987_0.2m/01KBX9N8K0E6D4H3T5SF0JT0GM/",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_sn8736_1987_0.2m/01KBX9N8JR1KNDVSG7HSTB97BR/",
+      "name": "bay-of-plenty-sn8736-1987-0.2m",
+      "title": "Bay of Plenty 0.2m SN8736 (1987)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
       "2193": "s3://linz-basemaps/2193/auckland_waikato_sn8772_1987-1988_0.375m/01H8J8R64E4FPBHR3NR913XPDJ/",
       "3857": "s3://linz-basemaps/3857/auckland_waikato_sn8772_1987-1988_0.375m/01H8J8R67E85JMKT8V72CB4CYB/",
       "name": "auckland-waikato-sn8772-1987-1988-0.375m",
@@ -1162,6 +1180,15 @@
       "3857": "s3://linz-basemaps/3857/waikato_sn11654_1989_0.625m/01KG0WA1FSEP5WCA0DGESRW8GM/",
       "name": "waikato-sn11654-1989-0.625m",
       "title": "Waikato 0.625m SN11654 (1989)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/tasman_sn11671_1989_0.625m/01KZA0W66RZRXHY13M0J8XSRGS/",
+      "3857": "s3://linz-basemaps/3857/tasman_sn11671_1989_0.625m/01KZA0W66HG74JFYZNSK05DJ3Q/",
+      "name": "tasman-sn11671-1989-0.625m",
+      "title": "Tasman 0.625m SN11671 (1989)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32
