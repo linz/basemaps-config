@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_waikato-taranaki-sn1889-1965-1975-1m",
+  "name": "waikato-taranaki-sn1889-1965-1975-1m",
+  "title": "Waikato / Taranaki 1m SN1889 (1965-1975)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/waikato_taranaki_sn1889_1965-1975_1m/01KZSW9TR3GXY03SC5H20792N1/",
+      "3857": "s3://linz-basemaps/3857/waikato_taranaki_sn1889_1965-1975_1m/01KZSW9TRT1KWCBTPF5TB58HNB/",
+      "name": "waikato-taranaki-sn1889-1965-1975-1m",
+      "title": "Waikato / Taranaki 1m SN1889 (1965-1975)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
