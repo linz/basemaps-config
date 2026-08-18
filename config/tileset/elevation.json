@@ -606,6 +606,13 @@
       "name": "hutt-city_2025_dem_1m",
       "title": "Wellington - Hutt City LiDAR 1m DEM (2025)",
       "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/manawatu-whanganui/horowhenua_2025/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/horowhenua_2025_dem_1m/01M0BH60MZJ1ZXSC0KX9CDKWB1/",
+      "name": "horowhenua_2025_dem_1m",
+      "title": "Manawatū-Whanganui - Horowhenua LiDAR 1m DEM (2025)",
+      "minZoom": 9
     }
   ],
   "outputs": [
