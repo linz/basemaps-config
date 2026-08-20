@@ -589,7 +589,7 @@
     },
     {
       "2193": "s3://nz-elevation/manawatu-whanganui/horowhenua_2025/dsm_1m/2193/",
-      "3857": "s3://linz-basemaps/elevation/3857/horowhenua_2025_dsm_1m/01M0BH6CDN6080M6BZ59Y1R5K5/",
+      "3857": "s3://linz-basemaps/elevation/3857/horowhenua_2025_dsm_1m/01M0EEZMX73JFHEM7FF87JAGSB/",
       "name": "horowhenua_2025_dsm_1m",
       "title": "Manawatū-Whanganui - Horowhenua LiDAR 1m DSM (2025)",
       "minZoom": 9
