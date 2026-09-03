@@ -1,0 +1,9 @@
+{
+    "extends": "@linzjs/style/tsconfig.base.json",
+    "compilerOptions": {
+      "lib": ["DOM", "ES2020"],
+      "rootDir": "src",
+      "outDir": "build"
+    }
+  }
+  
