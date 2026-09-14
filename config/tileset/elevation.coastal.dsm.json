@@ -119,6 +119,12 @@
       "title": "West Coast - Okuru Coastal LiDAR 1m DSM (2026)",
       "name": "okuru_2026_dsm_1m",
       "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-coastal/southland/toetoes-harbour_2026/dsm_1m/2193/",
+      "title": "Southland - Toetoes Harbour Coastal LiDAR 1m DSM (2026)",
+      "name": "toetoes-harbour_2026_dsm_1m",
+      "minZoom": 9
     }
   ],
   "outputs": [
