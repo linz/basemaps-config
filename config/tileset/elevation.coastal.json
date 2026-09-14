@@ -131,6 +131,12 @@
       "title": "West Coast - Okuru Coastal LiDAR 1m DEM (2026)",
       "name": "okuru_2026_dem_1m",
       "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-coastal/otago/taieri-mouth_2026/dem_1m/2193/",
+      "title": "Otago - Taieri Mouth Coastal LiDAR 1m DEM (2026)",
+      "name": "taieri-mouth_2026_dem_1m",
+      "minZoom": 9
     }
   ],
   "outputs": [
