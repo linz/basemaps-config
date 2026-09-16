@@ -93,7 +93,7 @@
     {
       "2193": "s3://nz-coastal/wellington/wellington-harbour-port-nicholson_2025-2026/dsm_1m/2193/",
       "title": "Wellington Harbour / Port Nicholson Coastal LiDAR 1m DSM (2025-2026)",
-      "name": "wellington-harbour-port-nicholson_2025-2026_dsm_1",
+      "name": "wellington-harbour-port-nicholson_2025-2026_dsm_1m",
       "minZoom": 9
     },
     {
