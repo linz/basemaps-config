@@ -620,6 +620,13 @@
       "name": "hamilton_2025_dem_1m",
       "title": "Waikato - Hamilton LiDAR 1m DEM (2025)",
       "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/mackenzie_2026/dem_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/mackenzie_2026_dem_1m/01M2M46D4W37M037FMZY2TENKZ/",
+      "name": "mackenzie_2026_dem_1m",
+      "title": "Canterbury - Mackenzie LiDAR 1m DEM (2026)",
+      "minZoom": 9
     }
   ],
   "outputs": [
