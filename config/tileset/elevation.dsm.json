@@ -600,6 +600,13 @@
       "name": "hamilton_2025_dsm_1m",
       "title": "Waikato - Hamilton LiDAR 1m DSM (2025)",
       "minZoom": 9
+    },
+    {
+      "2193": "s3://nz-elevation/canterbury/mackenzie_2026/dsm_1m/2193/",
+      "3857": "s3://linz-basemaps/elevation/3857/mackenzie_2026_dsm_1m/01M2M46R7BMH5NYRK73RFRWHS4/",
+      "name": "mackenzie_2026_dsm_1m",
+      "title": "Canterbury - Mackenzie LiDAR 1m DSM (2026)",
+      "minZoom": 9
     }
   ],
   "outputs": [
