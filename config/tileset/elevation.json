@@ -626,6 +626,9 @@
       "3857": "s3://linz-basemaps/elevation/3857/mackenzie_2026_dem_1m/01M2M46D4W37M037FMZY2TENKZ/",
       "name": "mackenzie_2026_dem_1m",
       "title": "Canterbury - Mackenzie LiDAR 1m DEM (2026)",
+      "minZoom": 9
+    },
+    {
       "2193": "s3://nz-elevation/canterbury/waimate_2026/dem_1m/2193/",
       "3857": "s3://linz-basemaps/elevation/3857/waimate_2026_dem_1m/01M2M4MST8CHSD42G3Q11KW4XE/",
       "name": "waimate_2026_dem_1m",
