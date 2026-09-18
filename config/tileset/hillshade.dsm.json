@@ -7,15 +7,15 @@
   "category": "Elevation",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/new-zealand/01KZZA7JH7TYX89K91NW4D5XT2/",
-      "3857": "s3://linz-basemaps/3857/new-zealand/01KZZA7JKZ2MFVVPSG8Y7Q6DMP/",
+      "2193": "s3://linz-basemaps/2193/new-zealand/01M2S6FKEBYQPDGZWQH7FMR2VC/",
+      "3857": "s3://linz-basemaps/3857/new-zealand/01M2S6FRGT1D8DBVYAJ381SRJH/",
       "title": "New Zealand DSM Hillshade Overview",
       "name": "new-zealand_dsm_hillshade_overview",
       "maxZoom": 10
     },
     {
-      "2193": "s3://linz-basemaps/2193/new-zealand/01KZZA7JFW7J14RZ8N2C7Z2N5F/",
-      "3857": "s3://linz-basemaps/3857/new-zealand/01KZZA7JFP6NSGPZ0T04JMVH1X/",
+      "2193": "s3://linz-basemaps/2193/new-zealand/01M2S6FKEG2862WP1YQZAWMP0G/",
+      "3857": "s3://linz-basemaps/3857/new-zealand/01M2S6FPVNQJSA8XZAEQ70SFKM/",
       "title": "New Zealand DSM Hillshade",
       "name": "new-zealand_dsm_hillshade",
       "minZoom": 11
