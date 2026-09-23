@@ -127,6 +127,12 @@
       "minZoom": 9
     },
     {
+      "2193": "s3://nz-coastal/west-coast/jackson-bay-okahu_2026/dsm_1m/2193/",
+      "title": "West Coast - Jackson Bay/Okahu Coastal LiDAR 1m DSM (2026)",
+      "name": "jackson-bay-okahu_2026_dsm_1m",
+      "minZoom": 9
+    },
+    {
       "2193": "s3://nz-coastal/otago/taieri-mouth_2026/dsm_1m/2193/",
       "title": "Otago - Taieri Mouth Coastal LiDAR 1m DSM (2026)",
       "name": "taieri-mouth_2026_dsm_1m",
