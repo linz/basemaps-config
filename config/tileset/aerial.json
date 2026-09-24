@@ -564,14 +564,6 @@
       "category": "Urban Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/bay-of-plenty_2026_0.1m/01KT5TMX2BA907PB8NWQ64AFSM/",
-      "3857": "s3://linz-basemaps/3857/bay-of-plenty_2026_0.1m/01KT5TMX2GH08Z26X9MHZCMBJN/",
-      "name": "bay-of-plenty-2026-0.1m",
-      "title": "Bay of Plenty Severe Weather 0.1m Aerial Photos (2026)",
-      "category": "Event",
-      "minZoom": 14
-    },
-    {
       "2193": "s3://linz-basemaps/2193/christchurch_2023_0.075m/01HFART7KYYR9XX5RNHPMNRBJH/",
       "3857": "s3://linz-basemaps/3857/christchurch_2023_0.075m/01HFART7QPK7Y2TC7PY4XHHNNJ/",
       "name": "christchurch-2023-0.075m",
@@ -978,6 +970,14 @@
       "name": "bay-of-plenty-2025-0.1m",
       "title": "Bay of Plenty 0.1m Urban Aerial Photos (2025)",
       "category": "Urban Aerial Photos",
+      "minZoom": 14
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_2026_0.1m/01KT5TMX2BA907PB8NWQ64AFSM/",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_2026_0.1m/01KT5TMX2GH08Z26X9MHZCMBJN/",
+      "name": "bay-of-plenty-2026-0.1m",
+      "title": "Bay of Plenty Severe Weather 0.1m Aerial Photos (2026)",
+      "category": "Event",
       "minZoom": 14
     },
     {
