@@ -709,6 +709,17 @@
       "layout": {
         "visibility": "visible"
       },
+      "paint": {
+        "raster-opacity": {
+          "stops": [
+            [0, 0.25],
+            [5, 0.25],
+            [8, 0.3],
+            [12, 0.4],
+            [16, 0.5]
+          ]
+        }
+      },
       "source": "LINZ-Hillshade-Igor",
       "type": "raster"
     },
