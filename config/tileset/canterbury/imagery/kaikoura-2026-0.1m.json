@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_kaikoura-2026-0.1m",
+  "name": "kaikoura-2026-0.1m",
+  "title": "Kaikōura Storm 0.1m Aerial Photos (2026) - Draft",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Event",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/kaikoura_2026_0.1m/01M3XA50C0PW591EMFPVM6CMB1/",
+      "3857": "s3://linz-basemaps/3857/kaikoura_2026_0.1m/01M3XA51439K9H6GNHG51EEC91/",
+      "name": "kaikoura-2026-0.1m",
+      "title": "Kaikōura Storm 0.1m Aerial Photos (2026) - Draft",
+      "category": "Event",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
