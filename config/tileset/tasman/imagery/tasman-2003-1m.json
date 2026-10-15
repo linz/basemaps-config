@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_tasman-2003-1m",
+  "name": "tasman-2003-1m",
+  "title": "Tasman 1m Rural Aerial Photos (2003)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/tasman_2003_1m/01M4YGHYN1T90B9Y330AW8JJZD/",
+      "3857": "s3://linz-basemaps/3857/tasman_2003_1m/01M4YGHZCPZQWSKZGR3AMBYF8P/",
+      "name": "tasman-2003-1m",
+      "title": "Tasman 1m Rural Aerial Photos (2003)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
