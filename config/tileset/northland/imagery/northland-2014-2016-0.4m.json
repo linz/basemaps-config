@@ -1,0 +1,27 @@
+{
+  "type": "raster",
+  "id": "ts_northland-2014-2016-0.4m",
+  "name": "northland-2014-2016-0.4m",
+  "aliases": [
+    "northland-rural-2014-2016-0.4m"
+  ],
+  "title": "Northland 0.4m Rural Aerial Photos (2014-2016)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/northland_rural_2014-16_0-4m/01F6P1JB8GFYFC08W3AK9KFGJW/",
+      "3857": "s3://linz-basemaps/3857/northland_rural_2014-16_0-4m/01ED82WK4A955T96RV5NWEN3R6/",
+      "name": "northland-2014-2016-0.4m",
+      "title": "Northland 0.4m Rural Aerial Photos (2014-2016)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

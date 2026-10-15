@@ -1,0 +1,27 @@
+{
+  "type": "raster",
+  "id": "ts_canterbury-2020-0.3m",
+  "name": "canterbury-2020-0.3m",
+  "aliases": [
+    "canterbury-rural-2020-0.3m"
+  ],
+  "title": "Canterbury 0.3m Rural Aerial Photos (2020)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/canterbury_rural_2020_0-3m_RGB/01FHRTDFP4DDQD4X1G63SDF0AX/",
+      "3857": "s3://linz-basemaps/3857/canterbury_rural_2020_0-3m_RGB/01FHRTF5GHTZD5SEXP3MS7E911/",
+      "name": "canterbury-2020-0.3m",
+      "title": "Canterbury 0.3m Rural Aerial Photos (2020)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

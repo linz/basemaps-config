@@ -1,0 +1,27 @@
+{
+  "type": "raster",
+  "id": "ts_southland-central-otago-2015-2017-0.4m",
+  "name": "southland-central-otago-2015-2017-0.4m",
+  "aliases": [
+    "southland-central-otago-rural-2015-2017-0.4m"
+  ],
+  "title": "Southland & Central Otago 0.4m Rural Aerial Photos (2015-2017)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/southland-central-otago_rural_2015-2017_0-40m_RGB/01F6P1RQRT6N94DDKGRCSYKM6R/",
+      "3857": "s3://linz-basemaps/3857/southland-central-otago_rural_2015-2017_0-40m_RGB/01ED83A271YNKAW0KRH17RPMMV/",
+      "name": "southland-central-otago-2015-2017-0.4m",
+      "title": "Southland & Central Otago 0.4m Rural Aerial Photos (2015-2017)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

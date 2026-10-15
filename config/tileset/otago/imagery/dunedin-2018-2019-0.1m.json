@@ -1,0 +1,27 @@
+{
+  "type": "raster",
+  "id": "ts_dunedin-2018-2019-0.1m",
+  "name": "dunedin-2018-2019-0.1m",
+  "aliases": [
+    "dunedin-urban-2018-2019-0.1m"
+  ],
+  "title": "Dunedin 0.1m Urban Aerial Photos (2018-2019)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Urban Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/dunedin_urban_2018-19_0-1m/01F6P12VGV6BJR4AWJR29V6JQM/",
+      "3857": "s3://linz-basemaps/3857/dunedin_urban_2018-19_0-1m/01ED826QV4Q60TNS6VM8HE36BV/",
+      "name": "dunedin-2018-2019-0.1m",
+      "title": "Dunedin 0.1m Urban Aerial Photos (2018-2019)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

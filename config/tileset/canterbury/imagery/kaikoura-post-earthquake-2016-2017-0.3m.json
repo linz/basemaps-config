@@ -1,0 +1,27 @@
+{
+  "type": "raster",
+  "id": "ts_kaikoura-post-earthquake-2016-2017-0.3m",
+  "name": "kaikoura-post-earthquake-2016-2017-0.3m",
+  "aliases": [
+    "kaikoura-post-earthquake-rural-2016-2017-0.3m"
+  ],
+  "title": "Kaikōura Earthquake 0.3m Rural Aerial Photos (2016-2017)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Event",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/kaikoura-post-earthquake_rural_2016-17_0-3m/01F6P1AGSRJG1VKND6PD8BXH2Q/",
+      "3857": "s3://linz-basemaps/3857/kaikoura-post-earthquake_rural_2016-17_0-3m/01ED82F0376F6FJFMTV4JAVJ53/",
+      "name": "kaikoura-post-earthquake-2016-2017-0.3m",
+      "title": "Kaikōura Earthquake 0.3m Rural Aerial Photos (2016-2017)",
+      "category": "Event",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

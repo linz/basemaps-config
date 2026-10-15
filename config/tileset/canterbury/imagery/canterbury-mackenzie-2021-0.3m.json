@@ -1,0 +1,27 @@
+{
+  "type": "raster",
+  "id": "ts_canterbury-mackenzie-2021-0.3m",
+  "name": "canterbury-mackenzie-2021-0.3m",
+  "aliases": [
+    "canterbury-mackenzie-rural-2021-0.3m"
+  ],
+  "title": "Canterbury - Mackenzie 0.3m Rural Aerial Photos (2021)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/canterbury-mackenzie_rural_2021_0-3m_RGB/01FQ081YGQNSSB120WPZ3N70W0/",
+      "3857": "s3://linz-basemaps/3857/canterbury-mackenzie_rural_2021_0-3m_RGB/01FQ080VWM2VAMT9G2BYPWZTKB/",
+      "name": "canterbury-mackenzie-2021-0.3m",
+      "title": "Canterbury - Mackenzie 0.3m Rural Aerial Photos (2021)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
