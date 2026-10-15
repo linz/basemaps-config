@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_marlborough-2005-0.75m",
+  "name": "marlborough-2005-0.75m",
+  "title": "Marlborough 0.75m Rural Aerial Photos (2005)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/marlborough_2005_0.75m/01M4YFW0ZXM5TZ4D6KVAW9VF9C/",
+      "3857": "s3://linz-basemaps/3857/marlborough_2005_0.75m/01M4YFW0YNV5T7ACCN7KX0R0HM/",
+      "name": "marlborough-2005-0.75m",
+      "title": "Marlborough 0.75m Rural Aerial Photos (2005)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
