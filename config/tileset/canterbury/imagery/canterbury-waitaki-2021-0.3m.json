@@ -1,0 +1,27 @@
+{
+  "type": "raster",
+  "id": "ts_canterbury-waitaki-2021-0.3m",
+  "name": "canterbury-waitaki-2021-0.3m",
+  "aliases": [
+    "canterbury-waitaki-rural-2021-0.3m"
+  ],
+  "title": "Canterbury - Waitaki 0.3m Rural Aerial Photos (2021)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/canterbury-waitaki_rural_2021_0-3m_RGB/01FQ07ZVQYC3M57D8N84WFM4F5/",
+      "3857": "s3://linz-basemaps/3857/canterbury-waitaki_rural_2021_0-3m_RGB/01FQ07XS8GHPFS913PGY5P9010/",
+      "name": "canterbury-waitaki-2021-0.3m",
+      "title": "Canterbury - Waitaki 0.3m Rural Aerial Photos (2021)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

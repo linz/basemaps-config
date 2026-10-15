@@ -1,0 +1,27 @@
+{
+  "type": "raster",
+  "id": "ts_southland-2005-2011-0.75m",
+  "name": "southland-2005-2011-0.75m",
+  "aliases": [
+    "southland-rural-2005-2011-0.75m"
+  ],
+  "title": "Southland 0.75m Rural Aerial Photos (2005-2011)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/southland_rural_2005-2011_0-75m_RGBA/01F6P1S7DSP4N5DCBGCTZCMJ27/",
+      "3857": "s3://linz-basemaps/3857/southland_rural_2005-2011_0-75m_RGBA/01ED835ZSP0MQ3W55QEMVZKNR1/",
+      "name": "southland-2005-2011-0.75m",
+      "title": "Southland 0.75m Rural Aerial Photos (2005-2011)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

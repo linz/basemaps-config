@@ -1,0 +1,27 @@
+{
+  "type": "raster",
+  "id": "ts_waikato-2017-2019-0.3m",
+  "name": "waikato-2017-2019-0.3m",
+  "aliases": [
+    "waikato-rural-2017-2019-0.3m"
+  ],
+  "title": "Waikato 0.3m Rural Aerial Photos (2016-2019)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/waikato_rural_2017-19_0-3m/01F6P1YQNFECBE6S3TESNSPA2X/",
+      "3857": "s3://linz-basemaps/3857/waikato_rural_2017-19_0-3m/01EDAN2JJVFCS9WZWMB9105XFH/",
+      "name": "waikato-2017-2019-0.3m",
+      "title": "Waikato 0.3m Rural Aerial Photos (2016-2019)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

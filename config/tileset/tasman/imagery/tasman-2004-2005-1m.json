@@ -1,0 +1,27 @@
+{
+  "type": "raster",
+  "id": "ts_tasman-2004-2005-1m",
+  "name": "tasman-2004-2005-1m",
+  "aliases": [
+    "tasman-rural-2004-2005-1m"
+  ],
+  "title": "Tasman 1m Rural Aerial Photos (2004-2005)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/tasman_rural_2004-2005_1m_RGB/01F6P1TQVSC7QRF1R3JAT893ZS/",
+      "3857": "s3://linz-basemaps/3857/tasman_rural_2004-2005_1m_RGB/01EE962ZB3Z6Y7GVZ28XCWJ9JB/",
+      "name": "tasman-2004-2005-1m",
+      "title": "Tasman 1m Rural Aerial Photos (2004-2005)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

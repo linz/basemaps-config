@@ -1,0 +1,27 @@
+{
+  "type": "raster",
+  "id": "ts_hurunui-2018-2019-0.075m",
+  "name": "hurunui-2018-2019-0.075m",
+  "aliases": [
+    "hurunui-urban-2018-2019-0.075m"
+  ],
+  "title": "Hurunui 0.075m Urban Aerial Photos (2018-2019)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Urban Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/hurunui_urban_2018-2019_0-075m_RGB/01F6P19APSPMW8GM4XZYQTCGES/",
+      "3857": "s3://linz-basemaps/3857/hurunui_urban_2018-2019_0-075m_RGB/01ESPMPK1H0CH2G5K839WN1BT9/",
+      "name": "hurunui-2018-2019-0.075m",
+      "title": "Hurunui 0.075m Urban Aerial Photos (2018-2019)",
+      "category": "Urban Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}

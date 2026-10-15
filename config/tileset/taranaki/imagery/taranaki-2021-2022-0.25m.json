@@ -1,0 +1,27 @@
+{
+  "type": "raster",
+  "id": "ts_taranaki-2021-2022-0.25m",
+  "name": "taranaki-2021-2022-0.25m",
+  "aliases": [
+    "taranaki-rural-2021-2022-0.25m"
+  ],
+  "title": "Taranaki 0.25m Rural Aerial Photos (2021-2022)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/taranaki_rural_2021-2022_0.25m_RGB/01GDKFTY5BPAHMSKKVC336J9Y2/",
+      "3857": "s3://linz-basemaps/3857/taranaki_rural_2021-2022_0.25m_RGB/01GDKFVY7VZ7CVYGYG02FXSEMJ/",
+      "name": "taranaki-2021-2022-0.25m",
+      "title": "Taranaki 0.25m Rural Aerial Photos (2021-2022)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
