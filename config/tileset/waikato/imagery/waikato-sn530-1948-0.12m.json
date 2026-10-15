@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_waikato-sn530-1948-0.12m",
+  "name": "waikato-sn530-1948-0.12m",
+  "title": "Waikato 0.12m SN530 (1948)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/waikato_sn530_1948_0.12m/01M4YGK847AM4KPJH6H8W6E1RJ/",
+      "3857": "s3://linz-basemaps/3857/waikato_sn530_1948_0.12m/01M4YGK8F2JGSB33SACG16TDRX/",
+      "name": "waikato-sn530-1948-0.12m",
+      "title": "Waikato 0.12m SN530 (1948)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
