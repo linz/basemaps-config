@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_gisborne-sn5373-1979-0.64m",
+  "name": "gisborne-sn5373-1979-0.64m",
+  "title": "Gisborne 0.64m SN5373 (1979)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/gisborne_sn5373_1979_0.64m/01M58HR0JBSETSYX98535E698J/",
+      "3857": "s3://linz-basemaps/3857/gisborne_sn5373_1979_0.64m/01M58HR1986Q26WVV6R5FA53BP/",
+      "name": "gisborne-sn5373-1979-0.64m",
+      "title": "Gisborne 0.64m SN5373 (1979)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
