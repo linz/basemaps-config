@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_hawkes-bay-sn5325-1978-1979-0.75m",
+  "name": "hawkes-bay-sn5325-1978-1979-0.75m",
+  "title": "Hawke's Bay 0.75m SN5325 (1978-1979)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/hawkes-bay_sn5325_1978-1979_0.75m/01M58HQ8GKCG8BNN32E9B67D0X/",
+      "3857": "s3://linz-basemaps/3857/hawkes-bay_sn5325_1978-1979_0.75m/01M58HQ7Z3BKQZSTVGJ1BS7WC5/",
+      "name": "hawkes-bay-sn5325-1978-1979-0.75m",
+      "title": "Hawke's Bay 0.75m SN5325 (1978-1979)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
