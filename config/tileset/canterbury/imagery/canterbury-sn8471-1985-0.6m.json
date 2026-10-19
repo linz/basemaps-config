@@ -12,7 +12,8 @@
   "category": "Scanned Aerial Imagery",
   "layers": [
     {
-      "2193": "s3://linz-basemaps/2193/canterbury_sn8471_1985_0.6m/01M58VHZTYQVYV1G0AKFYC4PGJ/",
+      "2193": "s3://linz-basemaps/2193/canterbury_sn8471_1985_0.6m/01M58XNNYW8B05ME4SR7BXYCNM/",
+      "3857": "s3://linz-basemaps/3857/canterbury_sn8471_1985_0.6m/01M58XNRZYZKHB78N23CEVTD56/",
       "name": "canterbury-sn8471-1985-0.6m",
       "title": "Canterbury 0.6m SN8471 (1985)",
       "category": "Scanned Aerial Imagery",
