@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_otago-southland-sn8735-1987-0.375m",
+  "name": "otago-southland-sn8735-1987-0.375m",
+  "title": "Otago / Southland 0.375m SN8735 (1987)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/otago_southland_sn8735_1987_0.375m/01M58Y1S65FYNH6Y6ZKW21BB4Z/",
+      "3857": "s3://linz-basemaps/3857/otago_southland_sn8735_1987_0.375m/01M58Y1QXMY92FJ5EMPKGW0CFY/",
+      "name": "otago-southland-sn8735-1987-0.375m",
+      "title": "Otago / Southland 0.375m SN8735 (1987)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
