@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_manawatu-whanganui-sn8545-1985-0.15m",
+  "name": "manawatu-whanganui-sn8545-1985-0.15m",
+  "title": "Manawatū-Whanganui 0.15m SN8545 (1985)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/manawatu-whanganui_sn8545_1985_0.15m/01M58VH6PMQGMWZ7J5DTFTFWTQ/",
+      "3857": "s3://linz-basemaps/3857/manawatu-whanganui_sn8545_1985_0.15m/01M58VH6PYCEN74V4WMSM83X4A/",
+      "name": "manawatu-whanganui-sn8545-1985-0.15m",
+      "title": "Manawatū-Whanganui 0.15m SN8545 (1985)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
