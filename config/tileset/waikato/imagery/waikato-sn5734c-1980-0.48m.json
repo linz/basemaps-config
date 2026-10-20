@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_waikato-sn5734c-1980-0.48m",
+  "name": "waikato-sn5734c-1980-0.48m",
+  "title": "Waikato 0.48m SN5734C (1980)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/waikato_sn5734c_1980_0.48m/01M58M5BFR5SC96205ADAT0NQ3/",
+      "3857": "s3://linz-basemaps/3857/waikato_sn5734c_1980_0.48m/01M58M5BFMZ4KY02864RWMS421/",
+      "name": "waikato-sn5734c-1980-0.48m",
+      "title": "Waikato 0.48m SN5734C (1980)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
