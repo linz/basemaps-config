@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_otago-sn8216-1983-0.5m",
+  "name": "otago-sn8216-1983-0.5m",
+  "title": "Otago 0.5m SN8216 (1983)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/otago_sn8216_1983_0.5m/01M58S8EWW1C5PJH9HYZTEXX4N/",
+      "3857": "s3://linz-basemaps/3857/otago_sn8216_1983_0.5m/01M58S810V78ZKKD9EE1NXPBK8/",
+      "name": "otago-sn8216-1983-0.5m",
+      "title": "Otago 0.5m SN8216 (1983)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
