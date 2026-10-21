@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_west-coast-canterbury-sn9000-1988-0.75m",
+  "name": "west-coast-canterbury-sn9000-1988-0.75m",
+  "title": "West Coast / Canterbury 0.75m SN9000 (1988)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Scanned Aerial Imagery",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/west-coast_canterbury_sn9000_1988_0.75m/01M58Y32G3719JRZ5MN20T11D9/",
+      "3857": "s3://linz-basemaps/3857/west-coast_canterbury_sn9000_1988_0.75m/01M58Y32GA4MCX7KEYEEYP0MHF/",
+      "name": "west-coast-canterbury-sn9000-1988-0.75m",
+      "title": "West Coast / Canterbury 0.75m SN9000 (1988)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
