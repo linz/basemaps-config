@@ -1,0 +1,27 @@
+{
+  "type": "raster",
+  "id": "ts_nelson-2018-2019-0.3m",
+  "name": "nelson-2018-2019-0.3m",
+  "aliases": [
+    "nelson-rural-2018-2019-0.3m"
+  ],
+  "title": "Nelson 0.3m Rural Aerial Photos (2018-2019)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/nelson_rural_2018-19_0-3m/01F6P1FJNXVVTS7HC3VS3FHEYX/",
+      "3857": "s3://linz-basemaps/3857/nelson_rural_2018-19_0-3m/01ED82T5HM0H275QJPMDQN0JFJ/",
+      "name": "nelson-2018-2019-0.3m",
+      "title": "Nelson 0.3m Rural Aerial Photos (2018-2019)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
