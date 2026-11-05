@@ -960,6 +960,15 @@
       "maxZoom": 32
     },
     {
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_sn9213_1992_0.375m/01M6PSW8ZKP83EBXWTT4P1YW22/",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_sn9213_1992_0.375m/01M6PSW8ZZ6P9FP56E8CQKH7NX/",
+      "name": "bay-of-plenty-sn9213-1992-0.375m",
+      "title": "Bay of Plenty 0.375m SN9213 (1992)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
       "2193": "s3://linz-basemaps/2193/manawatu-whanganui_sn9158_1991_0.375m/01H8JF29R6S2NT7QXNC7GK90D4/",
       "3857": "s3://linz-basemaps/3857/manawatu-whanganui_sn9158_1991_0.375m/01H8JF2RZ225TJG7FPACV6DVRC/",
       "name": "manawatu-whanganui-sn9158-1991-0.375m",
