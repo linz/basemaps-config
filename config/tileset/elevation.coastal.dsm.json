@@ -13,6 +13,12 @@
       "minZoom": 9
     },
     {
+      "2193": "s3://nz-coastal/northland/bay-of-islands-tokerau_2025-2026/dsm_1m/2193/",
+      "title": "Northland - Bay of Islands/Tokerau Coastal LiDAR 1m DSM (2025-2026)",
+      "name": "bay-of-islands-tokerau_2025-2026_dsm_1m",
+      "minZoom": 9
+    },
+    {
       "2193": "s3://nz-coastal/northland/whangarei-to-bream-bay_2025/dsm_1m/2193/",
       "title": "Northland - Whangārei to Bream Bay Coastal LiDAR 1m DSM (2025)",
       "name": "whangarei-to-bream-bay_2025_dsm_1m",
