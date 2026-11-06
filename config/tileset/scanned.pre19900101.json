@@ -33,6 +33,24 @@
       "maxZoom": 32
     },
     {
+      "2193": "s3://linz-basemaps/2193/taranaki_manawatu-whanganui_sn5009_1976_0.375m/01M58HGPZTDXQRXRC8R5Y2943J/",
+      "3857": "s3://linz-basemaps/3857/taranaki_manawatu-whanganui_sn5009_1976_0.375m/01M58HGPZNX4EK509AB0WEHD36/",
+      "name": "taranaki-manawatu-whanganui-sn5009-1976-0.375m",
+      "title": "Taranaki / Manawatū-Whanganui 0.375m SN5009 (1976)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/gisborne_sn5012_1976-1977_0.64m/01M58HF25XY9VXZH54335R2EXV/",
+      "3857": "s3://linz-basemaps/3857/gisborne_sn5012_1976-1977_0.64m/01M58HF25K772EH056CY2QW5BV/",
+      "name": "gisborne-sn5012-1976-1977-0.64m",
+      "title": "Gisborne 0.64m SN5012 (1976-1977)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
       "2193": "s3://linz-basemaps/2193/marlborough_sn5100_1977_0.75m/01H8JGWVHJFER7QX1WA1ZYSXF1/",
       "3857": "s3://linz-basemaps/3857/marlborough_sn5100_1977_0.75m/01H8JGWVHZXWJR7QEBCANAJ7FX/",
       "name": "marlborough-sn5100-1977-0.75m",
@@ -105,6 +123,24 @@
       "maxZoom": 32
     },
     {
+      "2193": "s3://linz-basemaps/2193/otago_sn5209_1978_0.75m/01M58HP8YK40R3TVQ0DQWNG32F/",
+      "3857": "s3://linz-basemaps/3857/otago_sn5209_1978_0.75m/01M58HPADR51GY33JENYWMFHR7/",
+      "name": "otago-sn5209-1978-0.75m",
+      "title": "Otago 0.75m SN5209 (1978)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/hawkes-bay_sn5325_1978-1979_0.75m/01M58HQ8GKCG8BNN32E9B67D0X/",
+      "3857": "s3://linz-basemaps/3857/hawkes-bay_sn5325_1978-1979_0.75m/01M58HQ7Z3BKQZSTVGJ1BS7WC5/",
+      "name": "hawkes-bay-sn5325-1978-1979-0.75m",
+      "title": "Hawke's Bay 0.75m SN5325 (1978-1979)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
       "2193": "s3://linz-basemaps/2193/otago_sn5359_1979_0.375m/01H8JK4EXEEC9YNEAKYNB4SNPB/",
       "3857": "s3://linz-basemaps/3857/otago_sn5359_1979_0.375m/01H8JK38135F3SNYTG3WVMW0CA/",
       "name": "otago-sn5359-1979-0.375m",
@@ -154,6 +190,24 @@
       "3857": "s3://linz-basemaps/3857/marlborough_sn5638_1979-1980_0.375m/01H8JH0DP9TA3E9WDMRF69D71A/",
       "name": "marlborough-sn5638-1979-1980-0.375m",
       "title": "Marlborough 0.375m SN5638 (1979-1980)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/gisborne_sn5373_1979_0.64m/01M58HR0JBSETSYX98535E698J/",
+      "3857": "s3://linz-basemaps/3857/gisborne_sn5373_1979_0.64m/01M58HR1986Q26WVV6R5FA53BP/",
+      "name": "gisborne-sn5373-1979-0.64m",
+      "title": "Gisborne 0.64m SN5373 (1979)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/manawatu-whanganui_taranaki_sn5396_1979_0.75m/01M58M4QP0V24ER8Q1K4WJZ2HE/",
+      "3857": "s3://linz-basemaps/3857/manawatu-whanganui_taranaki_sn5396_1979_0.75m/01M58M4QP54WC72ZH3XX6B2ZM3/",
+      "name": "manawatu-whanganui-taranaki-sn5396-1979-0.75m",
+      "title": "Manawatū-Whanganui / Taranaki 0.75m SN5396 (1979)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32
@@ -249,6 +303,33 @@
       "maxZoom": 32
     },
     {
+      "2193": "s3://linz-basemaps/2193/waikato_sn5734c_1980_0.48m/01M58M5BFR5SC96205ADAT0NQ3/",
+      "3857": "s3://linz-basemaps/3857/waikato_sn5734c_1980_0.48m/01M58M5BFMZ4KY02864RWMS421/",
+      "name": "waikato-sn5734c-1980-0.48m",
+      "title": "Waikato 0.48m SN5734C (1980)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/otago_sn5739c_1980_0.15m/01M58M5BGZ7YA7KA0Z7KWQN7XD/",
+      "3857": "s3://linz-basemaps/3857/otago_sn5739c_1980_0.15m/01M58M4ZS68PJ7G191R65J0AER/",
+      "name": "otago-sn5739c-1980-0.15m",
+      "title": "Otago 0.15m SN5739C (1980)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/gisborne_sn5758_1980_0.64m/01M58M4Z48CF14HGF1FYFQ8WQM/",
+      "3857": "s3://linz-basemaps/3857/gisborne_sn5758_1980_0.64m/01M58M4ZSFMHN9TDXFF98AFRSG/",
+      "name": "gisborne-sn5758-1980-0.64m",
+      "title": "Gisborne 0.64m SN5758 (1980)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
       "2193": "s3://linz-basemaps/2193/taranaki_sn5804_1981_0.375m/01H8JMN29GP081PT3YN6R5D26D/",
       "3857": "s3://linz-basemaps/3857/taranaki_sn5804_1981_0.375m/01H8JMN280VKE9154YRPJ0CBVW/",
       "name": "taranaki-sn5804-1981-0.375m",
@@ -298,6 +379,33 @@
       "3857": "s3://linz-basemaps/3857/bay-of-plenty_gisborne_sn5975_1981_0.375m/01H8J8R6VBQMBS4MZFZ4K046SN/",
       "name": "bay-of-plenty-gisborne-sn5975-1981-0.375m",
       "title": "Bay of Plenty / Gisborne 0.375m SN5975 (1981)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/canterbury_sn5891c_1981_0.48m/01M58M4YW1J0JKGA4046Y2J2GJ/",
+      "3857": "s3://linz-basemaps/3857/canterbury_sn5891c_1981_0.48m/01M58M4SHCHQ1Y2H22SPAXCWVC/",
+      "name": "canterbury-sn5891c-1981-0.48m",
+      "title": "Canterbury 0.48m SN5891C (1981)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/canterbury_sn5917_1981_0.4m/01M58M4SH963HGV77A7K52EZVQ/",
+      "3857": "s3://linz-basemaps/3857/canterbury_sn5917_1981_0.4m/01M58M4Z3ZC3K4QSD24894YG1J/",
+      "name": "canterbury-sn5917-1981-0.4m",
+      "title": "Canterbury 0.4m SN5917 (1981)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/hawkes-bay_sn5918_1981-1983_0.375m/01M58M4ZSNE6XZBEPAXFY6BGVN/",
+      "3857": "s3://linz-basemaps/3857/hawkes-bay_sn5918_1981-1983_0.375m/01M58M4QP0QBDG9QJFB7TD23KT/",
+      "name": "hawkes-bay-sn5918-1981-1983-0.375m",
+      "title": "Hawke's Bay 0.375m SN5918 (1981-1983)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32
@@ -397,6 +505,69 @@
       "3857": "s3://linz-basemaps/3857/gisborne_sn8132_1982_0.375m/01H8JBMB01PDKG4D7HMDTNBD26/",
       "name": "gisborne-sn8132-1982-0.375m",
       "title": "Gisborne 0.375m SN8132 (1982)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/otago_sn8035_1982_0.625m/01M58M51WTW1CBJQ56TAHG2N8Y/",
+      "3857": "s3://linz-basemaps/3857/otago_sn8035_1982_0.625m/01M58M51X0ZN8XBZ6WHJ8A3NQ2/",
+      "name": "otago-sn8035-1982-0.625m",
+      "title": "Otago 0.625m SN8035 (1982)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/otago_sn8036_1982_0.75m/01M58M4QNZ59TMAR34TK2VSQVT/",
+      "3857": "s3://linz-basemaps/3857/otago_sn8036_1982_0.75m/01M58M4QPGAW18ZAMDAFX9M5HK/",
+      "name": "otago-sn8036-1982-0.75m",
+      "title": "Otago 0.75m SN8036 (1982)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/otago_sn8043_1982_0.6m/01M58M4QP9NH541QMFVDEZRWRQ/",
+      "3857": "s3://linz-basemaps/3857/otago_sn8043_1982_0.6m/01M58M4QMX9DCA2FJHSH1TYKVE/",
+      "name": "otago-sn8043-1982-0.6m",
+      "title": "Otago 0.6m SN8043 (1982)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/otago_sn8074_1982_0.96m/01M58S8Q81J2NT757WSVYY90MT/",
+      "3857": "s3://linz-basemaps/3857/otago_sn8074_1982_0.96m/01M58S8Q67RXZ5B4178KRS70RG/",
+      "name": "otago-sn8074-1982-0.96m",
+      "title": "Otago 0.96m SN8074 (1982)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/waikato_sn8089c_1982-1983_0.375m/01M58S85085RVX1X70SCKCG3M2/",
+      "3857": "s3://linz-basemaps/3857/waikato_sn8089c_1982-1983_0.375m/01M58S8515VWK8BTVSHYZHV8F9/",
+      "name": "waikato-sn8089c-1982-1983-0.375m",
+      "title": "Waikato 0.375m SN8089C (1982-1983)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/otago_sn8120_1982_0.24m/01M58S85111EHCVD3H1MW9CW6R/",
+      "3857": "s3://linz-basemaps/3857/otago_sn8120_1982_0.24m/01M58S851GZKY98J4TYWC6KPVS/",
+      "name": "otago-sn8120-1982-0.24m",
+      "title": "Otago 0.24m SN8120 (1982)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/northland_sn8129_1982_0.375m/01M58S850TSDMYYK9XWFPKXFA0/",
+      "3857": "s3://linz-basemaps/3857/northland_sn8129_1982_0.375m/01M58S850TTZFH30C6JMRHGV1P/",
+      "name": "northland-sn8129-1982-0.375m",
+      "title": "Northland 0.375m SN8129 (1982)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32
@@ -532,6 +703,33 @@
       "3857": "s3://linz-basemaps/3857/gisborne_snc8309_1983_0.4m/01H8JBPW86YVK5HDAQZZPTZQ4M/",
       "name": "gisborne-snc8309-1983-0.4m",
       "title": "Gisborne 0.4m SNC8309 (1983)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/waikato_sn8199_1983_0.375m/01M58S851CDW52EGDFCT072CH5/",
+      "3857": "s3://linz-basemaps/3857/waikato_sn8199_1983_0.375m/01M58S8Q8J2WY6YCV9KN97SR88/",
+      "name": "waikato-sn8199-1983-0.375m",
+      "title": "Waikato 0.375m SN8199 (1983)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/waikato_manawatu-whanganui_sn8202_1983_0.75m/01M58S8ETDR6RE482FXW8X5BZA/",
+      "3857": "s3://linz-basemaps/3857/waikato_manawatu-whanganui_sn8202_1983_0.75m/01M58S8EWGFJKWG2C17ERDGVKX/",
+      "name": "waikato-manawatu-whanganui-sn8202-1983-0.75m",
+      "title": "Waikato / Manawatū-Whanganui 0.75m SN8202 (1983)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/otago_sn8216_1983_0.5m/01M58S8EWW1C5PJH9HYZTEXX4N/",
+      "3857": "s3://linz-basemaps/3857/otago_sn8216_1983_0.5m/01M58S810V78ZKKD9EE1NXPBK8/",
+      "name": "otago-sn8216-1983-0.5m",
+      "title": "Otago 0.5m SN8216 (1983)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32
@@ -735,6 +933,42 @@
       "maxZoom": 32
     },
     {
+      "2193": "s3://linz-basemaps/2193/otago_sn8406_1984_0.6m/01M58S80YHHB1XMYQHWX194HZR/",
+      "3857": "s3://linz-basemaps/3857/otago_sn8406_1984_0.6m/01M58S810ZW3K9MYDWV5CBGTRR/",
+      "name": "otago-sn8406-1984-0.6m",
+      "title": "Otago 0.6m SN8406 (1984)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/hawkes-bay_sn8429_1984_0.15m/01M58S811AMXNR5BBX8GCTZJ76/",
+      "3857": "s3://linz-basemaps/3857/hawkes-bay_sn8429_1984_0.15m/01M58S811DJ0S1AQH4F1W49QQC/",
+      "name": "hawkes-bay-sn8429-1984-0.15m",
+      "title": "Hawke's Bay 0.15m SN8429 (1984)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/waikato_sn8442_1984_0.75m/01M58S810RFNBS34MNF4D0S0M4/",
+      "3857": "s3://linz-basemaps/3857/waikato_sn8442_1984_0.75m/01M58S811THB8BW86MPZT3QYAP/",
+      "name": "waikato-sn8442-1984-0.75m",
+      "title": "Waikato 0.75m SN8442 (1984)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/otago_sn8449_1984_0.75m/01M58VHENZS0V8XVB560DTBFXG/",
+      "3857": "s3://linz-basemaps/3857/otago_sn8449_1984_0.75m/01M58VHEP5H4WWZKNMGNT0BXMN/",
+      "name": "otago-sn8449-1984-0.75m",
+      "title": "Otago 0.75m SN8449 (1984)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
       "2193": "s3://linz-basemaps/2193/canterbury_sn8453_1985_0.75m/01H8JBHN4FKSAEHPH9XARAKSF1/",
       "3857": "s3://linz-basemaps/3857/canterbury_sn8453_1985_0.75m/01H8JBHN77AYTMD9SE0FDMZ5GY/",
       "name": "canterbury-sn8453-1985-0.75m",
@@ -915,6 +1149,69 @@
       "maxZoom": 32
     },
     {
+      "2193": "s3://linz-basemaps/2193/northland_sn8459_1985_0.48m/01M58VHEN84TYZ15A5RBTC1SWX/",
+      "3857": "s3://linz-basemaps/3857/northland_sn8459_1985_0.48m/01M58VHENQHENCZ53N5PV68PYR/",
+      "name": "northland-sn8459-1985-0.48m",
+      "title": "Northland 0.48m SN8459 (1985)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/northland_sn8462_1985_0.48m/01M58VHEQ8H0QAAPJAZ2QMAS0Y/",
+      "3857": "s3://linz-basemaps/3857/northland_sn8462_1985_0.48m/01M58VHEN5FFBSM2F2ZK13ZC4W/",
+      "name": "northland-sn8462-1985-0.48m",
+      "title": "Northland 0.48m SN8462 (1985)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/canterbury_sn8471_1985_0.6m/01M58XNNYW8B05ME4SR7BXYCNM/",
+      "3857": "s3://linz-basemaps/3857/canterbury_sn8471_1985_0.6m/01M58XNRZYZKHB78N23CEVTD56/",
+      "name": "canterbury-sn8471-1985-0.6m",
+      "title": "Canterbury 0.6m SN8471 (1985)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/manawatu-whanganui_sn8545_1985_0.15m/01M58VH6PMQGMWZ7J5DTFTFWTQ/",
+      "3857": "s3://linz-basemaps/3857/manawatu-whanganui_sn8545_1985_0.15m/01M58VH6PYCEN74V4WMSM83X4A/",
+      "name": "manawatu-whanganui-sn8545-1985-0.15m",
+      "title": "Manawatū-Whanganui 0.15m SN8545 (1985)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/waikato_sn8555_1985-1986_0.2m/01M58VH6P2TR0Q7VA9SEDMGJFE/",
+      "3857": "s3://linz-basemaps/3857/waikato_sn8555_1985-1986_0.2m/01M58VHEMPR7HYKC1W2ECJ6E5H/",
+      "name": "waikato-sn8555-1985-1986-0.2m",
+      "title": "Waikato 0.2m SN8555 (1985-1986)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/waikato_sn8562_1985_0.375m/01M6MWFG8X81FNECJ9CNG39PPC/",
+      "3857": "s3://linz-basemaps/3857/waikato_sn8562_1985_0.375m/01M6MWFG9XTEZ3CGFSMQYDYF08/",
+      "name": "waikato-sn8562-1985-0.375m",
+      "title": "Waikato 0.375m SN8562 (1985)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/northland_sn8580_1985-1986_0.32m/01M58VHZTXT5TA3BA5XH5TS0G4/",
+      "3857": "s3://linz-basemaps/3857/northland_sn8580_1985-1986_0.32m/01M58VHW7PQ3072GFS3DJ4DPET/",
+      "name": "northland-sn8580-1985-1986-0.32m",
+      "title": "Northland 0.32m SN8580 (1985-1986)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
       "2193": "s3://linz-basemaps/2193/canterbury_sn8584_1986_0.75m/01H8JBHSF3SAKBGWKT88N3KHFP/",
       "3857": "s3://linz-basemaps/3857/canterbury_sn8584_1986_0.75m/01H8JBHSD8AVY4ERM51V06BVGZ/",
       "name": "canterbury-sn8584-1986-0.75m",
@@ -991,6 +1288,24 @@
       "3857": "s3://linz-basemaps/3857/waikato_snc8697_1986_0.375m/01H8JPE28YHVDRN3C5Z1KEDY2D/",
       "name": "waikato-snc8697-1986-0.375m",
       "title": "Waikato 0.375m SNC8697 (1986)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/waikato_sn8614_1986_0.375m/01M58VJ7356Q36JYDBG34X6ATH/",
+      "3857": "s3://linz-basemaps/3857/waikato_sn8614_1986_0.375m/01M58VJ73NHXCXCG673KASWEB5/",
+      "name": "waikato-sn8614-1986-0.375m",
+      "title": "Waikato 0.375m SN8614 (1986)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/waikato_sn8728c_1986_0.48m/01M58VKBQ23JEEQZQ2KG5KA655/",
+      "3857": "s3://linz-basemaps/3857/waikato_sn8728c_1986_0.48m/01M58VKBNWH8JXJSFSC8WZ3KFN/",
+      "name": "waikato-sn8728c-1986-0.48m",
+      "title": "Waikato 0.48m SN8728C (1986)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32
@@ -1077,6 +1392,42 @@
       "maxZoom": 32
     },
     {
+      "2193": "s3://linz-basemaps/2193/northland_sn8713_1987_0.75m/01M58Y15R4PKFVBTD68G2MSHF2/",
+      "3857": "s3://linz-basemaps/3857/northland_sn8713_1987_0.75m/01M58Y1QCQ97921NP51NZMTM3T/",
+      "name": "northland-sn8713-1987-0.75m",
+      "title": "Northland 0.75m SN8713 (1987)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/northland_sn8714_1987_0.8m/01M58Y1XQYV2K0CYM23005JWS0/",
+      "3857": "s3://linz-basemaps/3857/northland_sn8714_1987_0.8m/01M58Y2FM6N6YVAMD0NW53FZ34/",
+      "name": "northland-sn8714-1987-0.8m",
+      "title": "Northland 0.8m SN8714 (1987)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/otago_southland_sn8735_1987_0.375m/01M58Y1S65FYNH6Y6ZKW21BB4Z/",
+      "3857": "s3://linz-basemaps/3857/otago_southland_sn8735_1987_0.375m/01M58Y1QXMY92FJ5EMPKGW0CFY/",
+      "name": "otago-southland-sn8735-1987-0.375m",
+      "title": "Otago / Southland 0.375m SN8735 (1987)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/hawkes-bay_sn8911c_1987_0.375m/01M58Y359F48GDD9DHA52XSF92/",
+      "3857": "s3://linz-basemaps/3857/hawkes-bay_sn8911c_1987_0.375m/01M58Y2QKHJ10B4PEKVT69RQSC/",
+      "name": "hawkes-bay-sn8911c-1987-0.375m",
+      "title": "Hawke's Bay 0.375m SN8911C (1987)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
       "2193": "s3://linz-basemaps/2193/manawatu-whanganui_snc8914_1988_0.375m/01H8JG2MP81PQ6HXQNPGY0X1AS/",
       "3857": "s3://linz-basemaps/3857/manawatu-whanganui_snc8914_1988_0.375m/01H8JG2MPKDEK3VJW32W5Y8HWD/",
       "name": "manawatu-whanganui-snc8914-1988-0.375m",
@@ -1126,6 +1477,51 @@
       "3857": "s3://linz-basemaps/3857/southland_otago_sn8996_1988_0.75m/01H8JKYQ1QY3PWCFTX47PMN0YT/",
       "name": "southland-otago-sn8996-1988-0.75m",
       "title": "Southland / Otago 0.75m SN8996 (1988)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_sn8926_1988_0.2m/01M58Y3J2F28W9ZPXHH6RF9WMW/",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_sn8926_1988_0.2m/01M58Y2X9WYYMHMDMZ1P6VBCTC/",
+      "name": "bay-of-plenty-sn8926-1988-0.2m",
+      "title": "Bay of Plenty 0.2m SN8926 (1988)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/waikato_bay-of-plenty_sn8927_1988_0.2m/01M58Y2W6F9ZJ5W34YAJGEM5Q3/",
+      "3857": "s3://linz-basemaps/3857/waikato_bay-of-plenty_sn8927_1988_0.2m/01M58Y35V60A75WVH0ERQ8Z043/",
+      "name": "waikato-bay-of-plenty-sn8927-1988-0.2m",
+      "title": "Waikato / Bay of Plenty 0.2m SN8927 (1988)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_sn8942c_1988_0.2m/01M58Y2YAZ6V0QHPHCH2H56X02/",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_sn8942c_1988_0.2m/01M58Y2Y99CPPDG5QPH32B632P/",
+      "name": "bay-of-plenty-sn8942c-1988-0.2m",
+      "title": "Bay of Plenty 0.2m SN8942C (1988)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/bay-of-plenty_sn8955_1988_0.24m/01M58Y35V6MS2X6J20YPP7DZ5A/",
+      "3857": "s3://linz-basemaps/3857/bay-of-plenty_sn8955_1988_0.24m/01M58Y30E0R2JAYGCN722T6T69/",
+      "name": "bay-of-plenty-sn8955-1988-0.24m",
+      "title": "Bay of Plenty 0.24m SN8955 (1988)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/west-coast_canterbury_sn9000_1988_0.75m/01M58Y32G3719JRZ5MN20T11D9/",
+      "3857": "s3://linz-basemaps/3857/west-coast_canterbury_sn9000_1988_0.75m/01M58Y32GA4MCX7KEYEEYP0MHF/",
+      "name": "west-coast-canterbury-sn9000-1988-0.75m",
+      "title": "West Coast / Canterbury 0.75m SN9000 (1988)",
       "category": "Scanned Aerial Imagery",
       "minZoom": 0,
       "maxZoom": 32
