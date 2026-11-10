@@ -1554,6 +1554,24 @@
       "maxZoom": 32
     },
     {
+      "2193": "s3://linz-basemaps/2193/northland_sn11472_1988_0.315m/01M4PZHEPETN2T2Q8WV6FQ8NG3/",
+      "3857": "s3://linz-basemaps/3857/northland_sn11472_1988_0.315m/01M4PZHHMWJZQ3QDEX4E0HMZJX/",
+      "name": "northland-sn11472-1988-0.315m",
+      "title": "Northland 0.315m SN11472 (1988)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
+      "2193": "s3://linz-basemaps/2193/hawkes-bay_sn11505a_sn11538_1988_0.4m/01M4PZH1XC13BN28NEXEEJ86ZJ/",
+      "3857": "s3://linz-basemaps/3857/hawkes-bay_sn11505a_sn11538_1988_0.4m/01M4PZH1XB2S26AJM2FDACB91W/",
+      "name": "hawkes-bay-sn11505a-sn11538-1988-0.4m",
+      "title": "Hawke's Bay 0.4m SN11505A / SN11538 (1988)",
+      "category": "Scanned Aerial Imagery",
+      "minZoom": 0,
+      "maxZoom": 32
+    },
+    {
       "2193": "s3://linz-basemaps/2193/auckland_sn11624_1989_0.625m/01KCMGPRZ1C2BP8PT8GZF3JRFQ/",
       "3857": "s3://linz-basemaps/3857/auckland_sn11624_1989_0.625m/01KCMGPRZ3GKKV2A69D063W1RM/",
       "name": "auckland-sn11624-1989-0.625m",
