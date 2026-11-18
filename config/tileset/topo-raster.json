@@ -57,16 +57,16 @@
       "category": "Topographic"
     },
     {
-      "2193": "s3://linz-basemaps/2193/topo50-chatham-islands/01K6B8W6XYJZ20HJXDENZ57XFJ/",
-      "3857": "s3://linz-basemaps/3857/topo50-chatham-islands/01K6B8W7VXRR8FVJ6F9BP66GYV/",
+      "2193": "s3://linz-basemaps/2193/topo50-chatham-islands/01M7NN0YDGXWCR1F29E8YXVTX6/",
+      "3857": "s3://linz-basemaps/3857/topo50-chatham-islands/01M7NMXXYZNPQ92F9Z6M1AH7G9/",
       "name": "nz-topo50-chatham-islands-gridless",
       "title": "NZ Topo50 Chatham Islands Gridless",
       "minZoom": 13,
       "category": "Topographic"
     },
     {
-      "2193": "s3://linz-basemaps/2193/topo50-new-zealand-mainland/01KMENCYA12RHKZ3FBZ09DJXFB/",
-      "3857": "s3://linz-basemaps/3857/topo50-new-zealand-mainland/01KMEND1FEH70SEN820TWF1N5J/",
+      "2193": "s3://linz-basemaps/2193/topo50-new-zealand-mainland/01M7NNBFYQY6DRH8WNSY6WHRP8/",
+      "3857": "s3://linz-basemaps/3857/topo50-new-zealand-mainland/01M7NN8KSJ9RNMX7D67THF49FN/",
       "name": "nz-topo50-new-zealand-mainland-gridless",
       "title": "NZ Topo50 New Zealand Mainland Gridless",
       "minZoom": 13,
