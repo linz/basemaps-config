@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_otago-2025-2026-0.15m",
+  "name": "otago-2025-2026-0.15m",
+  "title": "Otago 0.15m Ancillary Aerial Photos (2025-2026) - Draft",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/otago_2025-2026_0.15m/01M7NTS8QEZ3Q3V6R3H3CF5A1F/",
+      "3857": "s3://linz-basemaps/3857/otago_2025-2026_0.15m/01M7NTSHHKCZS8485FKS87NNBQ/",
+      "name": "otago-2025-2026-0.15m",
+      "title": "Otago 0.15m Ancillary Aerial Photos (2025-2026) - Draft",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
