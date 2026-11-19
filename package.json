@@ -9,7 +9,7 @@
     "lint": "eslint config/**/*.json --quiet --fix --report-unused-disable-directives"
   },
   "devDependencies": {
-    "@linzjs/style": "^5.2.0",
+    "@linzjs/style": "^5.4.0",
     "@types/node": "^24.1.0",
     "eslint-plugin-prettier": "^5.0.1",
     "prettier-plugin-sort-json": "^3.1.0"
