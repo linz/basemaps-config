@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_timaru-2026-0.2m",
+  "name": "timaru-2026-0.2m",
+  "title": "Timaru 0.2m Ancillary Aerial Photos (2026)",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/timaru_2026_0.2m/01M886TNFBT52Z59G386XP79EJ/",
+      "3857": "s3://linz-basemaps/3857/timaru_2026_0.2m/01M886TNFET8BWRTN0XZCH2NTZ/",
+      "name": "timaru-2026-0.2m",
+      "title": "Timaru 0.2m Ancillary Aerial Photos (2026)",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
