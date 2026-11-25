@@ -204,14 +204,6 @@
       "category": "Rural Aerial Photos"
     },
     {
-      "2193": "s3://linz-basemaps/2193/nelson_rural_2018-19_0-3m/01F6P1FJNXVVTS7HC3VS3FHEYX/",
-      "3857": "s3://linz-basemaps/3857/nelson_rural_2018-19_0-3m/01ED82T5HM0H275QJPMDQN0JFJ/",
-      "name": "nelson-2018-2019-0.3m",
-      "minZoom": 13,
-      "title": "Nelson 0.3m Rural Aerial Photos (2018-2019)",
-      "category": "Rural Aerial Photos"
-    },
-    {
       "2193": "s3://linz-basemaps/2193/bay-of-plenty_rural_2016-17_0-3m/01F66E3G0Z8DNKWXG5M55QNW9G/",
       "3857": "s3://linz-basemaps/3857/bay-of-plenty_rural_2016-17_0-3m/01ED81Q2AS5K0RPNRCRQ33YAYW/",
       "name": "bay-of-plenty-2016-2017-0.3m",
@@ -1009,14 +1001,6 @@
       "3857": "s3://linz-basemaps/3857/kapiti-coast_2025_0.075m/01KT8FJ392DFN394VNMD6C0TRH/",
       "name": "kapiti-coast-2025-0.075m",
       "title": "Kapiti Coast 0.075m Urban Aerial Photos (2025)",
-      "category": "Urban Aerial Photos",
-      "minZoom": 14
-    },
-    {
-      "2193": "s3://linz-basemaps/2193/nelson_2025_0.075m/01KQDQV5G6HGKKH3RJ89CXRTET/",
-      "3857": "s3://linz-basemaps/3857/nelson_2025_0.075m/01KQDQTNJWY378TSBGNNBMQT83/",
-      "name": "nelson-2025-0.075m",
-      "title": "Nelson 0.075m Urban Aerial Photos (2025)",
       "category": "Urban Aerial Photos",
       "minZoom": 14
     },
