@@ -1,0 +1,24 @@
+{
+  "type": "raster",
+  "id": "ts_manawatu-whanganui-2025-2026-0.2m",
+  "name": "manawatu-whanganui-2025-2026-0.2m",
+  "title": "Manawatū-Whanganui 0.2m Rural Aerial Photos (2025-2026) - Draft",
+  "background": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "alpha": 0
+  },
+  "category": "Rural Aerial Photos",
+  "layers": [
+    {
+      "2193": "s3://linz-basemaps/2193/manawatu-whanganui_2025-2026_0.2m/01M8AT7PTKV4R0NB73T0X65862/",
+      "3857": "s3://linz-basemaps/3857/manawatu-whanganui_2025-2026_0.2m/01M8AT7PT70YKRTR8B2PYZM42Z/",
+      "name": "manawatu-whanganui-2025-2026-0.2m",
+      "title": "Manawatū-Whanganui 0.2m Rural Aerial Photos (2025-2026) - Draft",
+      "category": "Rural Aerial Photos",
+      "minZoom": 0,
+      "maxZoom": 32
+    }
+  ]
+}
